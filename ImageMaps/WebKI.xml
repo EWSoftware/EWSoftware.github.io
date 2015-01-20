@@ -1,0 +1,757 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="AccessKey property">
+    <HelpKINode Title="IImageArea.AccessKey Property " Url="html/40cbc2ec-07c3-b24f-1d2a-84b5b2ba5143.htm" />
+    <HelpKINode Title="ImageAreaBase.AccessKey Property " Url="html/ab329faf-62d7-f90f-c025-ff2f7140874e.htm" />
+    <HelpKINode Title="ImageAreaBase.AccessKey Property " Url="html/2dddf59e-ffd8-f5a0-28c1-46411ef44367.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Action property">
+    <HelpKINode Title="ImageAreaBase.Action Property " Url="html/8c714be5-9db7-fafa-ef94-40fe5c97c305.htm" />
+    <HelpKINode Title="ImageAreaBase.Action Property " Url="html/57c2d5cb-a055-49f4-db38-45e32ff5c801.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddAttributesToRender method" Url="html/fb6ba851-2680-e117-9ac8-7b2670777e86.htm" />
+  <HelpKINode Title="AddRange method">
+    <HelpKINode Title="ImageAreaCollection.AddRange Method " Url="html/b883d6f8-8dc6-bedc-2f31-c1670029f06c.htm" />
+    <HelpKINode Title="PointCollection.AddRange Method " Url="html/50719117-46aa-eeab-0e39-e773937e7427.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AreaClickAction enumeration">
+    <HelpKINode Title="AreaClickAction Enumeration" Url="html/e577500d-d772-2b65-317b-b46f31b2f7dd.htm" />
+    <HelpKINode Title="AreaClickAction Enumeration" Url="html/30cc065d-70db-803e-4638-110bc4d1df7e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AreaIndex property" Url="html/0cbd23df-4b20-d4db-6989-3f53a833d42e.htm" />
+  <HelpKINode Title="Areas property">
+    <HelpKINode Title="IImageMap.Areas Property " Url="html/0e25c381-ddd0-8a75-e29f-80ff6cbf680e.htm" />
+    <HelpKINode Title="ImageMap.Areas Property " Url="html/de86c85a-626d-a752-229c-9c2dd30bc691.htm" />
+    <HelpKINode Title="ImageMap.Areas Property " Url="html/33653c36-e4c1-226b-27c3-8d05164d984c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Attributes property" Url="html/57b1a222-8ca1-c0f0-ae33-5ceb5da10991.htm" />
+  <HelpKINode Title="Blank enumeration member" Url="html/83225d9f-64b4-ffd1-d8d7-c86f3af1ed80.htm" />
+  <HelpKINode Title="BoundingRectangle property" Url="html/017e8c50-4be9-fe66-9d19-2e3feab25234.htm" />
+  <HelpKINode Title="CausesValidation property" Url="html/5dd86460-5b09-8d58-1a6a-a824f0cc270a.htm" />
+  <HelpKINode Title="CenterImage property" Url="html/06780734-6e5b-69d6-0976-605fa261ad14.htm" />
+  <HelpKINode Title="CenterPoint property">
+    <HelpKINode Title="ImageAreaCircle.CenterPoint Property " Url="html/4f17ed72-b807-7511-84e4-06b00f29c375.htm" />
+    <HelpKINode Title="ImageAreaCircle.CenterPoint Property " Url="html/cf97d40a-3d0f-065a-8778-8b6cbf6e43ef.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Circle enumeration member" Url="html/31b40120-95c5-f705-a1a3-6654defe902c.htm" />
+  <HelpKINode Title="ClearItems method" Url="html/e3ea6950-e554-4dd3-d9fe-e4b462c00809.htm" />
+  <HelpKINode Title="Click enumeration member" Url="html/5e5fd19d-4727-7e6f-a250-5534566fb638.htm" />
+  <HelpKINode Title="Click event">
+    <HelpKINode Title="IImageMap.Click Event" Url="html/d5f9709d-3ad6-f9a6-9534-6486adc38d8f.htm" />
+    <HelpKINode Title="ImageAreaBase.Click Event" Url="html/5ca0980f-96b1-97d7-d55c-6e2371a6b9e3.htm" />
+    <HelpKINode Title="ImageMap.Click Event" Url="html/c7d1162f-786f-d949-296a-ad85c20b365b.htm" />
+    <HelpKINode Title="ImageMap.Click Event" Url="html/64451c6d-327b-d0cc-907b-caecf5345176.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Coordinates property">
+    <HelpKINode Title="IImageArea.Coordinates Property " Url="html/7a23d7b9-aee6-857b-c025-93a356071d92.htm" />
+    <HelpKINode Title="ImageAreaBase.Coordinates Property " Url="html/5385c684-bd44-817c-d3fe-7660258fb668.htm" />
+    <HelpKINode Title="ImageAreaBase.Coordinates Property " Url="html/54232ffe-3fe1-7d16-979d-2e3cafe61637.htm" />
+    <HelpKINode Title="ImageAreaCircle.Coordinates Property " Url="html/c2d197be-7808-8117-fca0-744da516092c.htm" />
+    <HelpKINode Title="ImageAreaCircle.Coordinates Property " Url="html/c9eded1f-2a5f-7a43-2892-6aea7e084d39.htm" />
+    <HelpKINode Title="ImageAreaEllipse.Coordinates Property " Url="html/c21d0aa2-b4c8-29c5-d86f-a2edfd8cd09a.htm" />
+    <HelpKINode Title="ImageAreaPolygon.Coordinates Property " Url="html/ec335a99-89fb-f900-3a98-e4f735ee1553.htm" />
+    <HelpKINode Title="ImageAreaPolygon.Coordinates Property " Url="html/60d1f3c7-e71f-e8a0-2f94-66bfa5c510e7.htm" />
+    <HelpKINode Title="ImageAreaRectangle.Coordinates Property " Url="html/927890da-5362-f4e5-08aa-414dab389a16.htm" />
+    <HelpKINode Title="ImageAreaRectangle.Coordinates Property " Url="html/54541635-0c61-7951-8841-bd91f2b31f8b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Cursor property" Url="html/765972a5-4c74-d512-b0e2-3773f5f6c592.htm" />
+  <HelpKINode Title="design-time support" Url="html/5f8d60e8-3767-47f9-92af-8570d42d5e37.htm" />
+  <HelpKINode Title="Disabled enumeration member" Url="html/2fdc3ad7-454d-5b46-e7f1-d45b558d7984.htm" />
+  <HelpKINode Title="Dispose method" Url="html/aea37da3-8edc-b661-efa3-f4f75039e54f.htm" />
+  <HelpKINode Title="DoubleClick enumeration member" Url="html/5e5fd19d-4727-7e6f-a250-5534566fb638.htm" />
+  <HelpKINode Title="DoubleClick event">
+    <HelpKINode Title="ImageAreaBase.DoubleClick Event" Url="html/e14341a7-6da7-58fb-547c-7d7934e53e65.htm" />
+    <HelpKINode Title="ImageMap.DoubleClick Event" Url="html/67cb6b19-6b91-2d2d-c7e4-cf9259d37106.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DrawFocus property" Url="html/dc34a804-9233-193e-f2e2-f1d444142df3.htm" />
+  <HelpKINode Title="DrawFocusFrame method">
+    <HelpKINode Title="IImageArea.DrawFocusFrame Method " Url="html/b2657ad8-567e-64a2-6150-f1cb10c640fa.htm" />
+    <HelpKINode Title="ImageAreaBase.DrawFocusFrame Method " Url="html/3620aabd-2b6e-ea0e-76b6-d4480b0d0c93.htm" />
+    <HelpKINode Title="ImageAreaBase.DrawFocusFrame Method " Url="html/33cd0004-c0db-cc15-dc58-6a45847c8201.htm" />
+    <HelpKINode Title="ImageAreaCircle.DrawFocusFrame Method " Url="html/bd7cff1f-1465-51dc-5cf7-d45b7977a21e.htm" />
+    <HelpKINode Title="ImageAreaCircle.DrawFocusFrame Method " Url="html/591e9c70-2c73-1bb7-a6df-3a8a9dc20276.htm" />
+    <HelpKINode Title="ImageAreaEllipse.DrawFocusFrame Method " Url="html/705645ec-bc74-afc3-e240-b02c67985382.htm" />
+    <HelpKINode Title="ImageAreaPolygon.DrawFocusFrame Method " Url="html/8ba4cd4e-7bc0-9166-2cb3-a13ab5252796.htm" />
+    <HelpKINode Title="ImageAreaPolygon.DrawFocusFrame Method " Url="html/092c56c5-0921-df2d-d065-95b672caa01d.htm" />
+    <HelpKINode Title="ImageAreaRectangle.DrawFocusFrame Method " Url="html/87d0334a-4d8f-9baf-1a98-08135b3a9a5d.htm" />
+    <HelpKINode Title="ImageAreaRectangle.DrawFocusFrame Method " Url="html/bab530b8-84cf-6de4-b845-64dfee7c5531.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DrawImage enumeration member" Url="html/5e5fd19d-4727-7e6f-a250-5534566fb638.htm" />
+  <HelpKINode Title="DrawImage event">
+    <HelpKINode Title="ImageAreaBase.DrawImage Event" Url="html/b6873972-002a-868c-9a3e-084a09807b24.htm" />
+    <HelpKINode Title="ImageMap.DrawImage Event" Url="html/a1892556-d7e1-742b-88b1-798e93d93026.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DrawImageEventArgs class">
+    <HelpKINode Title="DrawImageEventArgs Class" Url="html/f245cc3b-4ef3-62cf-596f-e70bd4a7336a.htm" />
+    <HelpKINode Title="about DrawImageEventArgs class" Url="html/f245cc3b-4ef3-62cf-596f-e70bd4a7336a.htm" />
+    <HelpKINode Title="constructor" Url="html/8a7ccbf7-6f9d-b61b-8361-efc7633095d1.htm" />
+    <HelpKINode Title="methods" Url="html/991c9b48-a96a-42a8-84e2-817110ecb8c7.htm" />
+    <HelpKINode Title="properties" Url="html/afffdf6f-540a-67e5-3e4b-ecfd0b2f712b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DrawImageEventArgs.DrawFocus property" Url="html/dc34a804-9233-193e-f2e2-f1d444142df3.htm" />
+  <HelpKINode Title="DrawImageEventArgs.DrawImageEventArgs constructor" Url="html/8a7ccbf7-6f9d-b61b-8361-efc7633095d1.htm" />
+  <HelpKINode Title="DrawImageEventArgs.DrawState property" Url="html/1d50c6e2-bcc8-b7a0-5f5d-ed6df9be930a.htm" />
+  <HelpKINode Title="DrawImageEventArgs.Graphics property" Url="html/940d9562-65d2-db48-ce2e-ccd6d064ef22.htm" />
+  <HelpKINode Title="DrawImageEventArgs.ImageOffset property" Url="html/7e9bf685-6505-2d00-6228-6ac7ac2ff107.htm" />
+  <HelpKINode Title="DrawState enumeration" Url="html/2fdc3ad7-454d-5b46-e7f1-d45b558d7984.htm" />
+  <HelpKINode Title="DrawState property" Url="html/1d50c6e2-bcc8-b7a0-5f5d-ed6df9be930a.htm" />
+  <HelpKINode Title="Ellipse enumeration member" Url="html/31b40120-95c5-f705-a1a3-6654defe902c.htm" />
+  <HelpKINode Title="Ellipse property" Url="html/fe3e691b-e8f8-8ac2-b01a-d40e103a255b.htm" />
+  <HelpKINode Title="Enabled property">
+    <HelpKINode Title="IImageArea.Enabled Property " Url="html/493507f9-4380-0131-e7da-df3f1fd1f027.htm" />
+    <HelpKINode Title="ImageAreaBase.Enabled Property " Url="html/4b3be345-6249-0bfc-0767-c55ba721a51f.htm" />
+    <HelpKINode Title="ImageAreaBase.Enabled Property " Url="html/e3119270-5336-b2ab-bcc8-ff5c3ee25655.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Enter enumeration member" Url="html/5e5fd19d-4727-7e6f-a250-5534566fb638.htm" />
+  <HelpKINode Title="Enter event" Url="html/c8e461ae-4084-7d32-8d8e-ef62d4a77cbe.htm" />
+  <HelpKINode Title="Equals method">
+    <HelpKINode Title="ImageAreaBase.Equals Method " Url="html/26085e61-f4cf-61bb-1f5a-f80c9cc2679e.htm" />
+    <HelpKINode Title="ImageAreaBase.Equals Method " Url="html/da3f8559-6f29-b77e-d57c-39b3dbe9b511.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EWSoftware.ImageMaps namespace" Url="html/d419e610-ff55-d5cb-0837-170234b97f4a.htm" />
+  <HelpKINode Title="EWSoftware.ImageMaps.IImageArea interface" Url="html/b2585d7e-54f9-37b9-291b-3c1ba9371ed8.htm" />
+  <HelpKINode Title="EWSoftware.ImageMaps.IImageMap interface" Url="html/7a554300-f50b-d127-acab-28833235e452.htm" />
+  <HelpKINode Title="EWSoftware.ImageMaps.ImageAreaCollection class" Url="html/e1e7300f-7b8f-219d-711a-ebbb7a548615.htm" />
+  <HelpKINode Title="EWSoftware.ImageMaps.ImageAreaShape enumeration" Url="html/31b40120-95c5-f705-a1a3-6654defe902c.htm" />
+  <HelpKINode Title="EWSoftware.ImageMaps.ImageMapClickEventArgs class" Url="html/7de9e75c-0252-5467-80e0-4c7bdc622779.htm" />
+  <HelpKINode Title="EWSoftware.ImageMaps.PointCollection class" Url="html/75fab02e-1464-6df4-eca3-3318182ca07a.htm" />
+  <HelpKINode Title="EWSoftware.ImageMaps.Web.Controls namespace" Url="html/6ab83d70-c697-d634-533e-8a09bddc7f1f.htm" />
+  <HelpKINode Title="EWSoftware.ImageMaps.Web.Controls.AreaClickAction enumeration" Url="html/e577500d-d772-2b65-317b-b46f31b2f7dd.htm" />
+  <HelpKINode Title="EWSoftware.ImageMaps.Web.Controls.ImageAreaBase class" Url="html/399e00e0-b409-27b4-71be-83530c58f280.htm" />
+  <HelpKINode Title="EWSoftware.ImageMaps.Web.Controls.ImageAreaCircle class" Url="html/6e2167a1-c464-b13e-6ff9-e78d846f136d.htm" />
+  <HelpKINode Title="EWSoftware.ImageMaps.Web.Controls.ImageAreaPolygon class" Url="html/1ea904ef-cd9c-5458-4b38-1ef33bf9a878.htm" />
+  <HelpKINode Title="EWSoftware.ImageMaps.Web.Controls.ImageAreaRectangle class" Url="html/daf56c15-80b3-ba58-07d0-a5a75f5b0285.htm" />
+  <HelpKINode Title="EWSoftware.ImageMaps.Web.Controls.ImageMap class" Url="html/737d6f4e-d860-9a17-44cf-3d974659ea3c.htm" />
+  <HelpKINode Title="EWSoftware.ImageMaps.Web.Controls.WebImageAreaCollection class" Url="html/84815bc2-0894-c037-d402-92e53a76400b.htm" />
+  <HelpKINode Title="EWSoftware.ImageMaps.Web.Controls.WindowTarget enumeration" Url="html/83225d9f-64b4-ffd1-d8d7-c86f3af1ed80.htm" />
+  <HelpKINode Title="EWSoftware.ImageMaps.Windows.Forms namespace" Url="html/7d8d2542-efea-a176-4474-f45d37979548.htm" />
+  <HelpKINode Title="EWSoftware.ImageMaps.Windows.Forms.AreaClickAction enumeration" Url="html/30cc065d-70db-803e-4638-110bc4d1df7e.htm" />
+  <HelpKINode Title="EWSoftware.ImageMaps.Windows.Forms.DrawImageEventArgs class" Url="html/f245cc3b-4ef3-62cf-596f-e70bd4a7336a.htm" />
+  <HelpKINode Title="EWSoftware.ImageMaps.Windows.Forms.DrawState enumeration" Url="html/2fdc3ad7-454d-5b46-e7f1-d45b558d7984.htm" />
+  <HelpKINode Title="EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase class" Url="html/38971025-0798-5b2f-86d3-8fe404cffe67.htm" />
+  <HelpKINode Title="EWSoftware.ImageMaps.Windows.Forms.ImageAreaCircle class" Url="html/dcea00f5-d1d7-5306-bf6c-d5805f60ac99.htm" />
+  <HelpKINode Title="EWSoftware.ImageMaps.Windows.Forms.ImageAreaEllipse class" Url="html/ffc54b8c-0002-f275-82d6-1bb133e8453e.htm" />
+  <HelpKINode Title="EWSoftware.ImageMaps.Windows.Forms.ImageAreaEvent enumeration" Url="html/5e5fd19d-4727-7e6f-a250-5534566fb638.htm" />
+  <HelpKINode Title="EWSoftware.ImageMaps.Windows.Forms.ImageAreaPolygon class" Url="html/fab047db-0496-affb-a0a6-5682ee662eef.htm" />
+  <HelpKINode Title="EWSoftware.ImageMaps.Windows.Forms.ImageAreaRectangle class" Url="html/c6197113-f9c2-991e-b0da-f862482d8a05.htm" />
+  <HelpKINode Title="EWSoftware.ImageMaps.Windows.Forms.ImageMap class" Url="html/7790779b-fe39-cd4e-0298-5d6ca89ab4c0.htm" />
+  <HelpKINode Title="FireEvent enumeration member" Url="html/30cc065d-70db-803e-4638-110bc4d1df7e.htm" />
+  <HelpKINode Title="Focus enumeration member" Url="html/2fdc3ad7-454d-5b46-e7f1-d45b558d7984.htm" />
+  <HelpKINode Title="Focus method" Url="html/57900cf3-5f5a-8a7d-a18f-958e083ed336.htm" />
+  <HelpKINode Title="FocusedArea property" Url="html/0a9bda00-6696-6ca2-fdd9-e8ab9f6f0da4.htm" />
+  <HelpKINode Title="ForceScriptRegistration property" Url="html/1904db73-2bdd-1228-dd5f-7a710d89121e.htm" />
+  <HelpKINode Title="FormId property" Url="html/da2d1072-a667-f1ff-056c-c870bc80c12e.htm" />
+  <HelpKINode Title="GetAttribute method" Url="html/70d68c89-51ed-a40e-f5dc-71aae38f800b.htm" />
+  <HelpKINode Title="GetHashCode method">
+    <HelpKINode Title="ImageAreaBase.GetHashCode Method " Url="html/d44bf9ae-f2e3-2de5-c393-80064dbd7105.htm" />
+    <HelpKINode Title="ImageAreaBase.GetHashCode Method " Url="html/56068f1f-61f1-2c94-9d8d-4f8a874f44f5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Graphics property" Url="html/940d9562-65d2-db48-ce2e-ccd6d064ef22.htm" />
+  <HelpKINode Title="History" Url="html/ad1fd96f-bab4-4925-b620-29b634cfc4b0.htm" />
+  <HelpKINode Title="HotLight enumeration member" Url="html/2fdc3ad7-454d-5b46-e7f1-d45b558d7984.htm" />
+  <HelpKINode Title="IImageArea interface">
+    <HelpKINode Title="IImageArea Interface" Url="html/b2585d7e-54f9-37b9-291b-3c1ba9371ed8.htm" />
+    <HelpKINode Title="about IImageArea interface" Url="html/b2585d7e-54f9-37b9-291b-3c1ba9371ed8.htm" />
+    <HelpKINode Title="events" Url="html/a2746547-8ae4-8911-611c-0aa604dc826e.htm" />
+    <HelpKINode Title="methods" Url="html/0cee8221-b003-f2a2-758f-aa359c9d71ca.htm" />
+    <HelpKINode Title="properties" Url="html/e4b3bc73-b610-93f2-8f81-e62436fc85dc.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IImageArea.AccessKey property" Url="html/40cbc2ec-07c3-b24f-1d2a-84b5b2ba5143.htm" />
+  <HelpKINode Title="IImageArea.Coordinates property" Url="html/7a23d7b9-aee6-857b-c025-93a356071d92.htm" />
+  <HelpKINode Title="IImageArea.DrawFocusFrame method" Url="html/b2657ad8-567e-64a2-6150-f1cb10c640fa.htm" />
+  <HelpKINode Title="IImageArea.Enabled property" Url="html/493507f9-4380-0131-e7da-df3f1fd1f027.htm" />
+  <HelpKINode Title="IImageArea.ImageAreaChanged event" Url="html/a2c3ef25-34a9-57ee-c5f0-26632289471e.htm" />
+  <HelpKINode Title="IImageArea.Shape property" Url="html/c1bd5ef1-bb0d-7187-fffd-a3eabb92db25.htm" />
+  <HelpKINode Title="IImageArea.TabIndex property" Url="html/f3165799-7270-d5f3-d01c-0bd770479e4c.htm" />
+  <HelpKINode Title="IImageArea.Tag property" Url="html/8309d10c-3d0c-632b-ac85-97e1eb29e274.htm" />
+  <HelpKINode Title="IImageArea.ToolTip property" Url="html/b2959f3c-355e-c6ee-07b8-4da00aa9817a.htm" />
+  <HelpKINode Title="IImageMap interface">
+    <HelpKINode Title="IImageMap Interface" Url="html/7a554300-f50b-d127-acab-28833235e452.htm" />
+    <HelpKINode Title="about IImageMap interface" Url="html/7a554300-f50b-d127-acab-28833235e452.htm" />
+    <HelpKINode Title="events" Url="html/41cd809a-3cf6-a2df-568c-b7b49629eb56.htm" />
+    <HelpKINode Title="properties" Url="html/28a71023-4c68-deed-a97b-0a708a59ca69.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IImageMap.Areas property" Url="html/0e25c381-ddd0-8a75-e29f-80ff6cbf680e.htm" />
+  <HelpKINode Title="IImageMap.Click event" Url="html/d5f9709d-3ad6-f9a6-9534-6486adc38d8f.htm" />
+  <HelpKINode Title="IImageMap.ImageMapHeight property" Url="html/2c8815a4-4dc3-aa14-30d3-e42e6cf542f8.htm" />
+  <HelpKINode Title="IImageMap.ImageMapWidth property" Url="html/b74fce09-9a74-ef89-9a24-474b73b8b58e.htm" />
+  <HelpKINode Title="IImageMap.ToolTip property" Url="html/fd56dba4-9681-3ba9-26c5-46861a4e0763.htm" />
+  <HelpKINode Title="Image property" Url="html/1ce949d7-f9a5-ff83-320c-c547c2a4c75d.htm" />
+  <HelpKINode Title="ImageAlign property" Url="html/decd4b28-56c0-901e-8a3e-f0e91bc43178.htm" />
+  <HelpKINode Title="ImageAreaBase class">
+    <HelpKINode Title="ImageAreaBase Class" Url="html/38971025-0798-5b2f-86d3-8fe404cffe67.htm" />
+    <HelpKINode Title="ImageAreaBase Class" Url="html/399e00e0-b409-27b4-71be-83530c58f280.htm" />
+    <HelpKINode Title="about ImageAreaBase class" Url="html/399e00e0-b409-27b4-71be-83530c58f280.htm" />
+    <HelpKINode Title="about ImageAreaBase class" Url="html/38971025-0798-5b2f-86d3-8fe404cffe67.htm" />
+    <HelpKINode Title="constructor" Url="html/cd9c2190-bcd5-8894-2476-353a8c2a958f.htm" />
+    <HelpKINode Title="constructor" Url="html/2c9c5542-a55f-8d3b-779a-73ea5a6eabc3.htm" />
+    <HelpKINode Title="events" Url="html/dd069de9-d83a-741e-813f-f6131efeb5a7.htm" />
+    <HelpKINode Title="methods" Url="html/02ccf49b-50fc-3af8-2859-88f189bab043.htm" />
+    <HelpKINode Title="methods" Url="html/1f183a32-bd7d-4c53-5282-de4a1bc25ff3.htm" />
+    <HelpKINode Title="properties" Url="html/b30cf86f-bdaa-dcd6-c026-92ee9e0aa841.htm" />
+    <HelpKINode Title="properties" Url="html/fd950bdd-1da6-6d04-071a-02b740e98ec2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaBase.AccessKey property">
+    <HelpKINode Title="ImageAreaBase.AccessKey Property " Url="html/2dddf59e-ffd8-f5a0-28c1-46411ef44367.htm" />
+    <HelpKINode Title="ImageAreaBase.AccessKey Property " Url="html/ab329faf-62d7-f90f-c025-ff2f7140874e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaBase.Action property">
+    <HelpKINode Title="ImageAreaBase.Action Property " Url="html/57c2d5cb-a055-49f4-db38-45e32ff5c801.htm" />
+    <HelpKINode Title="ImageAreaBase.Action Property " Url="html/8c714be5-9db7-fafa-ef94-40fe5c97c305.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaBase.Attributes property" Url="html/57b1a222-8ca1-c0f0-ae33-5ceb5da10991.htm" />
+  <HelpKINode Title="ImageAreaBase.Click event" Url="html/5ca0980f-96b1-97d7-d55c-6e2371a6b9e3.htm" />
+  <HelpKINode Title="ImageAreaBase.Coordinates property">
+    <HelpKINode Title="ImageAreaBase.Coordinates Property " Url="html/5385c684-bd44-817c-d3fe-7660258fb668.htm" />
+    <HelpKINode Title="ImageAreaBase.Coordinates Property " Url="html/54232ffe-3fe1-7d16-979d-2e3cafe61637.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaBase.DoubleClick event" Url="html/e14341a7-6da7-58fb-547c-7d7934e53e65.htm" />
+  <HelpKINode Title="ImageAreaBase.DrawFocusFrame method">
+    <HelpKINode Title="ImageAreaBase.DrawFocusFrame Method " Url="html/33cd0004-c0db-cc15-dc58-6a45847c8201.htm" />
+    <HelpKINode Title="ImageAreaBase.DrawFocusFrame Method " Url="html/3620aabd-2b6e-ea0e-76b6-d4480b0d0c93.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaBase.DrawImage event" Url="html/b6873972-002a-868c-9a3e-084a09807b24.htm" />
+  <HelpKINode Title="ImageAreaBase.Enabled property">
+    <HelpKINode Title="ImageAreaBase.Enabled Property " Url="html/e3119270-5336-b2ab-bcc8-ff5c3ee25655.htm" />
+    <HelpKINode Title="ImageAreaBase.Enabled Property " Url="html/4b3be345-6249-0bfc-0767-c55ba721a51f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaBase.Enter event" Url="html/c8e461ae-4084-7d32-8d8e-ef62d4a77cbe.htm" />
+  <HelpKINode Title="ImageAreaBase.Equals method">
+    <HelpKINode Title="ImageAreaBase.Equals Method " Url="html/26085e61-f4cf-61bb-1f5a-f80c9cc2679e.htm" />
+    <HelpKINode Title="ImageAreaBase.Equals Method " Url="html/da3f8559-6f29-b77e-d57c-39b3dbe9b511.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaBase.GetAttribute method" Url="html/70d68c89-51ed-a40e-f5dc-71aae38f800b.htm" />
+  <HelpKINode Title="ImageAreaBase.GetHashCode method">
+    <HelpKINode Title="ImageAreaBase.GetHashCode Method " Url="html/56068f1f-61f1-2c94-9d8d-4f8a874f44f5.htm" />
+    <HelpKINode Title="ImageAreaBase.GetHashCode Method " Url="html/d44bf9ae-f2e3-2de5-c393-80064dbd7105.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaBase.ImageAreaBase constructor">
+    <HelpKINode Title="ImageAreaBase Constructor " Url="html/cd9c2190-bcd5-8894-2476-353a8c2a958f.htm" />
+    <HelpKINode Title="ImageAreaBase Constructor " Url="html/2c9c5542-a55f-8d3b-779a-73ea5a6eabc3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaBase.ImageAreaChanged event" Url="html/fee28bd3-7dfb-44e0-e9e6-ae58f32f3bfa.htm" />
+  <HelpKINode Title="ImageAreaBase.IsTrackingViewState property" Url="html/d3d2cbcb-9a63-bbc6-83fd-8334611c5a67.htm" />
+  <HelpKINode Title="ImageAreaBase.Leave event" Url="html/e4955316-de0e-964e-dab8-701aa41623ba.htm" />
+  <HelpKINode Title="ImageAreaBase.LoadViewState method" Url="html/2c7deb03-cd79-1bef-65db-6776d75abdc9.htm" />
+  <HelpKINode Title="ImageAreaBase.MarkAsDirty method" Url="html/e278b981-a3d0-6356-8060-3a9d3f939cd1.htm" />
+  <HelpKINode Title="ImageAreaBase.MouseDown event" Url="html/22031704-f436-385a-4059-7ca52a15e6b2.htm" />
+  <HelpKINode Title="ImageAreaBase.MouseEnter event" Url="html/eff2f460-469e-fd07-ac08-6bca5c25de69.htm" />
+  <HelpKINode Title="ImageAreaBase.MouseHover event" Url="html/4911564b-23b1-e9fc-a4e2-fbbe643c48c8.htm" />
+  <HelpKINode Title="ImageAreaBase.MouseLeave event" Url="html/f8576cc5-0a1a-eb33-b571-d8b18aafd3d3.htm" />
+  <HelpKINode Title="ImageAreaBase.MouseMove event" Url="html/1a191545-ea93-f648-da9b-06289da3e0e2.htm" />
+  <HelpKINode Title="ImageAreaBase.MouseUp event" Url="html/59749788-147d-64e4-b571-afef07a1a004.htm" />
+  <HelpKINode Title="ImageAreaBase.NavigateUrl property" Url="html/ab9fd39e-825e-a940-c7af-32b028cb2e89.htm" />
+  <HelpKINode Title="ImageAreaBase.OnClick method" Url="html/c1e64476-99e8-1918-cb7d-226997573758.htm" />
+  <HelpKINode Title="ImageAreaBase.OnDoubleClick method" Url="html/012a310a-c5c0-e2df-276c-eada72986e56.htm" />
+  <HelpKINode Title="ImageAreaBase.OnDrawImage method" Url="html/527bc115-1fcc-7a1e-2759-4103afb800ef.htm" />
+  <HelpKINode Title="ImageAreaBase.OnEnter method" Url="html/c2316bb1-8554-fc31-61f1-9c28873d6bb1.htm" />
+  <HelpKINode Title="ImageAreaBase.OnImageAreaChanged method" Url="html/0f13a528-2ff3-932a-d312-24dae454c5dc.htm" />
+  <HelpKINode Title="ImageAreaBase.OnLeave method" Url="html/c4eeafb5-534e-eec2-4650-b5ed718ecf90.htm" />
+  <HelpKINode Title="ImageAreaBase.OnMouseDown method" Url="html/c43b334b-7d55-973c-4f86-ecc163b68609.htm" />
+  <HelpKINode Title="ImageAreaBase.OnMouseEnter method" Url="html/61ed4b60-4def-4431-1a07-e068f3555e20.htm" />
+  <HelpKINode Title="ImageAreaBase.OnMouseHover method" Url="html/f9923a8e-ebe3-c233-c600-9b0b94690bab.htm" />
+  <HelpKINode Title="ImageAreaBase.OnMouseLeave method" Url="html/f245bdf1-f34d-8cb6-6b26-72baae7ceff8.htm" />
+  <HelpKINode Title="ImageAreaBase.OnMouseMove method" Url="html/4d14eb47-948f-cc77-6b6d-1085448a62e3.htm" />
+  <HelpKINode Title="ImageAreaBase.OnMouseUp method" Url="html/bb123d40-5210-7502-25dc-ab4e62b89836.htm" />
+  <HelpKINode Title="ImageAreaBase.OwnerDraw property" Url="html/abcebea3-c978-11fb-5089-a626bc1d1eeb.htm" />
+  <HelpKINode Title="ImageAreaBase.RaiseEvent method" Url="html/43311f2c-11b7-e18f-9e06-3f1c1e8defab.htm" />
+  <HelpKINode Title="ImageAreaBase.SaveViewState method" Url="html/e70a04fc-b5ab-5b73-2403-667398057e2d.htm" />
+  <HelpKINode Title="ImageAreaBase.SetAttribute method" Url="html/3538514b-b58f-b5fa-4ead-80cdd1b6eea5.htm" />
+  <HelpKINode Title="ImageAreaBase.Shape property">
+    <HelpKINode Title="ImageAreaBase.Shape Property " Url="html/5fdce257-262c-f852-c58e-7f5c87fd493b.htm" />
+    <HelpKINode Title="ImageAreaBase.Shape Property " Url="html/aed1815a-6189-aa42-2190-684e2294e741.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaBase.ShapeText property" Url="html/3fff4f31-ba48-55da-16f2-809ed130efc7.htm" />
+  <HelpKINode Title="ImageAreaBase.TabIndex property">
+    <HelpKINode Title="ImageAreaBase.TabIndex Property " Url="html/f3b8e766-4941-a1a6-34bd-81b215117ece.htm" />
+    <HelpKINode Title="ImageAreaBase.TabIndex Property " Url="html/8a0e8ca0-1cc4-0a98-b5b9-0cc7da77d977.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaBase.Tag property">
+    <HelpKINode Title="ImageAreaBase.Tag Property " Url="html/52a62254-0a8d-fbe9-4fab-bdd14fac42c0.htm" />
+    <HelpKINode Title="ImageAreaBase.Tag Property " Url="html/2ab426f5-8e06-a2cf-611c-c285ae1041f8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaBase.TagString property" Url="html/1702ff04-d8f7-6341-5dbd-f6c20891c624.htm" />
+  <HelpKINode Title="ImageAreaBase.Target property" Url="html/fb841f98-6060-37f8-7538-0faed3817102.htm" />
+  <HelpKINode Title="ImageAreaBase.TargetName property" Url="html/08dde520-093f-3dd1-487a-5c9a22438dc3.htm" />
+  <HelpKINode Title="ImageAreaBase.ToolTip property">
+    <HelpKINode Title="ImageAreaBase.ToolTip Property " Url="html/d1f86789-a4e6-cb94-0437-7e69dcb73b84.htm" />
+    <HelpKINode Title="ImageAreaBase.ToolTip Property " Url="html/4fa54ac8-3c9f-e904-15da-834eab4a79f4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaBase.ToString method">
+    <HelpKINode Title="ImageAreaBase.ToString Method " Url="html/f9ffb0ad-12fa-a60a-b888-689a96e97bf3.htm" />
+    <HelpKINode Title="ImageAreaBase.ToString Method " Url="html/bd3ffce7-3862-a1a6-65ee-b169f0bee5eb.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaBase.TrackViewState method" Url="html/0b8de050-75dc-c06c-a061-b4ba04a814ba.htm" />
+  <HelpKINode Title="ImageAreaBase.ViewState property" Url="html/ddb52f3a-986d-0912-4d58-8ad6ff62d639.htm" />
+  <HelpKINode Title="ImageAreaChanged event">
+    <HelpKINode Title="IImageArea.ImageAreaChanged Event" Url="html/a2c3ef25-34a9-57ee-c5f0-26632289471e.htm" />
+    <HelpKINode Title="ImageAreaBase.ImageAreaChanged Event" Url="html/fee28bd3-7dfb-44e0-e9e6-ae58f32f3bfa.htm" />
+    <HelpKINode Title="ImageAreaCollection.ImageAreaChanged Event" Url="html/3fca1d5c-8cc7-1231-1b4a-773051677d6e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaCircle class">
+    <HelpKINode Title="ImageAreaCircle Class" Url="html/dcea00f5-d1d7-5306-bf6c-d5805f60ac99.htm" />
+    <HelpKINode Title="ImageAreaCircle Class" Url="html/6e2167a1-c464-b13e-6ff9-e78d846f136d.htm" />
+    <HelpKINode Title="about ImageAreaCircle class" Url="html/dcea00f5-d1d7-5306-bf6c-d5805f60ac99.htm" />
+    <HelpKINode Title="about ImageAreaCircle class" Url="html/6e2167a1-c464-b13e-6ff9-e78d846f136d.htm" />
+    <HelpKINode Title="constructor" Url="html/6e59d5fc-472d-c35f-5492-48e266a9767b.htm" />
+    <HelpKINode Title="constructor" Url="html/643a611a-7d1b-7e36-97be-daff79e6cee0.htm" />
+    <HelpKINode Title="events" Url="html/8291e1a3-8f7d-7106-7cb9-ad0693621860.htm" />
+    <HelpKINode Title="methods" Url="html/45b2873a-1dc7-6445-02f2-3424f7c98b8e.htm" />
+    <HelpKINode Title="methods" Url="html/27d8efc2-373f-afbf-393c-37ba417a3ff5.htm" />
+    <HelpKINode Title="properties" Url="html/7c9b4177-ea5c-d7f4-a3dc-b42bd2e06cd2.htm" />
+    <HelpKINode Title="properties" Url="html/a003cfb7-2821-8f73-e7ac-58f3717bb61f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaCircle.CenterPoint property">
+    <HelpKINode Title="ImageAreaCircle.CenterPoint Property " Url="html/cf97d40a-3d0f-065a-8778-8b6cbf6e43ef.htm" />
+    <HelpKINode Title="ImageAreaCircle.CenterPoint Property " Url="html/4f17ed72-b807-7511-84e4-06b00f29c375.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaCircle.Coordinates property">
+    <HelpKINode Title="ImageAreaCircle.Coordinates Property " Url="html/c2d197be-7808-8117-fca0-744da516092c.htm" />
+    <HelpKINode Title="ImageAreaCircle.Coordinates Property " Url="html/c9eded1f-2a5f-7a43-2892-6aea7e084d39.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaCircle.DrawFocusFrame method">
+    <HelpKINode Title="ImageAreaCircle.DrawFocusFrame Method " Url="html/bd7cff1f-1465-51dc-5cf7-d45b7977a21e.htm" />
+    <HelpKINode Title="ImageAreaCircle.DrawFocusFrame Method " Url="html/591e9c70-2c73-1bb7-a6df-3a8a9dc20276.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaCircle.ImageAreaCircle constructor">
+    <HelpKINode Title="ImageAreaCircle Constructor " Url="html/6e59d5fc-472d-c35f-5492-48e266a9767b.htm" />
+    <HelpKINode Title="ImageAreaCircle Constructor " Url="html/643a611a-7d1b-7e36-97be-daff79e6cee0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaCircle.Radius property">
+    <HelpKINode Title="ImageAreaCircle.Radius Property " Url="html/b96dd294-812c-0099-1149-1112b7cb7ab1.htm" />
+    <HelpKINode Title="ImageAreaCircle.Radius Property " Url="html/bedfd3aa-9c59-c5da-349d-19d1fe3074fc.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaCircle.Shape property">
+    <HelpKINode Title="ImageAreaCircle.Shape Property " Url="html/658da2d2-a055-b80b-22cd-e20e86d10624.htm" />
+    <HelpKINode Title="ImageAreaCircle.Shape Property " Url="html/82339f0e-8190-a5f3-a3e5-24a003441edd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaCircle.ShapeText property" Url="html/8abf4ef5-55a7-a1c9-cb14-efac85001360.htm" />
+  <HelpKINode Title="ImageAreaCollection class">
+    <HelpKINode Title="ImageAreaCollection Class" Url="html/e1e7300f-7b8f-219d-711a-ebbb7a548615.htm" />
+    <HelpKINode Title="about ImageAreaCollection class" Url="html/e1e7300f-7b8f-219d-711a-ebbb7a548615.htm" />
+    <HelpKINode Title="constructor" Url="html/6c79a6a5-c53a-27f6-e279-b49ac04ddb6c.htm" />
+    <HelpKINode Title="events" Url="html/38136649-940c-df75-1a7f-00ec84cdcd05.htm" />
+    <HelpKINode Title="methods" Url="html/2a91404a-57ab-3f67-9689-597220744ac6.htm" />
+    <HelpKINode Title="properties" Url="html/d59ff77d-2f16-91b9-e75c-0dc9a92b6b26.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaCollection.AddRange method" Url="html/b883d6f8-8dc6-bedc-2f31-c1670029f06c.htm" />
+  <HelpKINode Title="ImageAreaCollection.ClearItems method" Url="html/e3ea6950-e554-4dd3-d9fe-e4b462c00809.htm" />
+  <HelpKINode Title="ImageAreaCollection.ImageAreaChanged event" Url="html/3fca1d5c-8cc7-1231-1b4a-773051677d6e.htm" />
+  <HelpKINode Title="ImageAreaCollection.ImageAreaCollection constructor" Url="html/6c79a6a5-c53a-27f6-e279-b49ac04ddb6c.htm" />
+  <HelpKINode Title="ImageAreaCollection.ImageMapControl property" Url="html/be7a77d1-a969-2fee-0897-096f02eec48c.htm" />
+  <HelpKINode Title="ImageAreaCollection.InsertItem method" Url="html/05949fec-421d-7d38-552e-765e9e39c153.htm" />
+  <HelpKINode Title="ImageAreaCollection.RemoveItem method" Url="html/e57409f9-f19b-e22a-37b9-6229ab8fccd6.htm" />
+  <HelpKINode Title="ImageAreaCollection.SetItem method" Url="html/8ad0fe5d-5ea0-cd55-198c-cdcd01228aa1.htm" />
+  <HelpKINode Title="ImageAreaCursor property" Url="html/2ea2e195-597b-c72f-4ab0-a87dc39305ef.htm" />
+  <HelpKINode Title="ImageAreaEllipse class">
+    <HelpKINode Title="ImageAreaEllipse Class" Url="html/ffc54b8c-0002-f275-82d6-1bb133e8453e.htm" />
+    <HelpKINode Title="about ImageAreaEllipse class" Url="html/ffc54b8c-0002-f275-82d6-1bb133e8453e.htm" />
+    <HelpKINode Title="constructor" Url="html/88984ba1-8c16-2afe-8005-c791a1fcce96.htm" />
+    <HelpKINode Title="events" Url="html/44160246-d36d-5f34-1476-1c594aa2b5b1.htm" />
+    <HelpKINode Title="methods" Url="html/efc46a31-f5e9-de20-88ea-c389b9a02fea.htm" />
+    <HelpKINode Title="properties" Url="html/ac61395b-4207-31c6-bbb8-db86142c03ec.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaEllipse.Coordinates property" Url="html/c21d0aa2-b4c8-29c5-d86f-a2edfd8cd09a.htm" />
+  <HelpKINode Title="ImageAreaEllipse.DrawFocusFrame method" Url="html/705645ec-bc74-afc3-e240-b02c67985382.htm" />
+  <HelpKINode Title="ImageAreaEllipse.Ellipse property" Url="html/fe3e691b-e8f8-8ac2-b01a-d40e103a255b.htm" />
+  <HelpKINode Title="ImageAreaEllipse.ImageAreaEllipse constructor" Url="html/88984ba1-8c16-2afe-8005-c791a1fcce96.htm" />
+  <HelpKINode Title="ImageAreaEllipse.Shape property" Url="html/afe40195-1d52-51d6-b15c-b63e3ee3e4b7.htm" />
+  <HelpKINode Title="ImageAreaEvent enumeration" Url="html/5e5fd19d-4727-7e6f-a250-5534566fb638.htm" />
+  <HelpKINode Title="ImageAreaPolygon class">
+    <HelpKINode Title="ImageAreaPolygon Class" Url="html/1ea904ef-cd9c-5458-4b38-1ef33bf9a878.htm" />
+    <HelpKINode Title="ImageAreaPolygon Class" Url="html/fab047db-0496-affb-a0a6-5682ee662eef.htm" />
+    <HelpKINode Title="about ImageAreaPolygon class" Url="html/fab047db-0496-affb-a0a6-5682ee662eef.htm" />
+    <HelpKINode Title="about ImageAreaPolygon class" Url="html/1ea904ef-cd9c-5458-4b38-1ef33bf9a878.htm" />
+    <HelpKINode Title="constructor" Url="html/3603a903-4bf3-81b7-c2da-0a97aaf9f6f8.htm" />
+    <HelpKINode Title="constructor" Url="html/297188c8-8d88-f69e-2292-dd049b4b3a89.htm" />
+    <HelpKINode Title="events" Url="html/a65cf963-ca85-cecb-2022-93f8bfcf7cb1.htm" />
+    <HelpKINode Title="methods" Url="html/145fa51f-051b-5a61-17d8-d201cd881826.htm" />
+    <HelpKINode Title="methods" Url="html/162c1022-d2c8-6dfb-9ef6-b70e0328d349.htm" />
+    <HelpKINode Title="properties" Url="html/a6d7a456-3087-81cd-ec71-33364c7c3186.htm" />
+    <HelpKINode Title="properties" Url="html/d3106b5c-7543-fbce-0beb-189338d2b423.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaPolygon.BoundingRectangle property" Url="html/017e8c50-4be9-fe66-9d19-2e3feab25234.htm" />
+  <HelpKINode Title="ImageAreaPolygon.Coordinates property">
+    <HelpKINode Title="ImageAreaPolygon.Coordinates Property " Url="html/60d1f3c7-e71f-e8a0-2f94-66bfa5c510e7.htm" />
+    <HelpKINode Title="ImageAreaPolygon.Coordinates Property " Url="html/ec335a99-89fb-f900-3a98-e4f735ee1553.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaPolygon.DrawFocusFrame method">
+    <HelpKINode Title="ImageAreaPolygon.DrawFocusFrame Method " Url="html/8ba4cd4e-7bc0-9166-2cb3-a13ab5252796.htm" />
+    <HelpKINode Title="ImageAreaPolygon.DrawFocusFrame Method " Url="html/092c56c5-0921-df2d-d065-95b672caa01d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaPolygon.ImageAreaPolygon constructor">
+    <HelpKINode Title="ImageAreaPolygon Constructor " Url="html/297188c8-8d88-f69e-2292-dd049b4b3a89.htm" />
+    <HelpKINode Title="ImageAreaPolygon Constructor " Url="html/3603a903-4bf3-81b7-c2da-0a97aaf9f6f8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaPolygon.Points property">
+    <HelpKINode Title="ImageAreaPolygon.Points Property " Url="html/e347f1cd-284b-e291-c197-a371df2dda94.htm" />
+    <HelpKINode Title="ImageAreaPolygon.Points Property " Url="html/e9fac473-4ef7-2c37-b6c6-ef2129493790.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaPolygon.Shape property">
+    <HelpKINode Title="ImageAreaPolygon.Shape Property " Url="html/72c4bef2-c582-d062-0af1-d69e94af9614.htm" />
+    <HelpKINode Title="ImageAreaPolygon.Shape Property " Url="html/55a853c1-8acb-dd70-735d-4afc0b512a9e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaPolygon.ShapeText property" Url="html/1f89c24e-28b6-bd81-1df2-5af97e251d69.htm" />
+  <HelpKINode Title="ImageAreaRectangle class">
+    <HelpKINode Title="ImageAreaRectangle Class" Url="html/daf56c15-80b3-ba58-07d0-a5a75f5b0285.htm" />
+    <HelpKINode Title="ImageAreaRectangle Class" Url="html/c6197113-f9c2-991e-b0da-f862482d8a05.htm" />
+    <HelpKINode Title="about ImageAreaRectangle class" Url="html/daf56c15-80b3-ba58-07d0-a5a75f5b0285.htm" />
+    <HelpKINode Title="about ImageAreaRectangle class" Url="html/c6197113-f9c2-991e-b0da-f862482d8a05.htm" />
+    <HelpKINode Title="constructor" Url="html/c64d2ebc-19fd-0d10-66fe-ae2393420dac.htm" />
+    <HelpKINode Title="constructor" Url="html/040a55e1-a06d-4388-7277-ceaf7e4c5f9b.htm" />
+    <HelpKINode Title="events" Url="html/9f5495e0-56fb-d0f0-b4f3-f6b7be16dab4.htm" />
+    <HelpKINode Title="methods" Url="html/a79be60f-dc48-f14f-88bc-11a00b05ea2d.htm" />
+    <HelpKINode Title="methods" Url="html/b1a52d36-ba21-dcc4-e1a3-68d5c0e41883.htm" />
+    <HelpKINode Title="properties" Url="html/91a7e71d-edc6-be6c-7d27-e7d51cfacc6b.htm" />
+    <HelpKINode Title="properties" Url="html/fb634b5f-09a6-d7b0-807f-d1879c13341d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaRectangle.Coordinates property">
+    <HelpKINode Title="ImageAreaRectangle.Coordinates Property " Url="html/54541635-0c61-7951-8841-bd91f2b31f8b.htm" />
+    <HelpKINode Title="ImageAreaRectangle.Coordinates Property " Url="html/927890da-5362-f4e5-08aa-414dab389a16.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaRectangle.DrawFocusFrame method">
+    <HelpKINode Title="ImageAreaRectangle.DrawFocusFrame Method " Url="html/87d0334a-4d8f-9baf-1a98-08135b3a9a5d.htm" />
+    <HelpKINode Title="ImageAreaRectangle.DrawFocusFrame Method " Url="html/bab530b8-84cf-6de4-b845-64dfee7c5531.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaRectangle.ImageAreaRectangle constructor">
+    <HelpKINode Title="ImageAreaRectangle Constructor " Url="html/c64d2ebc-19fd-0d10-66fe-ae2393420dac.htm" />
+    <HelpKINode Title="ImageAreaRectangle Constructor " Url="html/040a55e1-a06d-4388-7277-ceaf7e4c5f9b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaRectangle.Rectangle property">
+    <HelpKINode Title="ImageAreaRectangle.Rectangle Property " Url="html/9b8a23d3-1e2a-de96-7295-d9f977a6423e.htm" />
+    <HelpKINode Title="ImageAreaRectangle.Rectangle Property " Url="html/c9203d82-5ea7-aa46-48e6-c188f48b3ea1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaRectangle.Shape property">
+    <HelpKINode Title="ImageAreaRectangle.Shape Property " Url="html/121eeee5-7e76-1df0-9739-16fe1ddabd21.htm" />
+    <HelpKINode Title="ImageAreaRectangle.Shape Property " Url="html/26f0b07b-71c5-cf72-c292-05b8af4373cc.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageAreaRectangle.ShapeText property" Url="html/ebed5ece-4ceb-0030-c0f1-2ec41b678082.htm" />
+  <HelpKINode Title="ImageAreaShape enumeration" Url="html/31b40120-95c5-f705-a1a3-6654defe902c.htm" />
+  <HelpKINode Title="ImageMap class">
+    <HelpKINode Title="ImageMap Class" Url="html/7790779b-fe39-cd4e-0298-5d6ca89ab4c0.htm" />
+    <HelpKINode Title="ImageMap Class" Url="html/737d6f4e-d860-9a17-44cf-3d974659ea3c.htm" />
+    <HelpKINode Title="about ImageMap class" Url="html/7790779b-fe39-cd4e-0298-5d6ca89ab4c0.htm" />
+    <HelpKINode Title="about ImageMap class" Url="html/737d6f4e-d860-9a17-44cf-3d974659ea3c.htm" />
+    <HelpKINode Title="constructor" Url="html/f83ff85b-6898-64df-d923-df9775e9fca1.htm" />
+    <HelpKINode Title="constructor" Url="html/286a7152-b340-50af-ffef-0d83d17338b0.htm" />
+    <HelpKINode Title="events" Url="html/42a38939-4317-77fd-811e-d13a952867da.htm" />
+    <HelpKINode Title="events" Url="html/e1b110a6-0df5-0d7b-e535-a0034b79021f.htm" />
+    <HelpKINode Title="methods" Url="html/54e4aa7e-5fbe-763c-de45-2c525f6dc620.htm" />
+    <HelpKINode Title="methods" Url="html/9df0b2b9-b86e-5f9c-5592-37b1ea6c6ce8.htm" />
+    <HelpKINode Title="properties" Url="html/52219607-83bb-748a-14a1-383ee80879f6.htm" />
+    <HelpKINode Title="properties" Url="html/2fd8da27-208d-6675-276b-7072f60731f8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageMap.AddAttributesToRender method" Url="html/fb6ba851-2680-e117-9ac8-7b2670777e86.htm" />
+  <HelpKINode Title="ImageMap.Areas property">
+    <HelpKINode Title="ImageMap.Areas Property " Url="html/33653c36-e4c1-226b-27c3-8d05164d984c.htm" />
+    <HelpKINode Title="ImageMap.Areas Property " Url="html/de86c85a-626d-a752-229c-9c2dd30bc691.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageMap.CausesValidation property" Url="html/5dd86460-5b09-8d58-1a6a-a824f0cc270a.htm" />
+  <HelpKINode Title="ImageMap.CenterImage property" Url="html/06780734-6e5b-69d6-0976-605fa261ad14.htm" />
+  <HelpKINode Title="ImageMap.Click event">
+    <HelpKINode Title="ImageMap.Click Event" Url="html/c7d1162f-786f-d949-296a-ad85c20b365b.htm" />
+    <HelpKINode Title="ImageMap.Click Event" Url="html/64451c6d-327b-d0cc-907b-caecf5345176.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageMap.Cursor property" Url="html/765972a5-4c74-d512-b0e2-3773f5f6c592.htm" />
+  <HelpKINode Title="ImageMap.Dispose method" Url="html/aea37da3-8edc-b661-efa3-f4f75039e54f.htm" />
+  <HelpKINode Title="ImageMap.DoubleClick event" Url="html/67cb6b19-6b91-2d2d-c7e4-cf9259d37106.htm" />
+  <HelpKINode Title="ImageMap.DrawImage event" Url="html/a1892556-d7e1-742b-88b1-798e93d93026.htm" />
+  <HelpKINode Title="ImageMap.Focus method" Url="html/57900cf3-5f5a-8a7d-a18f-958e083ed336.htm" />
+  <HelpKINode Title="ImageMap.FocusedArea property" Url="html/0a9bda00-6696-6ca2-fdd9-e8ab9f6f0da4.htm" />
+  <HelpKINode Title="ImageMap.ForceScriptRegistration property" Url="html/1904db73-2bdd-1228-dd5f-7a710d89121e.htm" />
+  <HelpKINode Title="ImageMap.FormId property" Url="html/da2d1072-a667-f1ff-056c-c870bc80c12e.htm" />
+  <HelpKINode Title="ImageMap.Image property" Url="html/1ce949d7-f9a5-ff83-320c-c547c2a4c75d.htm" />
+  <HelpKINode Title="ImageMap.ImageAlign property" Url="html/decd4b28-56c0-901e-8a3e-f0e91bc43178.htm" />
+  <HelpKINode Title="ImageMap.ImageAreaCursor property" Url="html/2ea2e195-597b-c72f-4ab0-a87dc39305ef.htm" />
+  <HelpKINode Title="ImageMap.ImageMap constructor">
+    <HelpKINode Title="ImageMap Constructor " Url="html/f83ff85b-6898-64df-d923-df9775e9fca1.htm" />
+    <HelpKINode Title="ImageMap Constructor " Url="html/286a7152-b340-50af-ffef-0d83d17338b0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageMap.ImageMapHeight property">
+    <HelpKINode Title="ImageMap.ImageMapHeight Property " Url="html/4915c1ad-6e1e-9faf-d6bf-955c43075bb3.htm" />
+    <HelpKINode Title="ImageMap.ImageMapHeight Property " Url="html/9b6cbb85-b842-cc42-cec3-27ceb316e788.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageMap.ImageMapWidth property">
+    <HelpKINode Title="ImageMap.ImageMapWidth Property " Url="html/f9e99071-2da9-468a-e0e6-0ccf65584716.htm" />
+    <HelpKINode Title="ImageMap.ImageMapWidth Property " Url="html/8214d410-ee22-fb93-64d3-e3a5c93c87e1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageMap.ImageUrl property" Url="html/96e3f73b-0cc7-da39-6e4c-cdf277128760.htm" />
+  <HelpKINode Title="ImageMap.LoadViewState method" Url="html/b39a0327-a8cd-cf09-6a9f-f6b2730b73ef.htm" />
+  <HelpKINode Title="ImageMap.MouseArea property" Url="html/6efebf07-1baf-1ec4-2736-65f90efe6b1e.htm" />
+  <HelpKINode Title="ImageMap.OnClick method">
+    <HelpKINode Title="ImageMap.OnClick Method " Url="html/0da7b0c7-ab99-02a4-2f30-4b1807e66f6a.htm" />
+    <HelpKINode Title="ImageMap.OnClick Method " Url="html/ab207e5d-202b-93d4-db2f-f2ed5ffa52e2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageMap.OnDoubleClick method" Url="html/9364fd94-4576-cbbc-6a9d-7a9e83c6bf72.htm" />
+  <HelpKINode Title="ImageMap.OnDrawImage method" Url="html/998ce182-b8c1-13d0-8dd4-2d00babf57c1.htm" />
+  <HelpKINode Title="ImageMap.OnEnabledChanged method" Url="html/468768a2-8f69-cf15-2538-6b0da8cb7124.htm" />
+  <HelpKINode Title="ImageMap.OnGotFocus method" Url="html/407e0a93-7d4a-a041-5085-ac7f91eb26b9.htm" />
+  <HelpKINode Title="ImageMap.OnLostFocus method" Url="html/a9718200-ba41-427f-c27c-8fa16aa761dc.htm" />
+  <HelpKINode Title="ImageMap.OnMouseDown method" Url="html/125a2b36-1336-f8ef-ae55-ab2cbf064ec5.htm" />
+  <HelpKINode Title="ImageMap.OnMouseHover method" Url="html/e64dd293-52b3-f163-9044-bad7dd808feb.htm" />
+  <HelpKINode Title="ImageMap.OnMouseMove method" Url="html/46a72e40-63cc-b36e-17d8-5444e87d338f.htm" />
+  <HelpKINode Title="ImageMap.OnMouseUp method" Url="html/a03101b1-e528-f91a-ea49-23f079e6ffdb.htm" />
+  <HelpKINode Title="ImageMap.OnPaint method" Url="html/ef00ee65-b39b-268e-2c2d-9a8cc76afe22.htm" />
+  <HelpKINode Title="ImageMap.OnParentChanged method" Url="html/8539b6c0-6560-536a-4a8e-3e63edbfd721.htm" />
+  <HelpKINode Title="ImageMap.OnPreRender method" Url="html/00f516e1-50dd-bbff-d177-b784c44e2a48.htm" />
+  <HelpKINode Title="ImageMap.OnSizeChanged method" Url="html/b8c8481b-28e5-b1de-1ec6-6fb15a985646.htm" />
+  <HelpKINode Title="ImageMap.OnStyleChanged method" Url="html/ad851816-1d5d-e611-a34e-a86bb5e40bcf.htm" />
+  <HelpKINode Title="ImageMap.OnVisibleChanged method" Url="html/6a516045-25fa-351a-8d9a-4607f296e73e.htm" />
+  <HelpKINode Title="ImageMap.OwnerDraw property" Url="html/cc7c826e-31e4-ec17-2958-a3d1eff69244.htm" />
+  <HelpKINode Title="ImageMap.ProcessDialogChar method" Url="html/d209fb3f-56d5-45c1-f967-38406c1e4bc3.htm" />
+  <HelpKINode Title="ImageMap.ProcessDialogKey method" Url="html/5aea0133-95a0-9e20-a03a-fc98da697f17.htm" />
+  <HelpKINode Title="ImageMap.ProcessMnemonic method" Url="html/8dfb7618-80dd-845c-abf6-09723bbf3e32.htm" />
+  <HelpKINode Title="ImageMap.ProcessTabKey method" Url="html/711a2353-d67f-22da-535a-f3f29106cf66.htm" />
+  <HelpKINode Title="ImageMap.RaisePostBackEvent method" Url="html/c04f634b-612b-e4ba-1d70-20ae96b7f983.htm" />
+  <HelpKINode Title="ImageMap.RefreshAreaInformation method" Url="html/9bb21b2a-3e73-89f5-b415-cfa08d547e26.htm" />
+  <HelpKINode Title="ImageMap.Render method" Url="html/89e8991c-f1fb-4411-ba4c-a1d5f800a107.htm" />
+  <HelpKINode Title="ImageMap.SaveViewState method" Url="html/98e55c9e-e0a3-799f-82ea-e70dc0169fc5.htm" />
+  <HelpKINode Title="ImageMap.SizeToImage property" Url="html/9cfa8c13-5ec8-23d6-be33-648685dcd4fc.htm" />
+  <HelpKINode Title="ImageMap.ToolTip property">
+    <HelpKINode Title="ImageMap.ToolTip Property " Url="html/bb015dd7-b0df-f02e-f9ff-857f47be17bd.htm" />
+    <HelpKINode Title="ImageMap.ToolTip Property " Url="html/ee6da34a-d533-f48d-1430-2e92ac9a3d02.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageMap.TrackViewState method" Url="html/154785ee-02b3-60a8-f1b8-3158368f9812.htm" />
+  <HelpKINode Title="ImageMap.WndProc method" Url="html/2ec7a324-f910-b282-a776-efd5bf7493ad.htm" />
+  <HelpKINode Title="ImageMapClickEventArgs class">
+    <HelpKINode Title="ImageMapClickEventArgs Class" Url="html/7de9e75c-0252-5467-80e0-4c7bdc622779.htm" />
+    <HelpKINode Title="about ImageMapClickEventArgs class" Url="html/7de9e75c-0252-5467-80e0-4c7bdc622779.htm" />
+    <HelpKINode Title="constructor" Url="html/f3f06bba-5edf-a8a5-e849-f9daadc3a222.htm" />
+    <HelpKINode Title="methods" Url="html/4d50de88-ff50-cec0-d4ab-24c08430d6f4.htm" />
+    <HelpKINode Title="properties" Url="html/d74f9fd4-0ee9-2ddd-d5af-764c155cbce5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageMapClickEventArgs.AreaIndex property" Url="html/0cbd23df-4b20-d4db-6989-3f53a833d42e.htm" />
+  <HelpKINode Title="ImageMapClickEventArgs.ImageMapClickEventArgs constructor" Url="html/f3f06bba-5edf-a8a5-e849-f9daadc3a222.htm" />
+  <HelpKINode Title="ImageMapClickEventArgs.XCoordinate property" Url="html/aa5c6a65-531a-98ea-88c1-a22c29d35d86.htm" />
+  <HelpKINode Title="ImageMapClickEventArgs.YCoordinate property" Url="html/ffb764f1-94df-77f9-4590-481b40e03cb7.htm" />
+  <HelpKINode Title="ImageMapControl property" Url="html/be7a77d1-a969-2fee-0897-096f02eec48c.htm" />
+  <HelpKINode Title="ImageMapHeight property">
+    <HelpKINode Title="IImageMap.ImageMapHeight Property " Url="html/2c8815a4-4dc3-aa14-30d3-e42e6cf542f8.htm" />
+    <HelpKINode Title="ImageMap.ImageMapHeight Property " Url="html/4915c1ad-6e1e-9faf-d6bf-955c43075bb3.htm" />
+    <HelpKINode Title="ImageMap.ImageMapHeight Property " Url="html/9b6cbb85-b842-cc42-cec3-27ceb316e788.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageMapWidth property">
+    <HelpKINode Title="IImageMap.ImageMapWidth Property " Url="html/b74fce09-9a74-ef89-9a24-474b73b8b58e.htm" />
+    <HelpKINode Title="ImageMap.ImageMapWidth Property " Url="html/f9e99071-2da9-468a-e0e6-0ccf65584716.htm" />
+    <HelpKINode Title="ImageMap.ImageMapWidth Property " Url="html/8214d410-ee22-fb93-64d3-e3a5c93c87e1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageOffset property" Url="html/7e9bf685-6505-2d00-6228-6ac7ac2ff107.htm" />
+  <HelpKINode Title="ImageUrl property" Url="html/96e3f73b-0cc7-da39-6e4c-cdf277128760.htm" />
+  <HelpKINode Title="InsertItem method">
+    <HelpKINode Title="ImageAreaCollection.InsertItem Method " Url="html/05949fec-421d-7d38-552e-765e9e39c153.htm" />
+    <HelpKINode Title="WebImageAreaCollection.InsertItem Method " Url="html/f4de2ee8-63c4-2f08-ff5e-f48fa3a3e608.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IsTrackingViewState property">
+    <HelpKINode Title="ImageAreaBase.IsTrackingViewState Property " Url="html/d3d2cbcb-9a63-bbc6-83fd-8334611c5a67.htm" />
+    <HelpKINode Title="WebImageAreaCollection.IsTrackingViewState Property " Url="html/084c605c-6454-1886-83d4-b0cc23b961f1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Leave enumeration member" Url="html/5e5fd19d-4727-7e6f-a250-5534566fb638.htm" />
+  <HelpKINode Title="Leave event" Url="html/e4955316-de0e-964e-dab8-701aa41623ba.htm" />
+  <HelpKINode Title="license agreement" Url="html/562d9967-e690-4042-b9d6-f6db567c1c29.htm" />
+  <HelpKINode Title="LoadViewState method">
+    <HelpKINode Title="ImageAreaBase.LoadViewState Method " Url="html/2c7deb03-cd79-1bef-65db-6776d75abdc9.htm" />
+    <HelpKINode Title="ImageMap.LoadViewState Method " Url="html/b39a0327-a8cd-cf09-6a9f-f6b2730b73ef.htm" />
+    <HelpKINode Title="WebImageAreaCollection.LoadViewState Method " Url="html/02c2f2d7-65f1-2403-3e6c-8bd7bf37b148.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MarkAsDirty method" Url="html/e278b981-a3d0-6356-8060-3a9d3f939cd1.htm" />
+  <HelpKINode Title="Media enumeration member" Url="html/83225d9f-64b4-ffd1-d8d7-c86f3af1ed80.htm" />
+  <HelpKINode Title="MouseArea property" Url="html/6efebf07-1baf-1ec4-2736-65f90efe6b1e.htm" />
+  <HelpKINode Title="MouseDown enumeration member" Url="html/5e5fd19d-4727-7e6f-a250-5534566fb638.htm" />
+  <HelpKINode Title="MouseDown event" Url="html/22031704-f436-385a-4059-7ca52a15e6b2.htm" />
+  <HelpKINode Title="MouseEnter enumeration member" Url="html/5e5fd19d-4727-7e6f-a250-5534566fb638.htm" />
+  <HelpKINode Title="MouseEnter event" Url="html/eff2f460-469e-fd07-ac08-6bca5c25de69.htm" />
+  <HelpKINode Title="MouseHover enumeration member" Url="html/5e5fd19d-4727-7e6f-a250-5534566fb638.htm" />
+  <HelpKINode Title="MouseHover event" Url="html/4911564b-23b1-e9fc-a4e2-fbbe643c48c8.htm" />
+  <HelpKINode Title="MouseLeave enumeration member" Url="html/5e5fd19d-4727-7e6f-a250-5534566fb638.htm" />
+  <HelpKINode Title="MouseLeave event" Url="html/f8576cc5-0a1a-eb33-b571-d8b18aafd3d3.htm" />
+  <HelpKINode Title="MouseMove enumeration member" Url="html/5e5fd19d-4727-7e6f-a250-5534566fb638.htm" />
+  <HelpKINode Title="MouseMove event" Url="html/1a191545-ea93-f648-da9b-06289da3e0e2.htm" />
+  <HelpKINode Title="MouseUp enumeration member" Url="html/5e5fd19d-4727-7e6f-a250-5534566fb638.htm" />
+  <HelpKINode Title="MouseUp event" Url="html/59749788-147d-64e4-b571-afef07a1a004.htm" />
+  <HelpKINode Title="Navigate enumeration member" Url="html/e577500d-d772-2b65-317b-b46f31b2f7dd.htm" />
+  <HelpKINode Title="NavigateUrl property" Url="html/ab9fd39e-825e-a940-c7af-32b028cb2e89.htm" />
+  <HelpKINode Title="None enumeration member">
+    <HelpKINode Title="AreaClickAction Enumeration" Url="html/30cc065d-70db-803e-4638-110bc4d1df7e.htm" />
+    <HelpKINode Title="AreaClickAction Enumeration" Url="html/e577500d-d772-2b65-317b-b46f31b2f7dd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Normal enumeration member" Url="html/2fdc3ad7-454d-5b46-e7f1-d45b558d7984.htm" />
+  <HelpKINode Title="OnClick method">
+    <HelpKINode Title="ImageAreaBase.OnClick Method " Url="html/c1e64476-99e8-1918-cb7d-226997573758.htm" />
+    <HelpKINode Title="ImageMap.OnClick Method " Url="html/ab207e5d-202b-93d4-db2f-f2ed5ffa52e2.htm" />
+    <HelpKINode Title="ImageMap.OnClick Method " Url="html/0da7b0c7-ab99-02a4-2f30-4b1807e66f6a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OnDoubleClick method">
+    <HelpKINode Title="ImageAreaBase.OnDoubleClick Method " Url="html/012a310a-c5c0-e2df-276c-eada72986e56.htm" />
+    <HelpKINode Title="ImageMap.OnDoubleClick Method " Url="html/9364fd94-4576-cbbc-6a9d-7a9e83c6bf72.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OnDrawImage method">
+    <HelpKINode Title="ImageAreaBase.OnDrawImage Method " Url="html/527bc115-1fcc-7a1e-2759-4103afb800ef.htm" />
+    <HelpKINode Title="ImageMap.OnDrawImage Method " Url="html/998ce182-b8c1-13d0-8dd4-2d00babf57c1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OnEnabledChanged method" Url="html/468768a2-8f69-cf15-2538-6b0da8cb7124.htm" />
+  <HelpKINode Title="OnEnter method" Url="html/c2316bb1-8554-fc31-61f1-9c28873d6bb1.htm" />
+  <HelpKINode Title="OnGotFocus method" Url="html/407e0a93-7d4a-a041-5085-ac7f91eb26b9.htm" />
+  <HelpKINode Title="OnImageAreaChanged method" Url="html/0f13a528-2ff3-932a-d312-24dae454c5dc.htm" />
+  <HelpKINode Title="OnLeave method" Url="html/c4eeafb5-534e-eec2-4650-b5ed718ecf90.htm" />
+  <HelpKINode Title="OnLostFocus method" Url="html/a9718200-ba41-427f-c27c-8fa16aa761dc.htm" />
+  <HelpKINode Title="OnMouseDown method">
+    <HelpKINode Title="ImageAreaBase.OnMouseDown Method " Url="html/c43b334b-7d55-973c-4f86-ecc163b68609.htm" />
+    <HelpKINode Title="ImageMap.OnMouseDown Method " Url="html/125a2b36-1336-f8ef-ae55-ab2cbf064ec5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OnMouseEnter method" Url="html/61ed4b60-4def-4431-1a07-e068f3555e20.htm" />
+  <HelpKINode Title="OnMouseHover method">
+    <HelpKINode Title="ImageAreaBase.OnMouseHover Method " Url="html/f9923a8e-ebe3-c233-c600-9b0b94690bab.htm" />
+    <HelpKINode Title="ImageMap.OnMouseHover Method " Url="html/e64dd293-52b3-f163-9044-bad7dd808feb.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OnMouseLeave method" Url="html/f245bdf1-f34d-8cb6-6b26-72baae7ceff8.htm" />
+  <HelpKINode Title="OnMouseMove method">
+    <HelpKINode Title="ImageAreaBase.OnMouseMove Method " Url="html/4d14eb47-948f-cc77-6b6d-1085448a62e3.htm" />
+    <HelpKINode Title="ImageMap.OnMouseMove Method " Url="html/46a72e40-63cc-b36e-17d8-5444e87d338f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OnMouseUp method">
+    <HelpKINode Title="ImageAreaBase.OnMouseUp Method " Url="html/bb123d40-5210-7502-25dc-ab4e62b89836.htm" />
+    <HelpKINode Title="ImageMap.OnMouseUp Method " Url="html/a03101b1-e528-f91a-ea49-23f079e6ffdb.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OnPaint method" Url="html/ef00ee65-b39b-268e-2c2d-9a8cc76afe22.htm" />
+  <HelpKINode Title="OnParentChanged method" Url="html/8539b6c0-6560-536a-4a8e-3e63edbfd721.htm" />
+  <HelpKINode Title="OnPreRender method" Url="html/00f516e1-50dd-bbff-d177-b784c44e2a48.htm" />
+  <HelpKINode Title="OnSizeChanged method" Url="html/b8c8481b-28e5-b1de-1ec6-6fb15a985646.htm" />
+  <HelpKINode Title="OnStyleChanged method" Url="html/ad851816-1d5d-e611-a34e-a86bb5e40bcf.htm" />
+  <HelpKINode Title="OnVisibleChanged method" Url="html/6a516045-25fa-351a-8d9a-4607f296e73e.htm" />
+  <HelpKINode Title="Other enumeration member" Url="html/83225d9f-64b4-ffd1-d8d7-c86f3af1ed80.htm" />
+  <HelpKINode Title="OwnerDraw property">
+    <HelpKINode Title="ImageAreaBase.OwnerDraw Property " Url="html/abcebea3-c978-11fb-5089-a626bc1d1eeb.htm" />
+    <HelpKINode Title="ImageMap.OwnerDraw Property " Url="html/cc7c826e-31e4-ec17-2958-a3d1eff69244.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Parent enumeration member" Url="html/83225d9f-64b4-ffd1-d8d7-c86f3af1ed80.htm" />
+  <HelpKINode Title="PointCollection class">
+    <HelpKINode Title="PointCollection Class" Url="html/75fab02e-1464-6df4-eca3-3318182ca07a.htm" />
+    <HelpKINode Title="about PointCollection class" Url="html/75fab02e-1464-6df4-eca3-3318182ca07a.htm" />
+    <HelpKINode Title="constructor" Url="html/0b838a1e-0feb-0c97-fe21-e2f1707a2796.htm" />
+    <HelpKINode Title="methods" Url="html/625f5711-7c28-aae7-688f-2e6111e4483f.htm" />
+    <HelpKINode Title="properties" Url="html/834e42d0-727f-c2b7-786b-7782ba781c4b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PointCollection.AddRange method" Url="html/50719117-46aa-eeab-0e39-e773937e7427.htm" />
+  <HelpKINode Title="PointCollection.PointCollection constructor" Url="html/0b838a1e-0feb-0c97-fe21-e2f1707a2796.htm" />
+  <HelpKINode Title="Points property">
+    <HelpKINode Title="ImageAreaPolygon.Points Property " Url="html/e9fac473-4ef7-2c37-b6c6-ef2129493790.htm" />
+    <HelpKINode Title="ImageAreaPolygon.Points Property " Url="html/e347f1cd-284b-e291-c197-a371df2dda94.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Polygon enumeration member" Url="html/31b40120-95c5-f705-a1a3-6654defe902c.htm" />
+  <HelpKINode Title="PostBack enumeration member" Url="html/e577500d-d772-2b65-317b-b46f31b2f7dd.htm" />
+  <HelpKINode Title="ProcessDialogChar method" Url="html/d209fb3f-56d5-45c1-f967-38406c1e4bc3.htm" />
+  <HelpKINode Title="ProcessDialogKey method" Url="html/5aea0133-95a0-9e20-a03a-fc98da697f17.htm" />
+  <HelpKINode Title="ProcessMnemonic method" Url="html/8dfb7618-80dd-845c-abf6-09723bbf3e32.htm" />
+  <HelpKINode Title="ProcessTabKey method" Url="html/711a2353-d67f-22da-535a-f3f29106cf66.htm" />
+  <HelpKINode Title="Radius property">
+    <HelpKINode Title="ImageAreaCircle.Radius Property " Url="html/bedfd3aa-9c59-c5da-349d-19d1fe3074fc.htm" />
+    <HelpKINode Title="ImageAreaCircle.Radius Property " Url="html/b96dd294-812c-0099-1149-1112b7cb7ab1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RaiseEvent method" Url="html/43311f2c-11b7-e18f-9e06-3f1c1e8defab.htm" />
+  <HelpKINode Title="RaisePostBackEvent method" Url="html/c04f634b-612b-e4ba-1d70-20ae96b7f983.htm" />
+  <HelpKINode Title="Rectangle enumeration member" Url="html/31b40120-95c5-f705-a1a3-6654defe902c.htm" />
+  <HelpKINode Title="Rectangle property">
+    <HelpKINode Title="ImageAreaRectangle.Rectangle Property " Url="html/c9203d82-5ea7-aa46-48e6-c188f48b3ea1.htm" />
+    <HelpKINode Title="ImageAreaRectangle.Rectangle Property " Url="html/9b8a23d3-1e2a-de96-7295-d9f977a6423e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RefreshAreaInformation method" Url="html/9bb21b2a-3e73-89f5-b415-cfa08d547e26.htm" />
+  <HelpKINode Title="RemoveItem method">
+    <HelpKINode Title="ImageAreaCollection.RemoveItem Method " Url="html/e57409f9-f19b-e22a-37b9-6229ab8fccd6.htm" />
+    <HelpKINode Title="WebImageAreaCollection.RemoveItem Method " Url="html/53df065d-dda3-8a8a-bf25-ffd66f7bab2d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Render method" Url="html/89e8991c-f1fb-4411-ba4c-a1d5f800a107.htm" />
+  <HelpKINode Title="SaveViewState method">
+    <HelpKINode Title="ImageAreaBase.SaveViewState Method " Url="html/e70a04fc-b5ab-5b73-2403-667398057e2d.htm" />
+    <HelpKINode Title="ImageMap.SaveViewState Method " Url="html/98e55c9e-e0a3-799f-82ea-e70dc0169fc5.htm" />
+    <HelpKINode Title="WebImageAreaCollection.SaveViewState Method " Url="html/47c4450b-33c8-a555-123f-35f7261a511b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Search enumeration member" Url="html/83225d9f-64b4-ffd1-d8d7-c86f3af1ed80.htm" />
+  <HelpKINode Title="Self enumeration member" Url="html/83225d9f-64b4-ffd1-d8d7-c86f3af1ed80.htm" />
+  <HelpKINode Title="SetAttribute method" Url="html/3538514b-b58f-b5fa-4ead-80cdd1b6eea5.htm" />
+  <HelpKINode Title="SetItem method" Url="html/8ad0fe5d-5ea0-cd55-198c-cdcd01228aa1.htm" />
+  <HelpKINode Title="Shape property">
+    <HelpKINode Title="IImageArea.Shape Property " Url="html/c1bd5ef1-bb0d-7187-fffd-a3eabb92db25.htm" />
+    <HelpKINode Title="ImageAreaBase.Shape Property " Url="html/aed1815a-6189-aa42-2190-684e2294e741.htm" />
+    <HelpKINode Title="ImageAreaBase.Shape Property " Url="html/5fdce257-262c-f852-c58e-7f5c87fd493b.htm" />
+    <HelpKINode Title="ImageAreaCircle.Shape Property " Url="html/658da2d2-a055-b80b-22cd-e20e86d10624.htm" />
+    <HelpKINode Title="ImageAreaCircle.Shape Property " Url="html/82339f0e-8190-a5f3-a3e5-24a003441edd.htm" />
+    <HelpKINode Title="ImageAreaEllipse.Shape Property " Url="html/afe40195-1d52-51d6-b15c-b63e3ee3e4b7.htm" />
+    <HelpKINode Title="ImageAreaPolygon.Shape Property " Url="html/55a853c1-8acb-dd70-735d-4afc0b512a9e.htm" />
+    <HelpKINode Title="ImageAreaPolygon.Shape Property " Url="html/72c4bef2-c582-d062-0af1-d69e94af9614.htm" />
+    <HelpKINode Title="ImageAreaRectangle.Shape Property " Url="html/26f0b07b-71c5-cf72-c292-05b8af4373cc.htm" />
+    <HelpKINode Title="ImageAreaRectangle.Shape Property " Url="html/121eeee5-7e76-1df0-9739-16fe1ddabd21.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ShapeText property">
+    <HelpKINode Title="ImageAreaBase.ShapeText Property " Url="html/3fff4f31-ba48-55da-16f2-809ed130efc7.htm" />
+    <HelpKINode Title="ImageAreaCircle.ShapeText Property " Url="html/8abf4ef5-55a7-a1c9-cb14-efac85001360.htm" />
+    <HelpKINode Title="ImageAreaPolygon.ShapeText Property " Url="html/1f89c24e-28b6-bd81-1df2-5af97e251d69.htm" />
+    <HelpKINode Title="ImageAreaRectangle.ShapeText Property " Url="html/ebed5ece-4ceb-0030-c0f1-2ec41b678082.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SizeToImage property" Url="html/9cfa8c13-5ec8-23d6-be33-648685dcd4fc.htm" />
+  <HelpKINode Title="TabIndex property">
+    <HelpKINode Title="IImageArea.TabIndex Property " Url="html/f3165799-7270-d5f3-d01c-0bd770479e4c.htm" />
+    <HelpKINode Title="ImageAreaBase.TabIndex Property " Url="html/8a0e8ca0-1cc4-0a98-b5b9-0cc7da77d977.htm" />
+    <HelpKINode Title="ImageAreaBase.TabIndex Property " Url="html/f3b8e766-4941-a1a6-34bd-81b215117ece.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Tag property">
+    <HelpKINode Title="IImageArea.Tag Property " Url="html/8309d10c-3d0c-632b-ac85-97e1eb29e274.htm" />
+    <HelpKINode Title="ImageAreaBase.Tag Property " Url="html/52a62254-0a8d-fbe9-4fab-bdd14fac42c0.htm" />
+    <HelpKINode Title="ImageAreaBase.Tag Property " Url="html/2ab426f5-8e06-a2cf-611c-c285ae1041f8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TagString property" Url="html/1702ff04-d8f7-6341-5dbd-f6c20891c624.htm" />
+  <HelpKINode Title="Target property" Url="html/fb841f98-6060-37f8-7538-0faed3817102.htm" />
+  <HelpKINode Title="TargetName property" Url="html/08dde520-093f-3dd1-487a-5c9a22438dc3.htm" />
+  <HelpKINode Title="ToolTip property">
+    <HelpKINode Title="IImageArea.ToolTip Property " Url="html/b2959f3c-355e-c6ee-07b8-4da00aa9817a.htm" />
+    <HelpKINode Title="IImageMap.ToolTip Property " Url="html/fd56dba4-9681-3ba9-26c5-46861a4e0763.htm" />
+    <HelpKINode Title="ImageAreaBase.ToolTip Property " Url="html/d1f86789-a4e6-cb94-0437-7e69dcb73b84.htm" />
+    <HelpKINode Title="ImageAreaBase.ToolTip Property " Url="html/4fa54ac8-3c9f-e904-15da-834eab4a79f4.htm" />
+    <HelpKINode Title="ImageMap.ToolTip Property " Url="html/bb015dd7-b0df-f02e-f9ff-857f47be17bd.htm" />
+    <HelpKINode Title="ImageMap.ToolTip Property " Url="html/ee6da34a-d533-f48d-1430-2e92ac9a3d02.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Top enumeration member" Url="html/83225d9f-64b4-ffd1-d8d7-c86f3af1ed80.htm" />
+  <HelpKINode Title="ToString method">
+    <HelpKINode Title="ImageAreaBase.ToString Method " Url="html/bd3ffce7-3862-a1a6-65ee-b169f0bee5eb.htm" />
+    <HelpKINode Title="ImageAreaBase.ToString Method " Url="html/f9ffb0ad-12fa-a60a-b888-689a96e97bf3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TrackViewState method">
+    <HelpKINode Title="ImageAreaBase.TrackViewState Method " Url="html/0b8de050-75dc-c06c-a061-b4ba04a814ba.htm" />
+    <HelpKINode Title="ImageMap.TrackViewState Method " Url="html/154785ee-02b3-60a8-f1b8-3158368f9812.htm" />
+    <HelpKINode Title="WebImageAreaCollection.TrackViewState Method " Url="html/50428cba-82ea-ab29-73a2-3f98d72ce8de.htm" />
+  </HelpKINode>
+  <HelpKINode Title="usage notes" Url="html/7e07e290-7738-4d8b-bcf1-8eb4b33706b0.htm" />
+  <HelpKINode Title="Version History" Url="html/ad1fd96f-bab4-4925-b620-29b634cfc4b0.htm" />
+  <HelpKINode Title="versions">
+    <HelpKINode Title="1.0.0.0" Url="html/bebce453-f3c3-4075-84cb-f08ff898a48a.htm" />
+    <HelpKINode Title="1.1.0.0" Url="html/0a003f62-58fb-4018-9b20-f2a4580afc34.htm" />
+    <HelpKINode Title="1.2.0.0" Url="html/467f220c-c617-4cf8-9c54-a9fc8103a5b2.htm" />
+    <HelpKINode Title="1.3.0.0" Url="html/8db22e22-7856-41d7-80db-dd70aa1827a1.htm" />
+    <HelpKINode Title="1.4.0.0" Url="html/2b72cbd9-6dc4-434c-aaf3-54d782118a7e.htm" />
+    <HelpKINode Title="2.0.0.0" Url="html/dedf3c43-19c5-499c-be7d-07ca00518c64.htm" />
+    <HelpKINode Title="2.0.0.1" Url="html/cd04209d-3eed-414a-9d24-dfb78659d2fb.htm" />
+    <HelpKINode Title="2.0.0.2" Url="html/508bb304-92b9-4bd1-9fd6-d543d90d9c4b.htm" />
+    <HelpKINode Title="2.0.0.3" Url="html/6bbaf03a-d29f-49ef-b37a-687a893e0a26.htm" />
+    <HelpKINode Title="2015.1.19.0" Url="html/7907a67d-8c70-4beb-87f3-0d6b925048e4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ViewState property" Url="html/ddb52f3a-986d-0912-4d58-8ad6ff62d639.htm" />
+  <HelpKINode Title="WebImageAreaCollection class">
+    <HelpKINode Title="WebImageAreaCollection Class" Url="html/84815bc2-0894-c037-d402-92e53a76400b.htm" />
+    <HelpKINode Title="about WebImageAreaCollection class" Url="html/84815bc2-0894-c037-d402-92e53a76400b.htm" />
+    <HelpKINode Title="constructor" Url="html/67cf34df-6b69-e5d4-c65d-2ab8d5f8685b.htm" />
+    <HelpKINode Title="events" Url="html/c77fd505-da2c-3769-133d-e84287d42efc.htm" />
+    <HelpKINode Title="methods" Url="html/ce5c389d-1720-5833-403e-09d0fa003dee.htm" />
+    <HelpKINode Title="properties" Url="html/3336aa48-046f-0c6e-5587-0156de2dbeed.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WebImageAreaCollection.InsertItem method" Url="html/f4de2ee8-63c4-2f08-ff5e-f48fa3a3e608.htm" />
+  <HelpKINode Title="WebImageAreaCollection.IsTrackingViewState property" Url="html/084c605c-6454-1886-83d4-b0cc23b961f1.htm" />
+  <HelpKINode Title="WebImageAreaCollection.LoadViewState method" Url="html/02c2f2d7-65f1-2403-3e6c-8bd7bf37b148.htm" />
+  <HelpKINode Title="WebImageAreaCollection.RemoveItem method" Url="html/53df065d-dda3-8a8a-bf25-ffd66f7bab2d.htm" />
+  <HelpKINode Title="WebImageAreaCollection.SaveViewState method" Url="html/47c4450b-33c8-a555-123f-35f7261a511b.htm" />
+  <HelpKINode Title="WebImageAreaCollection.TrackViewState method" Url="html/50428cba-82ea-ab29-73a2-3f98d72ce8de.htm" />
+  <HelpKINode Title="WebImageAreaCollection.WebImageAreaCollection constructor" Url="html/67cf34df-6b69-e5d4-c65d-2ab8d5f8685b.htm" />
+  <HelpKINode Title="Welcome" Url="html/7e07e290-7738-4d8b-bcf1-8eb4b33706b0.htm" />
+  <HelpKINode Title="WindowTarget enumeration" Url="html/83225d9f-64b4-ffd1-d8d7-c86f3af1ed80.htm" />
+  <HelpKINode Title="WndProc method" Url="html/2ec7a324-f910-b282-a776-efd5bf7493ad.htm" />
+  <HelpKINode Title="XCoordinate property" Url="html/aa5c6a65-531a-98ea-88c1-a22c29d35d86.htm" />
+  <HelpKINode Title="YCoordinate property" Url="html/ffb764f1-94df-77f9-4590-481b40e03cb7.htm" />
+</HelpKI>
