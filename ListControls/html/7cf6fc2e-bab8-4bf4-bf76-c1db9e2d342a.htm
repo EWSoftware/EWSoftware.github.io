@@ -1,0 +1,228 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>ExtendedTreeView Control Tutorial</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="tutorials, ExtendedTreeView" /><meta name="Microsoft.Help.Id" content="7cf6fc2e-bab8-4bf4-bf76-c1db9e2d342a" /><meta name="Description" content="The ExtendedTreeView control is a fully owner-drawn tree view control that overcomes some limitations in the way the default tree view is drawn. It also provides several additional features to make it easier to use than the standard tree view control." /><meta name="Microsoft.Help.ContentType" content="Concepts" /><meta name="BrandingAware" content="true" /><link type="text/css" rel="stylesheet" href="../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" /><script type="text/javascript" src="../scripts/jquery-1.11.0.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">EWSoftware.ListControls Library Documentation<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!"></a><a data-tochassubtree="true" href="ca3b503d-654e-4fe6-8ca3-ec3ea8fb9a1a.htm" title="EWSoftware.ListControls Library Documentation" tocid="roottoc">EWSoftware.ListControls Library Documentation</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!"></a><a data-tochassubtree="true" href="ce5cb77a-44a9-4629-aec3-6a8435cd8e53.htm" title="Control Tutorials" tocid="ce5cb77a-44a9-4629-aec3-6a8435cd8e53">Control Tutorials</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="3af969ee-6757-4660-9cc9-5bd518c24e05.htm" title="CheckBoxList and RadioButtonList Tutorial" tocid="3af969ee-6757-4660-9cc9-5bd518c24e05">CheckBoxList and RadioButtonList Tutorial</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="ea1601a4-68aa-4ad2-92f9-8c78fbf67512.htm" title="Combo Box Controls Tutorial" tocid="ea1601a4-68aa-4ad2-92f9-8c78fbf67512">Combo Box Controls Tutorial</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="2587355f-decc-4d08-85ff-7f8816b0cbfa.htm" title="DataList Control Tutorial" tocid="2587355f-decc-4d08-85ff-7f8816b0cbfa">DataList Control Tutorial</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="8fbf556a-9edc-4071-85ef-6df0d4d13950.htm" title="DataNavigator Control Tutorial" tocid="8fbf556a-9edc-4071-85ef-6df0d4d13950">DataNavigator Control Tutorial</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="7cf6fc2e-bab8-4bf4-bf76-c1db9e2d342a.htm" title="ExtendedTreeView Control Tutorial" tocid="7cf6fc2e-bab8-4bf4-bf76-c1db9e2d342a">ExtendedTreeView Control Tutorial</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize"><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize"></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="titleColumn">ExtendedTreeView Control Tutorial</td></tr></table><span class="introStyle"></span><div class="introduction"><p>This topic describes the Extended Tree View control and its features.</p><ul class="autoOutline"><li class="outlineSectionEntry"><a href="#Info">General Information</a></li><li class="outlineSectionEntry"><a href="#ClearTree">Clearing The Tree Node Collection</a></li><li class="outlineSectionEntry"><a href="#Usage">ExtendedTreeView Usage</a></li><li class="outlineSectionEntry"><a href="#Enum">Node Enumeration</a></li><li class="outlineSectionEntry"><a href="#CustomDraw">Customizing the Tree View's Appearance</a></li></ul></div><div class="collapsibleAreaRegion" id="Info"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID0RB')" onkeypress="SectionExpandCollapse_CheckKey('ID0RB', event)" tabindex="0"><img id="ID0RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />General Information</span></div><div id="ID0RBSection" class="collapsibleSection"><p>The <span class="code">ExtendedTreeView</span> control is a fully owner-drawn tree view control that
+overcomes some limitations in the way the default tree view is drawn.  It also provides several additional
+features to make it easier to use than the standard tree view control.  Below is a list of the additional
+features and differences:</p><ul><li><p>The node background color draws all the way across the node, not just behind the text.</p></li><li><p><span class="code">FullRowSelect</span> works with <span class="code">ShowLines</span> enabled.</p></li><li><p>Unthemed checkboxes do not have the thick black border and look like normal unthemed flat
+checkboxes.</p></li><li><p>The checkboxes are correctly vertically centered based on the item height.</p></li><li><p>Hot tracking works on nodes with their own font.</p></li><li><p>The tree view can be set to not draw the default images for nodes without an image.  When it
+does not draw the default image, the text is flush left with no gap.</p></li><li><p>When using a state image list without checkboxes, a new <span class="code">ChangeStateImage</span>
+event is raised when the image is clicked or the space bar is hit.  This allows you to implement custom check
+states on the tree nodes by using different images for the various states.</p></li><li><p>The <span class="code">DrawNode</span> event is suppressed.  In its place two new events are
+raised that give better control over how the node is drawn.  <span class="code">TreeNodeDrawing</span> is raised
+prior to the node being drawn and lets you customize the default appearance.  <span class="code">TreeNodeDrawn</span>
+is raised after the node has been drawn and lets you customize the appearance of the fully drawn node.</p></li><li><p>When <span class="code">LabelEdit</span> is true, hitting F2 initiates label editing on the
+selected node.</p></li><li><p><strong>Ctrl+E</strong> can be used to expand all child nodes of the selected node.
+<strong>Ctrl+K</strong> can be used to collapse the selected node.  <strong>Ctrl+Shift+E</strong>
+can be used to expand all nodes in the tree.  <strong>Ctrl+Shift+K</strong> can be used to collapse all
+nodes in the tree.</p></li><li><p>The <span class="code">SelectOnRightOfLabelClick</span> property allows you to specify whether
+or not a node is selected when the blank area to the right of its label is clicked.</p></li><li><p>The expando (+/-) images can be replaced with custom images.</p></li><li><p>The <span class="code">AllowCollapse</span> property can be used to specify whether or not nodes
+can be collapsed when <span class="code">ShowPlusMinus</span> is false.</p></li><li><p>The control implements <span class="code">IEnumerable</span> and <span class="code">IEnumerable&lt;T&gt;</span>
+so that you can enumerate all of its nodes recursively using a simple for/each loop.  You can also use
+<span class="code">TreeNodeEnumerator</span> to enumerate the nodes in one branch and, optionally, its subsequent
+siblings.  This saves you from having to write recursive methods to handle child nodes.</p></li><li><p>The <span class="code">SyncParentChildCheckedState</span> property can be set to true to ensure
+that the checked state of parent and child nodes is synchronized.  If a child node is checked, all parent nodes
+are marked as checked too.  If a parent is checked or unchecked, all child nodes are checked or unchecked as
+well.  The checkbox on parent nodes with a mix of checked and unchecked children are drawn as a mixed checkbox to
+make them easy to pick out when collapsed.</p></li><li><p>An item indexer property is available to retrieve nodes from the tree view by node name
+including child nodes at any level.</p></li><li><p>Methods have been added to allow setting or getting the check state of a node by name as well
+as for checking and unchecking all nodes in the tree view.</p></li><li><p>The <span class="code">CheckedNodes</span> property can be used to obtain a collection
+containing the current set of checked nodes.</p></li></ul></div><div class="collapsibleAreaRegion" id="ClearTree"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Clearing The Tree Node Collection</span></div><div id="ID2RBSection" class="collapsibleSection"><p>Under certain circumstances, it is possible for the tree view to throw a null reference exception
+when clearing the tree node collection.  This is caused by a redraw event that occurs as the tree nodes are
+cleared.  The base tree view will only suspend redrawing if there are more than two hundred items.
+Unfortunately, there is no way to tell whether or not a node is in the process of being removed.  As such, it may
+be necessary to manually suspend updates when calling the node collection's <span class="code">Clear</span> method
+and resume updates afterwards.  For example:</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EABAEAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EABAEAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EABAEAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EABAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">// Suspend updates while clearing the tree nodes</span>
+tvExtTree.BeginUpdate();
+
+<span class="highlight-comment">// Clear the nodes</span>
+tvExtTree.Nodes.Clear();
+
+<span class="highlight-comment">// Resume updates</span>
+tvExtTree.EndUpdate();</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EABAEAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAAEAAA_tab1" class="codeSnippetContainerTabSingle">VB.NET</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAAEAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAAEAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">' Suspend updates while clearing the tree nodes</span>
+tvExtTree.BeginUpdate()
+
+<span class="highlight-comment">' Clear the nodes</span>
+tvExtTree.Nodes.Clear()
+
+<span class="highlight-comment">' Resume updates</span>
+tvExtTree.EndUpdate()</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAAEAAA");</script></div><div class="collapsibleAreaRegion" id="Usage"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />ExtendedTreeView Usage</span></div><div id="ID3RBSection" class="collapsibleSection"><p>The <span class="code">ExtendedTreeView</span> is similar in nature to the standard
+<span class="code">TreeView</span> control but is much more flexible as it allows better support for customizing
+its appearance and has more options for node retrieval and enumeration.  It provides a set of properties and
+events similar to those of the <span class="code">TreeView</span>.  The extended tree view also provides the
+<span class="code">GetNodeChecked</span>, <span class="code">GetNodeCheckedState</span>, and
+<span class="code">SetNodeChecked</span> methods to get or set the check state of nodes in the tree.  Each method
+identifies the node by the name assigned to the node's <span class="code">Name</span> property.  If the
+<span class="code">SyncParentChildCheckedState</span> property is set to true, the checked state of parent nodes
+is kept in synch with the child nodes.  For example, if a child node is checked, all parent nodes are marked as
+checked too.  If a parent is checked or unchecked, all child nodes are checked or unchecked as well.  The
+checkbox on parent nodes with a mix of checked and unchecked children are drawn as a mixed checkbox to make them
+easy to pick out when collapsed.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAIADAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAIADAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAIADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAIADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">// Get a list of IDs to mark as checked.  Each node's Name property will match one of the IDs</span>
+<span class="highlight-keyword">string</span>[] ids = currentItems.Split(<span class="highlight-literal">','</span>);
+
+<span class="highlight-comment">// Turn off synchronization while setting the check states</span>
+tvMenu.SyncParentChildCheckedState = <span class="highlight-keyword">false</span>;
+
+<span class="highlight-comment">// Check each named node</span>
+<span class="highlight-keyword">foreach</span>(<span class="highlight-keyword">string</span> id <span class="highlight-keyword">in</span> ids)
+    tvMenu.SetNodeChecked(id.Trim(), <span class="highlight-keyword">true</span>);
+
+<span class="highlight-comment">// Turn check state synchronization back on</span>
+tvMenu.SyncParentChildCheckedState = <span class="highlight-keyword">true</span>;</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAIADAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAHADAAA_tab1" class="codeSnippetContainerTabSingle">VB.NET</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAHADAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAHADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAHADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">' Get a list of IDs to mark as checked.  Each node's Name property will match one of the IDs</span>
+<span class="highlight-keyword">Dim</span> ids <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span>() = currentItems.Split(<span class="highlight-literal">","</span>)
+
+<span class="highlight-comment">' Turn off synchronization while setting the check states</span>
+tvMenu.SyncParentChildCheckedState = <span class="highlight-keyword">False</span>
+
+<span class="highlight-comment">' Check each named node</span>
+<span class="highlight-keyword">For</span> <span class="highlight-keyword">Each</span> id <span class="highlight-keyword">in</span> ids
+    tvMenu.SetNodeChecked(id.Trim(), <span class="highlight-keyword">True</span>)
+<span class="highlight-keyword">Next</span>
+
+<span class="highlight-comment">' Turn check state synchronization back on</span>
+tvMenu.SyncParentChildCheckedState = <span class="highlight-keyword">True</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAHADAAA");</script><p>If you assign a name to each node using its <span class="code">Name</span> property, you can use the
+extended tree view's item indexer to retrieve the nodes.  This will return the named node regardless of whether
+it is a root node or a child nested at any level within the tree.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAFADAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAFADAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAFADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAFADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">// Set the named node's text</span>
+tvGroups[<span class="highlight-literal">"Folder2Book3Page5"</span>].Text = <span class="highlight-literal">"New Text Value"</span>;</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAFADAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAEADAAA_tab1" class="codeSnippetContainerTabSingle">VB.NET</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAEADAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAEADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAEADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">// <span class="highlight-keyword">Set</span> the named node's text
+tvGroups(<span class="highlight-literal">"Folder2Book3Page5"</span>).Text = <span class="highlight-literal">"New Text Value"</span>;</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAEADAAA");</script><p>If the tree view's <span class="code">CheckBoxes</span> property is set to true, the
+<span class="code">CheckedNodes</span> property can be used to obtain a collection that contains the actual nodes
+in the tree that have a check state of <span class="code">Checked</span> or <span class="code">Mixed</span>.  This
+collection has some helper methods that you will find useful.</p><div class="tableSection"><table><tr><th><p>Method</p></th><th><p>Description</p></th></tr><tr><td><p><span class="code">CheckStateOf</span></p></td><td><p>This method can be used to get the check state of the node in the collection.</p></td></tr><tr><td><p><span class="code">ContainsName</span></p></td><td><p>This method can be used to determine whether or not the collection contains a node with the
+specified name.</p></td></tr><tr><td><p><span class="code">ToNameString</span></p></td><td><p>This method returns the checked nodes' names in a comma-separated list.</p></td></tr><tr><td><p><span class="code">ToTextValueString</span></p></td><td><p>This method returns the checked nodes' text values in a comma-separated list.</p></td></tr></table></div><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EABADAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EABADAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EABADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EABADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">CheckedNodesCollection checkedNodes = tvGroups.CheckedNodes;
+
+<span class="highlight-comment">// Display the check state of each checked node</span>
+<span class="highlight-keyword">for</span>(<span class="highlight-keyword">int</span> idx = <span class="highlight-number">0</span>; idx &lt; checkedNodes.Count; idx++)
+    Debug.WriteLine(checkedNodes.CheckStateOf(idx));
+
+<span class="highlight-comment">// See if the collection contains a node named "Folder1Book2Page5"</span>
+Debug.WriteLine(checkedNodes.Contains(<span class="highlight-literal">"Folder1Book2Page5"</span>));
+
+<span class="highlight-comment">// Get the checked node names into a string ready to store in a database field</span>
+<span class="highlight-keyword">string</span> groupNames = checkedNodes.ToNameString();
+
+<span class="highlight-comment">// Show the node text values in a message box</span>
+MessageBox.Show(<span class="highlight-literal">"You chose: "</span> + checkedNodes.ToTextValueString());</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EABADAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAADAAA_tab1" class="codeSnippetContainerTabSingle">VB.NET</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAADAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">Dim</span> idx <span class="highlight-keyword">As</span> <span class="highlight-keyword">Integer</span>
+<span class="highlight-keyword">Dim</span> checkedNodes <span class="highlight-keyword">As</span> CheckedNodesCollection = tvGroups.CheckedNodes
+
+<span class="highlight-comment">' Display the check state of each checked node</span>
+<span class="highlight-keyword">For</span> idx = <span class="highlight-number">0</span> <span class="highlight-keyword">To</span> checkedNodes.Count
+    Debug.WriteLine(checkedNodes.CheckStateOf(idx))
+<span class="highlight-keyword">Next</span> idx
+
+<span class="highlight-comment">' See if the collection contains a node named "Folder1Book2Page5"</span>
+Debug.WriteLine(checkedNodes.Contains(<span class="highlight-literal">"Folder1Book2Page5"</span>))
+
+<span class="highlight-comment">' Get the checked node names into a string ready to store in a database field</span>
+<span class="highlight-keyword">Dim</span> groupNames <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span> = checkedNodes.ToNameString()
+
+<span class="highlight-comment">' Show the node text values in a message box</span>
+MessageBox.Show(<span class="highlight-literal">"You chose: "</span> &amp; checkedNodes.ToTextValueString())</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAADAAA");</script></div><div class="collapsibleAreaRegion" id="Enum"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Node Enumeration</span></div><div id="ID4RBSection" class="collapsibleSection"><p>One of the most useful features of the extended tree view is its support for node enumeration.
+With a simple for/each loop, you can enumerate all nodes in the tree view including all child nodes to however
+deep they are nested.  This saves you from having to write recursive functions to handle child node collections.</p><p>When enumerating the entire tree, enumeration starts at the first root node.  If it has children,
+they are enumerated.  As each is enumerated, if they have children, they are enumerated as well.  This process
+repeats until all nodes have been enumerated.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAEACAAA_tab1" class="codeSnippetContainerTabSingle">C# - Enumerate the entire tree</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAEACAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAEACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAEACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">txtEnumResults.Text = <span class="highlight-keyword">null</span>;
+
+<span class="highlight-comment">// Use foreach() on the ExtendedTreeView control itself to</span>
+<span class="highlight-comment">// enumerate all of its nodes recursively.</span>
+<span class="highlight-keyword">foreach</span>(TreeNode node <span class="highlight-keyword">in</span> tvExtTree)
+    txtEnumResults.AppendText(String.Format(<span class="highlight-literal">"{0}{1}\r\n"</span>,
+        <span class="highlight-keyword">new</span> String(<span class="highlight-literal">' '</span>, node.Level * <span class="highlight-number">4</span>), node.Text));</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAEACAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EADACAAA_tab1" class="codeSnippetContainerTabSingle">VB.NET - Enumerate the entire tree</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EADACAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EADACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EADACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">Dim</span> node <span class="highlight-keyword">As</span> TreeNode
+txtEnumResults.Text = <span class="highlight-keyword">Nothing</span>
+
+<span class="highlight-comment">' Use foreach() on the ExtendedTreeView control itself to</span>
+<span class="highlight-comment">' enumerate all of its nodes recursively.</span>
+<span class="highlight-keyword">For</span> <span class="highlight-keyword">Each</span> node <span class="highlight-keyword">in</span> tvExtTree
+    txtEnumResults.AppendText(<span class="highlight-keyword">String</span>.Format(<span class="highlight-literal">"{0}{1}"</span> &amp; Environment.NewLine,
+        <span class="highlight-keyword">New</span> <span class="highlight-keyword">String</span>(<span class="highlight-literal">" "</span>C, node.Level * <span class="highlight-number">4</span>), node.Text))
+<span class="highlight-keyword">Next</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EADACAAA");</script><p>You can also use the <span class="code">TreeNodeEnumerator</span> directly to enumerate a single
+branch of the tree and all of its children.  The option is also given to enumerate all subsequent sibling nodes
+of the starting node if so desired.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EABACAAA_tab1" class="codeSnippetContainerTabSingle">C# - Enumerate starting at a selected node</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EABACAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EABACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EABACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">bool</span> enumerateSiblings = (sender == btnEnumNodeSibs);
+TreeNode node, startNode = tvExtTree.SelectedNode;
+
+<span class="highlight-keyword">if</span>(startNode == <span class="highlight-keyword">null</span>)
+{
+    txtEnumResults.Text = <span class="highlight-literal">"Select a starting node first"</span>;
+    <span class="highlight-keyword">return</span>;
+}
+
+txtEnumResults.Text = <span class="highlight-keyword">null</span>;
+
+<span class="highlight-comment">// For this, we create the enumerator manually and pass it</span>
+<span class="highlight-comment">// the starting node and a flag indicating whether or not</span>
+<span class="highlight-comment">// to enumerate the siblings of the starting node as well.</span>
+TreeNodeEnumerator enumerator = <span class="highlight-keyword">new</span> TreeNodeEnumerator(startNode,
+    enumerateSiblings);
+
+<span class="highlight-comment">// Call the MoveNext() method to move through each node.  Use the</span>
+<span class="highlight-comment">// Current property to access the current node.</span>
+<span class="highlight-keyword">while</span>(enumerator.MoveNext())
+{
+    node = enumerator.Current;
+
+    txtEnumResults.AppendText(String.Format(<span class="highlight-literal">"Manual Enum: {0}{1}\r\n"</span>,
+        <span class="highlight-keyword">new</span> String(<span class="highlight-literal">' '</span>, node.Level * <span class="highlight-number">4</span>), node.Text));
+}
+
+txtEnumResults.AppendText(<span class="highlight-literal">"\r\n\r\n"</span>);
+
+<span class="highlight-comment">// We can also use the helper method to simplify it</span>
+<span class="highlight-keyword">foreach</span>(TreeNode tn <span class="highlight-keyword">in</span> TreeNodeEnumerator.Enumerate(startNode, enumerateSiblings))
+    txtEnumResults.AppendText(String.Format(<span class="highlight-literal">"Enum Helper: {0}{1}\r\n"</span>,
+        <span class="highlight-keyword">new</span> String(<span class="highlight-literal">' '</span>, tn.Level * <span class="highlight-number">4</span>), tn.Text));</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EABACAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAACAAA_tab1" class="codeSnippetContainerTabSingle">VB.NET - Enumerate starting at a selected node</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAACAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">Dim</span> enumerateSiblings <span class="highlight-keyword">As</span> <span class="highlight-keyword">Boolean</span> = <span class="highlight-keyword">False</span>
+<span class="highlight-keyword">Dim</span> node <span class="highlight-keyword">As</span> TreeNode
+<span class="highlight-keyword">Dim</span> startNode <span class="highlight-keyword">As</span> TreeNode = tvExtTree.SelectedNode
+
+<span class="highlight-keyword">If</span> sender <span class="highlight-keyword">Is</span> btnEnumNodeSibs <span class="highlight-keyword">Then</span>
+    enumerateSiblings = <span class="highlight-keyword">True</span>
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">If</span>
+
+<span class="highlight-keyword">If</span> startNode <span class="highlight-keyword">Is</span> <span class="highlight-keyword">Nothing</span> <span class="highlight-keyword">Then</span>
+    txtEnumResults.Text = <span class="highlight-literal">"Select a starting node first"</span>
+    <span class="highlight-keyword">Return</span>
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">If</span>
+
+txtEnumResults.Text = <span class="highlight-keyword">Nothing</span>
+
+<span class="highlight-comment">' For this, we create the enumerator manually and pass it the starting</span>
+<span class="highlight-comment">' node and a flag indicating whether or not to enumerate the siblings</span>
+<span class="highlight-comment">' of the starting node as well.</span>
+<span class="highlight-keyword">Dim</span> enumerator <span class="highlight-keyword">As</span> TreeNodeEnumerator = <span class="highlight-keyword">New</span> TreeNodeEnumerator(startNode,
+    enumerateSiblings)
+
+<span class="highlight-comment">' Call the MoveNext() method to move through each node.  Use the Current</span>
+<span class="highlight-comment">' property to access the current node.</span>
+<span class="highlight-keyword">Do</span> <span class="highlight-keyword">While</span> enumerator.MoveNext()
+    node = enumerator.Current
+
+    txtEnumResults.AppendText(<span class="highlight-keyword">String</span>.Format(<span class="highlight-literal">"Manual Enum: {0}{1}"</span> &amp;
+        Environment.NewLine, <span class="highlight-keyword">New</span> <span class="highlight-keyword">String</span>(<span class="highlight-literal">" "</span>C, node.Level * <span class="highlight-number">4</span>), node.Text))
+<span class="highlight-keyword">Loop</span>
+
+txtEnumResults.AppendText(Environment.NewLine &amp; Environment.NewLine)
+
+<span class="highlight-comment">' We can also use the helper method to simplify it</span>
+<span class="highlight-keyword">For</span> <span class="highlight-keyword">Each</span> node <span class="highlight-keyword">In</span> TreeNodeEnumerator.Enumerate(startNode, enumerateSiblings)
+    txtEnumResults.AppendText(<span class="highlight-keyword">String</span>.Format(<span class="highlight-literal">"Enum Helper: {0}{1}"</span> &amp;
+        Environment.NewLine, <span class="highlight-keyword">New</span> <span class="highlight-keyword">String</span>(<span class="highlight-literal">" "</span>C, node.Level * <span class="highlight-number">4</span>), node.Text))
+<span class="highlight-keyword">Next</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAACAAA");</script></div><div class="collapsibleAreaRegion" id="CustomDraw"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID5RB')" onkeypress="SectionExpandCollapse_CheckKey('ID5RB', event)" tabindex="0"><img id="ID5RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Customizing the Tree View's Appearance</span></div><div id="ID5RBSection" class="collapsibleSection"><p>The following additional properties allow you to customize the tree view's appearance without
+having to handle the drawing events.</p><div class="tableSection"><table><tr><th><p>Property</p></th><th><p>Description</p></th></tr><tr><td><p><span class="code">DrawDefaultImages</span></p></td><td><p>This property is used to set or get whether or not the tree view will draw default images for
+tree nodes without images.  If not drawn, the node text is drawn flush left with no gap.  The default setting is
+true to match the standard tree view control.</p></td></tr><tr><td><p><span class="code">ExpandoImageList</span></p></td><td><p>This property is used to set or get the expando image list used to show the +/- images when
+the <span class="code">ShowPlusMinus</span> property is set to true.  See the property help for information on how
+to set up the image list.</p></td></tr><tr><td><p><span class="code">UseThemedImages</span></p></td><td><p>This is used to set or get whether or not to use the themed versions of the expando and
+checkbox images even when themes are not being used.  The default is false and the images are based on the
+system's current visual style setting.</p></td></tr></table></div><p>To further customize the tree view's appearance you can handle the
+<a href="43230e78-b6cf-b13f-1eb4-4f105766a2fb.htm">TreeNodeDrawing</a> and/or
+<a href="4582d353-dac5-898f-2305-51cc1ba50e44.htm">TreeNodeDrawn</a>
+events.  Each event receives a <a href="cf9fb0c5-95a1-857b-561f-1edb09d1b8b3.htm">DrawTreeNodeExtendedEventArgs</a>
+instance that contains drawing state information for the node.  The <span class="code">TreeNodeDrawing</span>
+event occurs prior to the node being drawn.  In your event handler, you can choose to alter the various
+properties of the event arguments object and let the tree view draw the node based on your changes or you can
+choose to draw the node yourself and suppress the default drawing of one or more parts of the node.  The
+<span class="code">TreeNodeDrawn</span> event occurs after the node has been fully drawn and allows you to
+customize its appearance after all other drawing has taken place.</p><p>See the <a href="cf9fb0c5-95a1-857b-561f-1edb09d1b8b3.htm">DrawTreeNodeExtendedEventArgs</a>
+property help topics for information on what each of them does.  The demo application supplied with the library
+contains a simple example of handling each event.</p></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID6RB')" onkeypress="SectionExpandCollapse_CheckKey('ID6RB', event)" tabindex="0"><img id="ID6RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID6RBSection" class="collapsibleSection"><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="ce5cb77a-44a9-4629-aec3-6a8435cd8e53.htm">Control Tutorials</a></div></div></div></div><div id="pageFooter" class="pageFooter"><p><a href="https://github.com/EWSoftware/ListControls" target="_blank">[v2015.1.19.0] Copyright © 2005-2015, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=EWSoftware.ListControls Library Documentation">Eric@EWoodruff.us</a></div><script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        var HT_mailLinkText = HT_mailLink.innerHTML;
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        HT_mailLink.innerHTML = HT_mailLinkText;
+        </script></div></body></html>

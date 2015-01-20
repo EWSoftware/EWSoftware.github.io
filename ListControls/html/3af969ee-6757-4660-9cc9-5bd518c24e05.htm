@@ -1,0 +1,227 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>CheckBoxList and RadioButtonList Tutorial</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="tutorials, CheckBoxList" /><meta name="System.Keywords" content="tutorials, RadioButtonList" /><meta name="Microsoft.Help.Id" content="3af969ee-6757-4660-9cc9-5bd518c24e05" /><meta name="Description" content="The CheckBoxList and RadioButtonList are quite similar with regard to creation and usage. Simply drag the control from the toolbox, drop it on the form, and use the Properties window to adjust its settings." /><meta name="Microsoft.Help.ContentType" content="Concepts" /><meta name="BrandingAware" content="true" /><link type="text/css" rel="stylesheet" href="../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" /><script type="text/javascript" src="../scripts/jquery-1.11.0.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">EWSoftware.ListControls Library Documentation<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!"></a><a data-tochassubtree="true" href="ca3b503d-654e-4fe6-8ca3-ec3ea8fb9a1a.htm" title="EWSoftware.ListControls Library Documentation" tocid="roottoc">EWSoftware.ListControls Library Documentation</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!"></a><a data-tochassubtree="true" href="ce5cb77a-44a9-4629-aec3-6a8435cd8e53.htm" title="Control Tutorials" tocid="ce5cb77a-44a9-4629-aec3-6a8435cd8e53">Control Tutorials</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="3af969ee-6757-4660-9cc9-5bd518c24e05.htm" title="CheckBoxList and RadioButtonList Tutorial" tocid="3af969ee-6757-4660-9cc9-5bd518c24e05">CheckBoxList and RadioButtonList Tutorial</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="ea1601a4-68aa-4ad2-92f9-8c78fbf67512.htm" title="Combo Box Controls Tutorial" tocid="ea1601a4-68aa-4ad2-92f9-8c78fbf67512">Combo Box Controls Tutorial</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="2587355f-decc-4d08-85ff-7f8816b0cbfa.htm" title="DataList Control Tutorial" tocid="2587355f-decc-4d08-85ff-7f8816b0cbfa">DataList Control Tutorial</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="8fbf556a-9edc-4071-85ef-6df0d4d13950.htm" title="DataNavigator Control Tutorial" tocid="8fbf556a-9edc-4071-85ef-6df0d4d13950">DataNavigator Control Tutorial</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="7cf6fc2e-bab8-4bf4-bf76-c1db9e2d342a.htm" title="ExtendedTreeView Control Tutorial" tocid="7cf6fc2e-bab8-4bf4-bf76-c1db9e2d342a">ExtendedTreeView Control Tutorial</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize"><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize"></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="titleColumn">CheckBoxList and RadioButtonList Tutorial</td></tr></table><span class="introStyle"></span><div class="introduction"><p>This topic describes the Radio Button List control and its features.</p><ul class="autoOutline"><li class="outlineSectionEntry"><a href="#Features">Common Features</a></li><li class="outlineSectionEntry"><a href="#RBList">RadioButtonList Usage</a></li><li class="outlineSectionEntry"><a href="#CKBList">CheckBoxList Usage</a></li><li class="outlineSectionEntry"><a href="#RBLBinding">RadioButtonList Data Binding</a></li><li class="outlineSectionEntry"><a href="#CBLBinding">CheckBoxList Data Binding</a></li></ul></div><div class="collapsibleAreaRegion" id="Features"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Common Features</span></div><div id="ID1RBSection" class="collapsibleSection"><p>The <span class="code">CheckBoxList</span> and <span class="code">RadioButtonList</span> are quite
+similar with regard to creation and usage.  Simply drag the control from the toolbox, drop it on the form, and
+use the <strong>Properties</strong> window to adjust its settings.  For simple lists, you can enter text
+strings in the designer by selecting the <span class="code">Items</span> property and entering the values one per
+line in the collection editor.  When items are added directly to the <span class="code">Items</span> collection,
+the <span class="code">SortOrder</span> property can be used to sort the items in ascending or descending order.
+The default sort order is <span class="code">None</span>.</p><p>A simple <span class="code">ListItem</span> object is supplied that can be used with an array list
+as the data source for the list controls.  It contains a <span class="code">Display</span> property for the
+display text and a <span class="code">Value</span> property for the value of the item.  The demo application
+contains examples of its use.</p><p>The controls also support the same complex data sources that any other standard .NET control can
+use (i.e. data sets, data views, data tables, arrays, etc).  To assign a more complex data source, you can set
+the <span class="code">DisplayMember</span>, <span class="code">ValueMember</span>, and <span class="code">DataSource</span>
+properties.  If assigning these three properties in code, always assign the <span class="code">DataSource</span>
+property last to improve performance.  This is true of all .NET controls as assigning a new display or value
+member forces the control to reevaluate its data source.  By assigning the data source last, it will only have to
+evaluate the data source once.</p><p>The properties in the <strong>Appearance</strong> category can be used to alter the visual
+style of the control.  The <span class="code">LayoutMethod</span> property allows you to define how the buttons
+within the control are laid out (single column, single row, down then across, or across and then down).  You can
+also specify an image list and define how the buttons, text, and images are aligned.  The
+<span class="code">RadioButtonList</span> and <span class="code">CheckBoxList</span> controls are Windows XP
+theme-aware.</p><p>The properties in the <strong>Title</strong> category can be used to specify a title that
+appears on the top border of the control.  You can adjust its font and the colors used to display the title text.</p><p>Both controls have an <span class="code">EnforceDefaultSelection</span> property that allows you to
+specify whether a default selection will be set if an attempt is made to set the selected index to -1.  When set
+to true, the item specified by the <span class="code">DefaultSelection</span> property will be used instead.  By
+default, this feature is enabled and the first entry in the data source is used as the default selection.  This
+ensures that for the radio button list, it is never shown without any radio button selected.  For the checkbox
+list, the check state of the specified item is unaffected when the selected index changes.  It simply lets you
+specify which item should get the focus if the selection is cleared.</p><p>Unlike the standard .NET list controls, all of the controls in the <span class="code">EWSoftware.ListControls</span>
+namespace allow you to index their data source to extract values.  This allows you to obtain the value of a field
+in the current selection or a field in any row even if it is not the selected item and regardless of whether or
+not the field is used as the display or value member.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EABAFAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EABAFAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EABAFAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EABAFAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">// Get the vendor name from the radio button list's current selection</span>
+<span class="highlight-keyword">string</span> vendorName = (<span class="highlight-keyword">string</span>)rblVendor[<span class="highlight-literal">"VendorName"</span>];
+
+<span class="highlight-comment">// Get the item quantity from the sixth row of the checkbox list</span>
+<span class="highlight-keyword">int</span> itemQty = (<span class="highlight-keyword">int</span>)cblItems[<span class="highlight-number">5</span>, <span class="highlight-literal">"ItemQty"</span>];</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EABAFAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAAAFAAA_tab1" class="codeSnippetContainerTabSingle">VB.NET</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAAAFAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EAAAFAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAAAFAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">' Get the vendor name from the radio button list's current selection</span>
+<span class="highlight-keyword">Dim</span> vendorName <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span> = <span class="highlight-keyword">CType</span>(rblVendor(<span class="highlight-literal">"VendorName"</span>), <span class="highlight-keyword">String</span>)
+
+<span class="highlight-comment">' Get the item quantity from the sixth row of the checkbox list</span>
+<span class="highlight-keyword">Dim</span> itemQty <span class="highlight-keyword">As</span> <span class="highlight-keyword">Integer</span> = <span class="highlight-keyword">CType</span>(cblItems(<span class="highlight-number">5</span>, <span class="highlight-literal">"ItemQty"</span>), <span class="highlight-keyword">Integer</span>)</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAAAFAAA");</script></div><div class="collapsibleAreaRegion" id="RBList"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />RadioButtonList Usage</span></div><div id="ID2RBSection" class="collapsibleSection"><p>The <span class="code">RadioButtonList</span> allows only a single selection and provides a set of
+properties and events similar to the standard <span class="code">ListBox</span> control such as
+<span class="code">SelectedIndex</span>, <span class="code">SelectedValue</span>, <span class="code">SelectedIndexChanged</span>,
+etc.  As such, you can use it in a similar fashion but can take advantage of its extra features such as the
+layout options, etc.</p></div><div class="collapsibleAreaRegion" id="CKBList"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />CheckBoxList Usage</span></div><div id="ID3RBSection" class="collapsibleSection"><p>The <span class="code">CheckBoxList</span> is similar in nature to the standard
+<span class="code">CheckedListBox</span> control but is much more flexible as it allows better data binding
+support and many more options with regard to its appearance and layout.  The <span class="code">CheckBoxList</span>
+allows you to select one or more items from a data source. By default, it uses two-state checkboxes (checked and
+unchecked).  By setting the <span class="code">ThreeState</span> property to true, you can make it use three-state
+checkboxes (checked, unchecked, and indeterminate).</p><p>The <span class="code">CheckBoxList</span> control provides a set of properties and events similar
+to those of the <span class="code">RadioButtonList</span> such as <span class="code">SelectedIndex</span>,
+<span class="code">SelectedValue</span>, <span class="code">SelectedIndexChanged</span>, etc.  The
+<span class="code">SelectedIndexChanged</span> event is raised when a new item is selected in the list.  Setting
+the <span class="code">SelectedIndex</span> property will give the item at the specified index the focus but does
+not change its check state. To detect changes in an item's check state, use the
+<span class="code">ItemCheckStateChanged</span> event.  The checkbox list also provides the
+<span class="code">GetItemChecked</span>/<span class="code">SetItemChecked</span> and
+<span class="code">GetItemCheckState</span>/<span class="code">SetItemCheckState</span> methods to get or set the
+check state of items in the list.  All of those methods are overloaded to accept either an integer specifying the
+item's index in the collection or an item key which corresponds to the <span class="code">ValueMember</span> value
+of an item in the collection.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAGADAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAGADAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EAGADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAGADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">// Get an array of events from a comma-separated list of codes retrieved from a</span>
+<span class="highlight-comment">// database field.</span>
+<span class="highlight-keyword">string</span>[] events = eventCodes.Split(<span class="highlight-literal">','</span>);
+
+<span class="highlight-comment">// Mark each of the selected event codes as checked</span>
+<span class="highlight-keyword">foreach</span>(<span class="highlight-keyword">string</span> s <span class="highlight-keyword">in</span> eventCodes)
+    cblEventCodes.SetItemChecked(s.Trim(), <span class="highlight-keyword">true</span>);</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAGADAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAFADAAA_tab1" class="codeSnippetContainerTabSingle">VB.NET</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAFADAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EAFADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAFADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">' Get an array of events from a comma-separated list of codes retrieved from a</span>
+<span class="highlight-comment">' database field.</span>
+<span class="highlight-keyword">Dim</span> events() <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span> = eventCodes.Split(<span class="highlight-literal">","</span>)
+
+<span class="highlight-comment">' Mark each of the selected event codes as checked</span>
+<span class="highlight-keyword">Dim</span> s <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span>
+
+<span class="highlight-keyword">For</span> <span class="highlight-keyword">Each</span> s <span class="highlight-keyword">In</span> eventCodes
+    cblEventCodes.SetItemChecked(s.Trim(), <span class="highlight-keyword">True</span>)
+<span class="highlight-keyword">Next</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAFADAAA");</script><p>The <span class="code">CheckedIndices</span> property can be used to obtain a collection that
+contains the indices of all items in the list that have a check state of <span class="code">Checked</span> or
+<span class="code">Indeterminate</span>.</p><p>The <span class="code">CheckedItems</span> property can be used to obtain a collection that contains
+the actual items in the list that have a check state of <span class="code">Checked</span> or
+<span class="code">Indeterminate</span>.  This collection has some helper methods that you will find useful.</p><div class="tableSection"><table><tr><th><p>Method</p></th><th><p>Description</p></th></tr><tr><td><p><span class="code">ValueOf</span></p></td><td><p>This method can be used to obtain the value of the item in the collection.  The return value
+corresponds to the <span class="code">ValueMember</span> value of the item in the list.</p></td></tr><tr><td><p><span class="code">DisplayTextOf</span></p></td><td><p>This method can be used to obtain the display text of the item in the collection.  The return
+value corresponds to the <span class="code">DisplayMember</span> value of the item in the list.</p></td></tr><tr><td><p><span class="code">CheckStateOf</span></p></td><td><p>This method can be used to get the check state of the item in the collection.</p></td></tr><tr><td><p><span class="code">ToString</span></p></td><td><p>This method has been overridden so that it returns a comma-separated list of the values from
+the collection.  The values corresponds to the <span class="code">ValueMember</span> values of the items in the
+list.</p></td></tr><tr><td><p><span class="code">ToDisplayTextString</span></p></td><td><p>This method returns a comma-separated list of the display text values from the collection.
+The values corresponds to the <span class="code">DisplayMember</span> values of the items in the list.</p></td></tr></table></div><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EABADAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EABADAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EABADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EABADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">CheckedItemsCollection checkedItems = cblEventCodes.CheckedItems;
+
+<span class="highlight-comment">// Display the value of each checked item</span>
+<span class="highlight-keyword">for</span>(<span class="highlight-keyword">int</span> idx = <span class="highlight-number">0</span>; idx &lt; checkedItems.Count; idx++)
+    Debug.WriteLine(checkedItems.ValueOf(idx));
+
+<span class="highlight-comment">// Display the display text of each checked item</span>
+<span class="highlight-keyword">for</span>(<span class="highlight-keyword">int</span> idx = <span class="highlight-number">0</span>; idx &lt; checkedItems.Count; idx++)
+    Debug.WriteLine(checkedItems.DisplayTextOf(idx));
+
+<span class="highlight-comment">// Display the check state of each checked item</span>
+<span class="highlight-keyword">for</span>(<span class="highlight-keyword">int</span> idx = <span class="highlight-number">0</span>; idx &lt; checkedItems.Count; idx++)
+    Debug.WriteLine(checkedItems.CheckStateOf(idx));
+
+<span class="highlight-comment">// Get the checked values into a string ready to store in</span>
+<span class="highlight-comment">// a database field.</span>
+<span class="highlight-keyword">string</span> eventCodes = checkedItems.ToString();
+
+<span class="highlight-comment">// Show the display text values in a message box</span>
+MessageBox.Show(<span class="highlight-literal">"You chose: "</span> + checkedItems.ToDisplayTextString());</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EABADAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAAADAAA_tab1" class="codeSnippetContainerTabSingle">VB.NET</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAAADAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EAAADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAAADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">Dim</span> idx <span class="highlight-keyword">As</span> <span class="highlight-keyword">Integer</span>
+<span class="highlight-keyword">Dim</span> checkedItems <span class="highlight-keyword">As</span> CheckedItemsCollection = cblEventCodes.CheckedItems
+
+<span class="highlight-comment">' Display the value of each checked item</span>
+<span class="highlight-keyword">For</span> idx = <span class="highlight-number">0</span> <span class="highlight-keyword">To</span> checkedItems.Count - <span class="highlight-number">1</span>
+    Debug.WriteLine(checkedItems.ValueOf(idx))
+<span class="highlight-keyword">Next</span> idx
+
+<span class="highlight-comment">' Display the display text of each checked item</span>
+<span class="highlight-keyword">For</span> idx = <span class="highlight-number">0</span> <span class="highlight-keyword">To</span> checkedItems.Count - <span class="highlight-number">1</span>
+    Debug.WriteLine(checkedItems.DisplayTextOf(idx))
+<span class="highlight-keyword">Next</span> idx
+
+<span class="highlight-comment">' Display the check state of each checked item</span>
+<span class="highlight-keyword">For</span> idx = <span class="highlight-number">0</span> <span class="highlight-keyword">To</span> checkedItems.Count - <span class="highlight-number">1</span>
+    Debug.WriteLine(checkedItems.CheckStateOf(idx))
+<span class="highlight-keyword">Next</span> idx
+
+<span class="highlight-comment">' Get the checked values into a string ready to store in</span>
+<span class="highlight-comment">' a database field.</span>
+<span class="highlight-keyword">Dim</span> eventCodes <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span> = checkedItems.ToString()
+
+<span class="highlight-comment">' Show the display text values in a message box</span>
+MessageBox.Show(<span class="highlight-literal">"You chose: "</span> &amp; checkedItems.ToDisplayTextString())</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAAADAAA");</script></div><div class="collapsibleAreaRegion" id="RBLBinding"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />RadioButtonList Data Binding</span></div><div id="ID4RBSection" class="collapsibleSection"><p>You have a choice of three different control properties that can be bound to a data source in order
+to edit fields in the data source.</p><div class="tableSection"><table><tr><th><p>Property</p></th><th><p>Description</p></th></tr><tr><td><p><span class="code">SelectedValue</span></p></td><td><p>Use this when list items are specified using the <span class="code">DisplayMember</span>,
+<span class="code">ValueMember</span>, and <span class="code">DataSource</span> properties.</p></td></tr><tr><td><p><span class="code">SelectedItem</span></p></td><td><p>Use this when list items are specified by adding them to the control's
+<span class="code">Items</span> property.</p></td></tr><tr><td><p><span class="code">SelectedIndex</span></p></td><td><p>You may use this if the field values corresponds to an index from zero to the number of items
+in the list minus one regardless of how the list items are defined.</p></td></tr></table></div><p>When using the <span class="code">DataSource</span> property to specify the items that appear in the
+radio button list, you will add a binding on the <span class="code">SelectedValue</span> property.  As the
+selection changes in the list, the <span class="code">SelectedValue</span> property also changes thus updating the
+data source.  Below is an example of adding a data binding through code.  The bindings can also be done using the
+Visual Studio designer.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAFACAAA_tab1" class="codeSnippetContainerTabSingle">C# - RadioButtonList Data Binding</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAFACAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EAFACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAFACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">// Assign a data source for the list items displayed by the radio button list</span>
+rblContactType.DisplayMember = <span class="highlight-literal">"Display"</span>;
+rblContactType.ValueMember = <span class="highlight-literal">"Value"</span>;
+rblContactType.DataSource = contactTypeList;
+
+<span class="highlight-comment">// Bind the ContactType field in the addresses data source to the SelectedValue property</span>
+rblContactType.DataBindings.Add(<span class="highlight-keyword">new</span> Binding(<span class="highlight-literal">"SelectedValue"</span>, addressList, <span class="highlight-literal">"ContactType"</span>);</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAFACAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAEACAAA_tab1" class="codeSnippetContainerTabSingle">VB.NET - RadioButtonList Data Binding</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAEACAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EAEACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAEACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">' Assign a data source for the list items displayed by the radio button list</span>
+rblContactType.DisplayMember = <span class="highlight-literal">"Display"</span>
+rblContactType.ValueMember = <span class="highlight-literal">"Value"</span>
+rblContactType.DataSource = contactTypeList
+
+<span class="highlight-comment">' Bind the ContactType field in the addresses data source to the SelectedValue property</span>
+rblContactType.DataBindings.Add(<span class="highlight-keyword">New</span> Binding(<span class="highlight-literal">"SelectedValue"</span>, addressList, <span class="highlight-literal">"ContactType"</span>)</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAEACAAA");</script><p>The example above assumes that the field to which the property is bound will never be null or that
+the list contains a null value entry.  If the bound field can contain null but your radio button list does not
+contain an item with a null value, you can use a <span class="code">Format</span> event handler on the data
+binding to enforce a default value. For example:</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EACACAAA_tab1" class="codeSnippetContainerTabSingle">C# - Enforce a Default Value on Null Fields</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EACACAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EACACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EACACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">// Create the binding and connect the event handler</span>
+Binding b = <span class="highlight-keyword">new</span> Binding(<span class="highlight-literal">"SelectedValue"</span>, dsAddresses, <span class="highlight-literal">"ContactType"</span>);
+b.Format += ContactType_Format;
+
+<span class="highlight-comment">// Add the binding to the radio button list</span>
+rblContactType.DataBindings.Add(b);
+
+<span class="highlight-comment">// This event handler converts null values to a default radio button list value</span>
+<span class="highlight-keyword">private</span> <span class="highlight-keyword">void</span> ContactType_Format(<span class="highlight-keyword">object</span> sender, ConvertEventArgs e)
+{
+    <span class="highlight-keyword">if</span>(e.Value == <span class="highlight-keyword">null</span> || e.Value == DBNull.Value)
+        e.Value = <span class="highlight-literal">"B"</span>;
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EACACAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EABACAAA_tab1" class="codeSnippetContainerTabSingle">VB.NET - Enforce a Default Value on Null Fields</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EABACAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EABACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EABACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">' Create the binding and connect the event handler</span>
+<span class="highlight-keyword">Dim</span> b <span class="highlight-keyword">As</span> <span class="highlight-keyword">New</span> Binding(<span class="highlight-literal">"SelectedValue"</span>, dsAddresses, <span class="highlight-literal">"ContactType"</span>)
+<span class="highlight-keyword">AddHandler</span> b.Format, <span class="highlight-keyword">AddressOf</span> ContactType_Format
+
+<span class="highlight-comment">' Add the binding to the radio button list</span>
+rblContactType.DataBindings.Add(b)
+
+<span class="highlight-comment">' This event handler converts null values to a default radio button list value</span>
+<span class="highlight-keyword">Private</span> <span class="highlight-keyword">Sub</span> ContactType_Format(sender <span class="highlight-keyword">As</span> <span class="highlight-keyword">Object</span>, e <span class="highlight-keyword">As</span> ConvertEventArgs)
+    <span class="highlight-keyword">If</span> e.Value <span class="highlight-keyword">Is</span> <span class="highlight-keyword">Nothing</span> <span class="highlight-keyword">OrElse</span> e.Value <span class="highlight-keyword">Is</span> DBNull.Value <span class="highlight-keyword">Then</span>
+        e.Value = <span class="highlight-literal">"B"</span>
+    <span class="highlight-keyword">End</span> <span class="highlight-keyword">If</span>
+<span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EABACAAA");</script><p>If you specify the items to display in the radio button list by adding them to the
+<span class="code">Items</span> property rather than using the <span class="code">DataSource</span> property, you
+will need to bind the field to the <span class="code">SelectedItem</span> property instead.  If the value in the
+data source corresponds directly to a radio button list index from zero to the number of items in the radio
+button list minus one, you may bind the field to the <span class="code">SelectedIndex</span> property.  The
+results are the same.  As the selection changes, the field will be updated with the value from the bound
+property.  The <strong>Relationship Test</strong> example in the demo application contains an example of
+binding a radio button list to a data source.</p></div><div class="collapsibleAreaRegion" id="CBLBinding"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID5RB')" onkeypress="SectionExpandCollapse_CheckKey('ID5RB', event)" tabindex="0"><img id="ID5RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />CheckBoxList Data Binding</span></div><div id="ID5RBSection" class="collapsibleSection"><p>Unlike the radio button list, the checkbox list is a multi-valued control.  As such, it does not
+make sense to a bind field to the <span class="code">SelectedValue</span>, <span class="code">SelectedItem</span>,
+or <span class="code">SelectedIndex</span> property as it would only reflect one of the selected values.  The
+<span class="code">CheckBoxList</span> control provides three additional properties that allow you to easily bind
+one field to each checkbox in the list thus allowing you to edit multiple fields with little effort.</p><div class="tableSection"><table><tr><th><p>Property</p></th><th><p>Description</p></th></tr><tr><td><p><span class="code">BindingMembersDataSource</span></p></td><td><p>This property is used to specify the data source that contains the fields to which each
+checkbox will be bound.</p></td></tr><tr><td><p><span class="code">BindingMembers</span></p></td><td><p>This string collection contains a list of each field in the
+<span class="code">BindingMembersDataSource</span> that will be bound to one checkbox in the list.  There should
+be at least one field for each checkbox in the list.  Any excess fields that do not have a corresponding checkbox
+will be ignored.  The data type of the fields should be Boolean or convertible to a Boolean value.  Nulls are
+supported.</p></td></tr><tr><td><p><span class="code">BindingMembersBindingContext</span></p></td><td><p>This property can be used to specify the binding context to use when binding the checkboxes
+to the data source.  Normally, you can ignore this property.  However, if the data source is used by another
+control on the form and that control has a binding context other than the default, you should assign its binding
+context to this property so that changes to the data source will be reflected in both controls.</p></td></tr></table></div><p>As noted above, the data type of the fields specified in <span class="code">BindingMembers</span>
+should be Boolean or convertible to a Boolean value.  Null values are also supported and the behavior of the
+control when a null value is encountered depends on the setting of the <span class="code">ThreeState</span>
+property.  If set to false, null values are converted to unchecked (false).  If <span class="code">ThreeState</span>
+is set to true, null values are converted to indeterminate and the checkbox will display using the grayed
+indeterminate state.  Likewise, if a checkbox is set to the indeterminate state, the bound field will be set to
+null.</p><p>Below is an example of adding data bindings through code.  The bindings can also be done using the
+Visual Studio designer.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EACABAAA_tab1" class="codeSnippetContainerTabSingle">C# - CheckBoxList Data Binding</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EACABAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EACABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EACABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">// Add items to use for the checkbox item text.  We could also assign them using</span>
+<span class="highlight-comment">// the DisplayMember, ValueMember, and DataSource too.</span>
+cblAddressTypes.Items.AddRange(<span class="highlight-keyword">new</span> <span class="highlight-keyword">object</span>[] {
+    <span class="highlight-literal">"Domestic Address"</span>, <span class="highlight-literal">"International Address"</span>, <span class="highlight-literal">"Postal Address"</span>,
+    <span class="highlight-literal">"Parcel Address"</span>, <span class="highlight-literal">"Home Address"</span>, <span class="highlight-literal">"Business Address"</span> });
+
+<span class="highlight-comment">// Specify to which field each checkbox will be bound</span>
+cblAddressTypes.BindingMembers.AddRange(<span class="highlight-keyword">new</span> <span class="highlight-keyword">string</span>[] {
+    <span class="highlight-literal">"Domestic"</span>, <span class="highlight-literal">"International"</span>, <span class="highlight-literal">"Postal"</span>, <span class="highlight-literal">"Parcel"</span>, <span class="highlight-literal">"Home"</span>, <span class="highlight-literal">"Business"</span> });
+
+<span class="highlight-comment">// Specify the data source containing the binding members</span>
+cblAddressTypes.BindingMembersDataSource = addressList;</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EACABAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EABABAAA_tab1" class="codeSnippetContainerTabSingle">VB.NET - CheckBoxList Data Binding</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EABABAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EABABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EABABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">' Add items to use for the checkbox item text.  We could also assign them using</span>
+<span class="highlight-comment">' the DisplayMember, ValueMember, and DataSource too.</span>
+cblAddressTypes.Items.AddRange(<span class="highlight-keyword">New</span> <span class="highlight-keyword">Object</span>() {
+    <span class="highlight-literal">"Domestic Address"</span>, <span class="highlight-literal">"International Address"</span>, <span class="highlight-literal">"Postal Address"</span>,
+    <span class="highlight-literal">"Parcel Address"</span>, <span class="highlight-literal">"Home Address"</span>, <span class="highlight-literal">"Business Address"</span> });
+
+<span class="highlight-comment">' Specify to which field each checkbox will be bound</span>
+cblAddressTypes.BindingMembers.AddRange(<span class="highlight-keyword">New</span> <span class="highlight-keyword">String</span>() {
+    <span class="highlight-literal">"Domestic"</span>, <span class="highlight-literal">"International"</span>, <span class="highlight-literal">"Postal"</span>, <span class="highlight-literal">"Parcel"</span>, <span class="highlight-literal">"Home"</span>, <span class="highlight-literal">"Business"</span> })
+
+<span class="highlight-comment">' Specify the data source containing the binding members</span>
+cblAddressTypes.BindingMembersDataSource = addressList</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EABABAAA");</script><p>The <strong>Relationship Test</strong> example in the demo application contains an example
+of binding a checkbox list to a data source.</p></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID6RB')" onkeypress="SectionExpandCollapse_CheckKey('ID6RB', event)" tabindex="0"><img id="ID6RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID6RBSection" class="collapsibleSection"><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="ce5cb77a-44a9-4629-aec3-6a8435cd8e53.htm">Control Tutorials</a></div></div></div></div><div id="pageFooter" class="pageFooter"><p><a href="https://github.com/EWSoftware/ListControls" target="_blank">[v2015.1.19.0] Copyright © 2005-2015, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=EWSoftware.ListControls Library Documentation">Eric@EWoodruff.us</a></div><script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        var HT_mailLinkText = HT_mailLink.innerHTML;
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        HT_mailLink.innerHTML = HT_mailLinkText;
+        </script></div></body></html>

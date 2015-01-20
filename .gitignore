@@ -1,2 +1,3 @@
-# Ignore SHFB build log files
+# Ignore SHFB build log files and HTML help files
 **/LastBuild.log
+**/*.chm
