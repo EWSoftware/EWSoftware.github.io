@@ -1023,6 +1023,7 @@
     <HelpKINode Title="DrawTreeNodeExtendedEventArgs.Dispose Method " Url="html/dd517f0d-52b7-3c42-eed2-f7cbcba0bf9d.htm" />
     <HelpKINode Title="TemplateControl.Dispose Method " Url="html/4b0e24da-3a96-3ad9-957f-6fc6ad229d36.htm" />
   </HelpKINode>
+  <HelpKINode Title="donate" Url="html/741ae4d6-3fb2-4a20-a874-36e3ed0873a8.htm" />
   <HelpKINode Title="DownThenAcross enumeration member" Url="html/c511915b-7533-1b23-c3c6-cd39bc139219.htm" />
   <HelpKINode Title="DrawDefaultImages property" Url="html/c6b30015-b48c-59be-9067-497dd961f3e0.htm" />
   <HelpKINode Title="DrawImage method">
@@ -1797,8 +1798,8 @@
   <HelpKINode Title="ObjectCollection class">
     <HelpKINode Title="methods" Url="html/ce26bd74-7d11-17a4-78f1-a43abbe19adf.htm" />
     <HelpKINode Title="methods" Url="html/1391c631-7ed2-9e72-fa6a-84d35cb1f486.htm" />
-    <HelpKINode Title="properties" Url="html/82a4cb8d-24b1-040b-3976-ea896dc2a837.htm" />
     <HelpKINode Title="properties" Url="html/2cd61d42-81f7-0649-2b29-fb92f8ce5ad0.htm" />
+    <HelpKINode Title="properties" Url="html/82a4cb8d-24b1-040b-3976-ea896dc2a837.htm" />
   </HelpKINode>
   <HelpKINode Title="OnAddDeleteButtonsVisibleChanged method">
     <HelpKINode Title="DataList.OnAddDeleteButtonsVisibleChanged Method " Url="html/22fabda3-fb93-90c6-de72-d6f1b75ab3f5.htm" />
@@ -2280,6 +2281,9 @@
   <HelpKINode Title="StringCollection.StringCollection constructor" Url="html/59329b65-05e8-1c7d-9097-d83131169b3b.htm" />
   <HelpKINode Title="StringFormat property" Url="html/11499663-a427-d16c-191c-bb119e9f1610.htm" />
   <HelpKINode Title="SubControlsRefreshed event" Url="html/c5845880-bd4f-6ba9-b219-ad3f11a8aaf8.htm" />
+  <HelpKINode Title="support">
+    <HelpKINode Title="donate" Url="html/741ae4d6-3fb2-4a20-a874-36e3ed0873a8.htm" />
+  </HelpKINode>
   <HelpKINode Title="SwitchSectionShortcut property" Url="html/0a7e1311-a0ba-dc76-ec20-26bdfe33d585.htm" />
   <HelpKINode Title="SynchronizeCheckedStates method" Url="html/f9d68892-7f04-6d4b-417f-8d75c5fb74ec.htm" />
   <HelpKINode Title="SyncParentChildCheckedState property" Url="html/c5325721-fb9c-ddb1-4078-f1c417454997.htm" />
