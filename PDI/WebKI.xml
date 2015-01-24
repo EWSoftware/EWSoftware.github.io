@@ -1102,6 +1102,7 @@
     <HelpKINode Title="VCalendar.Dispose Method " Url="html/977b0a77-25a2-fa88-4add-4bbadbdf35f2.htm" />
   </HelpKINode>
   <HelpKINode Title="Domestic enumeration member" Url="html/4bdfa733-7270-7bf6-c960-4d9d30bb9824.htm" />
+  <HelpKINode Title="donate" Url="html/a1b468b7-7c76-469f-a514-784b6fb8f8f3.htm" />
   <HelpKINode Title="Draft enumeration member" Url="html/03b11362-c1d5-a1be-86a4-02e8e68e7737.htm" />
   <HelpKINode Title="DueDate enumeration member" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
   <HelpKINode Title="DueDateProperty class">
@@ -1872,8 +1873,8 @@
   <HelpKINode Title="GetProperties method" Url="html/c2f17e95-f82e-a33d-40bc-88cca93035be.htm" />
   <HelpKINode Title="GetPropertyValue method" Url="html/e1edc6e6-b10b-199b-c5ac-27a4f203a06a.htm" />
   <HelpKINode Title="GetRecurrence method">
-    <HelpKINode Title="RecurrencePattern.GetRecurrence Method " Url="html/e200e2de-8dd7-1312-bc84-5e22a830dc5f.htm" />
     <HelpKINode Title="RecurrencePattern.GetRecurrence Method " Url="html/c7eafd9d-08bf-ddd7-1187-c5450a04d429.htm" />
+    <HelpKINode Title="RecurrencePattern.GetRecurrence Method " Url="html/e200e2de-8dd7-1312-bc84-5e22a830dc5f.htm" />
     <HelpKINode Title="RecurrencePropertiesDlg.GetRecurrence Method " Url="html/20672677-37e0-1a35-1747-62bb87e4003f.htm" />
   </HelpKINode>
   <HelpKINode Title="GetSchema method" Url="html/42689dbd-5b98-8300-b471-ff92bd374b13.htm" />
@@ -2198,8 +2199,8 @@
   <HelpKINode Title="MailerProperty.VersionsSupported property" Url="html/492dbf3b-4c33-fc6d-5afc-a51eebcc0bf7.htm" />
   <HelpKINode Title="MaximumOccurrences property" Url="html/793df62f-8496-386b-8d43-5ac34b3b79da.htm" />
   <HelpKINode Title="MaximumPattern property">
-    <HelpKINode Title="RecurrencePattern.MaximumPattern Property " Url="html/e8a50cb0-01d0-d994-b63e-2fef60be99c9.htm" />
     <HelpKINode Title="RecurrencePattern.MaximumPattern Property " Url="html/14066c48-2413-ecee-d53e-c19492e00d11.htm" />
+    <HelpKINode Title="RecurrencePattern.MaximumPattern Property " Url="html/e8a50cb0-01d0-d994-b63e-2fef60be99c9.htm" />
     <HelpKINode Title="RecurrencePropertiesDlg.MaximumPattern Property " Url="html/e7fd28c9-3065-8343-3503-acfe7e70c97d.htm" />
   </HelpKINode>
   <HelpKINode Title="MaximumValue property" Url="html/c12f478b-784d-dd1f-1449-2bec7ba9b4de.htm" />
@@ -3024,14 +3025,14 @@
   <HelpKINode Title="RecurrencePattern class">
     <HelpKINode Title="RecurrencePattern Class" Url="html/9c24d9eb-bc14-f119-3dd2-b9c7dc1e45a3.htm" />
     <HelpKINode Title="RecurrencePattern Class" Url="html/f73aa036-f839-92c4-8939-a936924d60a3.htm" />
-    <HelpKINode Title="about RecurrencePattern class" Url="html/f73aa036-f839-92c4-8939-a936924d60a3.htm" />
     <HelpKINode Title="about RecurrencePattern class" Url="html/9c24d9eb-bc14-f119-3dd2-b9c7dc1e45a3.htm" />
+    <HelpKINode Title="about RecurrencePattern class" Url="html/f73aa036-f839-92c4-8939-a936924d60a3.htm" />
     <HelpKINode Title="constructor" Url="html/f4f02986-e98e-c29b-c3dd-bf628e01abaf.htm" />
     <HelpKINode Title="constructor" Url="html/f055bcf0-91be-243c-1cc2-b6c895dfa1c9.htm" />
-    <HelpKINode Title="events" Url="html/864ddf24-f7f7-a47d-5aca-2bf07b1d31c9.htm" />
     <HelpKINode Title="events" Url="html/3155897b-e9c0-bcc1-aeaf-9a313fd82942.htm" />
-    <HelpKINode Title="methods" Url="html/35dc974a-deff-10dd-be79-b13b142b15fa.htm" />
+    <HelpKINode Title="events" Url="html/864ddf24-f7f7-a47d-5aca-2bf07b1d31c9.htm" />
     <HelpKINode Title="methods" Url="html/36f71680-892e-84c9-a0b0-c89fe1c83280.htm" />
+    <HelpKINode Title="methods" Url="html/35dc974a-deff-10dd-be79-b13b142b15fa.htm" />
     <HelpKINode Title="properties" Url="html/4406af32-11a4-5d07-b45a-93cdd55cbfa8.htm" />
     <HelpKINode Title="properties" Url="html/540f3515-e779-b1ff-4464-a3ce06553a13.htm" />
   </HelpKINode>
@@ -3048,8 +3049,8 @@
   <HelpKINode Title="RecurrencePattern.Dispose method" Url="html/22c9d53f-1296-fd22-1e70-fe428410edb8.htm" />
   <HelpKINode Title="RecurrencePattern.Focus method" Url="html/885ada44-f0d6-e0ff-dbde-ca8fb85e3dbf.htm" />
   <HelpKINode Title="RecurrencePattern.GetRecurrence method">
-    <HelpKINode Title="RecurrencePattern.GetRecurrence Method " Url="html/e200e2de-8dd7-1312-bc84-5e22a830dc5f.htm" />
     <HelpKINode Title="RecurrencePattern.GetRecurrence Method " Url="html/c7eafd9d-08bf-ddd7-1187-c5450a04d429.htm" />
+    <HelpKINode Title="RecurrencePattern.GetRecurrence Method " Url="html/e200e2de-8dd7-1312-bc84-5e22a830dc5f.htm" />
   </HelpKINode>
   <HelpKINode Title="RecurrencePattern.LoadPostData method" Url="html/eb9f6bee-37d6-ac91-891d-cc8aad6eb044.htm" />
   <HelpKINode Title="RecurrencePattern.MaximumPattern property">
@@ -3071,8 +3072,8 @@
     <HelpKINode Title="RecurrencePattern.ShowAdvanced Property " Url="html/65945112-2c19-148d-5bf6-ea8ef4f7105f.htm" />
   </HelpKINode>
   <HelpKINode Title="RecurrencePattern.ShowCanOccurOnHoliday property">
-    <HelpKINode Title="RecurrencePattern.ShowCanOccurOnHoliday Property " Url="html/14fe4ce0-308c-81f7-27e7-60fb61c30a6a.htm" />
     <HelpKINode Title="RecurrencePattern.ShowCanOccurOnHoliday Property " Url="html/f2666852-291d-ecc4-06b3-cffc2b2ab846.htm" />
+    <HelpKINode Title="RecurrencePattern.ShowCanOccurOnHoliday Property " Url="html/14fe4ce0-308c-81f7-27e7-60fb61c30a6a.htm" />
   </HelpKINode>
   <HelpKINode Title="RecurrencePattern.ShowEndTime property" Url="html/bf0f1abb-e624-e080-f88c-dd4246342fb3.htm" />
   <HelpKINode Title="RecurrencePattern.ShowWeekStartDay property">
@@ -3410,8 +3411,8 @@
   </HelpKINode>
   <HelpKINode Title="SetPropertyTimeZone method" Url="html/7fbbd6ed-3f8d-a8b5-bab6-248417bad9fa.htm" />
   <HelpKINode Title="SetRecurrence method">
-    <HelpKINode Title="RecurrencePattern.SetRecurrence Method " Url="html/7fed9f1e-688c-8fe8-854a-7d54e14e664a.htm" />
     <HelpKINode Title="RecurrencePattern.SetRecurrence Method " Url="html/23518382-3ac7-25d1-6af1-126aaeb1e143.htm" />
+    <HelpKINode Title="RecurrencePattern.SetRecurrence Method " Url="html/7fed9f1e-688c-8fe8-854a-7d54e14e664a.htm" />
     <HelpKINode Title="RecurrencePropertiesDlg.SetRecurrence Method " Url="html/0236d12a-9a7b-48e9-0873-bb13116da625.htm" />
   </HelpKINode>
   <HelpKINode Title="SetSoundBytes method" Url="html/f63063f9-2f2d-07ef-8adb-37aa5b5c63ec.htm" />
@@ -3437,13 +3438,13 @@
   <HelpKINode Title="SevenBit field" Url="html/4b652f79-8f90-4edf-8f3d-69a1d778e65b.htm" />
   <HelpKINode Title="ShouldSerializeValue method" Url="html/e1bc71e0-6367-8188-ff96-79b1053435d9.htm" />
   <HelpKINode Title="ShowAdvanced property">
-    <HelpKINode Title="RecurrencePattern.ShowAdvanced Property " Url="html/65945112-2c19-148d-5bf6-ea8ef4f7105f.htm" />
     <HelpKINode Title="RecurrencePattern.ShowAdvanced Property " Url="html/c8ebf230-e484-4092-6d2d-5e3727542e1f.htm" />
+    <HelpKINode Title="RecurrencePattern.ShowAdvanced Property " Url="html/65945112-2c19-148d-5bf6-ea8ef4f7105f.htm" />
     <HelpKINode Title="RecurrencePropertiesDlg.ShowAdvanced Property " Url="html/e7836629-8088-9a70-2d30-4f407dbdad54.htm" />
   </HelpKINode>
   <HelpKINode Title="ShowCanOccurOnHoliday property">
-    <HelpKINode Title="RecurrencePattern.ShowCanOccurOnHoliday Property " Url="html/14fe4ce0-308c-81f7-27e7-60fb61c30a6a.htm" />
     <HelpKINode Title="RecurrencePattern.ShowCanOccurOnHoliday Property " Url="html/f2666852-291d-ecc4-06b3-cffc2b2ab846.htm" />
+    <HelpKINode Title="RecurrencePattern.ShowCanOccurOnHoliday Property " Url="html/14fe4ce0-308c-81f7-27e7-60fb61c30a6a.htm" />
     <HelpKINode Title="RecurrencePropertiesDlg.ShowCanOccurOnHoliday Property " Url="html/83a3f461-5e41-3d5c-5ac9-ff45050bb07f.htm" />
   </HelpKINode>
   <HelpKINode Title="ShowEndTime property">
@@ -3452,8 +3453,8 @@
   </HelpKINode>
   <HelpKINode Title="ShowLoadSaveControls property" Url="html/fbdaad57-9016-c6e8-cac5-b91dc7b32e8b.htm" />
   <HelpKINode Title="ShowWeekStartDay property">
-    <HelpKINode Title="RecurrencePattern.ShowWeekStartDay Property " Url="html/32ff9409-62e6-a08d-ea03-8aa670320c73.htm" />
     <HelpKINode Title="RecurrencePattern.ShowWeekStartDay Property " Url="html/f373b774-bf0f-7a8a-047e-c3cb3824d60e.htm" />
+    <HelpKINode Title="RecurrencePattern.ShowWeekStartDay Property " Url="html/32ff9409-62e6-a08d-ea03-8aa670320c73.htm" />
     <HelpKINode Title="RecurrencePropertiesDlg.ShowWeekStartDay Property " Url="html/2246e1d7-ebf2-0007-9063-e27ea979d426.htm" />
   </HelpKINode>
   <HelpKINode Title="Sibling enumeration member" Url="html/4a34f061-fd74-2dea-e660-27aeb494befa.htm" />
@@ -3605,6 +3606,9 @@
   <HelpKINode Title="SummaryProperty.Tag property" Url="html/e6e7e402-d53b-ca8b-6685-8efd8da1501d.htm" />
   <HelpKINode Title="SummaryProperty.VersionsSupported property" Url="html/4316aced-6cc2-8d86-fddd-a560362c3aff.htm" />
   <HelpKINode Title="Sunday enumeration member" Url="html/53b91722-fff8-4fa1-397b-094731d0e6ae.htm" />
+  <HelpKINode Title="support">
+    <HelpKINode Title="donate" Url="html/a1b468b7-7c76-469f-a514-784b6fb8f8f3.htm" />
+  </HelpKINode>
   <HelpKINode Title="SupportsSearchingCore property" Url="html/de816c4f-d4d2-1a39-4d16-6f817084868c.htm" />
   <HelpKINode Title="SupportsSortingCore property" Url="html/93005004-5858-a718-d5d8-c52461f4180f.htm" />
   <HelpKINode Title="SyncRoot property">
