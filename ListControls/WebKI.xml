@@ -1651,13 +1651,13 @@
   <HelpKINode Title="MapIndicatorEventArgs class">
     <HelpKINode Title="MapIndicatorEventArgs Class" Url="html/08ffa978-2f22-fb97-683d-09c9c59faf70.htm" />
     <HelpKINode Title="about MapIndicatorEventArgs class" Url="html/08ffa978-2f22-fb97-683d-09c9c59faf70.htm" />
-    <HelpKINode Title="constructor" Url="html/763ea338-f46b-3e81-6fcb-d351f731e135.htm" />
+    <HelpKINode Title="constructor" Url="html/114ae894-4ab3-ac80-f2f2-477064582b9c.htm" />
     <HelpKINode Title="methods" Url="html/b2f19a43-6ba6-ccbe-6fe7-1a0021d816ea.htm" />
     <HelpKINode Title="properties" Url="html/d5fd8a4e-d826-842d-7d8b-f9055a5c23fa.htm" />
   </HelpKINode>
   <HelpKINode Title="MapIndicatorEventArgs.Column property" Url="html/4cb7a673-203e-6eec-683c-b27a3e80c859.htm" />
   <HelpKINode Title="MapIndicatorEventArgs.ImageStates property" Url="html/f43af698-1d7a-61c8-91ed-192144188e45.htm" />
-  <HelpKINode Title="MapIndicatorEventArgs.MapIndicatorEventArgs constructor" Url="html/763ea338-f46b-3e81-6fcb-d351f731e135.htm" />
+  <HelpKINode Title="MapIndicatorEventArgs.MapIndicatorEventArgs constructor" Url="html/114ae894-4ab3-ac80-f2f2-477064582b9c.htm" />
   <HelpKINode Title="MapIndicatorEventArgs.Row property" Url="html/61b60b1f-7db5-7b11-5980-498aa6c06451.htm" />
   <HelpKINode Title="MapIndicatorEventArgs.Value property" Url="html/5e3c22fa-88de-a629-0048-8c15740af720.htm" />
   <HelpKINode Title="MappingName property" Url="html/0499a401-798d-7f81-d622-a6993325e91f.htm" />
@@ -1796,8 +1796,8 @@
   <HelpKINode Title="NullImage property" Url="html/e97ef638-1b2f-9659-f074-b0769489a4ed.htm" />
   <HelpKINode Title="NullImageIndex property" Url="html/b8dd4978-d4f5-86c1-8d39-cb9bfb9be270.htm" />
   <HelpKINode Title="ObjectCollection class">
-    <HelpKINode Title="methods" Url="html/ce26bd74-7d11-17a4-78f1-a43abbe19adf.htm" />
     <HelpKINode Title="methods" Url="html/1391c631-7ed2-9e72-fa6a-84d35cb1f486.htm" />
+    <HelpKINode Title="methods" Url="html/ce26bd74-7d11-17a4-78f1-a43abbe19adf.htm" />
     <HelpKINode Title="properties" Url="html/2cd61d42-81f7-0649-2b29-fb92f8ce5ad0.htm" />
     <HelpKINode Title="properties" Url="html/82a4cb8d-24b1-040b-3976-ea896dc2a837.htm" />
   </HelpKINode>
@@ -2478,6 +2478,7 @@
     <HelpKINode Title="1.2.0.5" Url="html/503e28a2-9ea8-4e06-ae3b-76104110eff4.htm" />
     <HelpKINode Title="1.2.0.8" Url="html/ed07194b-6f39-437a-8c1b-0541ad0af913.htm" />
     <HelpKINode Title="2015.1.19.0" Url="html/c12469c0-01ff-4d97-ae22-4ccc676250c3.htm" />
+    <HelpKINode Title="2015.1.27.0" Url="html/75eb03a7-14b0-4635-a0eb-5f615a06f12d.htm" />
   </HelpKINode>
   <HelpKINode Title="versions 1.2.1.9" Url="html/d9ee097a-5a83-4549-921c-83fb22c413e4.htm" />
   <HelpKINode Title="welcome" Url="html/ca3b503d-654e-4fe6-8ca3-ec3ea8fb9a1a.htm" />
