@@ -1798,8 +1798,8 @@
   <HelpKINode Title="ObjectCollection class">
     <HelpKINode Title="methods" Url="html/1391c631-7ed2-9e72-fa6a-84d35cb1f486.htm" />
     <HelpKINode Title="methods" Url="html/ce26bd74-7d11-17a4-78f1-a43abbe19adf.htm" />
-    <HelpKINode Title="properties" Url="html/2cd61d42-81f7-0649-2b29-fb92f8ce5ad0.htm" />
     <HelpKINode Title="properties" Url="html/82a4cb8d-24b1-040b-3976-ea896dc2a837.htm" />
+    <HelpKINode Title="properties" Url="html/2cd61d42-81f7-0649-2b29-fb92f8ce5ad0.htm" />
   </HelpKINode>
   <HelpKINode Title="OnAddDeleteButtonsVisibleChanged method">
     <HelpKINode Title="DataList.OnAddDeleteButtonsVisibleChanged Method " Url="html/22fabda3-fb93-90c6-de72-d6f1b75ab3f5.htm" />

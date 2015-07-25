@@ -41,11 +41,11 @@ running the Help Library Manager launcher to install content.  The command line 
 HelpLibraryManagerLauncher.exe /product "VS" /version "100" /locale en-us
         /sourceMedia "C:\FullPathToFile\HelpContentSetup.msha"
 
-REM Help Viewer 2.0
+REM Help Viewer 2.x
 HelpLibraryManagerLauncher.exe /viewerVersion 2.0 /locale en-us /wait 0
         /operation install /sourceUri "C:\FullPathToFile\TestCaseProject.msha"</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAGADAAA");</script><p>The <span class="code">product</span>, <span class="code">version</span>, <span class="code">locale</span>,
-and <span class="code">catalogName</span> options uniquely identify the catalog into which your help file will be
-installed.  By default, the help file builder project properties are set to install it in the Visual Studio
+and <span class="code">viewerVersion</span> options uniquely identify the catalog into which your help file will
+be installed.  By default, the help file builder project properties are set to install it in the Visual Studio
 catalog.  The <span class="code">sourceMedia</span>/<span class="code">sourceUri</span> option tells it to install
 the content based on the settings in the specified <em>HelpContentSetup.msha</em> file.  For more
 information on the available command line options, see the <a href="http://msdn.microsoft.com/en-us/library/ee855704.aspx" title="Help Library Manager Admin Guide" target="_blank">Help Library Manager Administrator's Guide</a>.</p><div class="alert"><table><tr><th><img src="../icons/AlertNote.png" alt="Tip" /> Tip</th></tr><tr><td><p>If the product and/or version values contain spaces, they should be enclosed in quote marks.</p></td></tr></table></div><div class="alert"><table><tr><th><img src="../icons/AlertNote.png" alt="Tip" /> Tip</th></tr><tr><td><p>To have the launcher determine the installed locale and use it, omit the <span class="code">/locale</span>
@@ -62,12 +62,12 @@ HelpLibraryManagerLauncher.exe /product "VS" /version "100" /locale en-us
         /productName "Sandcastle Help File Builder Example Project"
         /mediaBookList "Sandcastle Test Case Library"
 
-REM Help Viewer 2.0
+REM Help Viewer 2.x
 HelpLibraryManagerLauncher.exe /viewerVersion 2.0 /locale en-us /wait 0
         /operation uninstall /vendor "EWSoftware"
         /productName "Sandcastle Help File Builder Example Project"
         /bookList "Sandcastle Test Case Library"</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EABACAAA");</script><p>The <span class="code">product</span>, <span class="code">version</span>, <span class="code">locale</span>,
-and <span class="code">catalogName</span> parameters identify the catalog from which to remove the content.  The
+and <span class="code">viewerVersion</span> parameters identify the catalog from which to remove the content.  The
 <span class="code">vendor</span>, <span class="code">mediaBookList</span>/<span class="code">bookList</span>, and
 <span class="code">productName</span> values should match the values from the <em>HelpContentSetup.msha</em>
 file.  The <span class="code">uninstall</span> and <span class="code">silent</span> options tell it to uninstall

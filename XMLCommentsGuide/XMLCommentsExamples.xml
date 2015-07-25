@@ -1,0 +1,661 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>XMLCommentsExamples</name>
+  </assembly>
+  <members>
+    <member name="T:XMLCommentsExamples.GenericClass`2">
+      <summary>
+            This class is used to demonstrate the various XML comments elements
+            related to generics.  It serves no useful purpose.
+            </summary>
+      <typeparam name="T1">This is the first generic argument.</typeparam>
+      <typeparam name="T2">This is the second generic argument constrained to
+            be or derive from <see cref="T:System.EventArgs" />.</typeparam>
+    </member>
+    <member name="M:XMLCommentsExamples.GenericClass`2.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>XMLCommentsExamples.GenericClass`2</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.GenericClass`2.GenericMethod``2(``0)">
+      <summary>
+            This is a generic method that takes two other generic types
+            </summary>
+      <param name="argument">This is an argument of the type specified by
+            the generic type argument <typeparamref name="T3" />.</param>
+      <typeparam name="T3">This is a generic type argument for the method
+            argument.</typeparam>
+      <typeparam name="T4">This is a generic type argument for the return
+            value.</typeparam>
+      <returns>The default value of the type specified by the generic type
+            argument <typeparamref name="T4" />.</returns>
+    </member>
+    <member name="M:XMLCommentsExamples.GenericClass`2.Method(`0)">
+      <summary>
+            This is a method with an argument.
+            </summary>
+      <param name="argument"> This is an argument of the type specified by
+            the generic type argument <typeparamref name="T1" />.</param>
+    </member>
+    <member name="M:XMLCommentsExamples.GenericClass`2.OnSomethingHappened(`1)">
+      <summary>
+            This is a protected virtual method used to raise the
+            <see cref="E:XMLCommentsExamples.GenericClass`2.SomethingHappened" /> event.
+            </summary>
+      <param name="e">Arguments for the event of the type specified by
+            the generic type argument <typeparamref name="T2" />.</param>
+    </member>
+    <member name="P:XMLCommentsExamples.GenericClass`2.Property">
+      <summary>
+            This is a property that gets or sets an instance of the type specified
+            by the generic type argument <typeparamref name="T1" />.
+            </summary>
+    </member>
+    <member name="E:XMLCommentsExamples.GenericClass`2.SomethingHappened">
+      <summary>
+            This is an event that takes a generic argument.
+            </summary>
+    </member>
+    <member name="T:XMLCommentsExamples.RevisionHistoryClass">
+      <summary>
+            This class demonstrates the revision history
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.RevisionHistoryClass.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>XMLCommentsExamples.RevisionHistoryClass</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.RevisionHistoryClass.ExampleMethod">
+      <summary>
+            This method has revision history
+            </summary>
+    </member>
+    <member name="P:XMLCommentsExamples.RevisionHistoryClass.Revision">
+      <summary>
+            This property has revision history
+            </summary>
+    </member>
+    <member name="T:XMLCommentsExamples.SampleClass">
+      <summary>
+            This class is used to demonstrate the various XML comments elements.  It serves no useful purpose.
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.AverageValues(System.Collections.Generic.IEnumerable{System.Double})">
+      <summary>
+            This is used to average an enumerable list of values
+            </summary>
+      <param name="values">The values to average</param>
+      <returns>The average of the values</returns>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.AverageValues(System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.Double})">
+      <summary>
+            This is used to get the average of two enumerable list of values
+            </summary>
+      <param name="firstValues">The first set of values to average</param>
+      <param name="secondValues">The second set of values to average</param>
+      <returns>The average of the values from both enumerable lists</returns>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.CallStoredProcedure(System.String,System.Int32)">
+      <summary>
+            Executes a <see cref="T:System.Data.SqlClient.SqlCommand" /> with the specified
+            <paramref name="storedProcName" /> as a stored procedure initialized
+            for updating the values of the specified <paramref name="row" />.
+            </summary>
+      <param name="storedProcName">The stored procedure name to execute</param>
+      <param name="row">The row to update</param>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.ConceptualLinkExample">
+      <summary>
+            See the <conceptualLink target="db2703b4-12bc-4cf5-8642-544b41002809" /> topic
+            for more information.
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.DoSomething">
+      <summary>
+            This version of the method takes no parameters.
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.DoSomething(System.Int32)">
+      <summary>
+            This version of the method takes an integer parameter.
+            </summary>
+      <param name="number">A number to use</param>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.DoSomething(System.Int32,System.String)">
+      <summary>
+            This version of the method takes both an integer and a string parameter.
+            </summary>
+      <param name="number">A number to use</param>
+      <param name="text">A text value to use</param>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.DoSomething(System.String)">
+      <summary>
+            This version of the method takes a string parameter.
+            </summary>
+      <param name="text">A text value to use</param>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.FilterPriorityExample">
+      <summary>
+            Filter priority example
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.GetRandomNumber">
+      <summary>
+             This returns a random number
+             </summary>
+      <returns>A random number using <see cref="P:XMLCommentsExamples.SampleClass.SampleNumber" /> as the seed.</returns>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.IncludeAllExample">
+      <summary>
+			This summary came from an external XML file.
+		</summary>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.IncludeSectionsExample">
+      <summary>
+            In this example, the <c>include</c> element is used to pull in sections of
+            the comments.
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.Increment">
+      <summary>
+            The <c>Increment</c> method increments the stored number by one
+            </summary>
+      <returns>The new sample number after being incremented</returns>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.MethodRequiringSpecificPermissions">
+      <summary>
+            The <c>permission</c> element is used to document the types of permissions that
+            a caller must be granted to access this method.
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.OnSomethingHappened">
+      <summary>
+            This is a protected virtual method used to raise the
+            <see cref="E:XMLCommentsExamples.SampleClass.SomethingHappened" /> event.
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.op_Addition(XMLCommentsExamples.SampleClass,XMLCommentsExamples.SampleClass)">
+      <summary>
+            Addition operator overload
+            </summary>
+      <param name="left">The left value</param>
+      <param name="right">The right value</param>
+      <returns>A new instance containing the sum of the left and right
+            sample numbers</returns>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.ParagraphExample">
+      <summary>
+            A simple demonstration of the <c>para</c> element.
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.PerformAnAction">
+      <summary>
+            This performs an action
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.PreliminaryExample">
+      <summary>
+            This method may go away or its signature may change in a later release.
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.ProcessText(System.String)">
+      <summary>
+            This method processes text
+            </summary>
+      <param name="text">The text to process</param>
+      <exception cref="T:System.ArgumentNullException">This is thrown if the <paramref name="text" />
+            parameter is null.</exception>
+      <exception cref="T:System.ArgumentException">This is thrown if the <paramref name="text" />
+            parameter is an empty string.</exception>
+      <exception cref="T:System.InvalidOperationException">This is thrown because the method
+            is not currently implemented.</exception>
+    </member>
+    <member name="P:XMLCommentsExamples.SampleClass.SampleNumber">
+      <summary>
+            This is used to get or set the sample number
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.SeeElementExternalExample">
+      <summary>
+            This is used to demonstrate the external reference type of <c>see</c>
+            and <c>seealso</c> elements.
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.SeeLangWordExamples">
+      <summary>
+            This demonstrates the <c>see</c> element's <c>langword</c> form
+            </summary>
+      <returns>This method is <see langword="static" /> and always returns
+            <see langword="null" />.</returns>
+    </member>
+    <member name="E:XMLCommentsExamples.SampleClass.SomethingHappened">
+      <summary>
+            This event is raised when something interesting happens.
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.SummaryRemarksExample">
+      <summary>
+            The summary is a brief description of the type or type member and will
+            be displayed in IntelliSense and the Object Browser.
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.SumValues(System.Collections.Generic.IEnumerable{System.Int32})">
+      <summary>
+            This is used to sum an enumerable list of values
+            </summary>
+      <param name="values">The values to sum</param>
+      <returns>The sum of the values</returns>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.SumValues(System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32})">
+      <summary>
+            This is used to sum two enumerable list of values
+            </summary>
+      <param name="firstValues">The first set of values to sum</param>
+      <param name="secondValues">The second set of values to sum</param>
+      <returns>The sum of the values from both enumerable lists</returns>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.TemporaryMethod">
+      <summary>
+            A temporary method
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.TokenExample">
+      <summary>
+            The help file was built on July 25, 2015 using Sandcastle
+            v2015.7.25.0.
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.VariousListExamples">
+      <summary>
+             This method shows various examples of the <c>list</c> XML comments element.
+             </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.SampleClass.VariousNoteExamples">
+      <summary>
+            This shows the result of the various <c>note</c> types.
+            </summary>
+    </member>
+    <member name="T:XMLCommentsExamples.ThreadSafetyClass">
+      <summary>
+            This class demonstrates the <c>threadsafety</c> XML comments element.
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.ThreadSafetyClass.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>XMLCommentsExamples.ThreadSafetyClass</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.ThreadSafetyClass.InstanceMethod">
+      <summary>
+            Per the <c>threadsafety</c> XML comments element on the class, the developer has
+            indicated that instance method like this one are not safe for multi-threaded use.
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.ThreadSafetyClass.StaticMethod">
+      <summary>
+            Per the <c>threadsafety</c> XML comments element on the class, the developer has
+            indicated that static methods like this one are safe for multi-threaded use.
+            </summary>
+    </member>
+    <member name="T:XMLCommentsExamples.DocumentationInheritance.AttachedEventsAndPropertiesTest">
+      <summary>
+            This class is used to test inherited documentation on attached properties and events
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.AttachedEventsAndPropertiesTest.AddItemActivateHandler(System.Windows.DependencyObject,System.Windows.RoutedEventHandler)">
+      <summary>
+            Add an event handler to an object
+            </summary>
+      <param name="o">The dependency object</param>
+      <param name="handler">The event handler</param>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.AttachedEventsAndPropertiesTest.GetIsBroughtIntoViewWhenSelected(System.Windows.Controls.TreeViewItem)">
+      <summary>
+            Get the property value
+            </summary>
+      <param name="treeViewItem">The tree view item</param>
+      <returns>The property value</returns>
+    </member>
+    <member name="P:XMLCommentsExamples.DocumentationInheritance.AttachedEventsAndPropertiesTest.IsBroughtIntoViewWhenSelected">
+      <summary>This attached property indicates whether or not a tree view item is brought into
+            view when selected.
+            </summary>
+    </member>
+    <member name="F:XMLCommentsExamples.DocumentationInheritance.AttachedEventsAndPropertiesTest.IsBroughtIntoViewWhenSelectedProperty">
+      <summary>
+            This defines the
+            <see cref="P:XMLCommentsExamples.DocumentationInheritance.AttachedEventsAndPropertiesTest.IsBroughtIntoViewWhenSelected" />
+            attached property.
+            </summary>
+    </member>
+    <member name="E:XMLCommentsExamples.DocumentationInheritance.AttachedEventsAndPropertiesTest.ItemActivate">
+      <summary>
+            This attached event is raised when an item is activated
+            </summary>
+    </member>
+    <member name="F:XMLCommentsExamples.DocumentationInheritance.AttachedEventsAndPropertiesTest.ItemActivateEvent">
+      <summary>
+            This defines the
+            <see cref="E:XMLCommentsExamples.DocumentationInheritance.AttachedEventsAndPropertiesTest.ItemActivate" />
+            attached event.
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.AttachedEventsAndPropertiesTest.RemoveItemActivateHandler(System.Windows.DependencyObject,System.Windows.RoutedEventHandler)">
+      <summary>
+            Remove an event handler from an object
+            </summary>
+      <param name="o">The dependency object</param>
+      <param name="handler">The event handler</param>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.AttachedEventsAndPropertiesTest.SetIsBroughtIntoViewWhenSelected(System.Windows.Controls.TreeViewItem,System.Boolean)">
+      <summary>
+            Sets the property value
+            </summary>
+      <param name="treeViewItem">The tree view item</param>
+      <param name="value">The property value</param>
+    </member>
+    <member name="T:XMLCommentsExamples.DocumentationInheritance.BaseInheritDoc">
+      <summary>
+             A base class from which to inherit documentation
+             </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.BaseInheritDoc.#ctor">
+      <summary>
+            Constructor
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.BaseInheritDoc.MethodWithExample">
+      <summary>
+            Summary for the method with an example
+            </summary>
+      <returns>True all the time</returns>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.BaseInheritDoc.MethodWithLotsOfComments(System.Int32)">
+      <summary>
+            The method in the base class has lots of comments.
+            </summary>
+      <param name="x">The parameter</param>
+      <exception cref="T:System.ArgumentException">Thrown if x is zero</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">Thrown if x is
+            less than zero.</exception>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.BaseInheritDoc.MethodWithTwoExamples">
+      <summary>
+            A method with two examples
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.BaseInheritDoc.ToString">
+      <summary>
+            The ToString implementation for BaseInheritDoc
+            </summary>
+      <returns>A string representing the object</returns>
+    </member>
+    <member name="T:XMLCommentsExamples.DocumentationInheritance.CustomException">
+      <summary>
+            This exception class is thrown by the application if it encounters an
+            unrecoverable error.
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.CustomException.#ctor">
+      <summary>
+            Default constructor.
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.CustomException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+      <summary>Initializes a new instance of the <see cref="T:System.Exception" /> class with serialized data.</summary>
+      <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown. </param>
+      <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination. </param>
+      <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+      <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.CustomException.#ctor(System.String)">
+      <summary>Initializes a new instance of the <see cref="T:System.Exception" /> class with a specified error message.</summary>
+      <param name="message">The message that describes the error. </param>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.CustomException.#ctor(System.String,System.Exception)">
+      <summary>Initializes a new instance of the <see cref="T:System.Exception" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
+      <param name="message">The error message that explains the reason for the exception. </param>
+      <param name="innerException">The exception that is the cause of the current exception, or a null reference (Nothing in Visual Basic) if no inner exception is specified. </param>
+    </member>
+    <member name="T:XMLCommentsExamples.DocumentationInheritance.DerivedClassWithInheritedDocs">
+      <summary>
+            This is a derived class with inherited documentation.
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.DerivedClassWithInheritedDocs.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>XMLCommentsExamples.DocumentationInheritance.DerivedClassWithInheritedDocs</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.DerivedClassWithInheritedDocs.MethodUsingSharedExample">
+      <summary>
+            This uses a shared example from a base member that is not
+            public and this doesn't override.
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.DerivedClassWithInheritedDocs.MethodWithExample">
+      <summary>
+            An override of the method with an example
+            </summary>
+      <returns>Always returns false</returns>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.DerivedClassWithInheritedDocs.MethodWithLotsOfComments(System.Int32)">
+      <summary>
+            The method in the base class has lots of comments.
+            </summary>
+      <param name="x">The parameter</param>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.DerivedClassWithInheritedDocs.MethodWithTwoExamples">
+      <summary>
+            This only includes one of the examples
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.DerivedClassWithInheritedDocs.OverloadedMethod(System.String)">
+      <summary>
+            This overloaded method does something
+            </summary>
+      <param name="p1">The string parameter</param>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.DerivedClassWithInheritedDocs.OverloadedMethod(System.String,System.Int32)">
+      <summary>There are three overloads for this method.</summary>
+      <param name="x">An integer parameter</param>
+      <param name="p1">The string parameter</param>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.DerivedClassWithInheritedDocs.OverloadedMethod(System.String,System.String)">
+      <summary>
+            This overloaded method does something
+            </summary>
+      <param name="p2">The second string parameter</param>
+      <param name="p1">The string parameter</param>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.DerivedClassWithInheritedDocs.ToString">
+      <summary>Returns a string that represents the current object.</summary>
+      <returns>A string that represents the current object.</returns>
+    </member>
+    <member name="T:XMLCommentsExamples.DocumentationInheritance.ExplicitImplementation">
+      <summary>
+            A class with an explicit interface implementation
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.ExplicitImplementation.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>XMLCommentsExamples.DocumentationInheritance.ExplicitImplementation</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.ExplicitImplementation.Clone">
+      <summary>Creates a new object that is a copy of the current instance.</summary>
+      <returns>A new object that is a copy of this instance.</returns>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.ExplicitImplementation.System#Collections#ICollection#CopyTo(System.Array,System.Int32)">
+      <summary>Copies the elements of the <see cref="T:System.Collections.ICollection" /> to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index.</summary>
+      <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:System.Collections.ICollection" />. The <see cref="T:System.Array" /> must have zero-based indexing. </param>
+      <param name="index">The zero-based index in <paramref name="array" /> at which copying begins. </param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="array" /> is null. </exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> is less than zero. </exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="array" /> is multidimensional.-or- The number of elements in the source <see cref="T:System.Collections.ICollection" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.-or-The type of the source <see cref="T:System.Collections.ICollection" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
+    </member>
+    <member name="P:XMLCommentsExamples.DocumentationInheritance.ExplicitImplementation.System#Collections#ICollection#Count">
+      <summary>Gets the number of elements contained in the <see cref="T:System.Collections.ICollection" />.</summary>
+      <returns>The number of elements contained in the <see cref="T:System.Collections.ICollection" />.</returns>
+    </member>
+    <member name="P:XMLCommentsExamples.DocumentationInheritance.ExplicitImplementation.System#Collections#ICollection#IsSynchronized">
+      <summary>Gets a value indicating whether access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe).</summary>
+      <returns>true if access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe); otherwise, false.</returns>
+    </member>
+    <member name="P:XMLCommentsExamples.DocumentationInheritance.ExplicitImplementation.System#Collections#ICollection#SyncRoot">
+      <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</summary>
+      <returns>An object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</returns>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.ExplicitImplementation.System#Collections#IEnumerable#GetEnumerator">
+      <summary>Returns an enumerator that iterates through a collection.</summary>
+      <returns>This is a dummy class so it throws an exception</returns>
+    </member>
+    <member name="T:XMLCommentsExamples.DocumentationInheritance.SetDocumentation">
+      <summary>
+            A structure with a generic base class that has inherited documentation on its members
+            </summary>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.SetDocumentation.Add(System.Int32)">
+      <summary>Adds an element to the current set and returns a value to indicate if the element was successfully added. </summary>
+      <param name="item">The element to add to the set.</param>
+      <returns>true if the element is added to the set; false if the element is already in the set.</returns>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.SetDocumentation.Clear">
+      <summary>Removes all items from the <see cref="T:System.Collections.Generic.ICollection`1" />.</summary>
+      <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only. </exception>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.SetDocumentation.Contains(System.Int32)">
+      <summary>Determines whether the <see cref="T:System.Collections.Generic.ICollection`1" /> contains a specific value.</summary>
+      <param name="item">The object to locate in the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
+      <returns>true if <paramref name="item" /> is found in the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, false.</returns>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.SetDocumentation.CopyTo(System.Int32[],System.Int32)">
+      <summary>Copies the elements of the <see cref="T:System.Collections.Generic.ICollection`1" /> to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index.</summary>
+      <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:System.Collections.Generic.ICollection`1" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
+      <param name="arrayIndex">The zero-based index in <paramref name="array" /> at which copying begins.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="array" /> is null.</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="arrayIndex" /> is less than 0.</exception>
+      <exception cref="T:System.ArgumentException">The number of elements in the source <see cref="T:System.Collections.Generic.ICollection`1" /> is greater than the available space from <paramref name="arrayIndex" /> to the end of the destination <paramref name="array" />.</exception>
+    </member>
+    <member name="P:XMLCommentsExamples.DocumentationInheritance.SetDocumentation.Count">
+      <summary>Gets the number of elements contained in the <see cref="T:System.Collections.Generic.ICollection`1" />.</summary>
+      <returns>The number of elements contained in the <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.SetDocumentation.ExceptWith(System.Collections.Generic.IEnumerable{System.Int32})">
+      <summary>Removes all elements in the specified collection from the current set.</summary>
+      <param name="other">The collection of items to remove from the set.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="other" /> is null.</exception>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.SetDocumentation.GetEnumerator">
+      <summary>Returns an enumerator that iterates through the collection.</summary>
+      <returns>An enumerator that can be used to iterate through the collection.</returns>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.SetDocumentation.IntersectWith(System.Collections.Generic.IEnumerable{System.Int32})">
+      <summary>Modifies the current set so that it contains only elements that are also in a specified collection.</summary>
+      <param name="other">The collection to compare to the current set.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="other" /> is null.</exception>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.SetDocumentation.IsProperSubsetOf(System.Collections.Generic.IEnumerable{System.Int32})">
+      <summary>Determines whether the current set is a proper (strict) subset of a specified collection.</summary>
+      <param name="other">The collection to compare to the current set.</param>
+      <returns>true if the current set is a proper subset of <paramref name="other" />; otherwise, false.</returns>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="other" /> is null.</exception>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.SetDocumentation.IsProperSupersetOf(System.Collections.Generic.IEnumerable{System.Int32})">
+      <summary>Determines whether the current set is a proper (strict) superset of a specified collection.</summary>
+      <param name="other">The collection to compare to the current set. </param>
+      <returns>true if the current set is a proper superset of <paramref name="other" />; otherwise, false.</returns>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="other" /> is null.</exception>
+    </member>
+    <member name="P:XMLCommentsExamples.DocumentationInheritance.SetDocumentation.IsReadOnly">
+      <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
+      <returns>true if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, false.</returns>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.SetDocumentation.IsSubsetOf(System.Collections.Generic.IEnumerable{System.Int32})">
+      <summary>Determines whether a set is a subset of a specified collection.</summary>
+      <param name="other">The collection to compare to the current set.</param>
+      <returns>true if the current set is a subset of <paramref name="other" />; otherwise, false.</returns>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="other" /> is null.</exception>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.SetDocumentation.IsSupersetOf(System.Collections.Generic.IEnumerable{System.Int32})">
+      <summary>Determines whether the current set is a superset of a specified collection.</summary>
+      <param name="other">The collection to compare to the current set.</param>
+      <returns>true if the current set is a superset of <paramref name="other" />; otherwise, false.</returns>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="other" /> is null.</exception>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.SetDocumentation.Overlaps(System.Collections.Generic.IEnumerable{System.Int32})">
+      <summary>Determines whether the current set overlaps with the specified collection.</summary>
+      <param name="other">The collection to compare to the current set.</param>
+      <returns>true if the current set and <paramref name="other" /> share at least one common element; otherwise, false.</returns>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="other" /> is null.</exception>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.SetDocumentation.Remove(System.Int32)">
+      <summary>Removes the first occurrence of a specific object from the <see cref="T:System.Collections.Generic.ICollection`1" />.</summary>
+      <param name="item">The object to remove from the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
+      <returns>true if <paramref name="item" /> was successfully removed from the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, false. This method also returns false if <paramref name="item" /> is not found in the original <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
+      <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</exception>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.SetDocumentation.SetEquals(System.Collections.Generic.IEnumerable{System.Int32})">
+      <summary>Determines whether the current set and the specified collection contain the same elements.</summary>
+      <param name="other">The collection to compare to the current set.</param>
+      <returns>true if the current set is equal to <paramref name="other" />; otherwise, false.</returns>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="other" /> is null.</exception>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.SetDocumentation.SymmetricExceptWith(System.Collections.Generic.IEnumerable{System.Int32})">
+      <summary>Modifies the current set so that it contains only elements that are present either in the current set or in the specified collection, but not both. </summary>
+      <param name="other">The collection to compare to the current set.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="other" /> is null.</exception>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.SetDocumentation.System#Collections#Generic#ICollection{System#Int32}#Add(System.Int32)">
+      <summary>Adds an item to the <see cref="T:System.Collections.Generic.ICollection`1" />.</summary>
+      <param name="item">The object to add to the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
+      <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</exception>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.SetDocumentation.System#Collections#IEnumerable#GetEnumerator">
+      <summary>Returns an enumerator that iterates through a collection.</summary>
+      <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
+    </member>
+    <member name="M:XMLCommentsExamples.DocumentationInheritance.SetDocumentation.UnionWith(System.Collections.Generic.IEnumerable{System.Int32})">
+      <summary>Modifies the current set so that it contains all elements that are present in the current set, in the specified collection, or in both.</summary>
+      <param name="other">The collection to compare to the current set.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="other" /> is null.</exception>
+    </member>
+  </members>
+</doc>

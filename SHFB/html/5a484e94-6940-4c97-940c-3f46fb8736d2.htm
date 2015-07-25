@@ -14,8 +14,7 @@ was rendered obsolete and has been removed.  Use <a href="8ffc0d37-0215-4609-b6f
 <a href="ec822059-b179-4add-984d-485580050ffb.htm">Team Build</a>, or another such tool to build a help
 file project from the command line or in automated scripts.</p></li><li><p>Due to the change in format, help file builder projects from prior versions will need to be
 converted before use with the latest release.  Once converted, they cannot be changed back or used with prior
-versions of the help file builder.  See the <a href="f68822d2-97ba-48da-a98b-46747983b4a0.htm">Project File Converters</a> topic for
-details.</p></li><li><p>Several project properties have been removed or altered and their functionality has moved elsewhere
+versions of the help file builder.</p></li><li><p>Several project properties have been removed or altered and their functionality has moved elsewhere
 in the standalone GUI.  See the <a href="#WhereIsIt">Where Did That Feature Go?</a> section below for
 details.</p></li><li><p>The NDoc-style GUI has been replaced by one that looks more like Visual Studio.  This was required
 as by moving to an MSBuild project format, the conceptual content and supporting files are now part of the
@@ -96,11 +95,10 @@ of the conceptual topics and manage their properties much like the conceptual co
 of the help file builder.  See also: <a href="#TopicsProp">The ConceptualContent.Topics Property</a></p></dd><dt>Inserting Image, Token, and Code Snippet References Into Topics</dt><dd><p>Image, token, code snippet, and code entity references are now all handled by the
 <strong>Entity References</strong> window.  Select the type of entity to insert in the window's dropdown.
 Then drag and drop or double click the item to insert it into the topic.  A <span class="ui">Refresh</span> button is available
-to update the available items if you make changes to their related project files.</p></dd><dt>New Project From NDoc Project/Visual Studio Project</dt><dd><p>The option to create a new project from an NDoc project (or
-<a href="f68822d2-97ba-48da-a98b-46747983b4a0.htm">various other project types</a>) can be found in the
-<span class="ui">File | New Project from Other Format</span> menu option.  The option to create a project from a Visual Studio
-solution or project has been removed.  Visual Studio 2005/2008 solution and project files are supported natively
-as documentation sources.</p></dd><dt>Locating Third-Party Custom Build Components, Plug-Ins, and User-Defined Templates</dt><dd><p>To be Vista-compliant by not making changes to the installation folder, all files such as
+to update the available items if you make changes to their related project files.</p></dd><dt>New Project From NDoc Project/Visual Studio Project</dt><dd><p>The option to create a new project from an NDoc project (or various other project types) can be
+found in the <span class="ui">File | New Project from Other Format</span> menu option.  The option to create a project from a
+Visual Studio solution or project has been removed.  Visual Studio 2005/2008 solution and project files are
+supported natively as documentation sources.</p></dd><dt>Locating Third-Party Custom Build Components, Plug-Ins, and User-Defined Templates</dt><dd><p>To be Vista-compliant by not making changes to the installation folder, all files such as
 third-party custom build components, custom plug-ins, build component data cache files, and user-defined template
 files should now be located in subfolders under the <em>EWSoftware\Sandcastle Help File Builder</em>
 folder in the <em>Common Application Data</em> or <em>Local Application Data</em> folder.
