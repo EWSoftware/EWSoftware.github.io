@@ -844,6 +844,18 @@
     <HelpKINode Title="ExecutionContext.BuildStep Property " Url="html/7d0db549-e7bd-3771-30af-bf9ae3619da9.htm" />
     <HelpKINode Title="ExecutionPoint.BuildStep Property " Url="html/6c1f09c3-3eaf-e792-028f-73f2e2874420.htm" />
   </HelpKINode>
+  <HelpKINode Title="ButtonBackgroundColor property" Url="html/fe5acac3-2d72-32d3-5907-744b8ad3585c.htm" />
+  <HelpKINode Title="ButtonBorderColor property" Url="html/03fae4d6-4b3f-4196-85b8-44a91cb0734f.htm" />
+  <HelpKINode Title="ButtonDisabledBackgroundColor property" Url="html/34e8f470-3193-d6b3-0ca8-d15ab9779f8d.htm" />
+  <HelpKINode Title="ButtonDisabledBorderColor property" Url="html/0a82680d-44b0-a407-b26e-a25cfa42c235.htm" />
+  <HelpKINode Title="ButtonDisabledForegroundColor property" Url="html/8f22ae98-611f-e842-4d9d-b9b841de74fc.htm" />
+  <HelpKINode Title="ButtonForegroundColor property" Url="html/e293a579-8101-8603-5ba0-66813faa4839.htm" />
+  <HelpKINode Title="ButtonHoverBackgroundColor property" Url="html/449e4adb-a186-83dd-b149-767e00dc2379.htm" />
+  <HelpKINode Title="ButtonHoverBorderColor property" Url="html/640a634f-7dfb-0890-cb52-5b2ed01c5a71.htm" />
+  <HelpKINode Title="ButtonHoverForegroundColor property" Url="html/a4a13adf-0f15-8cc6-3dc2-1207970c81c4.htm" />
+  <HelpKINode Title="ButtonPressedBackgroundColor property" Url="html/4ace9616-ff4a-345e-2974-989dcac7d963.htm" />
+  <HelpKINode Title="ButtonPressedBorderColor property" Url="html/1e43054f-799d-4884-cba1-bbd36c00b8ac.htm" />
+  <HelpKINode Title="ButtonPressedForegroundColor property" Url="html/e662e6ce-3e15-c1eb-50ad-261d85699ace.htm" />
   <HelpKINode Title="CacheFilename property" Url="html/c7599e79-2667-fac2-a964-62686c7c513f.htm" />
   <HelpKINode Title="Cancel method">
     <HelpKINode Title="AddNamespaceGroups.Cancel Method " Url="html/abf20ad8-5144-5748-4688-01fc683a3999.htm" />
@@ -987,6 +999,10 @@
   <HelpKINode Title="CollapseCurrent property" Url="html/f6eda0b3-2f96-9571-c2c9-cfa965d79ad0.htm" />
   <HelpKINode Title="ColorizerFlowDocumentTemplate property" Url="html/92862633-126c-6cfe-0ea9-a4f9676d4eb9.htm" />
   <HelpKINode Title="CombiningIntermediateTocFiles enumeration member" Url="html/15b1ab7a-6438-34c6-e592-a46320ab5e97.htm" />
+  <HelpKINode Title="ComboBoxButtonMouseOverBackgroundColor property" Url="html/5b4c16b0-c8c5-9b30-842b-1b46157e0c56.htm" />
+  <HelpKINode Title="ComboBoxDisabledGlyphColor property" Url="html/b81696ad-d3fd-7256-405a-261ec44973a4.htm" />
+  <HelpKINode Title="ComboBoxGlyphColor property" Url="html/4e509d20-e89b-d933-af13-a57e9c4a4b6b.htm" />
+  <HelpKINode Title="ComboBoxPopupBackground property" Url="html/3d16a638-98bc-66d6-4a5e-de8bc3fe6c10.htm" />
   <HelpKINode Title="CommandLineArgument class">
     <HelpKINode Title="CommandLineArgument Class" Url="html/eb4c836b-456c-be63-8032-aee02300f40c.htm" />
     <HelpKINode Title="about CommandLineArgument class" Url="html/eb4c836b-456c-be63-8032-aee02300f40c.htm" />
@@ -1715,6 +1731,7 @@
   <HelpKINode Title="DialogType property" Url="html/e646f4e5-d8c6-2983-7b4b-9312b3a400d6.htm" />
   <HelpKINode Title="DirtyChanged event" Url="html/77ed173b-a4df-d813-e512-39b67df394e0.htm" />
   <HelpKINode Title="DisableCodeBlockComponent property" Url="html/48d19111-38d1-dbe0-cda5-f92d705694ff.htm" />
+  <HelpKINode Title="DisabledTextColor property" Url="html/01f5c33f-aede-1f8f-5639-4844d6ddd750.htm" />
   <HelpKINode Title="DisplayTitle property">
     <HelpKINode Title="ImageReference.DisplayTitle Property " Url="html/a0488033-dc8c-fd56-d98b-34763fc23b30.htm" />
     <HelpKINode Title="Topic.DisplayTitle Property " Url="html/bbebade3-2a97-e150-dc63-5c7bdf123a1d.htm" />
@@ -2281,10 +2298,10 @@
   <HelpKINode Title="Extensions property" Url="html/c07e8add-4295-2813-d270-77b107eef39d.htm" />
   <HelpKINode Title="ExtractingHtmlInfo enumeration member" Url="html/15b1ab7a-6438-34c6-e592-a46320ab5e97.htm" />
   <HelpKINode Title="Factory class">
-    <HelpKINode Title="methods" Url="html/c5bfb37a-481e-96b8-30f3-cdbed5239de2.htm" />
     <HelpKINode Title="methods" Url="html/df432301-24ad-3f6c-fc18-323d14fd1452.htm" />
-    <HelpKINode Title="properties" Url="html/dc793f24-3806-8152-6ff1-1f5b0c5b9e21.htm" />
+    <HelpKINode Title="methods" Url="html/c5bfb37a-481e-96b8-30f3-cdbed5239de2.htm" />
     <HelpKINode Title="properties" Url="html/699a0392-120e-976a-70b9-8be64d281ce3.htm" />
+    <HelpKINode Title="properties" Url="html/dc793f24-3806-8152-6ff1-1f5b0c5b9e21.htm" />
   </HelpKINode>
   <HelpKINode Title="Failed enumeration member" Url="html/15b1ab7a-6438-34c6-e592-a46320ab5e97.htm" />
   <HelpKINode Title="FailOnFetchingContentFromDisk field" Url="html/a9272908-00a6-419c-49cf-ef15b78fc6ed.htm" />
@@ -2823,24 +2840,24 @@
   </HelpKINode>
   <HelpKINode Title="GetStatusBarText method" Url="html/7967a3c0-f920-f234-f57d-3314555d376e.htm" />
   <HelpKINode Title="GetSupportAnimatedGif method" Url="html/653424c4-3aca-9032-76a6-07d630fae8a2.htm" />
-  <HelpKINode Title="getting started">
-    <HelpKINode Title="special folder locations" Url="html/a24489fb-45d6-46f4-9eaa-9a9c4e0919b2.htm" />
-  </HelpKINode>
   <HelpKINode Title="Getting started">
     <HelpKINode Title="absolute and relative paths" Url="html/576b6a36-0808-4857-bec0-e6eeeae4e36b.htm" />
     <HelpKINode Title="create a new project" Url="html/d5dbf017-25f1-48cb-86db-90f76ee8f4d7.htm" />
-    <HelpKINode Title="installation" Url="html/8c0c97d0-c968-4c15-9fe9-e8f3a443c50a.htm" />
     <HelpKINode Title="overview" Url="html/8e3f8757-0ef3-4772-bb2f-5d7ae57e50da.htm" />
     <HelpKINode Title="user preferences" Url="html/2152ed96-bf69-4b9b-b1a7-4fffc71b3095.htm" />
+    <HelpKINode Title="enable XML comments" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
+    <HelpKINode Title="installation" Url="html/8c0c97d0-c968-4c15-9fe9-e8f3a443c50a.htm" />
     <HelpKINode Title="user preferences - content file editors" Url="html/2e4f207e-45d1-411b-83b1-24965d8eef2c.htm" />
     <HelpKINode Title="user preferences - general" Url="html/6a35198a-3713-4eb7-929d-555fddc0ccb6.htm" />
     <HelpKINode Title="user preferences - spell checking" Url="html/836847bc-d780-468b-ae23-f014f0829a0f.htm" />
-    <HelpKINode Title="Visual Studio" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
     <HelpKINode Title="Visual Studio projects" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
     <HelpKINode Title="Welcome" Url="html/bd1ddb51-1c4f-434f-bb1a-ce2135d3a909.htm" />
-    <HelpKINode Title="enable XML comments" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
+    <HelpKINode Title="Visual Studio" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
   </HelpKINode>
   <HelpKINode Title="Getting Started" Url="html/b772e00e-1705-4062-adb6-774826ce6700.htm" />
+  <HelpKINode Title="getting started">
+    <HelpKINode Title="special folder locations" Url="html/a24489fb-45d6-46f4-9eaa-9a9c4e0919b2.htm" />
+  </HelpKINode>
   <HelpKINode Title="GetValues method" Url="html/9455b27f-2668-59e6-7bf8-49d38756f8ee.htm" />
   <HelpKINode Title="GitHub" Url="html/bd1ddb51-1c4f-434f-bb1a-ce2135d3a909.htm" />
   <HelpKINode Title="GlobalEditors property" Url="html/93e124db-a436-30bc-df89-88022c804748.htm" />
@@ -3253,7 +3270,10 @@
   </HelpKINode>
   <HelpKINode Title="InsertString method" Url="html/c2ab362c-bfd9-590d-17b7-b5c1a75e2a79.htm" />
   <HelpKINode Title="installation" Url="html/8c0c97d0-c968-4c15-9fe9-e8f3a443c50a.htm" />
-  <HelpKINode Title="Instance property" Url="html/95698ed6-cf69-5926-bba2-f60dc90d16f4.htm" />
+  <HelpKINode Title="Instance property">
+    <HelpKINode Title="ComponentPlacement.Instance Property " Url="html/95698ed6-cf69-5926-bba2-f60dc90d16f4.htm" />
+    <HelpKINode Title="ThemeColors.Instance Property " Url="html/61aca11d-b14c-80a5-519e-1e07ca09bedd.htm" />
+  </HelpKINode>
   <HelpKINode Title="InstanceDefaultText property" Url="html/aff5163b-3f76-c12e-d58c-b4366ef9a3ca.htm" />
   <HelpKINode Title="InstanceDisplayPanel property" Url="html/41e12a4d-346a-65c4-5884-3814bfdd0306.htm" />
   <HelpKINode Title="InstanceStatusBar property" Url="html/e4cfd5d6-faa5-37b4-f499-3b69599ac82c.htm" />
@@ -3461,7 +3481,19 @@
     <HelpKINode Title="TocEntryCollection.Item Property " Url="html/ab187eae-790d-a05d-df99-90f6abe3830a.htm" />
     <HelpKINode Title="TopicCollection.Item Property " Url="html/47d7055b-d526-1d2b-8b8a-a5609724059c.htm" />
   </HelpKINode>
+  <HelpKINode Title="ItemBorderColor property" Url="html/b53c8f48-1641-025f-6bb4-6a8b173ae7fb.htm" />
+  <HelpKINode Title="ItemColor property" Url="html/1035558f-6ba6-14e3-8002-a77740fd35db.htm" />
+  <HelpKINode Title="ItemHoverBorderColor property" Url="html/666d3405-e801-aa51-9d03-a1d9d7d18d6c.htm" />
+  <HelpKINode Title="ItemHoverColor property" Url="html/ac23f9f7-869e-4d72-e5fe-a03b80953f9c.htm" />
+  <HelpKINode Title="ItemHoverTextColor property" Url="html/1d3c0043-68aa-8174-d64e-eaff9f29f995.htm" />
+  <HelpKINode Title="ItemSelectedBorderColor property" Url="html/746bd166-b3ef-78d2-d156-964a2e63661b.htm" />
+  <HelpKINode Title="ItemSelectedBorderNotFocusedColor property" Url="html/04fc0c76-27c1-3f2f-5c33-425185aa6c6c.htm" />
+  <HelpKINode Title="ItemSelectedColor property" Url="html/1554791e-126d-0881-0247-faff529ca70e.htm" />
+  <HelpKINode Title="ItemSelectedNotFocusedColor property" Url="html/89ce9872-a243-b8d1-8c08-0cebe255f9cd.htm" />
+  <HelpKINode Title="ItemSelectedTextColor property" Url="html/23d9a28d-c6de-22b6-99be-22655e10b1cd.htm" />
+  <HelpKINode Title="ItemSelectedTextNotFocusedColor property" Url="html/828d59ae-d629-9e88-3a33-7359c991806a.htm" />
   <HelpKINode Title="ItemTemplates field" Url="html/82ab774a-99d9-62ab-b8ec-e2fb46b7658b.htm" />
+  <HelpKINode Title="ItemTextColor property" Url="html/a0cafee8-0652-7d80-7b67-c95840e344ba.htm" />
   <HelpKINode Title="ItemType property" Url="html/5e64891b-a5e4-722d-70dd-c0fcbb104782.htm" />
   <HelpKINode Title="KeepLogFile property" Url="html/bdaccb2a-f6c9-c702-2daf-4fc5770535f9.htm" />
   <HelpKINode Title="Key property" Url="html/20f6adc3-56a2-0151-7e8f-6fccc9777834.htm" />
@@ -3518,6 +3550,7 @@
   <HelpKINode Title="LessThan operator" Url="html/f16f9d3a-fad6-b13f-3c16-617cb6061b97.htm" />
   <HelpKINode Title="Level property" Url="html/7cc5339f-6f51-16a1-b2cb-f903f8340c00.htm" />
   <HelpKINode Title="License agreement" Url="html/24504fda-d3ef-4dd9-8335-6db8b25d00f2.htm" />
+  <HelpKINode Title="LightBorderColor property" Url="html/3016b650-5958-32a8-02c5-1e50b2865590.htm" />
   <HelpKINode Title="LightweightWebsiteStylePlugIn class">
     <HelpKINode Title="LightweightWebsiteStylePlugIn Class" Url="html/f97e1001-5dbb-94c5-caaf-d5f3abb39cad.htm" />
     <HelpKINode Title="about LightweightWebsiteStylePlugIn class" Url="html/f97e1001-5dbb-94c5-caaf-d5f3abb39cad.htm" />
@@ -3541,6 +3574,8 @@
     <HelpKINode Title="TocEntry.LinkText Property " Url="html/a45d4912-fe08-f3f1-15bf-e45bc3595a5a.htm" />
     <HelpKINode Title="Topic.LinkText Property " Url="html/8a775fc3-6306-e90d-4a1c-b6173534cb25.htm" />
   </HelpKINode>
+  <HelpKINode Title="LinkTextColor property" Url="html/42671a02-9ef2-934a-882b-84bf61d16360.htm" />
+  <HelpKINode Title="LinkTextHoverColor property" Url="html/e497a49c-b50e-efa0-bba9-424a97c500c7.htm" />
   <HelpKINode Title="ListDescription property">
     <HelpKINode Title="ReferenceLinkSettings.ListDescription Property " Url="html/7858624b-d945-32f5-ca66-b215aa619e42.htm" />
     <HelpKINode Title="VersionSettings.ListDescription Property " Url="html/b4c749fb-0747-a2e5-c585-838cfe66b9aa.htm" />
@@ -3720,6 +3755,12 @@
   <HelpKINode Title="MemberIdMatchExpression.ReplacementValue property" Url="html/04e02871-c7ea-8756-0103-57b9aef22a48.htm" />
   <HelpKINode Title="MemberName enumeration member" Url="html/12495300-b19e-6b6d-9346-ddc54cdf2c8c.htm" />
   <HelpKINode Title="Members property" Url="html/9ebe34fe-e55c-fcab-414b-9e7bde349abe.htm" />
+  <HelpKINode Title="MenuBackgroundColor property" Url="html/ed1a7a76-2eb0-dc2f-ee1b-8615c7088a89.htm" />
+  <HelpKINode Title="MenuBorderColor property" Url="html/fa9ff81e-18c2-40b6-0416-3504eeff9dc7.htm" />
+  <HelpKINode Title="MenuHoverBackgroundColor property" Url="html/36b3da89-8def-9fb7-b7aa-4c7f1a46f6ba.htm" />
+  <HelpKINode Title="MenuHoverTextColor property" Url="html/2957cdf2-a743-4dd6-6a2b-a013e2fdee76.htm" />
+  <HelpKINode Title="MenuSeparatorColor property" Url="html/3cafe49b-fc5a-6cd6-c40a-42b9fc533596.htm" />
+  <HelpKINode Title="MenuTextColor property" Url="html/30a3a27e-bb07-314e-f120-05371642327c.htm" />
   <HelpKINode Title="MergeCustomConfigs enumeration member" Url="html/15b1ab7a-6438-34c6-e592-a46320ab5e97.htm" />
   <HelpKINode Title="MergeExclusionEntry method" Url="html/a691da1e-89c3-81b7-98f6-73bdbd7e1b29.htm" />
   <HelpKINode Title="MergeTablesOfContents enumeration member" Url="html/15b1ab7a-6438-34c6-e592-a46320ab5e97.htm" />
@@ -3981,6 +4022,8 @@
   <HelpKINode Title="NoPIATypes enumeration member" Url="html/99fcc0ba-7891-78a6-5933-87036f8efee4.htm" />
   <HelpKINode Title="Notes property" Url="html/d29d4060-dde3-c98c-0e53-2976fecdd22e.htm" />
   <HelpKINode Title="NotFound enumeration member" Url="html/f6f6fc45-af36-82c2-70ff-7130527fd078.htm" />
+  <HelpKINode Title="NotificationColor property" Url="html/8d22fe60-f943-c74b-3041-402be375fe3b.htm" />
+  <HelpKINode Title="NotificationTextColor property" Url="html/f81ef063-81ea-516b-3352-2483d16c51a4.htm" />
   <HelpKINode Title="NoTopicFile property" Url="html/934fc7a6-46d8-d1ab-98c0-5e8543fcb5c0.htm" />
   <HelpKINode Title="NoTopMargin field" Url="html/8a9bd1cb-e455-aa26-ab05-b3b7deb75686.htm" />
   <HelpKINode Title="NumberingStyle class">
@@ -4433,8 +4476,8 @@
   <HelpKINode Title="ProjectFileConfiguration.Platform property" Url="html/e875b06f-63f3-5043-7a4e-00e5ad70bb18.htm" />
   <HelpKINode Title="ProjectFileConfiguration.ProjectFileConfiguration constructor" Url="html/a1bd6596-d326-8e92-f34a-6340539ea9b2.htm" />
   <HelpKINode Title="ProjectFileConfiguration.ProjectFileName property" Url="html/761debd3-04ff-2870-020f-8f471349c40b.htm" />
-  <HelpKINode Title="ProjectFileName property" Url="html/761debd3-04ff-2870-020f-8f471349c40b.htm" />
   <HelpKINode Title="ProjectFilename property" Url="html/a5179722-1820-058e-3c18-ddcb172c6c93.htm" />
+  <HelpKINode Title="ProjectFileName property" Url="html/761debd3-04ff-2870-020f-8f471349c40b.htm" />
   <HelpKINode Title="ProjectFolder property" Url="html/2dc9c884-eb9f-e739-334e-86e6cc9682d9.htm" />
   <HelpKINode Title="ProjectGuid field" Url="html/05ae4c93-99a2-f6b7-fbcf-2b017520febc.htm" />
   <HelpKINode Title="ProjectGuid property">
@@ -4593,6 +4636,7 @@
     <HelpKINode Title="ProjectElement.PropertyChanged Event" Url="html/5611c064-25c3-bf77-36d3-a9cee1ca9bc8.htm" />
     <HelpKINode Title="ReflectionDataSet.PropertyChanged Event" Url="html/048ce696-3ad9-d291-8c0d-b30a64ba6d26.htm" />
     <HelpKINode Title="ResourceItem.PropertyChanged Event" Url="html/0ab4669d-8bff-4361-a32f-07028c032325.htm" />
+    <HelpKINode Title="ThemeColors.PropertyChanged Event" Url="html/edd24f29-2084-a8ce-1242-2630c33ec314.htm" />
     <HelpKINode Title="TocEntry.PropertyChanged Event" Url="html/d93c020b-1331-37b5-a2ed-4fe8645c95df.htm" />
     <HelpKINode Title="Token.PropertyChanged Event" Url="html/78c7abec-8480-8413-5bd6-4e44f5c6414c.htm" />
     <HelpKINode Title="Topic.PropertyChanged Event" Url="html/4c163b90-e863-4555-1c91-b73b7b83c4ca.htm" />
@@ -5240,6 +5284,8 @@
   <HelpKINode Title="SandcastleBuilder.WPF.Maml namespace" Url="html/8fc9dc76-9def-c113-8779-ebf2202d82bd.htm" />
   <HelpKINode Title="SandcastleBuilder.WPF.Maml.MamlToFlowDocumentConverter class" Url="html/7c8e055a-8b45-b2bd-2d6f-fb41b46ee081.htm" />
   <HelpKINode Title="SandcastleBuilder.WPF.Maml.NamedStyle class" Url="html/03c8a213-541f-8c63-8463-706f12189c92.htm" />
+  <HelpKINode Title="SandcastleBuilder.WPF.Theme namespace" Url="html/079aba53-7f8b-25d5-ddf2-accd8f3fc22a.htm" />
+  <HelpKINode Title="SandcastleBuilder.WPF.Theme.ThemeColors class" Url="html/4b3fd698-fdd0-5b16-9ae9-a88a76755d99.htm" />
   <HelpKINode Title="SandcastleBuilder.WPF.UserControls namespace" Url="html/e01f2c15-13b2-e6d5-9f46-cfddd45965b9.htm" />
   <HelpKINode Title="SandcastleBuilder.WPF.UserControls.BuildLogViewerControl class" Url="html/73eeca4f-5f19-b7bd-7ae1-49eb3278725e.htm" />
   <HelpKINode Title="SandcastleBuilder.WPF.UserControls.ContentLayoutEditorControl class" Url="html/80c2781c-7713-b923-8d49-4f7375e0da7a.htm" />
@@ -6069,10 +6115,70 @@
     <HelpKINode Title="DropDownButton.Text Property " Url="html/6a8ed892-4794-61a3-b2e0-27244168a7f1.htm" />
     <HelpKINode Title="SplitButton.Text Property " Url="html/0ae4c433-58b0-1db9-cf54-3da8bb6a3463.htm" />
   </HelpKINode>
+  <HelpKINode Title="TextBoxBorderColor property" Url="html/54586845-cfec-3f91-f0d0-17ccbb3e83ea.htm" />
+  <HelpKINode Title="TextBoxColor property" Url="html/7d161a0a-77c1-de96-7971-80bb1a0f7a7a.htm" />
+  <HelpKINode Title="TextBoxTextColor property" Url="html/d5af1b7d-5e6b-2d8d-bf12-3905093f8dcb.htm" />
   <HelpKINode Title="TextProperty field">
     <HelpKINode Title="DropDownButton.TextProperty Field" Url="html/920e175e-41f9-9c27-49f3-2b7417920ba7.htm" />
     <HelpKINode Title="SplitButton.TextProperty Field" Url="html/465941a3-e791-697b-2148-c0a34dd540af.htm" />
   </HelpKINode>
+  <HelpKINode Title="ThemeColors class">
+    <HelpKINode Title="ThemeColors Class" Url="html/4b3fd698-fdd0-5b16-9ae9-a88a76755d99.htm" />
+    <HelpKINode Title="about ThemeColors class" Url="html/4b3fd698-fdd0-5b16-9ae9-a88a76755d99.htm" />
+    <HelpKINode Title="events" Url="html/2970cd3a-db88-d103-cde7-d0f642d915b6.htm" />
+    <HelpKINode Title="methods" Url="html/d2bd31a1-744d-1cc6-3cbc-998aca49667b.htm" />
+    <HelpKINode Title="properties" Url="html/8cab6f0b-7d2b-d0d0-df80-a53aedad5aa8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ThemeColors.ButtonBackgroundColor property" Url="html/fe5acac3-2d72-32d3-5907-744b8ad3585c.htm" />
+  <HelpKINode Title="ThemeColors.ButtonBorderColor property" Url="html/03fae4d6-4b3f-4196-85b8-44a91cb0734f.htm" />
+  <HelpKINode Title="ThemeColors.ButtonDisabledBackgroundColor property" Url="html/34e8f470-3193-d6b3-0ca8-d15ab9779f8d.htm" />
+  <HelpKINode Title="ThemeColors.ButtonDisabledBorderColor property" Url="html/0a82680d-44b0-a407-b26e-a25cfa42c235.htm" />
+  <HelpKINode Title="ThemeColors.ButtonDisabledForegroundColor property" Url="html/8f22ae98-611f-e842-4d9d-b9b841de74fc.htm" />
+  <HelpKINode Title="ThemeColors.ButtonForegroundColor property" Url="html/e293a579-8101-8603-5ba0-66813faa4839.htm" />
+  <HelpKINode Title="ThemeColors.ButtonHoverBackgroundColor property" Url="html/449e4adb-a186-83dd-b149-767e00dc2379.htm" />
+  <HelpKINode Title="ThemeColors.ButtonHoverBorderColor property" Url="html/640a634f-7dfb-0890-cb52-5b2ed01c5a71.htm" />
+  <HelpKINode Title="ThemeColors.ButtonHoverForegroundColor property" Url="html/a4a13adf-0f15-8cc6-3dc2-1207970c81c4.htm" />
+  <HelpKINode Title="ThemeColors.ButtonPressedBackgroundColor property" Url="html/4ace9616-ff4a-345e-2974-989dcac7d963.htm" />
+  <HelpKINode Title="ThemeColors.ButtonPressedBorderColor property" Url="html/1e43054f-799d-4884-cba1-bbd36c00b8ac.htm" />
+  <HelpKINode Title="ThemeColors.ButtonPressedForegroundColor property" Url="html/e662e6ce-3e15-c1eb-50ad-261d85699ace.htm" />
+  <HelpKINode Title="ThemeColors.ComboBoxButtonMouseOverBackgroundColor property" Url="html/5b4c16b0-c8c5-9b30-842b-1b46157e0c56.htm" />
+  <HelpKINode Title="ThemeColors.ComboBoxDisabledGlyphColor property" Url="html/b81696ad-d3fd-7256-405a-261ec44973a4.htm" />
+  <HelpKINode Title="ThemeColors.ComboBoxGlyphColor property" Url="html/4e509d20-e89b-d933-af13-a57e9c4a4b6b.htm" />
+  <HelpKINode Title="ThemeColors.ComboBoxPopupBackground property" Url="html/3d16a638-98bc-66d6-4a5e-de8bc3fe6c10.htm" />
+  <HelpKINode Title="ThemeColors.DisabledTextColor property" Url="html/01f5c33f-aede-1f8f-5639-4844d6ddd750.htm" />
+  <HelpKINode Title="ThemeColors.Instance property" Url="html/61aca11d-b14c-80a5-519e-1e07ca09bedd.htm" />
+  <HelpKINode Title="ThemeColors.ItemBorderColor property" Url="html/b53c8f48-1641-025f-6bb4-6a8b173ae7fb.htm" />
+  <HelpKINode Title="ThemeColors.ItemColor property" Url="html/1035558f-6ba6-14e3-8002-a77740fd35db.htm" />
+  <HelpKINode Title="ThemeColors.ItemHoverBorderColor property" Url="html/666d3405-e801-aa51-9d03-a1d9d7d18d6c.htm" />
+  <HelpKINode Title="ThemeColors.ItemHoverColor property" Url="html/ac23f9f7-869e-4d72-e5fe-a03b80953f9c.htm" />
+  <HelpKINode Title="ThemeColors.ItemHoverTextColor property" Url="html/1d3c0043-68aa-8174-d64e-eaff9f29f995.htm" />
+  <HelpKINode Title="ThemeColors.ItemSelectedBorderColor property" Url="html/746bd166-b3ef-78d2-d156-964a2e63661b.htm" />
+  <HelpKINode Title="ThemeColors.ItemSelectedBorderNotFocusedColor property" Url="html/04fc0c76-27c1-3f2f-5c33-425185aa6c6c.htm" />
+  <HelpKINode Title="ThemeColors.ItemSelectedColor property" Url="html/1554791e-126d-0881-0247-faff529ca70e.htm" />
+  <HelpKINode Title="ThemeColors.ItemSelectedNotFocusedColor property" Url="html/89ce9872-a243-b8d1-8c08-0cebe255f9cd.htm" />
+  <HelpKINode Title="ThemeColors.ItemSelectedTextColor property" Url="html/23d9a28d-c6de-22b6-99be-22655e10b1cd.htm" />
+  <HelpKINode Title="ThemeColors.ItemSelectedTextNotFocusedColor property" Url="html/828d59ae-d629-9e88-3a33-7359c991806a.htm" />
+  <HelpKINode Title="ThemeColors.ItemTextColor property" Url="html/a0cafee8-0652-7d80-7b67-c95840e344ba.htm" />
+  <HelpKINode Title="ThemeColors.LightBorderColor property" Url="html/3016b650-5958-32a8-02c5-1e50b2865590.htm" />
+  <HelpKINode Title="ThemeColors.LinkTextColor property" Url="html/42671a02-9ef2-934a-882b-84bf61d16360.htm" />
+  <HelpKINode Title="ThemeColors.LinkTextHoverColor property" Url="html/e497a49c-b50e-efa0-bba9-424a97c500c7.htm" />
+  <HelpKINode Title="ThemeColors.MenuBackgroundColor property" Url="html/ed1a7a76-2eb0-dc2f-ee1b-8615c7088a89.htm" />
+  <HelpKINode Title="ThemeColors.MenuBorderColor property" Url="html/fa9ff81e-18c2-40b6-0416-3504eeff9dc7.htm" />
+  <HelpKINode Title="ThemeColors.MenuHoverBackgroundColor property" Url="html/36b3da89-8def-9fb7-b7aa-4c7f1a46f6ba.htm" />
+  <HelpKINode Title="ThemeColors.MenuHoverTextColor property" Url="html/2957cdf2-a743-4dd6-6a2b-a013e2fdee76.htm" />
+  <HelpKINode Title="ThemeColors.MenuSeparatorColor property" Url="html/3cafe49b-fc5a-6cd6-c40a-42b9fc533596.htm" />
+  <HelpKINode Title="ThemeColors.MenuTextColor property" Url="html/30a3a27e-bb07-314e-f120-05371642327c.htm" />
+  <HelpKINode Title="ThemeColors.NotificationColor property" Url="html/8d22fe60-f943-c74b-3041-402be375fe3b.htm" />
+  <HelpKINode Title="ThemeColors.NotificationTextColor property" Url="html/f81ef063-81ea-516b-3352-2483d16c51a4.htm" />
+  <HelpKINode Title="ThemeColors.PropertyChanged event" Url="html/edd24f29-2084-a8ce-1242-2630c33ec314.htm" />
+  <HelpKINode Title="ThemeColors.TextBoxBorderColor property" Url="html/54586845-cfec-3f91-f0d0-17ccbb3e83ea.htm" />
+  <HelpKINode Title="ThemeColors.TextBoxColor property" Url="html/7d161a0a-77c1-de96-7971-80bb1a0f7a7a.htm" />
+  <HelpKINode Title="ThemeColors.TextBoxTextColor property" Url="html/d5af1b7d-5e6b-2d8d-bf12-3905093f8dcb.htm" />
+  <HelpKINode Title="ThemeColors.ToolWindowBackgroundColor property" Url="html/707a483a-094b-d5f2-b1e8-1cdce803927d.htm" />
+  <HelpKINode Title="ThemeColors.ToolWindowBorderColor property" Url="html/242782b3-5365-190f-ed31-9416a522a724.htm" />
+  <HelpKINode Title="ThemeColors.ToolWindowTextColor property" Url="html/bb325325-aef4-1592-4dcc-2e44090e5d75.htm" />
+  <HelpKINode Title="ThemeColors.TreeViewGlyphColor property" Url="html/43a8a7ac-4ba0-ad37-0d1d-03a2b4304a8d.htm" />
+  <HelpKINode Title="ThemeColors.TreeViewHoverGlyphColor property" Url="html/c45e8dcb-2fd6-773e-b164-26ea05fa6c24.htm" />
   <HelpKINode Title="ThirdValue property" Url="html/1080c792-7f31-1103-955a-be661db46460.htm" />
   <HelpKINode Title="Title field" Url="html/1b4699eb-4e2f-8a3e-99ff-99bae56ae940.htm" />
   <HelpKINode Title="Title property">
@@ -6302,6 +6408,9 @@
     <HelpKINode Title="TocEntry.ToolTip Property " Url="html/e23d9d65-79dd-81f9-6b6d-0a47c65c0cc7.htm" />
     <HelpKINode Title="Topic.ToolTip Property " Url="html/cb6cd2e5-ad6d-03e7-d372-71e8d6462b25.htm" />
   </HelpKINode>
+  <HelpKINode Title="ToolWindowBackgroundColor property" Url="html/707a483a-094b-d5f2-b1e8-1cdce803927d.htm" />
+  <HelpKINode Title="ToolWindowBorderColor property" Url="html/242782b3-5365-190f-ed31-9416a522a724.htm" />
+  <HelpKINode Title="ToolWindowTextColor property" Url="html/bb325325-aef4-1592-4dcc-2e44090e5d75.htm" />
   <HelpKINode Title="Top enumeration member" Url="html/6720b83a-6c30-8f8f-c0e9-1cf62251011d.htm" />
   <HelpKINode Title="Topic class">
     <HelpKINode Title="Topic Class" Url="html/ad633280-fa06-380b-80f0-9b4188e759de.htm" />
@@ -6538,6 +6647,8 @@
   </HelpKINode>
   <HelpKINode Title="TransformTemplate method" Url="html/5d2809af-46cf-a49a-1f35-511c3f8a08be.htm" />
   <HelpKINode Title="TransformText method" Url="html/d12574b3-d01c-801b-2aba-249c053b16c9.htm" />
+  <HelpKINode Title="TreeViewGlyphColor property" Url="html/43a8a7ac-4ba0-ad37-0d1d-03a2b4304a8d.htm" />
+  <HelpKINode Title="TreeViewHoverGlyphColor property" Url="html/c45e8dcb-2fd6-773e-b164-26ea05fa6c24.htm" />
   <HelpKINode Title="TreeViewItemBehavior class">
     <HelpKINode Title="TreeViewItemBehavior Class" Url="html/0c6fce32-df3b-de16-ff6f-19e43ed8bef8.htm" />
     <HelpKINode Title="about TreeViewItemBehavior class" Url="html/0c6fce32-df3b-de16-ff6f-19e43ed8bef8.htm" />
@@ -6644,6 +6755,7 @@
   </HelpKINode>
   <HelpKINode Title="VerifySafePath method" Url="html/f413827c-d866-0eb7-689e-39b6f67b9900.htm" />
   <HelpKINode Title="version">
+    <HelpKINode Title="2015.10.10.0" Url="html/5a0130e2-a2ab-493c-a720-be43589e8b1c.htm" />
     <HelpKINode Title="2015.7.25.0" Url="html/90c2bedf-fe6e-4f99-8a33-84b441701269.htm" />
   </HelpKINode>
   <HelpKINode Title="Version History" Url="html/078cc1c7-7995-431e-bf9c-8813becbe8df.htm" />

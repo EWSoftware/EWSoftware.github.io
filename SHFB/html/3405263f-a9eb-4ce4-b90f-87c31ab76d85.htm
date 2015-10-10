@@ -50,7 +50,7 @@ configured in the <span class="code">SyntaxComponent</span>'s configuration dial
 transforming the topic.  This allows other build components to alter the document XML prior to the XSL
 transformation.  The <span class="code">SyntaxComponent</span> uses this event to group and sort the code snippets
 at that time since any other components that ran after it will have added their snippets by that point and we can
-be sure that it will find and handle them all.</p></li><li><p>Added code the the MSDN resolver to shut off further lookups and report failures due to the
+be sure that it will find and handle them all.</p></li><li><p>Added code to the MSDN resolver to shut off further lookups and report failures due to the
 service being down.  This prevents it from reporting all failures as missing content IDs.</p></li></ul></div><h4 class="subHeading" id="MRefBuilder">MRefBuilder</h4><div class="subsection"><ul><li><p>Added support for Windows Phone 8.1 (Silverlight and Windows Store Apps) frameworks.
 Thanks to Morten Nielsen for the configuration settings.</p></li></ul></div><h4 class="subHeading" id="PresentationStyles">Presentation Styles</h4><div class="subsection"><ul><li><p>Removed all branding transformations and use of the branding component from the VS2010 and
 VS2013 presentation styles. The presentation styles now handle all aspects of topic generation.</p></li><li><p>Finished the VS2013 style which is now a blend of the best parts of the MSDN and Visual
