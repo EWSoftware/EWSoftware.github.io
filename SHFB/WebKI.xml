@@ -2289,8 +2289,8 @@
   <HelpKINode Title="Extensions property" Url="html/c07e8add-4295-2813-d270-77b107eef39d.htm" />
   <HelpKINode Title="ExtractingHtmlInfo enumeration member" Url="html/15b1ab7a-6438-34c6-e592-a46320ab5e97.htm" />
   <HelpKINode Title="Factory class">
-    <HelpKINode Title="methods" Url="html/c5bfb37a-481e-96b8-30f3-cdbed5239de2.htm" />
     <HelpKINode Title="methods" Url="html/df432301-24ad-3f6c-fc18-323d14fd1452.htm" />
+    <HelpKINode Title="methods" Url="html/c5bfb37a-481e-96b8-30f3-cdbed5239de2.htm" />
     <HelpKINode Title="properties" Url="html/699a0392-120e-976a-70b9-8be64d281ce3.htm" />
     <HelpKINode Title="properties" Url="html/dc793f24-3806-8152-6ff1-1f5b0c5b9e21.htm" />
   </HelpKINode>
@@ -2837,13 +2837,13 @@
     <HelpKINode Title="enable XML comments" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
     <HelpKINode Title="installation" Url="html/8c0c97d0-c968-4c15-9fe9-e8f3a443c50a.htm" />
     <HelpKINode Title="overview" Url="html/8e3f8757-0ef3-4772-bb2f-5d7ae57e50da.htm" />
-    <HelpKINode Title="Visual Studio projects" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
     <HelpKINode Title="user preferences" Url="html/2152ed96-bf69-4b9b-b1a7-4fffc71b3095.htm" />
     <HelpKINode Title="user preferences - content file editors" Url="html/2e4f207e-45d1-411b-83b1-24965d8eef2c.htm" />
-    <HelpKINode Title="user preferences - general" Url="html/6a35198a-3713-4eb7-929d-555fddc0ccb6.htm" />
     <HelpKINode Title="user preferences - spell checking" Url="html/836847bc-d780-468b-ae23-f014f0829a0f.htm" />
     <HelpKINode Title="Visual Studio" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
+    <HelpKINode Title="Visual Studio projects" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
     <HelpKINode Title="Welcome" Url="html/bd1ddb51-1c4f-434f-bb1a-ce2135d3a909.htm" />
+    <HelpKINode Title="user preferences - general" Url="html/6a35198a-3713-4eb7-929d-555fddc0ccb6.htm" />
   </HelpKINode>
   <HelpKINode Title="Getting Started" Url="html/b772e00e-1705-4062-adb6-774826ce6700.htm" />
   <HelpKINode Title="getting started">
@@ -6760,10 +6760,6 @@
     <HelpKINode Title="ConsoleApplication.VerbosityLevel Property " Url="html/6e008563-a020-e87b-e7fe-add71f88545a.htm" />
   </HelpKINode>
   <HelpKINode Title="VerifySafePath method" Url="html/f413827c-d866-0eb7-689e-39b6f67b9900.htm" />
-  <HelpKINode Title="version">
-    <HelpKINode Title="2015.10.10.0" Url="html/5a0130e2-a2ab-493c-a720-be43589e8b1c.htm" />
-    <HelpKINode Title="2015.7.25.0" Url="html/90c2bedf-fe6e-4f99-8a33-84b441701269.htm" />
-  </HelpKINode>
   <HelpKINode Title="Version History" Url="html/078cc1c7-7995-431e-bf9c-8813becbe8df.htm" />
   <HelpKINode Title="Version property">
     <HelpKINode Title="AssemblyDetails.Version Property " Url="html/93b80119-6133-34c2-2f77-5b6a2c4052e6.htm" />
@@ -6843,7 +6839,10 @@
     <HelpKINode Title="2014.4.22.0" Url="html/81b04099-bcd7-4caa-8a21-13624d9e290d.htm" />
     <HelpKINode Title="2014.5.31.0" Url="html/3405263f-a9eb-4ce4-b90f-87c31ab76d85.htm" />
     <HelpKINode Title="2015.1.12.0" Url="html/930f1daa-1a38-4659-84c9-91c81e204c73.htm" />
+    <HelpKINode Title="2015.10.10.0" Url="html/5a0130e2-a2ab-493c-a720-be43589e8b1c.htm" />
     <HelpKINode Title="2015.5.2.0" Url="html/e2fcc636-0781-4232-8c7e-fb5edbe40026.htm" />
+    <HelpKINode Title="2015.7.25.0" Url="html/90c2bedf-fe6e-4f99-8a33-84b441701269.htm" />
+    <HelpKINode Title="2016.4.9.0" Url="html/21e5cfbd-c579-4ba9-9564-12b573d679d0.htm" />
     <HelpKINode Title="known issues" Url="html/21c2a363-6c94-440b-8985-6b224d275463.htm" />
   </HelpKINode>
   <HelpKINode Title="VersionSettings class">
