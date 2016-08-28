@@ -2289,10 +2289,10 @@
   <HelpKINode Title="Extensions property" Url="html/c07e8add-4295-2813-d270-77b107eef39d.htm" />
   <HelpKINode Title="ExtractingHtmlInfo enumeration member" Url="html/15b1ab7a-6438-34c6-e592-a46320ab5e97.htm" />
   <HelpKINode Title="Factory class">
-    <HelpKINode Title="methods" Url="html/c5bfb37a-481e-96b8-30f3-cdbed5239de2.htm" />
     <HelpKINode Title="methods" Url="html/df432301-24ad-3f6c-fc18-323d14fd1452.htm" />
-    <HelpKINode Title="properties" Url="html/dc793f24-3806-8152-6ff1-1f5b0c5b9e21.htm" />
+    <HelpKINode Title="methods" Url="html/c5bfb37a-481e-96b8-30f3-cdbed5239de2.htm" />
     <HelpKINode Title="properties" Url="html/699a0392-120e-976a-70b9-8be64d281ce3.htm" />
+    <HelpKINode Title="properties" Url="html/dc793f24-3806-8152-6ff1-1f5b0c5b9e21.htm" />
   </HelpKINode>
   <HelpKINode Title="Failed enumeration member" Url="html/15b1ab7a-6438-34c6-e592-a46320ab5e97.htm" />
   <HelpKINode Title="FailOnFetchingContentFromDisk field" Url="html/a9272908-00a6-419c-49cf-ef15b78fc6ed.htm" />
@@ -2836,13 +2836,13 @@
     <HelpKINode Title="create a new project" Url="html/d5dbf017-25f1-48cb-86db-90f76ee8f4d7.htm" />
     <HelpKINode Title="enable XML comments" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
     <HelpKINode Title="installation" Url="html/8c0c97d0-c968-4c15-9fe9-e8f3a443c50a.htm" />
-    <HelpKINode Title="overview" Url="html/8e3f8757-0ef3-4772-bb2f-5d7ae57e50da.htm" />
-    <HelpKINode Title="user preferences" Url="html/2152ed96-bf69-4b9b-b1a7-4fffc71b3095.htm" />
     <HelpKINode Title="user preferences - content file editors" Url="html/2e4f207e-45d1-411b-83b1-24965d8eef2c.htm" />
     <HelpKINode Title="user preferences - general" Url="html/6a35198a-3713-4eb7-929d-555fddc0ccb6.htm" />
     <HelpKINode Title="user preferences - spell checking" Url="html/836847bc-d780-468b-ae23-f014f0829a0f.htm" />
-    <HelpKINode Title="Visual Studio" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
     <HelpKINode Title="Welcome" Url="html/bd1ddb51-1c4f-434f-bb1a-ce2135d3a909.htm" />
+    <HelpKINode Title="Visual Studio" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
+    <HelpKINode Title="overview" Url="html/8e3f8757-0ef3-4772-bb2f-5d7ae57e50da.htm" />
+    <HelpKINode Title="user preferences" Url="html/2152ed96-bf69-4b9b-b1a7-4fffc71b3095.htm" />
     <HelpKINode Title="Visual Studio projects" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
   </HelpKINode>
   <HelpKINode Title="getting started">
@@ -5422,6 +5422,7 @@
   <HelpKINode Title="SandcastleProject.ShowMissingSummaries property" Url="html/6231b9de-6719-ce2f-d524-e523a3990ccc.htm" />
   <HelpKINode Title="SandcastleProject.ShowMissingTypeParams property" Url="html/9e9b4696-f2e1-9578-8697-fabf44c5a068.htm" />
   <HelpKINode Title="SandcastleProject.ShowMissingValues property" Url="html/db0076e1-8678-f4ac-83f9-d60d97a8c1d8.htm" />
+  <HelpKINode Title="SandcastleProject.SourceCodeBasePath property" Url="html/d03f19cf-6221-eb1e-8be2-8ae2c2d09bae.htm" />
   <HelpKINode Title="SandcastleProject.SyntaxFilters property" Url="html/005aaf28-14b9-c767-480d-6cc71fb3e36a.htm" />
   <HelpKINode Title="SandcastleProject.TocOrder property" Url="html/2395c610-1db7-98b1-f844-02372884637b.htm" />
   <HelpKINode Title="SandcastleProject.TocParentId property" Url="html/81d43529-d0ae-4866-45fe-8cc6cd407cc8.htm" />
@@ -5652,6 +5653,7 @@
     <HelpKINode Title="SyntaxGeneratorExportAttribute.SortOrder Property " Url="html/a0b9ec9b-70b6-77bb-139e-81b90621c7aa.htm" />
     <HelpKINode Title="TocEntry.SortOrder Property " Url="html/c61eb4ae-395c-2b72-d51b-3deb62e0ec44.htm" />
   </HelpKINode>
+  <HelpKINode Title="SourceCodeBasePath property" Url="html/d03f19cf-6221-eb1e-8be2-8ae2c2d09bae.htm" />
   <HelpKINode Title="SourceDescription property" Url="html/1ff0ccb6-93ce-d5fc-e362-f085a7b62230.htm" />
   <HelpKINode Title="SourceFile property">
     <HelpKINode Title="DocumentationSource.SourceFile Property " Url="html/5d555ba8-8804-6cdf-62ee-efc62087f220.htm" />
@@ -6940,8 +6942,9 @@
     <HelpKINode Title="GID0004" Url="html/c472d97b-e5b9-4e60-8746-dc1ec660167b.htm" />
     <HelpKINode Title="GID0005" Url="html/82ead344-5447-484d-acfe-e778b7ac12cf.htm" />
     <HelpKINode Title="GID0006" Url="html/93aecba9-ef0e-40d8-a82e-34399bee6ca3.htm" />
-    <HelpKINode Title="GID0100" Url="html/6038c08c-de58-4579-a018-bdbbce3134f5.htm" />
-    <HelpKINode Title="GID0101" Url="html/efa6ca2b-c052-4555-90d8-a9cc9093f793.htm" />
+    <HelpKINode Title="GID0007" Url="html/6038c08c-de58-4579-a018-bdbbce3134f5.htm" />
+    <HelpKINode Title="GID0008" Url="html/efa6ca2b-c052-4555-90d8-a9cc9093f793.htm" />
+    <HelpKINode Title="GID0009" Url="html/9d23a808-2231-44c2-ae45-61c697dda415.htm" />
     <HelpKINode Title="SHE0001" Url="html/c3dbcf13-6585-4b45-ae2f-6bd8acd8b62b.htm" />
     <HelpKINode Title="SHE0004" Url="html/cc3ac64c-a882-47ff-b104-bf497f56b42d.htm" />
   </HelpKINode>
