@@ -2,31 +2,31 @@
 <HelpTOC>
 
   <HelpTOCNode Title="Documenting Web Projects" Url="html/40ba6bda-95d6-4a64-834f-f7cedcb589d1.htm" />
-  <HelpTOCNode Id="f6b56935-a8e1-4fb3-9aaf-fac89fcedc94" Title="Version History" Url="html/6deb9296-45e0-4200-8330-43fdeae88130.htm">
+  <HelpTOCNode Id="8d3c9500-cea4-46a5-9e32-558d99d61304" Title="Version History" Url="html/6deb9296-45e0-4200-8330-43fdeae88130.htm">
     <HelpTOCNode Title="Version 1.1.0.0" Url="html/750f2c27-4a66-417a-b95a-187410797844.htm" />
     <HelpTOCNode Title="Version 1.0.0.0" Url="html/e138d987-3509-4019-bd94-9d920110baf5.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Id="5e5c08a4-82d3-47f8-893a-cda0b0605b41" Title="EWSoftware.CodeDom" Url="html/b694078f-ce50-2ba9-e58b-82d1e41184da.htm">
-    <HelpTOCNode Id="8655b49c-f204-43e8-bd0d-137d5b692b3e" Title="CSharpCodeProviderWithDocs Class" Url="html/cbb7bea7-5a2b-73f1-9c37-f0f603e8ad2a.htm">
-      <HelpTOCNode Id="e72a7b7b-212a-438a-8131-d672b6a569f7" Title="CSharpCodeProviderWithDocs Constructor " Url="html/f9c9d2ce-396f-06ae-0d4f-7390ce947bb2.htm">
+  <HelpTOCNode Id="f8179f54-b7a9-44a9-887b-76efc73cc2b8" Title="EWSoftware.CodeDom" Url="html/b694078f-ce50-2ba9-e58b-82d1e41184da.htm">
+    <HelpTOCNode Id="21a926ec-56f4-4c06-a81b-c5652cb34e24" Title="CSharpCodeProviderWithDocs Class" Url="html/cbb7bea7-5a2b-73f1-9c37-f0f603e8ad2a.htm">
+      <HelpTOCNode Id="9b4cf516-17d4-4d53-a8ed-56ee942e34cc" Title="CSharpCodeProviderWithDocs Constructor " Url="html/f9c9d2ce-396f-06ae-0d4f-7390ce947bb2.htm">
         <HelpTOCNode Title="CSharpCodeProviderWithDocs Constructor " Url="html/033d9ec4-0cc6-e729-6055-706f5697a5df.htm" />
         <HelpTOCNode Title="CSharpCodeProviderWithDocs Constructor (IDictionary(String, String))" Url="html/60cc1fdb-0886-24de-9a6f-c18a41278f01.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="CSharpCodeProviderWithDocs Properties" Url="html/fff8086e-2d98-05b8-fc43-3da35d81b91b.htm" />
-      <HelpTOCNode Id="7ec296e8-4f0a-46cc-ba1e-3d045aa9b8df" Title="CSharpCodeProviderWithDocs Methods" Url="html/c910700e-8f38-0f9a-fdc0-a3f3258a997b.htm">
+      <HelpTOCNode Id="d8db44d9-401d-4aad-9094-1077ace74806" Title="CSharpCodeProviderWithDocs Methods" Url="html/c910700e-8f38-0f9a-fdc0-a3f3258a997b.htm">
         <HelpTOCNode Title="CompileAssemblyFromDom Method " Url="html/3d4a723f-e658-183b-c452-e8bf17918abd.htm" />
         <HelpTOCNode Title="CompileAssemblyFromFile Method " Url="html/325348ae-81de-1fc1-c7c5-fc19667a4e9e.htm" />
         <HelpTOCNode Title="CompileAssemblyFromSource Method " Url="html/76fcf67f-512e-5391-9221-c4e8582dfa0c.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="CSharpCodeProviderWithDocs Events" Url="html/60850217-0254-4289-a50d-49af02294eb6.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="5b6c11ba-3632-4f72-87a0-956b7858c755" Title="VBCodeProviderWithDocs Class" Url="html/3e4b2bba-c32d-f96a-8e7b-aa7180754aa7.htm">
-      <HelpTOCNode Id="38231824-d538-419e-a3fa-37a99bdb3c69" Title="VBCodeProviderWithDocs Constructor " Url="html/af27da97-4724-a57e-d7d1-76ab081e76f9.htm">
+    <HelpTOCNode Id="621cec5b-c587-42f0-9938-33fd28ca2ba7" Title="VBCodeProviderWithDocs Class" Url="html/3e4b2bba-c32d-f96a-8e7b-aa7180754aa7.htm">
+      <HelpTOCNode Id="34ae226a-3a21-48ec-b1d4-23637718f204" Title="VBCodeProviderWithDocs Constructor " Url="html/af27da97-4724-a57e-d7d1-76ab081e76f9.htm">
         <HelpTOCNode Title="VBCodeProviderWithDocs Constructor " Url="html/cf91d5b8-d516-e4bd-213c-d683df0e9425.htm" />
         <HelpTOCNode Title="VBCodeProviderWithDocs Constructor (IDictionary(String, String))" Url="html/345ec7a6-6f2d-e5a4-f905-a1b342736fc2.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="VBCodeProviderWithDocs Properties" Url="html/014afa8b-5c67-36e5-5b58-29a8b6e4abd2.htm" />
-      <HelpTOCNode Id="f9f421c0-2542-4f5e-a00e-2d4cd15c493d" Title="VBCodeProviderWithDocs Methods" Url="html/c27252c1-6d6b-9966-da7d-7e5243251ffa.htm">
+      <HelpTOCNode Id="b0d21db2-5a25-4994-b278-dbd70d7f012c" Title="VBCodeProviderWithDocs Methods" Url="html/c27252c1-6d6b-9966-da7d-7e5243251ffa.htm">
         <HelpTOCNode Title="CompileAssemblyFromDom Method " Url="html/68b376b8-23f2-07b7-d186-bd7fa7a39218.htm" />
         <HelpTOCNode Title="CompileAssemblyFromFile Method " Url="html/ec6dc051-9e56-f325-0255-538308fbe43a.htm" />
         <HelpTOCNode Title="CompileAssemblyFromSource Method " Url="html/456d1953-0e81-fedf-4a13-978cfe731ee2.htm" />
