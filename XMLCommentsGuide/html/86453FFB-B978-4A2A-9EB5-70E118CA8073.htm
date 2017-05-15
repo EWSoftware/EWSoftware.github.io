@@ -40,7 +40,20 @@ the inherited comments based on the specified XPath query.</p></li></ul><p>When 
 member's comments, the inherited versions are ignored:</p><ul><li><p><span class="code">example</span></p></li><li><p><span class="code">exclude</span></p></li><li><p><span class="code">filterpriority</span></p></li><li><p><span class="code">preliminary</span></p></li><li><p><span class="code">summary</span></p></li><li><p><span class="code">remarks</span></p></li><li><p><span class="code">returns</span></p></li><li><p><span class="code">threadsafety</span></p></li><li><p><span class="code">value</span></p></li></ul><p>The <span class="code">overloads</span> element will never be inherited.  This prevents the doubling
 of comments on the overloads page.  However, you can inherit the contents of the <span class="code">overloads</span>
 element using a <span class="code">select</span> attribute with a value of "<span class="code">overloads/*</span>".
-See below for an example.</p><p>All other elements will be inherited unless they match an element by the same name that contains a
+See the example below in the Examples section that inherits the elements from an <span class="code">overloads</span>
+element.  If the element only contains text and you want to inherit that text, include an <span class="code">overloads</span>
+element with a nested <span class="code">inheritdoc</span> element.  For example:</p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EACAEAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EACAEAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EACAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">/// &lt;inheritdoc /&gt; </span>
+<span class="highlight-comment">/// </span>
+<span class="highlight-comment">/// &lt;overloads&gt;</span>
+<span class="highlight-comment">/// The inheritdoc element outside this "overloads" element inherits the standard</span>
+<span class="highlight-comment">/// summary, parameters, remarks, etc. for the member itself.</span>
+<span class="highlight-comment">/// </span>
+<span class="highlight-comment">/// The inheritdoc element below will inherit the overload text from the implemented</span>
+<span class="highlight-comment">/// member and it will appear on the overloads page:</span>
+<span class="highlight-comment">/// </span>
+<span class="highlight-comment">/// &lt;inheritdoc /&gt; </span>
+<span class="highlight-comment">/// </span>
+<span class="highlight-comment">/// &lt;/overloads&gt;</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EACAEAAA");</script><p>All other elements will be inherited unless they match an element by the same name that contains a
 <span class="code">cref</span>, <span class="code">href</span>, <span class="code">name</span>,
 <span class="code">vref</span>, or <span class="code">xref</span> attribute with an identical value in the member's
 comments.  To merge comments in one of the above elements from one or more sources, use one or more nested

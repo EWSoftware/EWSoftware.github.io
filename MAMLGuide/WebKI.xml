@@ -40,6 +40,7 @@
     <HelpKINode Title="legacyBold" Url="html/ca1eccd2-dfa4-4daa-a69b-3bad7e0c4946.htm" />
     <HelpKINode Title="legacyItalic" Url="html/02096c70-c178-44f9-ac9f-f3d479a2b77a.htm" />
     <HelpKINode Title="legacyUnderline" Url="html/e90091a9-3959-4718-b109-ea8e75837e62.htm" />
+    <HelpKINode Title="lineBreak" Url="html/da613e19-4d41-4e92-830e-0c776f14e751.htm" />
     <HelpKINode Title="literal" Url="html/d50f98be-cddf-4756-994d-c05431f013a8.htm" />
     <HelpKINode Title="localUri" Url="html/ecd8ab10-57b5-4094-b195-4c8c5a1ba3d0.htm" />
     <HelpKINode Title="markup" Url="html/aaaff238-1ab4-4c9e-95d8-60ca4d8d4f8e.htm" />
@@ -125,6 +126,7 @@
     <HelpKINode Title="1.1.0.1" Url="html/0ff85a0b-3fed-48dc-87a7-c73d8711ea92.htm" />
     <HelpKINode Title="1.1.0.2" Url="html/2ac532de-69cc-45c7-9f78-5d668fcb4339.htm" />
     <HelpKINode Title="1.1.0.3" Url="html/bea57722-4254-47b3-a86c-415af363eb2f.htm" />
+    <HelpKINode Title="2017.5.15.0" Url="html/3d6cb7db-3633-4517-8ace-db72c2607a80.htm" />
   </HelpKINode>
   <HelpKINode Title="Visual Studio" Url="html/746fc19e-2670-440b-8277-a1ef7dc074d5.htm" />
   <HelpKINode Title="Welcome" Url="html/303c996a-2911-4c08-b492-6496c82b3edb.htm" />
