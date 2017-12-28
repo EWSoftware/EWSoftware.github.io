@@ -64,7 +64,6 @@
   <HelpKINode Title="Ascending enumeration member" Url="html/0e52eed6-33f2-da9a-335d-d718778a006c.htm" />
   <HelpKINode Title="AutoCompleteComboBox class">
     <HelpKINode Title="AutoCompleteComboBox Class" Url="html/88e2c2fc-d9d6-5101-8d71-4424b195a277.htm" />
-    <HelpKINode Title="about AutoCompleteComboBox class" Url="html/88e2c2fc-d9d6-5101-8d71-4424b195a277.htm" />
     <HelpKINode Title="constructor" Url="html/17b56eb8-3ee4-5523-5f66-df5a34f6ce8e.htm" />
     <HelpKINode Title="events" Url="html/c0c23111-d4ad-aa4a-e019-00110614b380.htm" />
     <HelpKINode Title="methods" Url="html/c7074b9d-4786-d0af-4f1f-b4672555822e.htm" />
@@ -92,7 +91,6 @@
   </HelpKINode>
   <HelpKINode Title="AutoCompleteTextBoxCell class">
     <HelpKINode Title="AutoCompleteTextBoxCell Class" Url="html/01bec93d-da32-d2cc-fdb7-3c694ae14f7c.htm" />
-    <HelpKINode Title="about AutoCompleteTextBoxCell class" Url="html/01bec93d-da32-d2cc-fdb7-3c694ae14f7c.htm" />
     <HelpKINode Title="constructor" Url="html/7a481458-3531-559d-f77c-b5619df0bb2b.htm" />
     <HelpKINode Title="methods" Url="html/2cda0d28-4eb2-643b-7194-ade0b3834fc6.htm" />
     <HelpKINode Title="properties" Url="html/b6082f40-0b84-e04a-94f3-75e39f5d95a2.htm" />
@@ -108,7 +106,6 @@
   <HelpKINode Title="AutoCompleteTextBoxCellTemplate property" Url="html/bad2aa62-2797-d047-12f1-f990039ac478.htm" />
   <HelpKINode Title="AutoCompleteTextBoxColumn class">
     <HelpKINode Title="AutoCompleteTextBoxColumn Class" Url="html/7a87af2f-9398-e41d-39c2-c481a13b707c.htm" />
-    <HelpKINode Title="about AutoCompleteTextBoxColumn class" Url="html/7a87af2f-9398-e41d-39c2-c481a13b707c.htm" />
     <HelpKINode Title="constructor" Url="html/d2ed306d-d517-8b6f-5ed2-8f02ac5fed2a.htm" />
     <HelpKINode Title="events" Url="html/552abe36-fe51-ae91-dd9f-5982f52d2757.htm" />
     <HelpKINode Title="methods" Url="html/da7a40dc-bd56-b6f7-2e22-bf19ebedcfae.htm" />
@@ -130,7 +127,6 @@
   <HelpKINode Title="BackgroundBrush property" Url="html/87867561-6e7b-1b4f-d621-2b8e6b10c4d6.htm" />
   <HelpKINode Title="BaseButtonList class">
     <HelpKINode Title="BaseButtonList Class" Url="html/58c7604e-1a08-425e-063a-dae4eb86cc31.htm" />
-    <HelpKINode Title="about BaseButtonList class" Url="html/58c7604e-1a08-425e-063a-dae4eb86cc31.htm" />
     <HelpKINode Title="constructor" Url="html/1c15b4db-f4ca-ce90-3c3a-4a32b5a041c1.htm" />
     <HelpKINode Title="events" Url="html/2817adb8-ee8c-d4c2-3910-a5f3e4ad46b2.htm" />
     <HelpKINode Title="methods" Url="html/fba716d7-e644-0930-41e9-f4bc488571ff.htm" />
@@ -181,7 +177,6 @@
   <HelpKINode Title="BaseButtonList.UseMnemonic property" Url="html/fc43f1c1-ffbf-fc0d-7a0c-d757d5edb591.htm" />
   <HelpKINode Title="BaseComboBox class">
     <HelpKINode Title="BaseComboBox Class" Url="html/cceb65c8-41aa-5e52-034a-ada5a933ba85.htm" />
-    <HelpKINode Title="about BaseComboBox class" Url="html/cceb65c8-41aa-5e52-034a-ada5a933ba85.htm" />
     <HelpKINode Title="constructor" Url="html/b5238c7a-1cc4-213b-8a2c-72c4cae19b0c.htm" />
     <HelpKINode Title="events" Url="html/b37a103d-1969-d901-9993-0a3d06687ae7.htm" />
     <HelpKINode Title="methods" Url="html/559dd4a4-82ce-3b2b-798f-3abd4cbb5032.htm" />
@@ -252,7 +247,6 @@
   <HelpKINode Title="BaseComboBox.WndProc method" Url="html/d6fd5ef1-c990-da36-2f31-539192b1b404.htm" />
   <HelpKINode Title="BaseComboBoxCell class">
     <HelpKINode Title="BaseComboBoxCell Class" Url="html/c3ea438a-4990-b59d-ed8b-e021f43138b5.htm" />
-    <HelpKINode Title="about BaseComboBoxCell class" Url="html/c3ea438a-4990-b59d-ed8b-e021f43138b5.htm" />
     <HelpKINode Title="constructor" Url="html/c3c68bfc-d3e5-7db6-d20d-f4534fafda4a.htm" />
     <HelpKINode Title="methods" Url="html/fd7b1706-47ad-8df5-4787-34b0d3fe61af.htm" />
     <HelpKINode Title="properties" Url="html/9d6407cd-40a8-1e47-d5d4-08c785ffd4cf.htm" />
@@ -280,7 +274,6 @@
   <HelpKINode Title="BaseComboBoxCell.MaxDropDownItems property" Url="html/a23179f5-9b5e-28af-bc78-f7e3cd5a8148.htm" />
   <HelpKINode Title="BaseComboBoxCell.ObjectCollection class">
     <HelpKINode Title="BaseComboBoxCell.ObjectCollection Class" Url="html/1992e094-b73a-c860-39e4-5c7c6dc0b22d.htm" />
-    <HelpKINode Title="about BaseComboBoxCell.ObjectCollection class" Url="html/1992e094-b73a-c860-39e4-5c7c6dc0b22d.htm" />
     <HelpKINode Title="constructor" Url="html/c09b6cb9-37cc-c6da-b018-9f03971a7595.htm" />
   </HelpKINode>
   <HelpKINode Title="BaseComboBoxCell.ObjectCollection.Add method" Url="html/489d1098-7c68-5725-44aa-9b3273de124f.htm" />
@@ -312,7 +305,6 @@
   <HelpKINode Title="BaseComboBoxCell.ValueType property" Url="html/e40cf2cd-d2fa-4bab-c773-86fc15d0fc1b.htm" />
   <HelpKINode Title="BaseComboBoxColumn class">
     <HelpKINode Title="BaseComboBoxColumn Class" Url="html/db7601ad-4fdc-2ab5-db53-67cf4c59c035.htm" />
-    <HelpKINode Title="about BaseComboBoxColumn class" Url="html/db7601ad-4fdc-2ab5-db53-67cf4c59c035.htm" />
     <HelpKINode Title="constructor" Url="html/364db043-888e-313d-ed46-430601c6edb5.htm" />
     <HelpKINode Title="events" Url="html/52475b84-747e-f406-101b-c8bd05e6aa20.htm" />
     <HelpKINode Title="methods" Url="html/bf556be6-655c-a465-a93d-c154aae0ab45.htm" />
@@ -335,7 +327,6 @@
   <HelpKINode Title="BaseComboBoxColumn.ValueMember property" Url="html/39bdbaf3-7ba7-066e-c053-0afb3e589d5f.htm" />
   <HelpKINode Title="BaseDataGridViewCell class">
     <HelpKINode Title="BaseDataGridViewCell Class" Url="html/74972304-d4f4-081f-7225-aef8a92fbe5d.htm" />
-    <HelpKINode Title="about BaseDataGridViewCell class" Url="html/74972304-d4f4-081f-7225-aef8a92fbe5d.htm" />
     <HelpKINode Title="constructor" Url="html/2caf2f4a-a006-200c-3f95-16591eaaacb0.htm" />
     <HelpKINode Title="methods" Url="html/fde1e02d-80ec-c396-ebb1-a0ea929b68e3.htm" />
     <HelpKINode Title="properties" Url="html/1a3d1491-eb05-db53-7631-5ee71fca41dc.htm" />
@@ -351,7 +342,6 @@
   <HelpKINode Title="BaseDataGridViewCell.PaintPadding method" Url="html/fe74c0e6-fdc3-5afb-6fb1-e3428b81dc29.htm" />
   <HelpKINode Title="BaseImageCell class">
     <HelpKINode Title="BaseImageCell Class" Url="html/e1c5c690-e4a1-880b-935d-16cd6529d09a.htm" />
-    <HelpKINode Title="about BaseImageCell class" Url="html/e1c5c690-e4a1-880b-935d-16cd6529d09a.htm" />
     <HelpKINode Title="constructor" Url="html/e68396ec-dda4-acd3-fe72-7cad65382e38.htm" />
     <HelpKINode Title="methods" Url="html/e87d3dfe-a205-04b7-598f-260ad199b2ce.htm" />
     <HelpKINode Title="properties" Url="html/5a0a6fba-77f6-35f9-7584-f59a7569ee41.htm" />
@@ -375,7 +365,6 @@
   <HelpKINode Title="BaseImageCell.PrepareEditingCellForEdit method" Url="html/c41e41ab-f89b-fdcc-6afa-b6dc2800b5ba.htm" />
   <HelpKINode Title="BaseListControl class">
     <HelpKINode Title="BaseListControl Class" Url="html/47887b23-2f2a-da42-0c10-eb9170beb655.htm" />
-    <HelpKINode Title="about BaseListControl class" Url="html/47887b23-2f2a-da42-0c10-eb9170beb655.htm" />
     <HelpKINode Title="constructor" Url="html/0b555f7f-4e22-1335-872d-8b37402ad954.htm" />
     <HelpKINode Title="events" Url="html/3b42af06-fe35-ad39-7bfa-30f04bd7b575.htm" />
     <HelpKINode Title="methods" Url="html/79c5a4cb-a5ae-fe84-97c2-0ff22a32bdeb.htm" />
@@ -407,7 +396,6 @@
   <HelpKINode Title="BaseListControl.MappingName property" Url="html/0499a401-798d-7f81-d622-a6993325e91f.htm" />
   <HelpKINode Title="BaseListControl.ObjectCollection class">
     <HelpKINode Title="BaseListControl.ObjectCollection Class" Url="html/6541aa9f-e5a4-aded-6975-e7ca58f81eb2.htm" />
-    <HelpKINode Title="about BaseListControl.ObjectCollection class" Url="html/6541aa9f-e5a4-aded-6975-e7ca58f81eb2.htm" />
     <HelpKINode Title="constructor" Url="html/effb26df-21f2-73c7-4744-f5297e676382.htm" />
   </HelpKINode>
   <HelpKINode Title="BaseListControl.ObjectCollection.Add method" Url="html/ec29b35a-92cf-66ed-10d4-8bfa7999e0cc.htm" />
@@ -499,7 +487,6 @@
   </HelpKINode>
   <HelpKINode Title="ChangePolicyEventArgs class">
     <HelpKINode Title="ChangePolicyEventArgs Class" Url="html/8242f479-14c4-78c9-7840-d99051ee04a7.htm" />
-    <HelpKINode Title="about ChangePolicyEventArgs class" Url="html/8242f479-14c4-78c9-7840-d99051ee04a7.htm" />
     <HelpKINode Title="constructor" Url="html/6dcd9b13-964f-81e1-bb73-786fdb58f1b5.htm" />
     <HelpKINode Title="methods" Url="html/2ab18144-58a6-5c15-6b8e-7f7ec7e00a20.htm" />
     <HelpKINode Title="properties" Url="html/2737935c-76c6-99c5-29f3-73cf0cc29824.htm" />
@@ -522,7 +509,6 @@
   <HelpKINode Title="CheckBoxes property" Url="html/dbed8089-dd8f-504a-abdf-063e8205fafc.htm" />
   <HelpKINode Title="CheckBoxList class">
     <HelpKINode Title="CheckBoxList Class" Url="html/7e47212d-297e-6a2a-dc9b-f39bc7d19995.htm" />
-    <HelpKINode Title="about CheckBoxList class" Url="html/7e47212d-297e-6a2a-dc9b-f39bc7d19995.htm" />
     <HelpKINode Title="constructor" Url="html/e2d59d7e-36e3-c666-a8a3-6b7b04fa8744.htm" />
     <HelpKINode Title="events" Url="html/365b906c-4b18-3f31-dea5-4d3f65740b41.htm" />
     <HelpKINode Title="methods" Url="html/f131b2d8-f4a1-3309-22ec-15747a5d01c6.htm" />
@@ -553,7 +539,6 @@
   <HelpKINode Title="CheckedIndices property" Url="html/f991faaa-d887-e57c-a925-8bff436d816d.htm" />
   <HelpKINode Title="CheckedIndicesCollection class">
     <HelpKINode Title="CheckedIndicesCollection Class" Url="html/9fa1306d-2440-b4fe-1014-19dc76fab995.htm" />
-    <HelpKINode Title="about CheckedIndicesCollection class" Url="html/9fa1306d-2440-b4fe-1014-19dc76fab995.htm" />
     <HelpKINode Title="methods" Url="html/e5006b5c-c636-c05b-5b5e-c168871b99d5.htm" />
     <HelpKINode Title="properties" Url="html/4cd53c97-e8b8-63d6-c34f-2902d541663e.htm" />
   </HelpKINode>
@@ -561,7 +546,6 @@
   <HelpKINode Title="CheckedItems property" Url="html/932bb886-c335-fbe7-fabb-f419441adbf1.htm" />
   <HelpKINode Title="CheckedItemsCollection class">
     <HelpKINode Title="CheckedItemsCollection Class" Url="html/45a8f750-a965-e293-bd28-89944a7ad34a.htm" />
-    <HelpKINode Title="about CheckedItemsCollection class" Url="html/45a8f750-a965-e293-bd28-89944a7ad34a.htm" />
     <HelpKINode Title="methods" Url="html/1b8b2566-4563-e486-3be2-bc08e7e3bc39.htm" />
     <HelpKINode Title="properties" Url="html/238be4fa-680b-04e3-b63e-4723b73f6956.htm" />
   </HelpKINode>
@@ -573,7 +557,6 @@
   <HelpKINode Title="CheckedNodes property" Url="html/0dabb0e5-f215-684f-7412-ceaa7f153b87.htm" />
   <HelpKINode Title="CheckedNodesCollection class">
     <HelpKINode Title="CheckedNodesCollection Class" Url="html/db1f7264-5ad5-5abf-0470-04d91f78b0cc.htm" />
-    <HelpKINode Title="about CheckedNodesCollection class" Url="html/db1f7264-5ad5-5abf-0470-04d91f78b0cc.htm" />
     <HelpKINode Title="methods" Url="html/3fe38fb5-9bd5-0a75-ec1e-9e52b985207a.htm" />
     <HelpKINode Title="properties" Url="html/ee1dfd67-1538-5629-7133-c21abb8fadd0.htm" />
   </HelpKINode>
@@ -597,7 +580,6 @@
   </HelpKINode>
   <HelpKINode Title="ClickableLabel class">
     <HelpKINode Title="ClickableLabel Class" Url="html/9331014f-a4b0-90ed-899c-c93253d55ed2.htm" />
-    <HelpKINode Title="about ClickableLabel class" Url="html/9331014f-a4b0-90ed-899c-c93253d55ed2.htm" />
     <HelpKINode Title="constructor" Url="html/2b271a73-5914-d854-39be-90dfd61776fa.htm" />
     <HelpKINode Title="events" Url="html/96beaee7-c921-57d1-f210-c28bca1fb0d8.htm" />
     <HelpKINode Title="methods" Url="html/d026ae49-8205-6f5d-4457-c520c0dfebec.htm" />
@@ -682,7 +664,6 @@
   </HelpKINode>
   <HelpKINode Title="DataList class">
     <HelpKINode Title="DataList Class" Url="html/7ee6aea2-8d81-bc12-b77a-1a6e6766829f.htm" />
-    <HelpKINode Title="about DataList class" Url="html/7ee6aea2-8d81-bc12-b77a-1a6e6766829f.htm" />
     <HelpKINode Title="constructor" Url="html/0b44c1fc-08ad-1862-a05d-c6ccc95fef38.htm" />
     <HelpKINode Title="events" Url="html/dde6781c-f87f-55ec-5492-202f9f922cfe.htm" />
     <HelpKINode Title="methods" Url="html/78fa2bfa-eb9b-dbc6-665a-fbcc0e0c42f3.htm" />
@@ -819,7 +800,6 @@
   <HelpKINode Title="DataList.WndProc method" Url="html/aaa0d273-e6b2-c6ae-5ffa-25ca6f569565.htm" />
   <HelpKINode Title="DataListBeginDragEventArgs class">
     <HelpKINode Title="DataListBeginDragEventArgs Class" Url="html/e89a1f07-2867-3ff9-ab2d-46c403cfed5b.htm" />
-    <HelpKINode Title="about DataListBeginDragEventArgs class" Url="html/e89a1f07-2867-3ff9-ab2d-46c403cfed5b.htm" />
     <HelpKINode Title="constructor" Url="html/dc158e11-8713-138e-3f6f-67e608486f5e.htm" />
     <HelpKINode Title="methods" Url="html/171be9ec-85d8-0e28-4c83-142fe526fc25.htm" />
     <HelpKINode Title="properties" Url="html/d7b150bb-881c-6aaf-677d-9fabdfd80eff.htm" />
@@ -831,7 +811,6 @@
   <HelpKINode Title="DataListBeginDragEventArgs.Source property" Url="html/60e05db5-d5ec-d7a3-1fcd-d7f4e9a49226.htm" />
   <HelpKINode Title="DataListCancelEventArgs class">
     <HelpKINode Title="DataListCancelEventArgs Class" Url="html/42a87e75-a736-4232-8f03-125ff1ad2b12.htm" />
-    <HelpKINode Title="about DataListCancelEventArgs class" Url="html/42a87e75-a736-4232-8f03-125ff1ad2b12.htm" />
     <HelpKINode Title="constructor" Url="html/e9f8d69d-ad7f-9646-33e6-2e22d8286220.htm" />
     <HelpKINode Title="methods" Url="html/3ef59ddd-7bf7-b821-e133-ed3a028198dd.htm" />
     <HelpKINode Title="properties" Url="html/6ce31518-7bdc-ae1f-14e1-1497e859fc50.htm" />
@@ -840,7 +819,6 @@
   <HelpKINode Title="DataListCancelEventArgs.DataListCancelEventArgs constructor" Url="html/e9f8d69d-ad7f-9646-33e6-2e22d8286220.htm" />
   <HelpKINode Title="DataListEventArgs class">
     <HelpKINode Title="DataListEventArgs Class" Url="html/0413a016-8052-a276-64e0-78d8ccf629b4.htm" />
-    <HelpKINode Title="about DataListEventArgs class" Url="html/0413a016-8052-a276-64e0-78d8ccf629b4.htm" />
     <HelpKINode Title="constructor" Url="html/e758559c-4b27-18b7-6a85-9e23ba28ba22.htm" />
     <HelpKINode Title="methods" Url="html/78a2ee93-c8ae-c5be-41c1-cf911482d439.htm" />
     <HelpKINode Title="properties" Url="html/cedb8b7b-4bd3-5c55-1928-3ca6b97be185.htm" />
@@ -850,7 +828,6 @@
   <HelpKINode Title="DataListEventArgs.Item property" Url="html/44d5fc96-bdea-d48d-1055-98f0a6fe265b.htm" />
   <HelpKINode Title="DataListHitTestInfo class">
     <HelpKINode Title="DataListHitTestInfo Class" Url="html/bedc0bf1-b5ca-1608-c50d-5d5daa25ffa7.htm" />
-    <HelpKINode Title="about DataListHitTestInfo class" Url="html/bedc0bf1-b5ca-1608-c50d-5d5daa25ffa7.htm" />
     <HelpKINode Title="fields" Url="html/c72b6d26-e30d-0923-6f21-7ba1db474ee0.htm" />
     <HelpKINode Title="methods" Url="html/77942b0a-f918-b4a3-8634-b1bd6d73c602.htm" />
     <HelpKINode Title="properties" Url="html/22ae9f81-1b6d-65dd-d8e2-1caca1d4510b.htm" />
@@ -872,7 +849,6 @@
   </HelpKINode>
   <HelpKINode Title="DataNavigator class">
     <HelpKINode Title="DataNavigator Class" Url="html/d7a5f265-f7d6-1b91-cb74-2a0c61d29b69.htm" />
-    <HelpKINode Title="about DataNavigator class" Url="html/d7a5f265-f7d6-1b91-cb74-2a0c61d29b69.htm" />
     <HelpKINode Title="constructor" Url="html/b088f8e6-dcbf-08ac-9df6-d917831e4f42.htm" />
     <HelpKINode Title="events" Url="html/64cdf76e-8b31-3e5d-9e2c-df83e17a8a4c.htm" />
     <HelpKINode Title="methods" Url="html/e8c9b7b5-ee3b-cee9-a28b-480fe99ba256.htm" />
@@ -938,7 +914,6 @@
   <HelpKINode Title="DataNavigator.SetDataBinding method" Url="html/4635baf2-b94e-c90b-f6cf-d94edb6736f6.htm" />
   <HelpKINode Title="DataNavigatorCancelEventArgs class">
     <HelpKINode Title="DataNavigatorCancelEventArgs Class" Url="html/fd651b73-9831-7053-f7cc-95bdffc2b37e.htm" />
-    <HelpKINode Title="about DataNavigatorCancelEventArgs class" Url="html/fd651b73-9831-7053-f7cc-95bdffc2b37e.htm" />
     <HelpKINode Title="constructor" Url="html/9f0cc20c-5cce-ac16-7677-ab3e194c1441.htm" />
     <HelpKINode Title="methods" Url="html/be02d513-4260-6124-0d65-b5545a4027f9.htm" />
     <HelpKINode Title="properties" Url="html/774c1abc-3999-7a79-217d-30d614cbf806.htm" />
@@ -947,7 +922,6 @@
   <HelpKINode Title="DataNavigatorCancelEventArgs.DataNavigatorCancelEventArgs constructor" Url="html/9f0cc20c-5cce-ac16-7677-ab3e194c1441.htm" />
   <HelpKINode Title="DataNavigatorEventArgs class">
     <HelpKINode Title="DataNavigatorEventArgs Class" Url="html/5d5d09db-705e-45c9-ea38-52e8a66f7181.htm" />
-    <HelpKINode Title="about DataNavigatorEventArgs class" Url="html/5d5d09db-705e-45c9-ea38-52e8a66f7181.htm" />
     <HelpKINode Title="constructor" Url="html/dcb3cf77-e7e8-f355-fe73-840c27a73397.htm" />
     <HelpKINode Title="methods" Url="html/9e2a8d7e-cb12-bdf7-96e4-d07fa94cb5be.htm" />
     <HelpKINode Title="properties" Url="html/ac94ca9f-0a00-3acf-0c95-08616c31a83f.htm" />
@@ -1036,7 +1010,6 @@
   <HelpKINode Title="DrawNode event" Url="html/3445089d-8bf4-ce30-5d43-d8c6fd5ae9e8.htm" />
   <HelpKINode Title="DrawTreeNodeExtendedEventArgs class">
     <HelpKINode Title="DrawTreeNodeExtendedEventArgs Class" Url="html/cf9fb0c5-95a1-857b-561f-1edb09d1b8b3.htm" />
-    <HelpKINode Title="about DrawTreeNodeExtendedEventArgs class" Url="html/cf9fb0c5-95a1-857b-561f-1edb09d1b8b3.htm" />
     <HelpKINode Title="constructor" Url="html/33efbd73-607c-9585-a39a-f76948b2780a.htm" />
     <HelpKINode Title="methods" Url="html/ec306da6-2853-eb55-0741-6558a28940c9.htm" />
     <HelpKINode Title="properties" Url="html/a3e7a24c-db80-2131-3225-855e37579c2d.htm" />
@@ -1069,7 +1042,6 @@
   <HelpKINode Title="DropDownBackColorChanged event" Url="html/84320106-ff1d-4454-6ef6-a98cd6aef19b.htm" />
   <HelpKINode Title="DropDownControl class">
     <HelpKINode Title="DropDownControl Class" Url="html/ef0ff7e4-d9ac-8952-5049-6f152ea41a5a.htm" />
-    <HelpKINode Title="about DropDownControl class" Url="html/ef0ff7e4-d9ac-8952-5049-6f152ea41a5a.htm" />
     <HelpKINode Title="constructor" Url="html/0223d9f3-d936-e73d-da23-195b6a3eb48f.htm" />
     <HelpKINode Title="events" Url="html/1864222e-6efa-666f-6a1e-706498771ab8.htm" />
     <HelpKINode Title="methods" Url="html/e21873f9-ccc8-c835-e0a5-75e4a7adf0d2.htm" />
@@ -1093,7 +1065,6 @@
   <HelpKINode Title="DropDownStyleChanged event" Url="html/50bbf293-25d8-43ab-80fe-6a79a14c63be.htm" />
   <HelpKINode Title="DropDownTableStyle class">
     <HelpKINode Title="DropDownTableStyle Class" Url="html/29084582-c3fc-cfe4-2276-cffee5c55c80.htm" />
-    <HelpKINode Title="about DropDownTableStyle class" Url="html/29084582-c3fc-cfe4-2276-cffee5c55c80.htm" />
     <HelpKINode Title="constructor" Url="html/804079fd-cc62-817d-9934-5864561b6514.htm" />
     <HelpKINode Title="events" Url="html/c4dc4182-3010-6247-cbb9-3d18b3db1acc.htm" />
     <HelpKINode Title="methods" Url="html/9968d812-d7a5-53e4-0862-e13f7c14d5fe.htm" />
@@ -1227,7 +1198,6 @@
   <HelpKINode Title="ExpandoImageList property" Url="html/fb4ecff8-cbb3-bd43-db8f-7086bbfa02b1.htm" />
   <HelpKINode Title="ExtendedTreeView class">
     <HelpKINode Title="ExtendedTreeView Class" Url="html/115201b3-312b-5899-3855-b9d06c989454.htm" />
-    <HelpKINode Title="about ExtendedTreeView class" Url="html/115201b3-312b-5899-3855-b9d06c989454.htm" />
     <HelpKINode Title="constructor" Url="html/ff128804-7ab6-2385-c8d2-b974a24e3ea1.htm" />
     <HelpKINode Title="events" Url="html/f32dd8e3-9ab1-48e9-a090-6a47a6c0fcf5.htm" />
     <HelpKINode Title="methods" Url="html/935ea97f-ef4e-7119-cb01-ec9eeac3dddd.htm" />
@@ -1391,7 +1361,6 @@
   </HelpKINode>
   <HelpKINode Title="ImageListCell class">
     <HelpKINode Title="ImageListCell Class" Url="html/40cc3371-5774-ffff-89c3-d75fb6cbf74d.htm" />
-    <HelpKINode Title="about ImageListCell class" Url="html/40cc3371-5774-ffff-89c3-d75fb6cbf74d.htm" />
     <HelpKINode Title="constructor" Url="html/b50e4da4-3217-2825-b931-69175adadb30.htm" />
     <HelpKINode Title="methods" Url="html/9576dfcf-1a77-bb6f-017c-c868774ab71a.htm" />
     <HelpKINode Title="properties" Url="html/d75cf11d-4bf9-500c-1a92-25cb13706ec7.htm" />
@@ -1411,7 +1380,6 @@
   <HelpKINode Title="ImageListCell.OnMouseMove method" Url="html/6ca6829a-e0e2-ea4b-73a9-9f55fd7743c9.htm" />
   <HelpKINode Title="ImageListColumn class">
     <HelpKINode Title="ImageListColumn Class" Url="html/2061f784-45a5-b50c-e941-e67393b830ee.htm" />
-    <HelpKINode Title="about ImageListColumn class" Url="html/2061f784-45a5-b50c-e941-e67393b830ee.htm" />
     <HelpKINode Title="constructor" Url="html/6891b07c-9bef-2c8c-b8a5-c00146ed35fe.htm" />
     <HelpKINode Title="events" Url="html/c3626100-62b8-2d81-fce7-ee301ed38ac7.htm" />
     <HelpKINode Title="methods" Url="html/8bb1c8aa-97f8-cff0-e5b8-2c97fe7b3023.htm" />
@@ -1443,7 +1411,6 @@
   </HelpKINode>
   <HelpKINode Title="IndicatorCell class">
     <HelpKINode Title="IndicatorCell Class" Url="html/3fded263-1c67-273b-a5ae-9694ecf47067.htm" />
-    <HelpKINode Title="about IndicatorCell class" Url="html/3fded263-1c67-273b-a5ae-9694ecf47067.htm" />
     <HelpKINode Title="constructor" Url="html/51d8599a-2818-4925-2334-8ebc615a0d48.htm" />
     <HelpKINode Title="methods" Url="html/a4be6236-baa0-df72-2e46-9af9bc7f82ca.htm" />
     <HelpKINode Title="properties" Url="html/f3dddc37-4c06-79b4-5409-e815d9ae210a.htm" />
@@ -1465,7 +1432,6 @@
   <HelpKINode Title="IndicatorClicked event" Url="html/346345f4-756f-9113-7bb0-7be9eea995af.htm" />
   <HelpKINode Title="IndicatorClickEventArgs class">
     <HelpKINode Title="IndicatorClickEventArgs Class" Url="html/52a8e4a6-8f45-d710-3c1e-d5314ad06d36.htm" />
-    <HelpKINode Title="about IndicatorClickEventArgs class" Url="html/52a8e4a6-8f45-d710-3c1e-d5314ad06d36.htm" />
     <HelpKINode Title="constructor" Url="html/e6156958-c014-6c6b-bd1d-1c54cd24cc99.htm" />
     <HelpKINode Title="methods" Url="html/ae90b2a0-c098-5198-a46e-82a77c5ca76d.htm" />
     <HelpKINode Title="properties" Url="html/531c2c7f-cb57-8364-dc69-bb9ce88b5545.htm" />
@@ -1477,7 +1443,6 @@
   <HelpKINode Title="IndicatorClickEventArgs.Value property" Url="html/5a73e88d-00ca-1b92-aa23-9978b8e69f06.htm" />
   <HelpKINode Title="IndicatorColumn class">
     <HelpKINode Title="IndicatorColumn Class" Url="html/18d110e1-9dbd-ee56-ac2a-172473bf1cb4.htm" />
-    <HelpKINode Title="about IndicatorColumn class" Url="html/18d110e1-9dbd-ee56-ac2a-172473bf1cb4.htm" />
     <HelpKINode Title="constructor" Url="html/90df3ca8-0058-1840-3391-1947b6f2e4ec.htm" />
     <HelpKINode Title="events" Url="html/4c37402f-1160-6e50-e169-dfb3fe142285.htm" />
     <HelpKINode Title="methods" Url="html/35ff8c31-b491-3ee7-bdd1-e9f56abd8bc2.htm" />
@@ -1544,7 +1509,6 @@
   <HelpKINode Title="ItemCheckStateChanged event" Url="html/466edd6e-90c2-9e8e-9ed1-351fd2577a78.htm" />
   <HelpKINode Title="ItemCheckStateEventArgs class">
     <HelpKINode Title="ItemCheckStateEventArgs Class" Url="html/685074d0-d38b-2f6a-7244-20fc2e08ea1d.htm" />
-    <HelpKINode Title="about ItemCheckStateEventArgs class" Url="html/685074d0-d38b-2f6a-7244-20fc2e08ea1d.htm" />
     <HelpKINode Title="constructor" Url="html/0cafd790-26ce-21ac-acbc-337c1e9d3494.htm" />
     <HelpKINode Title="methods" Url="html/7be6714a-e4d7-d0c0-a62b-c8d0dd18da0a.htm" />
     <HelpKINode Title="properties" Url="html/439b7f8a-ab7e-87a4-243b-b1d3835409c4.htm" />
@@ -1584,7 +1548,6 @@
   <HelpKINode Title="ListChanged event" Url="html/8d1808dc-0eb6-58b5-2d05-3867897ad8fc.htm" />
   <HelpKINode Title="ListItem class">
     <HelpKINode Title="ListItem Class" Url="html/75a3e5b6-530f-5b60-f959-ea0c94454d4a.htm" />
-    <HelpKINode Title="about ListItem class" Url="html/75a3e5b6-530f-5b60-f959-ea0c94454d4a.htm" />
     <HelpKINode Title="constructor" Url="html/06876b1e-99b8-c048-22ec-8c8a408cfd4f.htm" />
     <HelpKINode Title="methods" Url="html/3a09c7dd-cc44-57de-ac8f-a6e3e6774942.htm" />
     <HelpKINode Title="properties" Url="html/2d5aa5e5-542c-3aca-3fe3-059bba0e1697.htm" />
@@ -1601,7 +1564,6 @@
   <HelpKINode Title="ListPadding property" Url="html/87d1c522-bbae-8656-62c2-ed022aab151e.htm" />
   <HelpKINode Title="ListPadding structure">
     <HelpKINode Title="ListPadding Structure" Url="html/b0b8a556-0731-8b7d-e9b8-012588c5266c.htm" />
-    <HelpKINode Title="about ListPadding structure" Url="html/b0b8a556-0731-8b7d-e9b8-012588c5266c.htm" />
     <HelpKINode Title="constructor" Url="html/d674ac99-32a3-b0b5-a225-e858ae63f50c.htm" />
     <HelpKINode Title="methods" Url="html/85dc6918-bce3-1068-d3ca-46f25cd61343.htm" />
     <HelpKINode Title="operators" Url="html/e5faa37d-c145-306e-13b6-dda27ae9adb1.htm" />
@@ -1621,7 +1583,6 @@
   <HelpKINode Title="ListPadding.ToString method" Url="html/a0b33c07-e195-7395-4bbf-449e9ce3a1e6.htm" />
   <HelpKINode Title="ListPaddingTypeConverter class">
     <HelpKINode Title="ListPaddingTypeConverter Class" Url="html/92b5d123-aa27-12e5-99e4-637fa647844f.htm" />
-    <HelpKINode Title="about ListPaddingTypeConverter class" Url="html/92b5d123-aa27-12e5-99e4-637fa647844f.htm" />
     <HelpKINode Title="constructor" Url="html/d1035db2-e3a9-31a0-d05a-990c787423f3.htm" />
     <HelpKINode Title="methods" Url="html/e4b11e9b-4fc4-2fc2-d415-ee0169b63a35.htm" />
   </HelpKINode>
@@ -1637,7 +1598,6 @@
   <HelpKINode Title="ListSortOrder enumeration" Url="html/0e52eed6-33f2-da9a-335d-d718778a006c.htm" />
   <HelpKINode Title="MapIndexEventArgs class">
     <HelpKINode Title="MapIndexEventArgs Class" Url="html/989f3a85-5040-046b-513b-e8c1279a1715.htm" />
-    <HelpKINode Title="about MapIndexEventArgs class" Url="html/989f3a85-5040-046b-513b-e8c1279a1715.htm" />
     <HelpKINode Title="constructor" Url="html/926c4122-0d56-d19d-2753-12f244bbb4a0.htm" />
     <HelpKINode Title="methods" Url="html/28e52f0b-a759-9beb-c640-a73590e812a8.htm" />
     <HelpKINode Title="properties" Url="html/a5cfba5f-5862-4ba1-f1c6-4292c05b9281.htm" />
@@ -1650,7 +1610,6 @@
   <HelpKINode Title="MapIndexToValue event" Url="html/4569aaae-a967-8acb-d3ec-8c20053f7c83.htm" />
   <HelpKINode Title="MapIndicatorEventArgs class">
     <HelpKINode Title="MapIndicatorEventArgs Class" Url="html/08ffa978-2f22-fb97-683d-09c9c59faf70.htm" />
-    <HelpKINode Title="about MapIndicatorEventArgs class" Url="html/08ffa978-2f22-fb97-683d-09c9c59faf70.htm" />
     <HelpKINode Title="constructor" Url="html/114ae894-4ab3-ac80-f2f2-477064582b9c.htm" />
     <HelpKINode Title="methods" Url="html/b2f19a43-6ba6-ccbe-6fe7-1a0021d816ea.htm" />
     <HelpKINode Title="properties" Url="html/d5fd8a4e-d826-842d-7d8b-f9055a5c23fa.htm" />
@@ -1663,7 +1622,6 @@
   <HelpKINode Title="MappingName property" Url="html/0499a401-798d-7f81-d622-a6993325e91f.htm" />
   <HelpKINode Title="MapRatingEventArgs class">
     <HelpKINode Title="MapRatingEventArgs Class" Url="html/8a795c89-46d2-3661-adb8-5bbd59f61b29.htm" />
-    <HelpKINode Title="about MapRatingEventArgs class" Url="html/8a795c89-46d2-3661-adb8-5bbd59f61b29.htm" />
     <HelpKINode Title="constructor" Url="html/de0ff33f-990c-17a9-8d2f-7d2d21239aef.htm" />
     <HelpKINode Title="methods" Url="html/76ad561b-d952-0c1b-6a49-34a7c17617e9.htm" />
     <HelpKINode Title="properties" Url="html/1268db09-1458-fbba-bb47-f5d9c516f487.htm" />
@@ -1698,7 +1656,6 @@
   </HelpKINode>
   <HelpKINode Title="MultiColumnComboBox class">
     <HelpKINode Title="MultiColumnComboBox Class" Url="html/001358c5-caf8-5bf1-0dbd-827672e90d6a.htm" />
-    <HelpKINode Title="about MultiColumnComboBox class" Url="html/001358c5-caf8-5bf1-0dbd-827672e90d6a.htm" />
     <HelpKINode Title="constructor" Url="html/92500624-9b7d-8d5c-9f2e-2417b5f8ac21.htm" />
     <HelpKINode Title="events" Url="html/9fcb0f62-d113-0c4f-d7d8-6d30a121f2cf.htm" />
     <HelpKINode Title="methods" Url="html/bc171f93-5b6a-c71b-6139-62ba78015e9a.htm" />
@@ -1717,7 +1674,6 @@
   <HelpKINode Title="MultiColumnComboBox.RefreshSubControls method" Url="html/b8eae699-fcb4-19ef-89df-caa496980f58.htm" />
   <HelpKINode Title="MultiColumnComboBoxCell class">
     <HelpKINode Title="MultiColumnComboBoxCell Class" Url="html/8292f35a-9866-fc89-d876-6ded3e90fe74.htm" />
-    <HelpKINode Title="about MultiColumnComboBoxCell class" Url="html/8292f35a-9866-fc89-d876-6ded3e90fe74.htm" />
     <HelpKINode Title="constructor" Url="html/24f1b2f8-5aba-e0c2-b06e-f29410ff7765.htm" />
     <HelpKINode Title="methods" Url="html/ab76e8b0-fa93-df8e-d4fd-ca568e50cacb.htm" />
     <HelpKINode Title="properties" Url="html/bc5d4385-ed66-a56e-7bf3-462cf292f447.htm" />
@@ -1730,7 +1686,6 @@
   <HelpKINode Title="MultiColumnComboBoxCell.ToString method" Url="html/a140eff7-8d7b-8a6c-659f-5b948cf20503.htm" />
   <HelpKINode Title="MultiColumnComboBoxColumn class">
     <HelpKINode Title="MultiColumnComboBoxColumn Class" Url="html/9b9329ab-9522-b0b8-f790-40bf072c80df.htm" />
-    <HelpKINode Title="about MultiColumnComboBoxColumn class" Url="html/9b9329ab-9522-b0b8-f790-40bf072c80df.htm" />
     <HelpKINode Title="constructor" Url="html/7f90f33d-8ed3-5eee-265c-4f7b8c4e1167.htm" />
     <HelpKINode Title="events" Url="html/86de9f26-4f1c-012b-cd6a-94de61414155.htm" />
     <HelpKINode Title="methods" Url="html/5787c481-33c8-41e2-63e4-8fc6c424cf64.htm" />
@@ -1746,7 +1701,6 @@
   <HelpKINode Title="MultiColumnComboBoxColumn.ToString method" Url="html/123ec30f-92c3-1f63-37b9-ba567c731d2b.htm" />
   <HelpKINode Title="MultiColumnComboBoxEditingControl class">
     <HelpKINode Title="MultiColumnComboBoxEditingControl Class" Url="html/ae86d3b7-daae-5959-f43f-73eb441e6a81.htm" />
-    <HelpKINode Title="about MultiColumnComboBoxEditingControl class" Url="html/ae86d3b7-daae-5959-f43f-73eb441e6a81.htm" />
     <HelpKINode Title="constructor" Url="html/f8edcfd9-fc18-8675-93c7-df58ce553c53.htm" />
     <HelpKINode Title="events" Url="html/b737ccd5-a193-b60e-43a3-0a80da9396ec.htm" />
     <HelpKINode Title="methods" Url="html/5c2a331a-1fcb-90a4-cc51-711f1df48233.htm" />
@@ -1798,8 +1752,8 @@
   <HelpKINode Title="ObjectCollection class">
     <HelpKINode Title="methods" Url="html/1391c631-7ed2-9e72-fa6a-84d35cb1f486.htm" />
     <HelpKINode Title="methods" Url="html/ce26bd74-7d11-17a4-78f1-a43abbe19adf.htm" />
-    <HelpKINode Title="properties" Url="html/82a4cb8d-24b1-040b-3976-ea896dc2a837.htm" />
     <HelpKINode Title="properties" Url="html/2cd61d42-81f7-0649-2b29-fb92f8ce5ad0.htm" />
+    <HelpKINode Title="properties" Url="html/82a4cb8d-24b1-040b-3976-ea896dc2a837.htm" />
   </HelpKINode>
   <HelpKINode Title="OnAddDeleteButtonsVisibleChanged method">
     <HelpKINode Title="DataList.OnAddDeleteButtonsVisibleChanged Method " Url="html/22fabda3-fb93-90c6-de72-d6f1b75ab3f5.htm" />
@@ -2056,7 +2010,6 @@
   <HelpKINode Title="ProcessMnemonic method" Url="html/259259f8-dc93-e48e-4918-62349f5a325d.htm" />
   <HelpKINode Title="RadioButtonList class">
     <HelpKINode Title="RadioButtonList Class" Url="html/4497714c-2212-d33f-b46c-d568c3bd2b73.htm" />
-    <HelpKINode Title="about RadioButtonList class" Url="html/4497714c-2212-d33f-b46c-d568c3bd2b73.htm" />
     <HelpKINode Title="constructor" Url="html/8cdc1fb6-3987-76df-b689-9de398d099b9.htm" />
     <HelpKINode Title="events" Url="html/0ea65f58-9c39-172d-4502-b37b71125e36.htm" />
     <HelpKINode Title="methods" Url="html/1e03229b-b5ab-7434-9380-0fca4752353b.htm" />
@@ -2070,7 +2023,6 @@
   <HelpKINode Title="Rating property" Url="html/6dfa363f-6b70-7621-fd7e-a4447a229d83.htm" />
   <HelpKINode Title="RatingCell class">
     <HelpKINode Title="RatingCell Class" Url="html/27c40840-9f69-4464-41e2-9b6497e35484.htm" />
-    <HelpKINode Title="about RatingCell class" Url="html/27c40840-9f69-4464-41e2-9b6497e35484.htm" />
     <HelpKINode Title="constructor" Url="html/b56a6fd7-55d3-9112-2cd7-77ee4c7e1496.htm" />
     <HelpKINode Title="methods" Url="html/51416879-fcda-1dc5-6387-d8485399f570.htm" />
     <HelpKINode Title="properties" Url="html/22a1d32c-9d05-88ef-221b-7da3ba3a58da.htm" />
@@ -2090,7 +2042,6 @@
   <HelpKINode Title="RatingCell.RatingCell constructor" Url="html/b56a6fd7-55d3-9112-2cd7-77ee4c7e1496.htm" />
   <HelpKINode Title="RatingColumn class">
     <HelpKINode Title="RatingColumn Class" Url="html/ff40b953-e779-8777-2bff-68d007d183e3.htm" />
-    <HelpKINode Title="about RatingColumn class" Url="html/ff40b953-e779-8777-2bff-68d007d183e3.htm" />
     <HelpKINode Title="constructor" Url="html/97afbf75-5975-6d9b-a9e0-21dbdd6ddda2.htm" />
     <HelpKINode Title="events" Url="html/5a586e2f-8fec-9377-5a7c-4c55c221c9a9.htm" />
     <HelpKINode Title="methods" Url="html/0165f4ef-3325-d254-2833-a30f4ce1cab7.htm" />
@@ -2263,7 +2214,6 @@
   <HelpKINode Title="StateImageList property" Url="html/c9f7f12e-6f93-b742-5b4f-a4331f751cf7.htm" />
   <HelpKINode Title="StringCollection class">
     <HelpKINode Title="StringCollection Class" Url="html/a7926cb8-78dc-49f1-14dd-1b551b02282c.htm" />
-    <HelpKINode Title="about StringCollection class" Url="html/a7926cb8-78dc-49f1-14dd-1b551b02282c.htm" />
     <HelpKINode Title="constructor" Url="html/59329b65-05e8-1c7d-9097-d83131169b3b.htm" />
     <HelpKINode Title="events" Url="html/3090188a-6691-14b4-fc66-f6fea9d58739.htm" />
     <HelpKINode Title="methods" Url="html/23bce724-fe19-63d0-390a-5571b9cec759.htm" />
@@ -2289,7 +2239,6 @@
   <HelpKINode Title="SyncParentChildCheckedState property" Url="html/c5325721-fb9c-ddb1-4078-f1c417454997.htm" />
   <HelpKINode Title="TemplateControl class">
     <HelpKINode Title="TemplateControl Class" Url="html/b149a19c-e2a6-5db8-ae6d-040356a50a3b.htm" />
-    <HelpKINode Title="about TemplateControl class" Url="html/b149a19c-e2a6-5db8-ae6d-040356a50a3b.htm" />
     <HelpKINode Title="constructor" Url="html/4c156491-1380-462b-725b-e3b0ac5f9116.htm" />
     <HelpKINode Title="events" Url="html/d49b9a74-24d3-7d73-d266-e36e44e7e852.htm" />
     <HelpKINode Title="methods" Url="html/e20dfd7b-dd27-c85e-2628-721416ed52e1.htm" />
@@ -2362,7 +2311,6 @@
   <HelpKINode Title="TreeNodeDrawn event" Url="html/4582d353-dac5-898f-2305-51cc1ba50e44.htm" />
   <HelpKINode Title="TreeNodeEnumerator class">
     <HelpKINode Title="TreeNodeEnumerator Class" Url="html/46bc8816-e903-9bdc-158d-d990841b5598.htm" />
-    <HelpKINode Title="about TreeNodeEnumerator class" Url="html/46bc8816-e903-9bdc-158d-d990841b5598.htm" />
     <HelpKINode Title="constructor" Url="html/909bd1e3-e01b-c2c2-18a3-e356d6c8ee85.htm" />
     <HelpKINode Title="methods" Url="html/f957f942-9664-db16-5ebb-132f99689bbe.htm" />
     <HelpKINode Title="properties" Url="html/71a2e451-6029-db3e-89ba-26b938c6cd6c.htm" />
@@ -2393,7 +2341,6 @@
   <HelpKINode Title="UseMnemonic property" Url="html/fc43f1c1-ffbf-fc0d-7a0c-d757d5edb591.htm" />
   <HelpKINode Title="UserControlComboBox class">
     <HelpKINode Title="UserControlComboBox Class" Url="html/4562fbf1-0f8d-4a3d-8bd9-a5f01fa5e737.htm" />
-    <HelpKINode Title="about UserControlComboBox class" Url="html/4562fbf1-0f8d-4a3d-8bd9-a5f01fa5e737.htm" />
     <HelpKINode Title="constructor" Url="html/ca43baad-f51d-aaef-f402-e86504e0ac5c.htm" />
     <HelpKINode Title="events" Url="html/cbc4c0df-4865-63f7-3623-c3c43ca24540.htm" />
     <HelpKINode Title="methods" Url="html/99e33c77-583f-8d9d-b5bf-ef73344ac966.htm" />
@@ -2410,7 +2357,6 @@
   <HelpKINode Title="UserControlComboBox.UserControlComboBox constructor" Url="html/ca43baad-f51d-aaef-f402-e86504e0ac5c.htm" />
   <HelpKINode Title="UserControlComboBoxCell class">
     <HelpKINode Title="UserControlComboBoxCell Class" Url="html/95fcbb16-5914-044d-37c0-a90b8a9f7f7f.htm" />
-    <HelpKINode Title="about UserControlComboBoxCell class" Url="html/95fcbb16-5914-044d-37c0-a90b8a9f7f7f.htm" />
     <HelpKINode Title="constructor" Url="html/e0978820-1015-c93f-3d30-e15e970dde9b.htm" />
     <HelpKINode Title="methods" Url="html/209e8329-1be3-d010-cda0-628a06cc35a9.htm" />
     <HelpKINode Title="properties" Url="html/accc49aa-b46f-b2e4-b0a7-da5ecc3c9c56.htm" />
@@ -2422,7 +2368,6 @@
   <HelpKINode Title="UserControlComboBoxCell.UserControlComboBoxCell constructor" Url="html/e0978820-1015-c93f-3d30-e15e970dde9b.htm" />
   <HelpKINode Title="UserControlComboBoxColumn class">
     <HelpKINode Title="UserControlComboBoxColumn Class" Url="html/27d1c535-8568-0148-119e-fc1559768ab7.htm" />
-    <HelpKINode Title="about UserControlComboBoxColumn class" Url="html/27d1c535-8568-0148-119e-fc1559768ab7.htm" />
     <HelpKINode Title="constructor" Url="html/f677dfb4-0e58-0d3c-1c69-e256b44752a8.htm" />
     <HelpKINode Title="events" Url="html/1174bc5f-0eec-d5d1-3562-634c66b6b92f.htm" />
     <HelpKINode Title="methods" Url="html/70391e57-f9f9-f2b8-ee55-a8b8d94929ce.htm" />
@@ -2434,7 +2379,6 @@
   <HelpKINode Title="UserControlComboBoxColumn.UserControlComboBoxColumn constructor" Url="html/f677dfb4-0e58-0d3c-1c69-e256b44752a8.htm" />
   <HelpKINode Title="UserControlComboBoxEditingControl class">
     <HelpKINode Title="UserControlComboBoxEditingControl Class" Url="html/bdbb4619-beae-7ca2-3852-6b15aa07626f.htm" />
-    <HelpKINode Title="about UserControlComboBoxEditingControl class" Url="html/bdbb4619-beae-7ca2-3852-6b15aa07626f.htm" />
     <HelpKINode Title="constructor" Url="html/61794ae2-6ea3-f2c3-e22d-883de80497e7.htm" />
     <HelpKINode Title="events" Url="html/6e3f930a-3801-2101-785a-8ff787b71ea5.htm" />
     <HelpKINode Title="methods" Url="html/351f3928-eda5-5b9d-8b14-8d1a0243274e.htm" />

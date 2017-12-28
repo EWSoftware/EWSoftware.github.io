@@ -5,7 +5,6 @@
   <HelpKINode Title="Addition operator" Url="html/1dabde3e-d659-9436-238c-6b4a27afe2b3.htm" />
   <HelpKINode Title="AttachedEventsAndPropertiesTest class">
     <HelpKINode Title="AttachedEventsAndPropertiesTest Class" Url="html/dc704d21-c822-78a7-1dfc-5014938a4416.htm" />
-    <HelpKINode Title="about AttachedEventsAndPropertiesTest class" Url="html/dc704d21-c822-78a7-1dfc-5014938a4416.htm" />
     <HelpKINode Title="attached events" Url="html/6626efaf-251d-1866-08ae-381861f1799c.htm" />
     <HelpKINode Title="attached properties" Url="html/179f134a-99eb-f30c-730c-bf1173060b60.htm" />
     <HelpKINode Title="fields" Url="html/8ad14ec9-36b7-9f01-2e61-2c2d5d0e273a.htm" />
@@ -22,7 +21,6 @@
   <HelpKINode Title="AverageValues method" Url="html/53c969f8-613a-f23a-91e4-25963d33c228.htm" />
   <HelpKINode Title="BaseInheritDoc class">
     <HelpKINode Title="BaseInheritDoc Class" Url="html/00fabdf6-a487-7d2a-02bf-43d70679fe70.htm" />
-    <HelpKINode Title="about BaseInheritDoc class" Url="html/00fabdf6-a487-7d2a-02bf-43d70679fe70.htm" />
     <HelpKINode Title="constructor" Url="html/27b2d324-e499-7d30-c523-e05ecd766c82.htm" />
     <HelpKINode Title="methods" Url="html/56df4d27-313c-2c9d-ee33-73f14c59a424.htm" />
   </HelpKINode>
@@ -46,7 +44,6 @@
   <HelpKINode Title="Count property" Url="html/e3f3e4d5-bc8a-1d4f-11bf-ef944d8b1bda.htm" />
   <HelpKINode Title="CustomException class">
     <HelpKINode Title="CustomException Class" Url="html/152686c0-fa17-60a3-7ee4-6aab5ee53fcf.htm" />
-    <HelpKINode Title="about CustomException class" Url="html/152686c0-fa17-60a3-7ee4-6aab5ee53fcf.htm" />
     <HelpKINode Title="constructor" Url="html/15b590ea-0b6c-d793-c8f7-4f2a5b98ecbd.htm" />
     <HelpKINode Title="events" Url="html/22767143-691e-5171-daa8-92b03e09c31a.htm" />
     <HelpKINode Title="methods" Url="html/250651a2-3ab3-10b8-c6fc-93305d532530.htm" />
@@ -55,7 +52,6 @@
   <HelpKINode Title="CustomException.CustomException constructor" Url="html/15b590ea-0b6c-d793-c8f7-4f2a5b98ecbd.htm" />
   <HelpKINode Title="DerivedClassWithInheritedDocs class">
     <HelpKINode Title="DerivedClassWithInheritedDocs Class" Url="html/57dd2fc3-63a7-35d9-fae9-1a2be46ee064.htm" />
-    <HelpKINode Title="about DerivedClassWithInheritedDocs class" Url="html/57dd2fc3-63a7-35d9-fae9-1a2be46ee064.htm" />
     <HelpKINode Title="constructor" Url="html/347f6364-b722-a191-8a44-0465a49624b0.htm" />
     <HelpKINode Title="methods" Url="html/57a0a07f-333b-547f-a0e5-3a7697d8e5ef.htm" />
   </HelpKINode>
@@ -79,7 +75,6 @@
   <HelpKINode Title="ExceptWith method" Url="html/48674f89-86fc-f603-57bf-42b7d2cdff0a.htm" />
   <HelpKINode Title="ExplicitImplementation class">
     <HelpKINode Title="ExplicitImplementation Class" Url="html/0e43b39e-89ee-9bbe-137b-6463720584bc.htm" />
-    <HelpKINode Title="about ExplicitImplementation class" Url="html/0e43b39e-89ee-9bbe-137b-6463720584bc.htm" />
     <HelpKINode Title="constructor" Url="html/cdec6c37-d189-55f8-98db-542aadd747aa.htm" />
     <HelpKINode Title="methods" Url="html/a1c49627-417e-240a-7471-6cfbca70cca3.htm" />
     <HelpKINode Title="properties" Url="html/07afb9e7-6c44-d4b2-ba86-e44a986e6de8.htm" />
@@ -96,7 +91,6 @@
   <HelpKINode Title="frequently asked questions" Url="html/6C5FE68C-2E66-4B0A-967C-34868220D6EC.htm" />
   <HelpKINode Title="GenericClass(Of T1, T2) class">
     <HelpKINode Title="GenericClass(T1, T2) Class" Url="html/5dc0b9d5-2981-38a3-3b68-5af49ae1325e.htm" />
-    <HelpKINode Title="about GenericClass(Of T1, T2) class" Url="html/5dc0b9d5-2981-38a3-3b68-5af49ae1325e.htm" />
     <HelpKINode Title="constructor" Url="html/c958751f-a969-8b9b-6f1c-8fe61d01b9cb.htm" />
     <HelpKINode Title="events" Url="html/6b7ff7f8-6ff2-80e6-09a5-923bee448ec0.htm" />
     <HelpKINode Title="methods" Url="html/fc23341c-d83c-4375-91ff-2a6df4e87f02.htm" />
@@ -110,7 +104,6 @@
   <HelpKINode Title="GenericClass(Of T1, T2).SomethingHappened event" Url="html/059e83c5-e442-6905-c712-f5866c6ad543.htm" />
   <HelpKINode Title="GenericClass&lt;T1, T2&gt; class">
     <HelpKINode Title="GenericClass(T1, T2) Class" Url="html/5dc0b9d5-2981-38a3-3b68-5af49ae1325e.htm" />
-    <HelpKINode Title="about GenericClass&lt;T1, T2&gt; class" Url="html/5dc0b9d5-2981-38a3-3b68-5af49ae1325e.htm" />
     <HelpKINode Title="constructor" Url="html/c958751f-a969-8b9b-6f1c-8fe61d01b9cb.htm" />
     <HelpKINode Title="events" Url="html/6b7ff7f8-6ff2-80e6-09a5-923bee448ec0.htm" />
     <HelpKINode Title="methods" Url="html/fc23341c-d83c-4375-91ff-2a6df4e87f02.htm" />
@@ -216,7 +209,6 @@
   <HelpKINode Title="Revision property" Url="html/e9694b66-33be-315f-301a-c22d9723b5bf.htm" />
   <HelpKINode Title="RevisionHistoryClass class">
     <HelpKINode Title="RevisionHistoryClass Class" Url="html/a079a764-51d5-1e86-2ccf-a34eaae47146.htm" />
-    <HelpKINode Title="about RevisionHistoryClass class" Url="html/a079a764-51d5-1e86-2ccf-a34eaae47146.htm" />
     <HelpKINode Title="constructor" Url="html/b6190381-3c94-de0c-3751-d5c550df6b2c.htm" />
     <HelpKINode Title="methods" Url="html/218c8baa-3893-4174-3645-db61233aa542.htm" />
     <HelpKINode Title="properties" Url="html/1124d58f-d601-3d5a-e909-0ca05b7a12d3.htm" />
@@ -226,7 +218,6 @@
   <HelpKINode Title="RevisionHistoryClass.RevisionHistoryClass constructor" Url="html/b6190381-3c94-de0c-3751-d5c550df6b2c.htm" />
   <HelpKINode Title="SampleClass class">
     <HelpKINode Title="SampleClass Class" Url="html/8a5ce79b-985f-f8d4-1ced-9730efb357f3.htm" />
-    <HelpKINode Title="about SampleClass class" Url="html/8a5ce79b-985f-f8d4-1ced-9730efb357f3.htm" />
     <HelpKINode Title="events" Url="html/ae011e32-e8f7-8199-b733-c006ea147a14.htm" />
     <HelpKINode Title="methods" Url="html/1917ef9e-4174-1622-5eb8-ef9f2f0d98ed.htm" />
     <HelpKINode Title="operators" Url="html/58f2bcca-4700-dcee-b5c3-02ca46b9b05b.htm" />
@@ -280,7 +271,6 @@
   <HelpKINode Title="SeeLangWordExamples method" Url="html/db2af31b-f17c-302d-05d0-c3c18d8b450f.htm" />
   <HelpKINode Title="SetDocumentation structure">
     <HelpKINode Title="SetDocumentation Structure" Url="html/49e90f9d-a7b0-be7d-d4a5-f16724f15a14.htm" />
-    <HelpKINode Title="about SetDocumentation structure" Url="html/49e90f9d-a7b0-be7d-d4a5-f16724f15a14.htm" />
     <HelpKINode Title="methods" Url="html/67e74ca1-126b-c543-6d8a-86727c6ec3c3.htm" />
     <HelpKINode Title="properties" Url="html/723eb96d-7bfe-caa5-e148-070d298be82c.htm" />
   </HelpKINode>
@@ -321,7 +311,6 @@
   <HelpKINode Title="TemporaryMethod method" Url="html/195a6576-e535-4ebd-8b43-feb5e7525724.htm" />
   <HelpKINode Title="ThreadSafetyClass class">
     <HelpKINode Title="ThreadSafetyClass Class" Url="html/21bb248b-45a6-5daf-6080-5f402cc1ff3e.htm" />
-    <HelpKINode Title="about ThreadSafetyClass class" Url="html/21bb248b-45a6-5daf-6080-5f402cc1ff3e.htm" />
     <HelpKINode Title="constructor" Url="html/cec63a3a-6449-8f34-466c-00474a7d6635.htm" />
     <HelpKINode Title="methods" Url="html/bceda100-76e9-44e6-715a-19b22c10da9d.htm" />
   </HelpKINode>

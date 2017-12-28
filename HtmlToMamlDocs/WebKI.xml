@@ -45,7 +45,6 @@
   <HelpKINode Title="ConversionProgress event" Url="html/911023f7-8bab-de5b-d4ea-1589c12f9c2a.htm" />
   <HelpKINode Title="ConversionProgressEventArgs class">
     <HelpKINode Title="ConversionProgressEventArgs Class" Url="html/ae875afc-3fcd-57c2-3f5a-da5d3ca0ebf6.htm" />
-    <HelpKINode Title="about ConversionProgressEventArgs class" Url="html/ae875afc-3fcd-57c2-3f5a-da5d3ca0ebf6.htm" />
     <HelpKINode Title="constructor" Url="html/d3d71f98-fb0b-ce15-deeb-73c84e101a6e.htm" />
     <HelpKINode Title="methods" Url="html/a93a9c32-5af3-f8d0-399f-c34af134b453.htm" />
     <HelpKINode Title="properties" Url="html/dbef2779-1019-525d-d774-eedf04e014ba.htm" />
@@ -54,7 +53,6 @@
   <HelpKINode Title="ConversionProgressEventArgs.Message property" Url="html/ef0faec5-27c7-e294-c6f7-117fb4f9608e.htm" />
   <HelpKINode Title="ConvertHtmlToMaml class">
     <HelpKINode Title="ConvertHtmlToMaml Class" Url="html/bfac4855-e05f-6ac0-5687-00c44f4558c7.htm" />
-    <HelpKINode Title="about ConvertHtmlToMaml class" Url="html/bfac4855-e05f-6ac0-5687-00c44f4558c7.htm" />
     <HelpKINode Title="methods" Url="html/2f683e11-b01f-b743-f709-77a622668f43.htm" />
   </HelpKINode>
   <HelpKINode Title="ConvertHtmlToMaml.Main method" Url="html/866eb57e-884d-2ca9-3959-c49f7069dae8.htm" />
@@ -76,7 +74,6 @@
   <HelpKINode Title="ExpandedPath property" Url="html/22bbcd12-34cc-56e2-ccce-ec585e94a372.htm" />
   <HelpKINode Title="FileParser class">
     <HelpKINode Title="FileParser Class" Url="html/af412052-b751-6224-cb01-c9a207cf75cf.htm" />
-    <HelpKINode Title="about FileParser class" Url="html/af412052-b751-6224-cb01-c9a207cf75cf.htm" />
     <HelpKINode Title="constructor" Url="html/d2fdb41a-ba27-038c-7f1e-1e3a5b1227af.htm" />
     <HelpKINode Title="methods" Url="html/3a4b9b11-4c53-fc62-fe32-aed4379ceef2.htm" />
     <HelpKINode Title="properties" Url="html/e5711c16-2652-05fc-10d1-7dab4a922462.htm" />
@@ -98,7 +95,6 @@
   <HelpKINode Title="FileParser.TopicId property" Url="html/54832236-0c58-c086-7606-f607a6d94dd4.htm" />
   <HelpKINode Title="FilePath class">
     <HelpKINode Title="FilePath Class" Url="html/9c411622-2424-eb45-2637-b35a864833e8.htm" />
-    <HelpKINode Title="about FilePath class" Url="html/9c411622-2424-eb45-2637-b35a864833e8.htm" />
     <HelpKINode Title="constructor" Url="html/86c0b549-3ce5-80d9-8d1d-75d4f9cd3324.htm" />
     <HelpKINode Title="events" Url="html/7aed6b17-1324-eb9a-f92b-ad73f768f4cc.htm" />
     <HelpKINode Title="methods" Url="html/42fcaa25-eb63-6537-8d39-2f874f3f4a99.htm" />
@@ -129,7 +125,6 @@
   <HelpKINode Title="FilePath.ToString method" Url="html/33bc5aea-744b-ab09-e849-81667434866f.htm" />
   <HelpKINode Title="FolderPath class">
     <HelpKINode Title="FolderPath Class" Url="html/d95efe10-f0ca-093e-2f94-c72887066393.htm" />
-    <HelpKINode Title="about FolderPath class" Url="html/d95efe10-f0ca-093e-2f94-c72887066393.htm" />
     <HelpKINode Title="constructor" Url="html/d0976240-b0d1-fc20-5765-ebb27a05c1f7.htm" />
     <HelpKINode Title="events" Url="html/532c5f40-d9c6-fe81-1ab1-54f3ff64d3e6.htm" />
     <HelpKINode Title="methods" Url="html/651f3eb1-f2ea-bfa6-f93f-a05ec875cf47.htm" />
@@ -158,7 +153,6 @@
   <HelpKINode Title="history" Url="html/5ed6a1fd-7d8e-4da6-baa6-60c663218106.htm" />
   <HelpKINode Title="HtmlToMaml class">
     <HelpKINode Title="HtmlToMaml Class" Url="html/a01c382e-2031-6a02-45cb-79ddf8cb8ed9.htm" />
-    <HelpKINode Title="about HtmlToMaml class" Url="html/a01c382e-2031-6a02-45cb-79ddf8cb8ed9.htm" />
     <HelpKINode Title="constructor" Url="html/cde6fa8b-a77e-3cc7-2064-635a058e246a.htm" />
     <HelpKINode Title="events" Url="html/e7843f67-6dfb-31a0-5e80-c30453a6324c.htm" />
     <HelpKINode Title="methods" Url="html/64591205-b547-cd0a-3df1-a84498084bf5.htm" />
@@ -185,7 +179,6 @@
   <HelpKINode Title="HtmlToMamlConversion.TopicCollection class" Url="html/4dea1b3f-f33a-26c7-5b37-d0d975061e03.htm" />
   <HelpKINode Title="IBasePathProvider interface">
     <HelpKINode Title="IBasePathProvider Interface" Url="html/84f5be97-514d-23a8-3814-b5b2e7fd29d5.htm" />
-    <HelpKINode Title="about IBasePathProvider interface" Url="html/84f5be97-514d-23a8-3814-b5b2e7fd29d5.htm" />
     <HelpKINode Title="properties" Url="html/dd2a8a22-66e6-6b65-1e0b-07ee4a4471d4.htm" />
   </HelpKINode>
   <HelpKINode Title="IBasePathProvider.BasePath property" Url="html/563bdb4a-5481-b998-c71a-a8667e3dbd6f.htm" />
@@ -195,7 +188,6 @@
   </HelpKINode>
   <HelpKINode Title="ImageReference class">
     <HelpKINode Title="ImageReference Class" Url="html/3a087036-29b9-61c9-73a2-1f638a026053.htm" />
-    <HelpKINode Title="about ImageReference class" Url="html/3a087036-29b9-61c9-73a2-1f638a026053.htm" />
     <HelpKINode Title="constructor" Url="html/9d7340e5-c4bc-449e-9db1-e087c097880a.htm" />
     <HelpKINode Title="methods" Url="html/e3258a49-b829-1780-8713-08ca787004e9.htm" />
     <HelpKINode Title="properties" Url="html/8cdda8ef-f68d-993e-41e7-010f04d0b6f1.htm" />
@@ -207,7 +199,6 @@
   <HelpKINode Title="ImageReference.ToString method" Url="html/0530b286-e2d3-6ca0-0191-a0986ca38f39.htm" />
   <HelpKINode Title="ImageReferenceCollection class">
     <HelpKINode Title="ImageReferenceCollection Class" Url="html/d212ecc8-e261-3877-75c6-9536dfe5403e.htm" />
-    <HelpKINode Title="about ImageReferenceCollection class" Url="html/d212ecc8-e261-3877-75c6-9536dfe5403e.htm" />
     <HelpKINode Title="constructor" Url="html/fd0537b4-9598-029f-6f0e-07b2c48a7080.htm" />
     <HelpKINode Title="methods" Url="html/8f5b75df-84b0-ca13-e74c-c84848ecdcb4.htm" />
     <HelpKINode Title="properties" Url="html/d4b9f6a3-5b31-ae63-2956-707ed83e5618.htm" />
@@ -242,7 +233,6 @@
   </HelpKINode>
   <HelpKINode Title="MSHelpAttr class">
     <HelpKINode Title="MSHelpAttr Class" Url="html/9b905a2b-aa62-e9b3-e3e9-fd66ec79ba88.htm" />
-    <HelpKINode Title="about MSHelpAttr class" Url="html/9b905a2b-aa62-e9b3-e3e9-fd66ec79ba88.htm" />
     <HelpKINode Title="methods" Url="html/80327f3b-516c-5cd8-0eb5-971ac6e9eee5.htm" />
     <HelpKINode Title="properties" Url="html/c94b9bfb-7e51-70ef-01fb-af2974a8f050.htm" />
   </HelpKINode>
@@ -255,7 +245,6 @@
   <HelpKINode Title="MSHelpAttr.ToString method" Url="html/c17c2422-c3fe-f4be-bd64-c513cc60f092.htm" />
   <HelpKINode Title="MSHelpAttrCollection class">
     <HelpKINode Title="MSHelpAttrCollection Class" Url="html/55b77dd6-a41c-0f1d-6554-74657657e4f7.htm" />
-    <HelpKINode Title="about MSHelpAttrCollection class" Url="html/55b77dd6-a41c-0f1d-6554-74657657e4f7.htm" />
     <HelpKINode Title="constructor" Url="html/a94a57cd-7237-e5c2-56f8-fe2f863d326a.htm" />
     <HelpKINode Title="events" Url="html/768d8023-316b-f2d2-e915-16dd5e40b623.htm" />
     <HelpKINode Title="methods" Url="html/2461a4da-dd4a-2774-6211-cb794cc819c0.htm" />
@@ -271,7 +260,6 @@
   <HelpKINode Title="MSHelpAttrCollection.WriteXml method" Url="html/2fa212c2-2948-d9fb-acde-81139cdc73b8.htm" />
   <HelpKINode Title="MSHelpKeyword class">
     <HelpKINode Title="MSHelpKeyword Class" Url="html/2e498c73-98bb-7245-6d0d-0d335b708b1d.htm" />
-    <HelpKINode Title="about MSHelpKeyword class" Url="html/2e498c73-98bb-7245-6d0d-0d335b708b1d.htm" />
     <HelpKINode Title="constructor" Url="html/e334a40e-62b7-401a-d939-d2ec7165a5f8.htm" />
     <HelpKINode Title="methods" Url="html/3992fb6c-d11d-04a3-6f65-5a47f86a68a6.htm" />
     <HelpKINode Title="properties" Url="html/db171552-c29b-d35d-2b19-9c6b9434de77.htm" />
@@ -285,7 +273,6 @@
   <HelpKINode Title="MSHelpKeyword.ToString method" Url="html/365d2808-085f-bf37-aaa9-97820c568272.htm" />
   <HelpKINode Title="MSHelpKeywordCollection class">
     <HelpKINode Title="MSHelpKeywordCollection Class" Url="html/ff66b01a-31ec-61d6-2a45-248aa44a685c.htm" />
-    <HelpKINode Title="about MSHelpKeywordCollection class" Url="html/ff66b01a-31ec-61d6-2a45-248aa44a685c.htm" />
     <HelpKINode Title="constructor" Url="html/1c351e48-9e7a-124b-a8bf-a3bc82835674.htm" />
     <HelpKINode Title="events" Url="html/4107c0e7-2d43-036d-b2ab-ff373fc4b66b.htm" />
     <HelpKINode Title="methods" Url="html/897ce31d-8daf-3397-cda4-6bfcaa0cf6c8.htm" />
@@ -356,7 +343,6 @@
   <HelpKINode Title="Tag property" Url="html/d5cce833-6793-d4b2-d1dc-acd86789b127.htm" />
   <HelpKINode Title="TagOptions class">
     <HelpKINode Title="TagOptions Class" Url="html/5965ca1c-6428-ac4e-5d9c-e80b297057b6.htm" />
-    <HelpKINode Title="about TagOptions class" Url="html/5965ca1c-6428-ac4e-5d9c-e80b297057b6.htm" />
     <HelpKINode Title="constructor" Url="html/0f33f2be-8ce3-1e5e-385e-c6485dd758f4.htm" />
     <HelpKINode Title="methods" Url="html/85e34c09-0835-b0ca-eb04-14d9cac2baed.htm" />
     <HelpKINode Title="properties" Url="html/48b81c54-a5df-e7b1-d5a2-8eb893f1a52f.htm" />
@@ -380,7 +366,6 @@
   <HelpKINode Title="ToConfigurationString method" Url="html/6a3c9e87-8928-93de-9938-df52b7ab1ecd.htm" />
   <HelpKINode Title="Topic class">
     <HelpKINode Title="Topic Class" Url="html/892644dd-7a45-00ee-71ef-e4b7e2cb5555.htm" />
-    <HelpKINode Title="about Topic class" Url="html/892644dd-7a45-00ee-71ef-e4b7e2cb5555.htm" />
     <HelpKINode Title="constructor" Url="html/866ba0c4-b3b6-7602-2d69-a9ad437aa2b6.htm" />
     <HelpKINode Title="methods" Url="html/d6728a9e-b69a-cf27-1c53-7bdeeb33ebec.htm" />
     <HelpKINode Title="properties" Url="html/0cf58179-488a-182b-fa61-70fd8140b35d.htm" />
@@ -407,7 +392,6 @@
   </HelpKINode>
   <HelpKINode Title="TopicCollection class">
     <HelpKINode Title="TopicCollection Class" Url="html/4dea1b3f-f33a-26c7-5b37-d0d975061e03.htm" />
-    <HelpKINode Title="about TopicCollection class" Url="html/4dea1b3f-f33a-26c7-5b37-d0d975061e03.htm" />
     <HelpKINode Title="constructor" Url="html/9242c082-4ef4-3cf2-31a4-045db80bc90e.htm" />
     <HelpKINode Title="methods" Url="html/e6fcd57c-5b7b-333a-9d44-49773546ce3e.htm" />
     <HelpKINode Title="properties" Url="html/4f4bf1fa-7ee0-3b43-5479-0852101689c7.htm" />
