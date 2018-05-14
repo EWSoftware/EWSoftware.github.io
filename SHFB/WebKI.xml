@@ -2367,8 +2367,8 @@
   <HelpKINode Title="Extensions property" Url="html/57baebb7-f5ea-da1a-bfa3-0ed85e0927c6.htm" />
   <HelpKINode Title="ExtractingHtmlInfo enumeration member" Url="html/15b1ab7a-6438-34c6-e592-a46320ab5e97.htm" />
   <HelpKINode Title="Factory class">
-    <HelpKINode Title="methods" Url="html/df432301-24ad-3f6c-fc18-323d14fd1452.htm" />
     <HelpKINode Title="methods" Url="html/c5bfb37a-481e-96b8-30f3-cdbed5239de2.htm" />
+    <HelpKINode Title="methods" Url="html/df432301-24ad-3f6c-fc18-323d14fd1452.htm" />
     <HelpKINode Title="properties" Url="html/699a0392-120e-976a-70b9-8be64d281ce3.htm" />
     <HelpKINode Title="properties" Url="html/dc793f24-3806-8152-6ff1-1f5b0c5b9e21.htm" />
   </HelpKINode>
@@ -2900,15 +2900,11 @@
   <HelpKINode Title="GetShowAsBlank method" Url="html/24f9ad2e-90ff-3b2c-f7a7-28292dfb9996.htm" />
   <HelpKINode Title="GetStandardValues method" Url="html/879a7551-f2e2-169c-3467-0d2bcad05c93.htm" />
   <HelpKINode Title="GetStatusBarText method" Url="html/7967a3c0-f920-f234-f57d-3314555d376e.htm" />
-  <HelpKINode Title="getting started">
-    <HelpKINode Title="special folder locations" Url="html/a24489fb-45d6-46f4-9eaa-9a9c4e0919b2.htm" />
-  </HelpKINode>
-  <HelpKINode Title="Getting Started" Url="html/b772e00e-1705-4062-adb6-774826ce6700.htm" />
   <HelpKINode Title="Getting started">
     <HelpKINode Title="absolute and relative paths" Url="html/576b6a36-0808-4857-bec0-e6eeeae4e36b.htm" />
-    <HelpKINode Title="create a new project" Url="html/d5dbf017-25f1-48cb-86db-90f76ee8f4d7.htm" />
-    <HelpKINode Title="enable XML comments" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
     <HelpKINode Title="installation" Url="html/8c0c97d0-c968-4c15-9fe9-e8f3a443c50a.htm" />
+    <HelpKINode Title="enable XML comments" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
+    <HelpKINode Title="create a new project" Url="html/d5dbf017-25f1-48cb-86db-90f76ee8f4d7.htm" />
     <HelpKINode Title="overview" Url="html/8e3f8757-0ef3-4772-bb2f-5d7ae57e50da.htm" />
     <HelpKINode Title="user preferences" Url="html/2152ed96-bf69-4b9b-b1a7-4fffc71b3095.htm" />
     <HelpKINode Title="user preferences - content file editors" Url="html/2e4f207e-45d1-411b-83b1-24965d8eef2c.htm" />
@@ -2918,6 +2914,10 @@
     <HelpKINode Title="Visual Studio projects" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
     <HelpKINode Title="Welcome" Url="html/bd1ddb51-1c4f-434f-bb1a-ce2135d3a909.htm" />
   </HelpKINode>
+  <HelpKINode Title="getting started">
+    <HelpKINode Title="special folder locations" Url="html/a24489fb-45d6-46f4-9eaa-9a9c4e0919b2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Getting Started" Url="html/b772e00e-1705-4062-adb6-774826ce6700.htm" />
   <HelpKINode Title="GetValues method" Url="html/9455b27f-2668-59e6-7bf8-49d38756f8ee.htm" />
   <HelpKINode Title="GitHub" Url="html/bd1ddb51-1c4f-434f-bb1a-ce2135d3a909.htm" />
   <HelpKINode Title="GlobalEditors property" Url="html/9a293eeb-1529-243c-44a4-3c47ea6f5ebd.htm" />
@@ -3404,6 +3404,7 @@
   <HelpKINode Title="InvalidCatalogInfo field" Url="html/c54f33ac-8ec2-d1c8-2a35-914e5e1862c8.htm" />
   <HelpKINode Title="InvalidCmdArgs field" Url="html/67f3cff1-c4b5-632f-da74-bcd2a27c8624.htm" />
   <HelpKINode Title="InvalidHelpLocation field" Url="html/e924c865-c404-93cb-ef32-046513229eed.htm" />
+  <HelpKINode Title="InvalidReason property" Url="html/ad2dda1c-5af2-84a5-57f1-9ed9426e1939.htm" />
   <HelpKINode Title="IPlugIn interface">
     <HelpKINode Title="IPlugIn Interface" Url="html/bcf36919-1d66-1625-544e-adb51877d5de.htm" />
     <HelpKINode Title="methods" Url="html/0675e437-7d6a-097a-9080-30248ed145c8.htm" />
@@ -3537,6 +3538,7 @@
     <HelpKINode Title="TransformArgumentsPageContent.IsValid Property " Url="html/eff0c4a8-4e90-07f3-bfd5-2151cd879999.htm" />
     <HelpKINode Title="TransformArgumentsPageControl.IsValid Property " Url="html/bfcd4cfb-4467-6b23-2a0a-5439b5b500ab.htm" />
     <HelpKINode Title="UserDefinedPropertiesPageControl.IsValid Property " Url="html/f0383dff-2c00-b724-f16d-4f62064cfd9b.htm" />
+    <HelpKINode Title="XmlCommentsFile.IsValid Property " Url="html/03b42526-92b0-1c35-392c-89325a326462.htm" />
   </HelpKINode>
   <HelpKINode Title="IsValidUserDefinedPropertyName method" Url="html/f6e0596f-6caf-ebe4-1917-33069d59e7e2.htm" />
   <HelpKINode Title="IsVisible property">
@@ -7099,6 +7101,7 @@
     <HelpKINode Title="2017.12.30.0" Url="html/8479cf1a-4f4f-4f0b-89f7-85a04cd78d16.htm" />
     <HelpKINode Title="2017.12.30.2" Url="html/3ca9bf44-db1d-45f7-833c-a046d724da1e.htm" />
     <HelpKINode Title="2017.5.15.0" Url="html/63e7d1c3-6706-444b-aa02-5defd7d1da60.htm" />
+    <HelpKINode Title="2018.5.14.0" Url="html/0cb436aa-0a55-4176-ab41-4bae20a25467.htm" />
     <HelpKINode Title="known issues" Url="html/21c2a363-6c94-440b-8985-6b224d275463.htm" />
   </HelpKINode>
   <HelpKINode Title="VersionSettings class">
@@ -7198,6 +7201,7 @@
     <HelpKINode Title="BE0008" Url="html/89a0728c-fe7c-49b1-9b6b-14ac952630dc.htm" />
     <HelpKINode Title="BE0009" Url="html/4fc20fd3-6ed3-49ed-ac97-c99b08c72f38.htm" />
     <HelpKINode Title="BE0010" Url="html/29685951-0496-4717-bf33-a14bf065a8b8.htm" />
+    <HelpKINode Title="BE0031" Url="html/0d3d6929-8094-4133-be7e-4e66222c7b53.htm" />
     <HelpKINode Title="BE0059" Url="html/d7c089fd-1dfc-47a2-8d1f-874288e0655d.htm" />
     <HelpKINode Title="BE0060" Url="html/e076c319-ff84-40dc-bb00-ff4c72718215.htm" />
     <HelpKINode Title="BE0061" Url="html/fe808500-7b87-4f68-ae13-c3e68cae8b13.htm" />
@@ -7408,6 +7412,8 @@
   <HelpKINode Title="XmlCommentsFile.Comments property" Url="html/157840a3-486b-e89e-4c3a-1365cbe897c6.htm" />
   <HelpKINode Title="XmlCommentsFile.Encoding property" Url="html/0b8197a9-4d9a-8647-630b-4165947066c8.htm" />
   <HelpKINode Title="XmlCommentsFile.ForceReload method" Url="html/640d9de1-8473-59ba-f8f7-a85fc3c07ef6.htm" />
+  <HelpKINode Title="XmlCommentsFile.InvalidReason property" Url="html/ad2dda1c-5af2-84a5-57f1-9ed9426e1939.htm" />
+  <HelpKINode Title="XmlCommentsFile.IsValid property" Url="html/03b42526-92b0-1c35-392c-89325a326462.htm" />
   <HelpKINode Title="XmlCommentsFile.Members property" Url="html/9ebe34fe-e55c-fcab-414b-9e7bde349abe.htm" />
   <HelpKINode Title="XmlCommentsFile.Save method" Url="html/5126f25e-dc4b-38e1-26c7-19c6c8531831.htm" />
   <HelpKINode Title="XmlCommentsFile.SourcePath property" Url="html/1c7186da-9dd6-4591-f207-8c1f8638f3a9.htm" />
