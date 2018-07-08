@@ -2902,13 +2902,13 @@
   <HelpKINode Title="GetStatusBarText method" Url="html/7967a3c0-f920-f234-f57d-3314555d376e.htm" />
   <HelpKINode Title="Getting started">
     <HelpKINode Title="absolute and relative paths" Url="html/576b6a36-0808-4857-bec0-e6eeeae4e36b.htm" />
-    <HelpKINode Title="create a new project" Url="html/d5dbf017-25f1-48cb-86db-90f76ee8f4d7.htm" />
-    <HelpKINode Title="enable XML comments" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
     <HelpKINode Title="installation" Url="html/8c0c97d0-c968-4c15-9fe9-e8f3a443c50a.htm" />
     <HelpKINode Title="overview" Url="html/8e3f8757-0ef3-4772-bb2f-5d7ae57e50da.htm" />
     <HelpKINode Title="user preferences" Url="html/2152ed96-bf69-4b9b-b1a7-4fffc71b3095.htm" />
-    <HelpKINode Title="user preferences - content file editors" Url="html/2e4f207e-45d1-411b-83b1-24965d8eef2c.htm" />
     <HelpKINode Title="user preferences - general" Url="html/6a35198a-3713-4eb7-929d-555fddc0ccb6.htm" />
+    <HelpKINode Title="create a new project" Url="html/d5dbf017-25f1-48cb-86db-90f76ee8f4d7.htm" />
+    <HelpKINode Title="enable XML comments" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
+    <HelpKINode Title="user preferences - content file editors" Url="html/2e4f207e-45d1-411b-83b1-24965d8eef2c.htm" />
     <HelpKINode Title="user preferences - spell checking" Url="html/836847bc-d780-468b-ae23-f014f0829a0f.htm" />
     <HelpKINode Title="Visual Studio" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
     <HelpKINode Title="Visual Studio projects" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
@@ -7103,6 +7103,7 @@
     <HelpKINode Title="2017.5.15.0" Url="html/63e7d1c3-6706-444b-aa02-5defd7d1da60.htm" />
     <HelpKINode Title="2018.5.14.0" Url="html/0cb436aa-0a55-4176-ab41-4bae20a25467.htm" />
     <HelpKINode Title="2018.5.29.0" Url="html/35a678ce-96c8-4d3a-a393-e084ff9c9110.htm" />
+    <HelpKINode Title="2018.7.8.0" Url="html/3d4f4c7e-7e90-4bbd-8628-cabf62d6c29c.htm" />
     <HelpKINode Title="known issues" Url="html/21c2a363-6c94-440b-8985-6b224d275463.htm" />
   </HelpKINode>
   <HelpKINode Title="VersionSettings class">
