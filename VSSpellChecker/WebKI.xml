@@ -11,6 +11,7 @@
     <HelpKINode Title="dictionary settings" Url="html/af34b863-6a1c-41ed-bcf2-48a714686519.htm" />
     <HelpKINode Title="exclusion expressions" Url="html/6216eedb-6434-4cad-be06-576814e0b735.htm" />
     <HelpKINode Title="general settings" Url="html/b4a8726f-5bee-48a4-81a9-00b1be332607.htm" />
+    <HelpKINode Title="ignored classifications" Url="html/6a987caf-5ad9-4dab-a17c-c887881fec7a.htm" />
     <HelpKINode Title="ignored files" Url="html/70a7fa5b-1a9e-494f-9d2c-5eb3321b2596.htm" />
     <HelpKINode Title="ignored words" Url="html/c592c4d8-7387-47fe-9b79-28bf0168f447.htm" />
     <HelpKINode Title="WPF text boxes" Url="html/e23551ac-52f5-4505-b2d2-0728c7607fd3.htm" />
@@ -50,11 +51,13 @@
   <HelpKINode Title="MisspellingType enumeration" Url="html/36e07fde-3038-e734-c94f-f4ceaf9c8a72.htm" />
   <HelpKINode Title="MisspellingType property" Url="html/34a83757-5ee9-cc52-e0f1-0529ee51d46c.htm" />
   <HelpKINode Title="requirements" Url="html/deeba4a0-5a5f-497c-a9c1-7dec64e9c2bf.htm" />
+  <HelpKINode Title="shortcut keys" Url="html/63d5096c-6695-441d-886a-01a120f2894a.htm" />
   <HelpKINode Title="spell check">
     <HelpKINode Title="active document" Url="html/53ffc5b7-b7dc-4f03-9a51-ed4176bff504.htm" />
     <HelpKINode Title="as you type" Url="html/e8f67bc4-a8f8-4e50-ab5a-876599f3a645.htm" />
     <HelpKINode Title="common problems" Url="html/bda126a1-e534-4172-81dc-35a32d91e4cc.htm" />
     <HelpKINode Title="correcting solution/project issues" Url="html/ddf22015-1680-4421-aaa7-dda867660522.htm" />
+    <HelpKINode Title="ignore spelling directive" Url="html/3094ee74-88ae-4355-b702-23dcd55b4197.htm" />
     <HelpKINode Title="solution/project" Url="html/fa790577-88c0-4141-b8f4-d8b70f625cfd.htm" />
     <HelpKINode Title="solution/project options" Url="html/9581715a-a5bc-4de5-9474-eaefa38cf211.htm" />
   </HelpKINode>
@@ -85,6 +88,7 @@
     <HelpKINode Title="2017.12.29.0" Url="html/0e32d501-0391-44ef-aaad-51c45c072ca1.htm" />
     <HelpKINode Title="2017.3.26.0" Url="html/dfcecbc6-1e86-4076-b8c6-0d6e94aa1629.htm" />
     <HelpKINode Title="2017.8.26.0" Url="html/d050d252-b188-4eca-b7ab-b33f0b1b1b0a.htm" />
+    <HelpKINode Title="2018.8.25.0" Url="html/67af1ab3-1e2b-43ee-81a0-588b0cb0d336.htm" />
     <HelpKINode Title="2018.8.3.0" Url="html/5c8fdba1-adda-4aeb-9dc0-d5fb696c38c6.htm" />
   </HelpKINode>
   <HelpKINode Title="VisualStudio.SpellChecker.Definitions namespace" Url="html/e65c2751-130e-5bdb-8507-b19154eefebe.htm" />
