@@ -2367,10 +2367,10 @@
   <HelpKINode Title="Extensions property" Url="html/57baebb7-f5ea-da1a-bfa3-0ed85e0927c6.htm" />
   <HelpKINode Title="ExtractingHtmlInfo enumeration member" Url="html/15b1ab7a-6438-34c6-e592-a46320ab5e97.htm" />
   <HelpKINode Title="Factory class">
-    <HelpKINode Title="methods" Url="html/c5bfb37a-481e-96b8-30f3-cdbed5239de2.htm" />
     <HelpKINode Title="methods" Url="html/df432301-24ad-3f6c-fc18-323d14fd1452.htm" />
-    <HelpKINode Title="properties" Url="html/699a0392-120e-976a-70b9-8be64d281ce3.htm" />
+    <HelpKINode Title="methods" Url="html/c5bfb37a-481e-96b8-30f3-cdbed5239de2.htm" />
     <HelpKINode Title="properties" Url="html/dc793f24-3806-8152-6ff1-1f5b0c5b9e21.htm" />
+    <HelpKINode Title="properties" Url="html/699a0392-120e-976a-70b9-8be64d281ce3.htm" />
   </HelpKINode>
   <HelpKINode Title="Failed enumeration member" Url="html/15b1ab7a-6438-34c6-e592-a46320ab5e97.htm" />
   <HelpKINode Title="FailOnFetchingContentFromDisk field" Url="html/a9272908-00a6-419c-49cf-ef15b78fc6ed.htm" />
@@ -2911,13 +2911,13 @@
     <HelpKINode Title="user preferences - general" Url="html/6a35198a-3713-4eb7-929d-555fddc0ccb6.htm" />
     <HelpKINode Title="user preferences - spell checking" Url="html/836847bc-d780-468b-ae23-f014f0829a0f.htm" />
     <HelpKINode Title="Visual Studio" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
-    <HelpKINode Title="Welcome" Url="html/bd1ddb51-1c4f-434f-bb1a-ce2135d3a909.htm" />
     <HelpKINode Title="Visual Studio projects" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
+    <HelpKINode Title="Welcome" Url="html/bd1ddb51-1c4f-434f-bb1a-ce2135d3a909.htm" />
   </HelpKINode>
-  <HelpKINode Title="Getting Started" Url="html/b772e00e-1705-4062-adb6-774826ce6700.htm" />
   <HelpKINode Title="getting started">
     <HelpKINode Title="special folder locations" Url="html/a24489fb-45d6-46f4-9eaa-9a9c4e0919b2.htm" />
   </HelpKINode>
+  <HelpKINode Title="Getting Started" Url="html/b772e00e-1705-4062-adb6-774826ce6700.htm" />
   <HelpKINode Title="GetValues method" Url="html/9455b27f-2668-59e6-7bf8-49d38756f8ee.htm" />
   <HelpKINode Title="GitHub" Url="html/bd1ddb51-1c4f-434f-bb1a-ce2135d3a909.htm" />
   <HelpKINode Title="GlobalEditors property" Url="html/9a293eeb-1529-243c-44a4-3c47ea6f5ebd.htm" />
@@ -7105,7 +7105,7 @@
     <HelpKINode Title="2018.5.14.0" Url="html/0cb436aa-0a55-4176-ab41-4bae20a25467.htm" />
     <HelpKINode Title="2018.5.29.0" Url="html/35a678ce-96c8-4d3a-a393-e084ff9c9110.htm" />
     <HelpKINode Title="2018.7.8.0" Url="html/3d4f4c7e-7e90-4bbd-8628-cabf62d6c29c.htm" />
-    <HelpKINode Title="2019.4.7.0" Url="html/a8c71d85-0e39-44ba-849f-d6ab36c5179d.htm" />
+    <HelpKINode Title="2019.4.14.0" Url="html/a8c71d85-0e39-44ba-849f-d6ab36c5179d.htm" />
     <HelpKINode Title="known issues" Url="html/21c2a363-6c94-440b-8985-6b224d275463.htm" />
   </HelpKINode>
   <HelpKINode Title="VersionSettings class">
