@@ -2030,7 +2030,6 @@
   </HelpKINode>
   <HelpKINode Title="EnableExtendedXmlCommentsCompletion property" Url="html/9b54e8d8-be07-0058-b38b-09364b147b5e.htm" />
   <HelpKINode Title="EnableGoToDefinition property" Url="html/05ae1a26-2c33-455f-4ba9-9e0535f536f0.htm" />
-  <HelpKINode Title="EnableGoToDefinitionInCRef property" Url="html/66f1df38-df85-48ac-7e36-4abf17391b94.htm" />
   <HelpKINode Title="Encoding property" Url="html/0b8197a9-4d9a-8647-630b-4165947066c8.htm" />
   <HelpKINode Title="End enumeration member" Url="html/61a608d7-d80b-714d-4a5a-28478d98dff1.htm" />
   <HelpKINode Title="EnsureOutputFoldersExist method" Url="html/e9ad216a-e442-c2a2-a80a-6753abf1587e.htm" />
@@ -2367,8 +2366,8 @@
   <HelpKINode Title="Extensions property" Url="html/57baebb7-f5ea-da1a-bfa3-0ed85e0927c6.htm" />
   <HelpKINode Title="ExtractingHtmlInfo enumeration member" Url="html/15b1ab7a-6438-34c6-e592-a46320ab5e97.htm" />
   <HelpKINode Title="Factory class">
-    <HelpKINode Title="methods" Url="html/df432301-24ad-3f6c-fc18-323d14fd1452.htm" />
     <HelpKINode Title="methods" Url="html/c5bfb37a-481e-96b8-30f3-cdbed5239de2.htm" />
+    <HelpKINode Title="methods" Url="html/df432301-24ad-3f6c-fc18-323d14fd1452.htm" />
     <HelpKINode Title="properties" Url="html/dc793f24-3806-8152-6ff1-1f5b0c5b9e21.htm" />
     <HelpKINode Title="properties" Url="html/699a0392-120e-976a-70b9-8be64d281ce3.htm" />
   </HelpKINode>
@@ -2759,7 +2758,6 @@
   <HelpKINode Title="GeneralOptionsControl.EnableCtrlClickGoToDefinition property" Url="html/9af43729-de4d-bd1c-88e4-66b7a8238934.htm" />
   <HelpKINode Title="GeneralOptionsControl.EnableExtendedXmlCommentsCompletion property" Url="html/9b54e8d8-be07-0058-b38b-09364b147b5e.htm" />
   <HelpKINode Title="GeneralOptionsControl.EnableGoToDefinition property" Url="html/05ae1a26-2c33-455f-4ba9-9e0535f536f0.htm" />
-  <HelpKINode Title="GeneralOptionsControl.EnableGoToDefinitionInCRef property" Url="html/66f1df38-df85-48ac-7e36-4abf17391b94.htm" />
   <HelpKINode Title="GeneralOptionsControl.GeneralOptionsControl constructor" Url="html/02bf1e3f-9d2c-4ce6-682a-4b1913a7b051.htm" />
   <HelpKINode Title="GeneralOptionsControl.InitializeComponent method" Url="html/ba8f9996-c51c-cb11-d483-dfaf7c93e971.htm" />
   <HelpKINode Title="GeneralOptionsControl.IsValid property" Url="html/eb586f6f-28f4-cdd0-93c1-9e3fe0bd6745.htm" />
@@ -2904,10 +2902,10 @@
     <HelpKINode Title="absolute and relative paths" Url="html/576b6a36-0808-4857-bec0-e6eeeae4e36b.htm" />
     <HelpKINode Title="create a new project" Url="html/d5dbf017-25f1-48cb-86db-90f76ee8f4d7.htm" />
     <HelpKINode Title="enable XML comments" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
+    <HelpKINode Title="user preferences - content file editors" Url="html/2e4f207e-45d1-411b-83b1-24965d8eef2c.htm" />
     <HelpKINode Title="installation" Url="html/8c0c97d0-c968-4c15-9fe9-e8f3a443c50a.htm" />
     <HelpKINode Title="overview" Url="html/8e3f8757-0ef3-4772-bb2f-5d7ae57e50da.htm" />
     <HelpKINode Title="user preferences" Url="html/2152ed96-bf69-4b9b-b1a7-4fffc71b3095.htm" />
-    <HelpKINode Title="user preferences - content file editors" Url="html/2e4f207e-45d1-411b-83b1-24965d8eef2c.htm" />
     <HelpKINode Title="user preferences - general" Url="html/6a35198a-3713-4eb7-929d-555fddc0ccb6.htm" />
     <HelpKINode Title="user preferences - spell checking" Url="html/836847bc-d780-468b-ae23-f014f0829a0f.htm" />
     <HelpKINode Title="Visual Studio" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
@@ -7106,6 +7104,7 @@
     <HelpKINode Title="2018.5.29.0" Url="html/35a678ce-96c8-4d3a-a393-e084ff9c9110.htm" />
     <HelpKINode Title="2018.7.8.0" Url="html/3d4f4c7e-7e90-4bbd-8628-cabf62d6c29c.htm" />
     <HelpKINode Title="2019.4.14.0" Url="html/a8c71d85-0e39-44ba-849f-d6ab36c5179d.htm" />
+    <HelpKINode Title="2019.6.24.0" Url="html/cc26cc6a-febf-40f5-b505-348ce6e0d687.htm" />
     <HelpKINode Title="known issues" Url="html/21c2a363-6c94-440b-8985-6b224d275463.htm" />
   </HelpKINode>
   <HelpKINode Title="VersionSettings class">
