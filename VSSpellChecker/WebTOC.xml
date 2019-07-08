@@ -6,14 +6,14 @@
   <HelpTOCNode Title="Binding Spell Checker Options to Shortcut Keys" Url="html/63d5096c-6695-441d-886a-01a120f2894a.htm" />
   <HelpTOCNode Title="Spell Check as You Type" Url="html/e8f67bc4-a8f8-4e50-ab5a-876599f3a645.htm" />
   <HelpTOCNode Title="Active Document Spell Check Tool Window" Url="html/53ffc5b7-b7dc-4f03-9a51-ed4176bff504.htm" />
-  <HelpTOCNode Id="1f64c2aa-1edb-434f-85e1-609d6a79b4cb" Title="Solution/Project Spell Check Tool Window" Url="html/fa790577-88c0-4141-b8f4-d8b70f625cfd.htm">
+  <HelpTOCNode Id="624bdbf6-80a9-450a-8f95-dc5ba6f211e8" Title="Solution/Project Spell Check Tool Window" Url="html/fa790577-88c0-4141-b8f4-d8b70f625cfd.htm">
     <HelpTOCNode Title="Spell Checking Options" Url="html/9581715a-a5bc-4de5-9474-eaefa38cf211.htm" />
     <HelpTOCNode Title="Correcting Issues" Url="html/ddf22015-1680-4421-aaa7-dda867660522.htm" />
     <HelpTOCNode Title="Common Problems" Url="html/bda126a1-e534-4172-81dc-35a32d91e4cc.htm" />
   </HelpTOCNode>
   <HelpTOCNode Title="Using the Ignore Spelling Directive" Url="html/3094ee74-88ae-4355-b702-23dcd55b4197.htm" />
   <HelpTOCNode Title="Configuration Files" Url="html/7b2bc3bb-5b5c-4d17-a88e-d58b476e49ab.htm" />
-  <HelpTOCNode Id="bd2c3918-63cc-492a-bfb2-9db4a01f767f" Title="Configuration Options" Url="html/fb81c214-0fe0-4d62-a172-d7928d5b91d5.htm">
+  <HelpTOCNode Id="31ca246b-ab50-4730-815d-1ee85ec614f7" Title="Configuration Options" Url="html/fb81c214-0fe0-4d62-a172-d7928d5b91d5.htm">
     <HelpTOCNode Title="Import Settings" Url="html/b156d5ad-347f-4f63-89dc-4f945953ae41.htm" />
     <HelpTOCNode Title="Dictionary Settings" Url="html/af34b863-6a1c-41ed-bcf2-48a714686519.htm" />
     <HelpTOCNode Title="General Settings" Url="html/b4a8726f-5bee-48a4-81a9-00b1be332607.htm" />
@@ -32,7 +32,8 @@
   <HelpTOCNode Title="Known Issues" Url="html/a9ff4ce1-0d6b-4376-8d32-02dae64e2075.htm" />
   <HelpTOCNode Title="System Requirements and Building the Code" Url="html/deeba4a0-5a5f-497c-a9c1-7dec64e9c2bf.htm" />
   <HelpTOCNode Title="Contributing" Url="html/847a2b53-6583-4198-80ef-0e537346e4a3.htm" />
-  <HelpTOCNode Id="8518177f-7b12-43a2-b034-dc1fbd67b6bd" Title="Version History" Url="html/548dc6d7-6d08-4006-82b3-d5830be96f04.htm">
+  <HelpTOCNode Id="8dc5e56f-55c1-4ad1-b2cf-ead4deca5dd7" Title="Version History" Url="html/548dc6d7-6d08-4006-82b3-d5830be96f04.htm">
+    <HelpTOCNode Title="Version 2019.7.8.0" Url="html/791803a7-37d8-40a9-beba-bac4f0a74279.htm" />
     <HelpTOCNode Title="Version 2019.5.5.0" Url="html/904f5ad1-18d3-4615-ba34-9f9259f11776.htm" />
     <HelpTOCNode Title="Version 2019.4.14.0" Url="html/f9804039-6ccd-48b3-be55-789d78c00ca7.htm" />
     <HelpTOCNode Title="Version 2018.10.27.0" Url="html/875213fe-3e53-4bf3-acdc-7654d0c7756d.htm" />
@@ -56,22 +57,22 @@
     <HelpTOCNode Title="Version 1.0.0.1" Url="html/bdd744a5-4748-4c72-9ba1-dea6374bf5fe.htm" />
     <HelpTOCNode Title="Version 1.0.0.0" Url="html/1c0d6f51-f08f-4a6f-9f5b-3ff231533b91.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Id="c2b0d5ad-c111-4d83-aea3-f5d9851585e3" Title="VisualStudio.SpellChecker.Definitions" Url="html/e65c2751-130e-5bdb-8507-b19154eefebe.htm">
+  <HelpTOCNode Id="60166634-cb8e-495b-9cee-03d26e5a7d9c" Title="VisualStudio.SpellChecker.Definitions" Url="html/e65c2751-130e-5bdb-8507-b19154eefebe.htm">
     <HelpTOCNode Title="INaturalTextTag Interface" Url="html/6f36563a-31c5-ae5b-30e2-3dda3df4d1f2.htm" />
-    <HelpTOCNode Id="66e3042c-9a5d-4f50-9697-654d2f7696f5" Title="ISpellingIssue Interface" Url="html/976e62f3-eb2d-44a2-79c3-558adf92366d.htm">
-      <HelpTOCNode Id="8beaff6b-9f3f-4023-ab9d-2895c1cf9bda" Title="ISpellingIssue Properties" Url="html/843b1166-b105-8d83-2699-b089b0cdbb20.htm">
+    <HelpTOCNode Id="57e8955c-5b18-4df4-af6a-9e3f06fe65f6" Title="ISpellingIssue Interface" Url="html/976e62f3-eb2d-44a2-79c3-558adf92366d.htm">
+      <HelpTOCNode Id="f2b4c90d-d67f-495d-98d1-d3a81b070d2d" Title="ISpellingIssue Properties" Url="html/843b1166-b105-8d83-2699-b089b0cdbb20.htm">
         <HelpTOCNode Title="MisspellingType Property " Url="html/34a83757-5ee9-cc52-e0f1-0529ee51d46c.htm" />
         <HelpTOCNode Title="Suggestions Property " Url="html/1207ac2b-6fac-5f44-9e42-958d8a0e444e.htm" />
         <HelpTOCNode Title="Word Property " Url="html/4678c253-8ef1-48be-81f7-0a551756b374.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="b7705ce4-5646-4225-a872-72372ae2ac57" Title="ISpellingService Interface" Url="html/c6fa9223-d59e-0a88-fffb-fe57342f2574.htm">
-      <HelpTOCNode Id="62206c8a-be2d-4ad0-be27-e8eaca979904" Title="ISpellingService Methods" Url="html/0c3c3096-f988-8209-504b-fab1cd86586a.htm">
+    <HelpTOCNode Id="57296898-5080-46bc-b77c-fc1c82962a70" Title="ISpellingService Interface" Url="html/c6fa9223-d59e-0a88-fffb-fe57342f2574.htm">
+      <HelpTOCNode Id="f4318477-e6c6-45e8-88b7-9d8ea690d8c8" Title="ISpellingService Methods" Url="html/0c3c3096-f988-8209-504b-fab1cd86586a.htm">
         <HelpTOCNode Title="IsEnabled Method " Url="html/038546c7-5546-9c41-9a17-37de82268862.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="30809760-6793-477d-a012-9bb5378083af" Title="ISpellingSuggestion Interface" Url="html/797db4ab-e0e3-0847-5944-353fce7448c6.htm">
-      <HelpTOCNode Id="1f9dec49-3010-4624-a572-bc29a4668b62" Title="ISpellingSuggestion Properties" Url="html/9fb1c75e-f99c-bc2a-0401-a2643322866b.htm">
+    <HelpTOCNode Id="2a1c55a7-3753-405d-88f7-bb87eabd3e41" Title="ISpellingSuggestion Interface" Url="html/797db4ab-e0e3-0847-5944-353fce7448c6.htm">
+      <HelpTOCNode Id="c0fc8b63-22e4-48b0-936d-6d9c7d8bc67c" Title="ISpellingSuggestion Properties" Url="html/9fb1c75e-f99c-bc2a-0401-a2643322866b.htm">
         <HelpTOCNode Title="Culture Property " Url="html/2564098b-6121-5a7d-5657-8367427a5a64.htm" />
         <HelpTOCNode Title="Suggestion Property " Url="html/78bc11b2-d96b-af29-6819-63f07697c85f.htm" />
       </HelpTOCNode>
