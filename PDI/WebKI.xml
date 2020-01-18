@@ -4,6 +4,7 @@
   <HelpKINode Title="AbbreviatedStartTimeZoneName property" Url="html/cdf90799-27f9-e8a7-8702-5a28cbbdee86.htm" />
   <HelpKINode Title="AbbreviatedTimeZoneName property" Url="html/6506801f-c00e-b863-619c-dc76c0925e35.htm" />
   <HelpKINode Title="Accepted enumeration member" Url="html/03b11362-c1d5-a1be-86a4-02e8e68e7737.htm" />
+  <HelpKINode Title="Acquaintance enumeration member" Url="html/bfca7821-a487-cbdc-1751-0b64f958a102.htm" />
   <HelpKINode Title="AcquireReaderLock method" Url="html/d843e041-6e3e-6698-c335-381ef431c131.htm" />
   <HelpKINode Title="AcquireWriterLock method" Url="html/0c1daff7-f9d4-0601-497e-35cac0523a3a.htm" />
   <HelpKINode Title="Action enumeration member" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
@@ -31,6 +32,7 @@
     <HelpKINode Title="AgentPropertyCollection.Add Method " Url="html/dea00ac1-51d0-bd46-5994-c258042ae798.htm" />
     <HelpKINode Title="AttendeePropertyCollection.Add Method " Url="html/9f8bd8ba-3785-c267-48b4-6b49126def03.htm" />
     <HelpKINode Title="ChildPropertyTypeDescriptionProvider.Add Method " Url="html/6d16e85e-327a-22fe-7200-703f5e6f8c68.htm" />
+    <HelpKINode Title="ClientPidMapPropertyCollection.Add Method " Url="html/1cdc6b9a-1e56-3d67-ae67-f40a26544a1d.htm" />
     <HelpKINode Title="ContactPropertyCollection.Add Method " Url="html/672a0ece-3b10-9f4b-9d17-a369ce280f63.htm" />
     <HelpKINode Title="CustomPropertyCollection.Add Method " Url="html/17a30204-b445-30ac-c6d0-5f87a49e7b9e.htm" />
     <HelpKINode Title="DayInstanceCollection.Add Method " Url="html/60725b72-4283-b583-187e-c56bd7695124.htm" />
@@ -41,6 +43,7 @@
     <HelpKINode Title="NotePropertyCollection.Add Method " Url="html/78cd9743-4ee3-4b84-914b-7481a8b4f050.htm" />
     <HelpKINode Title="ObservanceRuleCollection.Add Method " Url="html/c9bf8065-c3e0-5c8f-6910-c65db9c1f4cd.htm" />
     <HelpKINode Title="RDatePropertyCollection.Add Method " Url="html/0633a0e9-cad9-88dd-22ce-56f668b5a9c2.htm" />
+    <HelpKINode Title="RelatedPropertyCollection.Add Method " Url="html/64c7afe9-1635-a9b4-a9d7-b418d6cacf62.htm" />
     <HelpKINode Title="RelatedToPropertyCollection.Add Method " Url="html/b5be60e2-265a-26d5-6d8d-aa4e66121f45.htm" />
     <HelpKINode Title="RequestStatusPropertyCollection.Add Method " Url="html/d568bfb9-e9b7-82a4-7f6a-ba3bf73df3ce.htm" />
     <HelpKINode Title="TelephonePropertyCollection.Add Method " Url="html/8d1702af-6ebd-92c4-4f94-4b1e8c9cf298.htm" />
@@ -78,13 +81,17 @@
   <HelpKINode Title="AddressProperty.DeserializeParameters method" Url="html/7e570502-ff51-d3a0-50f2-9e0ead2bee0d.htm" />
   <HelpKINode Title="AddressProperty.EncodedValue property" Url="html/360d865c-4b7b-af4d-51e2-4f3b73d18e41.htm" />
   <HelpKINode Title="AddressProperty.ExtendedAddress property" Url="html/cd7b5c38-87d0-3197-b567-ce1563658e80.htm" />
+  <HelpKINode Title="AddressProperty.Geo property" Url="html/253e541e-2eb5-ccce-57e9-d2ab65585384.htm" />
+  <HelpKINode Title="AddressProperty.Label property" Url="html/b744745a-a820-609d-ff22-537f5cd8ca24.htm" />
   <HelpKINode Title="AddressProperty.Locality property" Url="html/d3b2f4d4-dc71-6367-2514-3faa4a30ab74.htm" />
   <HelpKINode Title="AddressProperty.POBox property" Url="html/08daf6d7-d837-9ff7-8a57-b7f7c3486a19.htm" />
   <HelpKINode Title="AddressProperty.PostalCode property" Url="html/0393eebc-613f-f500-dcdc-c9bc60da6f3e.htm" />
+  <HelpKINode Title="AddressProperty.PreferredOrder property" Url="html/4174fa22-7196-58f5-d43f-bfefbc3e1895.htm" />
   <HelpKINode Title="AddressProperty.Region property" Url="html/cbcf593c-56e9-7c00-615f-7de938660805.htm" />
   <HelpKINode Title="AddressProperty.SerializeParameters method" Url="html/7f0f1c79-6d52-af85-74b1-05139afe5097.htm" />
   <HelpKINode Title="AddressProperty.StreetAddress property" Url="html/8f77b509-3f64-41b2-ca08-cc9d8b348495.htm" />
   <HelpKINode Title="AddressProperty.Tag property" Url="html/10dfd853-c8f2-5a64-c21d-badd6358bec8.htm" />
+  <HelpKINode Title="AddressProperty.TimeZone property" Url="html/650da44f-1890-8f42-8dcb-419894901508.htm" />
   <HelpKINode Title="AddressProperty.Value property" Url="html/5881c486-0da0-7dbe-ed51-41c6fb627c1c.htm" />
   <HelpKINode Title="AddressProperty.VersionsSupported property" Url="html/81640d9f-19f1-7db5-6d4d-8340dfc459cd.htm" />
   <HelpKINode Title="AddressPropertyCollection class">
@@ -106,7 +113,10 @@
   <HelpKINode Title="AddStandardHolidays method" Url="html/293e7331-e5a9-afff-4241-f55b74195dc1.htm" />
   <HelpKINode Title="AddTimeZoneIfUsed method" Url="html/f900a458-368a-2140-d404-4c0d4213d9b5.htm" />
   <HelpKINode Title="AdjustFixedDate property" Url="html/b737561d-1e13-6768-a215-6d35eebb7ad1.htm" />
-  <HelpKINode Title="Agent enumeration member" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
+  <HelpKINode Title="Agent enumeration member">
+    <HelpKINode Title="PropertyType Enumeration" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
+    <HelpKINode Title="RelatedTypes Enumeration" Url="html/bfca7821-a487-cbdc-1751-0b64f958a102.htm" />
+  </HelpKINode>
   <HelpKINode Title="AgentProperty class">
     <HelpKINode Title="AgentProperty Class" Url="html/f63ad294-792f-1497-6734-211ed6800455.htm" />
     <HelpKINode Title="constructor" Url="html/3c5c7bc4-31c7-8598-3abd-7f1e4446baae.htm" />
@@ -137,6 +147,7 @@
     <HelpKINode Title="VEvent.Alarms Property " Url="html/dc171ac6-af03-e627-13fb-95b1b5e01a41.htm" />
     <HelpKINode Title="VToDo.Alarms Property " Url="html/3de1c009-f41e-e17d-7b69-9c3ad9fc3857.htm" />
   </HelpKINode>
+  <HelpKINode Title="AllButIrMC11 enumeration member" Url="html/4e500d10-66c8-3e57-8a9c-23311a5c5b25.htm" />
   <HelpKINode Title="AllInstances method">
     <HelpKINode Title="Recurrence.AllInstances Method " Url="html/703eccf1-4131-3c81-7d30-c0e9d1483763.htm" />
     <HelpKINode Title="RecurringObject.AllInstances Method " Url="html/af9cbfe8-ce87-a8e1-82f5-a0cfd4a891cc.htm" />
@@ -144,7 +155,19 @@
   <HelpKINode Title="AllowZero property" Url="html/2423f1f8-dff6-cf6d-ff63-6aeb8baf43c9.htm" />
   <HelpKINode Title="AlternateRepresentation field" Url="html/27b28dc3-34cf-92bd-1099-cb61cd6f3199.htm" />
   <HelpKINode Title="AlternateRepresentation property" Url="html/6848d291-e706-a7db-b87b-2dd9630ee07b.htm" />
-  <HelpKINode Title="Any enumeration member" Url="html/4e500d10-66c8-3e57-8a9c-23311a5c5b25.htm" />
+  <HelpKINode Title="Anniversary enumeration member" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
+  <HelpKINode Title="Anniversary property" Url="html/d57f49c6-a611-818f-3648-81ea2cc487f4.htm" />
+  <HelpKINode Title="AnniversaryProperty class">
+    <HelpKINode Title="AnniversaryProperty Class" Url="html/2ffafea2-9eed-d300-e770-1b00539fbd83.htm" />
+    <HelpKINode Title="constructor" Url="html/0216fd4a-9071-25b6-53f3-adc2019ec41c.htm" />
+    <HelpKINode Title="methods" Url="html/57b7a0c8-5708-3748-3405-c242a3786291.htm" />
+    <HelpKINode Title="properties" Url="html/959ce7fe-f6f8-34f5-c1f6-ee4453177e26.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AnniversaryProperty.AnniversaryProperty constructor" Url="html/0216fd4a-9071-25b6-53f3-adc2019ec41c.htm" />
+  <HelpKINode Title="AnniversaryProperty.Clone method" Url="html/61a27f47-0204-7ca7-0bbc-f6152203827b.htm" />
+  <HelpKINode Title="AnniversaryProperty.DefaultValueLocation property" Url="html/0353626c-cbbd-93cb-a92a-75a62794f3ce.htm" />
+  <HelpKINode Title="AnniversaryProperty.Tag property" Url="html/eb073bf7-2a34-fcb6-8100-5f437e6c11d0.htm" />
+  <HelpKINode Title="AnniversaryProperty.VersionsSupported property" Url="html/ce266a8b-d06c-6a97-bdfd-ce0789327ccf.htm" />
   <HelpKINode Title="AOL enumeration member" Url="html/5f96172a-d83c-c636-2387-87a6c10d83f7.htm" />
   <HelpKINode Title="AppleLink enumeration member" Url="html/5f96172a-d83c-c636-2387-87a6c10d83f7.htm" />
   <HelpKINode Title="ApplyPropertyTimeZone method" Url="html/95bb71dd-6aee-a28d-f9f6-dbc5c46d099b.htm" />
@@ -269,6 +292,7 @@
     <HelpKINode Title="properties" Url="html/864d476f-b3b7-5460-29e2-6bfb9647da83.htm" />
   </HelpKINode>
   <HelpKINode Title="BaseDateTimeProperty.BaseDateTimeProperty constructor" Url="html/e94538e6-3890-f993-1df2-b22cc54b9505.htm" />
+  <HelpKINode Title="BaseDateTimeProperty.CalendarScale property" Url="html/7c0f41d1-b90c-0d17-70a5-000a6ebd65f9.htm" />
   <HelpKINode Title="BaseDateTimeProperty.Clone method" Url="html/df30d25f-80b6-d3a9-e39f-58b578bfa42e.htm" />
   <HelpKINode Title="BaseDateTimeProperty.DateTimeValue property" Url="html/b7496658-228e-3b53-a8e7-97d7c19d119d.htm" />
   <HelpKINode Title="BaseDateTimeProperty.DeserializeParameters method" Url="html/ddbb107f-cba0-8158-4cd7-f11de1fce0c3.htm" />
@@ -301,11 +325,13 @@
   <HelpKINode Title="BaseProperty.GetHashCode method" Url="html/d9b36601-1260-6a52-3a7b-317d86c4499b.htm" />
   <HelpKINode Title="BaseProperty.Group property" Url="html/b58ac3f4-446c-9b17-a336-646efc3720a7.htm" />
   <HelpKINode Title="BaseProperty.Language property" Url="html/492e678a-b0d4-dd86-f99b-a3cbdeb777f4.htm" />
+  <HelpKINode Title="BaseProperty.PropertyId property" Url="html/8d18e6fa-59ca-8342-ef08-af5dcdc5daec.htm" />
   <HelpKINode Title="BaseProperty.SerializeCharacterSet method" Url="html/8aadab1c-7863-1561-81e4-8efdc30d5021.htm" />
   <HelpKINode Title="BaseProperty.SerializeCustomParameters method" Url="html/39d70df8-2fef-492b-e609-6ec47321e10d.htm" />
   <HelpKINode Title="BaseProperty.SerializeEncoding method" Url="html/36b89261-7e54-393e-ae52-182547e5d77a.htm" />
   <HelpKINode Title="BaseProperty.SerializeLanguage method" Url="html/c7af6bee-3b9d-7f81-8fc4-4e22e7d548de.htm" />
   <HelpKINode Title="BaseProperty.SerializeParameters method" Url="html/5b6b7b2e-339c-52f5-03fb-7369873b0180.htm" />
+  <HelpKINode Title="BaseProperty.SerializePropertyId method" Url="html/5f20bfe5-8d5d-6c7b-4152-da49e6175ea8.htm" />
   <HelpKINode Title="BaseProperty.SerializeValueLocation method" Url="html/3b22527f-8422-f066-5423-b76e115257fc.htm" />
   <HelpKINode Title="BaseProperty.Tag property" Url="html/8bd9d60f-40e5-b6f1-4dc4-ceb7e60ec79e.htm" />
   <HelpKINode Title="BaseProperty.ToString method" Url="html/910916b5-5288-395c-a5c1-00dd41406231.htm" />
@@ -381,6 +407,7 @@
   <HelpKINode Title="CalculateFixedDate method" Url="html/85c33f16-4ff5-3341-1c9b-f0a4f03936d8.htm" />
   <HelpKINode Title="CalculateFloatingDate method" Url="html/82095b7b-9ea8-c160-4e86-7aa5ab1b7fe3.htm" />
   <HelpKINode Title="CalculateOccurrenceDate method" Url="html/1c772676-bf85-9e30-2648-17e19c6520f1.htm" />
+  <HelpKINode Title="CalendarAll enumeration member" Url="html/4e500d10-66c8-3e57-8a9c-23311a5c5b25.htm" />
   <HelpKINode Title="CalendarMethod enumeration" Url="html/634d37fd-de11-0a87-5ef1-cebf1e30c817.htm" />
   <HelpKINode Title="CalendarMethod property" Url="html/9c37b870-d473-ad9e-f1ad-e72e8291af8b.htm" />
   <HelpKINode Title="CalendarObject class">
@@ -404,7 +431,11 @@
   <HelpKINode Title="CalendarObject.Version property" Url="html/c1541774-9b7f-f6c6-7a45-a73ad92f6481.htm" />
   <HelpKINode Title="CalendarObject.WriteToStream method" Url="html/2fb01174-a992-4991-e0aa-00c2c96dc7cc.htm" />
   <HelpKINode Title="CalendarScale enumeration member" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
-  <HelpKINode Title="CalendarScale property" Url="html/fe838ffd-d65c-2e75-ceda-b455426ebfcc.htm" />
+  <HelpKINode Title="CalendarScale field" Url="html/441c14c8-cbc6-be24-5fa2-952a6bb409c0.htm" />
+  <HelpKINode Title="CalendarScale property">
+    <HelpKINode Title="BaseDateTimeProperty.CalendarScale Property " Url="html/7c0f41d1-b90c-0d17-70a5-000a6ebd65f9.htm" />
+    <HelpKINode Title="VCalendar.CalendarScale Property " Url="html/fe838ffd-d65c-2e75-ceda-b455426ebfcc.htm" />
+  </HelpKINode>
   <HelpKINode Title="CalendarScaleProperty class">
     <HelpKINode Title="CalendarScaleProperty Class" Url="html/a9d95650-04c1-632d-74c4-062f81b8a1be.htm" />
     <HelpKINode Title="constructor" Url="html/e8f20998-6dca-a7bc-95fd-b3fbe0132d29.htm" />
@@ -424,6 +455,8 @@
   <HelpKINode Title="CanOccurOnHoliday property" Url="html/6e359e2f-a61c-1ed8-d5dc-0afb6ef5f0e1.htm" />
   <HelpKINode Title="CanResetValue method" Url="html/0de029be-30f0-24f5-26b5-05976c43a7b3.htm" />
   <HelpKINode Title="Car enumeration member" Url="html/0cfcbe7a-f017-4e8d-a8d0-96fbf65e4b92.htm" />
+  <HelpKINode Title="CardKind enumeration" Url="html/c2f8ba0a-0531-2593-8b7b-2e7a1e6bcc8e.htm" />
+  <HelpKINode Title="CardKind property" Url="html/94566a85-1d57-644f-859a-ba71bccc738c.htm" />
   <HelpKINode Title="Categories enumeration member" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
   <HelpKINode Title="Categories property">
     <HelpKINode Title="CategoriesProperty.Categories Property " Url="html/dcb3bfd0-1c98-778c-606d-8a6117d4f4c6.htm" />
@@ -458,7 +491,10 @@
     <HelpKINode Title="fields" Url="html/cff3fbb2-3a37-dfe2-bd8e-c1e4bbc6f7bf.htm" />
   </HelpKINode>
   <HelpKINode Title="CharSetValue.ASCII field" Url="html/2ad7c008-284a-a705-df1b-73cfa565f1f3.htm" />
-  <HelpKINode Title="Child enumeration member" Url="html/4a34f061-fd74-2dea-e660-27aeb494befa.htm" />
+  <HelpKINode Title="Child enumeration member">
+    <HelpKINode Title="RelatedTypes Enumeration" Url="html/bfca7821-a487-cbdc-1751-0b64f958a102.htm" />
+    <HelpKINode Title="RelationshipType Enumeration" Url="html/4a34f061-fd74-2dea-e660-27aeb494befa.htm" />
+  </HelpKINode>
   <HelpKINode Title="ChildPropertyDescriptor class">
     <HelpKINode Title="ChildPropertyDescriptor Class" Url="html/db669829-9d12-ee3c-6d7c-9d645abf6a35.htm" />
     <HelpKINode Title="constructor" Url="html/dfc4e715-df23-2d6d-4cce-4d2b5bbfb1bc.htm" />
@@ -528,10 +564,38 @@
     <HelpKINode Title="VTimeZone.ClearProperties Method " Url="html/27ad54a3-cace-6afc-afc9-e9b9b38902a7.htm" />
     <HelpKINode Title="VToDo.ClearProperties Method " Url="html/3fd2f415-e1fe-be6b-406b-fa5bc4d5d26e.htm" />
   </HelpKINode>
+  <HelpKINode Title="ClientPidMap enumeration member" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
+  <HelpKINode Title="ClientPidMapProperty class">
+    <HelpKINode Title="ClientPidMapProperty Class" Url="html/e9456a16-75d2-5a37-34d0-b1165875daac.htm" />
+    <HelpKINode Title="constructor" Url="html/71a1c240-f17b-14e2-34ac-232ab4f4197a.htm" />
+    <HelpKINode Title="methods" Url="html/4418a1e2-d671-496d-c591-4788b17ec52e.htm" />
+    <HelpKINode Title="properties" Url="html/ac5f5a0b-2461-da55-e697-ac2e4ff9b9be.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ClientPidMapProperty.ClientPidMapProperty constructor" Url="html/71a1c240-f17b-14e2-34ac-232ab4f4197a.htm" />
+  <HelpKINode Title="ClientPidMapProperty.Clone method" Url="html/0603dfa4-d8fd-d865-df04-63aa1405c268.htm" />
+  <HelpKINode Title="ClientPidMapProperty.DefaultValueLocation property" Url="html/46cb0225-d60f-e6a1-f26b-96b38cbdec55.htm" />
+  <HelpKINode Title="ClientPidMapProperty.EncodedValue property" Url="html/52ad8388-c658-9f10-440c-fae53f4dee2a.htm" />
+  <HelpKINode Title="ClientPidMapProperty.Id property" Url="html/e630047e-c50e-0a58-e195-a039953a433e.htm" />
+  <HelpKINode Title="ClientPidMapProperty.Tag property" Url="html/58c4b56d-dfd3-80f3-abbb-4461f4fac64f.htm" />
+  <HelpKINode Title="ClientPidMapProperty.Uri property" Url="html/8786728e-244a-2c55-6205-02dc93b8ff35.htm" />
+  <HelpKINode Title="ClientPidMapProperty.Value property" Url="html/65395735-a00b-92d6-75f2-51d938599141.htm" />
+  <HelpKINode Title="ClientPidMapProperty.VersionsSupported property" Url="html/832123ee-c473-1615-36fa-b404dd570a0b.htm" />
+  <HelpKINode Title="ClientPidMapPropertyCollection class">
+    <HelpKINode Title="ClientPidMapPropertyCollection Class" Url="html/f971ffc7-97d2-bf86-2f6d-89c9b59fb2e8.htm" />
+    <HelpKINode Title="constructor" Url="html/90bcdf8a-15ee-283c-3d56-ef9522a306ae.htm" />
+    <HelpKINode Title="events" Url="html/7d1034e9-0387-ccbb-8976-dd7de7a7a372.htm" />
+    <HelpKINode Title="methods" Url="html/b4bb2a15-5151-99bb-dd63-b455fe96448f.htm" />
+    <HelpKINode Title="properties" Url="html/206096f6-3845-4335-842a-afc2cd087acf.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ClientPidMapPropertyCollection.Add method" Url="html/1cdc6b9a-1e56-3d67-ae67-f40a26544a1d.htm" />
+  <HelpKINode Title="ClientPidMapPropertyCollection.ClientPidMapPropertyCollection constructor" Url="html/90bcdf8a-15ee-283c-3d56-ef9522a306ae.htm" />
+  <HelpKINode Title="ClientPidMapPropertyCollection.PropagateVersion method" Url="html/b63125d9-49de-1984-d4f1-bd0e34b04195.htm" />
+  <HelpKINode Title="ClientPidMaps property" Url="html/f7ee7794-bf24-e7c3-0b40-0ace93193192.htm" />
   <HelpKINode Title="Clone method">
     <HelpKINode Title="ActionProperty.Clone Method " Url="html/631fb572-c26f-ce32-bccd-e3d0e8020560.htm" />
     <HelpKINode Title="AddressProperty.Clone Method " Url="html/8ef8961f-5594-ffe7-964f-183021c8bd2f.htm" />
     <HelpKINode Title="AgentProperty.Clone Method " Url="html/fdf85fd5-01df-d9c8-2892-82cfd95af821.htm" />
+    <HelpKINode Title="AnniversaryProperty.Clone Method " Url="html/61a27f47-0204-7ca7-0bbc-f6152203827b.htm" />
     <HelpKINode Title="AttachProperty.Clone Method " Url="html/90a0411b-08c6-c242-c8cf-d39186804731.htm" />
     <HelpKINode Title="AttendeeProperty.Clone Method " Url="html/55a99e3c-56de-0f6d-8d1e-4e71fd1c9c51.htm" />
     <HelpKINode Title="BaseAltRepProperty.Clone Method " Url="html/43ba6869-9873-4110-529d-13746341b4f2.htm" />
@@ -542,6 +606,7 @@
     <HelpKINode Title="CalendarScaleProperty.Clone Method " Url="html/5513930b-e770-a1a2-a5b6-87630891c131.htm" />
     <HelpKINode Title="CategoriesProperty.Clone Method " Url="html/5201542a-d58e-b161-de24-5dc4ef1d3a04.htm" />
     <HelpKINode Title="ClassificationProperty.Clone Method " Url="html/70c13b1d-0e09-3d3c-36ac-e64137c22de1.htm" />
+    <HelpKINode Title="ClientPidMapProperty.Clone Method " Url="html/0603dfa4-d8fd-d865-df04-63aa1405c268.htm" />
     <HelpKINode Title="CommentProperty.Clone Method " Url="html/625d713e-6d35-148c-3d56-55e928bdf838.htm" />
     <HelpKINode Title="CompletedDateProperty.Clone Method " Url="html/526f0888-33a5-5149-306e-516640cf078e.htm" />
     <HelpKINode Title="ContactProperty.Clone Method " Url="html/c1fa53b8-c40f-8f96-c52d-0dc724c80b90.htm" />
@@ -559,14 +624,17 @@
     <HelpKINode Title="FloatingHoliday.Clone Method " Url="html/3fe20f69-7887-50d2-026a-4b0329f5dd95.htm" />
     <HelpKINode Title="FormattedNameProperty.Clone Method " Url="html/d6a399aa-ed87-4fbb-7323-d02f92fbe348.htm" />
     <HelpKINode Title="FreeBusyProperty.Clone Method " Url="html/23f682dc-81bf-af36-95b7-a4675e8ac218.htm" />
+    <HelpKINode Title="GenderProperty.Clone Method " Url="html/ca09902c-b89c-3168-0eaf-a161507ad7cd.htm" />
     <HelpKINode Title="GeographicPositionProperty.Clone Method " Url="html/7b25cb64-3e31-d1c7-daba-46bd4c6ddb31.htm" />
     <HelpKINode Title="Holiday.Clone Method " Url="html/57986fa2-4039-813c-24a3-8abf2fbb41f2.htm" />
+    <HelpKINode Title="KindProperty.Clone Method " Url="html/89ca186d-ad11-4657-9ecb-76b3b9f8f3a0.htm" />
     <HelpKINode Title="LabelProperty.Clone Method " Url="html/e2efe68d-545f-5dbf-12bd-8660c2ccd91b.htm" />
     <HelpKINode Title="LastModifiedProperty.Clone Method " Url="html/c29c4408-1b3d-74ec-c72a-df286f3ac3f2.htm" />
     <HelpKINode Title="LastRevisionProperty.Clone Method " Url="html/75a09f5c-98d2-1f17-2131-f11c7e976002.htm" />
     <HelpKINode Title="LocationProperty.Clone Method " Url="html/a6f854aa-0047-1377-b4d8-948a710e5998.htm" />
     <HelpKINode Title="LogoProperty.Clone Method " Url="html/4357ae85-46cf-24a5-472b-554e6af056b6.htm" />
     <HelpKINode Title="MailerProperty.Clone Method " Url="html/fab99a02-1aef-6cde-3c1d-61f705f4c788.htm" />
+    <HelpKINode Title="MemberProperty.Clone Method " Url="html/fe041cbe-161f-d6d3-709d-888657ea17bd.htm" />
     <HelpKINode Title="MethodProperty.Clone Method " Url="html/a374f49b-1d22-2fbb-7699-11bc20fdada8.htm" />
     <HelpKINode Title="MimeNameProperty.Clone Method " Url="html/17c780e7-bbfc-52f1-c433-a0a116b63f4c.htm" />
     <HelpKINode Title="MimeSourceProperty.Clone Method " Url="html/529097d5-5b20-5687-213d-f94268b4a62d.htm" />
@@ -586,6 +654,7 @@
     <HelpKINode Title="RecurrenceCountProperty.Clone Method " Url="html/c76db700-c722-1a65-2900-3a5555ef5e52.htm" />
     <HelpKINode Title="RecurrenceIdProperty.Clone Method " Url="html/de04fde9-233d-3124-e16b-79843dd31c8c.htm" />
     <HelpKINode Title="RecurringObject.Clone Method " Url="html/db3d9b0a-abff-8e18-3279-c2ea5b0a9dff.htm" />
+    <HelpKINode Title="RelatedProperty.Clone Method " Url="html/75805b6d-b184-e3c2-39b3-2bcd2142c3a7.htm" />
     <HelpKINode Title="RelatedToProperty.Clone Method " Url="html/f0b36deb-f1e9-1a92-82c4-8f91e4b4b134.htm" />
     <HelpKINode Title="RepeatProperty.Clone Method " Url="html/9ddc5d8a-0cad-f7ef-b941-2d3d42caa37e.htm" />
     <HelpKINode Title="RequestStatusProperty.Clone Method " Url="html/304cf502-ad46-5c52-ab38-f825989d1253.htm" />
@@ -621,6 +690,7 @@
     <HelpKINode Title="VToDo.Clone Method " Url="html/b6038dd9-d241-5e69-983e-677dcb284c36.htm" />
   </HelpKINode>
   <HelpKINode Title="CloneRange method" Url="html/2f956337-51ee-67b0-c6c7-2a7d1197d7b6.htm" />
+  <HelpKINode Title="Colleague enumeration member" Url="html/bfca7821-a487-cbdc-1751-0b64f958a102.htm" />
   <HelpKINode Title="Comment enumeration member" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
   <HelpKINode Title="Comment property">
     <HelpKINode Title="ObservanceRule.Comment Property " Url="html/49ff67d4-3479-3ffc-7ead-e7187ffc99f0.htm" />
@@ -670,7 +740,10 @@
   <HelpKINode Title="ComponentType property" Url="html/2ca499bd-c64c-3e49-1312-07bdfc8c0aa0.htm" />
   <HelpKINode Title="CompuServe enumeration member" Url="html/5f96172a-d83c-c636-2387-87a6c10d83f7.htm" />
   <HelpKINode Title="Confirmed enumeration member" Url="html/03b11362-c1d5-a1be-86a4-02e8e68e7737.htm" />
-  <HelpKINode Title="Contact enumeration member" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
+  <HelpKINode Title="Contact enumeration member">
+    <HelpKINode Title="PropertyType Enumeration" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
+    <HelpKINode Title="RelatedTypes Enumeration" Url="html/bfca7821-a487-cbdc-1751-0b64f958a102.htm" />
+  </HelpKINode>
   <HelpKINode Title="Contact property" Url="html/798284af-ac85-2a6e-70ff-421865727b4e.htm" />
   <HelpKINode Title="ContactProperty class">
     <HelpKINode Title="ContactProperty Class" Url="html/6c0caf8e-02d9-0be8-517d-f21e5c657cb0.htm" />
@@ -705,13 +778,16 @@
   <HelpKINode Title="Context property" Url="html/f3b69696-c09a-598c-56fe-add53bde7be8.htm" />
   <HelpKINode Title="Controls property" Url="html/490a3e3c-9e88-209d-70db-3557d8998ead.htm" />
   <HelpKINode Title="CopyTo method" Url="html/beb3255d-bdd7-42e3-9e55-96b33bed15d9.htm" />
+  <HelpKINode Title="CoResident enumeration member" Url="html/bfca7821-a487-cbdc-1751-0b64f958a102.htm" />
   <HelpKINode Title="Count property">
     <HelpKINode Title="RecurrenceCountProperty.Count Property " Url="html/cdcdffcd-c001-c8aa-d17f-3243f529ba87.htm" />
     <HelpKINode Title="VTimeZoneCollection.Count Property " Url="html/b21ee675-1de1-e64a-6452-dcdeb8b1ae38.htm" />
   </HelpKINode>
   <HelpKINode Title="Counter enumeration member" Url="html/634d37fd-de11-0a87-5ef1-cebf1e30c817.htm" />
   <HelpKINode Title="Country property" Url="html/439b1e05-cbc7-31b2-c20c-eea9a81dbefc.htm" />
+  <HelpKINode Title="CoWorker enumeration member" Url="html/bfca7821-a487-cbdc-1751-0b64f958a102.htm" />
   <HelpKINode Title="CreateChildControls method" Url="html/f850ceb5-e9ac-80ff-0b04-91b0c2135f6f.htm" />
+  <HelpKINode Title="Crush enumeration member" Url="html/bfca7821-a487-cbdc-1751-0b64f958a102.htm" />
   <HelpKINode Title="CssButton property" Url="html/bc06c260-2988-6317-3fb0-f87a40c0b147.htm" />
   <HelpKINode Title="CssErrorMessage property" Url="html/e30b7ce3-55db-716f-afbb-65237323a6c0.htm" />
   <HelpKINode Title="CssInput property" Url="html/e56eaf35-1ee9-43af-992e-35918e69fc7e.htm" />
@@ -768,6 +844,7 @@
   <HelpKINode Title="CustomPropertyCollection.Item property" Url="html/d0361153-fc29-f00e-7527-50b61743553f.htm" />
   <HelpKINode Title="CustomPropertyCollection.PropagateVersion method" Url="html/eb113ab0-caf4-3eb0-b276-395daf365e04.htm" />
   <HelpKINode Title="Daily enumeration member" Url="html/c0a6ac32-6aac-86c6-339f-37524571b78e.htm" />
+  <HelpKINode Title="Date enumeration member" Url="html/bfca7821-a487-cbdc-1751-0b64f958a102.htm" />
   <HelpKINode Title="Date field" Url="html/19dbba5e-fece-8666-3956-f49bea2fd8dd.htm" />
   <HelpKINode Title="DateCreated enumeration member" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
   <HelpKINode Title="DateCreated property">
@@ -922,7 +999,6 @@
   <HelpKINode Title="DeclineCounter enumeration member" Url="html/634d37fd-de11-0a87-5ef1-cebf1e30c817.htm" />
   <HelpKINode Title="Declined enumeration member" Url="html/03b11362-c1d5-a1be-86a4-02e8e68e7737.htm" />
   <HelpKINode Title="Decode method" Url="html/8ce76b2b-21f9-8290-e436-6ea988091a08.htm" />
-  <HelpKINode Title="Default enumeration member" Url="html/4bdfa733-7270-7bf6-c960-4d9d30bb9824.htm" />
   <HelpKINode Title="DefaultEncoding property">
     <HelpKINode Title="BaseProperty.DefaultEncoding Property " Url="html/1fc62b66-240b-16c7-57e5-03ff8506aa56.htm" />
     <HelpKINode Title="PDIParser.DefaultEncoding Property " Url="html/f65e099f-7e0a-7743-8174-b98fbda27808.htm" />
@@ -932,6 +1008,7 @@
     <HelpKINode Title="ActionProperty.DefaultValueLocation Property " Url="html/5fd13058-ee4d-ce60-274d-af6e29e1dea2.htm" />
     <HelpKINode Title="AddressProperty.DefaultValueLocation Property " Url="html/105da34d-d6d7-d302-2162-ce720f149211.htm" />
     <HelpKINode Title="AgentProperty.DefaultValueLocation Property " Url="html/e18e04b4-f7de-2d0e-e9f5-c144960f1e92.htm" />
+    <HelpKINode Title="AnniversaryProperty.DefaultValueLocation Property " Url="html/0353626c-cbbd-93cb-a92a-75a62794f3ce.htm" />
     <HelpKINode Title="AttachProperty.DefaultValueLocation Property " Url="html/586c7ad2-56a1-b954-9ebf-d9e212e90aa3.htm" />
     <HelpKINode Title="BaseProperty.DefaultValueLocation Property " Url="html/86899f40-0cde-2cd6-3599-4eb4072f4898.htm" />
     <HelpKINode Title="BirthDateProperty.DefaultValueLocation Property " Url="html/71623d5e-6a84-a62e-246d-5c008322f312.htm" />
@@ -939,6 +1016,7 @@
     <HelpKINode Title="CalendarScaleProperty.DefaultValueLocation Property " Url="html/4b4f96ba-0929-32ca-b90e-a8a921d87acb.htm" />
     <HelpKINode Title="CategoriesProperty.DefaultValueLocation Property " Url="html/37eda775-a4f0-feb5-656c-b3da19f7de1c.htm" />
     <HelpKINode Title="ClassificationProperty.DefaultValueLocation Property " Url="html/b6a789ff-c7c6-5deb-b30c-2f8377e65577.htm" />
+    <HelpKINode Title="ClientPidMapProperty.DefaultValueLocation Property " Url="html/46cb0225-d60f-e6a1-f26b-96b38cbdec55.htm" />
     <HelpKINode Title="CommentProperty.DefaultValueLocation Property " Url="html/3aa8436e-6bb9-4786-6d06-631c0502eb00.htm" />
     <HelpKINode Title="CompletedDateProperty.DefaultValueLocation Property " Url="html/f268c90c-8b7f-7a9c-9553-936e37cbe71c.htm" />
     <HelpKINode Title="ContactProperty.DefaultValueLocation Property " Url="html/7c2331a6-4aa2-7b2f-789c-71145f204dad.htm" />
@@ -953,12 +1031,15 @@
     <HelpKINode Title="ExDateProperty.DefaultValueLocation Property " Url="html/e4d574dc-e603-63d9-a5ca-ea5c02f02eb5.htm" />
     <HelpKINode Title="FormattedNameProperty.DefaultValueLocation Property " Url="html/f32f03cf-d26b-f964-1aa1-7dd915e50d8f.htm" />
     <HelpKINode Title="FreeBusyProperty.DefaultValueLocation Property " Url="html/54361d35-9b7e-bdb1-6361-6e1e953b807c.htm" />
+    <HelpKINode Title="GenderProperty.DefaultValueLocation Property " Url="html/885e453d-f920-edbc-5f79-fe6490582100.htm" />
     <HelpKINode Title="GeographicPositionProperty.DefaultValueLocation Property " Url="html/a0d350fa-39a5-9577-0fe9-44638d714416.htm" />
+    <HelpKINode Title="KindProperty.DefaultValueLocation Property " Url="html/b2abebb8-71eb-9d89-020c-ec3fab6be240.htm" />
     <HelpKINode Title="LabelProperty.DefaultValueLocation Property " Url="html/b71a9fbe-8313-1c4a-703b-9b29574921ae.htm" />
     <HelpKINode Title="LastModifiedProperty.DefaultValueLocation Property " Url="html/dcdd88b1-5998-b3e5-fd6e-0e8204487038.htm" />
     <HelpKINode Title="LastRevisionProperty.DefaultValueLocation Property " Url="html/1a2ff726-877a-088d-3b5f-7cc8b1760d16.htm" />
     <HelpKINode Title="LocationProperty.DefaultValueLocation Property " Url="html/eece56e4-bc29-a978-1e42-970d2c3f252c.htm" />
     <HelpKINode Title="MailerProperty.DefaultValueLocation Property " Url="html/c792a390-811a-815e-2926-ffb4c73640c2.htm" />
+    <HelpKINode Title="MemberProperty.DefaultValueLocation Property " Url="html/1214955e-e23c-6e6b-58f9-6676fd19d931.htm" />
     <HelpKINode Title="MethodProperty.DefaultValueLocation Property " Url="html/3fe6cd9f-e3b1-dbad-1b8a-cb9d399cdc44.htm" />
     <HelpKINode Title="MimeNameProperty.DefaultValueLocation Property " Url="html/f5541c20-953f-9557-2d77-122839361fc0.htm" />
     <HelpKINode Title="MimeSourceProperty.DefaultValueLocation Property " Url="html/8821f2da-96af-3033-f0d1-05d032f6d157.htm" />
@@ -975,6 +1056,7 @@
     <HelpKINode Title="RDateProperty.DefaultValueLocation Property " Url="html/0404533b-f82e-dfea-d588-549808c7cd0a.htm" />
     <HelpKINode Title="RecurrenceCountProperty.DefaultValueLocation Property " Url="html/5530b25d-ae7b-2456-3119-d0365b48202a.htm" />
     <HelpKINode Title="RecurrenceIdProperty.DefaultValueLocation Property " Url="html/bdfaa327-e8d5-8ca4-66bf-6fd4ac316c04.htm" />
+    <HelpKINode Title="RelatedProperty.DefaultValueLocation Property " Url="html/2abcd89c-be4f-32d1-8f25-385f5a9f0587.htm" />
     <HelpKINode Title="RelatedToProperty.DefaultValueLocation Property " Url="html/aa1add79-23f8-50ac-5533-1b2fa5ca6849.htm" />
     <HelpKINode Title="RepeatProperty.DefaultValueLocation Property " Url="html/79d7d2ee-5ce0-75d6-f319-a23f143ff652.htm" />
     <HelpKINode Title="RequestStatusProperty.DefaultValueLocation Property " Url="html/8603586e-c87a-9f0c-6121-ff2ffd0b4229.htm" />
@@ -1040,12 +1122,15 @@
     <HelpKINode Title="LabelProperty.DeserializeParameters Method " Url="html/82c22c55-aa71-c374-ffe4-a3fae44cf3a5.htm" />
     <HelpKINode Title="MimeNameProperty.DeserializeParameters Method " Url="html/45c4f4d8-3846-8308-9653-ca179a25c3f5.htm" />
     <HelpKINode Title="MimeSourceProperty.DeserializeParameters Method " Url="html/d042885a-4adf-1fa1-c313-c8724b473ad4.htm" />
+    <HelpKINode Title="NameProperty.DeserializeParameters Method " Url="html/d4508eca-6ff2-2f23-dd99-005c3c5477a9.htm" />
+    <HelpKINode Title="OrganizationProperty.DeserializeParameters Method " Url="html/15123663-4274-a547-fd14-3cc374516d00.htm" />
     <HelpKINode Title="OrganizerProperty.DeserializeParameters Method " Url="html/ad38bc75-71bb-17e6-1015-27706917e3fb.htm" />
     <HelpKINode Title="PhotoProperty.DeserializeParameters Method " Url="html/021f1a51-086d-25c6-281b-52827e4da039.htm" />
     <HelpKINode Title="ProductIdProperty.DeserializeParameters Method " Url="html/6df59f91-fc87-73d5-0834-c12823ea8799.htm" />
     <HelpKINode Title="PublicKeyProperty.DeserializeParameters Method " Url="html/9a05a8b4-1c3b-9540-07ef-e068c1b22b5c.htm" />
     <HelpKINode Title="RDateProperty.DeserializeParameters Method " Url="html/a1cd76e8-62c7-9c13-a4f9-1b236b1235f7.htm" />
     <HelpKINode Title="RecurrenceIdProperty.DeserializeParameters Method " Url="html/f15046f2-7445-5331-1f93-0a56c73921d2.htm" />
+    <HelpKINode Title="RelatedProperty.DeserializeParameters Method " Url="html/5754c0e6-0613-ca55-3c62-088b34c4775b.htm" />
     <HelpKINode Title="RelatedToProperty.DeserializeParameters Method " Url="html/7bb02f6f-a0e2-5ff3-ef39-fd352a2c7b34.htm" />
     <HelpKINode Title="SoundProperty.DeserializeParameters Method " Url="html/43f72619-ccf1-1df3-7486-9bb55f10a63d.htm" />
     <HelpKINode Title="TelephoneProperty.DeserializeParameters Method " Url="html/75075736-0874-b561-abc6-ab2e5cbe5f6f.htm" />
@@ -1171,6 +1256,7 @@
   <HelpKINode Title="EMailProperty.DeserializeParameters method" Url="html/bb0ec3ec-90d9-27ec-a31f-1a1e2836777e.htm" />
   <HelpKINode Title="EMailProperty.EMailProperty constructor" Url="html/cb12edcb-269a-7e04-b6ed-cee2813877f0.htm" />
   <HelpKINode Title="EMailProperty.EMailTypes property" Url="html/b900bbf5-6d27-3d04-b0a3-ccc38238024b.htm" />
+  <HelpKINode Title="EMailProperty.PreferredOrder property" Url="html/d7279722-4c69-9123-8380-ccbb18d3659f.htm" />
   <HelpKINode Title="EMailProperty.SerializeParameters method" Url="html/03979677-0af6-aa95-1cfd-f7e009c4bdf7.htm" />
   <HelpKINode Title="EMailProperty.Tag property" Url="html/72bb686d-c4d5-a7ad-3aca-95429152388b.htm" />
   <HelpKINode Title="EMailProperty.VersionsSupported property" Url="html/a8229629-132a-8da3-371c-f270ad4a7cac.htm" />
@@ -1188,6 +1274,7 @@
   <HelpKINode Title="EMailPropertyCollection.SetPreferred method" Url="html/f8c5400a-bf5f-35f1-4b96-d7bec3f63d66.htm" />
   <HelpKINode Title="EMailTypes enumeration" Url="html/5f96172a-d83c-c636-2387-87a6c10d83f7.htm" />
   <HelpKINode Title="EMailTypes property" Url="html/b900bbf5-6d27-3d04-b0a3-ccc38238024b.htm" />
+  <HelpKINode Title="Emergency enumeration member" Url="html/bfca7821-a487-cbdc-1751-0b64f958a102.htm" />
   <HelpKINode Title="EnableControls method" Url="html/2ded61cd-f218-d9a8-ecf8-48d3b7abed79.htm" />
   <HelpKINode Title="Encode method" Url="html/56de566b-24f3-4e3e-6258-c825690c58d7.htm" />
   <HelpKINode Title="EncodedValue property">
@@ -1197,17 +1284,21 @@
     <HelpKINode Title="BaseDateTimeProperty.EncodedValue Property " Url="html/31601bc5-e826-0440-6382-d38846a98237.htm" />
     <HelpKINode Title="BaseProperty.EncodedValue Property " Url="html/79af5c0d-c747-3632-e852-94e64970aee7.htm" />
     <HelpKINode Title="CategoriesProperty.EncodedValue Property " Url="html/bcc74b86-5557-ab22-cb82-25c1d8b54176.htm" />
+    <HelpKINode Title="ClientPidMapProperty.EncodedValue Property " Url="html/52ad8388-c658-9f10-440c-fae53f4dee2a.htm" />
     <HelpKINode Title="CustomProperty.EncodedValue Property " Url="html/02d0ebca-e529-0ae2-f44c-bb039e3fbd68.htm" />
     <HelpKINode Title="DaylightProperty.EncodedValue Property " Url="html/419fe553-b18e-7461-3ebb-50d69c486ff2.htm" />
     <HelpKINode Title="DurationProperty.EncodedValue Property " Url="html/85603a70-3982-0367-de0d-fabe9cf0696e.htm" />
     <HelpKINode Title="FormattedNameProperty.EncodedValue Property " Url="html/677c7a6d-d040-ef9e-cf94-d576ebc2a174.htm" />
     <HelpKINode Title="FreeBusyProperty.EncodedValue Property " Url="html/f24a166f-28e1-d0d4-0df4-53b4ae900fe9.htm" />
+    <HelpKINode Title="GenderProperty.EncodedValue Property " Url="html/6e36d49a-2130-bdbe-b171-9d4f2741d3d8.htm" />
     <HelpKINode Title="GeographicPositionProperty.EncodedValue Property " Url="html/cd593009-13d6-7bc7-5ec9-a99b0c901caf.htm" />
+    <HelpKINode Title="KindProperty.EncodedValue Property " Url="html/7b8c2709-28e0-b831-32f9-c048efef286d.htm" />
     <HelpKINode Title="MethodProperty.EncodedValue Property " Url="html/5b49f5e5-098c-530a-ab5a-c7e81b559ca7.htm" />
     <HelpKINode Title="NameProperty.EncodedValue Property " Url="html/9a4dcfae-010e-5460-b3e2-510904556292.htm" />
     <HelpKINode Title="NicknameProperty.EncodedValue Property " Url="html/5550be72-894a-c442-7775-dd96fd243a59.htm" />
     <HelpKINode Title="OrganizationProperty.EncodedValue Property " Url="html/d9694953-8cb9-d703-1256-4463727aff51.htm" />
     <HelpKINode Title="PercentCompleteProperty.EncodedValue Property " Url="html/14627a5b-c339-50ec-25a9-f96626917543.htm" />
+    <HelpKINode Title="PhotoProperty.EncodedValue Property " Url="html/20fee567-3849-2773-6050-4d21061e3e90.htm" />
     <HelpKINode Title="PriorityProperty.EncodedValue Property " Url="html/2d34d32d-4ec1-4ae0-cdf5-84c7eb345d9f.htm" />
     <HelpKINode Title="ProductIdProperty.EncodedValue Property " Url="html/dbd5dce7-9073-ccad-b128-0f3fd4d3adf4.htm" />
     <HelpKINode Title="RDateProperty.EncodedValue Property " Url="html/94238cc4-6098-6ecb-872b-7d6e05710b20.htm" />
@@ -1217,7 +1308,9 @@
     <HelpKINode Title="ResourcesProperty.EncodedValue Property " Url="html/69f0d6c6-7821-66ee-71f1-f39f7dc1a075.htm" />
     <HelpKINode Title="RRuleProperty.EncodedValue Property " Url="html/070ae0f2-fee3-d988-e8fc-910f8fb2a5f9.htm" />
     <HelpKINode Title="SequenceProperty.EncodedValue Property " Url="html/71c94bf0-7823-1ce6-35c2-b7bb9c07a3de.htm" />
+    <HelpKINode Title="SoundProperty.EncodedValue Property " Url="html/d6ac3f78-1807-d8d6-0451-0e6d800b1728.htm" />
     <HelpKINode Title="StatusProperty.EncodedValue Property " Url="html/de02c800-8cfb-2168-7b23-294e875bf1fc.htm" />
+    <HelpKINode Title="TelephoneProperty.EncodedValue Property " Url="html/818b6994-37b9-270c-1b22-fb441812197e.htm" />
     <HelpKINode Title="TimeTransparencyProperty.EncodedValue Property " Url="html/62583cf9-16b4-d015-53e3-4ad56154610b.htm" />
     <HelpKINode Title="TimeZoneIdProperty.EncodedValue Property " Url="html/17f2e277-3ab3-ecde-8283-c8519f9c2ffb.htm" />
     <HelpKINode Title="TimeZoneOffsetProperty.EncodedValue Property " Url="html/058791cd-50a8-b8bb-9f11-4f2faba78a95.htm" />
@@ -1387,6 +1480,7 @@
   <HelpKINode Title="EWSoftware.PDI.Properties.AgentProperty class" Url="html/f63ad294-792f-1497-6734-211ed6800455.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.AgentPropertyCollection class" Url="html/50cfc015-39f3-e21e-64ff-ee13590dc719.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.AlarmAction enumeration" Url="html/9989715f-9e8e-03dd-4388-e9520f71293d.htm" />
+  <HelpKINode Title="EWSoftware.PDI.Properties.AnniversaryProperty class" Url="html/2ffafea2-9eed-d300-e770-1b00539fbd83.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.AttachProperty class" Url="html/e8367644-3e1c-1225-24e7-d950fbd1c003.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.AttachPropertyCollection class" Url="html/291b7252-16d5-d99d-e15b-22411a0fca2c.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.AttendeeProperty class" Url="html/0f7091c3-e915-5ae9-3fa6-48065af2c7c6.htm" />
@@ -1398,9 +1492,12 @@
   <HelpKINode Title="EWSoftware.PDI.Properties.BodyProperty class" Url="html/16c70c50-6e83-ba1b-dc73-d1dba1cd7027.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.CalendarMethod enumeration" Url="html/634d37fd-de11-0a87-5ef1-cebf1e30c817.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.CalendarScaleProperty class" Url="html/a9d95650-04c1-632d-74c4-062f81b8a1be.htm" />
+  <HelpKINode Title="EWSoftware.PDI.Properties.CardKind enumeration" Url="html/c2f8ba0a-0531-2593-8b7b-2e7a1e6bcc8e.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.CategoriesProperty class" Url="html/4f3859ae-e245-b57f-6a04-62032e5cfa8d.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.CharSetValue class" Url="html/ffc178b2-c1ff-cbfd-d498-39b9b4a4769a.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.ClassificationProperty class" Url="html/f7619dcf-fa72-3fc0-020f-317f61785d8a.htm" />
+  <HelpKINode Title="EWSoftware.PDI.Properties.ClientPidMapProperty class" Url="html/e9456a16-75d2-5a37-34d0-b1165875daac.htm" />
+  <HelpKINode Title="EWSoftware.PDI.Properties.ClientPidMapPropertyCollection class" Url="html/f971ffc7-97d2-bf86-2f6d-89c9b59fb2e8.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.CommentProperty class" Url="html/62313267-976e-01a0-0b5f-dbb4a048c874.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.CompletedDateProperty class" Url="html/c945ca48-a35c-769d-ec26-5c76b7caa03a.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.ContactProperty class" Url="html/6c0caf8e-02d9-0be8-517d-f21e5c657cb0.htm" />
@@ -1425,7 +1522,9 @@
   <HelpKINode Title="EWSoftware.PDI.Properties.FreeBusyProperty class" Url="html/e6c7a448-4427-e618-160c-c0a90f1d1862.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.FreeBusyPropertyCollection class" Url="html/ade09cc0-aa09-766f-e0af-04259087ba0e.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.FreeBusyType enumeration" Url="html/72f5021a-3e68-e47b-9530-da4ba42a34fd.htm" />
+  <HelpKINode Title="EWSoftware.PDI.Properties.GenderProperty class" Url="html/ce217818-120c-fe15-606d-14d3989e79f3.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.GeographicPositionProperty class" Url="html/c381241e-f099-d616-6885-19304a92d5c1.htm" />
+  <HelpKINode Title="EWSoftware.PDI.Properties.KindProperty class" Url="html/7738297e-7ead-acb3-845f-590ea9b03dd4.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.LabelProperty class" Url="html/a1e5bbe5-af5c-09d8-adec-6f262877165d.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.LabelPropertyCollection class" Url="html/c8975a5d-c737-e644-801a-7db654c2ec25.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.LanguageValue class" Url="html/9d58b933-6598-915f-fbbc-74758ffc3fa9.htm" />
@@ -1434,6 +1533,8 @@
   <HelpKINode Title="EWSoftware.PDI.Properties.LocationProperty class" Url="html/23c56790-6d23-f35f-d98e-ca838374a4e6.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.LogoProperty class" Url="html/cc5be75c-9e4e-32a1-d0a2-d10b4e2b7a0b.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.MailerProperty class" Url="html/ce53e846-935d-6619-1e31-dc1f8fb9d9e3.htm" />
+  <HelpKINode Title="EWSoftware.PDI.Properties.MemberProperty class" Url="html/e458dcdd-e924-de57-ad1b-4884b3c39115.htm" />
+  <HelpKINode Title="EWSoftware.PDI.Properties.MemberPropertyCollection class" Url="html/5fc5aa53-fa05-cd3e-6344-a3b67b4dc63f.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.MethodProperty class" Url="html/bbcc742b-0edf-d020-67bf-79f3693477eb.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.MimeNameProperty class" Url="html/96442007-6788-a357-852e-ae4bcdb03d5d.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.MimeSourceProperty class" Url="html/fd5e9ee0-3320-7bad-f130-8261958f8228.htm" />
@@ -1454,8 +1555,11 @@
   <HelpKINode Title="EWSoftware.PDI.Properties.RDatePropertyCollection class" Url="html/3f217aa2-10e9-c264-27b2-3f712c9b571e.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.RecurrenceCountProperty class" Url="html/caebff31-6ea8-026e-ea65-f44dd172cf69.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.RecurrenceIdProperty class" Url="html/e3619dc9-2096-8139-a670-840a06b50aa3.htm" />
+  <HelpKINode Title="EWSoftware.PDI.Properties.RelatedProperty class" Url="html/6ed69607-1717-858b-ce49-a55db1a039b8.htm" />
+  <HelpKINode Title="EWSoftware.PDI.Properties.RelatedPropertyCollection class" Url="html/4d741842-300b-90a7-6e50-00c79ba2bcf7.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.RelatedToProperty class" Url="html/2b05e9ee-39b0-f22a-fa42-0daf89199f7f.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.RelatedToPropertyCollection class" Url="html/146b616a-8b31-78fd-a0e5-7016f7da1030.htm" />
+  <HelpKINode Title="EWSoftware.PDI.Properties.RelatedTypes enumeration" Url="html/bfca7821-a487-cbdc-1751-0b64f958a102.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.RelationshipType enumeration" Url="html/4a34f061-fd74-2dea-e660-27aeb494befa.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.RepeatProperty class" Url="html/58d5ce83-d626-f7b4-7734-d2cf979036f5.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.RequestStatusProperty class" Url="html/d5aa378f-8b8f-491d-fd6b-06388fa2311f.htm" />
@@ -1628,6 +1732,7 @@
     <HelpKINode Title="AddressPropertyCollection.FindFirstByType Method " Url="html/edc9020b-747a-5e32-89df-5425e58a77cf.htm" />
     <HelpKINode Title="EMailPropertyCollection.FindFirstByType Method " Url="html/a3096d3e-4886-f792-48a8-7dbdb16c3473.htm" />
     <HelpKINode Title="LabelPropertyCollection.FindFirstByType Method " Url="html/94dab922-6323-9a34-8f18-e224187c0ee4.htm" />
+    <HelpKINode Title="RelatedPropertyCollection.FindFirstByType Method " Url="html/5023633f-402a-b1c9-dc64-edfefb784595.htm" />
     <HelpKINode Title="TelephonePropertyCollection.FindFirstByType Method " Url="html/dafbf705-7026-2089-34be-9baf090439bd.htm" />
   </HelpKINode>
   <HelpKINode Title="FindIndex method">
@@ -1746,6 +1851,7 @@
   <HelpKINode Title="FreeBusyType property" Url="html/735cf379-ec65-7a78-a443-ebbdd9dd3fbc.htm" />
   <HelpKINode Title="Frequency property" Url="html/c6c69cb7-f7aa-9aeb-e3eb-6182724f6ce7.htm" />
   <HelpKINode Title="Friday enumeration member" Url="html/53b91722-fff8-4fa1-397b-094731d0e6ae.htm" />
+  <HelpKINode Title="Friend enumeration member" Url="html/bfca7821-a487-cbdc-1751-0b64f958a102.htm" />
   <HelpKINode Title="FromBase64 method" Url="html/9912beaf-c30d-811f-111e-69901f2b0235.htm" />
   <HelpKINode Title="FromISO8601String method" Url="html/5b78fa57-99df-0fb2-dc0b-7d1caddf9171.htm" />
   <HelpKINode Title="FromISO8601TimeZone method" Url="html/11fe2e67-843e-6e95-a682-d5c4155e579e.htm" />
@@ -1753,6 +1859,25 @@
   <HelpKINode Title="FromQuotedPrintable method" Url="html/a5400f35-99af-c97c-d60c-09807f8dacb5.htm" />
   <HelpKINode Title="FromWeeks method" Url="html/4ec31957-f2da-04c6-10e4-4f6c69232f5b.htm" />
   <HelpKINode Title="FromYears method" Url="html/0b415549-82e5-57dd-8453-94e33ca89f71.htm" />
+  <HelpKINode Title="Gender enumeration member" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
+  <HelpKINode Title="Gender property" Url="html/be4e2d3b-b5c4-6f74-28af-4d4a19c3c13a.htm" />
+  <HelpKINode Title="GenderIdentity property" Url="html/433b1cc3-6491-f86b-b82a-30ceaeb79e1e.htm" />
+  <HelpKINode Title="GenderProperty class">
+    <HelpKINode Title="GenderProperty Class" Url="html/ce217818-120c-fe15-606d-14d3989e79f3.htm" />
+    <HelpKINode Title="constructor" Url="html/431cd0f1-b7b0-11aa-ade2-d74882208f9f.htm" />
+    <HelpKINode Title="methods" Url="html/53eb9c11-48a3-42b2-a967-e1555bf0dc36.htm" />
+    <HelpKINode Title="properties" Url="html/0b105694-f687-bac0-20dd-665f5b60b178.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GenderProperty.Clone method" Url="html/ca09902c-b89c-3168-0eaf-a161507ad7cd.htm" />
+  <HelpKINode Title="GenderProperty.DefaultValueLocation property" Url="html/885e453d-f920-edbc-5f79-fe6490582100.htm" />
+  <HelpKINode Title="GenderProperty.EncodedValue property" Url="html/6e36d49a-2130-bdbe-b171-9d4f2741d3d8.htm" />
+  <HelpKINode Title="GenderProperty.GenderIdentity property" Url="html/433b1cc3-6491-f86b-b82a-30ceaeb79e1e.htm" />
+  <HelpKINode Title="GenderProperty.GenderProperty constructor" Url="html/431cd0f1-b7b0-11aa-ade2-d74882208f9f.htm" />
+  <HelpKINode Title="GenderProperty.Sex property" Url="html/929aaa8f-c66e-6d9b-340e-73c89a2bac00.htm" />
+  <HelpKINode Title="GenderProperty.Tag property" Url="html/64d5ef69-623c-a5c1-7fe7-92bdfd9ccf00.htm" />
+  <HelpKINode Title="GenderProperty.Value property" Url="html/a1740636-972d-822d-6b9c-91f75a0f000a.htm" />
+  <HelpKINode Title="GenderProperty.VersionsSupported property" Url="html/4628a323-db2d-d9b1-4431-b8bd8a5f532c.htm" />
+  <HelpKINode Title="Geo property" Url="html/253e541e-2eb5-ccce-57e9-d2ab65585384.htm" />
   <HelpKINode Title="GeographicPosition enumeration member" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
   <HelpKINode Title="GeographicPosition property">
     <HelpKINode Title="VCard.GeographicPosition Property " Url="html/299e2c99-232a-ed30-8570-ae2377e6fb9f.htm" />
@@ -1770,6 +1895,7 @@
   <HelpKINode Title="GeographicPositionProperty.DeserializeParameters method" Url="html/4f1ff2d9-71b9-5148-907d-35264137b795.htm" />
   <HelpKINode Title="GeographicPositionProperty.EncodedValue property" Url="html/cd593009-13d6-7bc7-5ec9-a99b0c901caf.htm" />
   <HelpKINode Title="GeographicPositionProperty.GeographicPositionProperty constructor" Url="html/faec7e4b-a633-c085-66e6-5d8646360193.htm" />
+  <HelpKINode Title="GeographicPositionProperty.IncludeGeoUriPrefix property" Url="html/63a5c99b-080f-e3d0-2b66-209f94ce2700.htm" />
   <HelpKINode Title="GeographicPositionProperty.Latitude property" Url="html/97fbe1ea-90bd-d749-fa21-f3d87d708c0d.htm" />
   <HelpKINode Title="GeographicPositionProperty.Longitude property" Url="html/3ed9992b-5dd6-307b-458d-9429800df33c.htm" />
   <HelpKINode Title="GeographicPositionProperty.SerializeParameters method" Url="html/5778b32c-273f-bec4-d1e0-6fe908fc8465.htm" />
@@ -1835,6 +1961,7 @@
     <HelpKINode Title="Period.GreaterThanOrEqual Operator " Url="html/efbf0609-22ae-4aaa-2192-15299de36494.htm" />
   </HelpKINode>
   <HelpKINode Title="Gregorian enumeration member" Url="html/2910a5f8-2fbc-7bf7-f90b-b85fbb083df0.htm" />
+  <HelpKINode Title="Group enumeration member" Url="html/c2f8ba0a-0531-2593-8b7b-2e7a1e6bcc8e.htm" />
   <HelpKINode Title="Group property">
     <HelpKINode Title="BaseProperty.Group Property " Url="html/b58ac3f4-446c-9b17-a336-646efc3720a7.htm" />
     <HelpKINode Title="VCard.Group Property " Url="html/f8e6ac16-35a3-2be3-223c-6f4050999303.htm" />
@@ -1910,8 +2037,11 @@
   <HelpKINode Title="Hours enumeration member" Url="html/80551d9d-f94f-6955-d5fb-93e7a922046b.htm" />
   <HelpKINode Title="IBMMail enumeration member" Url="html/5f96172a-d83c-c636-2387-87a6c10d83f7.htm" />
   <HelpKINode Title="iCalendar20 enumeration member" Url="html/4e500d10-66c8-3e57-8a9c-23311a5c5b25.htm" />
+  <HelpKINode Title="Id property" Url="html/e630047e-c50e-0a58-e195-a039953a433e.htm" />
   <HelpKINode Title="ImageType property" Url="html/76c39733-8393-f3cc-023e-efd4a3a387a2.htm" />
+  <HelpKINode Title="IncludeGeoUriPrefix property" Url="html/63a5c99b-080f-e3d0-2b66-209f94ce2700.htm" />
   <HelpKINode Title="IndexOf method" Url="html/0e652fdf-a712-868b-d838-25ddc2b8da9f.htm" />
+  <HelpKINode Title="Individual enumeration member" Url="html/c2f8ba0a-0531-2593-8b7b-2e7a1e6bcc8e.htm" />
   <HelpKINode Title="Inequality operator">
     <HelpKINode Title="Duration.Inequality Operator " Url="html/48547d89-3120-48f8-e8a0-2250443807cc.htm" />
     <HelpKINode Title="Period.Inequality Operator " Url="html/b15299be-1002-14de-fe8d-8da778619a1f.htm" />
@@ -1986,7 +2116,26 @@
   <HelpKINode Title="Julian enumeration member" Url="html/2910a5f8-2fbc-7bf7-f90b-b85fbb083df0.htm" />
   <HelpKINode Title="KeyType property" Url="html/113be19f-1033-bd69-7edd-5b46c6d6158b.htm" />
   <HelpKINode Title="KeywordDescription property" Url="html/d442bd97-4b19-0760-7db1-830fd985fba2.htm" />
+  <HelpKINode Title="Kin enumeration member" Url="html/bfca7821-a487-cbdc-1751-0b64f958a102.htm" />
+  <HelpKINode Title="Kind enumeration member" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
+  <HelpKINode Title="Kind property" Url="html/76e558e0-eb69-4e73-7d03-4a8c62e327eb.htm" />
+  <HelpKINode Title="KindProperty class">
+    <HelpKINode Title="KindProperty Class" Url="html/7738297e-7ead-acb3-845f-590ea9b03dd4.htm" />
+    <HelpKINode Title="constructor" Url="html/29c8bb3b-2e23-f344-6b6f-9f942fb3a570.htm" />
+    <HelpKINode Title="methods" Url="html/ee8aee53-6170-934c-84bd-15f266ae7d2d.htm" />
+    <HelpKINode Title="properties" Url="html/cca277e7-7a3e-6fb2-c967-d2351ad83f80.htm" />
+  </HelpKINode>
+  <HelpKINode Title="KindProperty.CardKind property" Url="html/94566a85-1d57-644f-859a-ba71bccc738c.htm" />
+  <HelpKINode Title="KindProperty.Clone method" Url="html/89ca186d-ad11-4657-9ecb-76b3b9f8f3a0.htm" />
+  <HelpKINode Title="KindProperty.DefaultValueLocation property" Url="html/b2abebb8-71eb-9d89-020c-ec3fab6be240.htm" />
+  <HelpKINode Title="KindProperty.EncodedValue property" Url="html/7b8c2709-28e0-b831-32f9-c048efef286d.htm" />
+  <HelpKINode Title="KindProperty.KindProperty constructor" Url="html/29c8bb3b-2e23-f344-6b6f-9f942fb3a570.htm" />
+  <HelpKINode Title="KindProperty.OtherKind property" Url="html/0f6b0c7d-9851-78c0-11fa-5ca98256a032.htm" />
+  <HelpKINode Title="KindProperty.Tag property" Url="html/70c5b33b-7849-ba48-f237-0aac86279457.htm" />
+  <HelpKINode Title="KindProperty.Value property" Url="html/c8c67d66-c508-5f64-2bb2-a450f3dfb8a0.htm" />
+  <HelpKINode Title="KindProperty.VersionsSupported property" Url="html/23da5098-2346-9bd6-1338-35f5e0fdb940.htm" />
   <HelpKINode Title="Label enumeration member" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
+  <HelpKINode Title="Label property" Url="html/b744745a-a820-609d-ff22-537f5cd8ca24.htm" />
   <HelpKINode Title="LabelProperty class">
     <HelpKINode Title="LabelProperty Class" Url="html/a1e5bbe5-af5c-09d8-adec-6f262877165d.htm" />
     <HelpKINode Title="constructor" Url="html/b8b66e16-698e-0182-1829-c135925a93fb.htm" />
@@ -2087,7 +2236,10 @@
   <HelpKINode Title="LoadPostData method" Url="html/eb9f6bee-37d6-ac91-891d-cc8aad6eb044.htm" />
   <HelpKINode Title="Locality property" Url="html/d3b2f4d4-dc71-6367-2514-3faa4a30ab74.htm" />
   <HelpKINode Title="LocalTimeToTimeZoneTime method" Url="html/28415e60-ce3e-0ce7-3e11-11d7530bc4cb.htm" />
-  <HelpKINode Title="Location enumeration member" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
+  <HelpKINode Title="Location enumeration member">
+    <HelpKINode Title="CardKind Enumeration" Url="html/c2f8ba0a-0531-2593-8b7b-2e7a1e6bcc8e.htm" />
+    <HelpKINode Title="PropertyType Enumeration" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
+  </HelpKINode>
   <HelpKINode Title="Location property" Url="html/a12fa24d-75a3-7839-a6f5-2e5ea56379f3.htm" />
   <HelpKINode Title="LocationProperty class">
     <HelpKINode Title="LocationProperty Class" Url="html/23c56790-6d23-f35f-d98e-ca838374a4e6.htm" />
@@ -2128,18 +2280,44 @@
   <HelpKINode Title="MailerProperty.VersionsSupported property" Url="html/492dbf3b-4c33-fc6d-5afc-a51eebcc0bf7.htm" />
   <HelpKINode Title="MaximumOccurrences property" Url="html/793df62f-8496-386b-8d43-5ac34b3b79da.htm" />
   <HelpKINode Title="MaximumPattern property">
-    <HelpKINode Title="RecurrencePattern.MaximumPattern Property " Url="html/14066c48-2413-ecee-d53e-c19492e00d11.htm" />
     <HelpKINode Title="RecurrencePattern.MaximumPattern Property " Url="html/e8a50cb0-01d0-d994-b63e-2fef60be99c9.htm" />
+    <HelpKINode Title="RecurrencePattern.MaximumPattern Property " Url="html/14066c48-2413-ecee-d53e-c19492e00d11.htm" />
     <HelpKINode Title="RecurrencePropertiesDlg.MaximumPattern Property " Url="html/e7fd28c9-3065-8343-3503-acfe7e70c97d.htm" />
   </HelpKINode>
   <HelpKINode Title="MaximumValue property" Url="html/c12f478b-784d-dd1f-1449-2bec7ba9b4de.htm" />
   <HelpKINode Title="MCIMail enumeration member" Url="html/5f96172a-d83c-c636-2387-87a6c10d83f7.htm" />
-  <HelpKINode Title="Member enumeration member" Url="html/9b62e51e-3c48-fdf7-bc6e-f17761057cfd.htm" />
+  <HelpKINode Title="Me enumeration member" Url="html/bfca7821-a487-cbdc-1751-0b64f958a102.htm" />
+  <HelpKINode Title="Member enumeration member">
+    <HelpKINode Title="ParameterType Enumeration" Url="html/9b62e51e-3c48-fdf7-bc6e-f17761057cfd.htm" />
+    <HelpKINode Title="PropertyType Enumeration" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
+  </HelpKINode>
   <HelpKINode Title="Member field" Url="html/e529fdeb-be47-4c0c-036f-f79df5729cf4.htm" />
+  <HelpKINode Title="MemberProperty class">
+    <HelpKINode Title="MemberProperty Class" Url="html/e458dcdd-e924-de57-ad1b-4884b3c39115.htm" />
+    <HelpKINode Title="constructor" Url="html/67e70a66-fe97-7288-b9a6-49c94d2b557d.htm" />
+    <HelpKINode Title="methods" Url="html/55e099c5-03ff-5e7e-acb6-f39e8e971d85.htm" />
+    <HelpKINode Title="properties" Url="html/d7f109c2-27be-377e-9f87-811fe3239683.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MemberProperty.Clone method" Url="html/fe041cbe-161f-d6d3-709d-888657ea17bd.htm" />
+  <HelpKINode Title="MemberProperty.DefaultValueLocation property" Url="html/1214955e-e23c-6e6b-58f9-6676fd19d931.htm" />
+  <HelpKINode Title="MemberProperty.MemberProperty constructor" Url="html/67e70a66-fe97-7288-b9a6-49c94d2b557d.htm" />
+  <HelpKINode Title="MemberProperty.Tag property" Url="html/9f28b96e-cb8f-b17d-b213-6ca9b0f486c0.htm" />
+  <HelpKINode Title="MemberProperty.VersionsSupported property" Url="html/60348ac9-851c-b4f4-9801-aebe0e438b0c.htm" />
+  <HelpKINode Title="MemberPropertyCollection class">
+    <HelpKINode Title="MemberPropertyCollection Class" Url="html/5fc5aa53-fa05-cd3e-6344-a3b67b4dc63f.htm" />
+    <HelpKINode Title="constructor" Url="html/c7710a7c-873a-81dc-6725-e37511083d9c.htm" />
+    <HelpKINode Title="events" Url="html/3d79de09-e2a2-d3a0-4daa-f33711ba54ea.htm" />
+    <HelpKINode Title="methods" Url="html/b6305c61-cbfc-cca4-58ea-7831c340cbf6.htm" />
+    <HelpKINode Title="properties" Url="html/206c9525-d3a3-2cb1-75a5-06e2c6dce9eb.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MemberPropertyCollection.MemberPropertyCollection constructor" Url="html/c7710a7c-873a-81dc-6725-e37511083d9c.htm" />
+  <HelpKINode Title="MemberPropertyCollection.PropagateVersion method" Url="html/92a45c39-c5f6-a474-ad4c-f79463f25476.htm" />
+  <HelpKINode Title="Members property" Url="html/7f841255-4547-9ab8-32df-e4766c30b262.htm" />
   <HelpKINode Title="Membership property" Url="html/da4babca-4044-91df-c77f-a07199edea7e.htm" />
   <HelpKINode Title="Merge method" Url="html/9b0e8f97-4d72-c2b8-a2e4-fd0fa547ee5c.htm" />
   <HelpKINode Title="MergingEnabled property" Url="html/e61e2cc2-d0a9-1b1e-55d3-473f557146d1.htm" />
   <HelpKINode Title="Message enumeration member" Url="html/0cfcbe7a-f017-4e8d-a8d0-96fbf65e4b92.htm" />
+  <HelpKINode Title="Met enumeration member" Url="html/bfca7821-a487-cbdc-1751-0b64f958a102.htm" />
   <HelpKINode Title="Method enumeration member" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
   <HelpKINode Title="Method property" Url="html/fb698242-425a-e83e-f7ea-73f902a427a2.htm" />
   <HelpKINode Title="MethodProperty class">
@@ -2202,6 +2380,7 @@
   <HelpKINode Title="Months property" Url="html/88e35150-d703-d148-f1e8-e1de43ab4976.htm" />
   <HelpKINode Title="MonthsOfYear property" Url="html/96d36aab-b446-2314-7059-8dd9349e3ce4.htm" />
   <HelpKINode Title="MoveNext method" Url="html/ce9dcb7a-37f1-61b8-7311-cb2081693410.htm" />
+  <HelpKINode Title="Muse enumeration member" Url="html/bfca7821-a487-cbdc-1751-0b64f958a102.htm" />
   <HelpKINode Title="Name enumeration member" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
   <HelpKINode Title="Name property">
     <HelpKINode Title="NameToValue(T).Name Property " Url="html/a03fecc7-9078-80a1-29c7-e1b66dc1a3bd.htm" />
@@ -2218,6 +2397,7 @@
   <HelpKINode Title="NameProperty.AdditionalNames property" Url="html/bad7c71c-1d41-5d72-6023-48499f4dc710.htm" />
   <HelpKINode Title="NameProperty.Clone method" Url="html/46a48230-96a2-4488-eab6-5b5d7f502d64.htm" />
   <HelpKINode Title="NameProperty.DefaultValueLocation property" Url="html/70e0f18a-275e-8fb2-e153-2cab6d47e6ca.htm" />
+  <HelpKINode Title="NameProperty.DeserializeParameters method" Url="html/d4508eca-6ff2-2f23-dd99-005c3c5477a9.htm" />
   <HelpKINode Title="NameProperty.EncodedValue property" Url="html/9a4dcfae-010e-5460-b3e2-510904556292.htm" />
   <HelpKINode Title="NameProperty.FamilyName property" Url="html/320d3d8f-5572-adc7-a6b9-bee111e5fcab.htm" />
   <HelpKINode Title="NameProperty.FormattedName property" Url="html/87d5fd10-ffb7-a768-a901-e56104254050.htm" />
@@ -2225,7 +2405,9 @@
   <HelpKINode Title="NameProperty.NamePrefix property" Url="html/a9e0df89-77f0-4fe2-4bc2-23823d9852d0.htm" />
   <HelpKINode Title="NameProperty.NameProperty constructor" Url="html/125b8555-ef1c-c63b-155c-2b5ad2ad47ad.htm" />
   <HelpKINode Title="NameProperty.NameSuffix property" Url="html/2de2053f-ccc8-5e45-a888-7f790912b9d3.htm" />
+  <HelpKINode Title="NameProperty.SerializeParameters method" Url="html/db51a1a2-150a-65fe-856f-c3335e5b327f.htm" />
   <HelpKINode Title="NameProperty.SortableName property" Url="html/a9f35bd2-1e77-94b2-5cf1-a03d3dc43fef.htm" />
+  <HelpKINode Title="NameProperty.SortAs property" Url="html/5c6fab31-e68e-1f1d-d767-be30a2612dad.htm" />
   <HelpKINode Title="NameProperty.Tag property" Url="html/51a5967e-5b90-3c4e-89db-5f4a1eeca9b0.htm" />
   <HelpKINode Title="NameProperty.Value property" Url="html/2917a363-59bf-4cf4-d774-920903a05a89.htm" />
   <HelpKINode Title="NameProperty.VersionsSupported property" Url="html/d360d302-9bc5-0319-d12a-87057c96180f.htm" />
@@ -2253,6 +2435,7 @@
   <HelpKINode Title="NameToValue&lt;T&gt;.Name property" Url="html/a03fecc7-9078-80a1-29c7-e1b66dc1a3bd.htm" />
   <HelpKINode Title="NameToValue&lt;T&gt;.NameToValue constructor" Url="html/e03cccd0-7e82-e1b1-990c-d853c3caaa13.htm" />
   <HelpKINode Title="NeedsAction enumeration member" Url="html/03b11362-c1d5-a1be-86a4-02e8e68e7737.htm" />
+  <HelpKINode Title="Neighbor enumeration member" Url="html/bfca7821-a487-cbdc-1751-0b64f958a102.htm" />
   <HelpKINode Title="NewId property" Url="html/a65b277f-dc35-0290-df50-4ecb8e7894ec.htm" />
   <HelpKINode Title="NextInstance method" Url="html/a731ea56-ec3b-037a-42aa-2b746f92dc21.htm" />
   <HelpKINode Title="Nickname enumeration member" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
@@ -2277,11 +2460,13 @@
   <HelpKINode Title="None enumeration member">
     <HelpKINode Title="AddressTypes Enumeration" Url="html/4bdfa733-7270-7bf6-c960-4d9d30bb9824.htm" />
     <HelpKINode Title="CalendarMethod Enumeration" Url="html/634d37fd-de11-0a87-5ef1-cebf1e30c817.htm" />
+    <HelpKINode Title="CardKind Enumeration" Url="html/c2f8ba0a-0531-2593-8b7b-2e7a1e6bcc8e.htm" />
     <HelpKINode Title="DayOccurrence Enumeration" Url="html/7a39c942-9587-d9dc-8d52-fb342891dee2.htm" />
     <HelpKINode Title="DaysOfWeek Enumeration" Url="html/53b91722-fff8-4fa1-397b-094731d0e6ae.htm" />
     <HelpKINode Title="EMailTypes Enumeration" Url="html/5f96172a-d83c-c636-2387-87a6c10d83f7.htm" />
     <HelpKINode Title="FreeBusyType Enumeration" Url="html/72f5021a-3e68-e47b-9530-da4ba42a34fd.htm" />
     <HelpKINode Title="PhoneTypes Enumeration" Url="html/0cfcbe7a-f017-4e8d-a8d0-96fbf65e4b92.htm" />
+    <HelpKINode Title="RelatedTypes Enumeration" Url="html/bfca7821-a487-cbdc-1751-0b64f958a102.htm" />
     <HelpKINode Title="SpecificationVersions Enumeration" Url="html/4e500d10-66c8-3e57-8a9c-23311a5c5b25.htm" />
     <HelpKINode Title="StatusValue Enumeration" Url="html/03b11362-c1d5-a1be-86a4-02e8e68e7737.htm" />
   </HelpKINode>
@@ -2377,7 +2562,10 @@
     <HelpKINode Title="VTimeZone.OnTimeZoneIdChanged Method " Url="html/9ff37bd0-5b39-a74f-64ad-b050ce706af6.htm" />
     <HelpKINode Title="VTimeZoneCollection.OnTimeZoneIdChanged Method " Url="html/0fd2edc5-dead-e88a-0847-9afd87f2705c.htm" />
   </HelpKINode>
-  <HelpKINode Title="Organization enumeration member" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
+  <HelpKINode Title="Organization enumeration member">
+    <HelpKINode Title="CardKind Enumeration" Url="html/c2f8ba0a-0531-2593-8b7b-2e7a1e6bcc8e.htm" />
+    <HelpKINode Title="PropertyType Enumeration" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
+  </HelpKINode>
   <HelpKINode Title="Organization property" Url="html/4dd3d084-3f0a-7dd8-1184-eb52b22be5fc.htm" />
   <HelpKINode Title="OrganizationProperty class">
     <HelpKINode Title="OrganizationProperty Class" Url="html/7a5a104d-ab64-b39f-5bd8-6fa8b6835759.htm" />
@@ -2387,9 +2575,12 @@
   </HelpKINode>
   <HelpKINode Title="OrganizationProperty.Clone method" Url="html/d046abb1-7ed1-16f8-da4b-46140833f7aa.htm" />
   <HelpKINode Title="OrganizationProperty.DefaultValueLocation property" Url="html/1aa2a9c8-4a1e-7c19-6fbc-08a69929e1d7.htm" />
+  <HelpKINode Title="OrganizationProperty.DeserializeParameters method" Url="html/15123663-4274-a547-fd14-3cc374516d00.htm" />
   <HelpKINode Title="OrganizationProperty.EncodedValue property" Url="html/d9694953-8cb9-d703-1256-4463727aff51.htm" />
   <HelpKINode Title="OrganizationProperty.Name property" Url="html/46c29c80-e60e-bbb3-731f-742f2c232354.htm" />
   <HelpKINode Title="OrganizationProperty.OrganizationProperty constructor" Url="html/ccbdcaf0-1e77-b93a-ff24-2f20d49cdc1b.htm" />
+  <HelpKINode Title="OrganizationProperty.SerializeParameters method" Url="html/a3819492-7085-f348-663c-8ca069d6385c.htm" />
+  <HelpKINode Title="OrganizationProperty.SortAs property" Url="html/a0ca3bbb-cd33-ff86-1e95-1782d1d4a14d.htm" />
   <HelpKINode Title="OrganizationProperty.Tag property" Url="html/db0c46be-bd4b-0e60-f454-80ba6e46b36f.htm" />
   <HelpKINode Title="OrganizationProperty.Units property" Url="html/f32c1f11-25fd-3146-a6fe-9f44044ef94d.htm" />
   <HelpKINode Title="OrganizationProperty.UnitsString property" Url="html/ac02c8c8-5627-f311-a7d4-34a71e84d1e7.htm" />
@@ -2422,10 +2613,12 @@
   <HelpKINode Title="Other enumeration member">
     <HelpKINode Title="AlarmAction Enumeration" Url="html/9989715f-9e8e-03dd-4388-e9520f71293d.htm" />
     <HelpKINode Title="CalendarMethod Enumeration" Url="html/634d37fd-de11-0a87-5ef1-cebf1e30c817.htm" />
+    <HelpKINode Title="CardKind Enumeration" Url="html/c2f8ba0a-0531-2593-8b7b-2e7a1e6bcc8e.htm" />
     <HelpKINode Title="FreeBusyType Enumeration" Url="html/72f5021a-3e68-e47b-9530-da4ba42a34fd.htm" />
     <HelpKINode Title="RelationshipType Enumeration" Url="html/4a34f061-fd74-2dea-e660-27aeb494befa.htm" />
   </HelpKINode>
   <HelpKINode Title="OtherAction property" Url="html/0ef71f79-a805-6da5-4eb7-76caf1d7a0ee.htm" />
+  <HelpKINode Title="OtherKind property" Url="html/0f6b0c7d-9851-78c0-11fa-5ca98256a032.htm" />
   <HelpKINode Title="OtherMethod property" Url="html/ec0ebf22-6600-35e6-4c93-59548f81fab0.htm" />
   <HelpKINode Title="OtherRelationship property" Url="html/cdc2789d-8fa0-9b79-9cb6-b4f5ec9d651f.htm" />
   <HelpKINode Title="OtherType property" Url="html/c6ad4a51-efc4-5463-6739-ea29963b0f4e.htm" />
@@ -2437,6 +2630,7 @@
     <HelpKINode Title="fields" Url="html/52220a8d-2856-57e7-98a0-f72372ad389c.htm" />
   </HelpKINode>
   <HelpKINode Title="ParameterNames.AlternateRepresentation field" Url="html/27b28dc3-34cf-92bd-1099-cb61cd6f3199.htm" />
+  <HelpKINode Title="ParameterNames.CalendarScale field" Url="html/441c14c8-cbc6-be24-5fa2-952a6bb409c0.htm" />
   <HelpKINode Title="ParameterNames.CalendarUserType field" Url="html/e91c751d-d6e6-d755-4462-d3bbf4092ea9.htm" />
   <HelpKINode Title="ParameterNames.CharacterSet field" Url="html/01ce991c-d613-2a17-812c-0008ae1b8cf4.htm" />
   <HelpKINode Title="ParameterNames.CommonName field" Url="html/2045629e-2db8-ac10-3d4e-3b6932068df3.htm" />
@@ -2451,12 +2645,14 @@
   <HelpKINode Title="ParameterNames.Language field" Url="html/6caa708a-44ae-461c-f23f-ae610b6d9c03.htm" />
   <HelpKINode Title="ParameterNames.Member field" Url="html/e529fdeb-be47-4c0c-036f-f79df5729cf4.htm" />
   <HelpKINode Title="ParameterNames.PartStatus field" Url="html/e43d6039-7ffd-4413-51ed-439507cd02c2.htm" />
+  <HelpKINode Title="ParameterNames.PropertyId field" Url="html/3fa5d816-34a5-549e-808f-8bd84b8dce4e.htm" />
   <HelpKINode Title="ParameterNames.Range field" Url="html/3834a3c7-5753-c3de-ec27-37ec29660bee.htm" />
   <HelpKINode Title="ParameterNames.Related field" Url="html/5e57f4f7-ae5e-5a7b-4f90-6eb07e08ca88.htm" />
   <HelpKINode Title="ParameterNames.RelationshipType field" Url="html/01058a33-80e8-71f2-79a9-1bddab591a54.htm" />
   <HelpKINode Title="ParameterNames.Role field" Url="html/c51950e4-f4c4-61cf-0f3f-4d23b30c5e58.htm" />
   <HelpKINode Title="ParameterNames.Rsvp field" Url="html/29ea1494-86ce-9bd6-6ba1-55ac1c743699.htm" />
   <HelpKINode Title="ParameterNames.SentBy field" Url="html/f6dd9235-12cf-889f-6b03-a5bcac5e7b24.htm" />
+  <HelpKINode Title="ParameterNames.SortAs field" Url="html/057362f6-132e-3783-b821-4f02057f97d2.htm" />
   <HelpKINode Title="ParameterNames.Status field" Url="html/eaaf9996-e88f-a6d6-80de-e3d2efc9b082.htm" />
   <HelpKINode Title="ParameterNames.TimeZoneId field" Url="html/e6bb68f3-c09b-f235-ca7e-ab393b6fb783.htm" />
   <HelpKINode Title="ParameterNames.Type field" Url="html/306d115c-e16c-2013-5790-f6b22fc82b85.htm" />
@@ -2464,7 +2660,10 @@
   <HelpKINode Title="ParameterType enumeration" Url="html/9b62e51e-3c48-fdf7-bc6e-f17761057cfd.htm" />
   <HelpKINode Title="ParameterValue enumeration member" Url="html/75380504-dd4e-8a8e-c675-8c4e01a2f68b.htm" />
   <HelpKINode Title="Parcel enumeration member" Url="html/4bdfa733-7270-7bf6-c960-4d9d30bb9824.htm" />
-  <HelpKINode Title="Parent enumeration member" Url="html/4a34f061-fd74-2dea-e660-27aeb494befa.htm" />
+  <HelpKINode Title="Parent enumeration member">
+    <HelpKINode Title="RelatedTypes Enumeration" Url="html/bfca7821-a487-cbdc-1751-0b64f958a102.htm" />
+    <HelpKINode Title="RelationshipType Enumeration" Url="html/4a34f061-fd74-2dea-e660-27aeb494befa.htm" />
+  </HelpKINode>
   <HelpKINode Title="Parse method" Url="html/22bc1887-a035-5ee4-6e07-28f3b18e6f22.htm" />
   <HelpKINode Title="ParseFile method" Url="html/9ffca631-0ba4-de12-03db-67461c21c049.htm" />
   <HelpKINode Title="ParseFromFile method">
@@ -2600,6 +2799,7 @@
   <HelpKINode Title="PhotoProperty.Clone method" Url="html/4692de74-a015-7af1-f23d-ad43625fb2eb.htm" />
   <HelpKINode Title="PhotoProperty.DefaultValueLocation property" Url="html/f84def6d-481b-c796-690e-0ff21ecf9286.htm" />
   <HelpKINode Title="PhotoProperty.DeserializeParameters method" Url="html/021f1a51-086d-25c6-281b-52827e4da039.htm" />
+  <HelpKINode Title="PhotoProperty.EncodedValue property" Url="html/20fee567-3849-2773-6050-4d21061e3e90.htm" />
   <HelpKINode Title="PhotoProperty.GetImageBytes method" Url="html/8bfa8cd8-fcf3-544b-3577-f64f6c356d65.htm" />
   <HelpKINode Title="PhotoProperty.ImageType property" Url="html/76c39733-8393-f3cc-023e-efd4a3a387a2.htm" />
   <HelpKINode Title="PhotoProperty.PhotoProperty constructor" Url="html/d0273964-702e-6d17-93ba-43682101a95b.htm" />
@@ -2615,6 +2815,12 @@
     <HelpKINode Title="AddressTypes Enumeration" Url="html/4bdfa733-7270-7bf6-c960-4d9d30bb9824.htm" />
     <HelpKINode Title="EMailTypes Enumeration" Url="html/5f96172a-d83c-c636-2387-87a6c10d83f7.htm" />
     <HelpKINode Title="PhoneTypes Enumeration" Url="html/0cfcbe7a-f017-4e8d-a8d0-96fbf65e4b92.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PreferredOrder property">
+    <HelpKINode Title="AddressProperty.PreferredOrder Property " Url="html/4174fa22-7196-58f5-d43f-bfefbc3e1895.htm" />
+    <HelpKINode Title="EMailProperty.PreferredOrder Property " Url="html/d7279722-4c69-9123-8380-ccbb18d3659f.htm" />
+    <HelpKINode Title="RelatedProperty.PreferredOrder Property " Url="html/10f13b1e-9034-6111-7935-159c206e8d34.htm" />
+    <HelpKINode Title="TelephoneProperty.PreferredOrder Property " Url="html/b986a382-7b37-e7a0-71c4-578a52763078.htm" />
   </HelpKINode>
   <HelpKINode Title="Priority enumeration member" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
   <HelpKINode Title="Priority property">
@@ -2671,17 +2877,20 @@
     <HelpKINode Title="AttachPropertyCollection.PropagateVersion Method " Url="html/81038e10-c997-94b3-a2ed-21a12f23756a.htm" />
     <HelpKINode Title="AttendeePropertyCollection.PropagateVersion Method " Url="html/1c149f5e-1d8f-81a9-5cb4-d6a0d3a2f968.htm" />
     <HelpKINode Title="CalendarObject.PropagateVersion Method " Url="html/a0ee4ef0-1ffc-f34d-3a13-95a4902ebbf2.htm" />
+    <HelpKINode Title="ClientPidMapPropertyCollection.PropagateVersion Method " Url="html/b63125d9-49de-1984-d4f1-bd0e34b04195.htm" />
     <HelpKINode Title="ContactPropertyCollection.PropagateVersion Method " Url="html/a44c7f80-2064-0c8e-4341-32cd30c9862e.htm" />
     <HelpKINode Title="CustomPropertyCollection.PropagateVersion Method " Url="html/eb113ab0-caf4-3eb0-b276-395daf365e04.htm" />
     <HelpKINode Title="EMailPropertyCollection.PropagateVersion Method " Url="html/7834d1e6-89e1-d2b0-4d0a-7bb3dd1fcda7.htm" />
     <HelpKINode Title="ExDatePropertyCollection.PropagateVersion Method " Url="html/dfd74bcc-20ee-9ce9-3e0b-739f31cef42f.htm" />
     <HelpKINode Title="FreeBusyPropertyCollection.PropagateVersion Method " Url="html/644f723e-1c2f-e757-3df9-91ed830f1cfc.htm" />
     <HelpKINode Title="LabelPropertyCollection.PropagateVersion Method " Url="html/35840904-e4f5-8676-1b91-4337bf3da844.htm" />
+    <HelpKINode Title="MemberPropertyCollection.PropagateVersion Method " Url="html/92a45c39-c5f6-a474-ad4c-f79463f25476.htm" />
     <HelpKINode Title="NotePropertyCollection.PropagateVersion Method " Url="html/d23ca35f-8544-9465-7830-d5e31f34aba1.htm" />
     <HelpKINode Title="ObservanceRule.PropagateVersion Method " Url="html/264c272d-db4c-822a-7ff7-5dcb28aa3bd6.htm" />
     <HelpKINode Title="ObservanceRuleCollection.PropagateVersion Method " Url="html/81f14fc0-0553-6544-1f70-cc400f8aac9c.htm" />
     <HelpKINode Title="RDatePropertyCollection.PropagateVersion Method " Url="html/c211ca64-c387-52d0-5f01-a8888c10a30c.htm" />
     <HelpKINode Title="RecurringObject.PropagateVersion Method " Url="html/430887fd-69af-8202-4f81-f23779081a9a.htm" />
+    <HelpKINode Title="RelatedPropertyCollection.PropagateVersion Method " Url="html/bf88f844-a5e5-84e9-572b-841dbb5a3910.htm" />
     <HelpKINode Title="RelatedToPropertyCollection.PropagateVersion Method " Url="html/c15e2643-b1e1-97d2-5722-46adac46fad4.htm" />
     <HelpKINode Title="RequestStatusPropertyCollection.PropagateVersion Method " Url="html/5a560d35-891f-d4d1-bd7c-be655e6523b3.htm" />
     <HelpKINode Title="RRulePropertyCollection.PropagateVersion Method " Url="html/2b6275b2-878a-5793-8d31-9bbb0a302863.htm" />
@@ -2735,6 +2944,9 @@
   <HelpKINode Title="PropertyComparer&lt;T&gt;.Compare method" Url="html/169d805b-6664-a951-b954-6c490fe0902d.htm" />
   <HelpKINode Title="PropertyComparer&lt;T&gt;.GetPropertyValue method" Url="html/e1edc6e6-b10b-199b-c5ac-27a4f203a06a.htm" />
   <HelpKINode Title="PropertyComparer&lt;T&gt;.PropertyComparer constructor" Url="html/2771a6de-57c6-874c-a717-c360760d4dde.htm" />
+  <HelpKINode Title="PropertyId enumeration member" Url="html/9b62e51e-3c48-fdf7-bc6e-f17761057cfd.htm" />
+  <HelpKINode Title="PropertyId field" Url="html/3fa5d816-34a5-549e-808f-8bd84b8dce4e.htm" />
+  <HelpKINode Title="PropertyId property" Url="html/8d18e6fa-59ca-8342-ef08-af5dcdc5daec.htm" />
   <HelpKINode Title="PropertyName enumeration member" Url="html/75380504-dd4e-8a8e-c675-8c4e01a2f68b.htm" />
   <HelpKINode Title="PropertyParser method">
     <HelpKINode Title="PDIParser.PropertyParser Method " Url="html/c0279a8d-96e7-3610-2ff3-a8438cf9588f.htm" />
@@ -2921,14 +3133,13 @@
   <HelpKINode Title="RecurrencePattern class">
     <HelpKINode Title="RecurrencePattern Class" Url="html/9c24d9eb-bc14-f119-3dd2-b9c7dc1e45a3.htm" />
     <HelpKINode Title="RecurrencePattern Class" Url="html/f73aa036-f839-92c4-8939-a936924d60a3.htm" />
-    <HelpKINode Title="constructor" Url="html/f055bcf0-91be-243c-1cc2-b6c895dfa1c9.htm" />
     <HelpKINode Title="constructor" Url="html/f4f02986-e98e-c29b-c3dd-bf628e01abaf.htm" />
+    <HelpKINode Title="constructor" Url="html/f055bcf0-91be-243c-1cc2-b6c895dfa1c9.htm" />
     <HelpKINode Title="events" Url="html/864ddf24-f7f7-a47d-5aca-2bf07b1d31c9.htm" />
-    <HelpKINode Title="events" Url="html/3155897b-e9c0-bcc1-aeaf-9a313fd82942.htm" />
     <HelpKINode Title="methods" Url="html/35dc974a-deff-10dd-be79-b13b142b15fa.htm" />
     <HelpKINode Title="methods" Url="html/36f71680-892e-84c9-a0b0-c89fe1c83280.htm" />
-    <HelpKINode Title="properties" Url="html/540f3515-e779-b1ff-4464-a3ce06553a13.htm" />
     <HelpKINode Title="properties" Url="html/4406af32-11a4-5d07-b45a-93cdd55cbfa8.htm" />
+    <HelpKINode Title="properties" Url="html/540f3515-e779-b1ff-4464-a3ce06553a13.htm" />
   </HelpKINode>
   <HelpKINode Title="RecurrencePattern.Controls property" Url="html/490a3e3c-9e88-209d-70db-3557d8998ead.htm" />
   <HelpKINode Title="RecurrencePattern.CreateChildControls method" Url="html/f850ceb5-e9ac-80ff-0b04-91b0c2135f6f.htm" />
@@ -2948,31 +3159,31 @@
   </HelpKINode>
   <HelpKINode Title="RecurrencePattern.LoadPostData method" Url="html/eb9f6bee-37d6-ac91-891d-cc8aad6eb044.htm" />
   <HelpKINode Title="RecurrencePattern.MaximumPattern property">
-    <HelpKINode Title="RecurrencePattern.MaximumPattern Property " Url="html/e8a50cb0-01d0-d994-b63e-2fef60be99c9.htm" />
     <HelpKINode Title="RecurrencePattern.MaximumPattern Property " Url="html/14066c48-2413-ecee-d53e-c19492e00d11.htm" />
+    <HelpKINode Title="RecurrencePattern.MaximumPattern Property " Url="html/e8a50cb0-01d0-d994-b63e-2fef60be99c9.htm" />
   </HelpKINode>
   <HelpKINode Title="RecurrencePattern.OnPreRender method" Url="html/c9bcb5c3-d2cc-f718-686d-d51f25d9e6ce.htm" />
   <HelpKINode Title="RecurrencePattern.RaisePostDataChangedEvent method" Url="html/89897887-e048-ac7b-4d24-2fdf247db069.htm" />
   <HelpKINode Title="RecurrencePattern.RecurrencePattern constructor">
-    <HelpKINode Title="RecurrencePattern Constructor " Url="html/f4f02986-e98e-c29b-c3dd-bf628e01abaf.htm" />
     <HelpKINode Title="RecurrencePattern Constructor " Url="html/f055bcf0-91be-243c-1cc2-b6c895dfa1c9.htm" />
+    <HelpKINode Title="RecurrencePattern Constructor " Url="html/f4f02986-e98e-c29b-c3dd-bf628e01abaf.htm" />
   </HelpKINode>
   <HelpKINode Title="RecurrencePattern.SetRecurrence method">
-    <HelpKINode Title="RecurrencePattern.SetRecurrence Method " Url="html/7fed9f1e-688c-8fe8-854a-7d54e14e664a.htm" />
     <HelpKINode Title="RecurrencePattern.SetRecurrence Method " Url="html/23518382-3ac7-25d1-6af1-126aaeb1e143.htm" />
+    <HelpKINode Title="RecurrencePattern.SetRecurrence Method " Url="html/7fed9f1e-688c-8fe8-854a-7d54e14e664a.htm" />
   </HelpKINode>
   <HelpKINode Title="RecurrencePattern.ShowAdvanced property">
     <HelpKINode Title="RecurrencePattern.ShowAdvanced Property " Url="html/c8ebf230-e484-4092-6d2d-5e3727542e1f.htm" />
     <HelpKINode Title="RecurrencePattern.ShowAdvanced Property " Url="html/65945112-2c19-148d-5bf6-ea8ef4f7105f.htm" />
   </HelpKINode>
   <HelpKINode Title="RecurrencePattern.ShowCanOccurOnHoliday property">
-    <HelpKINode Title="RecurrencePattern.ShowCanOccurOnHoliday Property " Url="html/14fe4ce0-308c-81f7-27e7-60fb61c30a6a.htm" />
     <HelpKINode Title="RecurrencePattern.ShowCanOccurOnHoliday Property " Url="html/f2666852-291d-ecc4-06b3-cffc2b2ab846.htm" />
+    <HelpKINode Title="RecurrencePattern.ShowCanOccurOnHoliday Property " Url="html/14fe4ce0-308c-81f7-27e7-60fb61c30a6a.htm" />
   </HelpKINode>
   <HelpKINode Title="RecurrencePattern.ShowEndTime property" Url="html/bf0f1abb-e624-e080-f88c-dd4246342fb3.htm" />
   <HelpKINode Title="RecurrencePattern.ShowWeekStartDay property">
-    <HelpKINode Title="RecurrencePattern.ShowWeekStartDay Property " Url="html/32ff9409-62e6-a08d-ea03-8aa670320c73.htm" />
     <HelpKINode Title="RecurrencePattern.ShowWeekStartDay Property " Url="html/f373b774-bf0f-7a8a-047e-c3cb3824d60e.htm" />
+    <HelpKINode Title="RecurrencePattern.ShowWeekStartDay Property " Url="html/32ff9409-62e6-a08d-ea03-8aa670320c73.htm" />
   </HelpKINode>
   <HelpKINode Title="RecurrencePropertiesDlg class">
     <HelpKINode Title="RecurrencePropertiesDlg Class" Url="html/73b72b62-8f5b-8208-352c-c953a4cf7283.htm" />
@@ -3028,7 +3239,35 @@
   <HelpKINode Title="RecurYearly method" Url="html/7b6064ba-e924-cdd9-6ad6-89eedfcfa01d.htm" />
   <HelpKINode Title="Refresh enumeration member" Url="html/634d37fd-de11-0a87-5ef1-cebf1e30c817.htm" />
   <HelpKINode Title="Region property" Url="html/cbcf593c-56e9-7c00-615f-7de938660805.htm" />
+  <HelpKINode Title="Related enumeration member" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
   <HelpKINode Title="Related field" Url="html/5e57f4f7-ae5e-5a7b-4f90-6eb07e08ca88.htm" />
+  <HelpKINode Title="Related property" Url="html/a03b6487-66c4-5c3a-ad88-656ea8ebf78f.htm" />
+  <HelpKINode Title="RelatedProperty class">
+    <HelpKINode Title="RelatedProperty Class" Url="html/6ed69607-1717-858b-ce49-a55db1a039b8.htm" />
+    <HelpKINode Title="constructor" Url="html/c7de23fd-00a5-54d0-de52-c6c411c21938.htm" />
+    <HelpKINode Title="methods" Url="html/8f4d9227-8486-a90a-69f7-38677b40ae0b.htm" />
+    <HelpKINode Title="properties" Url="html/39ab7d8d-f3f8-5c5c-6ebe-6718eef86ac4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RelatedProperty.Clone method" Url="html/75805b6d-b184-e3c2-39b3-2bcd2142c3a7.htm" />
+  <HelpKINode Title="RelatedProperty.DefaultValueLocation property" Url="html/2abcd89c-be4f-32d1-8f25-385f5a9f0587.htm" />
+  <HelpKINode Title="RelatedProperty.DeserializeParameters method" Url="html/5754c0e6-0613-ca55-3c62-088b34c4775b.htm" />
+  <HelpKINode Title="RelatedProperty.PreferredOrder property" Url="html/10f13b1e-9034-6111-7935-159c206e8d34.htm" />
+  <HelpKINode Title="RelatedProperty.RelatedProperty constructor" Url="html/c7de23fd-00a5-54d0-de52-c6c411c21938.htm" />
+  <HelpKINode Title="RelatedProperty.RelatedTypes property" Url="html/891553bc-b39a-5655-5772-03cdd8f4c91a.htm" />
+  <HelpKINode Title="RelatedProperty.SerializeParameters method" Url="html/17fd68c2-a23e-c13d-0929-8ead2cd7b0c8.htm" />
+  <HelpKINode Title="RelatedProperty.Tag property" Url="html/afe25f27-9f71-82a7-d555-113e4aefd3d6.htm" />
+  <HelpKINode Title="RelatedProperty.VersionsSupported property" Url="html/f25edce4-f340-9c2a-4e52-95f6a5e012c4.htm" />
+  <HelpKINode Title="RelatedPropertyCollection class">
+    <HelpKINode Title="RelatedPropertyCollection Class" Url="html/4d741842-300b-90a7-6e50-00c79ba2bcf7.htm" />
+    <HelpKINode Title="constructor" Url="html/c539e45b-7691-60d9-b823-ad1b57352bc6.htm" />
+    <HelpKINode Title="events" Url="html/dcc59054-a832-f230-ed26-f0a741a76c47.htm" />
+    <HelpKINode Title="methods" Url="html/e9fa5a69-0517-c8b5-c63d-c0398c369905.htm" />
+    <HelpKINode Title="properties" Url="html/e3d2f8bf-91fd-1ff0-5713-076d8909cf1b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RelatedPropertyCollection.Add method" Url="html/64c7afe9-1635-a9b4-a9d7-b418d6cacf62.htm" />
+  <HelpKINode Title="RelatedPropertyCollection.FindFirstByType method" Url="html/5023633f-402a-b1c9-dc64-edfefb784595.htm" />
+  <HelpKINode Title="RelatedPropertyCollection.PropagateVersion method" Url="html/bf88f844-a5e5-84e9-572b-841dbb5a3910.htm" />
+  <HelpKINode Title="RelatedPropertyCollection.RelatedPropertyCollection constructor" Url="html/c539e45b-7691-60d9-b823-ad1b57352bc6.htm" />
   <HelpKINode Title="RelatedTo enumeration member" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
   <HelpKINode Title="RelatedTo property">
     <HelpKINode Title="VEvent.RelatedTo Property " Url="html/9e46eaf9-e18e-20d4-6530-9ec4f1641772.htm" />
@@ -3061,6 +3300,8 @@
   <HelpKINode Title="RelatedToPropertyCollection.Add method" Url="html/b5be60e2-265a-26d5-6d8d-aa4e66121f45.htm" />
   <HelpKINode Title="RelatedToPropertyCollection.PropagateVersion method" Url="html/c15e2643-b1e1-97d2-5722-46adac46fad4.htm" />
   <HelpKINode Title="RelatedToPropertyCollection.RelatedToPropertyCollection constructor" Url="html/dd756fa9-fb07-43f8-9b26-30b1c84617c2.htm" />
+  <HelpKINode Title="RelatedTypes enumeration" Url="html/bfca7821-a487-cbdc-1751-0b64f958a102.htm" />
+  <HelpKINode Title="RelatedTypes property" Url="html/891553bc-b39a-5655-5772-03cdd8f4c91a.htm" />
   <HelpKINode Title="RelationshipType enumeration" Url="html/4a34f061-fd74-2dea-e660-27aeb494befa.htm" />
   <HelpKINode Title="RelationshipType field" Url="html/01058a33-80e8-71f2-79a9-1bddab591a54.htm" />
   <HelpKINode Title="RelationshipType property" Url="html/851fe850-6f18-e93c-ba15-2d66e8fd6d19.htm" />
@@ -3265,12 +3506,15 @@
     <HelpKINode Title="LastModifiedProperty.SerializeParameters Method " Url="html/98ed7043-8696-4ec3-5757-c6ec9f8c7973.htm" />
     <HelpKINode Title="MimeNameProperty.SerializeParameters Method " Url="html/326526e3-01c8-4c14-61a8-5df435c91506.htm" />
     <HelpKINode Title="MimeSourceProperty.SerializeParameters Method " Url="html/de36297a-338d-75cc-0289-be18a99e3e2a.htm" />
+    <HelpKINode Title="NameProperty.SerializeParameters Method " Url="html/db51a1a2-150a-65fe-856f-c3335e5b327f.htm" />
+    <HelpKINode Title="OrganizationProperty.SerializeParameters Method " Url="html/a3819492-7085-f348-663c-8ca069d6385c.htm" />
     <HelpKINode Title="OrganizerProperty.SerializeParameters Method " Url="html/b2622929-240d-06b7-430b-ac51338a59b8.htm" />
     <HelpKINode Title="PhotoProperty.SerializeParameters Method " Url="html/e9786c2d-67f6-6b14-bff0-728517aa4105.htm" />
     <HelpKINode Title="ProductIdProperty.SerializeParameters Method " Url="html/24fc2bb3-b40c-bc61-63f1-f17a84e27301.htm" />
     <HelpKINode Title="PublicKeyProperty.SerializeParameters Method " Url="html/18dd228c-ff1c-6b61-9977-d117dcb22410.htm" />
     <HelpKINode Title="RDateProperty.SerializeParameters Method " Url="html/88457942-7308-9607-f3a1-7ffceed15d0e.htm" />
     <HelpKINode Title="RecurrenceIdProperty.SerializeParameters Method " Url="html/79da84c2-26f1-9bec-d93f-a67d22be90c9.htm" />
+    <HelpKINode Title="RelatedProperty.SerializeParameters Method " Url="html/17fd68c2-a23e-c13d-0929-8ead2cd7b0c8.htm" />
     <HelpKINode Title="RelatedToProperty.SerializeParameters Method " Url="html/8da8bc4b-87ad-7363-af46-9adff09d688d.htm" />
     <HelpKINode Title="SoundProperty.SerializeParameters Method " Url="html/643adbda-d8fa-727b-31d3-2c6c3961b1e5.htm" />
     <HelpKINode Title="TelephoneProperty.SerializeParameters Method " Url="html/425f1908-cd4f-772a-7f3e-cb83a38f3f56.htm" />
@@ -3278,6 +3522,7 @@
     <HelpKINode Title="TriggerProperty.SerializeParameters Method " Url="html/f7587408-f6d4-7fde-2d5d-2bbeae49e69a.htm" />
     <HelpKINode Title="UniqueIdProperty.SerializeParameters Method " Url="html/2d34b1e6-ff8d-83f0-b691-dd32aee40678.htm" />
   </HelpKINode>
+  <HelpKINode Title="SerializePropertyId method" Url="html/5f20bfe5-8d5d-6c7b-4152-da49e6175ea8.htm" />
   <HelpKINode Title="SerializeValueLocation method" Url="html/3b22527f-8422-f066-5423-b76e115257fc.htm" />
   <HelpKINode Title="SetAttachmentBytes method" Url="html/65df2849-f823-4e24-8621-40cbe3970d7d.htm" />
   <HelpKINode Title="SetImageBytes method" Url="html/fc58eb4a-dff2-3f56-0d22-b0732866a498.htm" />
@@ -3320,6 +3565,7 @@
   <HelpKINode Title="SetValue method" Url="html/e12e40f4-65a0-4d46-9285-f79eba3a0aba.htm" />
   <HelpKINode Title="SevenBit enumeration member" Url="html/1f51c248-ea9b-4b77-6896-750c0178f485.htm" />
   <HelpKINode Title="SevenBit field" Url="html/4b652f79-8f90-4edf-8f3d-69a1d778e65b.htm" />
+  <HelpKINode Title="Sex property" Url="html/929aaa8f-c66e-6d9b-340e-73c89a2bac00.htm" />
   <HelpKINode Title="ShouldSerializeValue method" Url="html/e1bc71e0-6367-8188-ff96-79b1053435d9.htm" />
   <HelpKINode Title="ShowAdvanced property">
     <HelpKINode Title="RecurrencePattern.ShowAdvanced Property " Url="html/65945112-2c19-148d-5bf6-ea8ef4f7105f.htm" />
@@ -3341,7 +3587,10 @@
     <HelpKINode Title="RecurrencePattern.ShowWeekStartDay Property " Url="html/32ff9409-62e6-a08d-ea03-8aa670320c73.htm" />
     <HelpKINode Title="RecurrencePropertiesDlg.ShowWeekStartDay Property " Url="html/2246e1d7-ebf2-0007-9063-e27ea979d426.htm" />
   </HelpKINode>
-  <HelpKINode Title="Sibling enumeration member" Url="html/4a34f061-fd74-2dea-e660-27aeb494befa.htm" />
+  <HelpKINode Title="Sibling enumeration member">
+    <HelpKINode Title="RelatedTypes Enumeration" Url="html/bfca7821-a487-cbdc-1751-0b64f958a102.htm" />
+    <HelpKINode Title="RelationshipType Enumeration" Url="html/4a34f061-fd74-2dea-e660-27aeb494befa.htm" />
+  </HelpKINode>
   <HelpKINode Title="Sort method">
     <HelpKINode Title="DateTimeCollection.Sort Method " Url="html/5d2172ed-6ca6-92c4-3bc2-730a76a6918c.htm" />
     <HelpKINode Title="ExtendedBindingList(T).Sort Method " Url="html/6a3db82b-cc60-15e8-2cbd-5c08e812d4b6.htm" />
@@ -3353,6 +3602,11 @@
     <HelpKINode Title="VTimeZoneCollection.Sort Method " Url="html/d36e64d8-cff6-00b9-6acb-a0632df70a76.htm" />
   </HelpKINode>
   <HelpKINode Title="SortableName property" Url="html/a9f35bd2-1e77-94b2-5cf1-a03d3dc43fef.htm" />
+  <HelpKINode Title="SortAs field" Url="html/057362f6-132e-3783-b821-4f02057f97d2.htm" />
+  <HelpKINode Title="SortAs property">
+    <HelpKINode Title="NameProperty.SortAs Property " Url="html/5c6fab31-e68e-1f1d-d767-be30a2612dad.htm" />
+    <HelpKINode Title="OrganizationProperty.SortAs Property " Url="html/a0ca3bbb-cd33-ff86-1e95-1782d1d4a14d.htm" />
+  </HelpKINode>
   <HelpKINode Title="SortDirectionCore property" Url="html/a386fd8c-3472-b31e-cfdf-671c59f15a2d.htm" />
   <HelpKINode Title="SortPropertyCore property" Url="html/bf08c651-5bc0-61cd-6581-3004e84a2a16.htm" />
   <HelpKINode Title="SortString enumeration member" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
@@ -3379,6 +3633,7 @@
   <HelpKINode Title="SoundProperty.Clone method" Url="html/98712e64-9354-1152-e36f-e9ab7b3fb40c.htm" />
   <HelpKINode Title="SoundProperty.DefaultValueLocation property" Url="html/a7cd4201-544a-209a-946f-c04b433a91e9.htm" />
   <HelpKINode Title="SoundProperty.DeserializeParameters method" Url="html/43f72619-ccf1-1df3-7486-9bb55f10a63d.htm" />
+  <HelpKINode Title="SoundProperty.EncodedValue property" Url="html/d6ac3f78-1807-d8d6-0451-0e6d800b1728.htm" />
   <HelpKINode Title="SoundProperty.GetSoundBytes method" Url="html/f1eed3c2-ead9-7c58-6c18-b7dc7f6014ea.htm" />
   <HelpKINode Title="SoundProperty.SerializeParameters method" Url="html/643adbda-d8fa-727b-31d3-2c6c3961b1e5.htm" />
   <HelpKINode Title="SoundProperty.SetSoundBytes method" Url="html/f63063f9-2f2d-07ef-8adb-37aa5b5c63ec.htm" />
@@ -3388,6 +3643,7 @@
   <HelpKINode Title="SoundProperty.VersionsSupported property" Url="html/4690341f-7bda-7b31-4ace-cd21bd85984d.htm" />
   <HelpKINode Title="SoundType property" Url="html/ff6e92ee-703b-92e9-ef17-5b9c79bc5639.htm" />
   <HelpKINode Title="SpecificationVersions enumeration" Url="html/4e500d10-66c8-3e57-8a9c-23311a5c5b25.htm" />
+  <HelpKINode Title="Spouse enumeration member" Url="html/bfca7821-a487-cbdc-1751-0b64f958a102.htm" />
   <HelpKINode Title="Standard enumeration member" Url="html/faa9b136-dc9c-2b97-63b6-a81635aa3afb.htm" />
   <HelpKINode Title="StandardDesignation property" Url="html/a4076ede-6d48-d4e0-fc14-5539acf53daf.htm" />
   <HelpKINode Title="StartDateProperty class">
@@ -3489,6 +3745,7 @@
   </HelpKINode>
   <HelpKINode Title="SupportsSearchingCore property" Url="html/de816c4f-d4d2-1a39-4d16-6f817084868c.htm" />
   <HelpKINode Title="SupportsSortingCore property" Url="html/93005004-5858-a718-d5d8-c52461f4180f.htm" />
+  <HelpKINode Title="Sweetheart enumeration member" Url="html/bfca7821-a487-cbdc-1751-0b64f958a102.htm" />
   <HelpKINode Title="SyncRoot property">
     <HelpKINode Title="ExtendedBindingList(T).SyncRoot Property " Url="html/16b04d88-e089-e118-cf0a-c4696a6a4c7f.htm" />
     <HelpKINode Title="VTimeZoneCollection.SyncRoot Property " Url="html/cab3f7e6-b74b-9fa9-173d-d0920f25ab26.htm" />
@@ -3497,6 +3754,7 @@
     <HelpKINode Title="ActionProperty.Tag Property " Url="html/5df0eb9f-ee1a-a076-449e-709ac68fbec7.htm" />
     <HelpKINode Title="AddressProperty.Tag Property " Url="html/10dfd853-c8f2-5a64-c21d-badd6358bec8.htm" />
     <HelpKINode Title="AgentProperty.Tag Property " Url="html/cb91106f-a7c8-4d8a-9acc-134b8d184d3d.htm" />
+    <HelpKINode Title="AnniversaryProperty.Tag Property " Url="html/eb073bf7-2a34-fcb6-8100-5f437e6c11d0.htm" />
     <HelpKINode Title="AttachProperty.Tag Property " Url="html/35eb791f-72f8-ddfb-e840-147c48d30092.htm" />
     <HelpKINode Title="AttendeeProperty.Tag Property " Url="html/42a938c8-bf78-a253-3730-52365ee5073a.htm" />
     <HelpKINode Title="BaseProperty.Tag Property " Url="html/8bd9d60f-40e5-b6f1-4dc4-ceb7e60ec79e.htm" />
@@ -3505,6 +3763,7 @@
     <HelpKINode Title="CalendarScaleProperty.Tag Property " Url="html/4b52c73c-56fd-ac56-2898-0c056673a6e8.htm" />
     <HelpKINode Title="CategoriesProperty.Tag Property " Url="html/8020edde-3098-5bd4-9427-dfbee1047727.htm" />
     <HelpKINode Title="ClassificationProperty.Tag Property " Url="html/5d339d7a-bbff-9714-cb8f-0c1823ff8b1d.htm" />
+    <HelpKINode Title="ClientPidMapProperty.Tag Property " Url="html/58c4b56d-dfd3-80f3-abbb-4461f4fac64f.htm" />
     <HelpKINode Title="CommentProperty.Tag Property " Url="html/248b2d2e-92c0-2650-073d-a62352c288c1.htm" />
     <HelpKINode Title="CompletedDateProperty.Tag Property " Url="html/ebd7e8d7-fb2d-4ac0-379b-26658da41c3f.htm" />
     <HelpKINode Title="ContactProperty.Tag Property " Url="html/06f8ed3b-fd42-79a8-baf1-9a6b7d304a61.htm" />
@@ -3520,13 +3779,16 @@
     <HelpKINode Title="ExRuleProperty.Tag Property " Url="html/2c0f0cea-23fb-32be-0748-28c38df0253e.htm" />
     <HelpKINode Title="FormattedNameProperty.Tag Property " Url="html/14bd4a3f-7c50-abf4-3c98-d4fa798164bd.htm" />
     <HelpKINode Title="FreeBusyProperty.Tag Property " Url="html/f807e89b-9558-0e86-6a49-cfe391fec239.htm" />
+    <HelpKINode Title="GenderProperty.Tag Property " Url="html/64d5ef69-623c-a5c1-7fe7-92bdfd9ccf00.htm" />
     <HelpKINode Title="GeographicPositionProperty.Tag Property " Url="html/eca77552-ab64-57bd-6456-bc1e9e2df7e2.htm" />
+    <HelpKINode Title="KindProperty.Tag Property " Url="html/70c5b33b-7849-ba48-f237-0aac86279457.htm" />
     <HelpKINode Title="LabelProperty.Tag Property " Url="html/8757969b-764c-59b0-2e28-c7d946b401e5.htm" />
     <HelpKINode Title="LastModifiedProperty.Tag Property " Url="html/afe14a60-0b78-7609-54f3-528d800c5754.htm" />
     <HelpKINode Title="LastRevisionProperty.Tag Property " Url="html/008c9671-45b3-5aa3-6acd-9ee73c98d365.htm" />
     <HelpKINode Title="LocationProperty.Tag Property " Url="html/198b7776-56d4-39b3-8406-e7320b068107.htm" />
     <HelpKINode Title="LogoProperty.Tag Property " Url="html/2005ab25-d14f-b6a6-01a2-4c61f66f04bb.htm" />
     <HelpKINode Title="MailerProperty.Tag Property " Url="html/fb69bb83-51c8-0fba-47a7-ca44f14d85ab.htm" />
+    <HelpKINode Title="MemberProperty.Tag Property " Url="html/9f28b96e-cb8f-b17d-b213-6ca9b0f486c0.htm" />
     <HelpKINode Title="MethodProperty.Tag Property " Url="html/28e67e00-f2ba-531a-9dc1-14c32b8203e1.htm" />
     <HelpKINode Title="MimeNameProperty.Tag Property " Url="html/ff273971-2885-b053-5ada-52d6c0ecc8af.htm" />
     <HelpKINode Title="MimeSourceProperty.Tag Property " Url="html/79fc7afb-1bd3-3b42-c395-5f4d73b77854.htm" />
@@ -3543,6 +3805,7 @@
     <HelpKINode Title="RDateProperty.Tag Property " Url="html/2444873b-bc4b-a2a7-a957-c0a6f4aa5239.htm" />
     <HelpKINode Title="RecurrenceCountProperty.Tag Property " Url="html/4aff8614-07b5-e4ac-e686-2e5fa0570766.htm" />
     <HelpKINode Title="RecurrenceIdProperty.Tag Property " Url="html/4cc3fbf2-5162-8abb-d624-3e60958dad7f.htm" />
+    <HelpKINode Title="RelatedProperty.Tag Property " Url="html/afe25f27-9f71-82a7-d555-113e4aefd3d6.htm" />
     <HelpKINode Title="RelatedToProperty.Tag Property " Url="html/be9a1191-c53d-54b7-d457-82cf47f5b31d.htm" />
     <HelpKINode Title="RepeatProperty.Tag Property " Url="html/639f2aa9-e019-b706-4009-b9890be2a947.htm" />
     <HelpKINode Title="RequestStatusProperty.Tag Property " Url="html/020fabb9-3f10-d528-2856-85ab68581ed4.htm" />
@@ -3578,10 +3841,13 @@
   <HelpKINode Title="TelephoneProperty.Clone method" Url="html/b10032d1-f3db-554d-00b8-f1bdd73f4443.htm" />
   <HelpKINode Title="TelephoneProperty.DefaultValueLocation property" Url="html/a94252d7-3aa3-c9a3-a8f5-08262c746408.htm" />
   <HelpKINode Title="TelephoneProperty.DeserializeParameters method" Url="html/75075736-0874-b561-abc6-ab2e5cbe5f6f.htm" />
+  <HelpKINode Title="TelephoneProperty.EncodedValue property" Url="html/818b6994-37b9-270c-1b22-fb441812197e.htm" />
   <HelpKINode Title="TelephoneProperty.PhoneTypes property" Url="html/d37ec775-e50d-32de-9195-d4d866f93803.htm" />
+  <HelpKINode Title="TelephoneProperty.PreferredOrder property" Url="html/b986a382-7b37-e7a0-71c4-578a52763078.htm" />
   <HelpKINode Title="TelephoneProperty.SerializeParameters method" Url="html/425f1908-cd4f-772a-7f3e-cb83a38f3f56.htm" />
   <HelpKINode Title="TelephoneProperty.Tag property" Url="html/72c5c202-3f54-0bb7-2fa0-0d9fb0e66ac6.htm" />
   <HelpKINode Title="TelephoneProperty.TelephoneProperty constructor" Url="html/84d05fe5-1d7c-2be1-fe68-777d60d378ab.htm" />
+  <HelpKINode Title="TelephoneProperty.UriPrefix property" Url="html/14649043-f48c-db1a-8336-d9e8d3e543e2.htm" />
   <HelpKINode Title="TelephoneProperty.VersionsSupported property" Url="html/f2927852-d480-29bb-1aaf-be0e45a5d3c0.htm" />
   <HelpKINode Title="TelephonePropertyCollection class">
     <HelpKINode Title="TelephonePropertyCollection Class" Url="html/3903b0d4-cefc-9977-e2c3-82abaa2f2f88.htm" />
@@ -3598,7 +3864,9 @@
   <HelpKINode Title="Telephones property" Url="html/40fa576c-242d-9708-0842-f0173c17ae2d.htm" />
   <HelpKINode Title="Telex enumeration member" Url="html/5f96172a-d83c-c636-2387-87a6c10d83f7.htm" />
   <HelpKINode Title="Tentative enumeration member" Url="html/03b11362-c1d5-a1be-86a4-02e8e68e7737.htm" />
+  <HelpKINode Title="Text enumeration member" Url="html/0cfcbe7a-f017-4e8d-a8d0-96fbf65e4b92.htm" />
   <HelpKINode Title="Text field" Url="html/aaee1c35-7a6b-f472-20f6-9e1a31206540.htm" />
+  <HelpKINode Title="TextPhone enumeration member" Url="html/0cfcbe7a-f017-4e8d-a8d0-96fbf65e4b92.htm" />
   <HelpKINode Title="Third enumeration member" Url="html/7a39c942-9587-d9dc-8d52-fb342891dee2.htm" />
   <HelpKINode Title="Thursday enumeration member" Url="html/53b91722-fff8-4fa1-397b-094731d0e6ae.htm" />
   <HelpKINode Title="Ticks property" Url="html/e0968a92-43a5-da31-eece-7ce88a141df1.htm" />
@@ -3645,7 +3913,10 @@
   <HelpKINode Title="TimeTransparencyProperty.Value property" Url="html/dabbb9f1-3285-4070-1e02-d0767b4fa160.htm" />
   <HelpKINode Title="TimeTransparencyProperty.VersionsSupported property" Url="html/9e46139b-0e0f-34c5-d86e-3224b25568e2.htm" />
   <HelpKINode Title="TimeZone enumeration member" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
-  <HelpKINode Title="TimeZone property" Url="html/ed451741-80b8-b210-55e3-02c3576fb37b.htm" />
+  <HelpKINode Title="TimeZone property">
+    <HelpKINode Title="AddressProperty.TimeZone Property " Url="html/650da44f-1890-8f42-8dcb-419894901508.htm" />
+    <HelpKINode Title="VCard.TimeZone Property " Url="html/ed451741-80b8-b210-55e3-02c3576fb37b.htm" />
+  </HelpKINode>
   <HelpKINode Title="TimeZoneDateTime property">
     <HelpKINode Title="BaseDateTimeProperty.TimeZoneDateTime Property " Url="html/ffb592c3-f81f-b165-1e6c-a89c2e9a74a2.htm" />
     <HelpKINode Title="RDateProperty.TimeZoneDateTime Property " Url="html/f2de9d05-9371-96d4-1cb5-e68b431989b6.htm" />
@@ -3938,6 +4209,8 @@
     <HelpKINode Title="VToDoCollection.UpdateTimeZoneId Method " Url="html/d8cb0a1a-6964-d6ee-dc3e-637c6a9b5a96.htm" />
   </HelpKINode>
   <HelpKINode Title="Uri field" Url="html/8af49238-b026-d2a1-2abc-e42051538287.htm" />
+  <HelpKINode Title="Uri property" Url="html/8786728e-244a-2c55-6205-02dc93b8ff35.htm" />
+  <HelpKINode Title="UriPrefix property" Url="html/14649043-f48c-db1a-8336-d9e8d3e543e2.htm" />
   <HelpKINode Title="Url enumeration member" Url="html/7378e96f-2bd2-c74f-4725-3dc169792efe.htm" />
   <HelpKINode Title="Url field" Url="html/e411ab4f-9428-a3d1-2926-8647ad4389cc.htm" />
   <HelpKINode Title="Url property">
@@ -4052,13 +4325,16 @@
     <HelpKINode Title="BaseDateTimeProperty.Value Property " Url="html/fa7df35f-1812-c29d-18ab-20c7c7a5dc4e.htm" />
     <HelpKINode Title="BaseProperty.Value Property " Url="html/5c2b2d97-157d-253b-1960-f2bdfb5a80ce.htm" />
     <HelpKINode Title="CategoriesProperty.Value Property " Url="html/ed77b40f-09ec-76c6-e05f-6624901eb0ec.htm" />
+    <HelpKINode Title="ClientPidMapProperty.Value Property " Url="html/65395735-a00b-92d6-75f2-51d938599141.htm" />
     <HelpKINode Title="CompletedDateProperty.Value Property " Url="html/15e6a40f-0a63-d6f7-c2b2-ed169142e98f.htm" />
     <HelpKINode Title="DateCreatedProperty.Value Property " Url="html/194621b5-1242-4844-cdfa-9dc72ade248b.htm" />
     <HelpKINode Title="DaylightProperty.Value Property " Url="html/bdf09fb0-3b0a-ca67-ae04-149ad74be732.htm" />
     <HelpKINode Title="DurationProperty.Value Property " Url="html/4701a7b3-5763-b8a4-212e-a49f6d73794e.htm" />
     <HelpKINode Title="FormattedNameProperty.Value Property " Url="html/bb573295-3fdc-e7a2-6885-38b9e626b317.htm" />
     <HelpKINode Title="FreeBusyProperty.Value Property " Url="html/739770d0-ed2c-235c-cea1-36c5afea9d73.htm" />
+    <HelpKINode Title="GenderProperty.Value Property " Url="html/a1740636-972d-822d-6b9c-91f75a0f000a.htm" />
     <HelpKINode Title="GeographicPositionProperty.Value Property " Url="html/f3e9f19a-d4f3-a6ab-7493-f1cee721dbfe.htm" />
+    <HelpKINode Title="KindProperty.Value Property " Url="html/c8c67d66-c508-5f64-2bb2-a450f3dfb8a0.htm" />
     <HelpKINode Title="LastModifiedProperty.Value Property " Url="html/34184e93-052b-ffaa-7f08-b79c207bbaef.htm" />
     <HelpKINode Title="ListItem.Value Property " Url="html/b66759f2-9043-bf2b-4922-4c16e2571587.htm" />
     <HelpKINode Title="MethodProperty.Value Property " Url="html/2d04873f-638e-9167-e865-36841face5fd.htm" />
@@ -4166,23 +4442,28 @@
   <HelpKINode Title="VCard.AddProfile property" Url="html/7a1a5535-8d0c-dbf2-ce54-ef0bb8ddf50e.htm" />
   <HelpKINode Title="VCard.Addresses property" Url="html/5c0309ff-be7c-4b72-feb5-38564c62c8a8.htm" />
   <HelpKINode Title="VCard.Agents property" Url="html/6b2b98a8-3fa3-0c65-3ac1-30ff238a610b.htm" />
+  <HelpKINode Title="VCard.Anniversary property" Url="html/d57f49c6-a611-818f-3648-81ea2cc487f4.htm" />
   <HelpKINode Title="VCard.BirthDate property" Url="html/1e5602f9-8e08-0f9b-15ed-9b475ad7afad.htm" />
   <HelpKINode Title="VCard.Categories property" Url="html/18a15b28-aacf-f677-dbbc-d360abcfa944.htm" />
   <HelpKINode Title="VCard.Classification property" Url="html/df914d14-ba20-9ea9-c2c4-638569bd54e2.htm" />
   <HelpKINode Title="VCard.ClearProperties method" Url="html/7b04e93e-080f-7be0-88a1-21d2fce06746.htm" />
+  <HelpKINode Title="VCard.ClientPidMaps property" Url="html/f7ee7794-bf24-e7c3-0b40-0ace93193192.htm" />
   <HelpKINode Title="VCard.Clone method" Url="html/b48b926c-c6c8-6d60-cf35-c40a76446267.htm" />
   <HelpKINode Title="VCard.CustomProperties property" Url="html/10a01ad3-962c-2363-5c44-f6b21f771391.htm" />
   <HelpKINode Title="VCard.EMailAddresses property" Url="html/c952259f-27c7-cc80-55be-ab458175a8c9.htm" />
   <HelpKINode Title="VCard.Equals method" Url="html/ce47044f-90fd-c8fa-654a-9217fc688c16.htm" />
   <HelpKINode Title="VCard.FormattedName property" Url="html/97f68537-0e08-e75d-c531-8e48ddf4c04e.htm" />
+  <HelpKINode Title="VCard.Gender property" Url="html/be4e2d3b-b5c4-6f74-28af-4d4a19c3c13a.htm" />
   <HelpKINode Title="VCard.GeographicPosition property" Url="html/299e2c99-232a-ed30-8570-ae2377e6fb9f.htm" />
   <HelpKINode Title="VCard.GetHashCode method" Url="html/be9a2121-1acd-1cb5-020f-53e9f265426c.htm" />
   <HelpKINode Title="VCard.GetObjectData method" Url="html/d6379ed0-84bf-fd41-d938-28bfd96ad01f.htm" />
   <HelpKINode Title="VCard.Group property" Url="html/f8e6ac16-35a3-2be3-223c-6f4050999303.htm" />
+  <HelpKINode Title="VCard.Kind property" Url="html/76e558e0-eb69-4e73-7d03-4a8c62e327eb.htm" />
   <HelpKINode Title="VCard.Labels property" Url="html/09bf2dde-bee3-478f-78e3-5d8a567c3e89.htm" />
   <HelpKINode Title="VCard.LastRevision property" Url="html/4746b956-d4dd-52e9-a21b-1fd41299d42b.htm" />
   <HelpKINode Title="VCard.Logo property" Url="html/961f1e18-968f-7197-da9a-0c403267e41f.htm" />
   <HelpKINode Title="VCard.Mailer property" Url="html/6b29ee5b-c5e4-114f-21ff-f17cff8c2b8f.htm" />
+  <HelpKINode Title="VCard.Members property" Url="html/7f841255-4547-9ab8-32df-e4766c30b262.htm" />
   <HelpKINode Title="VCard.MimeName property" Url="html/75c52478-3181-9634-7af2-51803856efbd.htm" />
   <HelpKINode Title="VCard.MimeSource property" Url="html/96a3c6e6-7f83-ffd8-442b-14d43ff98da9.htm" />
   <HelpKINode Title="VCard.Name property" Url="html/40b91717-c1d2-db7c-d574-0d5638a4ae10.htm" />
@@ -4193,6 +4474,7 @@
   <HelpKINode Title="VCard.ProductId property" Url="html/cc33bfe7-8292-a2bc-3ad3-a2517e170682.htm" />
   <HelpKINode Title="VCard.PropagateVersion method" Url="html/f67a8a15-af03-433a-2910-240a41cb57be.htm" />
   <HelpKINode Title="VCard.PublicKey property" Url="html/64f0696d-1783-66e4-f287-10a96341b0e0.htm" />
+  <HelpKINode Title="VCard.Related property" Url="html/a03b6487-66c4-5c3a-ad88-656ea8ebf78f.htm" />
   <HelpKINode Title="VCard.Role property" Url="html/e88c7495-c836-d179-b91b-682cb8a4adf0.htm" />
   <HelpKINode Title="VCard.SortString property" Url="html/d798557d-7fb8-0230-95f8-c53014318269.htm" />
   <HelpKINode Title="VCard.Sound property" Url="html/b72c65bd-8852-083d-fb79-33507a293c75.htm" />
@@ -4208,6 +4490,8 @@
   <HelpKINode Title="VCard.WriteToStream method" Url="html/4c9c9d3f-a7c1-67cf-740b-ced2b0256b6a.htm" />
   <HelpKINode Title="vCard21 enumeration member" Url="html/4e500d10-66c8-3e57-8a9c-23311a5c5b25.htm" />
   <HelpKINode Title="vCard30 enumeration member" Url="html/4e500d10-66c8-3e57-8a9c-23311a5c5b25.htm" />
+  <HelpKINode Title="vCard40 enumeration member" Url="html/4e500d10-66c8-3e57-8a9c-23311a5c5b25.htm" />
+  <HelpKINode Title="vCardAll enumeration member" Url="html/4e500d10-66c8-3e57-8a9c-23311a5c5b25.htm" />
   <HelpKINode Title="VCardCollection class">
     <HelpKINode Title="VCardCollection Class" Url="html/b80c0b39-94de-fbff-edff-1bab2ef23dbf.htm" />
     <HelpKINode Title="constructor" Url="html/63fb7457-f3a0-1f17-25a9-50ef6c5d5e3a.htm" />
@@ -4272,11 +4556,13 @@
     <HelpKINode Title="2.0.0.2" Url="html/c43f585a-7baf-4ec2-857d-d9ead022178f.htm" />
     <HelpKINode Title="2015.1.19.0" Url="html/6389a8d6-8432-4ee5-8d28-870a37c043f2.htm" />
     <HelpKINode Title="2018.12.1.0" Url="html/76059656-b2b1-4b89-8ba2-af4aa8aaebb6.htm" />
+    <HelpKINode Title="2020.1.18.0" Url="html/42acd77f-8657-45ca-a71c-14fa093e43ed.htm" />
   </HelpKINode>
   <HelpKINode Title="VersionsSupported property">
     <HelpKINode Title="ActionProperty.VersionsSupported Property " Url="html/73ed5182-fc90-63c3-f20b-4d03e3fd9079.htm" />
     <HelpKINode Title="AddressProperty.VersionsSupported Property " Url="html/81640d9f-19f1-7db5-6d4d-8340dfc459cd.htm" />
     <HelpKINode Title="AgentProperty.VersionsSupported Property " Url="html/6c6b6e9a-7bd8-fc9b-4803-dcc55f2c19e4.htm" />
+    <HelpKINode Title="AnniversaryProperty.VersionsSupported Property " Url="html/ce266a8b-d06c-6a97-bdfd-ce0789327ccf.htm" />
     <HelpKINode Title="AttachProperty.VersionsSupported Property " Url="html/ed996283-15dd-2555-3ed7-49b03940c5cd.htm" />
     <HelpKINode Title="AttendeeProperty.VersionsSupported Property " Url="html/94da4f17-c473-89c8-3b88-54b0eb5da7cd.htm" />
     <HelpKINode Title="BirthDateProperty.VersionsSupported Property " Url="html/3ca9ce01-c4f0-4b0b-928b-ba2fa7f3c4de.htm" />
@@ -4284,6 +4570,7 @@
     <HelpKINode Title="CalendarScaleProperty.VersionsSupported Property " Url="html/f6c53b5c-93f8-00dd-d682-a9115e923310.htm" />
     <HelpKINode Title="CategoriesProperty.VersionsSupported Property " Url="html/37c75dad-369c-bc34-dd25-b875978d0c96.htm" />
     <HelpKINode Title="ClassificationProperty.VersionsSupported Property " Url="html/2d71ee53-f1f8-7477-721e-13ecf6588f96.htm" />
+    <HelpKINode Title="ClientPidMapProperty.VersionsSupported Property " Url="html/832123ee-c473-1615-36fa-b404dd570a0b.htm" />
     <HelpKINode Title="CommentProperty.VersionsSupported Property " Url="html/0e8f0c17-a5b0-1e6c-b9fb-b1dd01b16220.htm" />
     <HelpKINode Title="CompletedDateProperty.VersionsSupported Property " Url="html/0a2a91fa-c638-6070-14c9-00f3165b5ffb.htm" />
     <HelpKINode Title="ContactProperty.VersionsSupported Property " Url="html/77f6f225-381b-6cc6-e863-305a297fc76a.htm" />
@@ -4298,13 +4585,16 @@
     <HelpKINode Title="ExDateProperty.VersionsSupported Property " Url="html/fb21ee45-527b-22ff-9355-d21446eeb568.htm" />
     <HelpKINode Title="FormattedNameProperty.VersionsSupported Property " Url="html/5d99966d-0a88-35e4-4651-1dcac2acf330.htm" />
     <HelpKINode Title="FreeBusyProperty.VersionsSupported Property " Url="html/179ae942-0597-747f-1a7b-c1764bf8f9f7.htm" />
+    <HelpKINode Title="GenderProperty.VersionsSupported Property " Url="html/4628a323-db2d-d9b1-4431-b8bd8a5f532c.htm" />
     <HelpKINode Title="GeographicPositionProperty.VersionsSupported Property " Url="html/03a74c3d-166d-d7e5-c586-f7acb13162c5.htm" />
+    <HelpKINode Title="KindProperty.VersionsSupported Property " Url="html/23da5098-2346-9bd6-1338-35f5e0fdb940.htm" />
     <HelpKINode Title="LabelProperty.VersionsSupported Property " Url="html/4ff9869c-76da-cbef-74d3-9bf937b502de.htm" />
     <HelpKINode Title="LastModifiedProperty.VersionsSupported Property " Url="html/52d37655-aa6a-34ee-c321-196654b095bb.htm" />
     <HelpKINode Title="LastRevisionProperty.VersionsSupported Property " Url="html/69614c93-ce11-5b44-4c0c-f32b738e6df2.htm" />
     <HelpKINode Title="LocationProperty.VersionsSupported Property " Url="html/d1e0033c-7e4c-0706-9933-9ecb09055c6f.htm" />
     <HelpKINode Title="LogoProperty.VersionsSupported Property " Url="html/8d178ac3-5751-8d8c-a293-d9211799092b.htm" />
     <HelpKINode Title="MailerProperty.VersionsSupported Property " Url="html/492dbf3b-4c33-fc6d-5afc-a51eebcc0bf7.htm" />
+    <HelpKINode Title="MemberProperty.VersionsSupported Property " Url="html/60348ac9-851c-b4f4-9801-aebe0e438b0c.htm" />
     <HelpKINode Title="MethodProperty.VersionsSupported Property " Url="html/6ad9836a-a51e-632c-5068-111d68896ae7.htm" />
     <HelpKINode Title="MimeNameProperty.VersionsSupported Property " Url="html/624f8ea5-9aa8-2808-0bfc-cd565219584e.htm" />
     <HelpKINode Title="MimeSourceProperty.VersionsSupported Property " Url="html/3c608ff9-02f8-e4d9-194b-163f7df19465.htm" />
@@ -4323,6 +4613,7 @@
     <HelpKINode Title="RDateProperty.VersionsSupported Property " Url="html/f498b6d2-7f48-be82-5c85-32a936a97255.htm" />
     <HelpKINode Title="RecurrenceCountProperty.VersionsSupported Property " Url="html/86aacb78-ac16-1f19-bc84-7e9fc5fe0078.htm" />
     <HelpKINode Title="RecurrenceIdProperty.VersionsSupported Property " Url="html/e75a69eb-b156-5f13-19de-fd921548fc84.htm" />
+    <HelpKINode Title="RelatedProperty.VersionsSupported Property " Url="html/f25edce4-f340-9c2a-4e52-95f6a5e012c4.htm" />
     <HelpKINode Title="RelatedToProperty.VersionsSupported Property " Url="html/1fda1c5e-5bd5-4ce9-2004-02686f5d6f11.htm" />
     <HelpKINode Title="RepeatProperty.VersionsSupported Property " Url="html/5f96bab9-d9ab-b9a9-b41e-49fe6a876686.htm" />
     <HelpKINode Title="RequestStatusProperty.VersionsSupported Property " Url="html/d183ebd3-7de0-a7cc-7aa4-44f1cc9bcc36.htm" />
