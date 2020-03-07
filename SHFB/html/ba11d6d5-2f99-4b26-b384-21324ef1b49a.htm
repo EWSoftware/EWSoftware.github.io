@@ -47,39 +47,7 @@ Definition context menu option or Ctrl+clicking the link will attempt to open th
 not already open, select the indicated ID.</p></li></ul></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />XML Comments</span></div><div id="ID1RBSection" class="collapsibleSection"><p>While editing C# source code, you can hover over the following XML comments elements.  If the
 target ID appears to be navigable, an underline will appear when the Ctrl key is held down and the tool tip will
 indicate that you can Ctrl+click on it.  Selecting the Go To Definition context menu option or Ctrl+clicking the
-link will attempt to navigate to the target element.</p><ul><li><p>The <span class="code">cref</span> attribute value on any XML comments element that supports
-it - This represents a code API member ID.  Selecting the Go To Definition context menu option or Ctrl+clicking
-the link will attempt to open the associated code file and jump to the indicated member.  Note that navigation is
-only available for members of C# projects within the current solution.  It is not possible to navigate to members
-in non-C# projects or to members of base framework or reference assemblies in Visual Studio 2013 or earlier.
-Visual Studio 2015 does support Go To Definition for reference targets in XML comments and Go To Definition will
-work for any valid target except those prefixed with an identifier type (E:, F:, M:, P:, or T:).</p><p>The member ID will be parsed and a best attempt will be made to match it to the correct code
-member.  However, since XML comments member IDs are rarely fully qualified, a number of assumptions have to be
-made and a set of search text candidates formulated as follows:</p><ul><li><p>Namespace identifiers (those IDs prefixed with "N:" or "G:") can never be matched to
-namespace declarations as namespaces do not exist as code elements identifiable in a search since they may
-appear in multiple locations.  As such, these IDs are translated to the related <span class="code">NamespaceDoc</span>
-or <span class="code">NamespaceGroupDoc</span> type ID and a search is performed for it instead within the
-identified namespace.</p></li><li><p>In the absence of any qualifying namespace or class identifiers and no parameters,
-preference will be given to matching class names first followed by class members.</p></li><li><p>If any parameter information is specified, only class members will be searched for matches
-(fields, properties, events, and methods in no particular order).</p></li><li><p>When searching for a class match, if the ID contains a namespace qualifier that matches
-the namespace containing the class being edited or an imported namespace identified in the file, only that
-namespace will be searched.</p></li><li><p>If no qualifier is present or it does not appear to match the containing namespace of the
-class being edited or an imported namespace, the containing namespace, its parent namespaces, and any imported
-namespaces will be searched.</p></li><li><p>In all cases, imported namespaces that look like core framework or Microsoft namespaces
-will be ignored unless the containing namespace starts with one of the ignored namespace identifiers.</p></li><li><p>When searching for class and member IDs with generic type parameters, an attempt is made to
-find the best match based on those type parameters.  Failing that, a best match based on the name alone is
-attempted.</p></li><li><p>Likewise, for member ID searches, if parameters are specified, an attempt is made to find
-the best match based on the specified parameter types.  Failing that, a best match based on the name alone is
-attempted.</p></li><li><p>As a last resort, if none of the formulated qualified names produce a match, an attempt is
-made to match the ID as given in the XML comments.</p></li><li><p>For specialized members such as constructors, finalizers, operator overloads, and
-explicitly implemented interface members, the search adjusts the member ID as needed to obtain the best possible
-match.</p></li></ul><p>With the above rules, there is a good probability that it will successfully navigate to the
-correct API member.  However, check to be sure that you ended up where you expected before making any changes.
-Due to the nature of trying to match unqualified member ID's there is always a degree of uncertainty in the final
-result.  If the ID cannot be found, building your project can help you determine if the ID is valid or not.
-Unless you have disabled the warnings, the compiler will validate all <span class="code">cref</span> member ID
-values and issues a warning if they are incorrect.  If the ID is correct and is within the current solution, you
-may have found a case that could not be matched with enough accuracy.</p></li><li><p>The <span class="code">conceptualLink</span> element's <span class="code">target</span> attribute
+link will attempt to navigate to the target element.</p><ul><li><p>The <span class="code">conceptualLink</span> element's <span class="code">target</span> attribute
 value - Hovering over this shows a tool tip containing the topic's title and filename.  If "(Not found)" is
 displayed for the title, the topic's ID could not be found in a content layout file within a help file builder
 project in the solution.  Select the Go To Definition context menu option or Ctrl+click on the link to open the
@@ -87,7 +55,7 @@ associated topic file.</p></li><li><p>The <span class="code">token</span> elemen
 token file.  The token ID must appear in a file within a help file builder project in the solution and the file's
 <span class="code">BuildAction</span> must be set to <span class="code">Tokens</span>.  Selecting the Go To
 Definition context menu option or Ctrl+clicking the link will attempt to open the associated token file and, if
-not already open, select the indicated ID.</p></li></ul></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID2RBSection" class="collapsibleSection"><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="7cbf7f9b-d456-430a-8f85-9e30ed250cfa.htm">Visual Studio Text Editor</a></div><div class="seeAlsoStyle"><a href="b128ad2a-787e-48c7-b946-f6953080c386.htm">Visual Studio Integration Package</a></div></div></div></div><div id="pageFooter" class="pageFooter"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank">[v2019.11.17.0] Copyright © 2006-2019, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
+not already open, select the indicated ID.</p></li></ul></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID2RBSection" class="collapsibleSection"><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="7cbf7f9b-d456-430a-8f85-9e30ed250cfa.htm">Visual Studio Text Editor</a></div><div class="seeAlsoStyle"><a href="b128ad2a-787e-48c7-b946-f6953080c386.htm">Visual Studio Integration Package</a></div></div></div></div><div id="pageFooter" class="pageFooter"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank">[v2020.3.6.0] Copyright © 2006-2020, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20Help%20File%20Builder%20Documentation">Eric Woodruff</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
