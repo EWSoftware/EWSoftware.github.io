@@ -48,6 +48,7 @@
     <HelpKINode Title="RequestStatusPropertyCollection.Add Method " Url="html/d568bfb9-e9b7-82a4-7f6a-ba3bf73df3ce.htm" />
     <HelpKINode Title="TelephonePropertyCollection.Add Method " Url="html/8d1702af-6ebd-92c4-4f94-4b1e8c9cf298.htm" />
     <HelpKINode Title="TimeZoneNamePropertyCollection.Add Method " Url="html/bd8046de-82c0-931e-7bd6-4addc267a186.htm" />
+    <HelpKINode Title="UrlPropertyCollection.Add Method " Url="html/ee64c85b-90c6-6fc6-1639-1228f2f7bdc8.htm" />
     <HelpKINode Title="VTimeZoneCollection.Add Method " Url="html/8ba7c8bc-1e0e-55aa-71b0-7c4d6402ca5d.htm" />
   </HelpKINode>
   <HelpKINode Title="AddFixed method" Url="html/b17f8690-9c30-6ec4-9e23-a1541e9e186b.htm" />
@@ -1591,6 +1592,7 @@
   <HelpKINode Title="EWSoftware.PDI.Properties.TriggerProperty class" Url="html/7f9c5109-7e1a-75f5-c53f-909b029ebd50.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.UniqueIdProperty class" Url="html/55bdbdea-eaf5-53f8-f7ce-b59fe914c80d.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.UrlProperty class" Url="html/f8ea15f8-99ff-506c-1376-aeb77a80f01b.htm" />
+  <HelpKINode Title="EWSoftware.PDI.Properties.UrlPropertyCollection class" Url="html/e8773792-0aa7-564a-df16-373c63b42421.htm" />
   <HelpKINode Title="EWSoftware.PDI.Properties.ValLocValue class" Url="html/8eb09425-7b17-0500-e23c-cf4b2464ae3c.htm" />
   <HelpKINode Title="EWSoftware.PDI.RecurFrequency enumeration" Url="html/c0a6ac32-6aac-86c6-339f-37524571b78e.htm" />
   <HelpKINode Title="EWSoftware.PDI.RecurOptsDataSource class" Url="html/b860e5f7-3920-7104-5ddc-4f52294fb21d.htm" />
@@ -1943,8 +1945,8 @@
   <HelpKINode Title="GetProperties method" Url="html/c2f17e95-f82e-a33d-40bc-88cca93035be.htm" />
   <HelpKINode Title="GetPropertyValue method" Url="html/e1edc6e6-b10b-199b-c5ac-27a4f203a06a.htm" />
   <HelpKINode Title="GetRecurrence method">
-    <HelpKINode Title="RecurrencePattern.GetRecurrence Method " Url="html/e200e2de-8dd7-1312-bc84-5e22a830dc5f.htm" />
     <HelpKINode Title="RecurrencePattern.GetRecurrence Method " Url="html/c7eafd9d-08bf-ddd7-1187-c5450a04d429.htm" />
+    <HelpKINode Title="RecurrencePattern.GetRecurrence Method " Url="html/e200e2de-8dd7-1312-bc84-5e22a830dc5f.htm" />
     <HelpKINode Title="RecurrencePropertiesDlg.GetRecurrence Method " Url="html/20672677-37e0-1a35-1747-62bb87e4003f.htm" />
   </HelpKINode>
   <HelpKINode Title="GetSchema method" Url="html/42689dbd-5b98-8300-b471-ff92bd374b13.htm" />
@@ -2896,6 +2898,7 @@
     <HelpKINode Title="RRulePropertyCollection.PropagateVersion Method " Url="html/2b6275b2-878a-5793-8d31-9bbb0a302863.htm" />
     <HelpKINode Title="TelephonePropertyCollection.PropagateVersion Method " Url="html/038ebf27-e189-1226-3e5b-b4d2cc93a045.htm" />
     <HelpKINode Title="TimeZoneNamePropertyCollection.PropagateVersion Method " Url="html/0b320107-844e-31c9-6666-386eb9360055.htm" />
+    <HelpKINode Title="UrlPropertyCollection.PropagateVersion Method " Url="html/b2a008f2-5596-0d74-1792-27a75a0852c2.htm" />
     <HelpKINode Title="VAlarm.PropagateVersion Method " Url="html/0b5004f4-c7ec-9d4f-f9c8-64ce6c413830.htm" />
     <HelpKINode Title="VAlarmCollection.PropagateVersion Method " Url="html/22c739bf-f3cb-5125-e30e-ae1f04ce322a.htm" />
     <HelpKINode Title="VCalendar.PropagateVersion Method " Url="html/c013d3df-a5c0-1216-72cb-8b6135d4654f.htm" />
@@ -3133,11 +3136,11 @@
   <HelpKINode Title="RecurrencePattern class">
     <HelpKINode Title="RecurrencePattern Class" Url="html/9c24d9eb-bc14-f119-3dd2-b9c7dc1e45a3.htm" />
     <HelpKINode Title="RecurrencePattern Class" Url="html/f73aa036-f839-92c4-8939-a936924d60a3.htm" />
-    <HelpKINode Title="constructor" Url="html/f4f02986-e98e-c29b-c3dd-bf628e01abaf.htm" />
     <HelpKINode Title="constructor" Url="html/f055bcf0-91be-243c-1cc2-b6c895dfa1c9.htm" />
+    <HelpKINode Title="constructor" Url="html/f4f02986-e98e-c29b-c3dd-bf628e01abaf.htm" />
     <HelpKINode Title="events" Url="html/864ddf24-f7f7-a47d-5aca-2bf07b1d31c9.htm" />
-    <HelpKINode Title="methods" Url="html/35dc974a-deff-10dd-be79-b13b142b15fa.htm" />
     <HelpKINode Title="methods" Url="html/36f71680-892e-84c9-a0b0-c89fe1c83280.htm" />
+    <HelpKINode Title="methods" Url="html/35dc974a-deff-10dd-be79-b13b142b15fa.htm" />
     <HelpKINode Title="properties" Url="html/4406af32-11a4-5d07-b45a-93cdd55cbfa8.htm" />
     <HelpKINode Title="properties" Url="html/540f3515-e779-b1ff-4464-a3ce06553a13.htm" />
   </HelpKINode>
@@ -3154,19 +3157,19 @@
   <HelpKINode Title="RecurrencePattern.Dispose method" Url="html/22c9d53f-1296-fd22-1e70-fe428410edb8.htm" />
   <HelpKINode Title="RecurrencePattern.Focus method" Url="html/885ada44-f0d6-e0ff-dbde-ca8fb85e3dbf.htm" />
   <HelpKINode Title="RecurrencePattern.GetRecurrence method">
-    <HelpKINode Title="RecurrencePattern.GetRecurrence Method " Url="html/c7eafd9d-08bf-ddd7-1187-c5450a04d429.htm" />
     <HelpKINode Title="RecurrencePattern.GetRecurrence Method " Url="html/e200e2de-8dd7-1312-bc84-5e22a830dc5f.htm" />
+    <HelpKINode Title="RecurrencePattern.GetRecurrence Method " Url="html/c7eafd9d-08bf-ddd7-1187-c5450a04d429.htm" />
   </HelpKINode>
   <HelpKINode Title="RecurrencePattern.LoadPostData method" Url="html/eb9f6bee-37d6-ac91-891d-cc8aad6eb044.htm" />
   <HelpKINode Title="RecurrencePattern.MaximumPattern property">
-    <HelpKINode Title="RecurrencePattern.MaximumPattern Property " Url="html/14066c48-2413-ecee-d53e-c19492e00d11.htm" />
     <HelpKINode Title="RecurrencePattern.MaximumPattern Property " Url="html/e8a50cb0-01d0-d994-b63e-2fef60be99c9.htm" />
+    <HelpKINode Title="RecurrencePattern.MaximumPattern Property " Url="html/14066c48-2413-ecee-d53e-c19492e00d11.htm" />
   </HelpKINode>
   <HelpKINode Title="RecurrencePattern.OnPreRender method" Url="html/c9bcb5c3-d2cc-f718-686d-d51f25d9e6ce.htm" />
   <HelpKINode Title="RecurrencePattern.RaisePostDataChangedEvent method" Url="html/89897887-e048-ac7b-4d24-2fdf247db069.htm" />
   <HelpKINode Title="RecurrencePattern.RecurrencePattern constructor">
-    <HelpKINode Title="RecurrencePattern Constructor " Url="html/f055bcf0-91be-243c-1cc2-b6c895dfa1c9.htm" />
     <HelpKINode Title="RecurrencePattern Constructor " Url="html/f4f02986-e98e-c29b-c3dd-bf628e01abaf.htm" />
+    <HelpKINode Title="RecurrencePattern Constructor " Url="html/f055bcf0-91be-243c-1cc2-b6c895dfa1c9.htm" />
   </HelpKINode>
   <HelpKINode Title="RecurrencePattern.SetRecurrence method">
     <HelpKINode Title="RecurrencePattern.SetRecurrence Method " Url="html/23518382-3ac7-25d1-6af1-126aaeb1e143.htm" />
@@ -3177,13 +3180,13 @@
     <HelpKINode Title="RecurrencePattern.ShowAdvanced Property " Url="html/65945112-2c19-148d-5bf6-ea8ef4f7105f.htm" />
   </HelpKINode>
   <HelpKINode Title="RecurrencePattern.ShowCanOccurOnHoliday property">
-    <HelpKINode Title="RecurrencePattern.ShowCanOccurOnHoliday Property " Url="html/f2666852-291d-ecc4-06b3-cffc2b2ab846.htm" />
     <HelpKINode Title="RecurrencePattern.ShowCanOccurOnHoliday Property " Url="html/14fe4ce0-308c-81f7-27e7-60fb61c30a6a.htm" />
+    <HelpKINode Title="RecurrencePattern.ShowCanOccurOnHoliday Property " Url="html/f2666852-291d-ecc4-06b3-cffc2b2ab846.htm" />
   </HelpKINode>
   <HelpKINode Title="RecurrencePattern.ShowEndTime property" Url="html/bf0f1abb-e624-e080-f88c-dd4246342fb3.htm" />
   <HelpKINode Title="RecurrencePattern.ShowWeekStartDay property">
-    <HelpKINode Title="RecurrencePattern.ShowWeekStartDay Property " Url="html/f373b774-bf0f-7a8a-047e-c3cb3824d60e.htm" />
     <HelpKINode Title="RecurrencePattern.ShowWeekStartDay Property " Url="html/32ff9409-62e6-a08d-ea03-8aa670320c73.htm" />
+    <HelpKINode Title="RecurrencePattern.ShowWeekStartDay Property " Url="html/f373b774-bf0f-7a8a-047e-c3cb3824d60e.htm" />
   </HelpKINode>
   <HelpKINode Title="RecurrencePropertiesDlg class">
     <HelpKINode Title="RecurrencePropertiesDlg Class" Url="html/73b72b62-8f5b-8208-352c-c953a4cf7283.htm" />
@@ -3568,13 +3571,13 @@
   <HelpKINode Title="Sex property" Url="html/929aaa8f-c66e-6d9b-340e-73c89a2bac00.htm" />
   <HelpKINode Title="ShouldSerializeValue method" Url="html/e1bc71e0-6367-8188-ff96-79b1053435d9.htm" />
   <HelpKINode Title="ShowAdvanced property">
-    <HelpKINode Title="RecurrencePattern.ShowAdvanced Property " Url="html/65945112-2c19-148d-5bf6-ea8ef4f7105f.htm" />
     <HelpKINode Title="RecurrencePattern.ShowAdvanced Property " Url="html/c8ebf230-e484-4092-6d2d-5e3727542e1f.htm" />
+    <HelpKINode Title="RecurrencePattern.ShowAdvanced Property " Url="html/65945112-2c19-148d-5bf6-ea8ef4f7105f.htm" />
     <HelpKINode Title="RecurrencePropertiesDlg.ShowAdvanced Property " Url="html/e7836629-8088-9a70-2d30-4f407dbdad54.htm" />
   </HelpKINode>
   <HelpKINode Title="ShowCanOccurOnHoliday property">
-    <HelpKINode Title="RecurrencePattern.ShowCanOccurOnHoliday Property " Url="html/14fe4ce0-308c-81f7-27e7-60fb61c30a6a.htm" />
     <HelpKINode Title="RecurrencePattern.ShowCanOccurOnHoliday Property " Url="html/f2666852-291d-ecc4-06b3-cffc2b2ab846.htm" />
+    <HelpKINode Title="RecurrencePattern.ShowCanOccurOnHoliday Property " Url="html/14fe4ce0-308c-81f7-27e7-60fb61c30a6a.htm" />
     <HelpKINode Title="RecurrencePropertiesDlg.ShowCanOccurOnHoliday Property " Url="html/83a3f461-5e41-3d5c-5ac9-ff45050bb07f.htm" />
   </HelpKINode>
   <HelpKINode Title="ShowEndTime property">
@@ -4231,6 +4234,17 @@
   <HelpKINode Title="UrlProperty.Tag property" Url="html/c05905cc-ce35-2177-053b-550634f55885.htm" />
   <HelpKINode Title="UrlProperty.UrlProperty constructor" Url="html/b4853e1c-450a-9454-8ca5-81fef56dfd4d.htm" />
   <HelpKINode Title="UrlProperty.VersionsSupported property" Url="html/1703a413-dca7-aea4-f279-78c70b58ecea.htm" />
+  <HelpKINode Title="UrlPropertyCollection class">
+    <HelpKINode Title="UrlPropertyCollection Class" Url="html/e8773792-0aa7-564a-df16-373c63b42421.htm" />
+    <HelpKINode Title="constructor" Url="html/e84e464a-19d6-eebb-ebdd-423a8fe4fa5a.htm" />
+    <HelpKINode Title="events" Url="html/18b63f97-bc11-f48a-39de-8e4cfcd9c643.htm" />
+    <HelpKINode Title="methods" Url="html/41fa22ac-dc6b-bb47-f611-6f4eb30e6260.htm" />
+    <HelpKINode Title="properties" Url="html/3dac08ef-2222-a2e2-3961-a9c6141c68d1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UrlPropertyCollection.Add method" Url="html/ee64c85b-90c6-6fc6-1639-1228f2f7bdc8.htm" />
+  <HelpKINode Title="UrlPropertyCollection.PropagateVersion method" Url="html/b2a008f2-5596-0d74-1792-27a75a0852c2.htm" />
+  <HelpKINode Title="UrlPropertyCollection.UrlPropertyCollection constructor" Url="html/e84e464a-19d6-eebb-ebdd-423a8fe4fa5a.htm" />
+  <HelpKINode Title="Urls property" Url="html/88e28df0-0931-dcb9-dccb-752ec40c99e0.htm" />
   <HelpKINode Title="usage notes">
     <HelpKINode Title="Usage Notes" Url="html/695cc5b6-0937-42cd-9e7a-2f8aab4f09b0.htm" />
     <HelpKINode Title="data binding support" Url="html/fd783396-0c32-4839-b171-a263aa40fabc.htm" />
@@ -4484,6 +4498,7 @@
   <HelpKINode Title="VCard.ToString method" Url="html/51c42178-4bc9-ffdb-c2e2-d0382b44a59e.htm" />
   <HelpKINode Title="VCard.UniqueId property" Url="html/0b5bfeb6-df37-580a-d99b-b5b8c186e379.htm" />
   <HelpKINode Title="VCard.Url property" Url="html/f7d9d812-796a-f8b2-714d-53f2109867e5.htm" />
+  <HelpKINode Title="VCard.Urls property" Url="html/88e28df0-0931-dcb9-dccb-752ec40c99e0.htm" />
   <HelpKINode Title="VCard.VCard constructor" Url="html/91de58f2-fd72-2522-a8a7-c273d0b38df4.htm" />
   <HelpKINode Title="VCard.Version property" Url="html/06092c08-9856-51ba-19ba-19e51a3a0352.htm" />
   <HelpKINode Title="VCard.VersionsSupported property" Url="html/1ddfa8d3-0a26-c352-ce65-a50de64bc1de.htm" />
@@ -4557,6 +4572,7 @@
     <HelpKINode Title="2015.1.19.0" Url="html/6389a8d6-8432-4ee5-8d28-870a37c043f2.htm" />
     <HelpKINode Title="2018.12.1.0" Url="html/76059656-b2b1-4b89-8ba2-af4aa8aaebb6.htm" />
     <HelpKINode Title="2020.1.18.0" Url="html/42acd77f-8657-45ca-a71c-14fa093e43ed.htm" />
+    <HelpKINode Title="2020.7.24.0" Url="html/1b2453e6-586d-4d6f-83a4-435fea3d473c.htm" />
   </HelpKINode>
   <HelpKINode Title="VersionsSupported property">
     <HelpKINode Title="ActionProperty.VersionsSupported Property " Url="html/73ed5182-fc90-63c3-f20b-4d03e3fd9079.htm" />
