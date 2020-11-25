@@ -162,6 +162,7 @@
   <HelpKINode Title="BaseButtonList.OnTitleFontChanged method" Url="html/47653800-e664-0fbd-83cc-5828162596bf.htm" />
   <HelpKINode Title="BaseButtonList.OnTitleForeColorChanged method" Url="html/5ce2e704-580a-3823-412b-29c74b506e11.htm" />
   <HelpKINode Title="BaseButtonList.OnTitleTextChanged method" Url="html/459c4ef5-865c-a243-1189-0b4a92a4fd93.htm" />
+  <HelpKINode Title="BaseButtonList.SetImageIndex method" Url="html/ddcbaf77-10f1-2517-30d0-932c8dc87321.htm" />
   <HelpKINode Title="BaseButtonList.SizeAllToWidest property" Url="html/559d9db2-d8e0-bac2-9245-1b7e32c59d4e.htm" />
   <HelpKINode Title="BaseButtonList.TextAlign property" Url="html/e3aecdbd-9ad0-e771-a882-c6d8f94bb70a.htm" />
   <HelpKINode Title="BaseButtonList.TitleBackColor property" Url="html/6da5cb17-123c-77fe-27c0-0747790b3274.htm" />
@@ -1750,10 +1751,10 @@
   <HelpKINode Title="NullImage property" Url="html/e97ef638-1b2f-9659-f074-b0769489a4ed.htm" />
   <HelpKINode Title="NullImageIndex property" Url="html/b8dd4978-d4f5-86c1-8d39-cb9bfb9be270.htm" />
   <HelpKINode Title="ObjectCollection class">
-    <HelpKINode Title="methods" Url="html/1391c631-7ed2-9e72-fa6a-84d35cb1f486.htm" />
     <HelpKINode Title="methods" Url="html/ce26bd74-7d11-17a4-78f1-a43abbe19adf.htm" />
-    <HelpKINode Title="properties" Url="html/2cd61d42-81f7-0649-2b29-fb92f8ce5ad0.htm" />
+    <HelpKINode Title="methods" Url="html/1391c631-7ed2-9e72-fa6a-84d35cb1f486.htm" />
     <HelpKINode Title="properties" Url="html/82a4cb8d-24b1-040b-3976-ea896dc2a837.htm" />
+    <HelpKINode Title="properties" Url="html/2cd61d42-81f7-0649-2b29-fb92f8ce5ad0.htm" />
   </HelpKINode>
   <HelpKINode Title="OnAddDeleteButtonsVisibleChanged method">
     <HelpKINode Title="DataList.OnAddDeleteButtonsVisibleChanged Method " Url="html/22fabda3-fb93-90c6-de72-d6f1b75ab3f5.htm" />
@@ -2189,6 +2190,7 @@
     <HelpKINode Title="DataList.SetDataBinding Method " Url="html/43b0a6fc-e0f5-0ec7-5ec9-39463f36ca41.htm" />
     <HelpKINode Title="DataNavigator.SetDataBinding Method " Url="html/4635baf2-b94e-c90b-f6cf-d94edb6736f6.htm" />
   </HelpKINode>
+  <HelpKINode Title="SetImageIndex method" Url="html/ddcbaf77-10f1-2517-30d0-932c8dc87321.htm" />
   <HelpKINode Title="SetItem method" Url="html/91ffa6c7-2a34-1887-c285-789ccaf477de.htm" />
   <HelpKINode Title="SetItemChecked method" Url="html/c70d449e-2546-65d9-a69d-0632fa6750f0.htm" />
   <HelpKINode Title="SetItemCheckState method" Url="html/e9afbc66-b4ff-e898-4e75-a16ca3e9835a.htm" />
@@ -2423,6 +2425,7 @@
     <HelpKINode Title="1.2.0.8" Url="html/ed07194b-6f39-437a-8c1b-0541ad0af913.htm" />
     <HelpKINode Title="2015.1.19.0" Url="html/c12469c0-01ff-4d97-ae22-4ccc676250c3.htm" />
     <HelpKINode Title="2015.1.27.0" Url="html/75eb03a7-14b0-4635-a0eb-5f615a06f12d.htm" />
+    <HelpKINode Title="2020.11.25.0" Url="html/ee30a16f-43b6-4c64-b196-2a2036a261dc.htm" />
   </HelpKINode>
   <HelpKINode Title="versions 1.2.1.9" Url="html/d9ee097a-5a83-4549-921c-83fb22c413e4.htm" />
   <HelpKINode Title="welcome" Url="html/ca3b503d-654e-4fe6-8ca3-ec3ea8fb9a1a.htm" />
