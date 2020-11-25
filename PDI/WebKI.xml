@@ -3157,23 +3157,23 @@
   <HelpKINode Title="RecurrencePattern.Dispose method" Url="html/22c9d53f-1296-fd22-1e70-fe428410edb8.htm" />
   <HelpKINode Title="RecurrencePattern.Focus method" Url="html/885ada44-f0d6-e0ff-dbde-ca8fb85e3dbf.htm" />
   <HelpKINode Title="RecurrencePattern.GetRecurrence method">
-    <HelpKINode Title="RecurrencePattern.GetRecurrence Method " Url="html/e200e2de-8dd7-1312-bc84-5e22a830dc5f.htm" />
     <HelpKINode Title="RecurrencePattern.GetRecurrence Method " Url="html/c7eafd9d-08bf-ddd7-1187-c5450a04d429.htm" />
+    <HelpKINode Title="RecurrencePattern.GetRecurrence Method " Url="html/e200e2de-8dd7-1312-bc84-5e22a830dc5f.htm" />
   </HelpKINode>
   <HelpKINode Title="RecurrencePattern.LoadPostData method" Url="html/eb9f6bee-37d6-ac91-891d-cc8aad6eb044.htm" />
   <HelpKINode Title="RecurrencePattern.MaximumPattern property">
-    <HelpKINode Title="RecurrencePattern.MaximumPattern Property " Url="html/e8a50cb0-01d0-d994-b63e-2fef60be99c9.htm" />
     <HelpKINode Title="RecurrencePattern.MaximumPattern Property " Url="html/14066c48-2413-ecee-d53e-c19492e00d11.htm" />
+    <HelpKINode Title="RecurrencePattern.MaximumPattern Property " Url="html/e8a50cb0-01d0-d994-b63e-2fef60be99c9.htm" />
   </HelpKINode>
   <HelpKINode Title="RecurrencePattern.OnPreRender method" Url="html/c9bcb5c3-d2cc-f718-686d-d51f25d9e6ce.htm" />
   <HelpKINode Title="RecurrencePattern.RaisePostDataChangedEvent method" Url="html/89897887-e048-ac7b-4d24-2fdf247db069.htm" />
   <HelpKINode Title="RecurrencePattern.RecurrencePattern constructor">
-    <HelpKINode Title="RecurrencePattern Constructor " Url="html/f4f02986-e98e-c29b-c3dd-bf628e01abaf.htm" />
     <HelpKINode Title="RecurrencePattern Constructor " Url="html/f055bcf0-91be-243c-1cc2-b6c895dfa1c9.htm" />
+    <HelpKINode Title="RecurrencePattern Constructor " Url="html/f4f02986-e98e-c29b-c3dd-bf628e01abaf.htm" />
   </HelpKINode>
   <HelpKINode Title="RecurrencePattern.SetRecurrence method">
-    <HelpKINode Title="RecurrencePattern.SetRecurrence Method " Url="html/23518382-3ac7-25d1-6af1-126aaeb1e143.htm" />
     <HelpKINode Title="RecurrencePattern.SetRecurrence Method " Url="html/7fed9f1e-688c-8fe8-854a-7d54e14e664a.htm" />
+    <HelpKINode Title="RecurrencePattern.SetRecurrence Method " Url="html/23518382-3ac7-25d1-6af1-126aaeb1e143.htm" />
   </HelpKINode>
   <HelpKINode Title="RecurrencePattern.ShowAdvanced property">
     <HelpKINode Title="RecurrencePattern.ShowAdvanced Property " Url="html/c8ebf230-e484-4092-6d2d-5e3727542e1f.htm" />
@@ -3571,13 +3571,13 @@
   <HelpKINode Title="Sex property" Url="html/929aaa8f-c66e-6d9b-340e-73c89a2bac00.htm" />
   <HelpKINode Title="ShouldSerializeValue method" Url="html/e1bc71e0-6367-8188-ff96-79b1053435d9.htm" />
   <HelpKINode Title="ShowAdvanced property">
-    <HelpKINode Title="RecurrencePattern.ShowAdvanced Property " Url="html/c8ebf230-e484-4092-6d2d-5e3727542e1f.htm" />
     <HelpKINode Title="RecurrencePattern.ShowAdvanced Property " Url="html/65945112-2c19-148d-5bf6-ea8ef4f7105f.htm" />
+    <HelpKINode Title="RecurrencePattern.ShowAdvanced Property " Url="html/c8ebf230-e484-4092-6d2d-5e3727542e1f.htm" />
     <HelpKINode Title="RecurrencePropertiesDlg.ShowAdvanced Property " Url="html/e7836629-8088-9a70-2d30-4f407dbdad54.htm" />
   </HelpKINode>
   <HelpKINode Title="ShowCanOccurOnHoliday property">
-    <HelpKINode Title="RecurrencePattern.ShowCanOccurOnHoliday Property " Url="html/f2666852-291d-ecc4-06b3-cffc2b2ab846.htm" />
     <HelpKINode Title="RecurrencePattern.ShowCanOccurOnHoliday Property " Url="html/14fe4ce0-308c-81f7-27e7-60fb61c30a6a.htm" />
+    <HelpKINode Title="RecurrencePattern.ShowCanOccurOnHoliday Property " Url="html/f2666852-291d-ecc4-06b3-cffc2b2ab846.htm" />
     <HelpKINode Title="RecurrencePropertiesDlg.ShowCanOccurOnHoliday Property " Url="html/83a3f461-5e41-3d5c-5ac9-ff45050bb07f.htm" />
   </HelpKINode>
   <HelpKINode Title="ShowEndTime property">
@@ -4572,6 +4572,7 @@
     <HelpKINode Title="2015.1.19.0" Url="html/6389a8d6-8432-4ee5-8d28-870a37c043f2.htm" />
     <HelpKINode Title="2018.12.1.0" Url="html/76059656-b2b1-4b89-8ba2-af4aa8aaebb6.htm" />
     <HelpKINode Title="2020.1.18.0" Url="html/42acd77f-8657-45ca-a71c-14fa093e43ed.htm" />
+    <HelpKINode Title="2020.11.25.0" Url="html/d3124c41-0d7f-435c-ab09-4deda9e40173.htm" />
     <HelpKINode Title="2020.7.24.0" Url="html/1b2453e6-586d-4d6f-83a4-435fea3d473c.htm" />
   </HelpKINode>
   <HelpKINode Title="VersionsSupported property">
