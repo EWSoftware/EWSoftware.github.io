@@ -5,18 +5,24 @@ edition of Visual Studio except Express editions.  Express editions are not supp
 installation of third-party extensions.  Consider switching to the newer Community Edition which does support
 them.</p></li></ul><p>This package can also be installed from within Visual Studio from the Visual Studio Marketplace
 (<a href="https://marketplace.visualstudio.com/items?itemName=EWoodruff.VisualStudioSpellChecker" target="_blank">Visual Studio 2013/2015</a> and
-<a href="https://marketplace.visualstudio.com/items?itemName=EWoodruff.VisualStudioSpellCheckerVS2017andLater" target="_blank">Visual Studio 2017 or later</a>) using the <span class="ui">Tools | Extension and Updates</span> option.  Select the online marketplace and
+<a href="https://marketplace.visualstudio.com/items?itemName=EWoodruff.VisualStudioSpellCheckerVS2017andLater" target="_blank">Visual Studio 2017 or later</a>) using the <span class="ui">Tools | Extension and Updates</span> option (Visual Studio 2017) or
+<span class="ui">Extensions | Manage Extensions</span> option (Visual Studio 2019 or later).  Select the online marketplace and
 search for "Visual Studio Spell Checker".  Include the quote marks for an exact match and find the one created by
 <em>EWSoftware</em>.  Once found, you can click the <span class="ui">Download</span> button to download and
 install it.</p><p>Once installed, you will find a new <span class="ui">Spell Checker</span> option on the <span class="ui">Tools</span> menu.
-Unless other packages have been installed that alter its position, it will be the fourth option from the bottom
-between the <span class="ui">External Tools</span> and the <span class="ui">Import and Export Settings</span> options.  Its submenu contains
-following options:</p><ul><li><p><span class="ui">Spell Check Current Document</span> - This opens the
+Unless other packages have been installed that alter its position, it will be the fourth or fifth option from the
+bottom between the <span class="ui">External Tools</span> and the <span class="ui">Import and Export Settings</span> options.  Its submenu
+contains following options:</p><ul><li><p><span class="ui">Spell Check Current Document</span> - This opens the
 <a href="53ffc5b7-b7dc-4f03-9a51-ed4176bff504.htm">active document spell check tool window</a>.</p></li><li><p><span class="ui">Move to Next Spelling Issue</span> and <span class="ui">Move to Prior Spelling Issue</span> - These can be
 used in text editors to move to the next/prior spelling issue in the file.  If these are bound to shortcut keys
 and used in conjunction with the Quick Actions shortcut key (<span class="ui">Ctrl+.</span>), it can be a quick and convenient
 way to find and resolve spelling issues without using the interactive spell checking tool window.  See the
-<a href="63d5096c-6695-441d-886a-01a120f2894a.htm">Binding Spell Checker Options to Shortcut Keys</a> topic for more information.</p></li><li><p><span class="ui">Spell Check Entire Solution</span> - This opens the
+<a href="63d5096c-6695-441d-886a-01a120f2894a.htm">Binding Spell Checker Options to Shortcut Keys</a> topic for more information.</p></li><li><p><span class="ui">Disable in Current Session</span>/<span class="ui">Enable in Current Session</span> - This option acts as a
+toggle to temporarily disable and subsequently re-enable interactive spell checking in editors during the current
+Visual Studio session.  This is separate from the <span class="ui">Spell check as you type</span> option in the configuration
+files.  If that option is disabled, this menu option will have no effect.</p><p>Use this option to temporarily suspend spell checking in the current session.  To turn it off
+on a more permanent basis either globally or for a solution, project, folder, or file, use the configuration file
+option instead.</p></li><li><p><span class="ui">Spell Check Entire Solution</span> - This opens the
 <a href="fa790577-88c0-4141-b8f4-d8b70f625cfd.htm">solution/project spell check tool window</a> and
 immediately spell checks the entire solution.</p></li><li><p><span class="ui">Spell Check Current Project</span> - This opens the solution/project spell check tool window
 and immediately spell checks just the currently selected project.</p></li><li><p><span class="ui">Spell Check Selected Items</span> - This opens the solution/project spell check tool window
@@ -25,7 +31,7 @@ or any combination thereof).  If the solution node is selected, it effectively c
 window and immediately spell checks just the files currently open for editing in Visual Studio.</p></li><li><p><span class="ui">Open the Solution/Project Spell Checker Window</span> - This opens the solution/project spell
 check tool window but takes no action.</p></li><li><p><span class="ui">Edit Global Configuration</span> - This opens the
 <a href="fb81c214-0fe0-4d62-a172-d7928d5b91d5.htm">configuration editor</a> which lets you adjust the
-global spell checker settings.</p></li></ul></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID1RBSection" class="collapsibleSection"><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="e8f67bc4-a8f8-4e50-ab5a-876599f3a645.htm">Spell Check as You Type</a></div><div class="seeAlsoStyle"><a href="53ffc5b7-b7dc-4f03-9a51-ed4176bff504.htm">Active Document Spell Check Tool Window</a></div><div class="seeAlsoStyle"><a href="fa790577-88c0-4141-b8f4-d8b70f625cfd.htm">Solution/Project Spell Check Tool Window</a></div><div class="seeAlsoStyle"><a href="fb81c214-0fe0-4d62-a172-d7928d5b91d5.htm">Configuration Options</a></div><div class="seeAlsoStyle"><a href="027d2fbc-7bfb-4dc3-b4f5-85f95fcf7629.htm">Welcome</a></div></div></div></div><div id="pageFooter" class="pageFooter"><p><a href="https://GitHub.com/EWSoftware/VSSpellChecker" target="_blank">Copyright © 2013-2020, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
+global spell checker settings.</p></li></ul></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID1RBSection" class="collapsibleSection"><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="e8f67bc4-a8f8-4e50-ab5a-876599f3a645.htm">Spell Check as You Type</a></div><div class="seeAlsoStyle"><a href="53ffc5b7-b7dc-4f03-9a51-ed4176bff504.htm">Active Document Spell Check Tool Window</a></div><div class="seeAlsoStyle"><a href="fa790577-88c0-4141-b8f4-d8b70f625cfd.htm">Solution/Project Spell Check Tool Window</a></div><div class="seeAlsoStyle"><a href="fb81c214-0fe0-4d62-a172-d7928d5b91d5.htm">Configuration Options</a></div><div class="seeAlsoStyle"><a href="027d2fbc-7bfb-4dc3-b4f5-85f95fcf7629.htm">Welcome</a></div></div></div></div><div id="pageFooter" class="pageFooter"><p><a href="https://GitHub.com/EWSoftware/VSSpellChecker" target="_blank">Copyright © 2013-2021, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Visual%20Studio%20Spell%20Checker%20Documentation">Eric@EWoodruff.us</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
