@@ -225,6 +225,7 @@
       <summary>
             This is used to get or set the sample number
             </summary>
+      <value>The value can be any valid integer</value>
     </member>
     <member name="M:XMLCommentsExamples.SampleClass.SeeElementExternalExample">
       <summary>
@@ -272,8 +273,8 @@
     </member>
     <member name="M:XMLCommentsExamples.SampleClass.TokenExample">
       <summary>
-            The help file was built on March 7, 2020 using Sandcastle
-            v2020.3.6.0.
+            The help file was built on March 29, 2021 using Sandcastle
+            v2021.3.29.0.
             </summary>
     </member>
     <member name="M:XMLCommentsExamples.SampleClass.VariousListExamples">
@@ -335,6 +336,7 @@
       <summary>This attached property indicates whether or not a tree view item is brought into
             view when selected.
             </summary>
+      <value>The default value is false</value>
     </member>
     <member name="F:XMLCommentsExamples.DocumentationInheritance.AttachedEventsAndPropertiesTest.IsBroughtIntoViewWhenSelectedProperty">
       <summary>

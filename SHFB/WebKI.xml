@@ -92,6 +92,7 @@
   </HelpKINode>
   <HelpKINode Title="AddNamespaceGroupsCore.Canceled property" Url="html/68e0bdb8-7e36-5698-1b92-417f30185ee5.htm" />
   <HelpKINode Title="AddNamespaceGroupsCore.Main method" Url="html/707da5ba-f5ca-e68d-8e24-ac4e8313096c.htm" />
+  <HelpKINode Title="AddNamespaceGroupsCore.MainEntryPoint method" Url="html/3e5eef4d-87fc-0120-895a-7e2d9893904f.htm" />
   <HelpKINode Title="AddProjectReference method" Url="html/a6b443dd-d0c7-1fdd-3d41-8eb60a8b7c81.htm" />
   <HelpKINode Title="AddRange method" Url="html/a6d5004e-77e8-d589-a81d-76c5f130b4df.htm" />
   <HelpKINode Title="AddReference method" Url="html/9efad357-6f39-3a01-d058-7c980c70389e.htm" />
@@ -788,7 +789,6 @@
   <HelpKINode Title="BuildProcess.Help1Files property" Url="html/5fe3ae9f-3c35-4b9a-94a7-3f0d7fe28ba8.htm" />
   <HelpKINode Title="BuildProcess.HelpFormatOutputFolders property" Url="html/511277ee-22eb-07ee-edf1-9e5187d48291.htm" />
   <HelpKINode Title="BuildProcess.HelpViewerFiles property" Url="html/b586b592-5aef-a738-eaa2-aa1847bfd661.htm" />
-  <HelpKINode Title="BuildProcess.IgnoreNetStandardAssembly property" Url="html/4a28f480-8c8d-410b-9fd6-c2e768d1945b.htm" />
   <HelpKINode Title="BuildProcess.Language property" Url="html/7de3f355-abc0-6c00-2fdd-7c28a2474f2a.htm" />
   <HelpKINode Title="BuildProcess.LanguageFolder property" Url="html/3d57f204-2384-5f47-334b-791289c96aec.htm" />
   <HelpKINode Title="BuildProcess.LoadedPlugIns property" Url="html/8a7e35e7-c9ec-851b-4cff-ddbc82aae36d.htm" />
@@ -1909,6 +1909,7 @@
   <HelpKINode Title="DocumentationSource.PropertyChanged event" Url="html/f80ecf84-398a-3f6d-ca57-0fde586d4d4c.htm" />
   <HelpKINode Title="DocumentationSource.SourceDescription property" Url="html/1ff0ccb6-93ce-d5fc-e362-f085a7b62230.htm" />
   <HelpKINode Title="DocumentationSource.SourceFile property" Url="html/5d555ba8-8804-6cdf-62ee-efc62087f220.htm" />
+  <HelpKINode Title="DocumentationSource.TargetFramework property" Url="html/d182d712-825a-7b6e-b507-4b53113acc72.htm" />
   <HelpKINode Title="DocumentationSource.ToString method" Url="html/4db7d438-94b4-a394-bb8f-0da3951d71bb.htm" />
   <HelpKINode Title="DocumentationSourceCollection class">
     <HelpKINode Title="DocumentationSourceCollection Class" Url="html/65854f16-6bfd-3aeb-619c-2e585112cbbd.htm" />
@@ -1959,6 +1960,7 @@
   </HelpKINode>
   <HelpKINode Title="donate" Url="html/717ca8cf-1a2f-4e63-a8a9-f836825f3509.htm" />
   <HelpKINode Title="DoNotSave enumeration member" Url="html/b8028a3a-8455-43a4-5524-468085a658ae.htm" />
+  <HelpKINode Title="DotNet field" Url="html/f3511d59-5dc3-0e47-f3ef-1bd9bd36bb7b.htm" />
   <HelpKINode Title="DotNetCore field" Url="html/ed7c03a8-9228-3a9c-1c6d-7a3b6bb12c4c.htm" />
   <HelpKINode Title="DotNetCoreApp field" Url="html/c9968626-1aff-98c2-2f6d-3382d664b8c0.htm" />
   <HelpKINode Title="DotNetFramework field" Url="html/6a1ae498-7e51-2c32-2837-81afb0c5305c.htm" />
@@ -2372,8 +2374,8 @@
   <HelpKINode Title="Factory class">
     <HelpKINode Title="methods" Url="html/df432301-24ad-3f6c-fc18-323d14fd1452.htm" />
     <HelpKINode Title="methods" Url="html/c5bfb37a-481e-96b8-30f3-cdbed5239de2.htm" />
-    <HelpKINode Title="properties" Url="html/699a0392-120e-976a-70b9-8be64d281ce3.htm" />
     <HelpKINode Title="properties" Url="html/dc793f24-3806-8152-6ff1-1f5b0c5b9e21.htm" />
+    <HelpKINode Title="properties" Url="html/699a0392-120e-976a-70b9-8be64d281ce3.htm" />
   </HelpKINode>
   <HelpKINode Title="Failed enumeration member" Url="html/15b1ab7a-6438-34c6-e592-a46320ab5e97.htm" />
   <HelpKINode Title="FailOnFetchingContentFromDisk field" Url="html/a9272908-00a6-419c-49cf-ef15b78fc6ed.htm" />
@@ -2787,7 +2789,12 @@
   <HelpKINode Title="GenerateInheritedDocs.ConfigurationFile property" Url="html/9a42672e-b9c8-045a-b87c-b543adbcf0f8.htm" />
   <HelpKINode Title="GenerateInheritedDocs.Execute method" Url="html/df9dbe17-29af-8a76-56bb-1129d07d9677.htm" />
   <HelpKINode Title="GenerateInheritedDocs.GenerateInheritedDocs constructor" Url="html/c2988cb8-dba1-c617-7199-5d66452bea3c.htm" />
-  <HelpKINode Title="GenerateInheritedDocs.Main method" Url="html/85bd7e3e-e32f-41b2-b920-5162a53ffd2f.htm" />
+  <HelpKINode Title="GenerateInheritedDocsCore class">
+    <HelpKINode Title="GenerateInheritedDocsCore Class" Url="html/c376a0e4-d198-58e9-8191-e5dd67267a0a.htm" />
+    <HelpKINode Title="methods" Url="html/e1003951-30e2-4f2c-b25f-f9de052d721e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GenerateInheritedDocsCore.Main method" Url="html/f197d38d-98a5-3945-7cab-aa3c08b408c1.htm" />
+  <HelpKINode Title="GenerateInheritedDocsCore.MainEntryPoint method" Url="html/81f3d5fa-42cb-2d76-a6ab-5cee5a07cb55.htm" />
   <HelpKINode Title="GenerateInheritedDocumentation enumeration member" Url="html/15b1ab7a-6438-34c6-e592-a46320ab5e97.htm" />
   <HelpKINode Title="GenerateIntermediateTableOfContents enumeration member" Url="html/15b1ab7a-6438-34c6-e592-a46320ab5e97.htm" />
   <HelpKINode Title="GenerateMarkdownContent class">
@@ -2903,11 +2910,11 @@
   <HelpKINode Title="GetStandardValues method" Url="html/879a7551-f2e2-169c-3467-0d2bcad05c93.htm" />
   <HelpKINode Title="GetStatusBarText method" Url="html/7967a3c0-f920-f234-f57d-3314555d376e.htm" />
   <HelpKINode Title="Getting started">
+    <HelpKINode Title="installation" Url="html/8c0c97d0-c968-4c15-9fe9-e8f3a443c50a.htm" />
+    <HelpKINode Title="overview" Url="html/8e3f8757-0ef3-4772-bb2f-5d7ae57e50da.htm" />
     <HelpKINode Title="absolute and relative paths" Url="html/576b6a36-0808-4857-bec0-e6eeeae4e36b.htm" />
     <HelpKINode Title="create a new project" Url="html/d5dbf017-25f1-48cb-86db-90f76ee8f4d7.htm" />
     <HelpKINode Title="enable XML comments" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
-    <HelpKINode Title="installation" Url="html/8c0c97d0-c968-4c15-9fe9-e8f3a443c50a.htm" />
-    <HelpKINode Title="overview" Url="html/8e3f8757-0ef3-4772-bb2f-5d7ae57e50da.htm" />
     <HelpKINode Title="user preferences" Url="html/2152ed96-bf69-4b9b-b1a7-4fffc71b3095.htm" />
     <HelpKINode Title="user preferences - content file editors" Url="html/2e4f207e-45d1-411b-83b1-24965d8eef2c.htm" />
     <HelpKINode Title="user preferences - general" Url="html/6a35198a-3713-4eb7-929d-555fddc0ccb6.htm" />
@@ -2916,10 +2923,10 @@
     <HelpKINode Title="Visual Studio projects" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
     <HelpKINode Title="Welcome" Url="html/bd1ddb51-1c4f-434f-bb1a-ce2135d3a909.htm" />
   </HelpKINode>
-  <HelpKINode Title="Getting Started" Url="html/b772e00e-1705-4062-adb6-774826ce6700.htm" />
   <HelpKINode Title="getting started">
     <HelpKINode Title="special folder locations" Url="html/a24489fb-45d6-46f4-9eaa-9a9c4e0919b2.htm" />
   </HelpKINode>
+  <HelpKINode Title="Getting Started" Url="html/b772e00e-1705-4062-adb6-774826ce6700.htm" />
   <HelpKINode Title="GetValues method" Url="html/9455b27f-2668-59e6-7bf8-49d38756f8ee.htm" />
   <HelpKINode Title="GitHub" Url="html/bd1ddb51-1c4f-434f-bb1a-ce2135d3a909.htm" />
   <HelpKINode Title="GlobalEditors property" Url="html/9a293eeb-1529-243c-44a4-3c47ea6f5ebd.htm" />
@@ -3198,7 +3205,6 @@
   <HelpKINode Title="IgnoredNamespacesConfiguration method" Url="html/4ea3151e-6d2c-fbb1-5c9c-0ac38bcfdc66.htm" />
   <HelpKINode Title="IgnoredUnresolved property" Url="html/3010431b-1300-0fb1-6c26-56c129e0b212.htm" />
   <HelpKINode Title="IgnoreIfUnresolvedConfiguration method" Url="html/d1faed38-91e6-8319-b3b1-1cef18d68515.htm" />
-  <HelpKINode Title="IgnoreNetStandardAssembly property" Url="html/4a28f480-8c8d-410b-9fd6-c2e768d1945b.htm" />
   <HelpKINode Title="Image enumeration member" Url="html/7d8746c8-bdd1-a83e-15da-5c3b0c5206a9.htm" />
   <HelpKINode Title="Image property">
     <HelpKINode Title="DropDownButton.Image Property " Url="html/1cdf4ca4-74d5-e382-173d-d41e965386ad.htm" />
@@ -3621,6 +3627,7 @@
   <HelpKINode Title="ItemTextColor property" Url="html/a0cafee8-0652-7d80-7b67-c95840e344ba.htm" />
   <HelpKINode Title="ItemType property" Url="html/5e64891b-a5e4-722d-70dd-c0fcbb104782.htm" />
   <HelpKINode Title="KeepLogFile property" Url="html/bdaccb2a-f6c9-c702-2daf-4fc5770535f9.htm" />
+  <HelpKINode Title="KeepReferenceAssembly method" Url="html/ee1570bf-7e42-7e3b-1a3b-85fd67d010bf.htm" />
   <HelpKINode Title="Key property" Url="html/20f6adc3-56a2-0151-7e8f-6fccc9777834.htm" />
   <HelpKINode Title="Keys property">
     <HelpKINode Title="ESentTargetDictionary.Keys Property " Url="html/94942426-1863-bace-0537-6df9e2d0cd59.htm" />
@@ -3727,7 +3734,7 @@
   <HelpKINode Title="LoadComponentSettings method" Url="html/659df075-209a-25cf-f68b-b7e341a8c20f.htm" />
   <HelpKINode Title="LoadContentLayoutFile method" Url="html/6282947b-a972-3892-ed41-2690a66cdfe9.htm" />
   <HelpKINode Title="LoadedPlugIns property" Url="html/8a7e35e7-c9ec-851b-4cff-ddbc82aae36d.htm" />
-  <HelpKINode Title="LoadPackageReferenceInfo method" Url="html/3caf2cd0-91fb-21e7-6527-ac00467061db.htm" />
+  <HelpKINode Title="LoadPackageReferenceInfo method" Url="html/60e188b9-83ce-5d33-b533-1d28320b4eb1.htm" />
   <HelpKINode Title="LoadPlugInSettings method" Url="html/cb06765c-d271-97c3-6329-dc04a0bfd7b0.htm" />
   <HelpKINode Title="LoadReflectionDataSetInfo method" Url="html/429a1685-9950-f431-a858-fa9ad29d72dd.htm" />
   <HelpKINode Title="LoadResourceItemsFile method" Url="html/bbf57917-5ea5-5bbe-b14a-d94a50a59f78.htm" />
@@ -3763,9 +3770,9 @@
   <HelpKINode Title="LogLevel enumeration" Url="html/12e65179-379f-6fda-1b9b-e392c46c7ade.htm" />
   <HelpKINode Title="Main method">
     <HelpKINode Title="AddNamespaceGroupsCore.Main Method " Url="html/707da5ba-f5ca-e68d-8e24-ac4e8313096c.htm" />
-    <HelpKINode Title="GenerateInheritedDocs.Main Method " Url="html/85bd7e3e-e32f-41b2-b920-5162a53ffd2f.htm" />
+    <HelpKINode Title="GenerateInheritedDocsCore.Main Method " Url="html/f197d38d-98a5-3945-7cab-aa3c08b408c1.htm" />
     <HelpKINode Title="HelpLibraryManagerLauncher.Main Method " Url="html/78666d7b-02d1-beb2-19d3-b9b0dd624ad2.htm" />
-    <HelpKINode Title="SandcastleHtmlExtract.Main Method " Url="html/09ba3d69-326c-6be0-b514-b9e01aeef616.htm" />
+    <HelpKINode Title="SandcastleHtmlExtractCore.Main Method " Url="html/0f422816-7252-fba2-b22f-05edcd2b4441.htm" />
     <HelpKINode Title="SegregateByNamespaceCore.Main Method " Url="html/7da6a6c3-ccba-3a0e-9a0f-bf74192e0040.htm" />
     <HelpKINode Title="XslTransformCore.Main Method " Url="html/e1eaabe7-9593-4288-2d55-9e31a0885667.htm" />
   </HelpKINode>
@@ -3775,6 +3782,13 @@
   <HelpKINode Title="MainButtonCommandProperty field" Url="html/0cfb7c9c-fe7a-fd21-10a4-3d34900aec27.htm" />
   <HelpKINode Title="MainButtonCommandTarget property" Url="html/2069d915-f8d4-e9a0-c23f-896cd72faf65.htm" />
   <HelpKINode Title="MainButtonCommandTargetProperty field" Url="html/747885a8-5764-f9fe-f122-20b7d97b02b0.htm" />
+  <HelpKINode Title="MainEntryPoint method">
+    <HelpKINode Title="AddNamespaceGroupsCore.MainEntryPoint Method " Url="html/3e5eef4d-87fc-0120-895a-7e2d9893904f.htm" />
+    <HelpKINode Title="GenerateInheritedDocsCore.MainEntryPoint Method " Url="html/81f3d5fa-42cb-2d76-a6ab-5cee5a07cb55.htm" />
+    <HelpKINode Title="SandcastleHtmlExtractCore.MainEntryPoint Method " Url="html/047edd02-56bc-b503-7a2c-0a33fa9b3b46.htm" />
+    <HelpKINode Title="SegregateByNamespaceCore.MainEntryPoint Method " Url="html/855e9351-baed-b03b-5dd1-20e7d13ef168.htm" />
+    <HelpKINode Title="XslTransformCore.MainEntryPoint Method " Url="html/fff43605-ec3e-0dfc-1709-a5fee8343d34.htm" />
+  </HelpKINode>
   <HelpKINode Title="MainForm class">
     <HelpKINode Title="MainForm Class" Url="html/4b45cb21-d53d-b326-0c11-808b91a62e02.htm" />
     <HelpKINode Title="constructor" Url="html/7c38a7cb-abba-f53b-f5d2-f38c10b3055e.htm" />
@@ -3962,6 +3976,7 @@
   <HelpKINode Title="MSBuildProject.MSBuildProject constructor" Url="html/679f2fc0-18cf-3e1a-f54f-930cc68c7f0a.htm" />
   <HelpKINode Title="MSBuildProject.ProjectFile property" Url="html/72c13fc3-0cc5-d26f-4df5-5ee5877df742.htm" />
   <HelpKINode Title="MSBuildProject.ProjectGuid property" Url="html/203003e0-1c6d-74c5-5d1c-292b28fa4785.htm" />
+  <HelpKINode Title="MSBuildProject.RequestedTargetFramework property" Url="html/d8bafd04-d2e2-eca1-086a-cae7e40c677e.htm" />
   <HelpKINode Title="MSBuildProject.SetConfiguration method" Url="html/6142d794-9c92-2775-9add-cfa3f9fe2156.htm" />
   <HelpKINode Title="MSBuildProject.SetSolutionMacros method" Url="html/b6b4f84f-e538-3461-4994-5d8e428cd348.htm" />
   <HelpKINode Title="MSBuildProject.SolutionDir field" Url="html/e5be5f3c-81d0-8fda-2fd9-ed7d6710d215.htm" />
@@ -3969,7 +3984,9 @@
   <HelpKINode Title="MSBuildProject.SolutionFileName field" Url="html/bb340513-d26a-a88f-41b8-ea53de343ae3.htm" />
   <HelpKINode Title="MSBuildProject.SolutionName field" Url="html/f0de8fc2-71e8-0944-c0f7-0c8258836978.htm" />
   <HelpKINode Title="MSBuildProject.SolutionPath field" Url="html/51aacbc6-aca0-b3d9-bed3-1d67f6adac39.htm" />
+  <HelpKINode Title="MSBuildProject.TargetFramework property" Url="html/60ee9929-a827-d74f-d772-b59a9631f60a.htm" />
   <HelpKINode Title="MSBuildProject.TargetFrameworkIdentifier property" Url="html/4ba8857b-3be5-b33f-f3cf-06604a16a82a.htm" />
+  <HelpKINode Title="MSBuildProject.TargetFrameworks property" Url="html/89d40aa2-2704-cf5e-7570-efb2230c1cad.htm" />
   <HelpKINode Title="MSBuildProject.TargetFrameworkVersion property" Url="html/72e65c5b-57ea-0827-3a32-0e19bdedb10d.htm" />
   <HelpKINode Title="MSBuildProject.XmlCommentsFile property" Url="html/b14eaa2e-6ea9-5f9d-6052-6bb79ec9ed37.htm" />
   <HelpKINode Title="Msdn enumeration member">
@@ -4313,7 +4330,7 @@
     <HelpKINode Title="methods" Url="html/2938e259-fb4e-8f78-1e72-e192119f16d2.htm" />
     <HelpKINode Title="properties" Url="html/50e22c4c-e48f-0952-e196-b3f7c9e363cb.htm" />
   </HelpKINode>
-  <HelpKINode Title="PackageReferenceResolver.LoadPackageReferenceInfo method" Url="html/3caf2cd0-91fb-21e7-6527-ac00467061db.htm" />
+  <HelpKINode Title="PackageReferenceResolver.LoadPackageReferenceInfo method" Url="html/60e188b9-83ce-5d33-b533-1d28320b4eb1.htm" />
   <HelpKINode Title="PackageReferenceResolver.PackageReferenceResolver constructor" Url="html/9088d9bc-ea85-7f7c-e402-08f32a36d916.htm" />
   <HelpKINode Title="PackageReferenceResolver.ReferenceAssemblies property" Url="html/0a7f16de-201f-a214-d6e2-304dabf4e66b.htm" />
   <HelpKINode Title="Parameter enumeration member" Url="html/6a0e130b-eeec-ca1a-bd1f-cf428003cffb.htm" />
@@ -4391,20 +4408,21 @@
     <HelpKINode Title="ReflectionDataSet.Platform Property " Url="html/1d8edc95-26d6-d103-7523-6490714e0af2.htm" />
     <HelpKINode Title="SandcastleProject.Platform Property " Url="html/018cea9a-d7fd-44d7-024f-4d68b30fadb0.htm" />
   </HelpKINode>
-  <HelpKINode Title="PlatformsAreCompatible method" Url="html/5cd75e42-a399-dda9-e9cb-f99e5e3888ac.htm" />
+  <HelpKINode Title="PlatformsAreCompatible method" Url="html/500e54fc-71a6-65a1-1465-904ae12393b3.htm" />
   <HelpKINode Title="PlatformType class">
     <HelpKINode Title="PlatformType Class" Url="html/b45675c9-cfec-27a6-8dc0-944df9e2ea5f.htm" />
     <HelpKINode Title="fields" Url="html/bf41c56a-78c6-af75-aac8-69f8c7bac072.htm" />
     <HelpKINode Title="methods" Url="html/2b5d51f0-566b-d0b1-4c42-ca436a8bf29d.htm" />
     <HelpKINode Title="properties" Url="html/c07a897d-1275-4ded-fee8-9ed39544397b.htm" />
   </HelpKINode>
+  <HelpKINode Title="PlatformType.DotNet field" Url="html/f3511d59-5dc3-0e47-f3ef-1bd9bd36bb7b.htm" />
   <HelpKINode Title="PlatformType.DotNetCore field" Url="html/ed7c03a8-9228-3a9c-1c6d-7a3b6bb12c4c.htm" />
   <HelpKINode Title="PlatformType.DotNetCoreApp field" Url="html/c9968626-1aff-98c2-2f6d-3382d664b8c0.htm" />
   <HelpKINode Title="PlatformType.DotNetFramework field" Url="html/6a1ae498-7e51-2c32-2837-81afb0c5305c.htm" />
   <HelpKINode Title="PlatformType.DotNetMicroFramework field" Url="html/f4806bf3-70a7-3dd9-cafd-26f92707b377.htm" />
   <HelpKINode Title="PlatformType.DotNetPortable field" Url="html/6b991ee1-9ec2-b46d-a184-a84f100eed82.htm" />
   <HelpKINode Title="PlatformType.DotNetStandard field" Url="html/7cb0aca3-943c-5bdb-f272-b4b3408304e4.htm" />
-  <HelpKINode Title="PlatformType.PlatformsAreCompatible method" Url="html/5cd75e42-a399-dda9-e9cb-f99e5e3888ac.htm" />
+  <HelpKINode Title="PlatformType.PlatformsAreCompatible method" Url="html/500e54fc-71a6-65a1-1465-904ae12393b3.htm" />
   <HelpKINode Title="PlatformType.PlatformTypes property" Url="html/9a68f15b-bddd-1049-4b82-8c311834eaae.htm" />
   <HelpKINode Title="PlatformType.Silverlight field" Url="html/0e199d55-8fe2-f037-762a-356f9b4a7322.htm" />
   <HelpKINode Title="PlatformType.WindowsPhone field" Url="html/6f94dc67-3c4c-c498-be3f-0e50531f60f9.htm" />
@@ -4668,8 +4686,8 @@
   <HelpKINode Title="ProjectFileConfiguration.Platform property" Url="html/e875b06f-63f3-5043-7a4e-00e5ad70bb18.htm" />
   <HelpKINode Title="ProjectFileConfiguration.ProjectFileConfiguration constructor" Url="html/a1bd6596-d326-8e92-f34a-6340539ea9b2.htm" />
   <HelpKINode Title="ProjectFileConfiguration.ProjectFileName property" Url="html/761debd3-04ff-2870-020f-8f471349c40b.htm" />
-  <HelpKINode Title="ProjectFilename property" Url="html/a5179722-1820-058e-3c18-ddcb172c6c93.htm" />
   <HelpKINode Title="ProjectFileName property" Url="html/761debd3-04ff-2870-020f-8f471349c40b.htm" />
+  <HelpKINode Title="ProjectFilename property" Url="html/a5179722-1820-058e-3c18-ddcb172c6c93.htm" />
   <HelpKINode Title="ProjectFolder property" Url="html/2dc9c884-eb9f-e739-334e-86e6cc9682d9.htm" />
   <HelpKINode Title="ProjectGuid field" Url="html/05ae4c93-99a2-f6b7-fbcf-2b017520febc.htm" />
   <HelpKINode Title="ProjectGuid property">
@@ -5008,6 +5026,7 @@
   <HelpKINode Title="ReflectionDataSet.IncludedAssemblies property" Url="html/2821bc1d-6c3e-b74e-cf81-85cc22658c8c.htm" />
   <HelpKINode Title="ReflectionDataSet.IsCoreFramework property" Url="html/97a6aaa1-4a74-1e55-f265-9431438e3206.htm" />
   <HelpKINode Title="ReflectionDataSet.IsPresent property" Url="html/37cf939d-4e4a-87e7-1859-dc6e9afe70d0.htm" />
+  <HelpKINode Title="ReflectionDataSet.KeepReferenceAssembly method" Url="html/ee1570bf-7e42-7e3b-1a3b-85fd67d010bf.htm" />
   <HelpKINode Title="ReflectionDataSet.Notes property" Url="html/d29d4060-dde3-c98c-0e53-2976fecdd22e.htm" />
   <HelpKINode Title="ReflectionDataSet.Platform property" Url="html/1d8edc95-26d6-d103-7523-6490714e0af2.htm" />
   <HelpKINode Title="ReflectionDataSet.PropertyChanged event" Url="html/048ce696-3ad9-d291-8c0d-b30a64ba6d26.htm" />
@@ -5097,6 +5116,7 @@
   <HelpKINode Title="ReportProgress method" Url="html/37fa6ed1-2033-31b6-15a9-203368f6c61b.htm" />
   <HelpKINode Title="ReportWarning event" Url="html/a04e8c75-6dee-305c-a95d-7d2edad0416e.htm" />
   <HelpKINode Title="ReportWarning method" Url="html/3f7474b3-ba7a-7a70-3d9f-6b0f77d2ec8f.htm" />
+  <HelpKINode Title="RequestedTargetFramework property" Url="html/d8bafd04-d2e2-eca1-086a-cae7e40c677e.htm" />
   <HelpKINode Title="RequiredMessage property" Url="html/43ce6c15-0e50-c982-efe5-3de403ba239b.htm" />
   <HelpKINode Title="requirements" Url="html/8c0c97d0-c968-4c15-9fe9-e8f3a443c50a.htm" />
   <HelpKINode Title="ResetLogViewer method" Url="html/cf24abb5-6810-2c62-458b-afa10d7db9a5.htm" />
@@ -5319,8 +5339,10 @@
   <HelpKINode Title="SandcastleBuilder.HtmlExtract namespace" Url="html/e495c36d-8eae-c56c-7dc5-42dc68123703.htm" />
   <HelpKINode Title="SandcastleBuilder.HtmlExtract.OptionInfo class" Url="html/275ab8bb-1c53-006f-c55e-0f637ac3cb0a.htm" />
   <HelpKINode Title="SandcastleBuilder.HtmlExtract.SandcastleHtmlExtract class" Url="html/b75d1521-8507-c522-db20-f1112c17b2c7.htm" />
+  <HelpKINode Title="SandcastleBuilder.HtmlExtract.SandcastleHtmlExtractCore class" Url="html/79359be5-178e-3022-e0ee-a649620b74ce.htm" />
   <HelpKINode Title="SandcastleBuilder.InheritedDocumentation namespace" Url="html/3647b189-0a05-8d7a-2e44-7a473cbbbf62.htm" />
   <HelpKINode Title="SandcastleBuilder.InheritedDocumentation.GenerateInheritedDocs class" Url="html/c9028d47-8002-016b-f274-d24d5dc59f8c.htm" />
+  <HelpKINode Title="SandcastleBuilder.InheritedDocumentation.GenerateInheritedDocsCore class" Url="html/c376a0e4-d198-58e9-8191-e5dd67267a0a.htm" />
   <HelpKINode Title="SandcastleBuilder.InheritedDocumentation.ReflectionFiles class" Url="html/3bd609e5-5ba9-b2c1-b265-5fc7f56a20ee.htm" />
   <HelpKINode Title="SandcastleBuilder.MicrosoftHelpViewer namespace" Url="html/a293fe2d-0413-03b9-a785-17e7a54e16f0.htm" />
   <HelpKINode Title="SandcastleBuilder.MicrosoftHelpViewer.CommandLineArgument class" Url="html/eb4c836b-456c-be63-8032-aee02300f40c.htm" />
@@ -5545,13 +5567,18 @@
   <HelpKINode Title="SandcastleHtmlExtract.Help1Folder property" Url="html/8668791c-176a-c44d-8dae-070830755d42.htm" />
   <HelpKINode Title="SandcastleHtmlExtract.LanguageId property" Url="html/ba200b61-c891-9223-990e-4ffecbcb7629.htm" />
   <HelpKINode Title="SandcastleHtmlExtract.LocalizedFolder property" Url="html/38e13026-e7e9-b20d-99fd-9d0f10edb378.htm" />
-  <HelpKINode Title="SandcastleHtmlExtract.Main method" Url="html/09ba3d69-326c-6be0-b514-b9e01aeef616.htm" />
   <HelpKINode Title="SandcastleHtmlExtract.MaxDegreeOfParallelism property" Url="html/86b3e8cc-fe31-5787-9730-94a4d3f3b2a8.htm" />
   <HelpKINode Title="SandcastleHtmlExtract.OutputFolder property" Url="html/41689a0e-7499-53db-72bd-3d76b10d0d45.htm" />
   <HelpKINode Title="SandcastleHtmlExtract.ProjectName property" Url="html/065026cc-60df-1c04-0a81-654ae62f67c3.htm" />
   <HelpKINode Title="SandcastleHtmlExtract.SandcastleHtmlExtract constructor" Url="html/6685c758-ca08-e64a-5e15-6e7fff7eab3c.htm" />
   <HelpKINode Title="SandcastleHtmlExtract.TocFile property" Url="html/78842e83-efc9-32b3-a49d-310e12459d79.htm" />
   <HelpKINode Title="SandcastleHtmlExtract.WebsiteFolder property" Url="html/fb2e22db-94ab-89f2-9698-188774dc5c64.htm" />
+  <HelpKINode Title="SandcastleHtmlExtractCore class">
+    <HelpKINode Title="SandcastleHtmlExtractCore Class" Url="html/79359be5-178e-3022-e0ee-a649620b74ce.htm" />
+    <HelpKINode Title="methods" Url="html/a331da1b-9d14-b765-67b0-c942dc51a7f4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SandcastleHtmlExtractCore.Main method" Url="html/0f422816-7252-fba2-b22f-05edcd2b4441.htm" />
+  <HelpKINode Title="SandcastleHtmlExtractCore.MainEntryPoint method" Url="html/047edd02-56bc-b503-7a2c-0a33fa9b3b46.htm" />
   <HelpKINode Title="SandcastleProject class">
     <HelpKINode Title="SandcastleProject Class" Url="html/6db9bc2c-be7b-0d0b-3a46-7994b7836c82.htm" />
     <HelpKINode Title="constructor" Url="html/fa08b41c-3b48-e917-87ce-da0fd9b8b50a.htm" />
@@ -5752,6 +5779,7 @@
   </HelpKINode>
   <HelpKINode Title="SegregateByNamespaceCore.Canceled property" Url="html/9a54ef64-1891-79ba-32fc-ac59db2c37de.htm" />
   <HelpKINode Title="SegregateByNamespaceCore.Main method" Url="html/7da6a6c3-ccba-3a0e-9a0f-bf74192e0040.htm" />
+  <HelpKINode Title="SegregateByNamespaceCore.MainEntryPoint method" Url="html/855e9351-baed-b03b-5dd1-20e7d13ef168.htm" />
   <HelpKINode Title="Select method" Url="html/1273c42c-34b3-d4ca-2134-300309e1b3c1.htm" />
   <HelpKINode Title="SelectedComponents property" Url="html/d56f0a13-3e5d-3397-e3bd-a867217f4238.htm" />
   <HelpKINode Title="SelectedEntries property" Url="html/902afff1-3907-2b18-0f17-ea0e978909d6.htm" />
@@ -6331,7 +6359,12 @@
     <HelpKINode Title="DropDownButton.Target Property " Url="html/48ebb2b8-28e4-69ab-43a0-369a35cc5e14.htm" />
     <HelpKINode Title="SplitButton.Target Property " Url="html/0520b81a-1985-d4a4-6d1f-62bf1d243160.htm" />
   </HelpKINode>
+  <HelpKINode Title="TargetFramework property">
+    <HelpKINode Title="DocumentationSource.TargetFramework Property " Url="html/d182d712-825a-7b6e-b507-4b53113acc72.htm" />
+    <HelpKINode Title="MSBuildProject.TargetFramework Property " Url="html/60ee9929-a827-d74f-d772-b59a9631f60a.htm" />
+  </HelpKINode>
   <HelpKINode Title="TargetFrameworkIdentifier property" Url="html/4ba8857b-3be5-b33f-f3cf-06604a16a82a.htm" />
+  <HelpKINode Title="TargetFrameworks property" Url="html/89d40aa2-2704-cf5e-7570-efb2230c1cad.htm" />
   <HelpKINode Title="TargetFrameworkVersion property" Url="html/72e65c5b-57ea-0827-3a32-0e19bdedb10d.htm" />
   <HelpKINode Title="TargetProperty field">
     <HelpKINode Title="DropDownButton.TargetProperty Field" Url="html/a5ea11dd-ed2c-feff-d42f-ddca9ccee5e7.htm" />
@@ -7134,6 +7167,7 @@
     <HelpKINode Title="2019.8.24.0" Url="html/3bb3e240-7c36-456b-bebd-972ff1508c15.htm" />
     <HelpKINode Title="2019.9.15.0" Url="html/06a9fd7f-31bb-4bb8-b685-04cc59fc36dd.htm" />
     <HelpKINode Title="2020.3.6.0" Url="html/fa3bd7c8-2b1d-4e66-9278-e36f57e098a6.htm" />
+    <HelpKINode Title="2021.3.29.0" Url="html/70b704dc-03c8-4934-b83e-e84d4d7f927a.htm" />
     <HelpKINode Title="known issues" Url="html/21c2a363-6c94-440b-8985-6b224d275463.htm" />
   </HelpKINode>
   <HelpKINode Title="VersionSettings class">
@@ -7515,4 +7549,5 @@
   </HelpKINode>
   <HelpKINode Title="XslTransformCore.Canceled property" Url="html/e409c47b-5e14-4bef-a8a6-0cec350217ca.htm" />
   <HelpKINode Title="XslTransformCore.Main method" Url="html/e1eaabe7-9593-4288-2d55-9e31a0885667.htm" />
+  <HelpKINode Title="XslTransformCore.MainEntryPoint method" Url="html/fff43605-ec3e-0dfc-1709-a5fee8343d34.htm" />
 </HelpKI>
