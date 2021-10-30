@@ -26,11 +26,12 @@ order of the languages in the syntax sections and code examples.</p></td></tr></
 <span class="code">Syntax Filters</span> property by creating a syntax filter generator Managed Extensibility
 Framework (MEF) component.  Copy the syntax filter generator's assembly and any supporting files to the
 <em>.\Components and Plug-Ins</em> folder or a subfolder beneath it in the help file builder's
-<strong>Common Application Data</strong> folder.  If project specific, the components can be located in
-the help file builder project's folder or in a folder referred to in its <span class="code">Component Path</span>
-property.  See the <a href="a24489fb-45d6-46f4-9eaa-9a9c4e0919b2.htm#BuildComponents">Special Folder Locations</a> topic for more
-information.  Refer to the component's documentation for information about its features and configuration
-options.  See the <a href="5e80d139-811c-48ed-9b52-dcd8a3f5aef3.htm">Creating a Syntax Filter Generator Component</a> topic for information on creating a
+<strong>Common Application Data</strong> folder.  If available as a NuGet package, add it to the
+project's Component Packages node.  If project specific, the components can be located in the help file builder
+project's folder or in a folder referred to in its <span class="code">Component Path</span> property.  See the
+<a href="a24489fb-45d6-46f4-9eaa-9a9c4e0919b2.htm#BuildComponents">Special Folder Locations</a> topic for more information.  Refer to
+the component's documentation for information about its features and configuration options.  See the
+<a href="5e80d139-811c-48ed-9b52-dcd8a3f5aef3.htm">Creating a Syntax Filter Generator Component</a> topic for information on creating a
 third-party syntax generator.  For a list of current third-party build components, see the
 <a href="c18d6cb6-e4e4-4944-84ee-f867aa6cfb0d.htm">Links to Resources</a> topic.</p></div></div><div class="collapsibleAreaRegion" id="PresentationStyle"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Presentation style (PresentationStyle)</span></div><div id="ID2RBSection" class="collapsibleSection"><p>This property is used to choose the presentation style that determines the layout and appearance of
 the help topics.  Several styles are provided: <span class="code">VS2013</span> (the default),
@@ -40,8 +41,9 @@ file builder installation folder.</p><h4 class="subHeading" id="CustomStyles">Ad
 property by creating a presentation style Managed Extensibility Framework (MEF) component.  Copy the
 presentation style's assembly and all supporting files to the <em>.\Components and Plug-Ins</em>
 folder or a subfolder beneath it in the help file builder's <strong>Common Application Data</strong>
-folder.  If project specific, the components can be located in the help file builder project's folder or in a
-folder referred to in its <span class="code">Component Path</span> property.  See the
+folder.  If available as a NuGet package, add it to the project's Component Packages node.  If project specific,
+the components can be located in the help file builder project's folder or in a folder referred to in its
+<span class="code">Component Path</span> property.  See the
 <a href="a24489fb-45d6-46f4-9eaa-9a9c4e0919b2.htm#PresentationStyles">Special Folder Locations</a> topic for more information.  Refer
 to the presentation style's documentation for information about its features and configuration options.  See the
 <a href="baf1dcbc-e9cf-4d71-a770-621e6eaf10a7.htm">Creating a Presentation Style Component</a> topic for information on creating a third-party
@@ -88,7 +90,7 @@ blocking any further topics from being built until the cache empties out.  The d
 this value to conserve memory or increase it to improve performance.  Set it to zero for an unbounded cache size
 which gives the best performance at the expense of memory.  The number of topics remaining to be written is
 reported at the end of the build.  You can use that value to determine whether to increase or decrease this
-property value for each project.</p></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID11RB')" onkeypress="SectionExpandCollapse_CheckKey('ID11RB', event)" tabindex="0"><img id="ID11RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID11RBSection" class="collapsibleSection"><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="e32086c6-de17-4e54-a746-1ac80bf0c45a.htm">Project Properties Window</a></div></div></div></div><div id="pageFooter" class="pageFooter"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2021.4.9.0] Copyright © 2006-2021, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
+property value for each project.</p></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID11RB')" onkeypress="SectionExpandCollapse_CheckKey('ID11RB', event)" tabindex="0"><img id="ID11RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID11RBSection" class="collapsibleSection"><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="e32086c6-de17-4e54-a746-1ac80bf0c45a.htm">Project Properties Window</a></div></div></div></div><div id="pageFooter" class="pageFooter"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2021.10.23.0] Copyright © 2006-2021, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20Help%20File%20Builder%20Documentation">Eric Woodruff</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
