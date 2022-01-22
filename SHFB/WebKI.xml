@@ -213,6 +213,17 @@
   <HelpKINode Title="ApiTopicNamer.Finalize method" Url="html/878916f1-ccef-ad7b-283f-1ceecdf28ff4.htm" />
   <HelpKINode Title="ApiTopicNamer.ToTopicFileName method" Url="html/2d13f22e-d1f0-b077-64b6-5c113afdff08.htm" />
   <HelpKINode Title="AppendMarkdownFileExtensionsToUrls property" Url="html/db38aa31-b513-dff0-9ce4-19116b0431ff.htm" />
+  <HelpKINode Title="AppliedChangesEventArgs class">
+    <HelpKINode Title="AppliedChangesEventArgs Class" Url="html/e42a3d65-d8e5-2262-4e78-884166ac0280.htm" />
+    <HelpKINode Title="constructor" Url="html/8284f8ec-b7f9-cfa7-647d-0782dffb80ba.htm" />
+    <HelpKINode Title="methods" Url="html/a61216e0-5263-9959-8c87-fa9f2400f6b9.htm" />
+    <HelpKINode Title="properties" Url="html/1353abad-6ae2-5403-bb09-c0e4598beded.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AppliedChangesEventArgs.AppliedChangesEventArgs constructor" Url="html/8284f8ec-b7f9-cfa7-647d-0782dffb80ba.htm" />
+  <HelpKINode Title="AppliedChangesEventArgs.ComponentId property" Url="html/d3943b90-36f4-a3da-f7d3-337800e9460d.htm" />
+  <HelpKINode Title="AppliedChangesEventArgs.Document property" Url="html/22b2e410-e7ce-ddf0-0d4f-253bb72b5b6e.htm" />
+  <HelpKINode Title="AppliedChangesEventArgs.GroupId property" Url="html/ea315973-836e-1fec-3316-90f3a93e9df2.htm" />
+  <HelpKINode Title="AppliedChangesEventArgs.Key property" Url="html/0aaf4670-c844-fa90-215c-c7edffc391d6.htm" />
   <HelpKINode Title="Apply method">
     <HelpKINode Title="AdditionalHeaderResourcesComponent.Apply Method " Url="html/ce899166-3326-9571-b687-de50e5ca4eeb.htm" />
     <HelpKINode Title="BuildAssemblerCore.Apply Method " Url="html/c8a2bb72-0e3b-aa43-41c7-fd863f9ec6cf.htm" />
@@ -235,6 +246,7 @@
     <HelpKINode Title="LanguageSpecificTextComponent.Apply Method " Url="html/35accd93-0bee-8c6c-981c-7006740f3697.htm" />
     <HelpKINode Title="MSHCComponent.Apply Method " Url="html/e4ae7894-8ec8-8f8a-af53-e400aadd6c95.htm" />
     <HelpKINode Title="MultiFormatOutputComponent.Apply Method " Url="html/e04c3fd0-a264-e5a3-ee64-45fe59055cfb.htm" />
+    <HelpKINode Title="PreTransformDocumentDumpComponent.Apply Method " Url="html/caf68284-b73e-524c-df2e-85f5725aef65.htm" />
     <HelpKINode Title="ResolveArtLinksComponent.Apply Method " Url="html/d0c58103-4478-6a12-a874-3247c5923502.htm" />
     <HelpKINode Title="ResolveConceptualLinksComponent.Apply Method " Url="html/17856835-c78f-91c5-3d8b-0e1ffb2b5247.htm" />
     <HelpKINode Title="ResolveReferenceLinksComponent.Apply Method " Url="html/eacdcf93-cae9-e42c-6e87-da24888f5923.htm" />
@@ -250,6 +262,17 @@
     <HelpKINode Title="IApplyDocumentModel.ApplyDocumentModel Method " Url="html/1809b647-8303-7c57-bf7a-4731039b882a.htm" />
     <HelpKINode Title="StandardDocumentModel.ApplyDocumentModel Method " Url="html/720b7a5c-373f-6562-bcb8-7cb86d28b076.htm" />
   </HelpKINode>
+  <HelpKINode Title="ApplyingChangesEventArgs class">
+    <HelpKINode Title="ApplyingChangesEventArgs Class" Url="html/c9c1fe68-39ea-d482-99fe-eb898fc1d6e3.htm" />
+    <HelpKINode Title="constructor" Url="html/00cba470-396d-6f9c-c4de-ca93ab5c25a3.htm" />
+    <HelpKINode Title="methods" Url="html/644272f4-4679-0f57-0732-70eb914653ec.htm" />
+    <HelpKINode Title="properties" Url="html/7ba74224-126b-4ea7-d972-48e8f8242cb7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApplyingChangesEventArgs.ApplyingChangesEventArgs constructor" Url="html/00cba470-396d-6f9c-c4de-ca93ab5c25a3.htm" />
+  <HelpKINode Title="ApplyingChangesEventArgs.ComponentId property" Url="html/6d3ae323-9803-06e9-998a-7451f4db268b.htm" />
+  <HelpKINode Title="ApplyingChangesEventArgs.Document property" Url="html/f71fd467-601f-0521-96b5-a47a51d0335a.htm" />
+  <HelpKINode Title="ApplyingChangesEventArgs.GroupId property" Url="html/594737bc-e017-99aa-ee4f-6cdcd10cc39b.htm" />
+  <HelpKINode Title="ApplyingChangesEventArgs.Key property" Url="html/eabbfa34-b625-5cc7-074f-1ecb23ee2f3a.htm" />
   <HelpKINode Title="ApplyVisibilityProperties method" Url="html/1a91d0d3-a915-6a51-9055-b2d77b2fac18.htm" />
   <HelpKINode Title="AppName field" Url="html/8e333266-811a-1eff-c368-5b7ac45bc499.htm" />
   <HelpKINode Title="Arguments property">
@@ -892,6 +915,11 @@
   <HelpKINode Title="ComponentConfigurationDictionary.ToXml method" Url="html/ee217f95-b7bf-6acf-732d-7509c7cb9847.htm" />
   <HelpKINode Title="ComponentConfigurations property" Url="html/f313f323-fb1d-bb34-8958-5cbcb1532797.htm" />
   <HelpKINode Title="ComponentEvent event" Url="html/089e2cee-377c-563c-7f3d-21d8a3903b1e.htm" />
+  <HelpKINode Title="ComponentId property">
+    <HelpKINode Title="AppliedChangesEventArgs.ComponentId Property " Url="html/d3943b90-36f4-a3da-f7d3-337800e9460d.htm" />
+    <HelpKINode Title="ApplyingChangesEventArgs.ComponentId Property " Url="html/6d3ae323-9803-06e9-998a-7451f4db268b.htm" />
+    <HelpKINode Title="FileCreatedEventArgs.ComponentId Property " Url="html/2c6efb8a-1cd1-0547-4b3a-bdfc0b387714.htm" />
+  </HelpKINode>
   <HelpKINode Title="ComponentPath property" Url="html/5ca8e4c4-3542-33d4-71cf-e6ba1a47eae6.htm" />
   <HelpKINode Title="ComponentPlacement class">
     <HelpKINode Title="ComponentPlacement Class" Url="html/29f3a07f-0322-683e-6e92-2c9b529e3898.htm" />
@@ -1284,6 +1312,7 @@
     <HelpKINode Title="ManagedCPlusPlusDeclarationSyntaxGenerator.Factory.Create Method " Url="html/e66b77d1-76fd-a7db-3a4e-161d57c36e09.htm" />
     <HelpKINode Title="MSHCComponent.Factory.Create Method " Url="html/bec0eee0-f3ba-3482-5a22-420aac5a7c55.htm" />
     <HelpKINode Title="MultiFormatOutputComponent.Factory.Create Method " Url="html/8afc4c6b-a071-8845-8b0b-760859ef3241.htm" />
+    <HelpKINode Title="PreTransformDocumentDumpComponent.Factory.Create Method " Url="html/6bace064-5cf0-c575-9484-e89700ee2a52.htm" />
     <HelpKINode Title="ResolveArtLinksComponent.Factory.Create Method " Url="html/67dcb4f3-c98b-03e3-035f-cc286635edd3.htm" />
     <HelpKINode Title="ResolveConceptualLinksComponent.Factory.Create Method " Url="html/10d49af9-306d-5440-e139-21a10aaef343.htm" />
     <HelpKINode Title="ResolveReferenceLinksComponent.Factory.Create Method " Url="html/affa84cd-fa06-64de-79f7-bd4ab3ea7ff1.htm" />
@@ -1431,6 +1460,7 @@
     <HelpKINode Title="ESentResolveReferenceLinksComponent.ESentResolveReferenceLinksComponentFactory.DefaultConfiguration Property " Url="html/49c3430f-7798-8218-c8fc-e72575a14669.htm" />
     <HelpKINode Title="IntelliSenseComponent.Factory.DefaultConfiguration Property " Url="html/4cceee0b-c70e-85e0-3d76-ace8cc774766.htm" />
     <HelpKINode Title="ISyntaxGeneratorMetadata.DefaultConfiguration Property " Url="html/a80e66a8-6bf7-59be-5e63-767719f89ce6.htm" />
+    <HelpKINode Title="PreTransformDocumentDumpComponent.Factory.DefaultConfiguration Property " Url="html/1685173f-f609-b0ae-e281-9f1520f66a73.htm" />
     <HelpKINode Title="SharedContentComponent.ApiTokenResolutionComponentFactory.DefaultConfiguration Property " Url="html/d45e2a57-4da1-3057-202f-df024cae5034.htm" />
     <HelpKINode Title="SqlCopyFromIndexComponent.SqlCommentsIndexDataComponentFactory.DefaultConfiguration Property " Url="html/13598b5b-e3c9-b7c7-1d3c-2ec7417bfdb1.htm" />
     <HelpKINode Title="SqlCopyFromIndexComponent.SqlReflectionIndexDataComponentFactory.DefaultConfiguration Property " Url="html/53695298-3465-ee76-ebfe-6e0476204fea.htm" />
@@ -1593,8 +1623,8 @@
     <HelpKINode Title="XPathReflectionFileFilterPlugIn.Dispose Method " Url="html/eaf9be6f-1d5f-61c4-2b7d-c5f153b947a3.htm" />
   </HelpKINode>
   <HelpKINode Title="Document property">
-    <HelpKINode Title="TransformedTopicEventArgs.Document Property " Url="html/31bf12f9-4f78-86cd-3574-8a7dcab7dace.htm" />
-    <HelpKINode Title="TransformingTopicEventArgs.Document Property " Url="html/dd5b0c10-a3c0-5d54-0a13-86da616a4e76.htm" />
+    <HelpKINode Title="AppliedChangesEventArgs.Document Property " Url="html/22b2e410-e7ce-ddf0-0d4f-253bb72b5b6e.htm" />
+    <HelpKINode Title="ApplyingChangesEventArgs.Document Property " Url="html/f71fd467-601f-0521-96b5-a47a51d0335a.htm" />
   </HelpKINode>
   <HelpKINode Title="documentation sources" Url="html/64f0576f-51b3-4dae-aaac-06568c6c2f68.htm" />
   <HelpKINode Title="DocumentationSource class">
@@ -2036,69 +2066,71 @@
   <HelpKINode Title="ExtensionMethodReference.TemplateArgs property" Url="html/1440283f-4e90-a4fc-0380-efeba9abbe20.htm" />
   <HelpKINode Title="ExtractingHtmlInfo enumeration member" Url="html/15b1ab7a-6438-34c6-e592-a46320ab5e97.htm" />
   <HelpKINode Title="Factory class">
-    <HelpKINode Title="methods" Url="html/c3d9d55d-78c6-a3cf-8fe3-8cc82963a177.htm" />
-    <HelpKINode Title="methods" Url="html/0c8ba09b-9fe6-7e73-d331-e5884ca65568.htm" />
-    <HelpKINode Title="methods" Url="html/edeaa0e0-64af-b29e-7754-4eda829eff9f.htm" />
-    <HelpKINode Title="methods" Url="html/b2064a29-6e05-1cf7-3c71-493020bd20cd.htm" />
-    <HelpKINode Title="methods" Url="html/159ac4d8-c239-b8ad-3ba4-b86ee76515db.htm" />
-    <HelpKINode Title="methods" Url="html/df432301-24ad-3f6c-fc18-323d14fd1452.htm" />
-    <HelpKINode Title="methods" Url="html/304ad412-8149-e91d-e4b1-8977cbacc524.htm" />
-    <HelpKINode Title="methods" Url="html/d725f0dd-f9cd-a424-d008-5f9cd77e0d8d.htm" />
-    <HelpKINode Title="methods" Url="html/f5fde103-69d2-074e-7095-015540e983ab.htm" />
-    <HelpKINode Title="methods" Url="html/a8d6a169-a8d7-ae81-1bdb-5e07ae7f150b.htm" />
-    <HelpKINode Title="methods" Url="html/8600b83f-b079-a346-c721-ea2b5d84c0e6.htm" />
-    <HelpKINode Title="methods" Url="html/dbc3f6e2-14ff-e05a-c4e1-c1beeb4527c4.htm" />
-    <HelpKINode Title="methods" Url="html/fa14e473-ada8-080b-bdbf-dbcc003e9d08.htm" />
-    <HelpKINode Title="methods" Url="html/fe422dc2-e005-c2e0-419b-7535fa907b74.htm" />
-    <HelpKINode Title="methods" Url="html/45ccadaa-8c5f-022d-4b92-9d992b46a42e.htm" />
-    <HelpKINode Title="methods" Url="html/ff3373f4-e955-d025-f46f-6d1dd7cd2dc1.htm" />
-    <HelpKINode Title="methods" Url="html/67eee490-d1b2-b025-c824-5b7d16e78592.htm" />
     <HelpKINode Title="methods" Url="html/1750c64a-6e4c-51c0-647d-6650dd5dc55f.htm" />
+    <HelpKINode Title="methods" Url="html/8600b83f-b079-a346-c721-ea2b5d84c0e6.htm" />
+    <HelpKINode Title="methods" Url="html/fe422dc2-e005-c2e0-419b-7535fa907b74.htm" />
+    <HelpKINode Title="methods" Url="html/edeaa0e0-64af-b29e-7754-4eda829eff9f.htm" />
     <HelpKINode Title="methods" Url="html/a49fee0e-ac6d-d572-5308-ab267ef73be1.htm" />
-    <HelpKINode Title="methods" Url="html/0b4781fa-5629-60f8-2110-138a0db4a9bc.htm" />
-    <HelpKINode Title="methods" Url="html/e16c72f6-ccbf-7568-8fc6-e87167c667c8.htm" />
-    <HelpKINode Title="methods" Url="html/04187351-1705-ea94-9861-ac6284404ce0.htm" />
-    <HelpKINode Title="methods" Url="html/b4eecfe0-6bfa-cd3e-52eb-8727f070f240.htm" />
-    <HelpKINode Title="methods" Url="html/a4d204ad-6636-be3b-df87-663b74da0930.htm" />
-    <HelpKINode Title="methods" Url="html/cf928053-5e59-3f7a-43fe-eecb6fce991f.htm" />
-    <HelpKINode Title="methods" Url="html/474000e5-9521-0de3-4d6b-d55f0c57e2a0.htm" />
-    <HelpKINode Title="methods" Url="html/dfefabe8-8dfd-87f7-0c41-73d8ef406680.htm" />
-    <HelpKINode Title="methods" Url="html/6426c6d7-98f1-b2f8-e98c-c443dca7805e.htm" />
-    <HelpKINode Title="methods" Url="html/38a13390-5848-bf4c-3841-69eff460a508.htm" />
-    <HelpKINode Title="methods" Url="html/03569625-5696-28b6-adaa-1498817f9004.htm" />
-    <HelpKINode Title="methods" Url="html/0f76fb1a-e85e-39bf-ada4-7987c7632e3c.htm" />
     <HelpKINode Title="methods" Url="html/083c7c3c-d5ff-b3e6-5fc0-269f4f712c9b.htm" />
-    <HelpKINode Title="properties" Url="html/c10ca157-f6a4-7836-55ba-9d3f69daa08c.htm" />
-    <HelpKINode Title="properties" Url="html/dccfe7a1-8ce5-e49b-0e34-6c4532a0b745.htm" />
-    <HelpKINode Title="properties" Url="html/908d13cc-5820-c7e9-f730-c025bb269131.htm" />
-    <HelpKINode Title="properties" Url="html/9399e403-381f-9de4-bcc9-5fd3c4f16301.htm" />
-    <HelpKINode Title="properties" Url="html/28cc1ce0-86b2-7f7c-0f71-f5f76c535aff.htm" />
-    <HelpKINode Title="properties" Url="html/a2d99915-39af-c9a5-1f68-e8632e5a8f8f.htm" />
-    <HelpKINode Title="properties" Url="html/04c5fdcf-1c9c-9082-a364-a19230846967.htm" />
-    <HelpKINode Title="properties" Url="html/b55356de-5097-1bb5-0e2d-73a537a1fd8c.htm" />
-    <HelpKINode Title="properties" Url="html/4085550b-1d37-ee69-52c5-ae06547d0543.htm" />
-    <HelpKINode Title="properties" Url="html/c79f989b-a4f5-28c6-f965-6a53081b6b27.htm" />
-    <HelpKINode Title="properties" Url="html/83a6c977-10c5-b089-cd40-f1dc581662e8.htm" />
-    <HelpKINode Title="properties" Url="html/2b195cc4-b351-1f26-8b3c-4dd27f12c169.htm" />
-    <HelpKINode Title="properties" Url="html/aa8c4e9b-5b8d-e27c-f662-9a581934b80e.htm" />
-    <HelpKINode Title="properties" Url="html/261b406e-1991-529d-87ff-22514c2d2e9b.htm" />
-    <HelpKINode Title="properties" Url="html/39ce7251-97bd-a7b8-f96f-201fbe54a73b.htm" />
-    <HelpKINode Title="properties" Url="html/765b2d0d-acb0-501c-e9da-e5954bb29fd6.htm" />
-    <HelpKINode Title="properties" Url="html/c09b0269-3650-827f-8921-2fa3a71b8bde.htm" />
+    <HelpKINode Title="methods" Url="html/159ac4d8-c239-b8ad-3ba4-b86ee76515db.htm" />
+    <HelpKINode Title="methods" Url="html/cf928053-5e59-3f7a-43fe-eecb6fce991f.htm" />
+    <HelpKINode Title="methods" Url="html/a8d6a169-a8d7-ae81-1bdb-5e07ae7f150b.htm" />
+    <HelpKINode Title="methods" Url="html/0f76fb1a-e85e-39bf-ada4-7987c7632e3c.htm" />
+    <HelpKINode Title="methods" Url="html/dbc3f6e2-14ff-e05a-c4e1-c1beeb4527c4.htm" />
+    <HelpKINode Title="methods" Url="html/304ad412-8149-e91d-e4b1-8977cbacc524.htm" />
+    <HelpKINode Title="methods" Url="html/03569625-5696-28b6-adaa-1498817f9004.htm" />
+    <HelpKINode Title="methods" Url="html/fa14e473-ada8-080b-bdbf-dbcc003e9d08.htm" />
+    <HelpKINode Title="methods" Url="html/df432301-24ad-3f6c-fc18-323d14fd1452.htm" />
+    <HelpKINode Title="methods" Url="html/0b4781fa-5629-60f8-2110-138a0db4a9bc.htm" />
+    <HelpKINode Title="methods" Url="html/dfefabe8-8dfd-87f7-0c41-73d8ef406680.htm" />
+    <HelpKINode Title="methods" Url="html/ff3373f4-e955-d025-f46f-6d1dd7cd2dc1.htm" />
+    <HelpKINode Title="methods" Url="html/04187351-1705-ea94-9861-ac6284404ce0.htm" />
+    <HelpKINode Title="methods" Url="html/38a13390-5848-bf4c-3841-69eff460a508.htm" />
+    <HelpKINode Title="methods" Url="html/6426c6d7-98f1-b2f8-e98c-c443dca7805e.htm" />
+    <HelpKINode Title="methods" Url="html/67eee490-d1b2-b025-c824-5b7d16e78592.htm" />
+    <HelpKINode Title="methods" Url="html/474000e5-9521-0de3-4d6b-d55f0c57e2a0.htm" />
+    <HelpKINode Title="methods" Url="html/623ed352-de78-916d-66c7-944b70686827.htm" />
+    <HelpKINode Title="methods" Url="html/45ccadaa-8c5f-022d-4b92-9d992b46a42e.htm" />
+    <HelpKINode Title="methods" Url="html/e16c72f6-ccbf-7568-8fc6-e87167c667c8.htm" />
+    <HelpKINode Title="methods" Url="html/d725f0dd-f9cd-a424-d008-5f9cd77e0d8d.htm" />
+    <HelpKINode Title="methods" Url="html/a4d204ad-6636-be3b-df87-663b74da0930.htm" />
+    <HelpKINode Title="methods" Url="html/f5fde103-69d2-074e-7095-015540e983ab.htm" />
+    <HelpKINode Title="methods" Url="html/c3d9d55d-78c6-a3cf-8fe3-8cc82963a177.htm" />
+    <HelpKINode Title="methods" Url="html/b4eecfe0-6bfa-cd3e-52eb-8727f070f240.htm" />
+    <HelpKINode Title="methods" Url="html/0c8ba09b-9fe6-7e73-d331-e5884ca65568.htm" />
+    <HelpKINode Title="methods" Url="html/b2064a29-6e05-1cf7-3c71-493020bd20cd.htm" />
     <HelpKINode Title="properties" Url="html/699a0392-120e-976a-70b9-8be64d281ce3.htm" />
-    <HelpKINode Title="properties" Url="html/29c4ef89-bbf0-e412-6e1c-3a554e0fa16c.htm" />
+    <HelpKINode Title="properties" Url="html/39ce7251-97bd-a7b8-f96f-201fbe54a73b.htm" />
+    <HelpKINode Title="properties" Url="html/c09b0269-3650-827f-8921-2fa3a71b8bde.htm" />
     <HelpKINode Title="properties" Url="html/29ddcf5a-8d5a-5f67-1591-3829b48484e0.htm" />
-    <HelpKINode Title="properties" Url="html/023890cf-c29f-8145-f7eb-09d1987756eb.htm" />
-    <HelpKINode Title="properties" Url="html/65dd1723-1125-34a3-5619-408a0ef830c9.htm" />
-    <HelpKINode Title="properties" Url="html/6c8223a3-f83a-3a92-7220-8d7b254f4339.htm" />
     <HelpKINode Title="properties" Url="html/4f8388bc-efc7-3d88-7357-f82fc3cf615d.htm" />
-    <HelpKINode Title="properties" Url="html/143d529a-a795-cde0-e9a7-7d7d778bb0d7.htm" />
-    <HelpKINode Title="properties" Url="html/ba7b2ebd-9ce5-1c98-5e96-858f35f33bb1.htm" />
-    <HelpKINode Title="properties" Url="html/45f91826-8ff4-18aa-0ea6-02cdb975fab6.htm" />
+    <HelpKINode Title="properties" Url="html/908d13cc-5820-c7e9-f730-c025bb269131.htm" />
+    <HelpKINode Title="properties" Url="html/c10ca157-f6a4-7836-55ba-9d3f69daa08c.htm" />
+    <HelpKINode Title="properties" Url="html/2b195cc4-b351-1f26-8b3c-4dd27f12c169.htm" />
+    <HelpKINode Title="properties" Url="html/765b2d0d-acb0-501c-e9da-e5954bb29fd6.htm" />
+    <HelpKINode Title="properties" Url="html/023890cf-c29f-8145-f7eb-09d1987756eb.htm" />
+    <HelpKINode Title="properties" Url="html/28cc1ce0-86b2-7f7c-0f71-f5f76c535aff.htm" />
+    <HelpKINode Title="properties" Url="html/4085550b-1d37-ee69-52c5-ae06547d0543.htm" />
+    <HelpKINode Title="properties" Url="html/83a6c977-10c5-b089-cd40-f1dc581662e8.htm" />
     <HelpKINode Title="properties" Url="html/0c92d8a2-3038-1f7f-0d7c-e2765966f653.htm" />
-    <HelpKINode Title="properties" Url="html/4593bc3c-38fa-7ce6-7a65-5a123adc2fa1.htm" />
+    <HelpKINode Title="properties" Url="html/6c8223a3-f83a-3a92-7220-8d7b254f4339.htm" />
+    <HelpKINode Title="properties" Url="html/dccfe7a1-8ce5-e49b-0e34-6c4532a0b745.htm" />
+    <HelpKINode Title="properties" Url="html/9399e403-381f-9de4-bcc9-5fd3c4f16301.htm" />
+    <HelpKINode Title="properties" Url="html/37f60c41-bc5b-59b5-7247-4aea97702e48.htm" />
+    <HelpKINode Title="properties" Url="html/45f91826-8ff4-18aa-0ea6-02cdb975fab6.htm" />
+    <HelpKINode Title="properties" Url="html/143d529a-a795-cde0-e9a7-7d7d778bb0d7.htm" />
+    <HelpKINode Title="properties" Url="html/65dd1723-1125-34a3-5619-408a0ef830c9.htm" />
+    <HelpKINode Title="properties" Url="html/04c5fdcf-1c9c-9082-a364-a19230846967.htm" />
     <HelpKINode Title="properties" Url="html/36c93462-742e-fd17-f6b9-d015b81f8a2d.htm" />
     <HelpKINode Title="properties" Url="html/123eb7a3-5337-6f54-f415-36d79255b132.htm" />
+    <HelpKINode Title="properties" Url="html/b55356de-5097-1bb5-0e2d-73a537a1fd8c.htm" />
+    <HelpKINode Title="properties" Url="html/c79f989b-a4f5-28c6-f965-6a53081b6b27.htm" />
+    <HelpKINode Title="properties" Url="html/261b406e-1991-529d-87ff-22514c2d2e9b.htm" />
+    <HelpKINode Title="properties" Url="html/a2d99915-39af-c9a5-1f68-e8632e5a8f8f.htm" />
+    <HelpKINode Title="properties" Url="html/4593bc3c-38fa-7ce6-7a65-5a123adc2fa1.htm" />
+    <HelpKINode Title="properties" Url="html/29c4ef89-bbf0-e412-6e1c-3a554e0fa16c.htm" />
+    <HelpKINode Title="properties" Url="html/aa8c4e9b-5b8d-e27c-f662-9a581934b80e.htm" />
+    <HelpKINode Title="properties" Url="html/ba7b2ebd-9ce5-1c98-5e96-858f35f33bb1.htm" />
     <HelpKINode Title="properties" Url="html/ecfe1936-9afc-e399-8750-2c7175987bdf.htm" />
   </HelpKINode>
   <HelpKINode Title="Failed enumeration member" Url="html/15b1ab7a-6438-34c6-e592-a46320ab5e97.htm" />
@@ -2143,13 +2175,16 @@
   <HelpKINode Title="File property" Url="html/b4a001a2-41c2-6aaf-fd65-30d271e0a430.htm" />
   <HelpKINode Title="FileCreatedEventArgs class">
     <HelpKINode Title="FileCreatedEventArgs Class" Url="html/8d7e154a-8cac-191a-81ab-36fc6ad668d3.htm" />
-    <HelpKINode Title="constructor" Url="html/11db6683-6b55-d481-dec8-2e6fc932182a.htm" />
+    <HelpKINode Title="constructor" Url="html/57ab6902-8303-445f-4e4b-29db73f716f7.htm" />
     <HelpKINode Title="methods" Url="html/b6b9a7c1-6c72-660b-7cac-8c4db9c44d03.htm" />
     <HelpKINode Title="properties" Url="html/1b0f52f9-3dfe-5994-bac5-e3ebd6417da7.htm" />
   </HelpKINode>
-  <HelpKINode Title="FileCreatedEventArgs.FileCreatedEventArgs constructor" Url="html/11db6683-6b55-d481-dec8-2e6fc932182a.htm" />
+  <HelpKINode Title="FileCreatedEventArgs.ComponentId property" Url="html/2c6efb8a-1cd1-0547-4b3a-bdfc0b387714.htm" />
+  <HelpKINode Title="FileCreatedEventArgs.FileCreatedEventArgs constructor" Url="html/57ab6902-8303-445f-4e4b-29db73f716f7.htm" />
   <HelpKINode Title="FileCreatedEventArgs.FilePath property" Url="html/26528afb-f315-a850-3e73-fdf56d1b5771.htm" />
+  <HelpKINode Title="FileCreatedEventArgs.GroupId property" Url="html/934e561f-94c2-5b23-2602-c7a337caf365.htm" />
   <HelpKINode Title="FileCreatedEventArgs.IsContentFile property" Url="html/515e49fb-16dc-a7a5-7798-3ec4c663642b.htm" />
+  <HelpKINode Title="FileCreatedEventArgs.Key property" Url="html/b9f7fecd-2bd9-18fd-63eb-f7e59c418962.htm" />
   <HelpKINode Title="FileItem class">
     <HelpKINode Title="FileItem Class" Url="html/6f834771-a15f-6dd9-b9cc-a8eb0e193612.htm" />
     <HelpKINode Title="events" Url="html/6484ae9f-751c-0b99-5bb2-2f560ca630cb.htm" />
@@ -2441,23 +2476,23 @@
   <HelpKINode Title="GetStandardValues method" Url="html/879a7551-f2e2-169c-3467-0d2bcad05c93.htm" />
   <HelpKINode Title="GetTargetInfo method" Url="html/e269b503-d540-52c3-f2e0-6620bf32e75c.htm" />
   <HelpKINode Title="Getting started">
-    <HelpKINode Title="installation" Url="html/8c0c97d0-c968-4c15-9fe9-e8f3a443c50a.htm" />
-    <HelpKINode Title="user preferences - content file editors" Url="html/2e4f207e-45d1-411b-83b1-24965d8eef2c.htm" />
-    <HelpKINode Title="user preferences - general" Url="html/6a35198a-3713-4eb7-929d-555fddc0ccb6.htm" />
-    <HelpKINode Title="absolute and relative paths" Url="html/576b6a36-0808-4857-bec0-e6eeeae4e36b.htm" />
     <HelpKINode Title="create a new project" Url="html/d5dbf017-25f1-48cb-86db-90f76ee8f4d7.htm" />
-    <HelpKINode Title="enable XML comments" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
+    <HelpKINode Title="installation" Url="html/8c0c97d0-c968-4c15-9fe9-e8f3a443c50a.htm" />
     <HelpKINode Title="overview" Url="html/8e3f8757-0ef3-4772-bb2f-5d7ae57e50da.htm" />
     <HelpKINode Title="user preferences" Url="html/2152ed96-bf69-4b9b-b1a7-4fffc71b3095.htm" />
+    <HelpKINode Title="user preferences - general" Url="html/6a35198a-3713-4eb7-929d-555fddc0ccb6.htm" />
     <HelpKINode Title="user preferences - spell checking" Url="html/836847bc-d780-468b-ae23-f014f0829a0f.htm" />
+    <HelpKINode Title="absolute and relative paths" Url="html/576b6a36-0808-4857-bec0-e6eeeae4e36b.htm" />
+    <HelpKINode Title="enable XML comments" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
+    <HelpKINode Title="user preferences - content file editors" Url="html/2e4f207e-45d1-411b-83b1-24965d8eef2c.htm" />
     <HelpKINode Title="Visual Studio" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
     <HelpKINode Title="Visual Studio projects" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
     <HelpKINode Title="Welcome" Url="html/bd1ddb51-1c4f-434f-bb1a-ce2135d3a909.htm" />
   </HelpKINode>
-  <HelpKINode Title="Getting Started" Url="html/b772e00e-1705-4062-adb6-774826ce6700.htm" />
   <HelpKINode Title="getting started">
     <HelpKINode Title="special folder locations" Url="html/a24489fb-45d6-46f4-9eaa-9a9c4e0919b2.htm" />
   </HelpKINode>
+  <HelpKINode Title="Getting Started" Url="html/b772e00e-1705-4062-adb6-774826ce6700.htm" />
   <HelpKINode Title="GetValues method">
     <HelpKINode Title="IndexedCache.GetValues Method " Url="html/172b51b8-8ef1-f26e-d82d-a81b92ec7253.htm" />
     <HelpKINode Title="IndexedCommentsCache.GetValues Method " Url="html/9455b27f-2668-59e6-7bf8-49d38756f8ee.htm" />
@@ -2467,8 +2502,11 @@
   <HelpKINode Title="GreaterThan operator" Url="html/217be50c-e903-8ac2-7656-13045bc74e6a.htm" />
   <HelpKINode Title="Group property" Url="html/8b8a8c2d-17ef-37c8-9dc5-8596aaba1581.htm" />
   <HelpKINode Title="GroupId property">
+    <HelpKINode Title="AppliedChangesEventArgs.GroupId Property " Url="html/ea315973-836e-1fec-3316-90f3a93e9df2.htm" />
+    <HelpKINode Title="ApplyingChangesEventArgs.GroupId Property " Url="html/594737bc-e017-99aa-ee4f-6cdcd10cc39b.htm" />
     <HelpKINode Title="BuildComponentCore.GroupId Property " Url="html/57e6ad9c-5ecc-1ac7-aac7-c69ef1fcaa9b.htm" />
     <HelpKINode Title="CloneComponent.GroupId Property " Url="html/6a068134-54e3-fff3-7f2d-c4ce4c993144.htm" />
+    <HelpKINode Title="FileCreatedEventArgs.GroupId Property " Url="html/934e561f-94c2-5b23-2602-c7a337caf365.htm" />
     <HelpKINode Title="ForEachComponent.GroupId Property " Url="html/bda604ce-d39e-efd4-06f6-1e1e3230f443.htm" />
     <HelpKINode Title="IfThenComponent.GroupId Property " Url="html/c74134e1-61aa-2a41-d4cf-7427f1bab240.htm" />
     <HelpKINode Title="MultiFormatOutputComponent.GroupId Property " Url="html/d5eab404-0355-a80b-d4c9-726552396581.htm" />
@@ -2864,6 +2902,7 @@
     <HelpKINode Title="MemberIdFixUpPlugIn.Initialize Method " Url="html/33c34fdd-1fc1-472e-0a38-62d7a8cfff70.htm" />
     <HelpKINode Title="MSHCComponent.Initialize Method " Url="html/605db430-4527-dcbd-37c3-c9e4066d6d15.htm" />
     <HelpKINode Title="MultiFormatOutputComponent.Initialize Method " Url="html/78ff53e1-87fc-a66e-cd61-ba5a89b0dec4.htm" />
+    <HelpKINode Title="PreTransformDocumentDumpComponent.Initialize Method " Url="html/90a1d36b-b7f0-f401-fb29-a89ad710832a.htm" />
     <HelpKINode Title="ResolveArtLinksComponent.Initialize Method " Url="html/8f9660ab-3dbe-157c-c8d5-bb51c78efec0.htm" />
     <HelpKINode Title="ResolveConceptualLinksComponent.Initialize Method " Url="html/0d1b8ee8-4b70-76f2-7c2d-09f56171311f.htm" />
     <HelpKINode Title="ResolveReferenceLinksComponent.Initialize Method " Url="html/42c51fe6-18c0-314b-57c3-da92088de41c.htm" />
@@ -3231,10 +3270,11 @@
   <HelpKINode Title="KeepLogFile property" Url="html/bdaccb2a-f6c9-c702-2daf-4fc5770535f9.htm" />
   <HelpKINode Title="KeepReferenceAssembly method" Url="html/ee1570bf-7e42-7e3b-1a3b-85fd67d010bf.htm" />
   <HelpKINode Title="Key property">
+    <HelpKINode Title="AppliedChangesEventArgs.Key Property " Url="html/0aaf4670-c844-fa90-215c-c7edffc391d6.htm" />
+    <HelpKINode Title="ApplyingChangesEventArgs.Key Property " Url="html/eabbfa34-b625-5cc7-074f-1ecb23ee2f3a.htm" />
     <HelpKINode Title="CopyFromIndexCommand.Key Property " Url="html/ebef1aef-87ab-c93a-17bd-69062fd21424.htm" />
+    <HelpKINode Title="FileCreatedEventArgs.Key Property " Url="html/b9f7fecd-2bd9-18fd-63eb-f7e59c418962.htm" />
     <HelpKINode Title="TransformComponentArgument.Key Property " Url="html/20f6adc3-56a2-0151-7e8f-6fccc9777834.htm" />
-    <HelpKINode Title="TransformedTopicEventArgs.Key Property " Url="html/01f37f47-034c-91ad-0c89-f1b86d1c604a.htm" />
-    <HelpKINode Title="TransformingTopicEventArgs.Key Property " Url="html/fab89d5e-5309-4297-a5a6-8354623f0699.htm" />
   </HelpKINode>
   <HelpKINode Title="KeyExpression property" Url="html/49b5e34f-f1fa-c411-6526-bc863e4d6288.htm" />
   <HelpKINode Title="Keys property">
@@ -4042,6 +4082,22 @@
   <HelpKINode Title="PresentationStyleSettings.ToolResourceItemsPath property" Url="html/9372a0b6-5610-8d22-b92f-143cec0be33a.htm" />
   <HelpKINode Title="PresentationStyleSettings.TransformComponentArguments property" Url="html/8a72659b-18d1-7882-945b-f74a93872ca4.htm" />
   <HelpKINode Title="PreserveWhitespace method" Url="html/6d98215b-fc75-70b3-fa07-93ea72eff6fe.htm" />
+  <HelpKINode Title="PreTransformDocumentDumpComponent class">
+    <HelpKINode Title="PreTransformDocumentDumpComponent Class" Url="html/c72b1d43-b34b-149e-664f-4ba242096f24.htm" />
+    <HelpKINode Title="constructor" Url="html/36e09094-6996-4299-6499-b860fd85b6b7.htm" />
+    <HelpKINode Title="methods" Url="html/9cebef98-fec3-8e40-0d61-5d48d031f5de.htm" />
+    <HelpKINode Title="properties" Url="html/f647e1fb-7a1d-5be2-27c7-0e375777a51f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PreTransformDocumentDumpComponent.Apply method" Url="html/caf68284-b73e-524c-df2e-85f5725aef65.htm" />
+  <HelpKINode Title="PreTransformDocumentDumpComponent.Factory class">
+    <HelpKINode Title="PreTransformDocumentDumpComponent.Factory Class" Url="html/9eef15a2-3085-dc66-460d-580b6d2db979.htm" />
+    <HelpKINode Title="constructor" Url="html/3661d0d2-c256-be42-e985-33f4523c70aa.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PreTransformDocumentDumpComponent.Factory.Create method" Url="html/6bace064-5cf0-c575-9484-e89700ee2a52.htm" />
+  <HelpKINode Title="PreTransformDocumentDumpComponent.Factory.DefaultConfiguration property" Url="html/1685173f-f609-b0ae-e281-9f1520f66a73.htm" />
+  <HelpKINode Title="PreTransformDocumentDumpComponent.Factory.Factory constructor" Url="html/3661d0d2-c256-be42-e985-33f4523c70aa.htm" />
+  <HelpKINode Title="PreTransformDocumentDumpComponent.Initialize method" Url="html/90a1d36b-b7f0-f401-fb29-a89ad710832a.htm" />
+  <HelpKINode Title="PreTransformDocumentDumpComponent.PreTransformDocumentDumpComponent constructor" Url="html/36e09094-6996-4299-6499-b860fd85b6b7.htm" />
   <HelpKINode Title="PreviewerTitle property" Url="html/a6217d6b-f392-e8f6-3f90-b01963b88e6b.htm" />
   <HelpKINode Title="prior versions">
     <HelpKINode Title="v1.0.0.0 to v1.7.0.0" Url="html/6110ac54-04d8-4624-8a2b-2a58af63c20d.htm" />
@@ -4577,6 +4633,8 @@
   <HelpKINode Title="Sandcastle.Core.BuildAssembler namespace" Url="html/9eba522a-f06f-da1e-8e51-2bd8b38055bc.htm" />
   <HelpKINode Title="Sandcastle.Core.BuildAssembler.BuildAssemblerCore class" Url="html/e29ecb2a-4285-60bf-b36f-de9c72a99252.htm" />
   <HelpKINode Title="Sandcastle.Core.BuildAssembler.BuildComponent namespace" Url="html/c2460a94-d45e-9a2c-6c4a-9e894a60289e.htm" />
+  <HelpKINode Title="Sandcastle.Core.BuildAssembler.BuildComponent.AppliedChangesEventArgs class" Url="html/e42a3d65-d8e5-2262-4e78-884166ac0280.htm" />
+  <HelpKINode Title="Sandcastle.Core.BuildAssembler.BuildComponent.ApplyingChangesEventArgs class" Url="html/c9c1fe68-39ea-d482-99fe-eb898fc1d6e3.htm" />
   <HelpKINode Title="Sandcastle.Core.BuildAssembler.BuildComponent.BuildComponentCore class" Url="html/29d28209-9b7a-3f02-4613-94f08496b13d.htm" />
   <HelpKINode Title="Sandcastle.Core.BuildAssembler.BuildComponent.BuildComponentExportAttribute class" Url="html/1c8680bb-30fd-d8a7-a1b7-b793c9105828.htm" />
   <HelpKINode Title="Sandcastle.Core.BuildAssembler.BuildComponent.BuildComponentFactory class" Url="html/6cc0484a-2d33-0b12-aacf-546f5a0460e9.htm" />
@@ -4674,6 +4732,8 @@
   <HelpKINode Title="Sandcastle.Tools.BuildComponents.MicrosoftDocsXRefServiceResolver class" Url="html/1c77e395-185d-6be1-8dc8-4f38ae55fc16.htm" />
   <HelpKINode Title="Sandcastle.Tools.BuildComponents.MSHCComponent class" Url="html/1c1cf594-c5e7-9423-e010-9d3336bb78c9.htm" />
   <HelpKINode Title="Sandcastle.Tools.BuildComponents.MSHCComponent.Factory class" Url="html/9fb286b1-59dd-d415-5d08-99aa20b06c0d.htm" />
+  <HelpKINode Title="Sandcastle.Tools.BuildComponents.PreTransformDocumentDumpComponent class" Url="html/c72b1d43-b34b-149e-664f-4ba242096f24.htm" />
+  <HelpKINode Title="Sandcastle.Tools.BuildComponents.PreTransformDocumentDumpComponent.Factory class" Url="html/9eef15a2-3085-dc66-460d-580b6d2db979.htm" />
   <HelpKINode Title="Sandcastle.Tools.BuildComponents.ResolveArtLinksComponent class" Url="html/18b952a4-e053-2687-e14d-753bd4e7bb27.htm" />
   <HelpKINode Title="Sandcastle.Tools.BuildComponents.ResolveArtLinksComponent.Factory class" Url="html/f46e2db0-b5e0-f5d6-fb1d-84ed40d396a3.htm" />
   <HelpKINode Title="Sandcastle.Tools.BuildComponents.ResolveConceptualLinksComponent class" Url="html/fe3fa3e9-36b7-f90a-12e9-da3785a9a179.htm" />
@@ -4753,8 +4813,6 @@
   <HelpKINode Title="Sandcastle.Tools.BuildComponents.Transform class" Url="html/1bc302ba-1b75-979e-1b41-58b51e0bff9f.htm" />
   <HelpKINode Title="Sandcastle.Tools.BuildComponents.TransformComponent class" Url="html/27f709cb-6739-e059-b57f-b2102e68b917.htm" />
   <HelpKINode Title="Sandcastle.Tools.BuildComponents.TransformComponent.Factory class" Url="html/f98e6748-67f5-8d0f-71f4-e35943f8d629.htm" />
-  <HelpKINode Title="Sandcastle.Tools.BuildComponents.TransformedTopicEventArgs class" Url="html/dce134ab-2455-788f-19df-b1286b1ed07c.htm" />
-  <HelpKINode Title="Sandcastle.Tools.BuildComponents.TransformingTopicEventArgs class" Url="html/832bb2a3-3cd9-b768-af09-774a647d17cb.htm" />
   <HelpKINode Title="Sandcastle.Tools.SyntaxGenerators namespace" Url="html/c932a16b-c8ac-9067-6811-2e9b98b5e83c.htm" />
   <HelpKINode Title="Sandcastle.Tools.SyntaxGenerators.AspNetSyntaxGenerator class" Url="html/743a71ad-9a9d-3879-672e-b1134924ad4d.htm" />
   <HelpKINode Title="Sandcastle.Tools.SyntaxGenerators.AspNetSyntaxGenerator.Factory class" Url="html/dd5b26aa-1984-ffb2-bec4-8c769f095b54.htm" />
@@ -6115,24 +6173,6 @@
     <HelpKINode Title="PresentationStyleSettings.TransformComponentArguments Property " Url="html/8a72659b-18d1-7882-945b-f74a93872ca4.htm" />
     <HelpKINode Title="SandcastleProject.TransformComponentArguments Property " Url="html/9dfecd92-8a7f-591b-8ee6-04ccaa3d30cc.htm" />
   </HelpKINode>
-  <HelpKINode Title="TransformedTopicEventArgs class">
-    <HelpKINode Title="TransformedTopicEventArgs Class" Url="html/dce134ab-2455-788f-19df-b1286b1ed07c.htm" />
-    <HelpKINode Title="constructor" Url="html/d7c43a2b-4291-0d3d-22fd-15e9349a8323.htm" />
-    <HelpKINode Title="methods" Url="html/1017f256-f341-a3ef-c27d-de329435182b.htm" />
-    <HelpKINode Title="properties" Url="html/d5efa94b-10b8-3bbd-2191-b7fb73026db4.htm" />
-  </HelpKINode>
-  <HelpKINode Title="TransformedTopicEventArgs.Document property" Url="html/31bf12f9-4f78-86cd-3574-8a7dcab7dace.htm" />
-  <HelpKINode Title="TransformedTopicEventArgs.Key property" Url="html/01f37f47-034c-91ad-0c89-f1b86d1c604a.htm" />
-  <HelpKINode Title="TransformedTopicEventArgs.TransformedTopicEventArgs constructor" Url="html/d7c43a2b-4291-0d3d-22fd-15e9349a8323.htm" />
-  <HelpKINode Title="TransformingTopicEventArgs class">
-    <HelpKINode Title="TransformingTopicEventArgs Class" Url="html/832bb2a3-3cd9-b768-af09-774a647d17cb.htm" />
-    <HelpKINode Title="constructor" Url="html/fdb2b9f4-f1eb-6759-f488-78756b4a8d0b.htm" />
-    <HelpKINode Title="methods" Url="html/82f0ed13-63ff-09db-985c-629b2e0eacbc.htm" />
-    <HelpKINode Title="properties" Url="html/be9ce0ee-f4f1-a6b4-4fc2-7da5d70e5faf.htm" />
-  </HelpKINode>
-  <HelpKINode Title="TransformingTopicEventArgs.Document property" Url="html/dd5b0c10-a3c0-5d54-0a13-86da616a4e76.htm" />
-  <HelpKINode Title="TransformingTopicEventArgs.Key property" Url="html/fab89d5e-5309-4297-a5a6-8354623f0699.htm" />
-  <HelpKINode Title="TransformingTopicEventArgs.TransformingTopicEventArgs constructor" Url="html/fdb2b9f4-f1eb-6759-f488-78756b4a8d0b.htm" />
   <HelpKINode Title="TransformReflectionInfo enumeration member" Url="html/c23bef09-0aa4-e635-b4a9-08b0abd47f55.htm" />
   <HelpKINode Title="TransformTemplate method" Url="html/5d2809af-46cf-a49a-1f35-511c3f8a08be.htm" />
   <HelpKINode Title="TransformText method" Url="html/d12574b3-d01c-801b-2aba-249c053b16c9.htm" />
@@ -6335,6 +6375,7 @@
     <HelpKINode Title="2021.11.7.0" Url="html/003c85ec-45ad-4123-a31d-fd63a695b1f3.htm" />
     <HelpKINode Title="2021.3.29.0" Url="html/70b704dc-03c8-4934-b83e-e84d4d7f927a.htm" />
     <HelpKINode Title="2021.4.9.0" Url="html/52c2409d-0a0a-4b6e-bd0a-5d2b03d1d332.htm" />
+    <HelpKINode Title="2022.1.22.0" Url="html/5491f230-cc0d-4604-8710-c046584907bd.htm" />
     <HelpKINode Title="known issues" Url="html/21c2a363-6c94-440b-8985-6b224d275463.htm" />
   </HelpKINode>
   <HelpKINode Title="VersionSettings class">
