@@ -2066,72 +2066,72 @@
   <HelpKINode Title="ExtensionMethodReference.TemplateArgs property" Url="html/1440283f-4e90-a4fc-0380-efeba9abbe20.htm" />
   <HelpKINode Title="ExtractingHtmlInfo enumeration member" Url="html/15b1ab7a-6438-34c6-e592-a46320ab5e97.htm" />
   <HelpKINode Title="Factory class">
-    <HelpKINode Title="methods" Url="html/1750c64a-6e4c-51c0-647d-6650dd5dc55f.htm" />
-    <HelpKINode Title="methods" Url="html/8600b83f-b079-a346-c721-ea2b5d84c0e6.htm" />
-    <HelpKINode Title="methods" Url="html/fe422dc2-e005-c2e0-419b-7535fa907b74.htm" />
-    <HelpKINode Title="methods" Url="html/edeaa0e0-64af-b29e-7754-4eda829eff9f.htm" />
-    <HelpKINode Title="methods" Url="html/a49fee0e-ac6d-d572-5308-ab267ef73be1.htm" />
-    <HelpKINode Title="methods" Url="html/083c7c3c-d5ff-b3e6-5fc0-269f4f712c9b.htm" />
-    <HelpKINode Title="methods" Url="html/159ac4d8-c239-b8ad-3ba4-b86ee76515db.htm" />
     <HelpKINode Title="methods" Url="html/cf928053-5e59-3f7a-43fe-eecb6fce991f.htm" />
-    <HelpKINode Title="methods" Url="html/a8d6a169-a8d7-ae81-1bdb-5e07ae7f150b.htm" />
-    <HelpKINode Title="methods" Url="html/0f76fb1a-e85e-39bf-ada4-7987c7632e3c.htm" />
-    <HelpKINode Title="methods" Url="html/dbc3f6e2-14ff-e05a-c4e1-c1beeb4527c4.htm" />
-    <HelpKINode Title="methods" Url="html/304ad412-8149-e91d-e4b1-8977cbacc524.htm" />
-    <HelpKINode Title="methods" Url="html/03569625-5696-28b6-adaa-1498817f9004.htm" />
-    <HelpKINode Title="methods" Url="html/fa14e473-ada8-080b-bdbf-dbcc003e9d08.htm" />
-    <HelpKINode Title="methods" Url="html/df432301-24ad-3f6c-fc18-323d14fd1452.htm" />
-    <HelpKINode Title="methods" Url="html/0b4781fa-5629-60f8-2110-138a0db4a9bc.htm" />
-    <HelpKINode Title="methods" Url="html/dfefabe8-8dfd-87f7-0c41-73d8ef406680.htm" />
-    <HelpKINode Title="methods" Url="html/ff3373f4-e955-d025-f46f-6d1dd7cd2dc1.htm" />
     <HelpKINode Title="methods" Url="html/04187351-1705-ea94-9861-ac6284404ce0.htm" />
-    <HelpKINode Title="methods" Url="html/38a13390-5848-bf4c-3841-69eff460a508.htm" />
-    <HelpKINode Title="methods" Url="html/6426c6d7-98f1-b2f8-e98c-c443dca7805e.htm" />
-    <HelpKINode Title="methods" Url="html/67eee490-d1b2-b025-c824-5b7d16e78592.htm" />
-    <HelpKINode Title="methods" Url="html/474000e5-9521-0de3-4d6b-d55f0c57e2a0.htm" />
-    <HelpKINode Title="methods" Url="html/623ed352-de78-916d-66c7-944b70686827.htm" />
-    <HelpKINode Title="methods" Url="html/45ccadaa-8c5f-022d-4b92-9d992b46a42e.htm" />
-    <HelpKINode Title="methods" Url="html/e16c72f6-ccbf-7568-8fc6-e87167c667c8.htm" />
+    <HelpKINode Title="methods" Url="html/dfefabe8-8dfd-87f7-0c41-73d8ef406680.htm" />
+    <HelpKINode Title="methods" Url="html/03569625-5696-28b6-adaa-1498817f9004.htm" />
     <HelpKINode Title="methods" Url="html/d725f0dd-f9cd-a424-d008-5f9cd77e0d8d.htm" />
-    <HelpKINode Title="methods" Url="html/a4d204ad-6636-be3b-df87-663b74da0930.htm" />
-    <HelpKINode Title="methods" Url="html/f5fde103-69d2-074e-7095-015540e983ab.htm" />
-    <HelpKINode Title="methods" Url="html/c3d9d55d-78c6-a3cf-8fe3-8cc82963a177.htm" />
+    <HelpKINode Title="methods" Url="html/159ac4d8-c239-b8ad-3ba4-b86ee76515db.htm" />
     <HelpKINode Title="methods" Url="html/b4eecfe0-6bfa-cd3e-52eb-8727f070f240.htm" />
-    <HelpKINode Title="methods" Url="html/0c8ba09b-9fe6-7e73-d331-e5884ca65568.htm" />
+    <HelpKINode Title="methods" Url="html/edeaa0e0-64af-b29e-7754-4eda829eff9f.htm" />
+    <HelpKINode Title="methods" Url="html/474000e5-9521-0de3-4d6b-d55f0c57e2a0.htm" />
+    <HelpKINode Title="methods" Url="html/a49fee0e-ac6d-d572-5308-ab267ef73be1.htm" />
+    <HelpKINode Title="methods" Url="html/a8d6a169-a8d7-ae81-1bdb-5e07ae7f150b.htm" />
+    <HelpKINode Title="methods" Url="html/6426c6d7-98f1-b2f8-e98c-c443dca7805e.htm" />
+    <HelpKINode Title="methods" Url="html/1750c64a-6e4c-51c0-647d-6650dd5dc55f.htm" />
+    <HelpKINode Title="methods" Url="html/f5fde103-69d2-074e-7095-015540e983ab.htm" />
     <HelpKINode Title="methods" Url="html/b2064a29-6e05-1cf7-3c71-493020bd20cd.htm" />
-    <HelpKINode Title="properties" Url="html/699a0392-120e-976a-70b9-8be64d281ce3.htm" />
-    <HelpKINode Title="properties" Url="html/39ce7251-97bd-a7b8-f96f-201fbe54a73b.htm" />
-    <HelpKINode Title="properties" Url="html/c09b0269-3650-827f-8921-2fa3a71b8bde.htm" />
-    <HelpKINode Title="properties" Url="html/29ddcf5a-8d5a-5f67-1591-3829b48484e0.htm" />
-    <HelpKINode Title="properties" Url="html/4f8388bc-efc7-3d88-7357-f82fc3cf615d.htm" />
-    <HelpKINode Title="properties" Url="html/908d13cc-5820-c7e9-f730-c025bb269131.htm" />
-    <HelpKINode Title="properties" Url="html/c10ca157-f6a4-7836-55ba-9d3f69daa08c.htm" />
-    <HelpKINode Title="properties" Url="html/2b195cc4-b351-1f26-8b3c-4dd27f12c169.htm" />
-    <HelpKINode Title="properties" Url="html/765b2d0d-acb0-501c-e9da-e5954bb29fd6.htm" />
-    <HelpKINode Title="properties" Url="html/023890cf-c29f-8145-f7eb-09d1987756eb.htm" />
-    <HelpKINode Title="properties" Url="html/28cc1ce0-86b2-7f7c-0f71-f5f76c535aff.htm" />
-    <HelpKINode Title="properties" Url="html/4085550b-1d37-ee69-52c5-ae06547d0543.htm" />
-    <HelpKINode Title="properties" Url="html/83a6c977-10c5-b089-cd40-f1dc581662e8.htm" />
-    <HelpKINode Title="properties" Url="html/0c92d8a2-3038-1f7f-0d7c-e2765966f653.htm" />
-    <HelpKINode Title="properties" Url="html/6c8223a3-f83a-3a92-7220-8d7b254f4339.htm" />
-    <HelpKINode Title="properties" Url="html/dccfe7a1-8ce5-e49b-0e34-6c4532a0b745.htm" />
-    <HelpKINode Title="properties" Url="html/9399e403-381f-9de4-bcc9-5fd3c4f16301.htm" />
-    <HelpKINode Title="properties" Url="html/37f60c41-bc5b-59b5-7247-4aea97702e48.htm" />
-    <HelpKINode Title="properties" Url="html/45f91826-8ff4-18aa-0ea6-02cdb975fab6.htm" />
-    <HelpKINode Title="properties" Url="html/143d529a-a795-cde0-e9a7-7d7d778bb0d7.htm" />
-    <HelpKINode Title="properties" Url="html/65dd1723-1125-34a3-5619-408a0ef830c9.htm" />
-    <HelpKINode Title="properties" Url="html/04c5fdcf-1c9c-9082-a364-a19230846967.htm" />
-    <HelpKINode Title="properties" Url="html/36c93462-742e-fd17-f6b9-d015b81f8a2d.htm" />
-    <HelpKINode Title="properties" Url="html/123eb7a3-5337-6f54-f415-36d79255b132.htm" />
-    <HelpKINode Title="properties" Url="html/b55356de-5097-1bb5-0e2d-73a537a1fd8c.htm" />
-    <HelpKINode Title="properties" Url="html/c79f989b-a4f5-28c6-f965-6a53081b6b27.htm" />
-    <HelpKINode Title="properties" Url="html/261b406e-1991-529d-87ff-22514c2d2e9b.htm" />
-    <HelpKINode Title="properties" Url="html/a2d99915-39af-c9a5-1f68-e8632e5a8f8f.htm" />
-    <HelpKINode Title="properties" Url="html/4593bc3c-38fa-7ce6-7a65-5a123adc2fa1.htm" />
-    <HelpKINode Title="properties" Url="html/29c4ef89-bbf0-e412-6e1c-3a554e0fa16c.htm" />
-    <HelpKINode Title="properties" Url="html/aa8c4e9b-5b8d-e27c-f662-9a581934b80e.htm" />
-    <HelpKINode Title="properties" Url="html/ba7b2ebd-9ce5-1c98-5e96-858f35f33bb1.htm" />
+    <HelpKINode Title="methods" Url="html/fa14e473-ada8-080b-bdbf-dbcc003e9d08.htm" />
+    <HelpKINode Title="methods" Url="html/e16c72f6-ccbf-7568-8fc6-e87167c667c8.htm" />
+    <HelpKINode Title="methods" Url="html/fe422dc2-e005-c2e0-419b-7535fa907b74.htm" />
+    <HelpKINode Title="methods" Url="html/8600b83f-b079-a346-c721-ea2b5d84c0e6.htm" />
+    <HelpKINode Title="methods" Url="html/38a13390-5848-bf4c-3841-69eff460a508.htm" />
+    <HelpKINode Title="methods" Url="html/c3d9d55d-78c6-a3cf-8fe3-8cc82963a177.htm" />
+    <HelpKINode Title="methods" Url="html/083c7c3c-d5ff-b3e6-5fc0-269f4f712c9b.htm" />
+    <HelpKINode Title="methods" Url="html/0c8ba09b-9fe6-7e73-d331-e5884ca65568.htm" />
+    <HelpKINode Title="methods" Url="html/304ad412-8149-e91d-e4b1-8977cbacc524.htm" />
+    <HelpKINode Title="methods" Url="html/0f76fb1a-e85e-39bf-ada4-7987c7632e3c.htm" />
+    <HelpKINode Title="methods" Url="html/67eee490-d1b2-b025-c824-5b7d16e78592.htm" />
+    <HelpKINode Title="methods" Url="html/623ed352-de78-916d-66c7-944b70686827.htm" />
+    <HelpKINode Title="methods" Url="html/dbc3f6e2-14ff-e05a-c4e1-c1beeb4527c4.htm" />
+    <HelpKINode Title="methods" Url="html/0b4781fa-5629-60f8-2110-138a0db4a9bc.htm" />
+    <HelpKINode Title="methods" Url="html/45ccadaa-8c5f-022d-4b92-9d992b46a42e.htm" />
+    <HelpKINode Title="methods" Url="html/df432301-24ad-3f6c-fc18-323d14fd1452.htm" />
+    <HelpKINode Title="methods" Url="html/ff3373f4-e955-d025-f46f-6d1dd7cd2dc1.htm" />
+    <HelpKINode Title="methods" Url="html/a4d204ad-6636-be3b-df87-663b74da0930.htm" />
     <HelpKINode Title="properties" Url="html/ecfe1936-9afc-e399-8750-2c7175987bdf.htm" />
+    <HelpKINode Title="properties" Url="html/261b406e-1991-529d-87ff-22514c2d2e9b.htm" />
+    <HelpKINode Title="properties" Url="html/9399e403-381f-9de4-bcc9-5fd3c4f16301.htm" />
+    <HelpKINode Title="properties" Url="html/4085550b-1d37-ee69-52c5-ae06547d0543.htm" />
+    <HelpKINode Title="properties" Url="html/36c93462-742e-fd17-f6b9-d015b81f8a2d.htm" />
+    <HelpKINode Title="properties" Url="html/83a6c977-10c5-b089-cd40-f1dc581662e8.htm" />
+    <HelpKINode Title="properties" Url="html/04c5fdcf-1c9c-9082-a364-a19230846967.htm" />
+    <HelpKINode Title="properties" Url="html/143d529a-a795-cde0-e9a7-7d7d778bb0d7.htm" />
+    <HelpKINode Title="properties" Url="html/a2d99915-39af-c9a5-1f68-e8632e5a8f8f.htm" />
+    <HelpKINode Title="properties" Url="html/c10ca157-f6a4-7836-55ba-9d3f69daa08c.htm" />
+    <HelpKINode Title="properties" Url="html/dccfe7a1-8ce5-e49b-0e34-6c4532a0b745.htm" />
+    <HelpKINode Title="properties" Url="html/0c92d8a2-3038-1f7f-0d7c-e2765966f653.htm" />
+    <HelpKINode Title="properties" Url="html/29c4ef89-bbf0-e412-6e1c-3a554e0fa16c.htm" />
+    <HelpKINode Title="properties" Url="html/39ce7251-97bd-a7b8-f96f-201fbe54a73b.htm" />
+    <HelpKINode Title="properties" Url="html/699a0392-120e-976a-70b9-8be64d281ce3.htm" />
+    <HelpKINode Title="properties" Url="html/65dd1723-1125-34a3-5619-408a0ef830c9.htm" />
+    <HelpKINode Title="properties" Url="html/28cc1ce0-86b2-7f7c-0f71-f5f76c535aff.htm" />
+    <HelpKINode Title="properties" Url="html/aa8c4e9b-5b8d-e27c-f662-9a581934b80e.htm" />
+    <HelpKINode Title="properties" Url="html/6c8223a3-f83a-3a92-7220-8d7b254f4339.htm" />
+    <HelpKINode Title="properties" Url="html/c09b0269-3650-827f-8921-2fa3a71b8bde.htm" />
+    <HelpKINode Title="properties" Url="html/123eb7a3-5337-6f54-f415-36d79255b132.htm" />
+    <HelpKINode Title="properties" Url="html/c79f989b-a4f5-28c6-f965-6a53081b6b27.htm" />
+    <HelpKINode Title="properties" Url="html/4f8388bc-efc7-3d88-7357-f82fc3cf615d.htm" />
+    <HelpKINode Title="properties" Url="html/29ddcf5a-8d5a-5f67-1591-3829b48484e0.htm" />
+    <HelpKINode Title="properties" Url="html/765b2d0d-acb0-501c-e9da-e5954bb29fd6.htm" />
+    <HelpKINode Title="properties" Url="html/4593bc3c-38fa-7ce6-7a65-5a123adc2fa1.htm" />
+    <HelpKINode Title="properties" Url="html/023890cf-c29f-8145-f7eb-09d1987756eb.htm" />
+    <HelpKINode Title="properties" Url="html/37f60c41-bc5b-59b5-7247-4aea97702e48.htm" />
+    <HelpKINode Title="properties" Url="html/ba7b2ebd-9ce5-1c98-5e96-858f35f33bb1.htm" />
+    <HelpKINode Title="properties" Url="html/2b195cc4-b351-1f26-8b3c-4dd27f12c169.htm" />
+    <HelpKINode Title="properties" Url="html/908d13cc-5820-c7e9-f730-c025bb269131.htm" />
+    <HelpKINode Title="properties" Url="html/45f91826-8ff4-18aa-0ea6-02cdb975fab6.htm" />
+    <HelpKINode Title="properties" Url="html/b55356de-5097-1bb5-0e2d-73a537a1fd8c.htm" />
   </HelpKINode>
   <HelpKINode Title="Failed enumeration member" Url="html/15b1ab7a-6438-34c6-e592-a46320ab5e97.htm" />
   <HelpKINode Title="FailOnFetchingContentFromDisk field" Url="html/a9272908-00a6-419c-49cf-ef15b78fc6ed.htm" />
@@ -2476,17 +2476,17 @@
   <HelpKINode Title="GetStandardValues method" Url="html/879a7551-f2e2-169c-3467-0d2bcad05c93.htm" />
   <HelpKINode Title="GetTargetInfo method" Url="html/e269b503-d540-52c3-f2e0-6620bf32e75c.htm" />
   <HelpKINode Title="Getting started">
+    <HelpKINode Title="absolute and relative paths" Url="html/576b6a36-0808-4857-bec0-e6eeeae4e36b.htm" />
     <HelpKINode Title="create a new project" Url="html/d5dbf017-25f1-48cb-86db-90f76ee8f4d7.htm" />
+    <HelpKINode Title="enable XML comments" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
     <HelpKINode Title="installation" Url="html/8c0c97d0-c968-4c15-9fe9-e8f3a443c50a.htm" />
-    <HelpKINode Title="overview" Url="html/8e3f8757-0ef3-4772-bb2f-5d7ae57e50da.htm" />
-    <HelpKINode Title="user preferences" Url="html/2152ed96-bf69-4b9b-b1a7-4fffc71b3095.htm" />
+    <HelpKINode Title="user preferences - content file editors" Url="html/2e4f207e-45d1-411b-83b1-24965d8eef2c.htm" />
     <HelpKINode Title="user preferences - general" Url="html/6a35198a-3713-4eb7-929d-555fddc0ccb6.htm" />
     <HelpKINode Title="user preferences - spell checking" Url="html/836847bc-d780-468b-ae23-f014f0829a0f.htm" />
-    <HelpKINode Title="absolute and relative paths" Url="html/576b6a36-0808-4857-bec0-e6eeeae4e36b.htm" />
-    <HelpKINode Title="enable XML comments" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
-    <HelpKINode Title="user preferences - content file editors" Url="html/2e4f207e-45d1-411b-83b1-24965d8eef2c.htm" />
     <HelpKINode Title="Visual Studio" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
     <HelpKINode Title="Visual Studio projects" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
+    <HelpKINode Title="overview" Url="html/8e3f8757-0ef3-4772-bb2f-5d7ae57e50da.htm" />
+    <HelpKINode Title="user preferences" Url="html/2152ed96-bf69-4b9b-b1a7-4fffc71b3095.htm" />
     <HelpKINode Title="Welcome" Url="html/bd1ddb51-1c4f-434f-bb1a-ce2135d3a909.htm" />
   </HelpKINode>
   <HelpKINode Title="getting started">
@@ -4164,8 +4164,8 @@
   <HelpKINode Title="ProjectFileConfiguration.Platform property" Url="html/e875b06f-63f3-5043-7a4e-00e5ad70bb18.htm" />
   <HelpKINode Title="ProjectFileConfiguration.ProjectFileConfiguration constructor" Url="html/a1bd6596-d326-8e92-f34a-6340539ea9b2.htm" />
   <HelpKINode Title="ProjectFileConfiguration.ProjectFileName property" Url="html/761debd3-04ff-2870-020f-8f471349c40b.htm" />
-  <HelpKINode Title="ProjectFileName property" Url="html/761debd3-04ff-2870-020f-8f471349c40b.htm" />
   <HelpKINode Title="ProjectFilename property" Url="html/a5179722-1820-058e-3c18-ddcb172c6c93.htm" />
+  <HelpKINode Title="ProjectFileName property" Url="html/761debd3-04ff-2870-020f-8f471349c40b.htm" />
   <HelpKINode Title="ProjectFolder property" Url="html/2dc9c884-eb9f-e739-334e-86e6cc9682d9.htm" />
   <HelpKINode Title="ProjectGuid field" Url="html/05ae4c93-99a2-f6b7-fbcf-2b017520febc.htm" />
   <HelpKINode Title="ProjectGuid property" Url="html/203003e0-1c6d-74c5-5d1c-292b28fa4785.htm" />
@@ -6376,6 +6376,7 @@
     <HelpKINode Title="2021.3.29.0" Url="html/70b704dc-03c8-4934-b83e-e84d4d7f927a.htm" />
     <HelpKINode Title="2021.4.9.0" Url="html/52c2409d-0a0a-4b6e-bd0a-5d2b03d1d332.htm" />
     <HelpKINode Title="2022.1.22.0" Url="html/5491f230-cc0d-4604-8710-c046584907bd.htm" />
+    <HelpKINode Title="2022.2.6.0" Url="html/5491f230-cc0d-4604-8710-c046584907bd.htm" />
     <HelpKINode Title="known issues" Url="html/21c2a363-6c94-440b-8985-6b224d275463.htm" />
   </HelpKINode>
   <HelpKINode Title="VersionSettings class">
