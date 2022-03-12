@@ -1,0 +1,9 @@
+<doc>
+  <assembly>
+    <name>_InheritedDocs_</name>
+  </assembly>
+  <members>
+  <member name="M:HtmlToMamlConversion.MSHelpKeyword.Equals(System.Object)">
+  
+<summary>Determines whether the specified object is equal to the current object.</summary><param name="obj">The object to compare with the current object. </param><returns><see langword="true" /> if the specified object  is equal to the current object; otherwise, <see langword="false" />.</returns></member></members>
+</doc>
