@@ -105,6 +105,11 @@
       <param name="secondValues">The second set of values to average</param>
       <returns>The average of the values from both enumerable lists</returns>
     </member>
+    <member name="M:XMLCommentsExamples.SampleClass.BibliographyCiteExample">
+      <summary>
+            This demonstrates the <c>cite</c> element used to produce a bibliography section in the topic.
+            </summary>
+    </member>
     <member name="M:XMLCommentsExamples.SampleClass.CallStoredProcedure(System.String,System.Int32)">
       <summary>
             Executes a <see cref="T:System.Data.SqlClient.SqlCommand" /> with the specified
@@ -247,9 +252,9 @@
     </member>
     <member name="M:XMLCommentsExamples.SampleClass.SummaryRemarksExample">
       <summary>
-            The summary is a brief description of the type or type member and will
-            be displayed in IntelliSense and the Object Browser.
-            </summary>
+             The summary is a brief description of the type or type member and will
+             be displayed in IntelliSense and the Object Browser.
+             </summary>
     </member>
     <member name="M:XMLCommentsExamples.SampleClass.SumValues(System.Collections.Generic.IEnumerable{System.Int32})">
       <summary>
@@ -273,8 +278,8 @@
     </member>
     <member name="M:XMLCommentsExamples.SampleClass.TokenExample">
       <summary>
-            The help file was built on October 30, 2021 using Sandcastle
-            v2021.10.23.0.
+            The help file was built on April 16, 2022 using Sandcastle
+            v2022.2.6.0.
             </summary>
     </member>
     <member name="M:XMLCommentsExamples.SampleClass.VariousListExamples">
@@ -284,8 +289,8 @@
     </member>
     <member name="M:XMLCommentsExamples.SampleClass.VariousNoteExamples">
       <summary>
-            This shows the result of the various <c>note</c> types.
-            </summary>
+             This shows the result of the various <c>note</c> types.
+             </summary>
     </member>
     <member name="T:XMLCommentsExamples.ThreadSafetyClass">
       <summary>
