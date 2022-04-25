@@ -99,6 +99,11 @@ div.is-centered {
     text-decoration: underline;
 }
 
+/* Add an outer border to tables */
+.content table {
+    border: 1px solid #dbdbdb;
+}
+
 /* MAML and XML comments element styles */
 .content h4 {
     margin-top: 0.8em;
@@ -194,6 +199,17 @@ span.keyword {
     text-align: left;
 }
 
+/* Inheritance hierarchy styles */
+.inheritanceHierarchy, .implementsList {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+    .inheritanceHierarchy dd, .implementsList dd {
+        margin-left: 1em;
+        margin-bottom: 0;
+    }
+
 /* Code block styles */
 .codeHeader {
     background-color: #e6e6e6;
@@ -224,12 +240,38 @@ span.keyword {
 }
 
 .codePanel {
+    border: 1px solid lightgrey;
+    padding: 1em;
     margin-bottom: 1em;
+    flex: 1;
 }
 
     .codePanel pre {
-        padding: 1em;
-        line-height: 1.37
+        padding: 0em;
+        line-height: 1.37;
+    }
+
+.codeWithNumbers {
+    display: flex;
+}
+
+    .codeWithNumbers .lineNumbers {
+        border: 1px solid lightgrey;
+        flex-shrink: 1;
+        text-align: right;
+        margin-bottom: 1em;
+    }
+
+        .codeWithNumbers .lineNumbers pre {
+            background: transparent;
+            padding-left: 0.50em;
+            padding-right: 0.50em;
+            line-height: 1.37
+        }
+
+    .codeWithNumbers .numbered {
+        flex: 1;
+        overflow-x: auto;
     }
 
 /* Glossary styles */
