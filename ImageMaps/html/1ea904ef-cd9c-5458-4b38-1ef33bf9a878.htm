@@ -1,256 +1,245 @@
-﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>ImageAreaPolygon Class</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="ImageAreaPolygon class" /><meta name="System.Keywords" content="EWSoftware.ImageMaps.Web.Controls.ImageAreaPolygon class" /><meta name="Microsoft.Help.F1" content="EWSoftware.ImageMaps.Web.Controls.ImageAreaPolygon" /><meta name="Microsoft.Help.Id" content="T:EWSoftware.ImageMaps.Web.Controls.ImageAreaPolygon" /><meta name="Description" content="This is the polygon image area class" /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="true" /><meta name="container" content="EWSoftware.ImageMaps.Web.Controls" /><meta name="file" content="1ea904ef-cd9c-5458-4b38-1ef33bf9a878" /><meta name="guid" content="1ea904ef-cd9c-5458-4b38-1ef33bf9a878" /><link type="text/css" rel="stylesheet" href="../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" /><script type="text/javascript" src="../scripts/jquery-3.3.1.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">EWSoftware.ImageMaps Control Library Documentation<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/7e07e290-7738-4d8b-bcf1-8eb4b33706b0.htm" title="EWSoftware.ImageMaps Control Library Documentation" tocid="roottoc">EWSoftware.ImageMaps Control Library Documentation</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/6ab83d70-c697-d634-533e-8a09bddc7f1f.htm" title="EWSoftware.ImageMaps.Web.Controls" tocid="6ab83d70-c697-d634-533e-8a09bddc7f1f">EWSoftware.ImageMaps.Web.Controls</a></div><div class="toclevel1 current" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/1ea904ef-cd9c-5458-4b38-1ef33bf9a878.htm" title="ImageAreaPolygon Class" tocid="1ea904ef-cd9c-5458-4b38-1ef33bf9a878">ImageAreaPolygon Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/3603a903-4bf3-81b7-c2da-0a97aaf9f6f8.htm" title="ImageAreaPolygon Constructor " tocid="3603a903-4bf3-81b7-c2da-0a97aaf9f6f8">ImageAreaPolygon Constructor </a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/d3106b5c-7543-fbce-0beb-189338d2b423.htm" title="ImageAreaPolygon Properties" tocid="d3106b5c-7543-fbce-0beb-189338d2b423">ImageAreaPolygon Properties</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/162c1022-d2c8-6dfb-9ef6-b70e0328d349.htm" title="ImageAreaPolygon Methods" tocid="162c1022-d2c8-6dfb-9ef6-b70e0328d349">ImageAreaPolygon Methods</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="titleColumn"><h1>ImageAreaPolygon Class</h1></td></tr></table><span class="introStyle"></span> <div class="summary">
+﻿<!DOCTYPE html ><html lang="en-US"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.css" /><link rel="stylesheet" href="../css/font-awesome.min.css" /><link rel="stylesheet" href="../css/presentationStyle.css" /><link rel="stylesheet" href="../css/vs.min.css" /><script src="../scripts/jquery-3.5.1.min.js"></script><script src="../scripts/clipboard.min.js"></script><script src="../scripts/highlight.min.js"></script><script src="../scripts/presentationStyle.js"></script><title>ImageAreaPolygon Class</title><meta name="Title" content="ImageAreaPolygon" /><meta name="Help.Id" content="T:EWSoftware.ImageMaps.Web.Controls.ImageAreaPolygon" /><meta name="Help.ContentType" content="Reference" /><meta name="container" content="EWSoftware.ImageMaps.Web.Controls" /><meta name="guid" content="1ea904ef-cd9c-5458-4b38-1ef33bf9a878" /><meta name="Description" content="This is the polygon image area class" /><meta name="tocFile" content="../toc/IDG.xml" /></head><body><div class="fixedLayout"><div id="Header" class="fixedHeader"><div class="pageHeader level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div id="DocumentationTitle" class="level-item">EWSoftware.ImageMaps Control Library Documentation</div></div><div id="LangFilterSearchContainer" class="level-right"><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a><a class="dropdown-item languageFilterItem" data-languageId="vb">VB</a><a class="dropdown-item languageFilterItem" data-languageId="cpp">C++</a><a class="dropdown-item languageFilterItem" data-languageId="fs">F#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></div><div class="fixedContent"><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div class="columns pl-5 pr-5 fixedContent"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu" /></nav></div><div id="TopicContent" class="column content is-7"><h1>Image<wbr />Area<wbr />Polygon Class</h1><div class="summary">
             This is the polygon image area class
-            </div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID0RB')" onkeypress="SectionExpandCollapse_CheckKey('ID0RB', event)" tabindex="0"><img id="ID0RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Inheritance Hierarchy</span></div><div id="ID0RBSection" class="collapsibleSection"><a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank">System<span id="LSTC651FDD9_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTC651FDD9_0?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Object</a><br />  <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">EWSoftware.ImageMaps.Web.Controls<span id="LSTC651FDD9_1"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTC651FDD9_1?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>ImageAreaBase</a><br />    <span class="selflink">EWSoftware.ImageMaps.Web.Controls<span id="LSTC651FDD9_2"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTC651FDD9_2?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>ImageAreaPolygon</span><br /></div><p> </p>
-    <strong>Namespace:</strong> 
-   <a href="6ab83d70-c697-d634-533e-8a09bddc7f1f.htm">EWSoftware.ImageMaps.Web.Controls</a><br />
-    <strong>Assembly:</strong>
-   EWSoftware.ImageMaps.Web.Controls (in EWSoftware.ImageMaps.Web.Controls.dll) Version: 2015.1.19.0<div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Syntax</span></div><div id="ID2RBSection" class="collapsibleSection"><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EDCA_tab1" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID1EDCA','cs','1','4');return false;">C#</a></div><div id="ID1EDCA_tab2" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID1EDCA','vb','2','4');return false;">VB</a></div><div id="ID1EDCA_tab3" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID1EDCA','cpp','3','4');return false;">C++</a></div><div id="ID1EDCA_tab4" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID1EDCA','fs','4','4');return false;">F#</a></div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EDCA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EDCA');return false;" title="Copy">Copy</a></div></div><div id="ID1EDCA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">ImageAreaPolygon</span> : <span class="identifier">ImageAreaBase</span></pre></div><div id="ID1EDCA_code_Div2" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">Public</span> <span class="keyword">Class</span> <span class="identifier">ImageAreaPolygon</span>
-	<span class="keyword">Inherits</span> <span class="identifier">ImageAreaBase</span></pre></div><div id="ID1EDCA_code_Div3" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">public</span> <span class="keyword">ref class</span> <span class="identifier">ImageAreaPolygon</span> : <span class="keyword">public</span> <span class="identifier">ImageAreaBase</span></pre></div><div id="ID1EDCA_code_Div4" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">type</span> <span class="identifier">ImageAreaPolygon</span> =  
+            </div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Definition</h2><div id="IDBSection"><strong>Namespace:</strong> <a href="6ab83d70-c697-d634-533e-8a09bddc7f1f.htm">EWSoftware.ImageMaps.Web.Controls</a><br /><strong>Assembly:</strong> EWSoftware.ImageMaps.Web.Controls (in EWSoftware.ImageMaps.Web.Controls.dll) Version: 2015.1.19.0<div class="codeSnippet" data-codeSnippetLanguage="cs"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">ImageAreaPolygon</span> : <span class="identifier">ImageAreaBase</span></code></pre></div></div><div class="codeSnippet is-hidden" data-codeSnippetLanguage="vb"><div class="codeHeader"><span class="codeHeaderTitle">VB</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vb"><span class="keyword">Public</span> <span class="keyword">Class</span> <span class="identifier">ImageAreaPolygon</span>
+	<span class="keyword">Inherits</span> <span class="identifier">ImageAreaBase</span></code></pre></div></div><div class="codeSnippet is-hidden" data-codeSnippetLanguage="cpp"><div class="codeHeader"><span class="codeHeaderTitle">C++</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cpp"><span class="keyword">public</span> <span class="keyword">ref class</span> <span class="identifier">ImageAreaPolygon</span> : <span class="keyword">public</span> <span class="identifier">ImageAreaBase</span></code></pre></div></div><div class="codeSnippet is-hidden" data-codeSnippetLanguage="fs"><div class="codeHeader"><span class="codeHeaderTitle">F#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-fs"><span class="keyword">type</span> <span class="identifier">ImageAreaPolygon</span> = 
     <span class="keyword">class</span>
         <span class="keyword">inherit</span> <span class="identifier">ImageAreaBase</span>
-    <span class="keyword">end</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EDCA");</script></div><p>The <span class="selflink">ImageAreaPolygon</span> type exposes the following members.</p><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Constructors</span></div><div id="ID3RBSection" class="collapsibleSection"><table class="members" id="constructorList"><tr><th class="iconColumn">
-								 
-							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="9fdf81a7-7b7a-721d-600b-ac9befec808f.htm">ImageAreaPolygon<span id="LSTC651FDD9_3"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTC651FDD9_3?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a></td><td><div class="summary">
-            Default constructor
-            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="3b15fbd4-d49b-268b-d1d7-a353b58e14b3.htm">ImageAreaPolygon(String)</a></td><td><div class="summary">
-            Constructor.  This version takes the URL to which to navigate when clicked.
-            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="73b9ea58-a2f2-70c2-7170-fc780040f849.htm">ImageAreaPolygon(String, String)</a></td><td><div class="summary">
-            Constructor.  This version takes the URL to which to navigate when clicked and a tool tip.
-            </div></td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Properties</span></div><div id="ID4RBSection" class="collapsibleSection"><table class="members" id="propertyList"><tr><th class="iconColumn">
-								 
-							</th><th>Name</th><th>Description</th></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="ab329faf-62d7-f90f-c025-ff2f7140874e.htm">AccessKey</a></td><td><div class="summary">
-            This is used to get or set the access key (a shortcut key or mnemonic) for the image area
-            </div> (Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="57c2d5cb-a055-49f4-db38-45e32ff5c801.htm">Action</a></td><td><div class="summary">
-            This defines the action to take when the area is clicked
-            </div> (Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="57b1a222-8ca1-c0f0-ae33-5ceb5da10991.htm">Attributes</a></td><td><div class="summary">
-            Gets a collection of attribute name and value pairs for the area that are not directly supported by
-            the class.
-            </div> (Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="60d1f3c7-e71f-e8a0-2f94-66bfa5c510e7.htm">Coordinates</a></td><td><div class="summary">
-            This is overridden to get or set the coordinate values in string form
-            </div> (Overrides <a href="5385c684-bd44-817c-d3fe-7660258fb668.htm">ImageAreaBase<span id="LSTC651FDD9_4"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTC651FDD9_4?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Coordinates</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="4b3be345-6249-0bfc-0767-c55ba721a51f.htm">Enabled</a></td><td><div class="summary">
-            This is used to enable or disable the image area
-            </div> (Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="d3d2cbcb-9a63-bbc6-83fd-8334611c5a67.htm">IsTrackingViewState</a></td><td><div class="summary">
-            Indicates whether or not view state is being tracked
-            </div> (Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="ab9fd39e-825e-a940-c7af-32b028cb2e89.htm">NavigateUrl</a></td><td><div class="summary">
-            This is used to get or set the URL to which to navigate when the area is clicked and the
-            <a href="57c2d5cb-a055-49f4-db38-45e32ff5c801.htm">Action</a> property is set to <span class="code">Navigate</span>.
-            </div> (Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="e9fac473-4ef7-2c37-b6c6-ef2129493790.htm">Points</a></td><td><div class="summary">
-            This is used to access the polygon point collection
-            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="72c4bef2-c582-d062-0af1-d69e94af9614.htm">Shape</a></td><td><div class="summary">
-            This is overridden to provide the shape type
-            </div> (Overrides <a href="aed1815a-6189-aa42-2190-684e2294e741.htm">ImageAreaBase<span id="LSTC651FDD9_5"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTC651FDD9_5?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Shape</a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="1f89c24e-28b6-bd81-1df2-5af97e251d69.htm">ShapeText</a></td><td><div class="summary">
-            This is overridden to specify the HTML shape name
-            </div> (Overrides <a href="3fff4f31-ba48-55da-16f2-809ed130efc7.htm">ImageAreaBase<span id="LSTC651FDD9_6"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTC651FDD9_6?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>ShapeText</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="f3b8e766-4941-a1a6-34bd-81b215117ece.htm">TabIndex</a></td><td><div class="summary">
-            This is used to get or set the tab index of the area
-            </div> (Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="2ab426f5-8e06-a2cf-611c-c285ae1041f8.htm">Tag</a></td><td><div class="summary">
-            This is used to get or set an object that contains additional user-defined data for the image area
-            </div> (Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="1702ff04-d8f7-6341-5dbd-f6c20891c624.htm">TagString</a></td><td><div class="summary">
-            This is used to get or set a string that contains additional user-defined data for the image area.
-            This is for use in the HTML designer.
-            </div> (Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="fb841f98-6060-37f8-7538-0faed3817102.htm">Target</a></td><td><div class="summary">
-            This property is used to get or set the target location in which to open the window
-            </div> (Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="08dde520-093f-3dd1-487a-5c9a22438dc3.htm">TargetName</a></td><td><div class="summary">
-            This property is used to get or set the name of the target frame or window when the
-            <a href="fb841f98-6060-37f8-7538-0faed3817102.htm">Target</a> property is set to <span class="code">Other</span>.
-            </div> (Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="d1f86789-a4e6-cb94-0437-7e69dcb73b84.htm">ToolTip</a></td><td><div class="summary">
-            This is used to get or set the tool tip to display when the mouse hovers over the area
-            </div> (Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>.)</td></tr><tr data="protected;inherited;notNetfw;"><td><img src="../icons/protproperty.gif" alt="Protected property" title="Protected property" /></td><td><a href="ddb52f3a-986d-0912-4d58-8ad6ff62d639.htm">ViewState</a></td><td><div class="summary">
-            This allows derived classes to store data in the control's view state
-            </div> (Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>.)</td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID5RB')" onkeypress="SectionExpandCollapse_CheckKey('ID5RB', event)" tabindex="0"><img id="ID5RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Methods</span></div><div id="ID5RBSection" class="collapsibleSection"><table class="members" id="methodList"><tr><th class="iconColumn">
-								 
-							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="8ba4cd4e-7bc0-9166-2cb3-a13ab5252796.htm">DrawFocusFrame</a></td><td><div class="summary">
-            This is overridden to get the shape to draw a focus frame around itself
-            </div> (Overrides <a href="3620aabd-2b6e-ea0e-76b6-d4480b0d0c93.htm">ImageAreaBase<span id="LSTC651FDD9_7"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTC651FDD9_7?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>DrawFocusFrame(Graphics, Point)</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="26085e61-f4cf-61bb-1f5a-f80c9cc2679e.htm">Equals</a></td><td><div class="summary">
-            This is overridden to allow proper comparison of image area objects
-            </div> (Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>.)</td></tr><tr data="protected;inherited;notNetfw;"><td><img src="../icons/protmethod.gif" alt="Protected method" title="Protected method" /></td><td><a href="https://docs.microsoft.com/dotnet/api/system.object.finalize#System_Object_Finalize" target="_blank">Finalize</a></td><td><div class="summary">Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.</div> (Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank">Object</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="70d68c89-51ed-a40e-f5dc-71aae38f800b.htm">GetAttribute</a></td><td><div class="summary">
-            Retrieve the specified attribute property from the control
-            </div> (Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="d44bf9ae-f2e3-2de5-c393-80064dbd7105.htm">GetHashCode</a></td><td><div class="summary">
-            Get a hash code for the image area object
-            </div> (Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType" target="_blank">GetType</a></td><td><div class="summary">Gets the <a href="https://docs.microsoft.com/dotnet/api/system.type" target="_blank">Type</a> of the current instance.</div> (Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank">Object</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="2c7deb03-cd79-1bef-65db-6776d75abdc9.htm">LoadViewState</a></td><td><div class="summary">
-            Load view state
-            </div> (Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="e278b981-a3d0-6356-8060-3a9d3f939cd1.htm">MarkAsDirty</a></td><td><div class="summary">
-            Mark all properties on the image area as dirty.
-            </div> (Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>.)</td></tr><tr data="protected;inherited;notNetfw;"><td><img src="../icons/protmethod.gif" alt="Protected method" title="Protected method" /></td><td><a href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone" target="_blank">MemberwiseClone</a></td><td><div class="summary">Creates a shallow copy of the current <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank">Object</a>.</div> (Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank">Object</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="e70a04fc-b5ab-5b73-2403-667398057e2d.htm">SaveViewState</a></td><td><div class="summary">
-            Save view state
-            </div> (Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="3538514b-b58f-b5fa-4ead-80cdd1b6eea5.htm">SetAttribute</a></td><td><div class="summary">
-            Assign an attribute and value to the control
-            </div> (Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="f9ffb0ad-12fa-a60a-b888-689a96e97bf3.htm">ToString</a></td><td><div class="summary">
-            Convert the image area instance to its string description
-            </div> (Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="0b8de050-75dc-c06c-a061-b4ba04a814ba.htm">TrackViewState</a></td><td><div class="summary">
-            Start tracking view state
-            </div> (Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>.)</td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID6RB')" onkeypress="SectionExpandCollapse_CheckKey('ID6RB', event)" tabindex="0"><img id="ID6RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Examples</span></div><div id="ID6RBSection" class="collapsibleSection"><p>This example demonstrates creating web server <a href="737d6f4e-d860-9a17-44cf-3d974659ea3c.htm">ImageMap</a> controls and the various shapes
+    <span class="keyword">end</span></code></pre></div></div><dl class="inheritanceHierarchy"><dt>Inheritance</dt><dd><a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <span class="selflink">ImageAreaPolygon</span></dd></dl></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Example</h2><div id="IDBCSection"><p>This example demonstrates creating web server <a href="737d6f4e-d860-9a17-44cf-3d974659ea3c.htm">ImageMap</a> controls and the various shapes
 derived from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>.</p><p>The control definitions are in the HTML.  This shows an example of each image area type and the various
-actions that can be performed.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EACABA_tab1" class="codeSnippetContainerTabSingle">Example Control Usage</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EACABA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EACABA');return false;" title="Copy">Copy</a></div></div><div id="ID1EACABA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-xml-bracket-inline">&lt;%</span>@ Register TagPrefix="ewsi" Namespace="EWSoftware.ImageMaps.Web.Controls"
-  Assembly="EWSoftware.ImageMaps.Web.Controls" <span class="highlight-xml-bracket-inline">%&gt;</span>
+actions that can be performed.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">Example Control Usage</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-xml">&lt;%@ Register TagPrefix="ewsi" Namespace="EWSoftware.ImageMaps.Web.Controls"
+  Assembly="EWSoftware.ImageMaps.Web.Controls" %&gt;
 
-<span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">ewsi:ImageMap</span> <span class="highlight-xml-attribute-name">id</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"imMap"</span> <span class="highlight-xml-attribute-name">runat</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"server"</span> <span class="highlight-xml-attribute-name">ToolTip</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"A test image"</span>
-  <span class="highlight-xml-attribute-name">ImageUrl</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Images/Shapes.jpg"</span> <span class="highlight-xml-attribute-name">BorderStyle</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Solid"</span> <span class="highlight-xml-attribute-name">BorderWidth</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"1px"</span><span class="highlight-xml-bracket">&gt;</span>
-  <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">ewsi:ImageAreaPolygon</span>
-    <span class="highlight-xml-attribute-name">ToolTip</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Load google.com in search pane"</span>
-    <span class="highlight-xml-attribute-name">NavigateUrl</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"http://www.google.com"</span> <span class="highlight-xml-attribute-name">Target</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Search"</span>
-    <span class="highlight-xml-attribute-name">Coordinates</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"150,156,218,256,250,222,244,200,268,188,294,188,258,140,220,144,178,124"</span>
-    <span class="highlight-xml-attribute-name">TabIndex</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"4"</span> <span class="highlight-xml-attribute-name">AccessKey</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"P"</span><span class="highlight-xml-bracket">&gt;</span><span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">ewsi:ImageAreaPolygon</span><span class="highlight-xml-bracket">&gt;</span>
-  <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">ewsi:ImageAreaRectangle</span> <span class="highlight-xml-attribute-name">ToolTip</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Go to www.EWoodruff.us"</span>
-    <span class="highlight-xml-attribute-name">Rectangle</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"15, 16, 149, 93"</span> <span class="highlight-xml-attribute-name">NavigateUrl</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"http://www.ewoodruff.us"</span>
-    <span class="highlight-xml-attribute-name">TabIndex</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"2"</span> <span class="highlight-xml-attribute-name">AccessKey</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"R"</span><span class="highlight-xml-bracket">&gt;</span><span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">ewsi:ImageAreaRectangle</span><span class="highlight-xml-bracket">&gt;</span>
-  <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">ewsi:ImageAreaRectangle</span> <span class="highlight-xml-attribute-name">ToolTip</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Only displays this tool tip"</span>
-    <span class="highlight-xml-attribute-name">Rectangle</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"316, 175, 208, 122"</span> <span class="highlight-xml-attribute-name">Action</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"None"</span><span class="highlight-xml-bracket">&gt;</span>
-    <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">ewsi:ImageAreaRectangle</span><span class="highlight-xml-bracket">&gt;</span>
-  <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">ewsi:ImageAreaCircle</span>
-    <span class="highlight-xml-attribute-name">ToolTip</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Load Microsoft.com in a new window"</span> <span class="highlight-xml-attribute-name">CenterPoint</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"380, 88"</span>
-    <span class="highlight-xml-attribute-name">Radius</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"60"</span> <span class="highlight-xml-attribute-name">NavigateUrl</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"http://www.microsoft.com"</span> <span class="highlight-xml-attribute-name">Target</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Blank"</span>
-    <span class="highlight-xml-attribute-name">TabIndex</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"3"</span> <span class="highlight-xml-attribute-name">AccessKey</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"C"</span><span class="highlight-xml-bracket">&gt;</span><span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">ewsi:ImageAreaCircle</span><span class="highlight-xml-bracket">&gt;</span>
-  <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">ewsi:ImageAreaRectangle</span> <span class="highlight-xml-attribute-name">ToolTip</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Execute client-side script"</span>
-    <span class="highlight-xml-attribute-name">Rectangle</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"12, 202, 134, 46"</span>
-    <span class="highlight-xml-attribute-name">NavigateUrl</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"javascript: alert('Execute any client-side script');"</span>
-    <span class="highlight-xml-attribute-name">TabIndex</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"5"</span><span class="highlight-xml-bracket">&gt;</span><span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">ewsi:ImageAreaRectangle</span><span class="highlight-xml-bracket">&gt;</span>
-  <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">ewsi:ImageAreaRectangle</span>
-    <span class="highlight-xml-attribute-name">ToolTip</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Click to enable/disable the other image map"</span>
-    <span class="highlight-xml-attribute-name">Rectangle</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"6, 262, 194, 40"</span> <span class="highlight-xml-attribute-name">TabIndex</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"6"</span> <span class="highlight-xml-attribute-name">Action</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"PostBack"</span>
-    <span class="highlight-xml-attribute-name">AccessKey</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"D"</span><span class="highlight-xml-bracket">&gt;</span><span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">ewsi:ImageAreaRectangle</span><span class="highlight-xml-bracket">&gt;</span>
-<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">ewsi:ImageMap</span><span class="highlight-xml-bracket">&gt;</span>
+&lt;ewsi:ImageMap id="imMap" runat="server" ToolTip="A test image"
+  ImageUrl="Images/Shapes.jpg" BorderStyle="Solid" BorderWidth="1px"&gt;
+  &lt;ewsi:ImageAreaPolygon
+    ToolTip="Load google.com in search pane"
+    NavigateUrl="http://www.google.com" Target="Search"
+    Coordinates="150,156,218,256,250,222,244,200,268,188,294,188,258,140,220,144,178,124"
+    TabIndex="4" AccessKey="P"&gt;&lt;/ewsi:ImageAreaPolygon&gt;
+  &lt;ewsi:ImageAreaRectangle ToolTip="Go to www.EWoodruff.us"
+    Rectangle="15, 16, 149, 93" NavigateUrl="http://www.ewoodruff.us"
+    TabIndex="2" AccessKey="R"&gt;&lt;/ewsi:ImageAreaRectangle&gt;
+  &lt;ewsi:ImageAreaRectangle ToolTip="Only displays this tool tip"
+    Rectangle="316, 175, 208, 122" Action="None"&gt;
+    &lt;/ewsi:ImageAreaRectangle&gt;
+  &lt;ewsi:ImageAreaCircle
+    ToolTip="Load Microsoft.com in a new window" CenterPoint="380, 88"
+    Radius="60" NavigateUrl="http://www.microsoft.com" Target="Blank"
+    TabIndex="3" AccessKey="C"&gt;&lt;/ewsi:ImageAreaCircle&gt;
+  &lt;ewsi:ImageAreaRectangle ToolTip="Execute client-side script"
+    Rectangle="12, 202, 134, 46"
+    NavigateUrl="javascript: alert('Execute any client-side script');"
+    TabIndex="5"&gt;&lt;/ewsi:ImageAreaRectangle&gt;
+  &lt;ewsi:ImageAreaRectangle
+    ToolTip="Click to enable/disable the other image map"
+    Rectangle="6, 262, 194, 40" TabIndex="6" Action="PostBack"
+    AccessKey="D"&gt;&lt;/ewsi:ImageAreaRectangle&gt;
+&lt;/ewsi:ImageMap&gt;
 
-<span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">ewsi:ImageMap</span> <span class="highlight-xml-attribute-name">id</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"imClickMap"</span> <span class="highlight-xml-attribute-name">runat</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"server"</span> <span class="highlight-xml-attribute-name">ToolTip</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Click an area to post back"</span>
-  <span class="highlight-xml-attribute-name">ImageUrl</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Images/PostBack.jpg"</span> <span class="highlight-xml-attribute-name">CausesValidation</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"True"</span><span class="highlight-xml-bracket">&gt;</span>
-  <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">ewsi:ImageAreaRectangle</span> <span class="highlight-xml-attribute-name">Rectangle</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"0,0,20,20"</span> <span class="highlight-xml-attribute-name">Action</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"PostBack"</span>
-    <span class="highlight-xml-attribute-name">ToolTip</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Area 1"</span> <span class="highlight-xml-attribute-name">TabIndex</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"7"</span> <span class="highlight-xml-attribute-name">AccessKey</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"1"</span> <span class="highlight-xml-bracket">/&gt;</span>
-  <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">ewsi:ImageAreaRectangle</span> <span class="highlight-xml-attribute-name">Rectangle</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"80,0,20,20"</span> <span class="highlight-xml-attribute-name">Action</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"PostBack"</span>
-    <span class="highlight-xml-attribute-name">ToolTip</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Area 2"</span> <span class="highlight-xml-attribute-name">TabIndex</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"8"</span> <span class="highlight-xml-attribute-name">AccessKey</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"2"</span> <span class="highlight-xml-bracket">/&gt;</span>
-  <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">ewsi:ImageAreaRectangle</span> <span class="highlight-xml-attribute-name">Rectangle</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"0,80,20,20"</span> <span class="highlight-xml-attribute-name">Action</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"PostBack"</span>
-    <span class="highlight-xml-attribute-name">ToolTip</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Area 3"</span> <span class="highlight-xml-attribute-name">TabIndex</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"9"</span> <span class="highlight-xml-attribute-name">AccessKey</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"3"</span> <span class="highlight-xml-bracket">/&gt;</span>
-  <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">ewsi:ImageAreaRectangle</span> <span class="highlight-xml-attribute-name">Rectangle</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"80,80,20,20"</span> <span class="highlight-xml-attribute-name">Action</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"PostBack"</span>
-    <span class="highlight-xml-attribute-name">ToolTip</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Area 4"</span> <span class="highlight-xml-attribute-name">TabIndex</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"10"</span> <span class="highlight-xml-attribute-name">AccessKey</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"4"</span> <span class="highlight-xml-bracket">/&gt;</span>
-<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">ewsi:ImageMap</span><span class="highlight-xml-bracket">&gt;</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EACABA");</script><p>The code in the code-behind file for the event handlers fired by the image areas that have their
-<a href="57c2d5cb-a055-49f4-db38-45e32ff5c801.htm">Action</a> set to <span class="code">PostBack</span>:</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EDAABA_tab1" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID1EDAABA','cs','1','4');return false;">C#</a></div><div id="ID1EDAABA_tab2" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID1EDAABA','vb','2','4');return false;">VB</a></div><div id="ID1EDAABA_tab3" class="codeSnippetContainerTabPhantom"><a href="#" onclick="javascript:ChangeTab('ID1EDAABA','cpp','3','4');return false;">C++</a></div><div id="ID1EDAABA_tab4" class="codeSnippetContainerTabPhantom"><a href="#" onclick="javascript:ChangeTab('ID1EDAABA','fs','4','4');return false;">F#</a></div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EDAABA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EDAABA');return false;" title="Copy">Copy</a></div></div><div id="ID1EDAABA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">/// &lt;summary&gt;</span>
-<span class="highlight-comment">/// This event is fired by the image area at the bottom of the left-side</span>
-<span class="highlight-comment">/// image map.</span>
-<span class="highlight-comment">/// &lt;/summary&gt;</span>
-<span class="highlight-comment">/// &lt;param name="sender"&gt;The sender of the event&lt;/param&gt;</span>
-<span class="highlight-comment">/// &lt;param name="e"&gt;The event arguments&lt;/param&gt;</span>
-<span class="highlight-comment">/// &lt;remarks&gt;The parameters are not used and it does not cause validation</span>
-<span class="highlight-comment">/// events to fire.  It is used to enable or disable the right-side image</span>
-<span class="highlight-comment">/// map.&lt;/remarks&gt;</span>
-<span class="highlight-keyword">protected</span> <span class="highlight-keyword">void</span> imMap_Click(<span class="highlight-keyword">object</span> sender, ImageMapClickEventArgs e)
+&lt;ewsi:ImageMap id="imClickMap" runat="server" ToolTip="Click an area to post back"
+  ImageUrl="Images/PostBack.jpg" CausesValidation="True"&gt;
+  &lt;ewsi:ImageAreaRectangle Rectangle="0,0,20,20" Action="PostBack"
+    ToolTip="Area 1" TabIndex="7" AccessKey="1" /&gt;
+  &lt;ewsi:ImageAreaRectangle Rectangle="80,0,20,20" Action="PostBack"
+    ToolTip="Area 2" TabIndex="8" AccessKey="2" /&gt;
+  &lt;ewsi:ImageAreaRectangle Rectangle="0,80,20,20" Action="PostBack"
+    ToolTip="Area 3" TabIndex="9" AccessKey="3" /&gt;
+  &lt;ewsi:ImageAreaRectangle Rectangle="80,80,20,20" Action="PostBack"
+    ToolTip="Area 4" TabIndex="10" AccessKey="4" /&gt;
+&lt;/ewsi:ImageMap&gt;</code></pre></div></div><p>The code in the code-behind file for the event handlers fired by the image areas that have their
+<a href="57c2d5cb-a055-49f4-db38-45e32ff5c801.htm">Action</a> set to <span class="code">PostBack</span>:</p><div class="codeSnippet" data-codeSnippetLanguage="cs"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">/// &lt;summary&gt;
+/// This event is fired by the image area at the bottom of the left-side
+/// image map.
+/// &lt;/summary&gt;
+/// &lt;param name="sender"&gt;The sender of the event&lt;/param&gt;
+/// &lt;param name="e"&gt;The event arguments&lt;/param&gt;
+/// &lt;remarks&gt;The parameters are not used and it does not cause validation
+/// events to fire.  It is used to enable or disable the right-side image
+/// map.&lt;/remarks&gt;
+protected void imMap_Click(object sender, ImageMapClickEventArgs e)
 {
     imClickMap.Enabled = !imClickMap.Enabled;
     lblClickMsg.Text = String.Empty;
-    lblEnabledMsg.Text = String.Format(CultureInfo.CurrentCulture, <span class="highlight-literal">"Image map {0}"</span>,
-        imClickMap.Enabled ? <span class="highlight-literal">"enabled"</span> : <span class="highlight-literal">"disabled"</span>);
+    lblEnabledMsg.Text = String.Format(CultureInfo.CurrentCulture, "Image map {0}",
+        imClickMap.Enabled ? "enabled" : "disabled");
 
-    <span class="highlight-comment">// Apply a filter to "gray out" the image map and change the tool tip</span>
-    <span class="highlight-keyword">if</span>(!imClickMap.Enabled)
+    // Apply a filter to "gray out" the image map and change the tool tip
+    if(!imClickMap.Enabled)
     {
-        imClickMap.Style.Add(<span class="highlight-literal">"opacity"</span>, <span class="highlight-literal">".25"</span>);
-        imClickMap.Style.Add(<span class="highlight-literal">"filter"</span>, <span class="highlight-literal">"Alpha(Opacity=25)"</span>);  <span class="highlight-comment">// For older browsers</span>
-        imClickMap.ToolTip = <span class="highlight-literal">"Disabled"</span>;
+        imClickMap.Style.Add("opacity", ".25");
+        imClickMap.Style.Add("filter", "Alpha(Opacity=25)");  // For older browsers
+        imClickMap.ToolTip = "Disabled";
     }
-    <span class="highlight-keyword">else</span>
+    else
     {
-        imClickMap.Style.Remove(<span class="highlight-literal">"opacity"</span>);
-        imClickMap.Style.Remove(<span class="highlight-literal">"filter"</span>);
-        imClickMap.ToolTip = <span class="highlight-literal">"Click an area to post back"</span>;
+        imClickMap.Style.Remove("opacity");
+        imClickMap.Style.Remove("filter");
+        imClickMap.ToolTip = "Click an area to post back";
     }
 }
 
-<span class="highlight-comment">/// &lt;summary&gt;</span>
-<span class="highlight-comment">/// This event is fired when an area on the right-side image map is clicked</span>
-<span class="highlight-comment">/// &lt;/summary&gt;</span>
-<span class="highlight-comment">/// &lt;param name="sender"&gt;The sender of the event&lt;/param&gt;</span>
-<span class="highlight-comment">/// &lt;param name="e"&gt;The event arguments&lt;/param&gt;</span>
-<span class="highlight-comment">/// &lt;remarks&gt;It receives the zero based index of the clicked area plus the</span>
-<span class="highlight-comment">/// X,Y coordinates of the clicked point within the area.  This image map</span>
-<span class="highlight-comment">/// also causes validation events to fire.&lt;/remarks&gt;</span>
-<span class="highlight-keyword">protected</span> <span class="highlight-keyword">void</span> imClickMap_Click(<span class="highlight-keyword">object</span> sender, ImageMapClickEventArgs e)
+/// &lt;summary&gt;
+/// This event is fired when an area on the right-side image map is clicked
+/// &lt;/summary&gt;
+/// &lt;param name="sender"&gt;The sender of the event&lt;/param&gt;
+/// &lt;param name="e"&gt;The event arguments&lt;/param&gt;
+/// &lt;remarks&gt;It receives the zero based index of the clicked area plus the
+/// X,Y coordinates of the clicked point within the area.  This image map
+/// also causes validation events to fire.&lt;/remarks&gt;
+protected void imClickMap_Click(object sender, ImageMapClickEventArgs e)
 {
-    <span class="highlight-keyword">int</span> clickCount = <span class="highlight-number">0</span>;
+    int clickCount = 0;
 
-    <span class="highlight-keyword">if</span>(Page.IsValid)
+    if(Page.IsValid)
     {
-        lblClickMsg.Text = String.Format(CultureInfo.CurrentCulture, <span class="highlight-literal">"Clicked Area #{0}"</span>, e.AreaIndex + <span class="highlight-number">1</span>);
+        lblClickMsg.Text = String.Format(CultureInfo.CurrentCulture, "Clicked Area #{0}", e.AreaIndex + 1);
 
-        <span class="highlight-comment">// X and Y are only sent back by browsers that support the</span>
-        <span class="highlight-comment">// event.offsetX and event.offsetY properties.</span>
-        <span class="highlight-keyword">if</span>(e.XCoordinate != <span class="highlight-number">-1</span>)
-            lblClickMsg.Text += String.Format(CultureInfo.CurrentCulture, <span class="highlight-literal">"&lt;br&gt;At X,Y {0},{1}"</span>,
+        // X and Y are only sent back by browsers that support the
+        // event.offsetX and event.offsetY properties.
+        if(e.XCoordinate != -1)
+            lblClickMsg.Text += String.Format(CultureInfo.CurrentCulture, "&lt;br&gt;At X,Y {0},{1}",
                 e.XCoordinate, e.YCoordinate);
 
-        <span class="highlight-comment">// Track the click count in the Tag property to test view state</span>
-        <span class="highlight-keyword">if</span>(imClickMap.Areas[e.AreaIndex].Tag != <span class="highlight-keyword">null</span>)
-            clickCount = (<span class="highlight-keyword">int</span>)imClickMap.Areas[e.AreaIndex].Tag;
+        // Track the click count in the Tag property to test view state
+        if(imClickMap.Areas[e.AreaIndex].Tag != null)
+            clickCount = (int)imClickMap.Areas[e.AreaIndex].Tag;
 
         clickCount++;
 
-        lblClickMsg.Text += String.Format(CultureInfo.CurrentCulture, <span class="highlight-literal">"&lt;br&gt;It has been clicked {0} times"</span>,
+        lblClickMsg.Text += String.Format(CultureInfo.CurrentCulture, "&lt;br&gt;It has been clicked {0} times",
             clickCount);
 
         imClickMap.Areas[e.AreaIndex].Tag = clickCount;
     }
-}</pre></div><div id="ID1EDAABA_code_Div2" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="highlight-comment">' This event is fired by the image area at the bottom of the left-side image</span>
-<span class="highlight-comment">' map.  The parameters are not used and it does not cause validation events</span>
-<span class="highlight-comment">' to fire.  It's used to enable or disable the right-side image map.</span>
-<span class="highlight-keyword">Private</span> <span class="highlight-keyword">Sub</span> imMap_Click(<span class="highlight-keyword">ByVal</span> sender <span class="highlight-keyword">As</span> <span class="highlight-keyword">Object</span>,
-    <span class="highlight-keyword">ByVal</span> e <span class="highlight-keyword">As</span> ImageMapClickEventArgs) <span class="highlight-keyword">Handles</span> imMap.Click
+}</code></pre></div></div><div class="codeSnippet is-hidden" data-codeSnippetLanguage="vb"><div class="codeHeader"><span class="codeHeaderTitle">VB</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vbnet">' This event is fired by the image area at the bottom of the left-side image
+' map.  The parameters are not used and it does not cause validation events
+' to fire.  It's used to enable or disable the right-side image map.
+Private Sub imMap_Click(ByVal sender As Object,
+    ByVal e As ImageMapClickEventArgs) Handles imMap.Click
 
-    imClickMap.Enabled = <span class="highlight-keyword">Not</span> imClickMap.Enabled
-    lblClickMsg.Text = <span class="highlight-keyword">String</span>.Empty
-    lblEnabledMsg.Text = <span class="highlight-keyword">String</span>.Format(CultureInfo.CurrentCulture, <span class="highlight-literal">"Image map {0}"</span>,
-        IIf(imClickMap.Enabled, <span class="highlight-literal">"enabled"</span>, <span class="highlight-literal">"disabled"</span>))
+    imClickMap.Enabled = Not imClickMap.Enabled
+    lblClickMsg.Text = String.Empty
+    lblEnabledMsg.Text = String.Format(CultureInfo.CurrentCulture, "Image map {0}",
+        IIf(imClickMap.Enabled, "enabled", "disabled"))
 
-    <span class="highlight-comment">' Apply a filter to "gray out" the image map and change the tool tip</span>
-    <span class="highlight-keyword">If</span> <span class="highlight-keyword">Not</span> imClickMap.Enabled <span class="highlight-keyword">Then</span>
-        imClickMap.Style.Add(<span class="highlight-literal">"opacity"</span>, <span class="highlight-literal">".25"</span>)
-        imClickMap.Style.Add(<span class="highlight-literal">"filter"</span>, <span class="highlight-literal">"Alpha(Opacity=25)"</span>)  <span class="highlight-comment">' For older browsers</span>
-        imClickMap.ToolTip = <span class="highlight-literal">"Disabled"</span>
-    <span class="highlight-keyword">Else</span>
-        imClickMap.Style.Remove(<span class="highlight-literal">"opacity"</span>)
-        imClickMap.Style.Remove(<span class="highlight-literal">"filter"</span>)
-        imClickMap.ToolTip = <span class="highlight-literal">"Click an area to post back"</span>
-    <span class="highlight-keyword">End</span> <span class="highlight-keyword">If</span>
-<span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span>
+    ' Apply a filter to "gray out" the image map and change the tool tip
+    If Not imClickMap.Enabled Then
+        imClickMap.Style.Add("opacity", ".25")
+        imClickMap.Style.Add("filter", "Alpha(Opacity=25)")  ' For older browsers
+        imClickMap.ToolTip = "Disabled"
+    Else
+        imClickMap.Style.Remove("opacity")
+        imClickMap.Style.Remove("filter")
+        imClickMap.ToolTip = "Click an area to post back"
+    End If
+End Sub
 
-<span class="highlight-comment">''' &lt;summary&gt;</span>
-<span class="highlight-comment">''' This event is fired by the image area at the bottom of the left-side</span>
-<span class="highlight-comment">''' image map.</span>
-<span class="highlight-comment">''' &lt;/summary&gt;</span>
-<span class="highlight-comment">''' &lt;param name="sender"&gt;The sender of the event&lt;/param&gt;</span>
-<span class="highlight-comment">''' &lt;param name="e"&gt;The event arguments&lt;/param&gt;</span>
-<span class="highlight-comment">''' &lt;remarks&gt;The parameters are not used and it does not cause validation</span>
-<span class="highlight-comment">''' events to fire.  It is used to enable or disable the right-side image</span>
-<span class="highlight-comment">''' map.&lt;/remarks&gt;</span>
-<span class="highlight-keyword">Private</span> <span class="highlight-keyword">Sub</span> imClickMap_Click(<span class="highlight-keyword">ByVal</span> sender <span class="highlight-keyword">As</span> <span class="highlight-keyword">Object</span>,
-    <span class="highlight-keyword">ByVal</span> e <span class="highlight-keyword">As</span> ImageMapClickEventArgs) <span class="highlight-keyword">Handles</span> imClickMap.Click
+''' &lt;summary&gt;
+''' This event is fired by the image area at the bottom of the left-side
+''' image map.
+''' &lt;/summary&gt;
+''' &lt;param name="sender"&gt;The sender of the event&lt;/param&gt;
+''' &lt;param name="e"&gt;The event arguments&lt;/param&gt;
+''' &lt;remarks&gt;The parameters are not used and it does not cause validation
+''' events to fire.  It is used to enable or disable the right-side image
+''' map.&lt;/remarks&gt;
+Private Sub imClickMap_Click(ByVal sender As Object,
+    ByVal e As ImageMapClickEventArgs) Handles imClickMap.Click
 
-    <span class="highlight-keyword">Dim</span> clickCount <span class="highlight-keyword">As</span> <span class="highlight-keyword">Integer</span> = <span class="highlight-number">0</span>
+    Dim clickCount As Integer = 0
 
-    <span class="highlight-keyword">If</span> Page.IsValid <span class="highlight-keyword">Then</span>
-        lblClickMsg.Text = <span class="highlight-keyword">String</span>.Format(CultureInfo.CurrentCulture, <span class="highlight-literal">"Clicked Area #{0}"</span>, e.AreaIndex + <span class="highlight-number">1</span>)
+    If Page.IsValid Then
+        lblClickMsg.Text = String.Format(CultureInfo.CurrentCulture, "Clicked Area #{0}", e.AreaIndex + 1)
 
-        <span class="highlight-comment">' X and Y are only sent back by browsers that support the event.offsetX</span>
-        <span class="highlight-comment">' and event.offsetY properties</span>
-        <span class="highlight-keyword">If</span> e.XCoordinate &lt;&gt; <span class="highlight-number">-1</span> <span class="highlight-keyword">Then</span>
-            lblClickMsg.Text += <span class="highlight-keyword">String</span>.Format(CultureInfo.CurrentCulture, <span class="highlight-literal">"&lt;br&gt;At X,Y {0},{1}"</span>, e.XCoordinate,
+        ' X and Y are only sent back by browsers that support the event.offsetX
+        ' and event.offsetY properties
+        If e.XCoordinate &lt;&gt; -1 Then
+            lblClickMsg.Text += String.Format(CultureInfo.CurrentCulture, "&lt;br&gt;At X,Y {0},{1}", e.XCoordinate,
                 e.YCoordinate)
-        <span class="highlight-keyword">End</span> <span class="highlight-keyword">If</span>
+        End If
 
-        <span class="highlight-comment">' Track the click count in the Tag property to test view state</span>
-        <span class="highlight-keyword">If</span> <span class="highlight-keyword">Not</span> (imClickMap.Areas(e.AreaIndex).Tag <span class="highlight-keyword">Is</span> <span class="highlight-keyword">Nothing</span>) <span class="highlight-keyword">Then</span>
-            clickCount = <span class="highlight-keyword">DirectCast</span>(imClickMap.Areas(e.AreaIndex).Tag, <span class="highlight-keyword">Integer</span>)
-        <span class="highlight-keyword">End</span> <span class="highlight-keyword">If</span>
+        ' Track the click count in the Tag property to test view state
+        If Not (imClickMap.Areas(e.AreaIndex).Tag Is Nothing) Then
+            clickCount = DirectCast(imClickMap.Areas(e.AreaIndex).Tag, Integer)
+        End If
 
-        clickCount += <span class="highlight-number">1</span>
-        lblClickMsg.Text += <span class="highlight-keyword">String</span>.Format(CultureInfo.CurrentCulture, <span class="highlight-literal">"&lt;br&gt;It has been clicked {0} times"</span>,
+        clickCount += 1
+        lblClickMsg.Text += String.Format(CultureInfo.CurrentCulture, "&lt;br&gt;It has been clicked {0} times",
             clickCount)
 
         imClickMap.Areas(e.AreaIndex).Tag = clickCount
-    <span class="highlight-keyword">End</span> <span class="highlight-keyword">If</span>
-<span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span></pre></div><div id="ID1EDAABA_code_Div3" class="codeSnippetContainerCode" style="display: none"><p>No code example is currently available or this language may not be supported.</p></div><div id="ID1EDAABA_code_Div4" class="codeSnippetContainerCode" style="display: none"><p>No code example is currently available or this language may not be supported.</p></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EDAABA");</script></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID7RB')" onkeypress="SectionExpandCollapse_CheckKey('ID7RB', event)" tabindex="0"><img id="ID7RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID7RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="6ab83d70-c697-d634-533e-8a09bddc7f1f.htm">EWSoftware.ImageMaps.Web.Controls Namespace</a></div></div></div></div><div id="pageFooter" class="pageFooter"><p><a href="https://github.com/EWSoftware/ImageMaps" target="_blank">[v2015.1.19.0] Copyright © 2004-2015, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
+    End If
+End Sub</code></pre></div></div><div class="codeSnippet is-hidden" data-codeSnippetLanguage="cpp"><div class="codeHeader"><span class="codeHeaderTitle">C++</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-plaintext">No code example is currently available or this language may not be supported.</code></pre></div></div><div class="codeSnippet is-hidden" data-codeSnippetLanguage="fs"><div class="codeHeader"><span class="codeHeaderTitle">F#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-plaintext">No code example is currently available or this language may not be supported.</code></pre></div></div></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Constructors</h2><div id="IDAJEASection"><table id="ConstructorList" class="table is-hoverable"><tr><td><a href="9fdf81a7-7b7a-721d-600b-ac9befec808f.htm">ImageAreaPolygon<span id="LSTC651FDD9_0" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a></td><td>
+            Default constructor
+            </td></tr><tr><td><a href="3b15fbd4-d49b-268b-d1d7-a353b58e14b3.htm">ImageAreaPolygon(String)</a></td><td>
+            Constructor.  This version takes the URL to which to navigate when clicked.
+            </td></tr><tr><td><a href="73b9ea58-a2f2-70c2-7170-fc780040f849.htm">ImageAreaPolygon(String, String)</a></td><td>
+            Constructor.  This version takes the URL to which to navigate when clicked and a tool tip.
+            </td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Properties</h2><div id="IDOEASection"><table id="PropertyList" class="table is-hoverable"><tr><td><a href="ab329faf-62d7-f90f-c025-ff2f7140874e.htm">AccessKey</a></td><td>
+            This is used to get or set the access key (a shortcut key or mnemonic) for the image area
+            <br />(Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>)</td></tr><tr><td><a href="57c2d5cb-a055-49f4-db38-45e32ff5c801.htm">Action</a></td><td>
+            This defines the action to take when the area is clicked
+            <br />(Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>)</td></tr><tr><td><a href="57b1a222-8ca1-c0f0-ae33-5ceb5da10991.htm">Attributes</a></td><td>
+            Gets a collection of attribute name and value pairs for the area that are not directly supported by
+            the class.
+            <br />(Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>)</td></tr><tr><td><a href="60d1f3c7-e71f-e8a0-2f94-66bfa5c510e7.htm">Coordinates</a></td><td>
+            This is overridden to get or set the coordinate values in string form
+            <br />(Overrides <a href="5385c684-bd44-817c-d3fe-7660258fb668.htm">ImageAreaBase<span id="LSTC651FDD9_1" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>Coordinates</a>)</td></tr><tr><td><a href="4b3be345-6249-0bfc-0767-c55ba721a51f.htm">Enabled</a></td><td>
+            This is used to enable or disable the image area
+            <br />(Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>)</td></tr><tr><td><a href="d3d2cbcb-9a63-bbc6-83fd-8334611c5a67.htm">IsTrackingViewState</a></td><td>
+            Indicates whether or not view state is being tracked
+            <br />(Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>)</td></tr><tr><td><a href="ab9fd39e-825e-a940-c7af-32b028cb2e89.htm">NavigateUrl</a></td><td>
+            This is used to get or set the URL to which to navigate when the area is clicked and the
+            <a href="57c2d5cb-a055-49f4-db38-45e32ff5c801.htm">Action</a> property is set to <span class="code">Navigate</span>.
+            <br />(Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>)</td></tr><tr><td><a href="e9fac473-4ef7-2c37-b6c6-ef2129493790.htm">Points</a></td><td>
+            This is used to access the polygon point collection
+            </td></tr><tr><td><a href="72c4bef2-c582-d062-0af1-d69e94af9614.htm">Shape</a></td><td>
+            This is overridden to provide the shape type
+            <br />(Overrides <a href="aed1815a-6189-aa42-2190-684e2294e741.htm">ImageAreaBase<span id="LSTC651FDD9_2" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>Shape</a>)</td></tr><tr><td><a href="1f89c24e-28b6-bd81-1df2-5af97e251d69.htm">ShapeText</a></td><td>
+            This is overridden to specify the HTML shape name
+            <br />(Overrides <a href="3fff4f31-ba48-55da-16f2-809ed130efc7.htm">ImageAreaBase<span id="LSTC651FDD9_3" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ShapeText</a>)</td></tr><tr><td><a href="f3b8e766-4941-a1a6-34bd-81b215117ece.htm">TabIndex</a></td><td>
+            This is used to get or set the tab index of the area
+            <br />(Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>)</td></tr><tr><td><a href="2ab426f5-8e06-a2cf-611c-c285ae1041f8.htm">Tag</a></td><td>
+            This is used to get or set an object that contains additional user-defined data for the image area
+            <br />(Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>)</td></tr><tr><td><a href="1702ff04-d8f7-6341-5dbd-f6c20891c624.htm">TagString</a></td><td>
+            This is used to get or set a string that contains additional user-defined data for the image area.
+            This is for use in the HTML designer.
+            <br />(Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>)</td></tr><tr><td><a href="fb841f98-6060-37f8-7538-0faed3817102.htm">Target</a></td><td>
+            This property is used to get or set the target location in which to open the window
+            <br />(Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>)</td></tr><tr><td><a href="08dde520-093f-3dd1-487a-5c9a22438dc3.htm">TargetName</a></td><td>
+            This property is used to get or set the name of the target frame or window when the
+            <a href="fb841f98-6060-37f8-7538-0faed3817102.htm">Target</a> property is set to <span class="code">Other</span>.
+            <br />(Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>)</td></tr><tr><td><a href="d1f86789-a4e6-cb94-0437-7e69dcb73b84.htm">ToolTip</a></td><td>
+            This is used to get or set the tool tip to display when the mouse hovers over the area
+            <br />(Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>)</td></tr><tr><td><a href="ddb52f3a-986d-0912-4d58-8ad6ff62d639.htm">ViewState</a></td><td>
+            This allows derived classes to store data in the control's view state
+            <br />(Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>)</td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Methods</h2><div id="IDAEASection"><table id="MethodList" class="table is-hoverable"><tr><td><a href="8ba4cd4e-7bc0-9166-2cb3-a13ab5252796.htm">DrawFocusFrame</a></td><td>
+            This is overridden to get the shape to draw a focus frame around itself
+            <br />(Overrides <a href="3620aabd-2b6e-ea0e-76b6-d4480b0d0c93.htm">ImageAreaBase<span id="LSTC651FDD9_4" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>DrawFocusFrame(Graphics, Point)</a>)</td></tr><tr><td><a href="26085e61-f4cf-61bb-1f5a-f80c9cc2679e.htm">Equals</a></td><td>
+            This is overridden to allow proper comparison of image area objects
+            <br />(Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>)</td></tr><tr><td><a href="https://docs.microsoft.com/dotnet/api/system.object.finalize#System_Object_Finalize" target="_blank" rel="noopener noreferrer">Finalize</a></td><td>Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="70d68c89-51ed-a40e-f5dc-71aae38f800b.htm">GetAttribute</a></td><td>
+            Retrieve the specified attribute property from the control
+            <br />(Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>)</td></tr><tr><td><a href="d44bf9ae-f2e3-2de5-c393-80064dbd7105.htm">GetHashCode</a></td><td>
+            Get a hash code for the image area object
+            <br />(Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>)</td></tr><tr><td><a href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType" target="_blank" rel="noopener noreferrer">GetType</a></td><td>Gets the <a href="https://docs.microsoft.com/dotnet/api/system.type" target="_blank" rel="noopener noreferrer">Type</a> of the current instance.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="2c7deb03-cd79-1bef-65db-6776d75abdc9.htm">LoadViewState</a></td><td>
+            Load view state
+            <br />(Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>)</td></tr><tr><td><a href="e278b981-a3d0-6356-8060-3a9d3f939cd1.htm">MarkAsDirty</a></td><td>
+            Mark all properties on the image area as dirty.
+            <br />(Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>)</td></tr><tr><td><a href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone" target="_blank" rel="noopener noreferrer">MemberwiseClone</a></td><td>Creates a shallow copy of the current <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="e70a04fc-b5ab-5b73-2403-667398057e2d.htm">SaveViewState</a></td><td>
+            Save view state
+            <br />(Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>)</td></tr><tr><td><a href="3538514b-b58f-b5fa-4ead-80cdd1b6eea5.htm">SetAttribute</a></td><td>
+            Assign an attribute and value to the control
+            <br />(Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>)</td></tr><tr><td><a href="f9ffb0ad-12fa-a60a-b888-689a96e97bf3.htm">ToString</a></td><td>
+            Convert the image area instance to its string description
+            <br />(Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>)</td></tr><tr><td><a href="0b8de050-75dc-c06c-a061-b4ba04a814ba.htm">TrackViewState</a></td><td>
+            Start tracking view state
+            <br />(Inherited from <a href="399e00e0-b409-27b4-71be-83530c58f280.htm">ImageAreaBase</a>)</td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Reference</h4><div><a href="6ab83d70-c697-d634-533e-8a09bddc7f1f.htm">EWSoftware.ImageMaps.Web.Controls Namespace</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Definition</a></li><li><a class="quickLink">Example</a></li><li><a class="quickLink">Constructors</a></li><li><a class="quickLink">Properties</a></li><li><a class="quickLink">Methods</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div class="column"><p><a href="https://github.com/EWSoftware/ImageMaps" target="_blank" rel="noopener noreferrer">[v2015.1.19.0] Copyright © 2004-2015, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=EWSoftware.ImageMaps%20Control%20Library%20Documentation">Eric@EWoodruff.us</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
-        var HT_mailLinkText = HT_mailLink.innerHTML;
         HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
-        HT_mailLink.innerHTML = HT_mailLinkText;
-        </script> </div><script type="text/javascript">
+        </script> 
+				</div><div class="column"><script type="text/javascript">
     function _dmBootstrap(file) {
         var _dma = document.createElement('script');
         _dma.type = 'text/javascript';
@@ -262,4 +251,18 @@ actions that can be performed.</p><div class="codeSnippetContainer"><div class="
     (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
 </script>
 <div data-type="ad" data-publisher="ewsoftware.github.io" data-format="728x90" data-zone="ImageMaps"></div>
-</body></html>
+ 
+				</div></div></footer></div><script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+hljs.highlightAll();
+});</script></body></html>
