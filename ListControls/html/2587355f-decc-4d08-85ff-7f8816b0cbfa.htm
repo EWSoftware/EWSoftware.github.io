@@ -1,11 +1,8 @@
-﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>DataList Control Tutorial</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="tutorials, DataList" /><meta name="Microsoft.Help.Id" content="2587355f-decc-4d08-85ff-7f8816b0cbfa" /><meta name="Description" content="The DataList control allows you to specify a user control template that is used to display and edit information from a data source similar in nature to the DataList web server control, the subform control or continuous forms detail section in a Microsoft A" /><meta name="Microsoft.Help.ContentType" content="Concepts" /><meta name="BrandingAware" content="true" /><link type="text/css" rel="stylesheet" href="../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" /><script type="text/javascript" src="../scripts/jquery-3.3.1.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">EWSoftware.ListControls Library Documentation<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/ca3b503d-654e-4fe6-8ca3-ec3ea8fb9a1a.htm" title="EWSoftware.ListControls Library Documentation" tocid="roottoc">EWSoftware.ListControls Library Documentation</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/ce5cb77a-44a9-4629-aec3-6a8435cd8e53.htm" title="Control Tutorials" tocid="ce5cb77a-44a9-4629-aec3-6a8435cd8e53">Control Tutorials</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/3af969ee-6757-4660-9cc9-5bd518c24e05.htm" title="CheckBoxList and RadioButtonList Tutorial" tocid="3af969ee-6757-4660-9cc9-5bd518c24e05">CheckBoxList and RadioButtonList Tutorial</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/ea1601a4-68aa-4ad2-92f9-8c78fbf67512.htm" title="Combo Box Controls Tutorial" tocid="ea1601a4-68aa-4ad2-92f9-8c78fbf67512">Combo Box Controls Tutorial</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="../html/2587355f-decc-4d08-85ff-7f8816b0cbfa.htm" title="DataList Control Tutorial" tocid="2587355f-decc-4d08-85ff-7f8816b0cbfa">DataList Control Tutorial</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/8fbf556a-9edc-4071-85ef-6df0d4d13950.htm" title="DataNavigator Control Tutorial" tocid="8fbf556a-9edc-4071-85ef-6df0d4d13950">DataNavigator Control Tutorial</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/7cf6fc2e-bab8-4bf4-bf76-c1db9e2d342a.htm" title="ExtendedTreeView Control Tutorial" tocid="7cf6fc2e-bab8-4bf4-bf76-c1db9e2d342a">ExtendedTreeView Control Tutorial</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="titleColumn"><h1>DataList Control Tutorial</h1></td></tr></table><span class="introStyle"></span> <div class="introduction"><p>This topic describes the Data List control and its features.</p><ul class="autoOutline"><li class="outlineSectionEntry"><a href="#Info">General Information</a></li><li class="outlineSectionEntry"><a href="#RowTemplate">Creating Header, Footer, and Row  Templates</a></li><li class="outlineSectionEntry"><a href="#UseTemplate">Using the Templates</a></li><li class="outlineSectionEntry"><a href="#ChgPolicy">The Data List's Change Policy</a></li><li class="outlineSectionEntry"><a href="#SharedDS">Shared Control Data Sources in Templates</a></li><li class="outlineSectionEntry"><a href="#Totals">Creating Calculated Fields and Footer Totals</a></li><li class="outlineSectionEntry"><a href="#Issues">Known Issues and Their Workarounds</a></li><li class="outlineSectionEntry"><a href="#CommonProblems">Common Problems</a></li></ul></div><div class="collapsibleAreaRegion" id="Info"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />General Information</span></div><div id="ID1RBSection" class="collapsibleSection"><p>The <span class="code">DataList</span> control allows you to specify a user control template that is
+﻿<!DOCTYPE html ><html lang="en-US"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.css" /><link rel="stylesheet" href="../css/font-awesome.min.css" /><link rel="stylesheet" href="../css/presentationStyle.css" /><link rel="stylesheet" href="../css/vs.min.css" /><script src="../scripts/jquery-3.5.1.min.js"></script><script src="../scripts/clipboard.min.js"></script><script src="../scripts/highlight.min.js"></script><script src="../scripts/presentationStyle.js"></script><title>DataList Control Tutorial</title><meta name="Title" content="DataList Control Tutorial" /><meta name="Help.Id" content="2587355f-decc-4d08-85ff-7f8816b0cbfa" /><meta name="Help.ContentType" content="Concepts" /><meta name="guid" content="2587355f-decc-4d08-85ff-7f8816b0cbfa" /><meta name="Description" content="The DataList control allows you to specify a user control template that is used to display and edit information from a data source similar in nature to the DataList web server control, the subform control or continuous forms detail section in a Microsoft A" /><meta name="tocFile" content="../toc/IDD.xml" /></head><body><div class="fixedLayout"><div id="Header" class="fixedHeader"><div class="pageHeader level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div id="DocumentationTitle" class="level-item">EWSoftware.ListControls Library Documentation</div></div><div id="LangFilterSearchContainer" class="level-right"><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a><a class="dropdown-item languageFilterItem" data-languageId="vb">VB</a><a class="dropdown-item languageFilterItem" data-languageId="cpp">C++</a><a class="dropdown-item languageFilterItem" data-languageId="fs">F#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></div><div class="fixedContent"><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div class="columns pl-5 pr-5 fixedContent"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu" /></nav></div><div id="TopicContent" class="column content is-7"><h1>DataList Control Tutorial</h1><div><p>This topic describes the Data List control and its features.</p><ul class="is-hidden-tablet"><li><a href="#Info">General Information</a></li><li><a href="#RowTemplate">Creating Header, Footer, and Row Templates</a></li><li><a href="#UseTemplate">Using the Templates</a></li><li><a href="#ChgPolicy">The Data List's Change Policy</a></li><li><a href="#SharedDS">Shared Control Data Sources in Templates</a></li><li><a href="#Totals">Creating Calculated Fields and Footer Totals</a></li><li><a href="#Issues">Known Issues and Their Workarounds</a></li><li><a href="#CommonProblems">Common Problems</a></li></ul></div><h2 id="Info" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>General Information</h2><div id="IDBABSection"><p>The <span class="code">DataList</span> control allows you to specify a user control template that is
 used to display and edit information from a data source similar in nature to the <span class="code">DataList</span>
 web server control, the subform control or continuous forms detail section in a Microsoft Access form, or the
 <span class="code">DataRepeater</span> control from Visual Basic 6.  Figure 1 below identifies the common elements
-of the data list control as seen at runtime.</p><div class="mediaCenter"><img alt="DataList Elements" src="../media/DataList.jpg" /><div class="caption"><span class="captionLead">Figure 1:
-						</span>
-						The <span class="code">DataList</span> Control Elements
-					</div></div><p>To use the <span class="code">DataList</span> control, simply drag the control from the toolbox,
+of the data list control as seen at runtime.</p><figure class="mediaCenter"><img alt="DataList Elements" src="../media/DataList.jpg" /><figcaption>Figure 1: The DataList Control Elements</figcaption></figure><p>To use the <span class="code">DataList</span> control, simply drag the control from the toolbox,
 drop it on the form, and use the <strong>Properties</strong> window to adjust its settings.</p><p>The properties in the <strong>Appearance</strong> category allow you to hide the row
 headers or adjust their width and color, hide all of the navigation controls or just the Add and Delete buttons,
 hide the separator between rows or adjusted its size and color, etc.</p><p>The properties in the <strong>Behavior</strong> category can be used to specify whether or
@@ -28,15 +25,15 @@ from it.  The header and footer templates inherit the data list's binding contex
 with its data source as you move from row to row.</p><p>Unlike the standard .NET list controls, all of the controls in the
 <span class="code">EWSoftware.ListControls</span> namespace allow you to index their data source to extract
 values.  This allows you to obtain the value of a field in the currently selected row or a field in any row even
-if it is not the selected row and regardless of whether or not the field is displayed in the template.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EABAIAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EABAIAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EABAIAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EABAIAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">// Get the last name from the current row</span>
-<span class="highlight-keyword">string</span> lastName = (<span class="highlight-keyword">string</span>)dlPeople[<span class="highlight-literal">"LastName"</span>];
+if it is not the selected row and regardless of whether or not the field is displayed in the template.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Get the last name from the current row
+string lastName = (string)dlPeople["LastName"];
 
-<span class="highlight-comment">// Get the age from the sixth row</span>
-<span class="highlight-keyword">int</span> age = (<span class="highlight-keyword">int</span>)dlPeople[<span class="highlight-number">5</span>, <span class="highlight-literal">"Age"</span>];</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EABAIAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAAAIAAA_tab1" class="codeSnippetContainerTabSingle">VB.NET</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAAAIAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAAAIAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAAAIAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">' Get the last name from the current row</span>
-<span class="highlight-keyword">Dim</span> lastName <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span> = <span class="highlight-keyword">CType</span>(dlPeople(<span class="highlight-literal">"LastName"</span>), <span class="highlight-keyword">String</span>)
+// Get the age from the sixth row
+int age = (int)dlPeople[5, "Age"];</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">VB.NET</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vbnet">' Get the last name from the current row
+Dim lastName As String = CType(dlPeople("LastName"), String)
 
-<span class="highlight-comment">' Get the age from the sixth row</span>
-<span class="highlight-keyword">Dim</span> age <span class="highlight-keyword">As</span> <span class="highlight-keyword">Integer</span> = <span class="highlight-keyword">CType</span>(dlPeople(<span class="highlight-number">5</span>, <span class="highlight-literal">"Age"</span>), <span class="highlight-keyword">Integer</span>)</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAAAIAAA");</script></div><div class="collapsibleAreaRegion" id="RowTemplate"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Creating Header, Footer, and Row  Templates</span></div><div id="ID2RBSection" class="collapsibleSection"><p>The header, footer, and row template controls used by the <span class="code">DataList</span> are all
+' Get the age from the sixth row
+Dim age As Integer = CType(dlPeople(5, "Age"), Integer)</code></pre></div></div></div><h2 id="RowTemplate" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Creating Header, Footer, and Row Templates</h2><div id="IDCABSection"><p>The header, footer, and row template controls used by the <span class="code">DataList</span> are all
 derived from the supplied <span class="code">TemplateControl</span> class.  The process for creating them is
 almost identical for all three types but there are some differences in how they are utilized.  Row templates are
 initialized and bound as they are scrolled into view.  One row template is created for each row in the data
@@ -49,58 +46,58 @@ details section of the data list.</p><p>There is no way to create and design hea
 as a separate user control within Visual Studio just like any other user control.  The template type is then
 assigned to a property on the data list using code.  To create a new template control, follow these steps:</p><ol><li><p>Right click on the project in the <strong>Solution Explorer</strong>, select
 <strong>Add</strong>, <strong>Add User Control</strong>, enter a name for the new user control,
-and click <strong>Open</strong> to add it to the project.</p></li><li><p>Open the new user control in the designer and view the code for it.</p></li><li><p>Change the base class of the user control to <span class="code">EWSoftware.ListControls.TemplateControl</span>.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EABGAAHAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EABGAAHAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EABGAAHAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EABGAAHAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> AddressRow : EWSoftware.ListControls.TemplateControl</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EABGAAHAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAAGAAHAAA_tab1" class="codeSnippetContainerTabSingle">VB.NET</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAAGAAHAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAAGAAHAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAAGAAHAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">Public</span> <span class="highlight-keyword">Class</span> AddressRow
-  <span class="highlight-keyword">Inherits</span> EWSoftware.ListControls.TemplateControl</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAAGAAHAAA");</script></li><li><p>For a row template, it is strongly suggested that you use the deferred initialization technique
+and click <strong>Open</strong> to add it to the project.</p></li><li><p>Open the new user control in the designer and view the code for it.</p></li><li><p>Change the base class of the user control to <span class="code">EWSoftware.ListControls.TemplateControl</span>.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">public class AddressRow : EWSoftware.ListControls.TemplateControl</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">VB.NET</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vbnet">Public Class AddressRow
+  Inherits EWSoftware.ListControls.TemplateControl</code></pre></div></div></li><li><p>For a row template, it is strongly suggested that you use the deferred initialization technique
 described next.  Row templates are bound and initialized as they are scrolled into view.  By deferring
 initialization, the data list loads much faster when first displayed and will not consume resources until needed
 when viewing large data sets.  Header and footer templates are always initialized as soon as they are created so
 there is no need to use this technique for them.  The first step in deferring initialization is to modify the
 constructor to suppress the call to the <span class="code">InitializeComponent</span> method unless it is made at
-design-time.  This is done by using an <span class="code">if</span> statement as shown here:</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAEFAAHAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAEFAAHAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAEFAAHAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAEFAAHAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> AddressRow()
+design-time.  This is done by using an <span class="code">if</span> statement as shown here:</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">public AddressRow()
 {
-    <span class="highlight-comment">// This call is required by the Windows.Forms Form Designer.</span>
-    <span class="highlight-comment">// At runtime, actual initialization is deferred until needed.</span>
-    <span class="highlight-keyword">if</span>(<span class="highlight-keyword">this</span>.DesignMode)
+    // This call is required by the Windows.Forms Form Designer.
+    // At runtime, actual initialization is deferred until needed.
+    if(this.DesignMode)
         InitializeComponent();
-}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAEFAAHAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EADFAAHAAA_tab1" class="codeSnippetContainerTabSingle">VB.NET</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EADFAAHAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EADFAAHAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EADFAAHAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">Public</span> <span class="highlight-keyword">Sub</span> <span class="highlight-keyword">New</span>()
-    <span class="highlight-comment">' This call is required by the Windows.Forms Form Designer.</span>
-    <span class="highlight-comment">' At runtime, actual initialization is deferred until needed.</span>
-    <span class="highlight-keyword">If</span> <span class="highlight-keyword">Me</span>.DesignMode = <span class="highlight-keyword">True</span> <span class="highlight-keyword">Then</span>
+}</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">VB.NET</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vbnet">Public Sub New()
+    ' This call is required by the Windows.Forms Form Designer.
+    ' At runtime, actual initialization is deferred until needed.
+    If Me.DesignMode = True Then
         InitializeComponent()
-    <span class="highlight-keyword">End</span> <span class="highlight-keyword">If</span>
-<span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EADFAAHAAA");</script><p>The last step is to add an override for the <span class="code">InitializeTemplate</span> method.
+    End If
+End Sub</code></pre></div></div><p>The last step is to add an override for the <span class="code">InitializeTemplate</span> method.
 This is when <span class="code">InitializeComponent</span> is called to actually create the controls contained in
 the template.  This override can also be used to set the data sources on combo boxes, list boxes, etc, and to
 check the data list's change policy to see if controls need to be disabled, etc.  The base implementation does
-nothing so there is no need to call it.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EABFAAHAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EABFAAHAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EABFAAHAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EABFAAHAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">// Actual initialization is deferred until needed to save</span>
-<span class="highlight-comment">// time and resources.</span>
-<span class="highlight-keyword">public</span> <span class="highlight-keyword">override</span> <span class="highlight-keyword">void</span> InitializeTemplate()
+nothing so there is no need to call it.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Actual initialization is deferred until needed to save
+// time and resources.
+public override void InitializeTemplate()
 {
-    <span class="highlight-comment">// Create the contained controls</span>
-    <span class="highlight-keyword">this</span>.InitializeComponent();
+    // Create the contained controls
+    this.InitializeComponent();
 
-    <span class="highlight-comment">// Use the shared data source for the combo box</span>
-    cboState.DisplayMember = cboState.ValueMember = <span class="highlight-literal">"State"</span>;
-    cboState.DataSource = (DataView)<span class="highlight-keyword">this</span>.TemplateParent.SharedDataSources[<span class="highlight-literal">"States"</span>];
+    // Use the shared data source for the combo box
+    cboState.DisplayMember = cboState.ValueMember = "State";
+    cboState.DataSource = (DataView)this.TemplateParent.SharedDataSources["States"];
 
-    <span class="highlight-comment">// Update control states based on the parent's change policy.</span>
-    <span class="highlight-comment">// This can be omitted if you do not need it.</span>
-    <span class="highlight-keyword">this</span>.ChangePolicyModified();
-}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EABFAAHAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAAFAAHAAA_tab1" class="codeSnippetContainerTabSingle">VB.NET</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAAFAAHAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAAFAAHAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAAFAAHAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">' Actual initialization is deferred until needed to save</span>
-<span class="highlight-comment">' time and resources.</span>
-<span class="highlight-keyword">Public</span> <span class="highlight-keyword">Overrides</span> <span class="highlight-keyword">Sub</span> InitializeTemplate()
-    <span class="highlight-comment">' Create the contained controls</span>
-    <span class="highlight-keyword">Me</span>.InitializeComponent()
+    // Update control states based on the parent's change policy.
+    // This can be omitted if you do not need it.
+    this.ChangePolicyModified();
+}</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">VB.NET</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vbnet">' Actual initialization is deferred until needed to save
+' time and resources.
+Public Overrides Sub InitializeTemplate()
+    ' Create the contained controls
+    Me.InitializeComponent()
 
-    <span class="highlight-comment">' Use the shared data source for the combo box</span>
-    cboState.DisplayMember = <span class="highlight-literal">"State"</span>
-    cboState.ValueMember = <span class="highlight-literal">"State"</span>
-    cboState.DataSource = <span class="highlight-keyword">CType</span>(<span class="highlight-keyword">Me</span>.TemplateParent.SharedDataSources(<span class="highlight-literal">"States"</span>), DataView)
+    ' Use the shared data source for the combo box
+    cboState.DisplayMember = "State"
+    cboState.ValueMember = "State"
+    cboState.DataSource = CType(Me.TemplateParent.SharedDataSources("States"), DataView)
 
-    <span class="highlight-comment">' Update control states based on the parent's change policy.</span>
-    <span class="highlight-comment">' This can be omitted if you do not need it.</span>
-    <span class="highlight-keyword">Me</span>.ChangePolicyModified()
-<span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAAFAAHAAA");</script></li><li><p>Add controls to the template and any required event handlers for them as you would for any
+    ' Update control states based on the parent's change policy.
+    ' This can be omitted if you do not need it.
+    Me.ChangePolicyModified()
+End Sub</code></pre></div></div></li><li><p>Add controls to the template and any required event handlers for them as you would for any
 other user control.  You can also define public properties and methods if necessary to let forms containing the
 data list utilizing the template make changes to it, etc.</p><p>Normal <span class="code">Label</span> controls do not respond to mouse clicks.  As such,
 clicking on a label in a row will not give the row the focus.  Clicking on any other control type will give it
@@ -118,26 +115,26 @@ re-bound under may different circumstances.  As such, the <span class="code">Dat
 bound controls must be cleared before you add the new bindings.  If you do not, it will generate a runtime
 exception that complains about duplicate bindings.  To simplify this process, it is suggested that you use the
 template control's overloaded <span class="code">AddBinding</span> method as shown in the example below.  This
-greatly reduces the amount of code you have to write in order to clear and recreate the bindings.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EACDAAHAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EACDAAHAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EACDAAHAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EACDAAHAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">// Bind the controls to their data source</span>
-<span class="highlight-keyword">public</span> <span class="highlight-keyword">override</span> <span class="highlight-keyword">void</span> Bind()
+greatly reduces the amount of code you have to write in order to clear and recreate the bindings.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Bind the controls to their data source
+public override void Bind()
 {
-    <span class="highlight-keyword">this</span>.AddBinding(txtFName, <span class="highlight-literal">"Text"</span>, <span class="highlight-literal">"FirstName"</span>);
-    <span class="highlight-keyword">this</span>.AddBinding(txtLName, <span class="highlight-literal">"Text"</span>, <span class="highlight-literal">"LastName"</span>);
-    <span class="highlight-keyword">this</span>.AddBinding(txtAddress, <span class="highlight-literal">"Text"</span>, <span class="highlight-literal">"Address"</span>);
-    <span class="highlight-keyword">this</span>.AddBinding(txtCity, <span class="highlight-literal">"Text"</span>, <span class="highlight-literal">"City"</span>);
-    <span class="highlight-keyword">this</span>.AddBinding(cboState, <span class="highlight-literal">"SelectedValue"</span>, <span class="highlight-literal">"State"</span>);
-    <span class="highlight-keyword">this</span>.AddBinding(txtZip, <span class="highlight-literal">"Text"</span>, <span class="highlight-literal">"Zip"</span>);
-    <span class="highlight-keyword">this</span>.AddBinding(udcSumValue, <span class="highlight-literal">"Text"</span>, <span class="highlight-literal">"SumValue"</span>);
-}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EACDAAHAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EABDAAHAAA_tab1" class="codeSnippetContainerTabSingle">VB.NET</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EABDAAHAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EABDAAHAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EABDAAHAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">' Bind the controls to their data source</span>
-<span class="highlight-keyword">Public</span> <span class="highlight-keyword">Overrides</span> <span class="highlight-keyword">Sub</span> Bind()
-    <span class="highlight-keyword">Me</span>.AddBinding(txtFName, <span class="highlight-literal">"Text"</span>, <span class="highlight-literal">"FirstName"</span>)
-    <span class="highlight-keyword">Me</span>.AddBinding(txtLName, <span class="highlight-literal">"Text"</span>, <span class="highlight-literal">"LastName"</span>)
-    <span class="highlight-keyword">Me</span>.AddBinding(txtAddress, <span class="highlight-literal">"Text"</span>, <span class="highlight-literal">"Address"</span>)
-    <span class="highlight-keyword">Me</span>.AddBinding(txtCity, <span class="highlight-literal">"Text"</span>, <span class="highlight-literal">"City"</span>)
-    <span class="highlight-keyword">Me</span>.AddBinding(cboState, <span class="highlight-literal">"SelectedValue"</span>, <span class="highlight-literal">"State"</span>)
-    <span class="highlight-keyword">Me</span>.AddBinding(txtZip, <span class="highlight-literal">"Text"</span>, <span class="highlight-literal">"Zip"</span>)
-    <span class="highlight-keyword">Me</span>.AddBinding(udcSumValue, <span class="highlight-literal">"Text"</span>, <span class="highlight-literal">"SumValue"</span>)
-<span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EABDAAHAAA");</script><p>As mentioned, <span class="code">AddBinding</span> is overloaded.  The example above uses the
+    this.AddBinding(txtFName, "Text", "FirstName");
+    this.AddBinding(txtLName, "Text", "LastName");
+    this.AddBinding(txtAddress, "Text", "Address");
+    this.AddBinding(txtCity, "Text", "City");
+    this.AddBinding(cboState, "SelectedValue", "State");
+    this.AddBinding(txtZip, "Text", "Zip");
+    this.AddBinding(udcSumValue, "Text", "SumValue");
+}</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">VB.NET</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vbnet">' Bind the controls to their data source
+Public Overrides Sub Bind()
+    Me.AddBinding(txtFName, "Text", "FirstName")
+    Me.AddBinding(txtLName, "Text", "LastName")
+    Me.AddBinding(txtAddress, "Text", "Address")
+    Me.AddBinding(txtCity, "Text", "City")
+    Me.AddBinding(cboState, "SelectedValue", "State")
+    Me.AddBinding(txtZip, "Text", "Zip")
+    Me.AddBinding(udcSumValue, "Text", "SumValue")
+End Sub</code></pre></div></div><p>As mentioned, <span class="code">AddBinding</span> is overloaded.  The example above uses the
 version that clears all existing bindings and adds the requested binding. Other versions will let you add
 additional bindings to a control without clearing the current bindings and also specify optional
 <span class="code">Format</span> and <span class="code">Parse</span> event handlers for the bindings.</p></li><li><p>If the template will be used in a data list that can have a variable change policy (i.e. it
@@ -147,27 +144,27 @@ data list on rows that have been initialized and bound whenever its change polic
 source has been specified.  Note that you may also need to call this method from the
 <span class="code">InitializeTemplate</span> method to set the state of controls when a row is initialized after
 being scrolled into view or when the data source changes.  The base implementation does nothing so there is no
-need to call it.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EABCAAHAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EABCAAHAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EABCAAHAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EABCAAHAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">// Enable or disable the controls based on the edit policy.</span>
-<span class="highlight-keyword">public</span> <span class="highlight-keyword">override</span> <span class="highlight-keyword">void</span> ChangePolicyModified()
+need to call it.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Enable or disable the controls based on the edit policy.
+public override void ChangePolicyModified()
 {
-    <span class="highlight-keyword">if</span>(<span class="highlight-keyword">this</span>.TemplateParent.AllowEdits != txtFName.Enabled &amp;&amp; !<span class="highlight-keyword">this</span>.IsNewRow)
+    if(this.TemplateParent.AllowEdits != txtFName.Enabled &amp;&amp; !this.IsNewRow)
     {
         txtFName.Enabled = txtLName.Enabled = txtAddress.Enabled = txtCity.Enabled =
-            cboState.Enabled = txtZip.Enabled = <span class="highlight-keyword">this</span>.TemplateParent.AllowEdits;
+            cboState.Enabled = txtZip.Enabled = this.TemplateParent.AllowEdits;
     }
-}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EABCAAHAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAACAAHAAA_tab1" class="codeSnippetContainerTabSingle">VB.NET</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAACAAHAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAACAAHAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAACAAHAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">' Enable or disable the controls based on the edit policy.</span>
-<span class="highlight-keyword">Public</span> <span class="highlight-keyword">Overrides</span> <span class="highlight-keyword">Sub</span> ChangePolicyModified()
-    <span class="highlight-keyword">Dim</span> allowEdits <span class="highlight-keyword">As</span> <span class="highlight-keyword">Me</span>.TemplateParent.AllowEdits
+}</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">VB.NET</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vbnet">' Enable or disable the controls based on the edit policy.
+Public Overrides Sub ChangePolicyModified()
+    Dim allowEdits As Me.TemplateParent.AllowEdits
 
-    <span class="highlight-keyword">If</span> allowEdits &lt;&gt; txtFName.Enabled <span class="highlight-keyword">And</span> <span class="highlight-keyword">Me</span>.IsNewRow = <span class="highlight-keyword">False</span> <span class="highlight-keyword">Then</span>
+    If allowEdits &lt;&gt; txtFName.Enabled And Me.IsNewRow = False Then
         txtFName.Enabled = allowEdits
         txtLName.Enabled = allowEdits
         txtAddress.Enabled = allowEdits
         txtCity.Enabled = allowEdits
         cboState.Enabled = allowEdits
         txtZip.Enabled = allowEdits
-    <span class="highlight-keyword">End</span> <span class="highlight-keyword">If</span>
-<span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAACAAHAAA");</script></li><li><p>If rows can be deleted from the data source, you can override the template's
+    End If
+End Sub</code></pre></div></div></li><li><p>If rows can be deleted from the data source, you can override the template's
 <span class="code">CanDelete</span> property to allow it to permit or deny the deletion based on conditions that
 you set such as getting a confirmation from the user.  The row being deleted is always given the first chance to
 deny the deletion.  If the row allows it, the data list raises its <span class="code">DeletingRow</span> event to
@@ -177,56 +174,56 @@ template is used in many forms, it also saves you from having to add an event ha
 <span class="code">DeletingRow</span> event in each one.</p></li><li><p>If you need validation in your row template, add an event handler for the template's
 <span class="code">Validating</span> event.  By performing all of your validation in this event, you ensure that
 the row cannot be left if it is in an invalid state. The data list will raise this event on the current row
-template whenever it is needed.  The demo application contains an example.</p></li></ol></div><div class="collapsibleAreaRegion" id="UseTemplate"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Using the Templates</span></div><div id="ID3RBSection" class="collapsibleSection"><p>Once the templates have been created, you can assign their type to the appropriate property on the
+template whenever it is needed.  The demo application contains an example.</p></li></ol></div><h2 id="UseTemplate" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Using the Templates</h2><div id="IDDABSection"><p>Once the templates have been created, you can assign their type to the appropriate property on the
 <span class="code">DataList</span> control as shown below.  This is usually done in the form's constructor or when
 the data source is assigned to the data list.  You can assign the templates to the properties individually or in
-conjunction with the data source using the <span class="code">SetDataBinding</span> method.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAEAGAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAEAGAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAEAGAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAEAGAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">// Set the properties individually</span>
-dlAddresses.RowTemplate = <span class="highlight-keyword">typeof</span>(AddressRow);
-dlAddresses.HeaderTemplate = <span class="highlight-keyword">typeof</span>(AddressHeader);
-dlAddresses.FooterTemplate = <span class="highlight-keyword">typeof</span>(AddressFooter);
-dlAddresses.DataMember = <span class="highlight-literal">"Addresses"</span>;
+conjunction with the data source using the <span class="code">SetDataBinding</span> method.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Set the properties individually
+dlAddresses.RowTemplate = typeof(AddressRow);
+dlAddresses.HeaderTemplate = typeof(AddressHeader);
+dlAddresses.FooterTemplate = typeof(AddressFooter);
+dlAddresses.DataMember = "Addresses";
 dlAddresses.DataSource = dsAddresses;
 
-<span class="highlight-comment">// Set the row template with the data source</span>
-dlAddresses.SetDataBinding(dsAddresses, <span class="highlight-literal">"Addresses"</span>, <span class="highlight-keyword">typeof</span>(AddressRow));
+// Set the row template with the data source
+dlAddresses.SetDataBinding(dsAddresses, "Addresses", typeof(AddressRow));
 
-<span class="highlight-comment">// Set all three templates along with the data source</span>
-dlAddresses.SetDataBinding(dsAddresses, <span class="highlight-literal">"Addresses"</span>, <span class="highlight-keyword">typeof</span>(AddressRow),
-    <span class="highlight-keyword">typeof</span>(AddressHeader), <span class="highlight-keyword">typeof</span>(AddressFooter));
+// Set all three templates along with the data source
+dlAddresses.SetDataBinding(dsAddresses, "Addresses", typeof(AddressRow),
+    typeof(AddressHeader), typeof(AddressFooter));
 
-<span class="highlight-comment">// This example specifies the table without going through the data set</span>
-dlAddresses.SetDataBinding(dsAddresses.Tables[<span class="highlight-number">0</span>], <span class="highlight-keyword">null</span>, <span class="highlight-keyword">typeof</span>(AddressRow));</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAEAGAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EADAGAAA_tab1" class="codeSnippetContainerTabSingle">VB.NET</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EADAGAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EADAGAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EADAGAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">' Set the template types individually</span>
-dlAddresses.RowTemplate = <span class="highlight-keyword">GetType</span>(AddressRow)
-dlAddresses.HeaderTemplate = <span class="highlight-keyword">GetType</span>(AddressHeader)
-dlAddresses.FooterTemplate = <span class="highlight-keyword">GetType</span>(AddressFooter)
-dlAddresses.DataMember = <span class="highlight-literal">"Addresses"</span>
+// This example specifies the table without going through the data set
+dlAddresses.SetDataBinding(dsAddresses.Tables[0], null, typeof(AddressRow));</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">VB.NET</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vbnet">' Set the template types individually
+dlAddresses.RowTemplate = GetType(AddressRow)
+dlAddresses.HeaderTemplate = GetType(AddressHeader)
+dlAddresses.FooterTemplate = GetType(AddressFooter)
+dlAddresses.DataMember = "Addresses"
 dlAddresses.DataSource = dsAddresses
 
-<span class="highlight-comment">' Set the row template with the data source</span>
-dlAddresses.SetDataBinding(dsAddresses, <span class="highlight-literal">"Addresses"</span>, <span class="highlight-keyword">GetType</span>(AddressRow))
+' Set the row template with the data source
+dlAddresses.SetDataBinding(dsAddresses, "Addresses", GetType(AddressRow))
 
-<span class="highlight-comment">' Set all three templates along with the data source</span>
-dlAddresses.SetDataBinding(dsAddresses, <span class="highlight-literal">"Addresses"</span>, <span class="highlight-keyword">GetType</span>(AddressRow),
-    <span class="highlight-keyword">GetType</span>(AddressHeader), <span class="highlight-keyword">GetType</span>(AddressFooter))
+' Set all three templates along with the data source
+dlAddresses.SetDataBinding(dsAddresses, "Addresses", GetType(AddressRow),
+    GetType(AddressHeader), GetType(AddressFooter))
 
-<span class="highlight-comment">' This example specifies the table without going through the data set</span>
-dlAddresses.SetDataBinding(dsAddresses.Tables(<span class="highlight-number">0</span>), <span class="highlight-keyword">Nothing</span>, <span class="highlight-keyword">GetType</span>(AddressRow))</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EADAGAAA");</script><p>Once the data source and row template are assigned, you can use the data list to edit information
+' This example specifies the table without going through the data set
+dlAddresses.SetDataBinding(dsAddresses.Tables(0), Nothing, GetType(AddressRow))</code></pre></div></div><p>Once the data source and row template are assigned, you can use the data list to edit information
 in the data source.  Before you save changes to the data source, it is important to call the
 <span class="code">CommitChanges</span> method on the data list control so that it can commit any pending changes
 (i.e. data in the form controls that has not yet been pushed into the data source).  You can also check the
 <span class="code">HasChanges</span> property to see if any changes were made. Using the <span class="code">HasChanges</span>
-property automatically commits any pending changes.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EABAGAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EABAGAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EABAGAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EABAGAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">private</span> <span class="highlight-keyword">void</span> btnSave_Click(<span class="highlight-keyword">object</span> sender, System.EventArgs e)
+property automatically commits any pending changes.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">private void btnSave_Click(object sender, System.EventArgs e)
 {
-    <span class="highlight-comment">// We must commit any pending changes</span>
+    // We must commit any pending changes
     dlList.CommitChanges();
 
     daAddresses.Update(dsAddresses);
-}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EABAGAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAAAGAAA_tab1" class="codeSnippetContainerTabSingle">VB.NET</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAAAGAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAAAGAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAAAGAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">Private</span> <span class="highlight-keyword">Sub</span> btnSave_Click(sender <span class="highlight-keyword">As</span> <span class="highlight-keyword">Object</span>, e <span class="highlight-keyword">As</span> System.EventArgs)
-    <span class="highlight-comment">' We must commit any pending changes</span>
+}</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">VB.NET</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vbnet">Private Sub btnSave_Click(sender As Object, e As System.EventArgs)
+    ' We must commit any pending changes
     dlList.CommitChanges()
 
     daAddresses.Update(dsAddresses)
-<span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAAAGAAA");</script></div><div class="collapsibleAreaRegion" id="ChgPolicy"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />The Data List's Change Policy</span></div><div id="ID4RBSection" class="collapsibleSection"><p>The <span class="code">DataList</span> control has three properties that allow you to specify
+End Sub</code></pre></div></div></div><h2 id="ChgPolicy" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>The Data List's Change Policy</h2><div id="IDEABSection"><p>The <span class="code">DataList</span> control has three properties that allow you to specify
 whether additions, edits, or deletes are allowed to be made to the data source (<span class="code">AllowAdditions</span>,
 <span class="code">AllowEdits</span>, and <span class="code">AllowDeletes</span>).  All three properties default to
 true.  However, when a data source is assigned to the data list, these properties may be updated to reflect the
@@ -241,60 +238,60 @@ check the change policy as needed and disable the controls if edits are not allo
 contains an example of this.  As shown in the demo, it is possible to disable edits but still allow additions.
 In this situation, new rows can be added and edited but any existing rows are read-only.</p><p>The data list also raises a <span class="code">NoRows</span> event when a data source is assigned
 that contains no rows or when the last row is deleted.  You can use this event to disable edit controls in the
-header and footer until a new row is added and/or display a message asking the user to add a new row.</p></div><div class="collapsibleAreaRegion" id="SharedDS"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID5RB')" onkeypress="SectionExpandCollapse_CheckKey('ID5RB', event)" tabindex="0"><img id="ID5RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Shared Control Data Sources in Templates</span></div><div id="ID5RBSection" class="collapsibleSection"><p>When a template contains other controls with data sources such as combo boxes, list boxes, etc, it
+header and footer until a new row is added and/or display a message asking the user to add a new row.</p></div><h2 id="SharedDS" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Shared Control Data Sources in Templates</h2><div id="IDFABSection"><p>When a template contains other controls with data sources such as combo boxes, list boxes, etc, it
 can be expensive to create and load the data source for each control in every row template.  However, each
 template has its own binding context so it is much more efficient to share a common data source amongst all
 templates for those controls.  Because of its unique binding context, the controls in each row can be set
 independently of each other without any conflicts while sharing a common data source.  To implement a shared data
 source for the controls in a template, follow these steps.</p><ol><li><p>In forms that contain a data list that utilizes the template, create and store the data source
 in the data list's <span class="code">SharedDataSources</span> property.  This is a simple hash table that is used
-to store shared data sources for templates by key name.  For example:</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EACBAAEAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EACBAAEAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EACBAAEAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EACBAAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> DataListTestForm()
+to store shared data sources for templates by key name.  For example:</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">public DataListTestForm()
 {
-    <span class="highlight-comment">// ... Other constructor code ...</span>
+    // ... Other constructor code ...
 
-    <span class="highlight-comment">// Load the state codes for the row template's shared data source</span>
-    OleDbDataAdapter daStates = <span class="highlight-keyword">new</span> OleDbDataAdapter(
-        <span class="highlight-literal">"Select State, StateDesc From States"</span>, dbConn);
+    // Load the state codes for the row template's shared data source
+    OleDbDataAdapter daStates = new OleDbDataAdapter(
+        "Select State, StateDesc From States", dbConn);
 
-    DataTable dtStates = <span class="highlight-keyword">new</span> DataTable();
+    DataTable dtStates = new DataTable();
     daStates.Fill(dtStates);
-    dlList.SharedDataSources.Add(<span class="highlight-literal">"States"</span>, dtStates.DefaultView);
-
-    <span class="highlight-comment">// ... Other constructor code ...</span>
-}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EACBAAEAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EABBAAEAAA_tab1" class="codeSnippetContainerTabSingle">VB.NET</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EABBAAEAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EABBAAEAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EABBAAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">Public</span> <span class="highlight-keyword">Sub</span> <span class="highlight-keyword">New</span>()
-    <span class="highlight-comment">' ... Other constructor code ...</span>
-
-    <span class="highlight-comment">' Load the state codes for the row template's shared data source</span>
-    <span class="highlight-keyword">Dim</span> daStates <span class="highlight-keyword">As</span> <span class="highlight-keyword">New</span> OleDbDataAdapter(
-        <span class="highlight-literal">"Select State, StateDesc From States"</span>, dbConn)
-
-    <span class="highlight-keyword">Dim</span> dtStates <span class="highlight-keyword">As</span> <span class="highlight-keyword">New</span> DataTable()
-    daStates.Fill(dtStates)
-    dlList.SharedDataSources.Add(<span class="highlight-literal">"States"</span>, dtStates.DefaultView)
+    dlList.SharedDataSources.Add("States", dtStates.DefaultView);
 
     // ... Other constructor code ...
-<span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EABBAAEAAA");</script><p>This can be done in the form's constructor or at any point prior to assigning the template to
+}</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">VB.NET</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vbnet">Public Sub New()
+    ' ... Other constructor code ...
+
+    ' Load the state codes for the row template's shared data source
+    Dim daStates As New OleDbDataAdapter(
+        "Select State, StateDesc From States", dbConn)
+
+    Dim dtStates As New DataTable()
+    daStates.Fill(dtStates)
+    dlList.SharedDataSources.Add("States", dtStates.DefaultView)
+
+    // ... Other constructor code ...
+End Sub</code></pre></div></div><p>This can be done in the form's constructor or at any point prior to assigning the template to
 the data list control.  Always store the shared data source before assigning the template to the data list.
 This is especially true for header and footer templates as they are created and initialized when assigned and
 will not see the data source if you set it after assigning them to the data list.</p></li><li><p>In the <span class="code">InitializeTemplate</span> override for the template, add code to set
 the data source on the controls that need it by retrieving the data source from the parent data list's
-<span class="code">SharedDataSources</span> property using the appropriate key name. For example:</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EABAAAEAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EABAAAEAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EABAAAEAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EABAAAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">protected</span> <span class="highlight-keyword">override</span> <span class="highlight-keyword">void</span> InitializeTemplate()
+<span class="code">SharedDataSources</span> property using the appropriate key name. For example:</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">protected override void InitializeTemplate()
 {
-    <span class="highlight-comment">// Create the contained controls</span>
-    <span class="highlight-keyword">this</span>.InitializeComponent();
+    // Create the contained controls
+    this.InitializeComponent();
 
-    <span class="highlight-comment">// Use the shared data source for the combo box</span>
-    cboState.DisplayMember = cboState.ValueMember = <span class="highlight-literal">"State"</span>;
-    cboState.DataSource = (DataView)<span class="highlight-keyword">this</span>.TemplateParent.SharedDataSources[<span class="highlight-literal">"States"</span>];
-}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EABAAAEAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAAAAAEAAA_tab1" class="codeSnippetContainerTabSingle">VB.NET</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAAAAAEAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAAAAAEAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAAAAAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">Protected</span> <span class="highlight-keyword">Overrides</span> <span class="highlight-keyword">Sub</span> InitializeTemplate()
-    <span class="highlight-comment">' Create the contained controls</span>
-    <span class="highlight-keyword">Me</span>.InitializeComponent();
+    // Use the shared data source for the combo box
+    cboState.DisplayMember = cboState.ValueMember = "State";
+    cboState.DataSource = (DataView)this.TemplateParent.SharedDataSources["States"];
+}</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">VB.NET</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vbnet">Protected Overrides Sub InitializeTemplate()
+    ' Create the contained controls
+    Me.InitializeComponent();
 
-    <span class="highlight-comment">' Use the shared data source for the combo box</span>
-    cboState.DisplayMember = <span class="highlight-literal">"State"</span>
-    cboState.ValueMember = <span class="highlight-literal">"State"</span>
-    cboState.DataSource = <span class="highlight-keyword">CType</span>(<span class="highlight-keyword">Me</span>.TemplateParent.SharedDataSources(<span class="highlight-literal">"States"</span>), DataView)
-<span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAAAAAEAAA");</script></li></ol></div><div class="collapsibleAreaRegion" id="Totals"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID6RB')" onkeypress="SectionExpandCollapse_CheckKey('ID6RB', event)" tabindex="0"><img id="ID6RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Creating Calculated Fields and Footer Totals</span></div><div id="ID6RBSection" class="collapsibleSection"><p>Due to the way that data binding works in .NET, changes to a row are not committed to the data
+    ' Use the shared data source for the combo box
+    cboState.DisplayMember = "State"
+    cboState.ValueMember = "State"
+    cboState.DataSource = CType(Me.TemplateParent.SharedDataSources("States"), DataView)
+End Sub</code></pre></div></div></li></ol></div><h2 id="Totals" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Creating Calculated Fields and Footer Totals</h2><div id="IDGABSection"><p>Due to the way that data binding works in .NET, changes to a row are not committed to the data
 source unless you move off of the row or call the <span class="code">CommitChanges</span> method.  This may have
 an effect on calculated fields in the data source that are displayed in a row template.  For example, if you have
 an item quantity, a cost, and a total value field that is computed from the prior two displayed on the template,
@@ -308,29 +305,29 @@ to not bind the total column and instead compute and display the total manually 
 event handlers.</p><p>It is also possible to display aggregate values from the data source.  For example, you might want
 to display the sum of all values in a field from the data source in the data list's footer.  For read-only data,
 this can be accomplished by overriding the footer template's <span class="code">Bind</span> method and computing
-the value in it.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAFADAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAFADAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAFADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAFADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">// Recalculate the footer total when bound</span>
-<span class="highlight-keyword">protected</span> <span class="highlight-keyword">override</span> <span class="highlight-keyword">void</span> Bind()
+the value in it.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Recalculate the footer total when bound
+protected override void Bind()
 {
-    <span class="highlight-comment">// Get the data source from the parent</span>
-    DataTable tbl = <span class="highlight-keyword">this</span>.TemplateParent.DataSource <span class="highlight-keyword">as</span> DataTable;
+    // Get the data source from the parent
+    DataTable tbl = this.TemplateParent.DataSource as DataTable;
 
-    <span class="highlight-comment">// If not null, compute the sum of the item quantity</span>
-    <span class="highlight-keyword">if</span>(tbl != <span class="highlight-keyword">null</span>)
-        lblTotal.Text = tbl.Compute(<span class="highlight-literal">"SUM(ItemQty)"</span>, <span class="highlight-keyword">null</span>).ToString();
-    <span class="highlight-keyword">else</span>
-        lblTotal.Text = <span class="highlight-keyword">null</span>;
-}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAFADAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAEADAAA_tab1" class="codeSnippetContainerTabSingle">VB.NET</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAEADAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAEADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAEADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">// Recalculate the footer total <span class="highlight-keyword">when</span> bound
-<span class="highlight-keyword">Protected</span> <span class="highlight-keyword">Overrides</span> <span class="highlight-keyword">Sub</span> Bind()
-    <span class="highlight-comment">' Get the data source from the parent</span>
-    <span class="highlight-keyword">Dim</span> tbl <span class="highlight-keyword">As</span> DataTable = <span class="highlight-keyword">CType</span>(<span class="highlight-keyword">Me</span>.TemplateParent.DataSource, DataTable)
+    // If not null, compute the sum of the item quantity
+    if(tbl != null)
+        lblTotal.Text = tbl.Compute("SUM(ItemQty)", null).ToString();
+    else
+        lblTotal.Text = null;
+}</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">VB.NET</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vbnet">// Recalculate the footer total when bound
+Protected Overrides Sub Bind()
+    ' Get the data source from the parent
+    Dim tbl As DataTable = CType(Me.TemplateParent.DataSource, DataTable)
 
-    <span class="highlight-comment">' If not null, compute the sum of the item quantity</span>
-    <span class="highlight-keyword">If</span> <span class="highlight-keyword">Not</span> (tbl <span class="highlight-keyword">Is</span> <span class="highlight-keyword">Nothing</span>) <span class="highlight-keyword">Then</span>
-        lblTotal.Text = tbl.Compute(<span class="highlight-literal">"SUM(ItemQty)"</span>, <span class="highlight-keyword">Nothing</span>).ToString()
-    <span class="highlight-keyword">Else</span>
-        lblTotal.Text = <span class="highlight-keyword">Nothing</span>
-    <span class="highlight-keyword">End</span> <span class="highlight-keyword">If</span>
-<span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAEADAAA");</script><p>For a data list that contains editable information, the process requires a few more steps so that
+    ' If not null, compute the sum of the item quantity
+    If Not (tbl Is Nothing) Then
+        lblTotal.Text = tbl.Compute("SUM(ItemQty)", Nothing).ToString()
+    Else
+        lblTotal.Text = Nothing
+    End If
+End Sub</code></pre></div></div><p>For a data list that contains editable information, the process requires a few more steps so that
 the total remains accurate as the information changes. The following is taken from the demo application which you
 can use as a working example.  There may be other methods to accomplish this task but this one works quite well.</p><p>Two private member variables are added to the footer template to track the current data source.  In
 the overridden <span class="code">Bind</span> method, when the data source changes, event handlers are connected
@@ -338,24 +335,24 @@ to its <span class="code">ListChanged</span>, <span class="code">RowChanged</spa
 events.  The event handlers for those three events compute the total when they are called.  The
 <span class="code">ListChanged</span> handler could be used to recompute the total for changes and deletes as well
 but it is called frequently and multiple times even for a single change so the <span class="code">RowChanged</span>
-and <span class="code">RowDeleted</span> events are more efficient in those two cases.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EABADAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EABADAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EABADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EABADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">// Used to track the current data source for totaling</span>
-<span class="highlight-keyword">private</span> IBindingList bl;
-<span class="highlight-keyword">private</span> DataTable tblItems;
+and <span class="code">RowDeleted</span> events are more efficient in those two cases.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Used to track the current data source for totaling
+private IBindingList bl;
+private DataTable tblItems;
 
-<span class="highlight-comment">// We still need to override this even if there are no bound controls.  It's</span>
-<span class="highlight-comment">// also the place to hook up event handlers if creating such things as footer</span>
-<span class="highlight-comment">// totals, etc.</span>
-<span class="highlight-keyword">protected</span> <span class="highlight-keyword">override</span> <span class="highlight-keyword">void</span> Bind()
+// We still need to override this even if there are no bound controls.  It's
+// also the place to hook up event handlers if creating such things as footer
+// totals, etc.
+protected override void Bind()
 {
-    <span class="highlight-comment">// The demo uses a data set so we'll get a reference to the table through the list manager</span>
-    CurrencyManager cm = <span class="highlight-keyword">this</span>.TemplateParent.ListManager;
+    // The demo uses a data set so we'll get a reference to the table through the list manager
+    CurrencyManager cm = this.TemplateParent.ListManager;
     DataTable newSource = ((DataView)cm.List).Table;
 
-    <span class="highlight-comment">// Hook up the events on the data source to keep the total current</span>
-    <span class="highlight-keyword">if</span>(newSource != tblItems)
+    // Hook up the events on the data source to keep the total current
+    if(newSource != tblItems)
     {
-        <span class="highlight-comment">// Disconnect from the old source if necessary</span>
-        <span class="highlight-keyword">if</span>(tblItems != <span class="highlight-keyword">null</span>)
+        // Disconnect from the old source if necessary
+        if(tblItems != null)
         {
             bl.ListChanged -= DataSource_ListChanged;
             tblItems.RowChanged -= DataSource_RowChgDel;
@@ -364,93 +361,93 @@ and <span class="code">RowDeleted</span> events are more efficient in those two 
 
         tblItems = newSource;
 
-        <span class="highlight-keyword">if</span>(tblItems != <span class="highlight-keyword">null</span>)
+        if(tblItems != null)
         {
-            <span class="highlight-comment">// For the total, we'll sum it whenever a row is added, changed, or deleted</span>
+            // For the total, we'll sum it whenever a row is added, changed, or deleted
             bl = (IBindingList)cm.List;
             bl.ListChanged += DataSource_ListChanged;
             tblItems.RowChanged += DataSource_RowChgDel;
             tblItems.RowDeleted += DataSource_RowChgDel;
 
-            <span class="highlight-comment">// Show the initial total</span>
-            lblTotal.Text = tblItems.Compute(<span class="highlight-literal">"Sum(SumValue)"</span>, <span class="highlight-keyword">null</span>).ToString();
+            // Show the initial total
+            lblTotal.Text = tblItems.Compute("Sum(SumValue)", null).ToString();
         }
-        <span class="highlight-keyword">else</span>
-            lblTotal.Text = <span class="highlight-keyword">null</span>;
+        else
+            lblTotal.Text = null;
     }
 }
 
-<span class="highlight-comment">// Update the total when a row is added</span>
-<span class="highlight-keyword">private</span> <span class="highlight-keyword">void</span> DataSource_ListChanged(<span class="highlight-keyword">object</span> sender, ListChangedEventArgs e)
+// Update the total when a row is added
+private void DataSource_ListChanged(object sender, ListChangedEventArgs e)
 {
-    <span class="highlight-keyword">if</span>(e.ListChangedType == ListChangedType.ItemAdded)
-        lblTotal.Text = tblItems.Compute(<span class="highlight-literal">"Sum(SumValue)"</span>, <span class="highlight-keyword">null</span>).ToString();
+    if(e.ListChangedType == ListChangedType.ItemAdded)
+        lblTotal.Text = tblItems.Compute("Sum(SumValue)", null).ToString();
 }
 
-<span class="highlight-comment">// Update the total when a row is changed or deleted</span>
-<span class="highlight-keyword">private</span> <span class="highlight-keyword">void</span> DataSource_RowChgDel(<span class="highlight-keyword">object</span> sender, DataRowChangeEventArgs e)
+// Update the total when a row is changed or deleted
+private void DataSource_RowChgDel(object sender, DataRowChangeEventArgs e)
 {
-    lblTotal.Text = tblItems.Compute(<span class="highlight-literal">"Sum(SumValue)"</span>, <span class="highlight-keyword">null</span>).ToString();
-}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EABADAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAAADAAA_tab1" class="codeSnippetContainerTabSingle">VB.NET</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAAADAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAAADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAAADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">' Used to track the current data source for totaling</span>
-<span class="highlight-keyword">Private</span> bl <span class="highlight-keyword">As</span> IBindingList
-<span class="highlight-keyword">Private</span> tblItems <span class="highlight-keyword">As</span> DataTable
+    lblTotal.Text = tblItems.Compute("Sum(SumValue)", null).ToString();
+}</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">VB.NET</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vbnet">' Used to track the current data source for totaling
+Private bl As IBindingList
+Private tblItems As DataTable
 
-<span class="highlight-comment">' We still need to override this even if there are no bound controls.  It's</span>
-<span class="highlight-comment">' also the place to hook up event handlers if creating such things as footer</span>
-<span class="highlight-comment">' totals, etc.</span>
-<span class="highlight-keyword">Protected</span> <span class="highlight-keyword">Overrides</span> <span class="highlight-keyword">Sub</span> Bind()
-    <span class="highlight-comment">' The demo uses a data set so we'll get a reference to the table through the list manager</span>
-    <span class="highlight-keyword">Dim</span> cm <span class="highlight-keyword">As</span> CurrencyManager = <span class="highlight-keyword">Me</span>.TemplateParent.ListManager
-    <span class="highlight-keyword">Dim</span> newSource <span class="highlight-keyword">As</span> DataTable = <span class="highlight-keyword">CType</span>(cm.List, DataView).Table
+' We still need to override this even if there are no bound controls.  It's
+' also the place to hook up event handlers if creating such things as footer
+' totals, etc.
+Protected Overrides Sub Bind()
+    ' The demo uses a data set so we'll get a reference to the table through the list manager
+    Dim cm As CurrencyManager = Me.TemplateParent.ListManager
+    Dim newSource As DataTable = CType(cm.List, DataView).Table
 
-    <span class="highlight-comment">' Hook up the events on the data source to keep the total current</span>
-    <span class="highlight-keyword">If</span> <span class="highlight-keyword">Not</span> newSource.Equals(tblItems) <span class="highlight-keyword">Then</span>
-        <span class="highlight-comment">' Disconnect from the old source if necessary</span>
-        <span class="highlight-keyword">If</span> <span class="highlight-keyword">Not</span> (tblItems <span class="highlight-keyword">Is</span> <span class="highlight-keyword">Nothing</span>) <span class="highlight-keyword">Then</span>
-            <span class="highlight-keyword">RemoveHandler</span> bl.ListChanged, <span class="highlight-keyword">AddressOf</span> DataSource_ListChanged
-            <span class="highlight-keyword">RemoveHandler</span> tblItems.RowChanged, <span class="highlight-keyword">AddressOf</span> DataSource_RowChgDel
-            <span class="highlight-keyword">RemoveHandler</span> tblItems.RowDeleted, <span class="highlight-keyword">AddressOf</span> DataSource_RowChgDel
-        <span class="highlight-keyword">End</span> <span class="highlight-keyword">If</span>
+    ' Hook up the events on the data source to keep the total current
+    If Not newSource.Equals(tblItems) Then
+        ' Disconnect from the old source if necessary
+        If Not (tblItems Is Nothing) Then
+            RemoveHandler bl.ListChanged, AddressOf DataSource_ListChanged
+            RemoveHandler tblItems.RowChanged, AddressOf DataSource_RowChgDel
+            RemoveHandler tblItems.RowDeleted, AddressOf DataSource_RowChgDel
+        End If
 
         tblItems = newSource
 
-        <span class="highlight-keyword">If</span> <span class="highlight-keyword">Not</span> (tblItems <span class="highlight-keyword">Is</span> <span class="highlight-keyword">Nothing</span>) <span class="highlight-keyword">Then</span>
-            <span class="highlight-comment">' For the total, we'll sum it whenever a row is added, changed, or deleted</span>
-            bl = <span class="highlight-keyword">CType</span>(cm.List, IBindingList)
-            <span class="highlight-keyword">AddHandler</span> bl.ListChanged, <span class="highlight-keyword">AddressOf</span> DataSource_ListChanged
-            <span class="highlight-keyword">AddHandler</span> tblItems.RowChanged, <span class="highlight-keyword">AddressOf</span> DataSource_RowChgDel
-            <span class="highlight-keyword">AddHandler</span> tblItems.RowDeleted, <span class="highlight-keyword">AddressOf</span> DataSource_RowChgDel
+        If Not (tblItems Is Nothing) Then
+            ' For the total, we'll sum it whenever a row is added, changed, or deleted
+            bl = CType(cm.List, IBindingList)
+            AddHandler bl.ListChanged, AddressOf DataSource_ListChanged
+            AddHandler tblItems.RowChanged, AddressOf DataSource_RowChgDel
+            AddHandler tblItems.RowDeleted, AddressOf DataSource_RowChgDel
 
-            <span class="highlight-comment">' Show the initial total</span>
-            lblTotal.Text = tblItems.Compute(<span class="highlight-literal">"Sum(SumValue)"</span>, <span class="highlight-keyword">Nothing</span>).ToString()
-        <span class="highlight-keyword">Else</span>
-            lblTotal.Text = <span class="highlight-keyword">Nothing</span>
-        <span class="highlight-keyword">End</span> <span class="highlight-keyword">If</span>
-    <span class="highlight-keyword">End</span> <span class="highlight-keyword">If</span>
-<span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span>
+            ' Show the initial total
+            lblTotal.Text = tblItems.Compute("Sum(SumValue)", Nothing).ToString()
+        Else
+            lblTotal.Text = Nothing
+        End If
+    End If
+End Sub
 
-<span class="highlight-comment">' Update the total when a row is added</span>
-<span class="highlight-keyword">Private</span> <span class="highlight-keyword">Sub</span> DataSource_ListChanged(sender <span class="highlight-keyword">As</span> <span class="highlight-keyword">Object</span>, e <span class="highlight-keyword">As</span> ListChangedEventArgs)
-    <span class="highlight-keyword">If</span> e.ListChangedType = ListChangedType.ItemAdded <span class="highlight-keyword">Then</span>
-        lblTotal.Text = tblItems.Compute(<span class="highlight-literal">"Sum(SumValue)"</span>, <span class="highlight-keyword">Nothing</span>).ToString()
-    <span class="highlight-keyword">End</span> <span class="highlight-keyword">If</span>
-<span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span>
+' Update the total when a row is added
+Private Sub DataSource_ListChanged(sender As Object, e As ListChangedEventArgs)
+    If e.ListChangedType = ListChangedType.ItemAdded Then
+        lblTotal.Text = tblItems.Compute("Sum(SumValue)", Nothing).ToString()
+    End If
+End Sub
 
-<span class="highlight-comment">' Update the total when a row is changed or deleted</span>
-<span class="highlight-keyword">Private</span> <span class="highlight-keyword">Sub</span> DataSource_RowChgDel(sender <span class="highlight-keyword">As</span> <span class="highlight-keyword">Object</span>, e <span class="highlight-keyword">As</span> DataRowChangeEventArgs)
-    lblTotal.Text = tblItems.Compute(<span class="highlight-literal">"Sum(SumValue)"</span>, <span class="highlight-keyword">Nothing</span>).ToString()
-<span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAAADAAA");</script></div><div class="collapsibleAreaRegion" id="Issues"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID7RB')" onkeypress="SectionExpandCollapse_CheckKey('ID7RB', event)" tabindex="0"><img id="ID7RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Known Issues and Their Workarounds</span></div><div id="ID7RBSection" class="collapsibleSection"><p>A couple of issues have been discovered that require workarounds:</p><p>The <span class="code">Click</span> event for buttons in a row template may fire even if validation
+' Update the total when a row is changed or deleted
+Private Sub DataSource_RowChgDel(sender As Object, e As DataRowChangeEventArgs)
+    lblTotal.Text = tblItems.Compute("Sum(SumValue)", Nothing).ToString()
+End Sub</code></pre></div></div></div><h2 id="Issues" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Known Issues and Their Workarounds</h2><div id="IDHABSection"><p>A couple of issues have been discovered that require workarounds:</p><p>The <span class="code">Click</span> event for buttons in a row template may fire even if validation
 fails in another row or container control keeping the focus in the other row or container control.  This appears
 to be a bug in how the button control raises its click event after validation.  The workaround is to add a check
-to see if the row template contains the focus as the first thing in the button's event handler.  For example:</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EACACAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EACACAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EACACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EACACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">private</span> <span class="highlight-keyword">void</span> btnDelete_Click(<span class="highlight-keyword">object</span> sender, System.EventArgs e)
+to see if the row template contains the focus as the first thing in the button's event handler.  For example:</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">private void btnDelete_Click(object sender, System.EventArgs e)
 {
-    <span class="highlight-keyword">if</span>(<span class="highlight-keyword">this</span>.ContainsFocus)
-        <span class="highlight-keyword">this</span>.DeleteRow();
-}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EACACAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EABACAAA_tab1" class="codeSnippetContainerTabSingle">VB.NET</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EABACAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EABACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EABACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">Private</span> <span class="highlight-keyword">Sub</span> btnDelete_Click(sender <span class="highlight-keyword">As</span> <span class="highlight-keyword">Object</span>, e <span class="highlight-keyword">As</span> System.EventArgs)
-    <span class="highlight-keyword">If</span> <span class="highlight-keyword">Me</span>.ContainsFocus <span class="highlight-keyword">Then</span>
-        <span class="highlight-keyword">Me</span>.DeleteRow()
-    <span class="highlight-keyword">End</span> <span class="highlight-keyword">If</span>
-<span class="highlight-keyword">End</span> <span class="highlight-keyword">SUb</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EABACAAA");</script><p>When using two or more <span class="code">DataList</span> controls that display related information
+    if(this.ContainsFocus)
+        this.DeleteRow();
+}</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">VB.NET</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vbnet">Private Sub btnDelete_Click(sender As Object, e As System.EventArgs)
+    If Me.ContainsFocus Then
+        Me.DeleteRow()
+    End If
+End SUb</code></pre></div></div><p>When using two or more <span class="code">DataList</span> controls that display related information
 from the same data set (i.e. a master/detail view), you cannot edit the key fields that are used to relate the
 two data sources in the master's data source.  The data binding behavior of .NET is such that when the keys are
 edited, it treats the change as a deletion and an insertion which causes a rebind in the related data list and
@@ -458,7 +455,7 @@ this can result in problems when moving from one data list control to the other.
 temporary auto-increment key to the data sources and use that to relate the data.  Since they are no longer used
 in the relationship, the real key fields can then be edited in the master data source.  If you do not show or do
 not edit the relationship key fields then this is not a problem.  Please request technical support if you require
-a more detailed example of how to accomplish this.</p></div><div class="collapsibleAreaRegion" id="CommonProblems"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID8RB')" onkeypress="SectionExpandCollapse_CheckKey('ID8RB', event)" tabindex="0"><img id="ID8RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Common Problems</span></div><div id="ID8RBSection" class="collapsibleSection"><p>Here are some common problems and their solutions that you may run into when developing template
+a more detailed example of how to accomplish this.</p></div><h2 id="CommonProblems" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Common Problems</h2><div id="IDIABSection"><p>Here are some common problems and their solutions that you may run into when developing template
 controls for the data list.  The .NET Framework tends to hide some exceptions caused by binding errors such that
 they cannot be caught by your application.  In those cases, the <span class="code">DataList</span> will dump
 diagnostic information to the debug output window in Visual Studio when your application is running under the
@@ -479,8 +476,8 @@ appear, check to be sure that you specified the correct template type and assign
 property.</p></li><li><p>Forgetting to override the <span class="code">Bind</span> method.  All template controls must
 override the <span class="code">Bind</span> method even if there are no bound controls (i.e. header and footer
 templates).  If a header or footer does not show up or no rows appear, check the debug output window in the
-debugger for a message similar to this one:</p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EABHAABAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EABHAABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EABHAABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">**** [dlAddresses]: Exception occurred in BindData (1): The TemplateControl.Bind
-method must be overridden in derived type 'AddressRow'</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EABHAABAAA");</script><p>The offending control name appears in brackets at the start of the message and the template
+debugger for a message similar to this one:</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle"> </span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-plaintext">**** [dlAddresses]: Exception occurred in BindData (1): The TemplateControl.Bind
+method must be overridden in derived type 'AddressRow'</code></pre></div></div><p>The offending control name appears in brackets at the start of the message and the template
 type is given at the end of the message.</p></li><li><p>Forgetting to clear the data bindings.  If you forget to clear the data bindings and a row
 template is re-bound, you will see an exception that states that binding to the given property would create a
 duplicate binding which is not allowed.  Check to be sure that you have cleared the <span class="code">DataBindings</span>
@@ -489,16 +486,16 @@ avoided by using the template control's overloaded <span class="code">AddBinding
 in the row source, misspelling the property name or field name when creating the binding, or perhaps not
 including the field in the row source.  Binding errors may generate an error message in the debug output window
 so always check there if you experience odd behavior but no exception is thrown.  It will look similar to the
-following:</p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAEFAABAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAEFAABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAEFAABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">**** [dlAddresses]: Exception occurred in BindData (1): [exception details]</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAEFAABAAA");</script><p>The offending control name appears in brackets at the start of the message and the exception
+following:</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle"> </span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-plaintext">**** [dlAddresses]: Exception occurred in BindData (1): [exception details]</code></pre></div></div><p>The offending control name appears in brackets at the start of the message and the exception
 details follow at the end of the message.  The details may be generic such as a null reference exception or more
 detailed such as telling you which binding failed.</p><p>When using a <span class="code">DataSet</span> as the data source for the data list control, be
 sure to use fully qualified member names in any bindings in the header and footer controls.  The header and
 footer controls are bound to the data source rather than an individual row and as such need the data member name
-specified in any data bindings.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EABFAABAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EABFAABAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EABFAABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EABFAABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">// The demo uses a data set so we need to use the fully qualified field name for</span>
-<span class="highlight-comment">// the header control as it is bound to the data source as a whole.</span>
-<span class="highlight-keyword">this</span>.AddBinding(lblKey, <span class="highlight-literal">"Text"</span>, <span class="highlight-literal">"Addresses.ID"</span>);</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EABFAABAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAAFAABAAA_tab1" class="codeSnippetContainerTabSingle">VB.NET</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAAFAABAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAAFAABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAAFAABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">' The demo uses a data set so we need to use the fully qualified field name for</span>
-<span class="highlight-comment">' the header control as it is bound to the data source as a whole.</span>
-<span class="highlight-keyword">Me</span>.AddBinding(lblKey, <span class="highlight-literal">"Text"</span>, <span class="highlight-literal">"Addresses.ID"</span>)</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAAFAABAAA");</script></li><li><p>Accidentally binding two controls to the same field in the row source.  This problem will not
+specified in any data bindings.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// The demo uses a data set so we need to use the fully qualified field name for
+// the header control as it is bound to the data source as a whole.
+this.AddBinding(lblKey, "Text", "Addresses.ID");</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">VB.NET</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vbnet">' The demo uses a data set so we need to use the fully qualified field name for
+' the header control as it is bound to the data source as a whole.
+Me.AddBinding(lblKey, "Text", "Addresses.ID")</code></pre></div></div></li><li><p>Accidentally binding two controls to the same field in the row source.  This problem will not
 usually generate any exceptions but may cause unexpected behavior such as one control assuming the value of
 another control when you make changes in the first control or a control losing its value when it loses the focus.
 Check the data bindings in the <span class="code">Bind</span> method to ensure that they are binding to the
@@ -522,14 +519,13 @@ property to ensure that any pending edits are pushed into the data source.</p></
 the data source.  There is a bug in the .NET up/down controls that causes them to not commit their changes when
 the <span class="code">Value</span> property is bound to the data source and you use the text box portion of the
 control to edit the value.  The workaround is to bind the up/down control's <span class="code">Text</span>
-property to the data source instead.</p></li></ul></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID9RB')" onkeypress="SectionExpandCollapse_CheckKey('ID9RB', event)" tabindex="0"><img id="ID9RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID9RBSection" class="collapsibleSection"><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="ce5cb77a-44a9-4629-aec3-6a8435cd8e53.htm">Control Tutorials</a></div></div></div></div><div id="pageFooter" class="pageFooter"><p><a href="https://github.com/EWSoftware/ListControls" target="_blank">[v2020.11.25.0] Copyright © 2005-2020, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
+property to the data source instead.</p></li></ul></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="ce5cb77a-44a9-4629-aec3-6a8435cd8e53.htm">Control Tutorials</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">General Information</a></li><li><a class="quickLink">Creating Header, Footer, and Row Templates</a></li><li><a class="quickLink">Using the Templates</a></li><li><a class="quickLink">The Data List's Change Policy</a></li><li><a class="quickLink">Shared Control Data Sources in Templates</a></li><li><a class="quickLink">Creating Calculated Fields and Footer Totals</a></li><li><a class="quickLink">Known Issues and Their Workarounds</a></li><li><a class="quickLink">Common Problems</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div class="column"><p><a href="https://github.com/EWSoftware/ListControls" target="_blank" rel="noopener noreferrer">[v2020.11.25.0] Copyright © 2005-2020, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=EWSoftware.ListControls%20Library%20Documentation">Eric@EWoodruff.us</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
-        var HT_mailLinkText = HT_mailLink.innerHTML;
         HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
-        HT_mailLink.innerHTML = HT_mailLinkText;
-        </script></div><script type="text/javascript">
+        </script> 
+				</div><div class="column"><script type="text/javascript">
     function _dmBootstrap(file) {
         var _dma = document.createElement('script');
         _dma.type = 'text/javascript';
@@ -541,4 +537,18 @@ property to the data source instead.</p></li></ul></div><div class="collapsibleA
     (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
 </script>
 <div data-type="ad" data-publisher="ewsoftware.github.io" data-format="728x90" data-zone="ListControls"></div>
-</body></html>
+ 
+				</div></div></footer></div><script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+hljs.highlightAll();
+});</script></body></html>
