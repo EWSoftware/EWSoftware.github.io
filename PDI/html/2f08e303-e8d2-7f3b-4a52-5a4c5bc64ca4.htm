@@ -1,159 +1,139 @@
-﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>HolidayCollection.IsHoliday Method </title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="IsHoliday method" /><meta name="System.Keywords" content="HolidayCollection.IsHoliday method" /><meta name="Microsoft.Help.F1" content="EWSoftware.PDI.HolidayCollection.IsHoliday" /><meta name="Microsoft.Help.Id" content="M:EWSoftware.PDI.HolidayCollection.IsHoliday(System.DateTime)" /><meta name="Description" content="This method returns true if the specified date falls on a holiday or false if it does not" /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="true" /><meta name="container" content="EWSoftware.PDI" /><meta name="file" content="2f08e303-e8d2-7f3b-4a52-5a4c5bc64ca4" /><meta name="guid" content="2f08e303-e8d2-7f3b-4a52-5a4c5bc64ca4" /><link type="text/css" rel="stylesheet" href="../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" /><script type="text/javascript" src="../scripts/jquery-3.5.1.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">EWSoftware.PDI Namespace Documentation<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/84784fc0-1a4e-4780-9a61-4abfda5592c1.htm" title="EWSoftware.PDI Namespace Documentation" tocid="roottoc">EWSoftware.PDI Namespace Documentation</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/6863884b-1d71-1cfc-5531-73350dc97dc7.htm" title="EWSoftware.PDI" tocid="6863884b-1d71-1cfc-5531-73350dc97dc7">EWSoftware.PDI</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/a44bddbc-a622-cce3-1272-ef0675af6332.htm" title="HolidayCollection Class" tocid="a44bddbc-a622-cce3-1272-ef0675af6332">HolidayCollection Class</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/2f2e295a-58b0-b3e2-1e74-efaefb9476d9.htm" title="HolidayCollection Methods" tocid="2f2e295a-58b0-b3e2-1e74-efaefb9476d9">HolidayCollection Methods</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/b17f8690-9c30-6ec4-9e23-a1541e9e186b.htm" title="AddFixed Method " tocid="b17f8690-9c30-6ec4-9e23-a1541e9e186b">AddFixed Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/be7a13ec-b95e-00de-33fa-b21b4f92b3a5.htm" title="AddFloating Method " tocid="be7a13ec-b95e-00de-33fa-b21b4f92b3a5">AddFloating Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/29bcf8e8-e505-e728-9a98-8d44c0c3b8ae.htm" title="AddRange Method " tocid="29bcf8e8-e505-e728-9a98-8d44c0c3b8ae">AddRange Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/579f624b-55ff-7625-4705-fb917d671ac5.htm" title="AddStandardHolidays Method " tocid="579f624b-55ff-7625-4705-fb917d671ac5">AddStandardHolidays Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/95be6b6f-4818-db96-4335-1f1cda5aa5ac.htm" title="HolidayDescription Method " tocid="95be6b6f-4818-db96-4335-1f1cda5aa5ac">HolidayDescription Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/337eacce-f74b-0d01-d668-f7ca18ee8ad0.htm" title="HolidaysBetween Method " tocid="337eacce-f74b-0d01-d668-f7ca18ee8ad0">HolidaysBetween Method </a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="../html/2f08e303-e8d2-7f3b-4a52-5a4c5bc64ca4.htm" title="IsHoliday Method " tocid="2f08e303-e8d2-7f3b-4a52-5a4c5bc64ca4">IsHoliday Method </a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="logoColumn"><a target="_blank" rel="noopener noreferrer" href="https://github.com/EWSoftware/PDI"><img alt="EWSoftware.PDI Library" src="../icons/EWSPDI.bmp" /></a></td><td class="titleColumn"><h1>HolidayCollection<span id="LSTCCCE49B8_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTCCCE49B8_0?cpp=::|nu=.");</script>IsHoliday Method </h1></td></tr></table><span class="introStyle"></span> <div class="summary">
+﻿<!DOCTYPE html ><html lang="en-US"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.css" /><link rel="stylesheet" href="../css/font-awesome.min.css" /><link rel="stylesheet" href="../css/presentationStyle.css" /><link rel="stylesheet" href="../css/vs.min.css" /><script src="../scripts/jquery-3.5.1.min.js"></script><script src="../scripts/clipboard.min.js"></script><script src="../scripts/highlight.min.js"></script><script src="../scripts/presentationStyle.js"></script><title>HolidayCollection.IsHoliday Method</title><meta name="Title" content="IsHoliday" /><meta name="Help.Id" content="M:EWSoftware.PDI.HolidayCollection.IsHoliday(System.DateTime)" /><meta name="Help.ContentType" content="Reference" /><meta name="container" content="EWSoftware.PDI" /><meta name="guid" content="2f08e303-e8d2-7f3b-4a52-5a4c5bc64ca4" /><meta name="Description" content="This method returns true if the specified date falls on a holiday or false if it does not" /><meta name="tocFile" content="../toc/IDCPG.xml" /></head><body><div class="fixedLayout"><div id="Header" class="fixedHeader"><div class="pageHeader level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div class="level-item"><a target="_blank" rel="noopener noreferrer" href="https://github.com/EWSoftware/PDI"><img alt="EWSoftware.PDI Library" src="../icons/EWSPDI.bmp" /></a></div><div id="DocumentationTitle" class="level-item">EWSoftware.PDI Namespace Documentation</div></div><div id="LangFilterSearchContainer" class="level-right"><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a><a class="dropdown-item languageFilterItem" data-languageId="vb">VB</a><a class="dropdown-item languageFilterItem" data-languageId="cpp">C++</a><a class="dropdown-item languageFilterItem" data-languageId="fs">F#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></div><div class="fixedContent"><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div class="columns pl-5 pr-5 fixedContent"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu" /></nav></div><div id="TopicContent" class="column content is-7"><h1>Holiday<wbr />Collection<span id="LSTCCCE49B8_0" data-languageSpecificText="cpp=::|nu=."></span>Is<wbr />Holiday Method</h1><div class="summary">
             This method returns true if the specified date falls on a holiday or false if it does not
-            </div><p> </p>
-    <strong>Namespace:</strong> 
-   <a href="6863884b-1d71-1cfc-5531-73350dc97dc7.htm">EWSoftware.PDI</a><br />
-    <strong>Assembly:</strong>
-   EWSoftware.PDI (in EWSoftware.PDI.dll) Version: 2021.11.23.0<div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Syntax</span></div><div id="ID1RBSection" class="collapsibleSection"><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EDCA_tab1" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','cs','1','4');return false;">C#</a></div><div id="ID0EDCA_tab2" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','vb','2','4');return false;">VB</a></div><div id="ID0EDCA_tab3" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','cpp','3','4');return false;">C++</a></div><div id="ID0EDCA_tab4" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','fs','4','4');return false;">F#</a></div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EDCA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EDCA');return false;" title="Copy">Copy</a></div></div><div id="ID0EDCA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="keyword">public</span> <span class="identifier">bool</span> <span class="identifier">IsHoliday</span>(
+            </div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Definition</h2><div id="IDBSection"><strong>Namespace:</strong> <a href="6863884b-1d71-1cfc-5531-73350dc97dc7.htm">EWSoftware.PDI</a><br /><strong>Assembly:</strong> EWSoftware.PDI (in EWSoftware.PDI.dll) Version: 2021.11.23.0<div class="codeSnippet" data-codeSnippetLanguage="cs"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button><a href="https://github.com/EWSoftware/PDI/blob/master/Source/EWSPDI/HolidayCollection.cs#L120" target="_blank" rel="noopener noreferrer" class="button is-small is-light" title="View the source code"><span class="icon is-small"><i class="fa fa-file-code"></i></span><span>View Source</span></a><a href="https://github.com/EWSoftware/PDI/issues/new" target="_blank" rel="noopener noreferrer" class="button is-small is-light requestExampleLink" title="Request an example for this topic"><span class="icon is-small"><i class="fa fa-comment-dots"></i></span><span>Request Example</span></a></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="identifier">bool</span> <span class="identifier">IsHoliday</span>(
 	<span class="identifier">DateTime</span> <span class="parameter">date</span>
-)</pre></div><div id="ID0EDCA_code_Div2" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">Public</span> <span class="keyword">Function</span> <span class="identifier">IsHoliday</span> ( 
+)</code></pre></div></div><div class="codeSnippet is-hidden" data-codeSnippetLanguage="vb"><div class="codeHeader"><span class="codeHeaderTitle">VB</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button><a href="https://github.com/EWSoftware/PDI/blob/master/Source/EWSPDI/HolidayCollection.cs#L120" target="_blank" rel="noopener noreferrer" class="button is-small is-light" title="View the source code"><span class="icon is-small"><i class="fa fa-file-code"></i></span><span>View Source</span></a><a href="https://github.com/EWSoftware/PDI/issues/new" target="_blank" rel="noopener noreferrer" class="button is-small is-light requestExampleLink" title="Request an example for this topic"><span class="icon is-small"><i class="fa fa-comment-dots"></i></span><span>Request Example</span></a></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vb"><span class="keyword">Public</span> <span class="keyword">Function</span> <span class="identifier">IsHoliday</span> ( 
 	<span class="parameter">date</span> <span class="keyword">As</span> <span class="identifier">DateTime</span>
-) <span class="keyword">As</span> <span class="identifier">Boolean</span></pre></div><div id="ID0EDCA_code_Div3" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">public</span>:
+) <span class="keyword">As</span> <span class="identifier">Boolean</span></code></pre></div></div><div class="codeSnippet is-hidden" data-codeSnippetLanguage="cpp"><div class="codeHeader"><span class="codeHeaderTitle">C++</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button><a href="https://github.com/EWSoftware/PDI/blob/master/Source/EWSPDI/HolidayCollection.cs#L120" target="_blank" rel="noopener noreferrer" class="button is-small is-light" title="View the source code"><span class="icon is-small"><i class="fa fa-file-code"></i></span><span>View Source</span></a><a href="https://github.com/EWSoftware/PDI/issues/new" target="_blank" rel="noopener noreferrer" class="button is-small is-light requestExampleLink" title="Request an example for this topic"><span class="icon is-small"><i class="fa fa-comment-dots"></i></span><span>Request Example</span></a></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cpp"><span class="keyword">public</span>:
 <span class="identifier">bool</span> <span class="identifier">IsHoliday</span>(
 	<span class="identifier">DateTime</span> <span class="parameter">date</span>
-)</pre></div><div id="ID0EDCA_code_Div4" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">member</span> <span class="identifier">IsHoliday</span> : 
-        <span class="parameter">date</span> : <span class="identifier">DateTime</span> <span class="keyword">-&gt;</span> <span class="identifier">bool</span> 
-</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EDCA");</script><a id="HT_RequestExampleLink" href="https://github.com/EWSoftware/PDI/issues/new" target="_blank" rel="noopener noreferrer" class="button" title="Request an example for this topic">Request Example</a>
-		<script type="text/javascript">
-		var HT_requestExampleLink = document.getElementById("HT_RequestExampleLink");
-		var HT_requestExampleLinkText = HT_requestExampleLink.innerHTML;
-				
-		if(HT_requestExampleLink.href.substring(0, 4).toLowerCase() == "http")
-			HT_requestExampleLink.href += "?title=";
-		else
-			HT_requestExampleLink.href += "?subject=EWSoftware.PDI%20Namespace%20Documentation: ";
-
-		HT_requestExampleLink.href += "Add an Example for " + encodeURIComponent(document.title) + "&amp;body=" +
-			encodeURIComponent("Please add an example for " + document.title + ".%0D%0DTODO (optional): Describe a specific " +
-			"scenario you would like to see addressed.%0D%0DHelp Topic: " + window.location.href).replace(/%250D/g, "%0D");
-		HT_requestExampleLink.innerHTML = HT_requestExampleLinkText;
-		</script><a target="_blank" class="button" href="https://github.com/EWSoftware/PDI/blob/master/Source/EWSPDI/HolidayCollection.cs#L120" rel="noopener noreferrer" title="View the source code">View Source</a><h4 class="subHeading">Parameters</h4><dl><dt><span class="parameter">date</span></dt><dd>Type: <a href="https://docs.microsoft.com/dotnet/api/system.datetime" target="_blank" rel="noopener noreferrer">System<span id="LSTCCCE49B8_1"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTCCCE49B8_1?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>DateTime</a><br />The date to check to see if it is a holiday defined in this collection</dd></dl><h4 class="subHeading">Return Value</h4>Type: <a href="https://docs.microsoft.com/dotnet/api/system.boolean" target="_blank" rel="noopener noreferrer">Boolean</a><br />Returns true if the date is a holiday in this collection, false if it is not</div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Examples</span></div><div id="ID2RBSection" class="collapsibleSection">
+)</code></pre></div></div><div class="codeSnippet is-hidden" data-codeSnippetLanguage="fs"><div class="codeHeader"><span class="codeHeaderTitle">F#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button><a href="https://github.com/EWSoftware/PDI/blob/master/Source/EWSPDI/HolidayCollection.cs#L120" target="_blank" rel="noopener noreferrer" class="button is-small is-light" title="View the source code"><span class="icon is-small"><i class="fa fa-file-code"></i></span><span>View Source</span></a><a href="https://github.com/EWSoftware/PDI/issues/new" target="_blank" rel="noopener noreferrer" class="button is-small is-light requestExampleLink" title="Request an example for this topic"><span class="icon is-small"><i class="fa fa-comment-dots"></i></span><span>Request Example</span></a></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-fs"><span class="keyword">member</span> <span class="identifier">IsHoliday</span> : 
+        <span class="parameter">date</span> : <span class="identifier">DateTime</span> <span class="keyword">-&gt;</span> <span class="identifier">bool</span> </code></pre></div></div><h4 class="quickLinkHeader">Parameters</h4><dl><dt class="has-text-weight-normal"><span class="parameter">date</span>  <a href="https://docs.microsoft.com/dotnet/api/system.datetime" target="_blank" rel="noopener noreferrer">DateTime</a></dt><dd>The date to check to see if it is a holiday defined in this collection</dd></dl><h4 class="quickLinkHeader">Return Value</h4><a href="https://docs.microsoft.com/dotnet/api/system.boolean" target="_blank" rel="noopener noreferrer">Boolean</a><br />Returns true if the date is a holiday in this collection, false if it is not</div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Example</h2><div id="IDDCSection">
 This example demonstrates the use of the holiday classes and their methods.
-<div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EDAABA_tab1" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDAABA','cs','1','4');return false;">C#</a></div><div id="ID0EDAABA_tab2" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDAABA','vb','2','4');return false;">VB</a></div><div id="ID0EDAABA_tab3" class="codeSnippetContainerTabPhantom"><a href="#" onclick="javascript:ChangeTab('ID0EDAABA','cpp','3','4');return false;">C++</a></div><div id="ID0EDAABA_tab4" class="codeSnippetContainerTabPhantom"><a href="#" onclick="javascript:ChangeTab('ID0EDAABA','fs','4','4');return false;">F#</a></div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EDAABA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EDAABA');return false;" title="Copy">Copy</a></div></div><div id="ID0EDAABA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">DateTime testDate;
-<span class="highlight-keyword">int</span> yearFrom = <span class="highlight-number">1998</span>, yearTo = <span class="highlight-number">2006</span>;
+<div class="codeSnippet" data-codeSnippetLanguage="cs"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">DateTime testDate;
+int yearFrom = 1998, yearTo = 2006;
 
-<span class="highlight-comment">// Create a set of fixed and floating holidays</span>
-HolidayCollection holidays = <span class="highlight-keyword">new</span> HolidayCollection();
+// Create a set of fixed and floating holidays
+HolidayCollection holidays = new HolidayCollection();
 
-holidays.AddFixed(<span class="highlight-number">1</span>, <span class="highlight-number">1</span>, <span class="highlight-keyword">true</span>, <span class="highlight-literal">"New Year's Day"</span>);
-holidays.AddFloating(DayOccurrence.Third, DayOfWeek.Monday, <span class="highlight-number">1</span>, <span class="highlight-number">0</span>, <span class="highlight-literal">"Martin Luther King Day"</span>);
-holidays.AddFloating(DayOccurrence.Third, DayOfWeek.Monday, <span class="highlight-number">2</span>, <span class="highlight-number">0</span>, <span class="highlight-literal">"President's Day"</span>);
-holidays.AddFloating(DayOccurrence.Last, DayOfWeek.Monday, <span class="highlight-number">5</span>, <span class="highlight-number">0</span>, <span class="highlight-literal">"Memorial Day"</span>);
-holidays.AddFixed(<span class="highlight-number">7</span>, <span class="highlight-number">4</span>, <span class="highlight-keyword">true</span>, <span class="highlight-literal">"Independence Day"</span>);
-holidays.AddFloating(DayOccurrence.First, DayOfWeek.Monday, <span class="highlight-number">9</span>, <span class="highlight-number">0</span>, <span class="highlight-literal">"Labor Day"</span>);
-holidays.AddFixed(<span class="highlight-number">11</span>, <span class="highlight-number">11</span>, <span class="highlight-keyword">true</span>, <span class="highlight-literal">"Veteran's Day"</span>);
-holidays.AddFloating(DayOccurrence.Fourth, DayOfWeek.Thursday, <span class="highlight-number">11</span>, <span class="highlight-number">0</span>, <span class="highlight-literal">"Thanksgiving Day"</span>);
-holidays.AddFloating(DayOccurrence.Fourth, DayOfWeek.Thursday, <span class="highlight-number">11</span>, <span class="highlight-number">1</span>, <span class="highlight-literal">"Day After Thanksgiving"</span>);
-holidays.AddFixed(<span class="highlight-number">12</span>, <span class="highlight-number">25</span>, <span class="highlight-keyword">true</span>, <span class="highlight-literal">"Christmas Day"</span>);
+holidays.AddFixed(1, 1, true, "New Year's Day");
+holidays.AddFloating(DayOccurrence.Third, DayOfWeek.Monday, 1, 0, "Martin Luther King Day");
+holidays.AddFloating(DayOccurrence.Third, DayOfWeek.Monday, 2, 0, "President's Day");
+holidays.AddFloating(DayOccurrence.Last, DayOfWeek.Monday, 5, 0, "Memorial Day");
+holidays.AddFixed(7, 4, true, "Independence Day");
+holidays.AddFloating(DayOccurrence.First, DayOfWeek.Monday, 9, 0, "Labor Day");
+holidays.AddFixed(11, 11, true, "Veteran's Day");
+holidays.AddFloating(DayOccurrence.Fourth, DayOfWeek.Thursday, 11, 0, "Thanksgiving Day");
+holidays.AddFloating(DayOccurrence.Fourth, DayOfWeek.Thursday, 11, 1, "Day After Thanksgiving");
+holidays.AddFixed(12, 25, true, "Christmas Day");
 
-<span class="highlight-comment">// Display the holidays added to the list</span>
-Console.WriteLine(<span class="highlight-literal">"Holidays on file.  Is Holiday should be true for all."</span>);
+// Display the holidays added to the list
+Console.WriteLine("Holidays on file.  Is Holiday should be true for all.");
 
-<span class="highlight-keyword">foreach</span>(Holiday hol <span class="highlight-keyword">in</span> holidays)
-    Console.WriteLine(<span class="highlight-literal">"Holiday Date: {0:d}   Is Holiday: {1}  Description: {2}"</span>,
+foreach(Holiday hol in holidays)
+    Console.WriteLine("Holiday Date: {0:d}   Is Holiday: {1}  Description: {2}",
         hol.ToDateTime(yearFrom), holidays.IsHoliday(hol.ToDateTime(yearFrom)),
         hol.Description);
 
-<span class="highlight-comment">// Display holidays found in each year specified using the IsHoliday method</span>
-Console.WriteLine(<span class="highlight-literal">"Looking for holidays using the IsHoliday method"</span>);
+// Display holidays found in each year specified using the IsHoliday method
+Console.WriteLine("Looking for holidays using the IsHoliday method");
 
-testDate = <span class="highlight-keyword">new</span> DateTime(yearFrom, <span class="highlight-number">1</span>, <span class="highlight-number">1</span>);
+testDate = new DateTime(yearFrom, 1, 1);
 
-<span class="highlight-keyword">while</span>(testDate.Year &lt;= yearTo)
+while(testDate.Year &lt;= yearTo)
 {
-    <span class="highlight-keyword">if</span>(holidays.IsHoliday(testDate))
-        Console.WriteLine(<span class="highlight-literal">"Found holiday: {0:d}"</span>, testDate);
+    if(holidays.IsHoliday(testDate))
+        Console.WriteLine("Found holiday: {0:d}", testDate);
 
-    testDate = testDate.AddDays(<span class="highlight-number">1</span>);
+    testDate = testDate.AddDays(1);
 }
 
-<span class="highlight-comment">// One more time, but use a hash set using the dates returned by the HolidaysBetween()</span>
-<span class="highlight-comment">// method.  For bulk comparisons, this is faster than the above procedure using the</span>
-<span class="highlight-comment">// IsHoliday method.</span>
-Console.WriteLine(<span class="highlight-literal">"Looking for holidays using HolidaysBetween"</span>);
+// One more time, but use a hash set using the dates returned by the HolidaysBetween()
+// method.  For bulk comparisons, this is faster than the above procedure using the
+// IsHoliday method.
+Console.WriteLine("Looking for holidays using HolidaysBetween");
 
-<span class="highlight-keyword">var</span> holidayDates = <span class="highlight-keyword">new</span> HashSet&lt;DateTime&gt;(holidays.HolidaysBetween(yearFrom, yearTo));
+var holidayDates = new HashSet&lt;DateTime&gt;(holidays.HolidaysBetween(yearFrom, yearTo));
 
-<span class="highlight-keyword">if</span>(holidayDates.Count != <span class="highlight-number">0</span>)
+if(holidayDates.Count != 0)
 {
-    testDate = <span class="highlight-keyword">new</span> DateTime(yearFrom, <span class="highlight-number">1</span>, <span class="highlight-number">1</span>);
+    testDate = new DateTime(yearFrom, 1, 1);
 
-    <span class="highlight-keyword">while</span>(testDate.Year &lt;= yearTo)
+    while(testDate.Year &lt;= yearTo)
     {
-        <span class="highlight-keyword">if</span>(holidayDates.Contains(testDate))
-            Console.WriteLine(<span class="highlight-literal">"Found holiday: {0:d} {1}"</span>, testDate,
+        if(holidayDates.Contains(testDate))
+            Console.WriteLine("Found holiday: {0:d} {1}", testDate,
                 holidays.HolidayDescription(testDate));
 
-        testDate = testDate.AddDays(<span class="highlight-number">1</span>);
+        testDate = testDate.AddDays(1);
     }
-}</pre></div><div id="ID0EDAABA_code_Div2" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="highlight-keyword">Dim</span> testDate <span class="highlight-keyword">As</span> DateTime
-<span class="highlight-keyword">Dim</span> holidayDates <span class="highlight-keyword">As</span> HashSet(<span class="highlight-keyword">Of</span> DateTime)
-<span class="highlight-keyword">Dim</span> yearFrom <span class="highlight-keyword">As</span> <span class="highlight-keyword">Integer</span> = <span class="highlight-number">1998</span>
-<span class="highlight-keyword">Dim</span> yearTo <span class="highlight-keyword">As</span> <span class="highlight-keyword">Integer</span> = <span class="highlight-number">2006</span>
-<span class="highlight-keyword">Dim</span> hol <span class="highlight-keyword">As</span> Holiday
+}</code></pre></div></div><div class="codeSnippet is-hidden" data-codeSnippetLanguage="vb"><div class="codeHeader"><span class="codeHeaderTitle">VB</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vbnet">Dim testDate As DateTime
+Dim holidayDates As HashSet(Of DateTime)
+Dim yearFrom As Integer = 1998
+Dim yearTo As Integer = 2006
+Dim hol As Holiday
 
-<span class="highlight-comment">' Create a set of fixed and floating holidays</span>
-<span class="highlight-keyword">Dim</span> holidays <span class="highlight-keyword">As</span> <span class="highlight-keyword">New</span> HolidayCollection()
+' Create a set of fixed and floating holidays
+Dim holidays As New HolidayCollection()
 
-holidays.AddFixed(<span class="highlight-number">1</span>, <span class="highlight-number">1</span>, <span class="highlight-keyword">True</span>, <span class="highlight-literal">"New Year's Day"</span>)
-holidays.AddFloating(DayOccurrence.Third, DayOfWeek.Monday, <span class="highlight-number">1</span>, <span class="highlight-number">0</span>, <span class="highlight-literal">"Martin Luther King Day"</span>)
-holidays.AddFloating(DayOccurrence.Third, DayOfWeek.Monday, <span class="highlight-number">2</span>, <span class="highlight-number">0</span>, <span class="highlight-literal">"President's Day"</span>)
-holidays.AddFloating(DayOccurrence.Last, DayOfWeek.Monday, <span class="highlight-number">5</span>, <span class="highlight-number">0</span>, <span class="highlight-literal">"Memorial Day"</span>)
-holidays.AddFixed(<span class="highlight-number">7</span>, <span class="highlight-number">4</span>, <span class="highlight-keyword">True</span>, <span class="highlight-literal">"Independence Day"</span>)
-holidays.AddFloating(DayOccurrence.First, DayOfWeek.Monday, <span class="highlight-number">9</span>, <span class="highlight-number">0</span>, <span class="highlight-literal">"Labor Day"</span>)
-holidays.AddFixed(<span class="highlight-number">11</span>, <span class="highlight-number">11</span>, <span class="highlight-keyword">True</span>, <span class="highlight-literal">"Veteran's Day"</span>)
-holidays.AddFloating(DayOccurrence.Fourth, DayOfWeek.Thursday, <span class="highlight-number">11</span>, <span class="highlight-number">0</span>, <span class="highlight-literal">"Thanksgiving Day"</span>)
-holidays.AddFloating(DayOccurrence.Fourth, DayOfWeek.Thursday, <span class="highlight-number">11</span>, <span class="highlight-number">1</span>, <span class="highlight-literal">"Day After Thanksgiving"</span>)
-holidays.AddFixed(<span class="highlight-number">12</span>, <span class="highlight-number">25</span>, <span class="highlight-keyword">True</span>, <span class="highlight-literal">"Christmas Day"</span>)
+holidays.AddFixed(1, 1, True, "New Year's Day")
+holidays.AddFloating(DayOccurrence.Third, DayOfWeek.Monday, 1, 0, "Martin Luther King Day")
+holidays.AddFloating(DayOccurrence.Third, DayOfWeek.Monday, 2, 0, "President's Day")
+holidays.AddFloating(DayOccurrence.Last, DayOfWeek.Monday, 5, 0, "Memorial Day")
+holidays.AddFixed(7, 4, True, "Independence Day")
+holidays.AddFloating(DayOccurrence.First, DayOfWeek.Monday, 9, 0, "Labor Day")
+holidays.AddFixed(11, 11, True, "Veteran's Day")
+holidays.AddFloating(DayOccurrence.Fourth, DayOfWeek.Thursday, 11, 0, "Thanksgiving Day")
+holidays.AddFloating(DayOccurrence.Fourth, DayOfWeek.Thursday, 11, 1, "Day After Thanksgiving")
+holidays.AddFixed(12, 25, True, "Christmas Day")
 
-<span class="highlight-comment">' Display the holidays added to the list</span>
-Console.WriteLine(<span class="highlight-literal">"Holidays on file.  Is Holiday should be true for all."</span>)
+' Display the holidays added to the list
+Console.WriteLine("Holidays on file.  Is Holiday should be true for all.")
 
-<span class="highlight-keyword">For</span> <span class="highlight-keyword">Each</span> hol <span class="highlight-keyword">In</span> holidays
-    Console.WriteLine(<span class="highlight-literal">"Holiday Date: {0:d}   Is Holiday: {1}  Description: {2}"</span>,
+For Each hol In holidays
+    Console.WriteLine("Holiday Date: {0:d}   Is Holiday: {1}  Description: {2}",
         hol.ToDateTime(yearFrom), holidays.IsHoliday(hol.ToDateTime(yearFrom)),
         hol.Description)
-<span class="highlight-keyword">Next</span>
+Next
 
-<span class="highlight-comment">' Display holidays found in each year specified using the IsHoliday method</span>
-Console.WriteLine(<span class="highlight-literal">"Looking for holidays using the IsHoliday method"</span>)
+' Display holidays found in each year specified using the IsHoliday method
+Console.WriteLine("Looking for holidays using the IsHoliday method")
 
-testDate = <span class="highlight-keyword">New</span> DateTime(yearFrom, <span class="highlight-number">1</span>, <span class="highlight-number">1</span>)
+testDate = New DateTime(yearFrom, 1, 1)
 
-<span class="highlight-keyword">Do</span> <span class="highlight-keyword">While</span> testDate.Year &lt;= yearTo
-    <span class="highlight-keyword">If</span> holidays.IsHoliday(testDate) = <span class="highlight-keyword">True</span> <span class="highlight-keyword">Then</span>
-        Console.WriteLine(<span class="highlight-literal">"Found holiday: {0:d}"</span>, testDate)
-    <span class="highlight-keyword">End</span> <span class="highlight-keyword">If</span>
+Do While testDate.Year &lt;= yearTo
+    If holidays.IsHoliday(testDate) = True Then
+        Console.WriteLine("Found holiday: {0:d}", testDate)
+    End If
 
-    testDate = testDate.AddDays(<span class="highlight-number">1</span>)
-<span class="highlight-keyword">Loop</span>
+    testDate = testDate.AddDays(1)
+Loop
 
-<span class="highlight-comment">' One more time, but use a hash set using the dates returned by the HolidaysBetween()</span>
-<span class="highlight-comment">' method.  For bulk comparisons, this is faster than the above procedure using the</span>
-<span class="highlight-comment">' IsHoliday method.</span>
-Console.WriteLine(<span class="highlight-literal">"Looking for holidays using HolidaysBetween"</span>)
+' One more time, but use a hash set using the dates returned by the HolidaysBetween()
+' method.  For bulk comparisons, this is faster than the above procedure using the
+' IsHoliday method.
+Console.WriteLine("Looking for holidays using HolidaysBetween")
 
-var holidayDates = <span class="highlight-keyword">new</span> HashSet(<span class="highlight-keyword">Of</span> DateTime)(holidays.HolidaysBetween(yearFrom, yearTo));
+var holidayDates = new HashSet(Of DateTime)(holidays.HolidaysBetween(yearFrom, yearTo));
 
-<span class="highlight-keyword">If</span> holidayDates.Count != <span class="highlight-number">0</span> <span class="highlight-keyword">Then</span>
-    testDate = <span class="highlight-keyword">New</span> DateTime(yearFrom, <span class="highlight-number">1</span>, <span class="highlight-number">1</span>)
+If holidayDates.Count != 0 Then
+    testDate = New DateTime(yearFrom, 1, 1)
 
-    <span class="highlight-keyword">Do</span> <span class="highlight-keyword">While</span> testDate.Year &lt;= yearTo
-        <span class="highlight-keyword">If</span> holidayDates.Contains(testDate) = <span class="highlight-keyword">True</span> <span class="highlight-keyword">Then</span>
-            Console.WriteLine(<span class="highlight-literal">"Found holiday: {0:d} {1}"</span>, testDate,
+    Do While testDate.Year &lt;= yearTo
+        If holidayDates.Contains(testDate) = True Then
+            Console.WriteLine("Found holiday: {0:d} {1}", testDate,
                 holidays.HolidayDescription(testDate))
-        <span class="highlight-keyword">End</span> <span class="highlight-keyword">If</span>
+        End If
 
-        testDate = testDate.AddDays(<span class="highlight-number">1</span>)
-    <span class="highlight-keyword">Loop</span>
-<span class="highlight-keyword">End</span> <span class="highlight-keyword">If</span></pre></div><div id="ID0EDAABA_code_Div3" class="codeSnippetContainerCode" style="display: none"><p>No code example is currently available or this language may not be supported.</p></div><div id="ID0EDAABA_code_Div4" class="codeSnippetContainerCode" style="display: none"><p>No code example is currently available or this language may not be supported.</p></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EDAABA");</script></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID3RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="a44bddbc-a622-cce3-1272-ef0675af6332.htm">HolidayCollection Class</a></div><div class="seeAlsoStyle"><a href="6863884b-1d71-1cfc-5531-73350dc97dc7.htm">EWSoftware.PDI Namespace</a></div></div></div></div><div id="pageFooter" class="pageFooter"><p><a href="https://github.com/EWSoftware/PDI" target="_blank" rel="noopener noreferrer">[v2021.11.23.0] Copyright © 2003-2021, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
+        testDate = testDate.AddDays(1)
+    Loop
+End If</code></pre></div></div><div class="codeSnippet is-hidden" data-codeSnippetLanguage="cpp"><div class="codeHeader"><span class="codeHeaderTitle">C++</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-plaintext">No code example is currently available or this language may not be supported.</code></pre></div></div><div class="codeSnippet is-hidden" data-codeSnippetLanguage="fs"><div class="codeHeader"><span class="codeHeaderTitle">F#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-plaintext">No code example is currently available or this language may not be supported.</code></pre></div></div></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Reference</h4><div><a href="a44bddbc-a622-cce3-1272-ef0675af6332.htm">HolidayCollection Class</a></div><div><a href="6863884b-1d71-1cfc-5531-73350dc97dc7.htm">EWSoftware.PDI Namespace</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Definition</a><ul class="menu"><li><a class="quickLink">Parameters</a></li><li><a class="quickLink">Return Value</a></li></ul></li><li><a class="quickLink">Example</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div class="column"><p><a href="https://github.com/EWSoftware/PDI" target="_blank" rel="noopener noreferrer">[v2021.11.23.0] Copyright © 2003-2021, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=EWSoftware.PDI%20Namespace%20Documentation">Eric@EWoodruff.us</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
-        var HT_mailLinkText = HT_mailLink.innerHTML;
         HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
-        HT_mailLink.innerHTML = HT_mailLinkText;
-        </script> </div><script type="text/javascript">
+        </script> 
+				</div><div class="column"><script type="text/javascript">
     function _dmBootstrap(file) {
         var _dma = document.createElement('script');
         _dma.type = 'text/javascript';
@@ -165,4 +145,30 @@ var holidayDates = <span class="highlight-keyword">new</span> HashSet(<span clas
     (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
 </script>
 <div data-type="ad" data-publisher="ewsoftware.github.io" data-format="728x90" data-zone="PDI"></div>
-</body></html>
+ 
+				</div></div></footer></div><script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+hljs.highlightAll();
+});</script><script>
+		$(".requestExampleLink").each(function ()
+		{
+			if(this.href.substring(0, 4).toLowerCase() === "http")
+				this.href += "?title=";
+			else
+				this.href += "?subject=EWSoftware.PDI%20Namespace%20Documentation: ";
+
+			this.href += "Add an Example for " + encodeURIComponent(document.title) + "&amp;body=" +
+				encodeURIComponent("Please add an example for " + document.title + ".%0D%0DTODO (optional): Describe a specific " +
+				"scenario you would like to see addressed.%0D%0DHelp Topic: " + window.location.href).replace(/%250D/g, "%0D");
+		});
+	</script></body></html>
