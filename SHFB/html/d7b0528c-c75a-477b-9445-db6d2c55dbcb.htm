@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html ><html lang="en-US"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.css" /><link rel="stylesheet" href="../css/font-awesome.min.css" /><link rel="stylesheet" href="../css/presentationStyle.css" /><link rel="stylesheet" href="../css/vs.min.css" /><script src="../scripts/jquery-3.5.1.min.js"></script><script src="../scripts/clipboard.min.js"></script><script src="../scripts/highlight.min.js"></script><script src="../scripts/presentationStyle.js"></script><title>Debugging Components and Plug-Ins</title><meta name="Title" content="Debugging Components and Plug-Ins" /><meta name="Help.Id" content="d7b0528c-c75a-477b-9445-db6d2c55dbcb" /><meta name="Help.ContentType" content="Concepts" /><meta name="guid" content="d7b0528c-c75a-477b-9445-db6d2c55dbcb" /><meta name="Description" content="Build components, plug-ins, syntax generators, and presentation styles are typically built using .NET Standard so that they will work with both MSBuild and dotnet build." /><meta name="tocFile" content="../toc/IDP.xml" /></head><body><div class="fixedLayout"><div id="Header" class="fixedHeader"><div class="pageHeader level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div class="level-item"><a target="_blank" rel="noopener noreferrer" href="https://github.com/EWSoftware/SHFB"><img alt="Sandcastle Help File Builder" style="height: 69px;" src="../icons/Sandcastle.jpg" /></a></div><div id="DocumentationTitle" class="level-item">Sandcastle Help File Builder Documentation</div></div><div id="LangFilterSearchContainer" class="level-right"><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a><a class="dropdown-item languageFilterItem" data-languageId="vb">VB</a><a class="dropdown-item languageFilterItem" data-languageId="cpp">C++</a><a class="dropdown-item languageFilterItem" data-languageId="fs">F#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></div><div class="fixedContent"><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div class="columns pl-5 pr-5 fixedContent"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu" /></nav></div><div id="TopicContent" class="column content is-7"><h1>Debugging Components and Plug-Ins</h1><div><p>Build components, plug-ins, syntax generators, and presentation styles are typically built using
+.NET Standard so that they will work with both <strong>MSBuild</strong> and
+<strong>dotnet build</strong>.  This creates an issue when trying to debug the components using the
+standalone GUI as the host.  When the components are built with .NET Standard, Visual Studio will launch the .NET
+Core debugger for the project which will not be invoked when using the standalone GUI as the host because it uses
+the .NET Framework.  Any breakpoints set within the .NET Standard component are ignored.</p></div><div id="IDBABSection" class="noTitle"><p>The workaround to this issue is to use conditional properties within the project to target the
+.NET Framework for debug builds and .NET Standard for release builds.  By using .NET Framework when debugging,
+the correct debugger is launched and will be invoked when the standalone GUI starts up.  Breakpoints set within
+the component code will then be triggered when hit as expected.</p><p>Configuration UI projects used to edit a component's configuration are an exception as they always
+use the .NET Framework.  If they are used as the startup project, debugging will also work as expected and
+breakpoints in the component projects will also be triggered whether or not they were built using the .NET
+Framework.</p><p>If you created a component project using version 2022.2.6.0 or earlier of the Visual Studio
+package, you will need to edit the project properties as shown below so that debugging works as expected.  All
+project templates in the latest release contain the necessary conditional properties.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">Conditional Target Framework Properties</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-xml">&lt;!-- See the help topic https://ewsoftware.github.io/SHFB/html/d7b0528c-c75a-477b-9445-db6d2c55dbcb.htm
+     for information on why conditional target frameworks are used. --&gt;
+&lt;PropertyGroup Condition="'$(Configuration)'=='Debug'"&gt;
+  &lt;!-- Use the full framework for debugging --&gt;
+  &lt;TargetFramework&gt;net47&lt;/TargetFramework&gt;
+&lt;/PropertyGroup&gt;
+
+&lt;PropertyGroup Condition="'$(Configuration)'=='Release'"&gt;
+  &lt;!-- Use .NET Standard for release builds --&gt;
+  &lt;TargetFramework&gt;netstandard2.0&lt;/TargetFramework&gt;
+&lt;/PropertyGroup&gt;
+
+&lt;PropertyGroup&gt;
+  &lt;!-- Only use an unconditional target framework if you have a UI project within the solution that can be
+       used to start debugging.
+  &lt;TargetFramework&gt;netstandard2.0&lt;/TargetFramework&gt; --&gt;
+  .
+  .
+  .
+&lt;/PropertyGroup&gt;</code></pre></div></div></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="c8258d52-6664-4e96-86cd-6f75a854a69c.htm">Creating Custom Components</a></div><div><a href="a14e026e-642f-4ce6-9506-341e57cc3d1f.htm">Creating a Build Process Plug-In</a></div><div><a href="e6d18448-2459-46f1-bbdc-a7db415f2bda.htm">Creating a BuildAssembler Build Component</a></div><div><a href="5e80d139-811c-48ed-9b52-dcd8a3f5aef3.htm">Creating a Syntax Filter Generator Component</a></div><div><a href="baf1dcbc-e9cf-4d71-a770-621e6eaf10a7.htm">Creating a Presentation Style Component</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2022.8.14.0] Copyright © 2006-2022, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20Help%20File%20Builder%20Documentation">Eric Woodruff</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div><div class="column"><script type="text/javascript">
+    function _dmBootstrap(file) {
+        var _dma = document.createElement('script');
+        _dma.type = 'text/javascript';
+        _dma.async = true;
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
+</script>
+<div data-type="ad" data-publisher="ewsoftware.github.io" data-format="728x90" data-zone="SHFB"></div>
+ 
+				</div></div></footer></div><script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+hljs.highlightAll();
+});</script></body></html>
