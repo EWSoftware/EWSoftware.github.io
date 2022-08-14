@@ -46,6 +46,18 @@ html, body {
 }
 */
 
+/* Hide the TOC and In This Article columns when printed */
+@media print {
+    #ShowHideTOCColumn, #TOCColumn, #InThisArticleColumn {
+        display: none;
+    }
+
+    #TopicContent {
+        flex: none;
+        width: 100%;
+    }
+}
+
 /* Additional styles for SHFB documentation websites */
 .sticky {
     position: sticky;
@@ -166,6 +178,11 @@ div.is-centered {
     background-color: #f4f4f4;
 }
 
+.content span.selflink {
+    font-family: Consolas, Courier, monospace;
+    color: #000066;
+}
+
 span.keyword {
     font-family: Consolas, Courier, monospace;
     color: #0000ff;
@@ -197,6 +214,11 @@ span.keyword {
 .content thead th {
     background-color: #ededed;
     text-align: left;
+}
+
+.missing {
+    color: #dc143c;
+    font-weight: bold;
 }
 
 /* Inheritance hierarchy styles */
