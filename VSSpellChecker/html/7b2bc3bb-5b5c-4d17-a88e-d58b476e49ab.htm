@@ -6,8 +6,8 @@ Studio allows you to modify the settings at any level by opening the settings fi
 settings are modified by selecting the <strong>Tools | Spell Checker | Edit Global Configuration</strong> option.</p><ul><li><p>The global settings file is stored in the local application data folder
 (<em>%LOCALAPPDATA%\EWSoftware\Visual Studio Spell Checker</em>).  These are the base settings used
 in the absence of, and inherited by, solution, project, folder, and file-specific configuration files.</p></li><li><p>Solution settings are stored in the solution's <em>Solution Items</em> folder and
-are named after the solution.  Options that are set in this configuration will override the global settings and
-will be inherited by projects, folders, and files.</p></li><li><p>Project settings are stored within the project in the root folder and are named after the
+are named after the solution, or optionally, just ".vsspell".  Options that are set in this configuration will
+override the global settings and will be inherited by projects, folders, and files.</p></li><li><p>Project settings are stored within the project in the root folder and are named after the
 project.  Options that are set in this configuration will override the global settings and solution settings and
 will be inherited by the project's folders and files.</p></li><li><p>Folder settings are stored within the folder they apply to and are named after the folder.  The
 settings are used for the specified folder and its sub-folders recursively.  Options that are set in this
