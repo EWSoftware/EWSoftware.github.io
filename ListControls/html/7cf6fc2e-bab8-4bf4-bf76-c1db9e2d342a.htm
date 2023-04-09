@@ -122,15 +122,12 @@ repeats until all nodes have been enumerated.</p><div class="codeSnippet"><div c
 // Use foreach() on the ExtendedTreeView control itself to
 // enumerate all of its nodes recursively.
 foreach(TreeNode node in tvExtTree)
-    txtEnumResults.AppendText(String.Format("{0}{1}\r\n",
-        new String(' ', node.Level * 4), node.Text));</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">VB.NET - Enumerate the entire tree</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vbnet">Dim node As TreeNode
+    txtEnumResults.AppendText($"{new String(' ', node.Level * 4)}{node.Text}\r\n");</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">VB.NET - Enumerate the entire tree</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vbnet">Dim node As TreeNode
 txtEnumResults.Text = Nothing
 
-' Use foreach() on the ExtendedTreeView control itself to
-' enumerate all of its nodes recursively.
+' Use For Each on the ExtendedTreeView control itself to enumerate all of its nodes recursively
 For Each node in tvExtTree
-    txtEnumResults.AppendText(String.Format("{0}{1}" &amp; Environment.NewLine,
-        New String(" "C, node.Level * 4), node.Text))
+    txtEnumResults.AppendText($"{New String(" "C, node.Level * 4)}{node.Text}" &amp; Environment.NewLine)
 Next</code></pre></div></div><p>You can also use the <span class="code">TreeNodeEnumerator</span> directly to enumerate a single
 branch of the tree and all of its children.  The option is also given to enumerate all subsequent sibling nodes
 of the starting node if so desired.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C# - Enumerate starting at a selected node</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">bool enumerateSiblings = (sender == btnEnumNodeSibs);
@@ -156,16 +153,14 @@ while(enumerator.MoveNext())
 {
     node = enumerator.Current;
 
-    txtEnumResults.AppendText(String.Format("Manual Enum: {0}{1}\r\n",
-        new String(' ', node.Level * 4), node.Text));
+    txtEnumResults.AppendText($"Manual Enum: {new String(' ', node.Level * 4)}{node.Text}\r\n");
 }
 
 txtEnumResults.AppendText("\r\n\r\n");
 
 // We can also use the helper method to simplify it
 foreach(TreeNode tn in TreeNodeEnumerator.Enumerate(startNode, enumerateSiblings))
-    txtEnumResults.AppendText(String.Format("Enum Helper: {0}{1}\r\n",
-        new String(' ', tn.Level * 4), tn.Text));</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">VB.NET - Enumerate starting at a selected node</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vbnet">Dim enumerateSiblings As Boolean = False
+    txtEnumResults.AppendText($"Enum Helper: {new String(' ', tn.Level * 4)}{tn.Text}\r\n");</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">VB.NET - Enumerate starting at a selected node</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vbnet">Dim enumerateSiblings As Boolean = False
 Dim node As TreeNode
 Dim startNode As TreeNode = tvExtTree.SelectedNode
 
@@ -183,24 +178,23 @@ txtEnumResults.Text = Nothing
 ' For this, we create the enumerator manually and pass it the starting
 ' node and a flag indicating whether or not to enumerate the siblings
 ' of the starting node as well.
-Dim enumerator As TreeNodeEnumerator = New TreeNodeEnumerator(startNode,
-    enumerateSiblings)
+Dim enumerator As New TreeNodeEnumerator(startNode, enumerateSiblings)
 
 ' Call the MoveNext() method to move through each node.  Use the Current
 ' property to access the current node.
 Do While enumerator.MoveNext()
     node = enumerator.Current
 
-    txtEnumResults.AppendText(String.Format("Manual Enum: {0}{1}" &amp;
-        Environment.NewLine, New String(" "C, node.Level * 4), node.Text))
+    txtEnumResults.AppendText($"Manual Enum: {New String(" "C, node.Level * 4)}{node.Text}" &amp;
+        Environment.NewLine)
 Loop
 
 txtEnumResults.AppendText(Environment.NewLine &amp; Environment.NewLine)
 
 ' We can also use the helper method to simplify it
 For Each node In TreeNodeEnumerator.Enumerate(startNode, enumerateSiblings)
-    txtEnumResults.AppendText(String.Format("Enum Helper: {0}{1}" &amp;
-        Environment.NewLine, New String(" "C, node.Level * 4), node.Text))
+    txtEnumResults.AppendText($"Enum Helper: {New String(" "C, node.Level * 4)}{node.Text}" &amp;
+        Environment.NewLine)
 Next</code></pre></div></div></div><h2 id="CustomDraw" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Customizing the Tree View's Appearance</h2><div id="IDFABSection"><p>The following additional properties allow you to customize the tree view's appearance without
 having to handle the drawing events.</p><table class="table is-hoverable"><thead><tr><th><p>Property</p></th><th><p>Description</p></th></tr></thead><tr><td><p><span class="code">DrawDefaultImages</span></p></td><td><p>This property is used to set or get whether or not the tree view will draw default images for
 tree nodes without images.  If not drawn, the node text is drawn flush left with no gap.  The default setting is
@@ -219,7 +213,7 @@ choose to draw the node yourself and suppress the default drawing of one or more
 <span class="code">TreeNodeDrawn</span> event occurs after the node has been fully drawn and allows you to
 customize its appearance after all other drawing has taken place.</p><p>See the <a href="cf9fb0c5-95a1-857b-561f-1edb09d1b8b3.htm">DrawTreeNodeExtendedEventArgs</a>
 property help topics for information on what each of them does.  The demo application supplied with the library
-contains a simple example of handling each event.</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="ce5cb77a-44a9-4629-aec3-6a8435cd8e53.htm">Control Tutorials</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">General Information</a></li><li><a class="quickLink">Clearing The Tree Node Collection</a></li><li><a class="quickLink">ExtendedTreeView Usage</a></li><li><a class="quickLink">Node Enumeration</a></li><li><a class="quickLink">Customizing the Tree View's Appearance</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div class="column"><p><a href="https://github.com/EWSoftware/ListControls" target="_blank" rel="noopener noreferrer">[v2020.11.25.0] Copyright © 2005-2020, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
+contains a simple example of handling each event.</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="ce5cb77a-44a9-4629-aec3-6a8435cd8e53.htm">Control Tutorials</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">General Information</a></li><li><a class="quickLink">Clearing The Tree Node Collection</a></li><li><a class="quickLink">ExtendedTreeView Usage</a></li><li><a class="quickLink">Node Enumeration</a></li><li><a class="quickLink">Customizing the Tree View's Appearance</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div class="column"><p><a href="https://github.com/EWSoftware/ListControls" target="_blank" rel="noopener noreferrer">[v2023.4.9.0] Copyright © 2005-2023, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=EWSoftware.ListControls%20Library%20Documentation">Eric@EWoodruff.us</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
