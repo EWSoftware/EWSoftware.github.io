@@ -3,7 +3,10 @@ spell checker tool window.  This tool window will only be usable when a code or 
 the active document window.  If a non-editor window is selected or if there are no misspellings, the buttons in
 the tool window will be disabled.  Open or click on an existing editor window containing editable text to
 activate the tool window options.  When there are misspellings in the active editor, it will be repositioned to
-the proper location and the misspelling will be highlighted.</p><article class="message is-info"><div class="message-header"><p><span class="icon"><i class="fa fa-info-circle"></i></span>  Note</p></div><div class="message-body"><p>If the misspelling is within a collapsed section, an attempt is made to expand the section and show
+the proper location and the misspelling will be highlighted.</p><article class="message is-info"><div class="message-header"><p><span class="icon"><i class="fa fa-info-circle"></i></span>  Note</p></div><div class="message-body"><p>Spell check as you type only applies to non-source code files and only to strings and comments
+within source code files.  If enabled, identifier spell checking is handled by the code analyzer.  Identifier
+misspellings are separate and will be highlighted like other code analyzer warnings.  Such misspellings will not
+appear in the Spell Check Active Document or Solution/Project Spell Check tool windows.</p><p>If the misspelling is within a collapsed section, an attempt is made to expand the section and show
 the word.  If this does not occur, to make it visible, click on the editor window's tab to select it and then
 expand the section containing the cursor.  When you click on the spell checker tool window, it will reposition to
 the word and highlight it as usual.</p></div></article><ul class="is-hidden-tablet"><li><a href="#CorrectingIssues">Correcting Issues</a></li><li><a href="#DoubledWords">Doubled Word Detection</a></li></ul></div><h2 id="CorrectingIssues" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Correcting Issues</h2><div id="IDBABSection"><figure class="mediaNear"><img alt="Active Document Spell Check Tool Window" src="../media/ActiveDocToolWindow.png" /></figure><p>The misspelled word is shown at the top of the tool window and any suggested replacements are shown
