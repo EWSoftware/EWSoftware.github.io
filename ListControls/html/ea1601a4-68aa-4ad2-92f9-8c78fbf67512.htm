@@ -118,74 +118,22 @@ selection" state (-1) is retained.  In <span class="code">DropDown</span> and <s
 mode, the <span class="code">EnforceDefaultSelection</span> property is ignored and the "no selection" state will
 be retained when the data source is changed.  This is because those two modes do allow entry of text that does
 not appear in the list of values.</p></li></ul></div><h2 id="MCCombo" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>MultiColumnComboBox Usage</h2><div id="IDEABSection"><p>By default, the <span class="code">MultiColumnComboBox</span> will display all columns from its data
-source with some default formatting.  You can use the properties in the <span class="code">DropDown</span>
-category to customize the appearance of the drop-down and the columns that are displayed in it.  A simple way to
-limit the columns displayed is to use the <span class="code">ColumnFilter</span> property to let it know which
-columns should appear in the drop-down.  The columns will be auto-sized based on the longest value in each
-column.  Note that even though a column filter is in place for the drop-down you can still access any field in
-the data source using the item indexer as shown earlier.  You can set the filter at design-time by selecting the
-property and entering the column names to display one per line using the collection editor.  You can also specify
-the column filter at runtime using code similar to the following:</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Limit the drop-down to the vendor name and contact name
-cboVendor.ColumnFilter.AddRange(new string[] { "VendorName", "Contact" });</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">VB.NET</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vbnet">' Limit the drop-down to the vendor name and contact name
-cboVendor.ColumnFilter.AddRange(New String() { "VendorName", "Contact" })</code></pre></div></div><p>For full control over the visual style of the drop-down along with which columns are displayed,
-their order, and their individual styles, you can use the <span class="code">DropDownFormat</span> property.  The
-basic properties in it allows you to specify the color and grid line settings and whether or not column and row
-headers are visible. By selecting the <span class="code">GridColumnStyles</span> property of
-<span class="code">DropDownFormat</span> you can also specify the columns to display in the drop-down along with
-their formatting options such as alignment, column header text, width, etc.  When specifying column definitions
-in this manner, there is no need to use the <span class="code">ColumnFilter</span> property.</p><p>When defining grid column styles, you can use the standard text box or boolean data grid columns
-supplied with .NET or you can use custom third-party column types such as label columns, image columns, progress
-bar columns, etc (all drop-down data is read-only).  At design-time, only the standard text box and boolean
-columns are accessible.  To use third-party column types, you should add them to the
-<span class="code">DropDownFormat.GridColumnStyles</span> collection using code.</p><p>When specifying column definitions using grid column styles, setting their <span class="code">Width</span>
-property to -1 will cause the drop-down to size the column to the preferred width. Setting the width to zero will
-cause the drop-down to size the column to the longest value in the data source for the column.  Setting the width
-to any other positive value will size the column to the specified width.  As with the column filter, you can set
-the grid column styles at runtime using code.  An example is shown below.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// These can be created and set at design-time too
-DataGridTextBoxColumn dgtbItemName = new DataGridTextBoxColumn();
-DataGridTextBoxColumn dgtbExpireDate = new DataGridTextBoxColumn();
-DataGridBoolColumn dgbcInStock = new DataGridBoolColumn();
-
-// Set the column properties
-dgtbItemName.HeaderText = "Item Name";
-dgtbItemName.MappingName = "ItemName";
-dgtbItemName.Width = 0;     // Size to widest item
-
-dgtbExpireDate.Format = "MM/dd/yyyy";
-dgtbExpireDate.HeaderText = "Expiration Date";
-dgtbExpireDate.MappingName = "ExpireDate";
-dgtbExpireDate.Width = -1;  // Size to preferred width
-
-dgbcInStock.Alignment = HorizontalAlignment.Center;
-dgbcInStock.HeaderText = "In Stock";
-dgbcInStock.MappingName = "InStockYN";
-dgtbExpireDate.Width = 100; // Fixed width
-
-// Add the column definitions to the combo box control
-cboItems.DropDownFormat.GridColumnStyles.AddRange(new DataGridColumnStyle[] {
-    dgtbItemName, dgtbExpireDate, dgbcInStock });</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">VB.NET</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vbnet">' These can be created and set at design-time too
-Dim dgtbItemName As New DataGridTextBoxColumn()
-Dim dgtbExpireDate As New DataGridTextBoxColumn()
-Dim dgbcInStock As New DataGridBoolColumn()
-
-' Set the column properties
-dgtbItemName.HeaderText = "Item Name"
-dgtbItemName.MappingName = "ItemName"
-dgtbItemName.Width = 0      ' Size to widest item
-
-dgtbExpireDate.Format = "MM/dd/yyyy";
-dgtbExpireDate.HeaderText = "Expiration Date";
-dgtbExpireDate.MappingName = "ExpireDate";
-dgtbExpireDate.Width = -1   ' Size to preferred width
-
-dgbcInStock.Alignment = HorizontalAlignment.Center;
-dgbcInStock.HeaderText = "In Stock";
-dgbcInStock.MappingName = "InStockYN";
-dgtbExpireDate.Width = 100  ' Fixed width
-
-' Add the column definitions to the combo box control
-cboItems.DropDownFormat.GridColumnStyles.AddRange(new DataGridColumnStyle() {
-    dgtbItemName, dgtbExpireDate, dgbcInStock })</code></pre></div></div></div><h2 id="UCCombo" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>UserControlComboBox Usage</h2><div id="IDFABSection"><p>The <span class="code">UserControlComboBox</span> is similar in nature to other combo box controls
+source with some default formatting.  Any property in the data source with a <span class="code">Browsable(false)</span>
+attribute will be omitted.  Properties with a <span class="code">DisplayName</span> attribute will set the header
+text to the given display name if column headers are shown in the dropdown.  You can use the properties in the
+<span class="code">DropDown</span> category to customize the appearance of the drop-down and the columns that are
+displayed in it.  Another way to limit the columns displayed is to use the <span class="code">ColumnFilter</span>
+property to let it know which columns should appear in the drop-down.</p><p>Note that even though a column filter is in place for the drop-down you can still access any field
+in the data source using the item indexer as shown earlier.  You can set the filter at design-time by selecting
+the property and entering the column names to display one per line using the collection editor.  You can also
+specify the column filter at runtime using code similar to the following:</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Limit the drop-down to the vendor name and contact name
+cboVendor.ColumnFilter.AddRange(new[] { "VendorName", "Contact" });</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">VB.NET</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vbnet">' Limit the drop-down to the vendor name and contact name
+cboVendor.ColumnFilter.AddRange(New String() { "VendorName", "Contact" })</code></pre></div></div><p>For full control over the visual style of the columns you can use the
+<a href="1f74adbe-6d04-74d8-cd39-654b25856e98.htm">FormatDropDownColumn</a>
+event.  When specifying column definitions using the event, setting their <span class="code">AutoSizeMode</span>
+property to <span class="code">DataGridViewAutoSizeColumnMode.None</span> will prevent the control from
+auto-resizing the column.  If set to another value, the drop-down will size the column accordingly.  If left as
+<span class="code">NotSet</span>, it resizes them to the longest value in the data source for the column.</p></div><h2 id="UCCombo" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>UserControlComboBox Usage</h2><div id="IDFABSection"><p>The <span class="code">UserControlComboBox</span> is similar in nature to other combo box controls
 but it displays a user control that you create as its drop-down.  This allows you to create drop-downs that use
 non-standard lists such as tree views, list views, or just about any other combination of controls that you can
 imagine.  The drop-down will gain the focus when displayed so you can also put checkboxes, text boxes, buttons,
@@ -252,7 +200,7 @@ versions: one to commit the selection by index and another to commit the selecti
     Me.CommitSelection(tvItems.SelectedNode.Tag)
 End Sub</code></pre></div></div><p>Note that it is also possible to set the <span class="code">SelectedIndex</span> property from
 within the user control to modify the selection (i.e. to track the selected item as you move through the nodes in
-a tree view control).  The demo application contains an example of this.</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="ce5cb77a-44a9-4629-aec3-6a8435cd8e53.htm">Control Tutorials</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">AutoCompleteComboBox Usage</a></li><li><a class="quickLink">Common Features</a></li><li><a class="quickLink">Combo Box Behavior Differences</a></li><li><a class="quickLink">MultiColumnComboBox Usage</a></li><li><a class="quickLink">UserControlComboBox Usage</a></li><li><a class="quickLink">Creating a Dropdown Control</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://github.com/EWSoftware/ListControls" target="_blank" rel="noopener noreferrer">[v2023.4.9.0] Copyright © 2005-2023, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
+a tree view control).  The demo application contains an example of this.</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="ce5cb77a-44a9-4629-aec3-6a8435cd8e53.htm">Control Tutorials</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">AutoCompleteComboBox Usage</a></li><li><a class="quickLink">Common Features</a></li><li><a class="quickLink">Combo Box Behavior Differences</a></li><li><a class="quickLink">MultiColumnComboBox Usage</a></li><li><a class="quickLink">UserControlComboBox Usage</a></li><li><a class="quickLink">Creating a Dropdown Control</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://github.com/EWSoftware/ListControls" target="_blank" rel="noopener noreferrer">[v2024.12.12.0] Copyright © 2005-2024, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=EWSoftware.ListControls%20Library%20Documentation">Eric@EWoodruff.us</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
