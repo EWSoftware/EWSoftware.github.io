@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html ><html lang="en-US"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.css" /><link rel="stylesheet" href="../css/font-awesome.min.css" /><link rel="stylesheet" href="../css/presentationStyle.css" /><link rel="stylesheet" href="../css/vs.min.css" /><script src="../scripts/jquery-3.5.1.min.js"></script><script src="../scripts/clipboard.min.js"></script><script src="../scripts/highlight.min.js"></script><script src="../scripts/presentationStyle.js"></script><title>Stored Procedure Data Context Methods</title><meta name="Title" content="Stored Procedure Data Context Methods" /><meta name="Help.Id" content="3070da37-6ca8-48e0-b350-618489d67bc5" /><meta name="Help.ContentType" content="Concepts" /><meta name="guid" content="3070da37-6ca8-48e0-b350-618489d67bc5" /><meta name="Description" content="When executing a stored procedure that does not return a result set or does not conform to the key field or parameter expectations of the other extension methods, you can add stored procedure methods to the Entity Framework data context that mimic the beha" /><meta name="tocFile" content="../toc/Root.xml" /></head><body><div class="fixedLayout"><div id="Header" class="fixedHeader"><div class="pageHeader level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div class="level-item"><img src="../icons/Help.png" /></div><div id="DocumentationTitle" class="level-item">EWSofware Entity Framework Utilities Library Documentation</div></div><div id="LangFilterSearchContainer" class="level-right"><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a><a class="dropdown-item languageFilterItem" data-languageId="vb">VB</a><a class="dropdown-item languageFilterItem" data-languageId="cpp">C++</a><a class="dropdown-item languageFilterItem" data-languageId="fs">F#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></div><div class="fixedContent"><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div id="ContentContainer" class="columns pl-5 pr-5 fixedContent"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu" /></nav></div><div id="Resizer" class="is-hidden"></div><div id="TopicContent" class="column content is-7"><h1>Stored Procedure Data Context Methods</h1><div><p>When executing a stored procedure that does not return a result set or does not conform to the key
+field or parameter expectations of the other extension methods, you can add stored procedure methods to the
+Entity Framework data context that mimic the behavior of the stored procedure methods used by LINQ to SQL data
+contexts.  These are called just like normal class methods and are passed one or more parameters if needed.  The
+data context method call is translated to a stored procedure call using the given parameter values.  The called
+stored procedure can be a non-query that performs an action such as an insert, update, delete, or a lookup and
+returns the number of rows affected, a return value, and/or output parameter values rather than a result set.
+For query stored procedure methods, the return value is an enumerable list of the given entity type created from
+the query's result set.</p><article class="message is-info"><div class="message-header"><p><span class="icon"><i class="fa fa-info-circle"></i></span>  Note</p></div><div class="message-body"><p>In the two extension methods below, if the data context connection is not in an open state, it
+is opened temporarily while performing the action and closed again afterwards.</p><p>If change tracking is enabled on the data context, any entities loaded by
+<span class="code">ExecuteMethodQuery</span> will be added to the change tracker.  Likewise, changes to the
+entities will be tracked and their state updated accordingly when added, updated, or deleted when submitting
+changes to the data context.  If change tracking is not enabled on the data context or the entity is marked with
+the <span class="code">NeverTrackAttribute</span>, they will not be tracked.</p></div></article><ul class="is-hidden-tablet"><li><a href="#MethodStoredProc">MethodStoredProcedureAttribute</a></li><li><a href="#NonQueryMethods">Non-Query Stored Procedure Methods</a></li><li><a href="#QueryMethods">Query Stored Procedure Methods</a></li></ul></div><h2 id="MethodStoredProc" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>MethodStoredProcedureAttribute</h2><div id="IDBABSection"><p>This optional attribute is used to define the stored procedure name that will be called for the
+data context method.  If not specified on a data context stored procedure method, the name of the stored
+procedure is assumed to be the same as the data context method's name.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-csharp">// For these the stored procedure name is assumed to be the same as the method name    
+public int spStateCodeAddUpdate(string? oldState, string? state, string? stateDesc)
+{
+    return this.ExecuteMethodNonQuery((MethodInfo)MethodInfo.GetCurrentMethod()!, oldState,
+        state, stateDesc).ReturnValue;
+}
+
+public int spStateCodeDelete(string? state)
+{
+    return this.ExecuteMethodNonQuery((MethodInfo)MethodInfo.GetCurrentMethod()!,
+        state).RowsAffected;
+}
+
+public IEnumerable&lt;spProductSearchResult&gt; spProductSearch(string? productName, string? categoryName,
+    string? companyName)
+{
+    return this.ExecuteMethodQuery&lt;spProductSearchResult&gt;((MethodInfo)MethodInfo.GetCurrentMethod()!,
+        productName, categoryName, companyName);
+}
+
+// Or we can change the method name to something else and specify the stored
+// procedure name with the attribute.
+[MethodStoredProcedure("spStateCodeAddUpdate")]
+public int AddOrUpdateStateCode(string? oldState, string? state, string? stateDesc)
+{
+    return this.ExecuteMethodNonQuery((MethodInfo)MethodInfo.GetCurrentMethod()!, oldState,
+        state, stateDesc).ReturnValue;
+}
+
+[MethodStoredProcedure("spStateCodeDelete")]
+public int DeleteStateCode(string? state)
+{
+    return this.ExecuteMethodNonQuery((MethodInfo)MethodInfo.GetCurrentMethod()!, state).ReturnValue;
+}
+
+[MethodStoredProcedure("spProductSearch")]
+public IEnumerable&lt;ProductSearchResult&gt; SearchForProducts(string? productName, string? categoryName,
+    string? companyName)
+{
+    return this.ExecuteMethodQuery&lt;ProductSearchResult&gt;((MethodInfo)MethodInfo.GetCurrentMethod()!,
+        productName, categoryName, companyName);
+}</code></pre></div></div></div><h2 id="NonQueryMethods" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Non-Query Stored Procedure Methods</h2><div id="IDCABSection"><p>A non-query stored procedure method is one that does not return a result set.  Instead it returns
+the number of rows affected, a return value, and/or output parameter values.  The data context method calls the
+<a href="eb60a5cf-47a9-59ef-7d96-df62c13959cc.htm">ExecuteMethodNonQuery</a>
+extension method.  The first parameter is always a <span class="code">MethodInfo</span> instance representing the
+calling method.  Subsequent parameters, if any, are those passed to the data context method.  The order of the
+parameters must match the order for the calling data context method.  Any parameters for which output values are
+needed should be passed to the data context method by reference.  However, they are not passed by reference to
+the extension method.</p><p>The return value is a tuple containing the number of rows affected assuming the stored procedure
+does not use <span class="code">SET NOCOUNT ON</span>, the return value of the stored procedure if any, and a
+dictionary containing any output parameters indexed by method parameter name with the value being the output
+value from the stored procedure.  Typically, the data context method will return the rows affected or return
+value or use the output parameters to update the reference method parameters and return nothing.  However, unlike
+LINQ to SQL, the tuple itself or any combination of the above can be returned by the Entity Framework data
+context method.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Execute a stored procedure and return its return value
+public int spStockAdd(string symbol, string assetDescription, decimal currentBid,
+  decimal currentAsk, decimal priceChangePercent)
+{
+    return this.ExecuteMethodNonQuery((MethodInfo)MethodInfo.GetCurrentMethod()!,
+        symbol, assetDescription, currentBid, currentAsk, priceChangePercent).ReturnValue;
+}
+
+// Execute a stored procedure and return the number of rows affected
+public int spStockDelete(string symbol)
+{
+    return this.ExecuteMethodNonQuery((MethodInfo)MethodInfo.GetCurrentMethod()!,
+        symbol).RowsAffected;
+}
+
+// Execute a stored procedure and return the output parameters via the ref parameters on
+// the method.  We can also return the stored procedure's return value or rows affected.
+public int spCheckForEmployeeSchedule(string bidGroup, int entityKey,
+  ref bool bidGroupScheduled, ref bool entityScheduled)
+{
+    var result = this.ExecuteMethodNonQuery((MethodInfo)MethodInfo.GetCurrentMethod()!,
+        bidGroup, entityKey, bidGroupScheduled, entityScheduled);
+
+    bidGroupScheduled = (bool)result.OutputValues[nameof(bidGroupScheduled);
+    entityScheduled = (bool)result.OutputValues[nameof(entityScheduled);
+
+    return result.ReturnValue;
+}</code></pre></div></div></div><h2 id="QueryMethods" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Query Stored Procedure Methods</h2><div id="IDDABSection"><p>A query stored procedure method is similar to the <span class="code">LoadByKey</span> extension
+method except the parameters do not have to match the key properties on the entity such as a search query that
+allows for various criteria parameters.  If no parameters are specified it is equivalent to the
+<span class="code">LoadAll</span> extension method so it is not necessary to create a separate data context method
+for those cases.</p><p>The data context method calls the
+<a href="fc373378-f5bb-bfa9-aa87-9afd2cf48466.htm">ExecuteMethodQuery<span id="LST824C750A_0" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>TEntity<span id="LST824C750A_1" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span></a>				
+extension method. As above, the first parameter is always a <span class="code">MethodInfo</span> instance
+representing the calling method.  Subsequent parameters, if any, are those passed to the data context method.
+The order of the parameters must match the order for the calling data context method.  All parameters are input
+only.  The return value of the data context method is an enumerable list of the given entity type created from
+the query's result set.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Execute a search stored procedure and return its result set
+public IEnumerable&lt;spTransactionListResult&gt; spTransactionList(int accountKey,
+  string? symbol, DateTime fromDate, DateTime toDate, string? txType)
+{
+    return this.ExecuteMethodQuery&lt;spTransactionListResult&gt;(
+        (MethodInfo)MethodInfo.GetCurrentMethod()!, accountKey, symbol,
+        fromDate, toDate, txType);
+}</code></pre></div></div></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="48c2006f-d738-40a1-a486-d53fbdf7208c.htm">Welcome</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">MethodStoredProcedureAttribute</a></li><li><a class="quickLink">Non-Query Stored Procedure Methods</a></li><li><a class="quickLink">Query Stored Procedure Methods</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://github.com/EWSoftware/EntityFrameworkUtils" target="_blank" rel="noopener noreferrer">[v2024.12.29.0] Copyright © 2024, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=EWSofware%20Entity%20Framework%20Utilities%20Library%20Documentation">Eric@EWoodruff.us</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div><div id="AdContent" class="column"><script type="text/javascript">
+    function _dmBootstrap(file) {
+        var _dma = document.createElement('script');
+        _dma.type = 'text/javascript';
+        _dma.async = true;
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
+</script>
+<div data-type="ad" data-publisher="ewsoftware.github.io" data-format="728x90" data-zone="EntityFrameworkUtils"></div>
+ 
+				</div></div></footer></div><script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+hljs.highlightAll();
+});</script></body></html>
