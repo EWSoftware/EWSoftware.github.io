@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html ><html lang="en-US"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.css" /><link rel="stylesheet" href="../css/font-awesome.min.css" /><link rel="stylesheet" href="../css/presentationStyle.css" /><link rel="stylesheet" href="../css/vs.min.css" /><script src="../scripts/jquery-3.5.1.min.js"></script><script src="../scripts/clipboard.min.js"></script><script src="../scripts/highlight.min.js"></script><script src="../scripts/presentationStyle.js"></script><title>Additional Notices Plug-In</title><meta name="Title" content="Additional Notices Plug-In" /><meta name="Help.Id" content="f238b7a7-24eb-4163-8083-f35b6a60a3d1" /><meta name="Help.ContentType" content="Concepts" /><meta name="guid" content="f238b7a7-24eb-4163-8083-f35b6a60a3d1" /><meta name="Description" content="Notices appear at the top of topics and as tags in the member list pages to show additional important information about API members." /><meta name="tocFile" content="../toc/IDN.xml" /></head><body><div class="fixedLayout"><div id="Header" class="fixedHeader"><div class="pageHeader level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div class="level-item"><a target="_blank" rel="noopener noreferrer" href="https://github.com/EWSoftware/SHFB"><img alt="Sandcastle Help File Builder" style="height: 69px;" src="../icons/Sandcastle.jpg" /></a></div><div id="DocumentationTitle" class="level-item">Sandcastle Help File Builder Documentation</div></div><div id="LangFilterSearchContainer" class="level-right"><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a><a class="dropdown-item languageFilterItem" data-languageId="vb">VB</a><a class="dropdown-item languageFilterItem" data-languageId="cpp">C++</a><a class="dropdown-item languageFilterItem" data-languageId="fs">F#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></div><div class="fixedContent"><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div id="ContentContainer" class="columns pl-5 pr-5 fixedContent"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu" /></nav></div><div id="Resizer" class="is-hidden"></div><div id="TopicContent" class="column content is-7"><h1>Additional Notices Plug-In</h1><div><p>Notices appear at the top of topics and as tags in the member list pages to show additional important
+information about API members.  By default, notices are added for any type or member with a
+<span class="code">preliminary</span> XML comments element and those decorated with the
+<span class="code">System.ObsoleteAttribute</span> or
+<span class="code">System.Diagnostics.CodeAnalysis.ExperimentalAttribute</span> attribute.  This plug-in is used
+to add additional notice definitions to the selected presentation style based on your own custom attributes or
+XML comments elements.</p><ul class="is-hidden-tablet"><li>Configuration Options</li><li>Localizing Notice Message and Tag Text</li><li>Overriding the Preliminary, Obsolete, and Experimental Notices</li></ul></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Configuration Options</h2><div id="IDBABSection"><p>The configuration options consist of the following properties:</p><ul><li><p><strong>Attribute Type Name</strong> - If the notice is related to an attribute on a
+type or member, specify the fully qualified name here including the "T:" prefix.  Example:
+<span class="code">T:System.ObsoleteAttribute</span>.</p></li><li><p><strong>XML Comments Element Name</strong> - If the notice is related to an XML
+comments element on a type or member, specify the element name here.  Example: <span class="code">preliminary</span>.</p></li><li><p><strong>Use attribute/element value for notice message text</strong> - If this option
+is checked, the inner text of the XML comments element or the attribute value will be used as the notice message.
+If not checked, the notice message from the definition will be used.  If the comments element is empty or the
+attribute has no value, the notice text in the definition is used automatically.</p></li><li><p><strong>Notice Message</strong> - This is the message to display at the top of the API
+member topics.  It can be literal text or a localized content item ID prefixed with '@'.  For example,
+<span class="code">@boilerplate_obsoleteLong</span> is used for the obsolete notice message.  If a notice message
+is not specified, a notice message will not appear for the notice in member topics.</p></li><li><p><strong>Tag Text</strong> - This is the tag text to display below the member
+descriptions on member list pages.  It can be literal text or a localized content item ID prefixed with '@'.  For
+example, <span class="code">@boilerplate_obsoleteShort</span> is used for the obsolete notice tag.  Tags are
+typically one or two words.  Reserve the longer description for the notice message shown at the top of the topic.
+If tag text is not specified, a tag will not appear for the notice.</p></li><li><p><strong>Notice Style Classes</strong> - For HTML presentation styles, this allows you
+to set the CSS classes that will be applied to the notice message.  If not specified, default styles will be
+applied.  For example, in the Default 2022 presentation style the default styles are <span class="code">tag is-info
+is-medium</span>.  You can use various combinations of styles on the notice message and tag.  Some examples
+are shown below:</p><p><div class="tags"><span class="tag is-black">tag is-black</span><span class="tag is-dark">tag is-dark</span><span class="tag is-light">tag is-light</span><span class="tag is-white">tag is-white</span></div><div class="tags"><span class="tag is-primary">tag is-primary</span><span class="tag is-link">tag is-link</span><span class="tag is-info">tag is-info</span><span class="tag is-success">tag is-success</span><span class="tag is-warning">tag is-warning</span><span class="tag is-danger">tag is-danger</span></div><div class="tags"><span class="tag is-primary is-light">tag is-primary is-light</span><span class="tag is-link is-light">tag is-link is-light</span><span class="tag is-info is-light">tag is-info is-light</span><span class="tag is-success is-light">tag is-success is-light</span><span class="tag is-warning is-light">tag is-warning is-light</span><span class="tag is-danger is-light">tag is-danger is-light</span></div><div class="tags"><span class="tag is-link is-normal">tag is-link is-normal</span><span class="tag is-primary is-medium">tag is-primary is-medium</span><span class="tag is-info is-large">tag is-info is-large</span><span class="tag is-success is-normal is-rounded">tag is-success is-normal is-rounded</span></div></p></li><li><p><strong>Tag Style Classes</strong> - For HTML presentation styles, this allows you to
+set the CSS classes that will be applied to the tags on member list pages.  If not specified, default styles will
+be applied.  For example, in the Default 2022 presentation style the default styles are <span class="code">tag is-info
+is-rounded</span>.  See above for some example styles.</p></li></ul></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Localizing Notice Message and Tag Text</h2><div id="IDCABSection"><p>As noted above, if the notice message or tag text specify a content item ID prefix with '@', the
+related text for the item in the resource item file will be used.  You can specify localized text for your own
+notice definitions by adding one or more resource items files to the project.  The filenames must have a suffix
+identifying the language of the items they contain prefixed with an underscore and have a <em>.items</em>
+filename extension.  Examples: <em>ProjectNotices_en-US.items</em>, <em>ProjectNotices_fr-Fr.items</em>.
+The file's <span class="code">Build Action</span> should be set to <span class="code">ResourceItems</span>.</p><p>The content of the notice content items file will look like the following example:</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle"> </span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;content xml:space="preserve"&gt;
+  &lt;item id="unsafeNoticeMessage"&gt;This API does some unsafe stuff&lt;/item&gt;
+  &lt;item id="unsafeTag"&gt;Unsafe&lt;/item&gt;
+  &lt;item id="topicNoticeMessage"&gt;This is a notice for a custom XML comments element&lt;/item&gt;
+  &lt;item id="topicNoticeTag"&gt;Notice&lt;/item&gt;
+
+  &lt;!-- If you want to override the preliminary, obsolete, or experimental notice text,
+     you can add the following entries to your file with your own message and tag text.
+  &lt;item id="boilerplate_obsoleteShort"&gt;Obsolete&lt;/item&gt;
+  &lt;item id="boilerplate_obsoleteLong"&gt;Note: This API is now obsolete.&lt;/item&gt;
+  &lt;item id="boilerplate_experimentalShort"&gt;Experimental&lt;/item&gt;
+  &lt;item id="boilerplate_experimentalLong"&gt;Note: This API is for evaluation purposes only and is subject to change or removal in future updates.&lt;/item&gt;
+  &lt;item id="preliminaryApi"&gt;This API is preliminary and subject to change.&lt;/item&gt;
+  &lt;item id="preliminaryShort"&gt;Preliminary&lt;/item&gt;
+  --&gt;
+&lt;/content&gt;</code></pre></div></div><article class="message is-info"><div class="message-header"><p><span class="icon"><i class="fa fa-info-circle"></i></span>  Note</p></div><div class="message-body"><p>Resource item files have a custom editor and are usually used to override default help file
+builder content items.  To add the initial message items for your notices, open the file with a text editor.
+Once the items have been added, you can open it with the custom editor to make changes to the new items if
+wanted.</p></div></article></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Overriding the Preliminary, Obsolete, and Experimental Notices</h2><div id="IDDABSection"><p>As noted, the <span class="code">preliminary</span> XML comments element and the obsolete and
+experimental attributes are added by default.  If you want to override the messages or styles used, you can
+add matching notice entries to the plug-in configuration for the element or attribute name.  If you just want
+to change the notice message or tag text, you can also do so through the resource items file as shown in the
+example above without using the plug-in.</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="e031b14e-42f0-47e1-af4c-9fed2b88cbc7.htm">Build Process Plug-Ins</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Configuration Options</a></li><li><a class="quickLink">Localizing Notice Message and Tag Text</a></li><li><a class="quickLink">Overriding the Preliminary, Obsolete, and Experimental Notices</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.3.22.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20Help%20File%20Builder%20Documentation">Eric Woodruff</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div><div id="AdContent" class="column"><script type="text/javascript">
+    function _dmBootstrap(file) {
+        var _dma = document.createElement('script');
+        _dma.type = 'text/javascript';
+        _dma.async = true;
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
+</script>
+<div data-type="ad" data-publisher="ewsoftware.github.io" data-format="728x90" data-zone="SHFB"></div>
+ 
+				</div></div></footer></div><script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+hljs.highlightAll();
+});</script></body></html>

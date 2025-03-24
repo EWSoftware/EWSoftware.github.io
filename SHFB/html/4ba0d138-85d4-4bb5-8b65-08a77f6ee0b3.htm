@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html ><html lang="en-US"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.css" /><link rel="stylesheet" href="../css/font-awesome.min.css" /><link rel="stylesheet" href="../css/presentationStyle.css" /><link rel="stylesheet" href="../css/vs.min.css" /><script src="../scripts/jquery-3.5.1.min.js"></script><script src="../scripts/clipboard.min.js"></script><script src="../scripts/highlight.min.js"></script><script src="../scripts/presentationStyle.js"></script><title>Version 2025.3.22.0</title><meta name="Title" content="Version 2025.3.22.0" /><meta name="Help.Id" content="4ba0d138-85d4-4bb5-8b65-08a77f6ee0b3" /><meta name="Help.ContentType" content="Concepts" /><meta name="guid" content="4ba0d138-85d4-4bb5-8b65-08a77f6ee0b3" /><meta name="Description" content="Release notes for version 2025.3.22.0." /><meta name="tocFile" content="../toc/ID2.xml" /></head><body><div class="fixedLayout"><div id="Header" class="fixedHeader"><div class="pageHeader level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div class="level-item"><a target="_blank" rel="noopener noreferrer" href="https://github.com/EWSoftware/SHFB"><img alt="Sandcastle Help File Builder" style="height: 69px;" src="../icons/Sandcastle.jpg" /></a></div><div id="DocumentationTitle" class="level-item">Sandcastle Help File Builder Documentation</div></div><div id="LangFilterSearchContainer" class="level-right"><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a><a class="dropdown-item languageFilterItem" data-languageId="vb">VB</a><a class="dropdown-item languageFilterItem" data-languageId="cpp">C++</a><a class="dropdown-item languageFilterItem" data-languageId="fs">F#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></div><div class="fixedContent"><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div id="ContentContainer" class="columns pl-5 pr-5 fixedContent"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu" /></nav></div><div id="Resizer" class="is-hidden"></div><div id="TopicContent" class="column content is-7"><h1>Version 2025.3.22.0</h1><div><p>Release notes for version 2025.3.22.0.</p><article class="message is-warning"><div class="message-header"><p><span class="icon"><i class="fa fa-warning"></i></span>  Important</p></div><div class="message-body"><p><strong>Breaking Change:</strong> Several changes were made to the presentation style API
+to support rendering of user-defined notices.  If you have created custom build components, syntax generators,
+plug-ins, or presentation styles, you will need to rebuild them against the latest release of the help file
+builder NuGet packages.</p></div></article><article class="message is-info"><div class="message-header"><p><span class="icon"><i class="fa fa-info-circle"></i></span>  Note</p></div><div class="message-body"><p>This will likely be the last release to support Visual Studio 2017 and 2019.  Future releases will
+only support Visual Studio 2022 and later.  I do not use the older versions anymore, it will allow me to simplify
+the extension projects and keep the package references more up to date without the risk of breaking the build,
+and implement future features without regard to maintaining backward compatibility with the older versions.</p></div></article></div><h2 id="BuildTools" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Build Tools</h2><div id="IDCABSection"><ul><li><p>Fixed compiler generated <span class="code">ObsoleteAttribute</span> removal so that it applies
+to constructors on types with required fields/properties as well.</p></li><li><p>Fixed XML reader creation to consistently close the XML comments files in the working folder so
+that they do not remain open and cause subsequent builds to fail because they cannot be replaced.</p></li><li><p>Fixed handling of string and character literals with characters not valid in XML.  MRefBuilder
+will now write them out to the reflection data file in their encoded form (\x001B, \t, \r, etc.) rather than
+setting the entire value to an empty string.</p></li><li><p>Added support to MRefBuilder for writing out constant decimal values and setting the properties
+on the member to use the <span class="code">const</span> keyword rather than <span class="code">static readonly</span>
+to match the code.</p></li><li><p>Added support for the <span class="code">required</span> modifier on fields and properties in
+the C# syntax generator.</p></li><li><p>Added support for using the new XML format solution files (<em>.slnx</em>) as
+documentation sources.</p></li></ul></div><h2 id="SHFB" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Sandcastle Help File Builder</h2><div id="IDDABSection"><ul><li><p>Updated handling of resource item files so that it includes them in the build based on the
+project language if their filename ends with a language identifier.</p></li><li><p>Updated the resource item file editor to account for the language of the file being edited if
+the filename ends with a language identifier.</p></li><li><p>Made some usability improvements to the Entity References tool window (focus the list on search, 
+double-click an item to copy it to the clipboard, moved the Insert As options to the toolbar so that they take
+up less space).</p></li><li><p>Added a new Additional Notices Plug-In that can be used to define additional notice items to
+render in topics and on member list pages based on attributes or XML comments elements.</p></li></ul></div><h2 id="PresentationStyles" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Presentation Styles</h2><div id="IDEABSection"><ul><li><p>Fixed a couple of instances of incorrect member name formatting in table of contents and page
+titles.</p></li><li><p>Added support for <span class="code">ExperimentalAttribute</span> to add tags to API members
+similar to <span class="code">ObsoleteAttribute</span> in all presentation styles.</p></li><li><p>Based on a suggestion from Tim Unie, reimplemented how notices are rendered in member topics
+and member list pages in all presentation styles to allow for user-defined notices based on attributes or XML
+comments elements.</p></li><li><p>Removed <span class="code">PreliminaryElement</span> and its handler entries as it is now
+handled by the new notice rendering code.</p></li><li><p>Added a new <a href="cf763c6f-9fb2-4668-b1f5-211696385048.htm">Notice</a>
+type to define notices.</p></li><li><p>Added a new <a href="f430278c-77ea-734c-51f1-5c7dce47481b.htm">CreateNoticeDefinitions</a>
+abstract method used to create default notice instances for a presentation style.</p></li></ul></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="078cc1c7-7995-431e-bf9c-8813becbe8df.htm">Version History</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Build Tools</a></li><li><a class="quickLink">Sandcastle Help File Builder</a></li><li><a class="quickLink">Presentation Styles</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.3.22.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20Help%20File%20Builder%20Documentation">Eric Woodruff</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div><div id="AdContent" class="column"><script type="text/javascript">
+    function _dmBootstrap(file) {
+        var _dma = document.createElement('script');
+        _dma.type = 'text/javascript';
+        _dma.async = true;
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
+</script>
+<div data-type="ad" data-publisher="ewsoftware.github.io" data-format="728x90" data-zone="SHFB"></div>
+ 
+				</div></div></footer></div><script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+});</script></body></html>
