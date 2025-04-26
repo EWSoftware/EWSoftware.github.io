@@ -131,39 +131,20 @@ public class ExplicitImplementation : ICollection, ICloneable, IEnumerable
         // interface members with no comments.
     }
 
-    int ICollection.Count
-    {
-        get
-        {
-            // Comments are automatically inherited for explicit
-            // interface members with no comments.
-            return 0;
-        }
-    }
+    // Comments are automatically inherited for explicit
+    // interface members with no comments.
+    int ICollection.Count =&gt; 0;
 
-    bool ICollection.IsSynchronized
-    {
-        get
-        {
-            // Comments are automatically inherited for explicit
-            // interface members with no comments.
-            return true;
+    // Comments are automatically inherited for explicit
+    // interface members with no comments.
+    bool ICollection.IsSynchronized =&gt; true;
 
-        }
-    }
-
+    // In this case, we inherit the &lt;summary&gt; and &lt;returns&gt;
+    // comments and add a &lt;remarks&gt; comment.  Because we added
+    // comments, we need to specify the &lt;inheritdoc /&gt; tag too.
     /// &lt;inheritdoc /&gt;
     /// &lt;remarks&gt;This is a dummy class and always returns null.&lt;/remarks&gt;
-    object ICollection.SyncRoot
-    {
-        get
-        {
-            // In this case, we inherit the &lt;summary&gt; and &lt;returns&gt;
-            // comments and add a &lt;remarks&gt; comment.  Because we added
-            // comments, we need to specify the &lt;inheritdoc /&gt; tag too.
-            return null;
-        }
-    }
+    object ICollection.SyncRoot =&gt; null;
 
     #endregion
 
@@ -334,7 +315,7 @@ public class DerivedClassWithInheritedDocs : BaseInheritDoc
     }
 
     #pragma warning disable 1573
-    /// &lt;inheritdoc cref="OverloadedMethod(string)" /&gt;
+    /// &lt;inheritdoc cref="OverloadedMethod(String)" /&gt;
     /// &lt;param name="p2"&gt;The second string parameter&lt;/param&gt;
     public void OverloadedMethod(string p1, string p2)
     {
@@ -347,7 +328,7 @@ public class DerivedClassWithInheritedDocs : BaseInheritDoc
         // shown.
     }
 
-    /// &lt;inheritdoc cref="OverloadedMethod(string)" path="param|overloads/*" /&gt;
+    /// &lt;inheritdoc cref="OverloadedMethod(String)" path="param|overloads/*" /&gt;
     /// &lt;param name="x"&gt;An integer parameter&lt;/param&gt;
     public void OverloadedMethod(string p1, int x)
     {
@@ -411,7 +392,7 @@ public class DerivedClassWithInheritedDocs : BaseInheritDoc
         // a specific example from a member to which it has no relation.
     }
 }
-#endregion</code></pre></div></div></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4 class="quickLinkHeader">Reference</h4><div><a href="00fabdf6-a487-7d2a-02bf-43d70679fe70.htm">BaseInheritDoc</a></div><div><a href="152686c0-fa17-60a3-7ee4-6aab5ee53fcf.htm">CustomException</a></div><div><a href="57dd2fc3-63a7-35d9-fae9-1a2be46ee064.htm">DerivedClassWithInheritedDocs</a></div><div><a href="0e43b39e-89ee-9bbe-137b-6463720584bc.htm">ExplicitImplementation</a></div><div><a href="49e90f9d-a7b0-be7d-d4a5-f16724f15a14.htm">SetDocumentation</a></div><h4 class="quickLinkHeader">Other Resources</h4><div><a href="9341fdc8-1571-405c-8e61-6a6b9b601b46.htm">Miscellaneous Elements</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Syntax</a></li><li><a class="quickLink">Top-Level Inheritance Rules</a></li><li><a class="quickLink">Inline Inheritance Rules</a></li><li><a class="quickLink">Additional Comment File Sources and IntelliSense</a></li><li><a class="quickLink">Examples</a></li><li><a class="quickLink">See Also</a><ul class="menu"><li><a class="quickLink">Reference</a></li><li><a class="quickLink">Other Resources</a></li></ul></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2022.4.16.0] Sandcastle XML Comments Guide</a></p><div class="feedbackLink">Send comments on this topic to
+#endregion</code></pre></div></div></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4 class="quickLinkHeader">Reference</h4><div><a href="00fabdf6-a487-7d2a-02bf-43d70679fe70.htm">BaseInheritDoc</a></div><div><a href="152686c0-fa17-60a3-7ee4-6aab5ee53fcf.htm">CustomException</a></div><div><a href="57dd2fc3-63a7-35d9-fae9-1a2be46ee064.htm">DerivedClassWithInheritedDocs</a></div><div><a href="0e43b39e-89ee-9bbe-137b-6463720584bc.htm">ExplicitImplementation</a></div><div><a href="49e90f9d-a7b0-be7d-d4a5-f16724f15a14.htm">SetDocumentation</a></div><h4 class="quickLinkHeader">Other Resources</h4><div><a href="9341fdc8-1571-405c-8e61-6a6b9b601b46.htm">Miscellaneous Elements</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Syntax</a></li><li><a class="quickLink">Top-Level Inheritance Rules</a></li><li><a class="quickLink">Inline Inheritance Rules</a></li><li><a class="quickLink">Additional Comment File Sources and IntelliSense</a></li><li><a class="quickLink">Examples</a></li><li><a class="quickLink">See Also</a><ul class="menu"><li><a class="quickLink">Reference</a></li><li><a class="quickLink">Other Resources</a></li></ul></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.4.26.0] Sandcastle XML Comments Guide</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20XML%20Comments%20Guide">Eric@EWoodruff.us</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");

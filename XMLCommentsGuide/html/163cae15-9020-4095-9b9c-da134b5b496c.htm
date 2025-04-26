@@ -45,7 +45,7 @@ public class GenericClass&lt;T1, T2&gt; where T2 : EventArgs
     /// &lt;conceptualLink target="073a5ae1-828f-4bab-b0cb-438cefb5e9fb" /&gt;
     public T4 GenericMethod&lt;T3, T4&gt;(T3 argument)
     {
-        return default(T4);
+        return default;
     }
 
     /// &lt;summary&gt;
@@ -67,12 +67,9 @@ public class GenericClass&lt;T1, T2&gt; where T2 : EventArgs
     /// &lt;conceptualLink target="073a5ae1-828f-4bab-b0cb-438cefb5e9fb" /&gt;
     protected virtual void OnSomethingHappened(T2 e)
     {
-        var handler = SomethingHappened;
-
-        if(handler != null)
-            handler(this, e);
+        SomethingHappened?.Invoke(this, e);
     }
-}</code></pre></div></div></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4 class="quickLinkHeader">Reference</h4><div><a href="5dc0b9d5-2981-38a3-3b68-5af49ae1325e.htm">GenericClass<span id="LST96A0D330_0" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T1, T2<span id="LST96A0D330_1" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a></div><div><a href="b8a1c75f-3b9b-cad3-9b15-ae5b2b70b747.htm">GenericMethod<span id="LST96A0D330_2" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T3, T4<span id="LST96A0D330_3" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span></a></div><h4 class="quickLinkHeader">Other Resources</h4><div><a href="20dc8c5f-9979-4ecd-92ce-cea6ce7acaeb.htm">Section Elements</a></div><div><a href="073a5ae1-828f-4bab-b0cb-438cefb5e9fb.htm">typeparamref</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Syntax</a></li><li><a class="quickLink">Remarks</a></li><li><a class="quickLink">Examples</a></li><li><a class="quickLink">See Also</a><ul class="menu"><li><a class="quickLink">Reference</a></li><li><a class="quickLink">Other Resources</a></li></ul></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2022.4.16.0] Sandcastle XML Comments Guide</a></p><div class="feedbackLink">Send comments on this topic to
+}</code></pre></div></div></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4 class="quickLinkHeader">Reference</h4><div><a href="5dc0b9d5-2981-38a3-3b68-5af49ae1325e.htm">GenericClass<span id="LST96A0D330_0" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T1, T2<span id="LST96A0D330_1" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a></div><div><a href="b8a1c75f-3b9b-cad3-9b15-ae5b2b70b747.htm">GenericMethod<span id="LST96A0D330_2" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T3, T4<span id="LST96A0D330_3" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span></a></div><h4 class="quickLinkHeader">Other Resources</h4><div><a href="20dc8c5f-9979-4ecd-92ce-cea6ce7acaeb.htm">Section Elements</a></div><div><a href="073a5ae1-828f-4bab-b0cb-438cefb5e9fb.htm">typeparamref</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Syntax</a></li><li><a class="quickLink">Remarks</a></li><li><a class="quickLink">Examples</a></li><li><a class="quickLink">See Also</a><ul class="menu"><li><a class="quickLink">Reference</a></li><li><a class="quickLink">Other Resources</a></li></ul></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.4.26.0] Sandcastle XML Comments Guide</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20XML%20Comments%20Guide">Eric@EWoodruff.us</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
