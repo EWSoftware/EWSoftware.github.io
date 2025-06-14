@@ -210,7 +210,7 @@ public IAsyncEnumerable&lt;spTransactionListResult&gt; spTransactionListAsync(in
 // extension method instead.
 var cts = new CancellationTokenSource();
 
-await foreach(var t in dc.spTransactionList(1, "MSFT", fromDate,
+await foreach(var t in dc.spTransactionListAsync(1, "MSFT", fromDate,
     toDate, null).WithCancellation(cts.Token))
 {
     ....
