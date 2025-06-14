@@ -4,18 +4,18 @@ is opened temporarily while performing the action and closed again afterwards.</
 entities will be added to the change tracker.  Likewise, changes to the entities will be tracked and their
 state updated accordingly when added, updated, or deleted when submitting changes to the data context.  If change
 tracking is not enabled on the data context or the entity is marked with the <span class="code">NeverTrackAttribute</span>,
-they will not be tracked.</p></div></article><ul class="is-hidden-tablet"><li><a href="#LoadAll">LoadAll</a></li><li><a href="#LoadByKey">LoadByKey</a></li><li><a href="#InsertEntity">InsertEntity</a></li><li><a href="#UpdateEntity">UpdateEntity</a></li><li><a href="#DeleteEntity">DeleteEntity</a></li><li><a href="#SubmitChanges">SubmitChanges (2 overloads)</a></li></ul></div><h2 id="LoadAll" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>LoadAll</h2><div id="IDBABSection"><p>This extension method is used to load all entities of the given type using a stored procedure
+they will not be tracked.</p><p>Asynchronous versions of all of the methods are also available.</p></div></article><ul class="is-hidden-tablet"><li><a href="#LoadAll">LoadAll / LoadAllAsync</a></li><li><a href="#LoadByKey">LoadByKey / LoadByKeyAsync</a></li><li><a href="#InsertEntity">InsertEntity / InsertEntityAsync</a></li><li><a href="#UpdateEntity">UpdateEntity / UpdateEntityAsync</a></li><li><a href="#DeleteEntity">DeleteEntity / DeleteEntityAsync</a></li><li><a href="#SubmitChanges">SubmitChanges / SubmitChangesAsync (2 overloads each)</a></li></ul></div><h2 id="LoadAll" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>LoadAll / LoadAllAsync</h2><div id="IDCABSection"><p>This extension method is used to load all entities of the given type using a stored procedure
 defined on the entity type.  The stored procedure name is determined by looking for the
 <span class="code">LoadAllStoredProcedureAttribute</span> on the entity type.  The stored procedure should not
 have any parameters or only parameters with acceptable default values in order to return all rows.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">using var dataContext = new MyDbContext();
 
-var watchList = dataContext.LoadAll&lt;WatchList&gt;().ToList();</code></pre></div></div></div><h2 id="LoadByKey" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>LoadByKey</h2><div id="IDCABSection"><p>This extension method is used to load all entities of the given type using a stored procedure
+var watchList = dataContext.LoadAll&lt;WatchList&gt;().ToList();</code></pre></div></div></div><h2 id="LoadByKey" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>LoadByKey / LoadByKeyAsync</h2><div id="IDDABSection"><p>This extension method is used to load all entities of the given type using a stored procedure
 defined on the entity type using the given key value(s).  The stored procedure name is determined by looking for
 the <span class="code">LoadByKeyStoredProcedureAttribute</span> on the entity type.  The stored procedure should
 have a parameter for each of the passed key values.  The parameter order typically matches the declared key order
 on the entity or the parameter order of the stored procedure but does not have to.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">using var dataContext = new MyDbContext();
 
-var assetInfo = dataContext.LoadByKey&lt;Asset&gt;(assetKey).Single();</code></pre></div></div></div><h2 id="InsertEntity" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>InsertEntity</h2><div id="IDDABSection"><p>This extension method is used to insert the given entity using a stored procedure defined on the
+var assetInfo = dataContext.LoadByKey&lt;Asset&gt;(assetKey).Single();</code></pre></div></div></div><h2 id="InsertEntity" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>InsertEntity / InsertEntityAsync</h2><div id="IDEABSection"><p>This extension method is used to insert the given entity using a stored procedure defined on the
 entity type.  The stored procedure name is determined by looking for the
 <span class="code">InsertEntityStoredProcedureAttribute</span> on the entity type.  The stored procedure must
 have parameters for each of the entity properties except those marked with the
@@ -26,7 +26,7 @@ are defined as input/out parameters.  All other parameters are input only.</p><d
 if(watchListItem.WatchID == 0)
     dataContext.InsertEntity(watchListItem);
 else
-    dataContext.UpdateEntity(watchListItem);</code></pre></div></div></div><h2 id="UpdateEntity" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>UpdateEntity</h2><div id="IDEABSection"><p>This extension method is used to update the given entity using a stored procedure defined on the
+    dataContext.UpdateEntity(watchListItem);</code></pre></div></div></div><h2 id="UpdateEntity" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>UpdateEntity / UpdateEntityAsync</h2><div id="IDFABSection"><p>This extension method is used to update the given entity using a stored procedure defined on the
 entity type.  The stored procedure name is determined by looking for the
 <span class="code">UpdateEntityStoredProcedureAttribute</span> on the entity type.  The stored procedure must
 have parameters for each of the entity properties except those marked with the
@@ -37,14 +37,14 @@ parameters are input only.</p><div class="codeSnippet"><div class="codeHeader"><
 if(watchListItem.WatchID == 0)
     dataContext.InsertEntity(watchListItem);
 else
-    dataContext.UpdateEntity(watchListItem);</code></pre></div></div></div><h2 id="DeleteEntity" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>DeleteEntity</h2><div id="IDFABSection"><p>This extension method is used to delete the given entity using a stored procedure defined on the
+    dataContext.UpdateEntity(watchListItem);</code></pre></div></div></div><h2 id="DeleteEntity" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>DeleteEntity / DeleteEntityAsync</h2><div id="IDGABSection"><p>This extension method is used to delete the given entity using a stored procedure defined on the
 entity type.  The stored procedure name is determined by looking for the
 <span class="code">DeleteEntityStoredProcedureAttribute</span> on the entity type.  The stored procedure must have
 one or more parameters representing the key columns on the entity type identified with a
 <span class="code">PrimaryKeyAttribute</span> or one or more properties with a <span class="code">KeyAttribute</span>
 or defined by the data context.  It should not return a value or a result set.  All parameters are input only.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">using var dataContext = new MyDbContext();
 
-dataContext.DeleteEntity(watchListItem);</code></pre></div></div></div><h2 id="SubmitChanges" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>SubmitChanges (2 overloads)</h2><div id="IDGABSection"><p>The <span class="code">SubmitChanges</span> methods are used to submit all tracked add, update, and
+dataContext.DeleteEntity(watchListItem);</code></pre></div></div></div><h2 id="SubmitChanges" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>SubmitChanges / SubmitChangesAsync (2 overloads each)</h2><div id="IDHABSection"><p>The <span class="code">SubmitChanges</span> methods are used to submit all tracked add, update, and
 delete changes for the given entity type.</p><p>The first overload is similar to the <span class="code">SaveChanges</span> method on the data
 context except that it only submits changes for the specified entity type.  The insert, update, and delete
 stored procedures are determined by looking for the <span class="code">InsertEntityStoredProcedureAttribute</span>,
@@ -62,26 +62,26 @@ the entity entry from the change tracker so that they can determine what to do b
 {
     // Submit changes using stored procedure methods on the data context
     dataContext.SubmitChanges&lt;StateCode&gt;(
-        e =&gt;
+        se =&gt;
         {
             // Insert a new state code
-            dataContext.spStateCodeAddUpdate(null, e.Entity.State, e.Entity.StateDesc);
+            dataContext.spStateCodeAddUpdate(null, se.Entity.State, se.Entity.StateDesc);
             return true;
         },
-        e =&gt;
+        se =&gt;
         {
             // Update an existing state code possibly changing the key
-            dataContext.spStateCodeAddUpdate((string?)e.OriginalValues[nameof(StateCode.State)],
-                e.Entity.State, e.Entity.StateDesc);
+            dataContext.spStateCodeAddUpdate((string?)se.OriginalValues[nameof(StateCode.State)],
+                se.Entity.State, se.Entity.StateDesc);
             return true;
         },
-        e =&gt;
+        se =&gt;
         {
             // Delete an existing state code
-            dataContext.spStateCodeDelete((string?)e.OriginalValues[nameof(StateCode.State)]);
+            dataContext.spStateCodeDelete((string?)se.OriginalValues[nameof(StateCode.State)]);
             return true;
         });
-}</code></pre></div></div></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="48c2006f-d738-40a1-a486-d53fbdf7208c.htm">Welcome</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">LoadAll</a></li><li><a class="quickLink">LoadByKey</a></li><li><a class="quickLink">InsertEntity</a></li><li><a class="quickLink">UpdateEntity</a></li><li><a class="quickLink">DeleteEntity</a></li><li><a class="quickLink">SubmitChanges (2 overloads)</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://github.com/EWSoftware/EntityFrameworkUtils" target="_blank" rel="noopener noreferrer">[v2025.3.17.0] Copyright © 2024-2025, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
+}</code></pre></div></div></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="48c2006f-d738-40a1-a486-d53fbdf7208c.htm">Welcome</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">LoadAll / LoadAllAsync</a></li><li><a class="quickLink">LoadByKey / LoadByKeyAsync</a></li><li><a class="quickLink">InsertEntity / InsertEntityAsync</a></li><li><a class="quickLink">UpdateEntity / UpdateEntityAsync</a></li><li><a class="quickLink">DeleteEntity / DeleteEntityAsync</a></li><li><a class="quickLink">SubmitChanges / SubmitChangesAsync (2 overloads each)</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://github.com/EWSoftware/EntityFrameworkUtils" target="_blank" rel="noopener noreferrer">[v2025.6.14.0] Copyright © 2024-2025, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=EWSofware%20Entity%20Framework%20Utilities%20Library%20Documentation">Eric@EWoodruff.us</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
