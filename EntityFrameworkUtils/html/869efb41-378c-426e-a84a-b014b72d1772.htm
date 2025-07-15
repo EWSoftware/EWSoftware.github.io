@@ -61,12 +61,16 @@ var stateCodes = dc.LoadAll&lt;StateCode&gt;().ToList();</code></pre></div></div
 takes no parameters.  The 
 <a href="486c722d-58de-ef79-c25c-c0252fbf963c.htm">LoadAll<span id="LSTA7B1191_0" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>TEntity<span id="LSTA7B1191_1" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span></a>
 extension method uses this attribute to determine the stored procedure it should call.  See the
-<span class="code">IgnoreAttribute</span> section above for an example.</p></div><h2 id="LoadByKey" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>LoadByKeyStoredProcedureAttribute</h2><div id="IDFABSection"><p>This attribute can be applied to an entity type to define a stored procedure used to load them
+<span class="code">IgnoreAttribute</span> section above for an example.</p><p>If the attribute is omitted, the stored procedure name is assumed to be the same as the entity type
+name without the <a href="0ba6159a-1cff-e696-254f-9c220ab1a4ce.htm">ResultSetSuffix</a>
+property value.</p></div><h2 id="LoadByKey" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>LoadByKeyStoredProcedureAttribute</h2><div id="IDFABSection"><p>This attribute can be applied to an entity type to define a stored procedure used to load them
 using the values for the key properties defined on the type.  The 
 <a href="c2e4dd0d-2461-de63-1fbe-9995579f0dc4.htm">LoadByKey<span id="LSTA7B1191_2" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>TEntity<span id="LSTA7B1191_3" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span></a>
 extension method uses this attribute to determine the stored procedure it should call.  The <span class="code">PrimaryKey</span>
 attribute on the type or the <span class="code">Key</span> attributes on the properties are used to determine the
-key for the type.  There must be one stored procedure parameter for each key property on the type.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-csharp">[LoadByKeyStoredProcedure("spProductInfo"), InsertEntityStoredProcedure("spProductAddUpdate"),
+key for the type.  There must be one stored procedure parameter for each key property on the type.</p><p>If the attribute is omitted, the stored procedure name is assumed to be the same as the entity type
+name without the <a href="0ba6159a-1cff-e696-254f-9c220ab1a4ce.htm">ResultSetSuffix</a>
+property value.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-csharp">[LoadByKeyStoredProcedure("spProductInfo"), InsertEntityStoredProcedure("spProductAddUpdate"),
   UpdateEntityStoredProcedure("spProductAddUpdate"), DeleteEntityStoredProcedure("spProductDelete")]
 public sealed class ProductInfo : ChangeTrackingEntity
 {

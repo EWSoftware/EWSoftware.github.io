@@ -13,7 +13,9 @@ entities will be tracked and their state updated accordingly when added, updated
 changes to the data context.  If change tracking is not enabled on the data context or the entity is marked with
 the <span class="code">NeverTrackAttribute</span>, they will not be tracked.</p></div></article><ul class="is-hidden-tablet"><li><a href="#MethodStoredProc">MethodStoredProcedureAttribute</a></li><li><a href="#NonQueryMethods">Non-Query Stored Procedure Methods</a></li><li><a href="#QueryMethods">Query Stored Procedure Methods</a></li><li><a href="#AsyncSupport">Differences for the Asynchronous Extension Methods</a></li></ul></div><h2 id="MethodStoredProc" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>MethodStoredProcedureAttribute</h2><div id="IDCABSection"><p>This optional attribute is used to define the stored procedure name that will be called for the
 data context method.  If not specified on a data context stored procedure method, the name of the stored
-procedure is assumed to be the same as the data context method's name.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-csharp">// For these the stored procedure name is assumed to be the same as the method name    
+procedure is assumed to be the same as the data context method's name.  If the method name ends with the value of 
+the <a href="a5eeb730-a862-d285-fbb8-599e24e8429e.htm">AsyncMethodSuffix</a>
+property, the suffix will be removed from the method name to obtain the stored procedure name.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-csharp">// For these the stored procedure name is assumed to be the same as the method name    
 public int spStateCodeAddUpdate(string? oldState, string? state, string? stateDesc)
 {
     return this.ExecuteMethodNonQuery((MethodInfo)MethodInfo.GetCurrentMethod()!, oldState,
@@ -112,16 +114,18 @@ public IEnumerable&lt;spTransactionListResult&gt; spTransactionList(int accountK
         (MethodInfo)MethodInfo.GetCurrentMethod()!, accountKey, symbol,
         fromDate, toDate, txType);
 }</code></pre></div></div></div><h2 id="AsyncSupport" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Differences for the Asynchronous Extension Methods</h2><div id="IDFABSection"><p>The asynchronous versions of the query and non-query extension methods require a few modifications
-in order to use them correctly.</p><ul><li><p>If you follow convention and suffix the method name with "Async", you will likely need to use
-the <span class="code">MethodStoredProcedureAttribute</span> on it to specify the stored procedure name without
-the suffix.</p></li><li><p>The method information must be obtained using the stack trace to find the actual called method.
+in order to use them correctly.</p><ul><li><p>If you follow convention and suffix the method name with "Async", you can still omit the
+<span class="code">MethodStoredProcedureAttribute</span> as the suffix will be removed automatically when the method
+name ends with the <a href="a5eeb730-a862-d285-fbb8-599e24e8429e.htm">AsyncMethodSuffix</a>
+property value.  If you use a suffix different from the property value, you will need to specify the attribute.</p></li><li><p>The method information must be obtained using the stack trace to find the actual called method.
 This is required because the code within the stored procedure method is rewritten by the compiler and is
 placed inside a separate compiler generated method.</p></li><li><p>The method parameters must be passed to the extension method as an array.  This is necessary
 as the last parameter for the extension method is the optional cancellation token.</p></li><li><p>A cancellation token cannot be passed explicitly to the stored procedure method as it will be
 considered one of the stored procedure parameters and the method parameter count will not match the number of
 parameters passed to the extension method.  The
 <a href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskasyncenumerableextensions.withcancellation" target="_blank" rel="noopener noreferrer">WithCancellation<span id="LST824C750A_2" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST824C750A_3" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span></a>
-extension method can be used instead to achieve the same result.</p></li></ul><p>Some examples are shown below.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Execute a stored procedure and return its return value
+extension method can be used instead to achieve the same result.</p></li></ul><p>Some examples are shown below.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Execute a stored procedure and return its return value.  We could omit the
+// attribute here since the name matches the method name with an "Async" suffix".
 [MethodStoredProcedure("spStockAdd")]
 public async int spStockAddAsync(string symbol, string assetDescription,
   decimal currentBid, decimal currentAsk, decimal priceChangePercent)
@@ -132,9 +136,8 @@ public async int spStockAddAsync(string symbol, string assetDescription,
     // stored procedure name in the method attribute if the method name does not
     // match the stored procedure name.
     var methodInfo = (MethodInfo)(new StackTrace().GetFrames().Select(
-        frame =&gt; frame.GetMethod()).FirstOrDefault(
-            item =&gt; item!.DeclaringType == GetType()) ??
-               throw new InvalidOperationException("Unable to get async method info"));
+        f =&gt; f.GetMethod()).FirstOrDefault(m =&gt; m!.DeclaringType == GetType()) ??
+            throw new InvalidOperationException("Unable to get async method info"));
 
     var result = await this.ExecuteMethodNonQueryAsync(methodInfo, [symbol,
         assetDescription, currentBid, currentAsk, priceChangePercent]);
