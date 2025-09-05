@@ -18,21 +18,19 @@ the <a href="a5eeb730-a862-d285-fbb8-599e24e8429e.htm">AsyncMethodSuffix</a>
 property, the suffix will be removed from the method name to obtain the stored procedure name.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-csharp">// For these the stored procedure name is assumed to be the same as the method name    
 public int spStateCodeAddUpdate(string? oldState, string? state, string? stateDesc)
 {
-    return this.ExecuteMethodNonQuery((MethodInfo)MethodInfo.GetCurrentMethod()!, oldState,
-        state, stateDesc).ReturnValue;
+    return this.ExecuteMethodNonQuery(this.GetMethodInfo(), oldState, state, stateDesc).ReturnValue;
 }
 
 public int spStateCodeDelete(string? state)
 {
-    return this.ExecuteMethodNonQuery((MethodInfo)MethodInfo.GetCurrentMethod()!,
-        state).RowsAffected;
+    return this.ExecuteMethodNonQuery(this.GetMethodInfo(), state).RowsAffected;
 }
 
 public IEnumerable&lt;spProductSearchResult&gt; spProductSearch(string? productName, string? categoryName,
     string? companyName)
 {
-    return this.ExecuteMethodQuery&lt;spProductSearchResult&gt;((MethodInfo)MethodInfo.GetCurrentMethod()!,
-        productName, categoryName, companyName);
+    return this.ExecuteMethodQuery&lt;spProductSearchResult&gt;(this.GetMethodInfo(), productName,
+        categoryName, companyName);
 }
 
 // Or we can change the method name to something else and specify the stored
@@ -40,22 +38,21 @@ public IEnumerable&lt;spProductSearchResult&gt; spProductSearch(string? productN
 [MethodStoredProcedure("spStateCodeAddUpdate")]
 public int AddOrUpdateStateCode(string? oldState, string? state, string? stateDesc)
 {
-    return this.ExecuteMethodNonQuery((MethodInfo)MethodInfo.GetCurrentMethod()!, oldState,
-        state, stateDesc).ReturnValue;
+    return this.ExecuteMethodNonQuery(this.GetMethodInfo(), oldState, state, stateDesc).ReturnValue;
 }
 
 [MethodStoredProcedure("spStateCodeDelete")]
 public int DeleteStateCode(string? state)
 {
-    return this.ExecuteMethodNonQuery((MethodInfo)MethodInfo.GetCurrentMethod()!, state).ReturnValue;
+    return this.ExecuteMethodNonQuery(this.GetMethodInfo(), state).ReturnValue;
 }
 
 [MethodStoredProcedure("spProductSearch")]
 public IEnumerable&lt;ProductSearchResult&gt; SearchForProducts(string? productName, string? categoryName,
     string? companyName)
 {
-    return this.ExecuteMethodQuery&lt;ProductSearchResult&gt;((MethodInfo)MethodInfo.GetCurrentMethod()!,
-        productName, categoryName, companyName);
+    return this.ExecuteMethodQuery&lt;ProductSearchResult&gt;(this.GetMethodInfo(), productName,
+        categoryName, companyName);
 }</code></pre></div></div></div><h2 id="NonQueryMethods" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Non-Query Stored Procedure Methods</h2><div id="IDDABSection"><p>A non-query stored procedure method is one that does not return a result set.  Instead it returns
 the number of rows affected, a return value, and/or output parameter values.  The data context method calls the
 <a href="eb60a5cf-47a9-59ef-7d96-df62c13959cc.htm">ExecuteMethodNonQuery</a>
@@ -73,15 +70,14 @@ context method.</p><div class="codeSnippet"><div class="codeHeader"><span class=
 public int spStockAdd(string symbol, string assetDescription, decimal currentBid,
   decimal currentAsk, decimal priceChangePercent)
 {
-    return this.ExecuteMethodNonQuery((MethodInfo)MethodInfo.GetCurrentMethod()!,
-        symbol, assetDescription, currentBid, currentAsk, priceChangePercent).ReturnValue;
+    return this.ExecuteMethodNonQuery(this.GetMethodInfo(), symbol, assetDescription, currentBid,
+        currentAsk, priceChangePercent).ReturnValue;
 }
 
 // Execute a stored procedure and return the number of rows affected
 public int spStockDelete(string symbol)
 {
-    return this.ExecuteMethodNonQuery((MethodInfo)MethodInfo.GetCurrentMethod()!,
-        symbol).RowsAffected;
+    return this.ExecuteMethodNonQuery(this.GetMethodInfo(), symbol).RowsAffected;
 }
 
 // Execute a stored procedure and return the output parameters via the ref parameters on
@@ -89,8 +85,8 @@ public int spStockDelete(string symbol)
 public int spCheckForEmployeeSchedule(string bidGroup, int entityKey,
   ref bool bidGroupScheduled, ref bool entityScheduled)
 {
-    var result = this.ExecuteMethodNonQuery((MethodInfo)MethodInfo.GetCurrentMethod()!,
-        bidGroup, entityKey, bidGroupScheduled, entityScheduled);
+    var result = this.ExecuteMethodNonQuery(this.GetMethodInfo(), bidGroup, entityKey,
+        bidGroupScheduled, entityScheduled);
 
     bidGroupScheduled = (bool)result.OutputValues[nameof(bidGroupScheduled);
     entityScheduled = (bool)result.OutputValues[nameof(entityScheduled);
@@ -110,16 +106,16 @@ the query's result set.</p><div class="codeSnippet"><div class="codeHeader"><spa
 public IEnumerable&lt;spTransactionListResult&gt; spTransactionList(int accountKey,
   string? symbol, DateTime fromDate, DateTime toDate, string? txType)
 {
-    return this.ExecuteMethodQuery&lt;spTransactionListResult&gt;(
-        (MethodInfo)MethodInfo.GetCurrentMethod()!, accountKey, symbol,
-        fromDate, toDate, txType);
+    return this.ExecuteMethodQuery&lt;spTransactionListResult&gt;(this.GetMethodInfo(),
+        accountKey, symbol, fromDate, toDate, txType);
 }</code></pre></div></div></div><h2 id="AsyncSupport" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Differences for the Asynchronous Extension Methods</h2><div id="IDFABSection"><p>The asynchronous versions of the query and non-query extension methods require a few modifications
 in order to use them correctly.</p><ul><li><p>If you follow convention and suffix the method name with "Async", you can still omit the
 <span class="code">MethodStoredProcedureAttribute</span> as the suffix will be removed automatically when the method
 name ends with the <a href="a5eeb730-a862-d285-fbb8-599e24e8429e.htm">AsyncMethodSuffix</a>
 property value.  If you use a suffix different from the property value, you will need to specify the attribute.</p></li><li><p>The method information must be obtained using the stack trace to find the actual called method.
 This is required because the code within the stored procedure method is rewritten by the compiler and is
-placed inside a separate compiler generated method.</p></li><li><p>The method parameters must be passed to the extension method as an array.  This is necessary
+placed inside a separate compiler generated method.  Always use the <span class="code">GetMethodInfo</span>
+extension method as shown in the examples as it will work whether the method is synchronous or asynchronous.</p></li><li><p>The method parameters must be passed to the extension method as an array.  This is necessary
 as the last parameter for the extension method is the optional cancellation token.</p></li><li><p>A cancellation token cannot be passed explicitly to the stored procedure method as it will be
 considered one of the stored procedure parameters and the method parameter count will not match the number of
 parameters passed to the extension method.  The
@@ -130,16 +126,7 @@ extension method can be used instead to achieve the same result.</p></li></ul><p
 public async int spStockAddAsync(string symbol, string assetDescription,
   decimal currentBid, decimal currentAsk, decimal priceChangePercent)
 {
-    // When called asynchronously, the parameters must be passed as an array
-    // and we must get the method info from the stack trace as we're inside the
-    // compiler generated state machine at this point.  We must also specify the
-    // stored procedure name in the method attribute if the method name does not
-    // match the stored procedure name.
-    var methodInfo = (MethodInfo)(new StackTrace().GetFrames().Select(
-        f =&gt; f.GetMethod()).FirstOrDefault(m =&gt; m!.DeclaringType == GetType()) ??
-            throw new InvalidOperationException("Unable to get async method info"));
-
-    var result = await this.ExecuteMethodNonQueryAsync(methodInfo, [symbol,
+    var result = await this.ExecuteMethodNonQueryAsync(this.GetMethodInfo(), [symbol,
         assetDescription, currentBid, currentAsk, priceChangePercent]);
 
     return result.ReturnValue;
@@ -149,16 +136,7 @@ public async int spStockAddAsync(string symbol, string assetDescription,
 [MethodStoredProcedure("spStockDelete")]
 public async int spStockDeleteAsync(string symbol)
 {
-    // When called asynchronously, the parameters must be passed as an array
-    // and we must get the method info from the stack trace as we're inside the
-    // compiler generated state machine at this point.  We must also specify the
-    // stored procedure name in the method attribute if the method name does not
-    // match the stored procedure name.
-    var methodInfo = (MethodInfo)(new StackTrace().GetFrames().Select(
-        f =&gt; f.GetMethod()).FirstOrDefault(m =&gt; m!.DeclaringType == GetType()) ??
-            throw new InvalidOperationException("Unable to get async method info"));
-
-    var result = await this.ExecuteMethodNonQueryAsync(methodInfo, [symbol]);
+    var result = await this.ExecuteMethodNonQueryAsync(this.GetMethodInfo(), [symbol]);
 
     return result.RowsAffected;
 }
@@ -169,17 +147,8 @@ public async int spStockDeleteAsync(string symbol)
 public async int spCheckForEmployeeScheduleAsync(string bidGroup, int entityKey,
   ref bool bidGroupScheduled, ref bool entityScheduled)
 {
-    // When called asynchronously, the parameters must be passed as an array
-    // and we must get the method info from the stack trace as we're inside the
-    // compiler generated state machine at this point.  We must also specify the
-    // stored procedure name in the method attribute if the method name does not
-    // match the stored procedure name.
-    var methodInfo = (MethodInfo)(new StackTrace().GetFrames().Select(
-        f =&gt; f.GetMethod()).FirstOrDefault(m =&gt; m!.DeclaringType == GetType()) ??
-            throw new InvalidOperationException("Unable to get async method info"));
-
-    var result = await this.ExecuteMethodNonQueryAsync(methodInfo, [bidGroup, entityKey,
-        bidGroupScheduled, entityScheduled]);
+    var result = await this.ExecuteMethodNonQueryAsync(this.GetMethodInfo(), [bidGroup,
+        entityKey, bidGroupScheduled, entityScheduled]);
 
     bidGroupScheduled = (bool)result.OutputValues[nameof(bidGroupScheduled);
     entityScheduled = (bool)result.OutputValues[nameof(entityScheduled);
@@ -192,19 +161,10 @@ public async int spCheckForEmployeeScheduleAsync(string bidGroup, int entityKey,
 public IAsyncEnumerable&lt;spTransactionListResult&gt; spTransactionListAsync(int accountKey,
   string? symbol, DateTime fromDate, DateTime toDate, string? txType)
 {
-    // When called asynchronously, the parameters must be passed as an array
-    // and we must get the method info from the stack trace as we're inside the
-    // compiler generated state machine at this point.  We must also specify the
-    // stored procedure name in the method attribute if the method name does not
-    // match the stored procedure name.
-    var methodInfo = (MethodInfo)(new StackTrace().GetFrames().Select(
-        f =&gt; f.GetMethod()).FirstOrDefault(m =&gt; m!.DeclaringType == GetType()) ??
-            throw new InvalidOperationException("Unable to get async method info"));
-
     // Note that we can't pass a cancellation token as it would look like one of
     // the method parameters.  Use the WithCancellation() extension method on the
     // call to this method instead.
-    return this.ExecuteMethodQueryAsync&lt;spTransactionListResult&gt;(methodInfo,
+    return this.ExecuteMethodQueryAsync&lt;spTransactionListResult&gt;(this.GetMethodInfo(),
         [accountKey, symbol, fromDate, toDate, txType]);
 }
 
@@ -217,7 +177,7 @@ await foreach(var t in dc.spTransactionListAsync(1, "MSFT", fromDate,
     toDate, null).WithCancellation(cts.Token))
 {
     ....
-}</code></pre></div></div></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="48c2006f-d738-40a1-a486-d53fbdf7208c.htm">Welcome</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">MethodStoredProcedureAttribute</a></li><li><a class="quickLink">Non-Query Stored Procedure Methods</a></li><li><a class="quickLink">Query Stored Procedure Methods</a></li><li><a class="quickLink">Differences for the Asynchronous Extension Methods</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://github.com/EWSoftware/EntityFrameworkUtils" target="_blank" rel="noopener noreferrer">[v2025.8.22.0] Copyright © 2024-2025, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
+}</code></pre></div></div></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="48c2006f-d738-40a1-a486-d53fbdf7208c.htm">Welcome</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">MethodStoredProcedureAttribute</a></li><li><a class="quickLink">Non-Query Stored Procedure Methods</a></li><li><a class="quickLink">Query Stored Procedure Methods</a></li><li><a class="quickLink">Differences for the Asynchronous Extension Methods</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://github.com/EWSoftware/EntityFrameworkUtils" target="_blank" rel="noopener noreferrer">[v2025.9.5.0] Copyright © 2024-2025, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=EWSofware%20Entity%20Framework%20Utilities%20Library%20Documentation">Eric@EWoodruff.us</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");

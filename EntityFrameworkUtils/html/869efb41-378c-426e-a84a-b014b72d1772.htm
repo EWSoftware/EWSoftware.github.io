@@ -25,7 +25,10 @@ be added to the entities that do not appear in the result set and vice versa.  T
 entity properties to indicate whether or not they should be included for inserts and/or updates.  It takes two
 Boolean parameters, the first for whether or not to include it for inserts, and the second for updates.
 Typically, both parameters are set to false but it is possible to set one or the other to true to include the
-property for insert or updates if required.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-csharp">[LoadAllStoredProcedure("spStateCodes"), InsertStoredProcedure("spStateCodeAddUpdate"),
+property for insert or updates if required.</p><p>The attribute will usually be applied to properties in the type but can be applied to the class
+or structure with a property name specified to ignore inherited properties that you do not have direct access to
+and should not be considered for inserts and updates.  The attribute can be applied multiple times if there are
+multiple properties to ignore.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-csharp">[LoadAllStoredProcedure("spStateCodes"), InsertStoredProcedure("spStateCodeAddUpdate"),
   UpdateStoredProcedure("spStateCodeAddUpdate"), DeleteStoredProcedure("spStateCodeDelete")]
 public sealed class StateCode : ChangeTrackingEntity
 {
@@ -57,7 +60,16 @@ public sealed class StateCode : ChangeTrackingEntity
 // Example Load All usage:
 using var dataContext = new DemoDatabaseDataContext();
 
-var stateCodes = dc.LoadAll&lt;StateCode&gt;().ToList();</code></pre></div></div></div><h2 id="LoadAll" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>LoadAllStoredProcedureAttribute</h2><div id="IDEABSection"><p>This attribute can be applied to an entity type to define a stored procedure used to load them that
+var stateCodes = dc.LoadAll&lt;StateCode&gt;().ToList();</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-csharp">// This entity has a HasErrors property inherited from ObservableValidator that needs to be
+// ignored for inserts and updates.  Since we don't have direct access to it, we use the
+// attribute on the entity type and specify the property name as well.
+[LoadAllStoredProcedure("spStateCodes"), InsertStoredProcedure("spStateCodeAddUpdate"),
+  UpdateStoredProcedure("spStateCodeAddUpdate"), DeleteStoredProcedure("spStateCodeDelete"),
+  Ignore(true, true, PropertyName = nameof(HasErrors))]
+public sealed class StateCode : ObservableValidator
+{
+    ...
+}</code></pre></div></div></div><h2 id="LoadAll" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>LoadAllStoredProcedureAttribute</h2><div id="IDEABSection"><p>This attribute can be applied to an entity type to define a stored procedure used to load them that
 takes no parameters.  The 
 <a href="486c722d-58de-ef79-c25c-c0252fbf963c.htm">LoadAll<span id="LSTA7B1191_0" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>TEntity<span id="LSTA7B1191_1" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span></a>
 extension method uses this attribute to determine the stored procedure it should call.  See the
@@ -126,7 +138,7 @@ type.  The stored procedure should have one or more parameters representing the 
 identified with a <span class="code">PrimaryKeyAttribute</span> or one or more properties with a
 <span class="code">KeyAttribute</span> or defined by the data context.  It should not return a value or a result
 set.  All parameters are input only.  See the <span class="code">LoadByKeyAttribute</span> section above for an
-example.</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="48c2006f-d738-40a1-a486-d53fbdf7208c.htm">Welcome</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">NeverTrackAttribute</a></li><li><a class="quickLink">IgnoreAttribute</a></li><li><a class="quickLink">LoadAllStoredProcedureAttribute</a></li><li><a class="quickLink">LoadByKeyStoredProcedureAttribute</a></li><li><a class="quickLink">InsertEntityStoredProcedureAttribute</a></li><li><a class="quickLink">UpdateEntityStoredProcedureAttribute</a></li><li><a class="quickLink">DeleteEntityStoredProcedureAttribute</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://github.com/EWSoftware/EntityFrameworkUtils" target="_blank" rel="noopener noreferrer">[v2025.8.22.0] Copyright © 2024-2025, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
+example.</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="48c2006f-d738-40a1-a486-d53fbdf7208c.htm">Welcome</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">NeverTrackAttribute</a></li><li><a class="quickLink">IgnoreAttribute</a></li><li><a class="quickLink">LoadAllStoredProcedureAttribute</a></li><li><a class="quickLink">LoadByKeyStoredProcedureAttribute</a></li><li><a class="quickLink">InsertEntityStoredProcedureAttribute</a></li><li><a class="quickLink">UpdateEntityStoredProcedureAttribute</a></li><li><a class="quickLink">DeleteEntityStoredProcedureAttribute</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://github.com/EWSoftware/EntityFrameworkUtils" target="_blank" rel="noopener noreferrer">[v2025.9.5.0] Copyright © 2024-2025, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=EWSofware%20Entity%20Framework%20Utilities%20Library%20Documentation">Eric@EWoodruff.us</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
