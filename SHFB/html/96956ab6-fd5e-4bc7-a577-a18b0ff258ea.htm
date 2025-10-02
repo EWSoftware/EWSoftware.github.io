@@ -19,28 +19,17 @@ you can use <strong>Ctrl+F</strong> to search the log and access the context men
 help file builder).</p></li><li><p>The <span class="code">version</span> attribute identifies the build engine version.</p></li><li><p>The <span class="code">projectFile</span> attribute identifies the project file that was built.</p></li><li><p>The <span class="code">started</span> attribute contains the date and time that the build was
 started.</p></li></ul></td></tr><tr><td><p><span class="code">buildStep</span></p></td><td><p>This element contains the output for an individual build step.  The build step is identified in the
 <span class="code">step</span> attribute and corresponds to an enumeration value from
-<a href="15b1ab7a-6438-34c6-e592-a46320ab5e97.htm">SandcastleBuilder.Utils.BuildEngine<span id="LSTF34ACF97_0" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>BuildStep</a>.</p></td></tr><tr><td><p><span class="code">plugIn</span></p></td><td><p>This element contains the output from a plug-in that runs inside of a build step.  This element will
+<a href="c78fe739-3621-a93a-11d7-a3f146320aea.htm">Sandcastle.Core.BuildEngine<span id="LSTF34ACF97_0" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>BuildStep</a>.</p></td></tr><tr><td><p><span class="code">plugIn</span></p></td><td><p>This element contains the output from a plug-in that runs inside of a build step.  This element will
 always be nested within a <span class="code">buildStep</span> element and there may be more than one depending on
 how many plug-ins ran during the given step.  This element has three attributes:</p><ul><li><p>The <span class="code">name</span> attribute identifies the plug-in that ran.</p></li><li><p>The <span class="code">behavior</span> attribute specifies the execution behavior of the
 plug-in.</p></li><li><p>The <span class="code">priority</span> attribute specifies the execution priority of the
-plug-in.</p></li></ul></td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="b772e00e-1705-4062-adb6-774826ce6700.htm">Getting Started</a></div><div><a href="8ffc0d37-0215-4609-b6f8-dba53a6c5063.htm">Building Projects Outside the GUI</a></div><div><a href="ec822059-b179-4add-984d-485580050ffb.htm">Generating Documentation with Team Build</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">The Build Log Viewer Tool Window</a></li><li><a class="quickLink">The Log File Elements</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.3.22.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
+plug-in.</p></li></ul></td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="b772e00e-1705-4062-adb6-774826ce6700.htm">Getting Started</a></div><div><a href="8ffc0d37-0215-4609-b6f8-dba53a6c5063.htm">Building Projects Outside the GUI</a></div><div><a href="ec822059-b179-4add-984d-485580050ffb.htm">Generating Documentation with Team Build</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">The Build Log Viewer Tool Window</a></li><li><a class="quickLink">The Log File Elements</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.9.30.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20Help%20File%20Builder%20Documentation">Eric Woodruff</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
         HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
         </script> 
-				</div><div id="AdContent" class="column"><script type="text/javascript">
-    function _dmBootstrap(file) {
-        var _dma = document.createElement('script');
-        _dma.type = 'text/javascript';
-        _dma.async = true;
-        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
-    }
-    function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
-    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
-</script>
-<div data-type="ad" data-publisher="ewsoftware.github.io" data-format="728x90" data-zone="SHFB"></div>
+				</div><div id="AdContent" class="column"><iframe src="https://github.com/sponsors/EWSoftware/button" title="Sponsor EWSoftware" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
  
 				</div></div></footer></div><script>$(function(){
 SetDefaultLanguage("cs");

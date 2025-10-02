@@ -57,7 +57,7 @@ one without a password.</p></li></ol></div></div><h2 id="Template" class="quickL
 information on how to get started.  Some general information is given below.  Note that multiple plug-ins can
 reside within the same assembly.  Add new class files to the project and implement the necessary methods as
 described below and as shown in the template class.</p><p>The plug-in is derived from the
-<a href="bcf36919-1d66-1625-544e-adb51877d5de.htm">SandcastleBuilder.Utils.BuildComponent<span id="LST43747FB2_0" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>IPlugIn</a>
+<a href="97754c61-4f31-a747-578e-1177809c5710.htm">Sandcastle.Core.PlugIn<span id="LST43747FB2_0" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>IPlugIn</a>
 interface and consists of a few properties and methods that you must implement.  These are described below.
 Review the code for "<span class="code">TODO:</span>" comments to find sections that need attention such as
 setting the plug-in's ID, defining the execution points, etc.  If you followed the steps in the
@@ -65,7 +65,7 @@ setting the plug-in's ID, defining the execution points, etc.  If you followed t
 breakpoints in the plug-in's code.  As noted above, set the test project's <span class="code">Component Path</span>
 property to the folder containing the plug-in assembly first.  If necessary, close and reopen the test project
 so that it can discover the plug-in.</p></div><h2 id="Metadata" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>The Export Attribute Metadata</h2><div id="IDEABSection"><p>The plug-in is a Managed Extensibility Framework (MEF) component.  The
-<a href="a4e1e642-d901-b458-8cf5-a393970e0150.htm">HelpFileBuilderPlugInExportAttribute</a>
+<a href="0b3fd94d-778a-dfe3-6d25-9489d875f6ed.htm">HelpFileBuilderPlugInExportAttribute</a>
 is used to define the necessary metadata that enables the help file builder to load and use the component.</p><h4 id="MetadataId" class="quickLinkHeader">Id</h4><p>The <span class="code">Id</span> parameter is required and is used to uniquely identify the
 plug-in.</p><h4 id="MetadataVersion" class="quickLinkHeader">Version</h4><p>The <span class="code">Version</span> property is optional and allows you to define the plug-in
 version displayed in the help file builder property page when the plug-in is selected.</p><h4 id="MetadataCopyright" class="quickLinkHeader">Copyright</h4><p>The <span class="code">Copyright</span> property is optional and allows you to define the
@@ -80,23 +80,23 @@ the plug-in will appear on the property page.  If true, the property page will n
 be added to the project.  This is useful for presentation style dependency plug-ins that have no configurable
 elements and thus do not need to be manually added to the project to override settings.</p></div><h2 id="Interface" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>The Plug-In Interface</h2><div id="IDFABSection"><p>The interface consists of one property and four methods.</p><h4 id="ExecutionPoints" class="quickLinkHeader">ExecutionPoints</h4><p>The <span class="code">ExecutionPoints</span> property is probably the most important member of
 the interface.  It returns a collection of
-<a href="64518f52-884e-3d57-eed5-1760625be48b.htm">ExecutionPoint</a>
+<a href="14066434-a5e0-ef5e-1018-2e38d945a230.htm">ExecutionPoint</a>
 objects that define at which steps in the build process the plug-in should be ran.  Execution points can be set
 to run before and/or after a build step to supplement the default processing or they can be set to run instead of
 the build step to completely suppress or replace the default processing.  See the
-<a href="15b1ab7a-6438-34c6-e592-a46320ab5e97.htm">BuildStep</a>
+<a href="c78fe739-3621-a93a-11d7-a3f146320aea.htm">BuildStep</a>
 enumeration for a list of the defined build steps.</p><p>Each execution point can be assigned a priority.  The execution priority is used to determine
 the order in which the plug-ins will be executed.  Those with a higher priority value will be executed before
 those with a lower value.  Those with an identical priority may be executed in any order within their group.  If
 not specified, a default priority of 1,000 is used.</p><h4 id="Initialize" class="quickLinkHeader">Initialize</h4><p>The <span class="code">Initialize</span> method is used to initialize the plug-in at the start
 of the build process.  It is passed a reference to the current
-<a href="6c4dd5b1-16bc-6cc8-25b7-80073d1a7285.htm">BuildProcess</a>
+<a href="9f4bf042-9f4c-c1fd-511a-49587d7c3802.htm">IBuildProcess</a>
 and an XPath navigator containing the plug-in configuration.  You should cache a copy of the build process
 reference for use during execution as it contains many properties and methods that you will find useful.</p><h4 id="Execute" class="quickLinkHeader">Execute</h4><p>The <span class="code">Execute</span> method is called to perform the plug-in processing during
 the relevant build steps.  It is passed an
-<a href="46ba727d-2cb2-e0a7-bd60-2c5723785c3f.htm">SandcastleBuilder.Utils.BuildComponent<span id="LST43747FB2_1" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ExecutionContext</a>
+<a href="8dc0e487-7a3c-c175-eef8-79b271056532.htm">Sandcastle.Core.PlugIn<span id="LST43747FB2_1" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ExecutionContext</a>
 object that defines the current execution context.  If your plug-in determines that it does not need to run, it
-should set the <a href="c6d9b694-2d01-43d6-b1ad-6c5e31a3acf9.htm">ExecutionContext<span id="LST43747FB2_2" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>Executed</a>
+should set the <a href="a3ec3038-0a30-eae8-cefe-d22d55d32566.htm">ExecutionContext<span id="LST43747FB2_2" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>Executed</a>
 property to false.  This is especially important for plug-ins with the <span class="code">InsteadOf</span>
 behavior. If none run, the default processing will occur.</p><h4 id="Dispose" class="quickLinkHeader">Finalizer and Dispose</h4><p>The <span class="code">Dispose</span> method can be used to dispose of any resources used during
 the build process.  If you do not have any resources that need to be disposed of, this method can be left as
@@ -108,8 +108,8 @@ the <span class="code">Initializing</span> step.</p></li><li><p>The <span class=
 will not call any plug-ins with <span class="code">Before</span> or <span class="code">After</span> behavior for
 the step if an <span class="code">InsteadOf</span> plug-in runs.  As such, it is up to the plug-in with the
 <span class="code">InsteadOf</span> behavior to call the
-<a href="a9cb2f26-d086-0d83-aa5d-829350e2a2ce.htm">ExecuteBeforeStepPlugIns</a>
-and <a href="dc79407c-a2be-eec9-9523-f73e384e0e6a.htm">ExecuteAfterStepPlugIns</a>
+<a href="42bb0740-b73f-76dd-0b2b-f490692fc775.htm">ExecuteBeforeStepPlugIns</a>
+and <a href="6dddcd2a-c88f-3260-69d2-449a081296c7.htm">ExecuteAfterStepPlugIns</a>
 methods to run them if needed.
 						</p></li><li><p>If the build step involves creating, modifying, or deleting a non-script file or folder, the
 <span class="code">Before</span> behavior is always executed prior to creating/modifying/deleting the file or
@@ -123,29 +123,18 @@ file/folder.  All normal processing involving the file/folder including its crea
 <span class="code">GenerateHelpFileIndex</span>, <span class="code">GenerateHelpProject</span>,
 <span class="code">UpdateTableOfContents</span>, and <span class="code">CompilingHelpFile</span> steps will run
 once for each help file format selected.  You can use the
-<a href="d66c5dfc-d078-2272-cff0-c039b108d818.htm">CurrentFormat</a>
+<a href="a09a120a-a173-092f-e5d9-a69f9f726146.htm">CurrentFormat</a>
 property to determine the current help file format being built in order to skip or alter the plug-in's processing
 based on the help file format.</p></li><li><p>Be aware that the HTML Help 1 index and table of contents files and the website table of
 contents file are actually generated as part of the <span class="code">ExtractHtmlInfo</span> step.  However, the
 before and after plug-in behaviors for the index and table of contents steps in each of those formats will still
-be executed.</p></li></ul></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="c8258d52-6664-4e96-86cd-6f75a854a69c.htm">Creating Custom Components</a></div><div><a href="e031b14e-42f0-47e1-af4c-9fed2b88cbc7.htm">Build Process Plug-Ins</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Defining the Plug-In Configuration</a></li><li><a class="quickLink">Creating the Project</a></li><li><a class="quickLink">Create the Plug-In Project</a></li><li><a class="quickLink">The Plug-In Template Class</a></li><li><a class="quickLink">The Export Attribute Metadata</a><ul class="menu"><li><a class="quickLink">Id</a></li><li><a class="quickLink">Version</a></li><li><a class="quickLink">Copyright</a></li><li><a class="quickLink">Description</a></li><li><a class="quickLink">RunsInPartialBuild</a></li><li><a class="quickLink">IsHidden</a></li></ul></li><li><a class="quickLink">The Plug-In Interface</a><ul class="menu"><li><a class="quickLink">ExecutionPoints</a></li><li><a class="quickLink">Initialize</a></li><li><a class="quickLink">Execute</a></li><li><a class="quickLink">Finalizer and Dispose</a></li></ul></li><li><a class="quickLink">Execution Notes</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.3.22.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
+be executed.</p></li></ul></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="c8258d52-6664-4e96-86cd-6f75a854a69c.htm">Creating Custom Components</a></div><div><a href="e031b14e-42f0-47e1-af4c-9fed2b88cbc7.htm">Build Process Plug-Ins</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Defining the Plug-In Configuration</a></li><li><a class="quickLink">Creating the Project</a></li><li><a class="quickLink">Create the Plug-In Project</a></li><li><a class="quickLink">The Plug-In Template Class</a></li><li><a class="quickLink">The Export Attribute Metadata</a><ul class="menu"><li><a class="quickLink">Id</a></li><li><a class="quickLink">Version</a></li><li><a class="quickLink">Copyright</a></li><li><a class="quickLink">Description</a></li><li><a class="quickLink">RunsInPartialBuild</a></li><li><a class="quickLink">IsHidden</a></li></ul></li><li><a class="quickLink">The Plug-In Interface</a><ul class="menu"><li><a class="quickLink">ExecutionPoints</a></li><li><a class="quickLink">Initialize</a></li><li><a class="quickLink">Execute</a></li><li><a class="quickLink">Finalizer and Dispose</a></li></ul></li><li><a class="quickLink">Execution Notes</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.9.30.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20Help%20File%20Builder%20Documentation">Eric Woodruff</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
         HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
         </script> 
-				</div><div id="AdContent" class="column"><script type="text/javascript">
-    function _dmBootstrap(file) {
-        var _dma = document.createElement('script');
-        _dma.type = 'text/javascript';
-        _dma.async = true;
-        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
-    }
-    function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
-    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
-</script>
-<div data-type="ad" data-publisher="ewsoftware.github.io" data-format="728x90" data-zone="SHFB"></div>
+				</div><div id="AdContent" class="column"><iframe src="https://github.com/sponsors/EWSoftware/button" title="Sponsor EWSoftware" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
  
 				</div></div></footer></div><script>$(function(){
 SetDefaultLanguage("cs");

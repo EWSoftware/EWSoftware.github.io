@@ -49,7 +49,7 @@ display for the link's tooltip when the mouse hovers over it.  If not specified,
 the tooltip.</p><h4 id="LangWord" class="quickLinkHeader">Language Keyword Formatting</h4><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle"> </span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-xml">&lt;see langword="null | Nothing | nullptr | static | shared | virtual |
     Overridable | true | True | false | False | abstract | MustInherit |
     sealed | NotInheritable | async | await | async/await | Async | Await |
-    Async/Await | let! | async/let!" /&gt;</code></pre></div></div><p>The language keyword formatting form uses a <span class="code">langword</span> attribute to
+    Async/Await | let! | async/let! | this | Me" /&gt;</code></pre></div></div><p>The language keyword formatting form uses a <span class="code">langword</span> attribute to
 specify a language keyword that will receive special handling when the topic is viewed.  When one of the noted
 keywords is used, the keyword text displayed is based on the language selected in the language filter if the
 presentation style has one.  If a keyword other than one of those listed is specified, it is passed through with
@@ -200,19 +200,7 @@ public static string SeeLangWordExamples()
         var HT_mailLink = document.getElementById("HT_MailLink");
         HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
         </script> 
-				</div><div id="AdContent" class="column"><script type="text/javascript">
-    function _dmBootstrap(file) {
-        var _dma = document.createElement('script');
-        _dma.type = 'text/javascript';
-        _dma.async = true;
-        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
-    }
-    function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
-    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
-</script>
-<div data-type="ad" data-publisher="ewsoftware.github.io" data-format="728x90" data-zone="XMLCommentsGuide"></div>
- 
+				</div><div id="AdContent" class="column"><iframe src="https://github.com/sponsors/EWSoftware/button" title="Sponsor EWSoftware" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe> 
 				</div></div></footer></div><script>$(function(){
 SetDefaultLanguage("cs");
 LoadTocFile(null, null);

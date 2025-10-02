@@ -2,6 +2,8 @@
             This is used by components to indicate that they have finished applying their changes to the given topic
             </td></tr><tr><td><a href="c9c1fe68-39ea-d482-99fe-eb898fc1d6e3.htm">ApplyingChangesEventArgs</a></td><td>
             This is used by components to indicate that they are about to  apply their changes to the given document
+            </td></tr><tr><td><a href="ac837c6b-a27c-e896-603e-4d7995f16b65.htm">BuildComponentConfiguration</a></td><td>
+            This class is used to contain a build component's configuration and enabled state
             </td></tr><tr><td><a href="29d28209-9b7a-3f02-4613-94f08496b13d.htm">BuildComponentCore</a></td><td>
             This is the abstract base class for all build components
             </td></tr><tr><td><a href="1c8680bb-30fd-d8a7-a1b7-b793c9105828.htm">BuildComponentExportAttribute</a></td><td>
@@ -10,6 +12,9 @@
             </td></tr><tr><td><a href="6cc0484a-2d33-0b12-aacf-546f5a0460e9.htm">BuildComponentFactory</a></td><td>
             This is an abstract base class that defines the factory method for build components as well as build
             tool interaction methods.
+            </td></tr><tr><td><a href="7ff2a6ee-21b6-1af6-5c2b-805a67cab03b.htm">ComponentConfigurationDictionary</a></td><td>
+            This dictionary class is used to hold the third party build component configuration properties for a
+            project such as the Code Block Component.
             </td></tr><tr><td><a href="29f3a07f-0322-683e-6e92-2c9b529e3898.htm">ComponentPlacement</a></td><td>
             This is used to define the placement of a build component within a BuildAssembler configuration file
             </td></tr><tr><td><a href="b6e43163-f33b-d760-ac98-688babe0b31e.htm">CopyComponentCore</a></td><td>
@@ -17,7 +22,15 @@
             <span class="code">CopyFromIndexComponent</span></td></tr><tr><td><a href="3aa1938f-4b2f-2949-ea32-bd1f4d1a0702.htm">CopyComponentExportAttribute</a></td><td>
             This is a custom version of the <a href="https://learn.microsoft.com/dotnet/api/system.componentmodel.composition.exportattribute" target="_blank" rel="noopener noreferrer">ExportAttribute</a> that contains metadata for the
             BuildAssembler copy components.
-            </td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Interfaces</h2><div id="IDICASection"><table id="interfaceList" class="table is-hoverable"><tr><td><a href="f21a75e6-ffd5-4420-d22d-0c1e9444aefe.htm">IBuildComponentMetadata</a></td><td>
+            </td></tr><tr><td><a href="9e57bfbf-e0a9-932d-32af-386ac79df7d0.htm">FileCreatedEventArgs</a></td><td>
+            This event arguments class is used by build components to indicate that they have saved a file of some
+            sort (help content or fragment).  The event handler is responsible for figuring out what to do with the
+            event.
+            </td></tr><tr><td><a href="5d37ee4a-9241-4de2-4d5d-d26988b4112d.htm">ProxyCredentials</a></td><td>
+            This class is used to specify credentials for a proxy server.
+            </td></tr><tr><td><a href="1b3a55b4-360a-72ee-c1ae-3b1ccfc1d478.htm">UserCredentials</a></td><td>
+            This class is used to specify user credentials.
+            </td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Interfaces</h2><div id="IDLCASection"><table id="interfaceList" class="table is-hoverable"><tr><td><a href="f21a75e6-ffd5-4420-d22d-0c1e9444aefe.htm">IBuildComponentMetadata</a></td><td>
             This class defines the metadata for a BuildAssembler build component
             </td></tr><tr><td><a href="f53d1aad-a563-8305-a7b7-ff293a5f31ce.htm">ICopyComponentFactory</a></td><td>
             This interface defines the factory method for copy components
@@ -25,26 +38,15 @@
             This class defines the metadata for a BuildAssembler build component
             </td></tr><tr><td><a href="e6f58c2a-e3a0-0a56-a3c6-abdb60ec70f2.htm">IMemberIdUrlResolver</a></td><td>
             This defines the interface used to resolve an API member ID to an online help website URL
-            </td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Enumerations</h2><div id="IDMCASection"><table id="enumerationList" class="table is-hoverable"><tr><td><a href="61a608d7-d80b-714d-4a5a-28478d98dff1.htm">PlacementAction</a></td><td>
+            </td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Enumerations</h2><div id="IDPCASection"><table id="enumerationList" class="table is-hoverable"><tr><td><a href="61a608d7-d80b-714d-4a5a-28478d98dff1.htm">PlacementAction</a></td><td>
             This enumeration defines the build component configuration file placement action values
-            </td></tr></table></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Classes</a></li><li><a class="quickLink">Interfaces</a></li><li><a class="quickLink">Enumerations</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.3.22.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
+            </td></tr></table></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Classes</a></li><li><a class="quickLink">Interfaces</a></li><li><a class="quickLink">Enumerations</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.9.30.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20Help%20File%20Builder%20Documentation">Eric Woodruff</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
         HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
         </script> 
-				</div><div id="AdContent" class="column"><script type="text/javascript">
-    function _dmBootstrap(file) {
-        var _dma = document.createElement('script');
-        _dma.type = 'text/javascript';
-        _dma.async = true;
-        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
-    }
-    function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
-    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
-</script>
-<div data-type="ad" data-publisher="ewsoftware.github.io" data-format="728x90" data-zone="SHFB"></div>
+				</div><div id="AdContent" class="column"><iframe src="https://github.com/sponsors/EWSoftware/button" title="Sponsor EWSoftware" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
  
 				</div></div></footer></div><script>$(function(){
 SetDefaultLanguage("cs");

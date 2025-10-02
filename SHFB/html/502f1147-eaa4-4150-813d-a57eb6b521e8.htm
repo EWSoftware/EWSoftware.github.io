@@ -84,12 +84,12 @@ property was added to the <span class="code">IBuildAssembler</span> interface.</
 contained duplicate values.  The <span class="code">MessageLevel.Ignore</span> enumeration value was removed as it
 was unused.  The <span class="code">MessageLevel</span> enumeration was also moved to the
 <span class="code">Sandcastle.Core</span> namespace so build components will need to add a <span class="code">using</span>
-statement for it if they log messages.</p></li><li><p>Added <a href="6e83169b-165a-75c8-b78f-a762ae36a965.htm">BuildAssemblerConfigurationFile</a>
-and <a href="8346e7fb-71cb-0fb5-73a0-0029ec307672.htm">BuildAssemblerManifestFile</a>
+statement for it if they log messages.</p></li><li><p>Added <a href="bb9a14a7-a38c-7e46-101d-f97c8c7e94e9.htm">BuildAssemblerConfigurationFile</a>
+and <a href="a4e6c338-1471-1136-36d7-c4f542150ba3.htm">BuildAssemblerManifestFile</a>
 properties to <span class="code">BuildProcess</span>.  These should be used in place of the hard-coded
 <em>sandcastle.config</em> and <em>manifest.xml</em> filenames.</p></li><li><p>Removed the Sandcastle HTML Extract tool and moved the code into the build engine.  The
-related <em>ExtractHtmlInfo.proj</em> template was removed.</p></li><li><p>A new <a href="c2279949-ec10-1b82-f1ad-bb738aa495b5.htm">HtmlExtractTool</a>
-property was added to the build engine to allow plug-ins to adjust how the tool runs.</p></li><li><p>Removed the Open XML file generator task and moved the code into the build engine.  The related
+related <em>ExtractHtmlInfo.proj</em> template was removed.</p></li><li><p>A new <span class="code">BuildProcess.HtmlExtractTool</span> property was added to the build
+engine to allow plug-ins to adjust how the tool runs.</p></li><li><p>Removed the Open XML file generator task and moved the code into the build engine.  The related
 <em>BuildOpenXmlFile.proj</em> template was removed.</p></li><li><p>Removed the markdown generator task and moved the code into the build engine.  The related
 <em>GenerateMarkdownContent.proj</em> template was removed.</p></li><li><p> Removed generation of the website keyword index file (<em>WebKI.xml</em>) file as
 it is not longer used anywhere.</p></li><li><p>Update the IntelliSense build component to include remarks elements.  These are shown by
@@ -107,24 +107,13 @@ packages at a later date.</p></li><li><p>The presentation style project template
 package.  Updated presentation style project templates will be added to a future release.</p></li><li><p>Due to a breaking change in the version of MSBuild deployed with Visual Studio 2022 17.3, the
 standalone GUI is restricted to using a version of MSBuild for Visual Studio 2017, 2019, or a version of 2022
 less than 17.3.  If you do not have Visual Studio 2017 or 2019 installed, install the related version of the
-build tools instead.  See the installation instructions for a link.</p></li></ul></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="078cc1c7-7995-431e-bf9c-8813becbe8df.htm">Version History</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Help 1 (CHM) and Help Viewer (MSHC) Support Deprecated</a></li><li><a class="quickLink">Presentation Styles</a><ul class="menu"><li><a class="quickLink">General Changes</a></li><li><a class="quickLink">Default2022 Presentation Style</a></li><li><a class="quickLink">Open XML Presentation Style</a></li><li><a class="quickLink">Markdown Presentation Style</a></li><li><a class="quickLink">VS2010 and VS2013 Presentation Styles</a></li></ul></li><li><a class="quickLink">Build Components and Tools</a></li><li><a class="quickLink">Sandcastle Help File Builder</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.3.22.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
+build tools instead.  See the installation instructions for a link.</p></li></ul></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="078cc1c7-7995-431e-bf9c-8813becbe8df.htm">Version History</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Help 1 (CHM) and Help Viewer (MSHC) Support Deprecated</a></li><li><a class="quickLink">Presentation Styles</a><ul class="menu"><li><a class="quickLink">General Changes</a></li><li><a class="quickLink">Default2022 Presentation Style</a></li><li><a class="quickLink">Open XML Presentation Style</a></li><li><a class="quickLink">Markdown Presentation Style</a></li><li><a class="quickLink">VS2010 and VS2013 Presentation Styles</a></li></ul></li><li><a class="quickLink">Build Components and Tools</a></li><li><a class="quickLink">Sandcastle Help File Builder</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.9.30.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20Help%20File%20Builder%20Documentation">Eric Woodruff</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
         HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
         </script> 
-				</div><div id="AdContent" class="column"><script type="text/javascript">
-    function _dmBootstrap(file) {
-        var _dma = document.createElement('script');
-        _dma.type = 'text/javascript';
-        _dma.async = true;
-        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
-    }
-    function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
-    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
-</script>
-<div data-type="ad" data-publisher="ewsoftware.github.io" data-format="728x90" data-zone="SHFB"></div>
+				</div><div id="AdContent" class="column"><iframe src="https://github.com/sponsors/EWSoftware/button" title="Sponsor EWSoftware" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
  
 				</div></div></footer></div><script>$(function(){
 SetDefaultLanguage("cs");

@@ -12,7 +12,7 @@ in the Project Explorer.  In the context menu, select <strong>Add Documentation 
 source</em> is a file such as an assembly or a Visual Studio solution or project from which information will be
 extracted to produce API documentation.  For this demo, navigate to the help file builder folder
 (typically <em>C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder</em>) and select the
-<em>SandcastleBuilder.WPF.dll</em> assembly.</p><article class="message is-info"><div class="message-header"><p><span class="icon"><i class="fa fa-info-circle"></i></span>  Tip</p></div><div class="message-body"><p>When selecting either an assembly or an XML comments file, the help file builder will
+<em>.\Tools\Sandcastle.Platform.Windows.dll</em> assembly.</p><article class="message is-info"><div class="message-header"><p><span class="icon"><i class="fa fa-info-circle"></i></span>  Tip</p></div><div class="message-body"><p>When selecting either an assembly or an XML comments file, the help file builder will
 automatically add the partner file for you (i.e. the XML comments file for the like-named assembly or the assembly
 for the like-named comments file).  Multiple files can also be selected and added in one go or dragged from Windows
 Explorer and dropped on the Documentation Sources node.</p></div></article></li><li><p>Now we will add a reference assembly to the project.  <em>References</em> are
@@ -21,7 +21,7 @@ necessary to create inherited member information for the documented classes but 
 the API documentation.  Right click on the <strong>References</strong> node and select <strong>Add File/Project Reference</strong>.
 For this demo, navigate to the help file builder folder (typically
 <em>C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder</em>)  and select the
-<em>SandcastleBuilder.Utils.dll</em> assembly.</p><article class="message is-info"><div class="message-header"><p><span class="icon"><i class="fa fa-info-circle"></i></span>  Tip</p></div><div class="message-body">
+<em>.\Tools\Sandcastle.Core.dll</em> assembly.</p><article class="message is-info"><div class="message-header"><p><span class="icon"><i class="fa fa-info-circle"></i></span>  Tip</p></div><div class="message-body">
 	  <p>Given that solutions and projects are supported as
 documentation sources, you may find it easier to add them as documentation
 sources instead of the assemblies, comments, and references that they contain.
@@ -50,24 +50,13 @@ welcome topic for some general information on adding and managing conceptual con
 <a href="3d4edd2d-7883-4508-b9d2-bd7b4d848b0d.htm">Conceptual Content</a> topic and its subtopics for more specific information
 on conceptual content.  See the <strong>Sandcastle MAML Guide</strong> help file for more information on
 the MAML elements that are used to create conceptual topic files.</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Next Steps</h2><div id="IDDABSection"><p>Now that you have created and built your first project, explore the other sections and topics in the
-help file to learn more about the other features available in the help file builder.</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="b772e00e-1705-4062-adb6-774826ce6700.htm">Getting Started</a></div><div><a href="c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm">Enabling and Using XML Comments</a></div><div><a href="e12c2b9f-18c7-4718-850b-ac3c2e293672.htm">Solution/Project Explorer Window</a></div><div><a href="e32086c6-de17-4e54-a746-1ac80bf0c45a.htm">Project Properties Window</a></div><div><a href="1aea789d-b226-4b39-b534-4c97c256fac8.htm">FAQ</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Prerequisites</a></li><li><a class="quickLink">New Projects</a></li><li><a class="quickLink">Creating a Brand New Project</a></li><li><a class="quickLink">Next Steps</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.3.22.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
+help file to learn more about the other features available in the help file builder.</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="b772e00e-1705-4062-adb6-774826ce6700.htm">Getting Started</a></div><div><a href="c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm">Enabling and Using XML Comments</a></div><div><a href="e12c2b9f-18c7-4718-850b-ac3c2e293672.htm">Solution/Project Explorer Window</a></div><div><a href="e32086c6-de17-4e54-a746-1ac80bf0c45a.htm">Project Properties Window</a></div><div><a href="1aea789d-b226-4b39-b534-4c97c256fac8.htm">FAQ</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Prerequisites</a></li><li><a class="quickLink">New Projects</a></li><li><a class="quickLink">Creating a Brand New Project</a></li><li><a class="quickLink">Next Steps</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.9.30.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20Help%20File%20Builder%20Documentation">Eric Woodruff</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
         HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
         </script> 
-				</div><div id="AdContent" class="column"><script type="text/javascript">
-    function _dmBootstrap(file) {
-        var _dma = document.createElement('script');
-        _dma.type = 'text/javascript';
-        _dma.async = true;
-        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
-    }
-    function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
-    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
-</script>
-<div data-type="ad" data-publisher="ewsoftware.github.io" data-format="728x90" data-zone="SHFB"></div>
+				</div><div id="AdContent" class="column"><iframe src="https://github.com/sponsors/EWSoftware/button" title="Sponsor EWSoftware" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
  
 				</div></div></footer></div><script>$(function(){
 SetDefaultLanguage("cs");

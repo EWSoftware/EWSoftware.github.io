@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html ><html lang="en-US"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.css" /><link rel="stylesheet" href="../css/font-awesome.min.css" /><link rel="stylesheet" href="../css/presentationStyle.css" /><link rel="stylesheet" href="../css/vs.min.css" /><script src="../scripts/jquery-3.5.1.min.js"></script><script src="../scripts/clipboard.min.js"></script><script src="../scripts/highlight.min.js"></script><script src="../scripts/presentationStyle.js"></script><title>IBuildProcess Properties</title><meta name="Title" content="Properties" /><meta name="Help.Id" content="Properties.T:Sandcastle.Core.BuildEngine.IBuildProcess" /><meta name="Help.ContentType" content="Reference" /><meta name="container" content="Sandcastle.Core.BuildEngine" /><meta name="guid" content="2cea20c7-55d0-1b84-158a-210e2b8ca157" /><meta name="tocFile" content="../toc/IDDE4.xml" /></head><body><div class="fixedLayout"><div id="Header" class="fixedHeader"><div class="pageHeader level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div class="level-item"><a target="_blank" rel="noopener noreferrer" href="https://github.com/EWSoftware/SHFB"><img alt="Sandcastle Help File Builder" style="height: 69px;" src="../icons/Sandcastle.jpg" /></a></div><div id="DocumentationTitle" class="level-item">Sandcastle Help File Builder Documentation</div></div><div id="LangFilterSearchContainer" class="level-right"><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a><a class="dropdown-item languageFilterItem" data-languageId="vb">VB</a><a class="dropdown-item languageFilterItem" data-languageId="cpp">C++</a><a class="dropdown-item languageFilterItem" data-languageId="fs">F#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></div><div class="fixedContent"><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div id="ContentContainer" class="columns pl-5 pr-5 fixedContent"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu" /></nav></div><div id="Resizer" class="is-hidden"></div><div id="TopicContent" class="column content is-7"><h1>IBuild<wbr />Process Properties</h1><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Properties</h2><div id="IDADASection"><table id="PropertyList" class="table is-hoverable"><tr><td><a href="bb9a14a7-a38c-7e46-101d-f97c8c7e94e9.htm">BuildAssemblerConfigurationFile</a></td><td>
+            This read-only property is used to get the name of the BuildAssembler configuration file
+            </td></tr><tr><td><a href="a4e6c338-1471-1136-36d7-c4f542150ba3.htm">BuildAssemblerManifestFile</a></td><td>
+            This read-only property is used to get the name of the BuildAssembler topic manifest file
+            </td></tr><tr><td><a href="7f5149ce-83c4-97d5-b985-867d1dd89fa3.htm">CancellationToken</a></td><td>
+            This is used to get or set the cancellation token for the build if running as a task
+            </td></tr><tr><td><a href="ca5e947e-c10b-b0db-23ef-2b92acdf6152.htm">CommentsFiles</a></td><td>
+            This read-only property is used to get the XML comments files collection
+            </td></tr><tr><td><a href="2c2cc737-3ac5-2cdc-e4b4-66525b65e37a.htm">ConceptualContent</a></td><td>
+            This read-only property is used to get the conceptual content settings in effect for the build
+            </td></tr><tr><td><a href="955a2fe0-6598-4b34-7699-5181a2dfe95a.htm">CurrentBuildStep</a></td><td>
+            This read-only property is used to get the current build step
+            </td></tr><tr><td><a href="a09a120a-a173-092f-e5d9-a69f9f726146.htm">CurrentFormat</a></td><td>
+            This read-only property is used to get the current help file format being generated
+            </td></tr><tr><td><a href="05a6a1d6-2229-3df4-f087-f9df96c61b45.htm">CurrentProject</a></td><td>
+            This read-only property is used to get the current project being used for the build
+            </td></tr><tr><td><a href="4e195e75-c173-15b8-2694-5d29a272002b.htm">DefaultTopicFile</a></td><td>
+            This read-only property is used to get the filename of the default topic as determined by the build
+            engine.
+            </td></tr><tr><td><a href="5f9399fd-9d0b-3da0-7744-ed159d2c3351.htm">FrameworkReflectionDataFolder</a></td><td>
+            This read-only property is used to get the name of the folder that contains the reflection data for
+            the selected framework platform and version (.NETFramework 4., .NETCore 4.5, Silverlight 5.0, etc.).
+            </td></tr><tr><td><a href="64dd8056-588c-4a55-10ac-923686f5da73.htm">Help1CompilerFolder</a></td><td>
+            This read-only property is used to get the name of the HTML Help 1 compiler folder determined by the
+            build process.
+            </td></tr><tr><td><a href="7e228787-6f59-e654-1461-2f0804952cf3.htm">Help1Files</a></td><td>
+            This read-only property is used to get a list of the HTML Help 1 (CHM) files that were built
+            </td></tr><tr><td><a href="6f0c2835-60b7-d6ca-da64-335a92df6360.htm">HelpFormatOutputFolders</a></td><td>
+            This read-only property returns a collection of the output folders specific to each help file format
+            produced by the build.
+            </td></tr><tr><td><a href="a98cf4ed-26e0-501c-c8e2-f2e3c88ce87b.htm">HelpViewerFiles</a></td><td>
+            This read-only property is used to get a list of the MS Help Viewer (MSHC) files that were built
+            </td></tr><tr><td><a href="c3b6c480-c11b-b2ad-dd5f-95311e4bf91f.htm">HtmlExtractHelp1Folder</a></td><td>
+            This read-only property is used to get the Help 1 folder for the title and keyword HTML extract tool
+            during the <a href="c78fe739-3621-a93a-11d7-a3f146320aea.htm">ExtractingHtmlInfo</a> build step.
+            </td></tr><tr><td><a href="8c337c29-7067-9934-f169-91ad7b14954d.htm">HtmlExtractLocalizedFolder</a></td><td>
+            This property is used to get or set the localized folder for the title and keyword HTML extract tool
+            during the <a href="c78fe739-3621-a93a-11d7-a3f146320aea.htm">ExtractingHtmlInfo</a> build step.
+            </td></tr><tr><td><a href="8a616104-a05a-ce70-6d39-ac24ebca70ad.htm">InheritedDocsReflectionFiles</a></td><td>
+            This read-only property provides access to the generate inherited documentation tool's reflection
+            data files during the <a href="c78fe739-3621-a93a-11d7-a3f146320aea.htm">GenerateInheritedDocumentation</a> build step.
+            </td></tr><tr><td><a href="bd14ac67-2c5e-e79b-77c5-9c335754f3b0.htm">Language</a></td><td>
+            This read-only property returns the language used for resource items, etc.
+            </td></tr><tr><td><a href="bfab9fcd-4242-1d37-a086-17fb22a8f581.htm">LogFilename</a></td><td>
+            This read-only property is used to get the name of the log file used for saving the build progress
+            messages.
+            </td></tr><tr><td><a href="27ce5159-86db-813a-37cd-a0e0ec787c28.htm">MarkdownFiles</a></td><td>
+            This read-only property is used to get a list of the Markdown files that were built
+            </td></tr><tr><td><a href="b37476a1-586b-4437-99e8-e1e9e29c3c23.htm">OpenXmlFiles</a></td><td>
+            This read-only property is used to get a list of the Open XML files that were built
+            </td></tr><tr><td><a href="7c0bb180-e264-07e9-3551-5ddb1df21cb0.htm">OutputFolder</a></td><td>
+            This read-only property is used to get the output folder where the log file and help file can be
+            found after the build process has finished.
+            </td></tr><tr><td><a href="12d2cf0c-9797-c67a-1678-1e9cd0380ac8.htm">PresentationStyle</a></td><td>
+            This read-only property is used to get the presentation instance being used by the build process
+            </td></tr><tr><td><a href="bd5f7750-1d76-a699-4aeb-b97cb96cfdc2.htm">ProgressReportProvider</a></td><td>
+            This is used to get or set the progress report provider
+            </td></tr><tr><td><a href="3cd19a0b-542f-20ad-d087-d99c652abe9b.htm">ProjectFilename</a></td><td>
+            This read-only property is used to get the project filename without the folder
+            </td></tr><tr><td><a href="cf7ae912-69ec-451e-5e0f-be6b807bfea0.htm">ProjectFolder</a></td><td>
+            This read-only property returns the project folder name
+            </td></tr><tr><td><a href="e2e9587a-de70-0d31-ab65-3f9f1bbf1f7c.htm">ReferencedNamespaces</a></td><td>
+            This read-only property is used to get a hash set used to contain a list of namespaces referenced by
+            the project reflection data files, project XML comments files, and base framework XML comments files.
+            </td></tr><tr><td><a href="c5eaccb7-6b5b-6eb1-dc77-5c4ba11ea5f9.htm">ReflectionInfoFilename</a></td><td>
+            This read-only property is used to get the name of the reflection information file
+            </td></tr><tr><td><a href="db604f5c-653a-f307-a9f3-074504b88ad5.htm">ResolvedHelpTitle</a></td><td>
+            This read-only property is used to get the <a href="aa7a5a92-c639-605d-f9b7-25b144c87281.htm">HelpTitle</a> project property
+            value with all substitution tags it contains, if any, resolved to actual values.
+            </td></tr><tr><td><a href="e9e23ae3-e922-724d-fc31-9294c3492cf2.htm">SubstitutionTags</a></td><td>
+            This read-only property is used to get the substitution tag handler
+            </td></tr><tr><td><a href="bc8ceeba-2bcf-153a-8743-64116f12814f.htm">SuppressApiFilter</a></td><td>
+            This controls whether or not the API filter is suppressed
+            </td></tr><tr><td><a href="37556c39-41a0-43e0-0c88-35233c472f5f.htm">WebsiteFiles</a></td><td>
+            This read-only property is used to get a list of the website files that were built
+            </td></tr><tr><td><a href="f539fd05-9308-c373-270e-898b52509589.htm">WorkingFolder</a></td><td>
+            This read-only property is used to get the name of the working files folder
+            </td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Reference</h4><div><a href="9f4bf042-9f4c-c1fd-511a-49587d7c3802.htm">IBuildProcess Interface</a></div><div><a href="23f15fba-5e53-32eb-af77-1a2e8c8f2ffa.htm">Sandcastle.Core.BuildEngine Namespace</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Properties</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.9.30.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20Help%20File%20Builder%20Documentation">Eric Woodruff</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div><div id="AdContent" class="column"><iframe src="https://github.com/sponsors/EWSoftware/button" title="Sponsor EWSoftware" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
+ 
+				</div></div></footer></div><script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+});</script></body></html>
