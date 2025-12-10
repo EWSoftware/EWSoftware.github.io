@@ -5,7 +5,7 @@ All take a stored procedure name as the constructor parameter and have an option
 <span class="code">ParameterNamePrefix</span> property that allows you to specify a common parameter name prefix
 applied to its parameters.  If specified, it will override any corresponding parameter name prefix defined on the
 data context.  If set to an empty string, it will effectively remove the prefix from parameters for the stored
-procedure even if one is defined on the data context.</p></div></article><ul class="is-hidden-tablet"><li><a href="#NeverTrack">NeverTrackAttribute</a></li><li><a href="#ParameterName">ParameterNameAttribute</a></li><li><a href="#Ignore">IgnoreAttribute</a></li><li><a href="#LoadAll">LoadAllStoredProcedureAttribute</a></li><li><a href="#LoadByKey">LoadByKeyStoredProcedureAttribute</a></li><li><a href="#Insert">InsertEntityStoredProcedureAttribute</a></li><li><a href="#Update">UpdateEntityStoredProcedureAttribute</a></li><li><a href="#Delete">DeleteEntityStoredProcedureAttribute</a></li></ul></div><h2 id="NeverTrack" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>NeverTrackAttribute</h2><div id="IDBABSection"><p>If change tracking is enabled on a data context, the stored procedure extension methods that load,
+procedure even if one is defined on the data context.</p></div></article><ul class="is-hidden-tablet"><li><a href="#nevertrackattribute">NeverTrackAttribute</a></li><li><a href="#parameternameattribute">ParameterNameAttribute</a></li><li><a href="#ignoreattribute">IgnoreAttribute</a></li><li><a href="#loadallstoredprocedureattribute">LoadAllStoredProcedureAttribute</a></li><li><a href="#loadbykeystoredprocedureattribute">LoadByKeyStoredProcedureAttribute</a></li><li><a href="#insertentitystoredprocedureattribute">InsertEntityStoredProcedureAttribute</a></li><li><a href="#updateentitystoredprocedureattribute">UpdateEntityStoredProcedureAttribute</a></li><li><a href="#deleteentitystoredprocedureattribute">DeleteEntityStoredProcedureAttribute</a></li></ul></div><h2 id="nevertrackattribute" class="quickLinkHeader">NeverTrackAttribute</h2><div id="IDBABSection"><p>If change tracking is enabled on a data context, the stored procedure extension methods that load,
 insert, update, and delete entities will automatically adjust the entity state with the change tracker.  This
 attribute is used to mark an entity type as never tracked so that the stored procedure extension methods do not
 alter the change tracking state for it.  This is useful for entities that are not modified and/or do not
@@ -19,7 +19,7 @@ public sealed class StateCode
 
     // The state description
     public string StateDesc { get; set; }
-}</code></pre></div></div></div><h2 id="ParameterName" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>ParameterNameAttribute</h2><div id="IDCABSection"><p>Similar to the <span class="code">ColumnAttribute</span>, a <span class="code">ParameterNameAttribute</span>
+}</code></pre></div></div></div><h2 id="parameternameattribute" class="quickLinkHeader">ParameterNameAttribute</h2><div id="IDCABSection"><p>Similar to the <span class="code">ColumnAttribute</span>, a <span class="code">ParameterNameAttribute</span>
 can be applied to a property to specify the stored procedure parameter name to use for it.  If specified along
 with a <span class="code">ColumnAttribute</span>, the <span class="code">ParameterNameAttribute</span> will take
 precedence.  This is useful when the name in the result set differs from the parameter name as shown in the
@@ -32,7 +32,7 @@ example below.</p><div class="codeSnippet"><div class="codeHeader"><span class="
     .
     .
     .
-}</code></pre></div></div></div><h2 id="Ignore" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>IgnoreAttribute</h2><div id="IDDABSection"><p>Unlike entities loaded by Entity Framework, the stored procedure extension methods do not require
+}</code></pre></div></div></div><h2 id="ignoreattribute" class="quickLinkHeader">IgnoreAttribute</h2><div id="IDDABSection"><p>Unlike entities loaded by Entity Framework, the stored procedure extension methods do not require
 a one to one mapping between the result set columns and entity properties.  As such, additional properties can
 be added to the entities that do not appear in the result set and vice versa.  This attribute can be applied to
 entity properties to indicate whether or not they should be included for inserts and/or updates.  It takes two
@@ -82,14 +82,14 @@ var stateCodes = dc.LoadAll&lt;StateCode&gt;().ToList();</code></pre></div></div
 public sealed class StateCode : ObservableValidator
 {
     ...
-}</code></pre></div></div></div><h2 id="LoadAll" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>LoadAllStoredProcedureAttribute</h2><div id="IDFABSection"><p>This attribute can be applied to an entity type to define a stored procedure used to load them that
-takes no parameters.  The 
+}</code></pre></div></div></div><h2 id="loadallstoredprocedureattribute" class="quickLinkHeader">LoadAllStoredProcedureAttribute</h2><div id="IDEABSection"><p>This attribute can be applied to an entity type to define a stored procedure used to load them that
+takes no parameters.  The
 <a href="486c722d-58de-ef79-c25c-c0252fbf963c.htm">LoadAll<span id="LSTA7B1191_0" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>TEntity<span id="LSTA7B1191_1" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span></a>
 extension method uses this attribute to determine the stored procedure it should call.  See the
 <span class="code">IgnoreAttribute</span> section above for an example.</p><p>If the attribute is omitted, the stored procedure name is assumed to be the same as the entity type
 name without the <a href="0ba6159a-1cff-e696-254f-9c220ab1a4ce.htm">ResultSetSuffix</a>
-property value.</p></div><h2 id="LoadByKey" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>LoadByKeyStoredProcedureAttribute</h2><div id="IDGABSection"><p>This attribute can be applied to an entity type to define a stored procedure used to load them
-using the values for the key properties defined on the type.  The 
+property value.</p></div><h2 id="loadbykeystoredprocedureattribute" class="quickLinkHeader">LoadByKeyStoredProcedureAttribute</h2><div id="IDFABSection"><p>This attribute can be applied to an entity type to define a stored procedure used to load them
+using the values for the key properties defined on the type.  The
 <a href="c2e4dd0d-2461-de63-1fbe-9995579f0dc4.htm">LoadByKey<span id="LSTA7B1191_2" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>TEntity<span id="LSTA7B1191_3" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span></a>
 extension method uses this attribute to determine the stored procedure it should call.  The <span class="code">PrimaryKey</span>
 attribute on the type or the <span class="code">Key</span> attributes on the properties are used to determine the
@@ -136,22 +136,22 @@ dataContext.UpdateEntity(productInfo);
 dataContext.DeleteEntity(productInfo);
 
 // Since change tracking is enabled, we could also have just submitted the changes:
-// dataContext.SubmitChanges&lt;ProductInfo&gt;();</code></pre></div></div></div><h2 id="Insert" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>InsertEntityStoredProcedureAttribute</h2><div id="IDHABSection"><p>This attribute is used to specify the stored procedure used to insert entities for the associated
+// dataContext.SubmitChanges&lt;ProductInfo&gt;();</code></pre></div></div></div><h2 id="insertentitystoredprocedureattribute" class="quickLinkHeader">InsertEntityStoredProcedureAttribute</h2><div id="IDGABSection"><p>This attribute is used to specify the stored procedure used to insert entities for the associated
 type.  The stored procedure should have one or more parameters representing all of the properties
 on the entity type except those marked with an <span class="code">IgnoreAttribute</span> for inserts.  It should
 not return a value or a result set.  Parameters related to properties that are part of the primary key
 or are marked with the <span class="code">TimestampAttribute</span> are defined as input/out parameters.  All
-other parameters are input only.  See the <span class="code">LoadByKeyAttribute</span> section above for an example.</p></div><h2 id="Update" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>UpdateEntityStoredProcedureAttribute</h2><div id="IDIABSection"><p>This attribute is used to specify the stored procedure used to update entities for the associated
+other parameters are input only.  See the <span class="code">LoadByKeyAttribute</span> section above for an example.</p></div><h2 id="updateentitystoredprocedureattribute" class="quickLinkHeader">UpdateEntityStoredProcedureAttribute</h2><div id="IDHABSection"><p>This attribute is used to specify the stored procedure used to update entities for the associated
 type.  The stored procedure should have one or more parameters representing all of the properties
 on the entity type except those marked with an <span class="code">IgnoreAttribute</span> for updates.  It should
 not return a value or a result set.  Parameters marked with the <span class="code">TimestampAttribute</span> are
 defined as input/out parameters.  All other parameters are input only.  See the <span class="code">LoadByKeyAttribute</span>
-section above for an example.</p></div><h2 id="Delete" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>DeleteEntityStoredProcedureAttribute</h2><div id="IDJABSection"><p>This attribute is used to specify the stored procedure used to delete entities for the associated
+section above for an example.</p></div><h2 id="deleteentitystoredprocedureattribute" class="quickLinkHeader">DeleteEntityStoredProcedureAttribute</h2><div id="IDIABSection"><p>This attribute is used to specify the stored procedure used to delete entities for the associated
 type.  The stored procedure should have one or more parameters representing the key columns on the entity type
 identified with a <span class="code">PrimaryKeyAttribute</span> or one or more properties with a
 <span class="code">KeyAttribute</span> or defined by the data context.  It should not return a value or a result
 set.  All parameters are input only.  See the <span class="code">LoadByKeyAttribute</span> section above for an
-example.</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="48c2006f-d738-40a1-a486-d53fbdf7208c.htm">Welcome</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">NeverTrackAttribute</a></li><li><a class="quickLink">ParameterNameAttribute</a></li><li><a class="quickLink">IgnoreAttribute</a></li><li><a class="quickLink">LoadAllStoredProcedureAttribute</a></li><li><a class="quickLink">LoadByKeyStoredProcedureAttribute</a></li><li><a class="quickLink">InsertEntityStoredProcedureAttribute</a></li><li><a class="quickLink">UpdateEntityStoredProcedureAttribute</a></li><li><a class="quickLink">DeleteEntityStoredProcedureAttribute</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://github.com/EWSoftware/EntityFrameworkUtils" target="_blank" rel="noopener noreferrer">[v2025.11.12.0] Copyright © 2024-2025, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
+example.</p></div><h2 id="see-also" class="quickLinkHeader">See Also</h2><div id="IDJABSection"><p><strong>Other Resources</strong><br /><a href="48c2006f-d738-40a1-a486-d53fbdf7208c.htm">Welcome</a></p></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">NeverTrackAttribute</a></li><li><a class="quickLink">ParameterNameAttribute</a></li><li><a class="quickLink">IgnoreAttribute</a></li><li><a class="quickLink">LoadAllStoredProcedureAttribute</a></li><li><a class="quickLink">LoadByKeyStoredProcedureAttribute</a></li><li><a class="quickLink">InsertEntityStoredProcedureAttribute</a></li><li><a class="quickLink">UpdateEntityStoredProcedureAttribute</a></li><li><a class="quickLink">DeleteEntityStoredProcedureAttribute</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://github.com/EWSoftware/EntityFrameworkUtils" target="_blank" rel="noopener noreferrer">[v2025.11.12.0] Copyright © 2024-2025, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=EWSofware%20Entity%20Framework%20Utilities%20Library%20Documentation">Eric@EWoodruff.us</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
@@ -163,13 +163,5 @@ example.</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" t
 SetDefaultLanguage("cs");
 LoadTocFile(null, null);
 InitializeQuickLinks();
-
-$(".toggleSection" ).click(function () {
-    SectionExpandCollapse(this);
-});
-
-$(".toggleSection").keypress(function () {
-    SectionExpandCollapseCheckKey(this, event)
-});
 hljs.highlightAll();
 });</script></body></html>

@@ -4,90 +4,80 @@ of entity classes and a data context suitable for use with Entity Framework.  Th
 the data annotation attributes and extension methods in this library to allow for similar functionality related
 to stored procedures.  Some review and rework of the converted types and the code that uses them is still needed
 but it is a quick way to get up and running with Entity Framework without having to completely rewrite the LINQ
-to SQL data access code especially if you made significant use of stored procedures with it.</p><ul class="is-hidden-tablet"><li><a href="#UsingTheConverter">Using the Converter</a></li><li><a href="#ToDoNotes">To Do Notes</a></li><li><a href="#OtherReviewItems">Other Areas Needing Review</a></li><li><a href="#Examples">Example Conversions</a></li></ul></div><h2 id="UsingTheConverter" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Using the Converter</h2><div id="IDBABSection"><p>The conversion tool is a .NET 8 command line utility.  The following command line options are
-available:</p><p><span class="command">DbmlToEntityFrameworkConverter.exe <em>PathToDbmlFile</em> 
-<em>OutputFolder</em></span><br /><span class="command">[<strong>/contextNamespace:</strong><em>Context.Namespace</em>]
-[<strong>/entityNamespace:</strong><em>Entity.Namespace</em>]</span><br /><span class="command">[<strong>/schema:</strong><em>SchemaName</em>]
-[<strong>/paramPrefix:</strong><em>ParameterPrefix</em>]</span><br /><span class="command">[<strong>/useFieldKeyword</strong>] [<strong>/useCommunityMvvm</strong>] 
-[<strong>/nullableRefTypes</strong>] [<strong>/ef7orLater</strong>]</span></p><ul><li><p><em>PathToDbmlFile</em> is required and specifies the DBML file to convert.</p></li><li><p><em>OutputFolder</em> is required and specifies where the generated files
-will be stored.  It is suggested these be placed in a folder separate from any existing source files to prevent
-accidentally overwriting existing project code.  The converted files can be merged into the main project as they
-are reviewed.</p></li><li><p><em>/contextNamespace:Context.Namespace</em> is optional.  If not
-specified, the context namespace from the DBML file is used if specified or <span class="code">Database</span> if
-not.</p></li><li><p><em>/entityNamespace:Entity.Namespace</em> is optional.  If not specified,
-the entity namespace from the DBML file is used if specified or the context namespace if not.</p></li><li><p><em>/schema:SchemaName</em> is optional.  If not specified,
-<span class="code">dbo</span> is used as the default schema.</p></li><li><p><em>/paramPrefix:ParameterPrefix</em> is optional.  If not specified, no
-common stored procedure parameter prefix is defined.</p></li><li><p><em>/useFieldKeyword</em> is optional (requires C# 13 preview or later).
-If not specified, backing fields will be generated for entity properties that use change tracking.</p></li><li><p><em>/useCommunityMvvm</em> is optional.  If specified, generated entity
-classes that require change tracking will derive from <span class="code">ObservableObject</span> from the
-Community Toolkit MVVM NuGet package.  Values in the entity classes will be marked with the
-<span class="code">ObservableProperty</span> attribute and written out using field syntax.  If using C# 14.0 or
+to SQL data access code especially if you made significant use of stored procedures with it.</p><ul class="is-hidden-tablet"><li><a href="#using-the-converter">Using the Converter</a></li><li><a href="#to-do-notes">To Do Notes</a></li><li><a href="#other-areas-needing-review">Other Areas Needing Review</a></li><li><a href="#example-conversions">Example Conversions</a></li></ul></div><h2 id="using-the-converter" class="quickLinkHeader">Using the Converter</h2><div id="IDBABSection"><p>The conversion tool is a .NET 8 command line utility.  The following command line options are
+available:</p><code>DbmlToEntityFrameworkConverter.exe <em>PathToDbmlFile</em><em>OutputFolder</em>
+[<strong>/contextNamespace:</strong><em>Context.Namespace</em>] [<strong>/entityNamespace:</strong><em>Entity.Namespace</em>]
+[<strong>/schema:</strong><em>SchemaName</em>] [<strong>/paramPrefix:</strong><em>ParameterPrefix</em>]
+[<strong>/useFieldKeyword</strong>] [<strong>/useCommunityMvvm</strong>] [<strong>/nullableRefTypes</strong>]
+[<strong>/ef7orLater</strong>]</code><ul><li><em>PathToDbmlFile</em> is required and specifies the DBML file to convert.</li><li><em>OutputFolder</em> is required and specifies where the generated files will be stored.  It is suggested these be
+placed in a folder separate from any existing source files to prevent accidentally overwriting existing project
+code.  The converted files can be merged into the main project as they are reviewed.</li><li><em>/contextNamespace:Context.Namespace</em> is optional.  If not specified, the context namespace from the DBML file
+is used if specified or <span class="code">Database</span> if not.</li><li><em>/entityNamespace:Entity.Namespace</em> is optional.  If not specified, the entity namespace from the DBML file is
+used if specified or the context namespace if not.</li><li><em>/schema:SchemaName</em> is optional.  If not specified, <span class="code">dbo</span> is used as the default schema.</li><li><em>/paramPrefix:ParameterPrefix</em> is optional.  If not specified, no common stored procedure parameter prefix is
+defined.</li><li><em>/useFieldKeyword</em> is optional (requires C# 13 preview or later).  If not specified, backing fields will be
+generated for entity properties that use change tracking.</li><li><em>/useCommunityMvvm</em> is optional.  If specified, generated entity classes that require change tracking will
+derive from <span class="code">ObservableObject</span> from the Community Toolkit MVVM NuGet package.  Values in the entity classes
+will be marked with the <span class="code">ObservableProperty</span> attribute and written out using field syntax.  If using C# 14.0 or
 later, the code fix in Visual Studio can be used when reviewing the generated code to convert the fields to
-partial properties which you may find more natural to use.</p></li><li><p><em>/nullableRefTypes</em> is optional (requires C# 8 or later).  If not
-specified, defaults will not be added to non-nullable reference types and null forgiving operators will be
-omitted.</p></li><li><p><em>/ef7orLater</em> is optional (requires Entity Framework Core 7.0 or
-later).  This controls how certain elements such as key fields are rendered in the generated code.</p></li></ul><p>The DBML file to convert and the output folder must be the first and second parameters
-respectively.  Optional parameters can appear in any order.</p><p>When conversion is completed, the output folder will contain a data context class file named after
-the DBML file data context and one class file for each entity type in the DBML file.  Table entities will be
-derived from the <a href="ff3871a1-765f-fd48-97be-d85b3a249057.htm">ChangeTrackingEntity</a>
-type from the library.  It implements the necessary <span class="code">INotifyPropertyChanging</span> and
-<span class="code">INotifyPropertyChanged</span> interfaces to support change tracking.  Stored procedure result
-types are simple classes with properties for each column in the result set and no change tracking capabilities.</p></div><h2 id="ToDoNotes" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>To Do Notes</h2><div id="IDCABSection"><p>The generated data context and entity class files will contain various "To Do" notes that may need
+partial properties which you may find more natural to use.</li><li><em>/nullableRefTypes</em> is optional (requires C# 8 or later).  If not specified, defaults will not be added to
+non-nullable reference types and null forgiving operators will be omitted.</li><li><em>/ef7orLater</em> is optional (requires Entity Framework Core 7.0 or later).  This controls how certain elements
+such as key fields are rendered in the generated code.</li></ul><p>The DBML file to convert and the output folder must be the first and second parameters respectively.  Optional
+parameters can appear in any order.</p><p>When conversion is completed, the output folder will contain a data context class file named after the DBML file
+data context and one class file for each entity type in the DBML file.  Table entities will be derived from the
+<a href="ff3871a1-765f-fd48-97be-d85b3a249057.htm">ChangeTrackingEntity</a> type from the library.  It implements the necessary
+<span class="code">INotifyPropertyChanging</span> and <span class="code">INotifyPropertyChanged</span> interfaces to support change tracking.  Stored procedure
+result types are simple classes with properties for each column in the result set and no change tracking capabilities.</p></div><h2 id="to-do-notes" class="quickLinkHeader">To Do Notes</h2><div id="IDCABSection"><p>The generated data context and entity class files will contain various "To Do" notes that may need
 review to fix up issues or add additional code to make the classes usable.  Below is a summary of each of the To
-Do notes that may be seen.</p><dl><dt>TODO: Add or remove using statements as needed</dt><dd><p>The converter adds a default set of using statements to each generated code file.  Remove or
-add to them as necessary.</p></dd><dt>TODO: Check <em>CodeFile.cs</em> for additional code for the
-entity/data context</dt><dd><p>If a code file related to the data context or entity is found in the DBML file's folder, this
+Do notes that may be seen.</p><dl><dt>TODO: Add or remove using statements as needed</dt><dd>The converter adds a default set of using statements to each generated code file.  Remove or
+add to them as necessary.</dd><dt>TODO: Check <em>CodeFile.cs</em> for additional code for the entity/data context</dt><dd>If a code file related to the data context or entity is found in the DBML file's folder, this
 To Do note will be added.  Check the indicated file for additional source code that may need to be added to the
-Entity Framework data context or entity to implement required features.</p></dd><dt>TODO: If you pluralize or otherwise change the entity property names...</dt><dd><p>A commented out section of code is added to the data context's <span class="code">OnModelCreating</span>
+Entity Framework data context or entity to implement required features.</dd><dt>TODO: If you pluralize or otherwise change the entity property names...</dt><dd>A commented out section of code is added to the data context's <span class="code">OnModelCreating</span>
 override that allows keeping the underlying table names the same as their database counterparts if you change
-the related data context table entity property names for them (e.g., pluralizing them).</p></dd><dt>TODO: If necessary define entity relationships here</dt><dd><p>This comment is added to the data context's <span class="code">OnModelCreating</span> override
+the related data context table entity property names for them (e.g., pluralizing them).</dd><dt>TODO: If necessary define entity relationships here</dt><dd>This comment is added to the data context's <span class="code">OnModelCreating</span> override
 as a reminder to define any necessary relationships between the entities.  Currently, any relationships defined
-in the DBML file are only used to add properties to the entity types.</p></dd><dt>TODO: This method has no parameters...</dt><dd><p>This comment is added to data context stored procedure methods that have no parameters and
+in the DBML file are only used to add properties to the entity types.</dd><dt>TODO: This method has no parameters...</dt><dd>This comment is added to data context stored procedure methods that have no parameters and
 return a result set.  Such methods can likely be removed in favor of adding a
 <span class="code">LoadAllStoredProcedureAttribute</span> to the result set entity type and using the
-<span class="code">LoadAll&lt;TEntity&gt;()</span> extension method instead.</p></dd><dt>TODO: This method's parameters match the key on the result set type...</dt><dd><p>This comment is added to data context stored procedure methods that have parameters matching
+<span class="code">LoadAll&lt;TEntity&gt;()</span> extension method instead.</dd><dt>TODO: This method's parameters match the key on the result set type...</dt><dd>This comment is added to data context stored procedure methods that have parameters matching
 the key on the result set entity type.  Such methods can likely be removed in favor of adding a
 <span class="code">LoadByKeyStoredProcedureAttribute</span> to the result set entity type and using the
-<span class="code">LoadByKey&lt;TEntity&gt;()</span> extension method instead.</p></dd><dt>TODO: All of this method's parameters match properties on the result set type....</dt><dd><p>This comment is added to data context stored procedure methods in which all parameters match
+<span class="code">LoadByKey&lt;TEntity&gt;()</span> extension method instead.</dd><dt>TODO: All of this method's parameters match properties on the result set type....</dt><dd>This comment is added to data context stored procedure methods in which all parameters match
 properties on the stored procedure result set entity type.  Such methods can likely be removed in favor of adding
 a <span class="code">LoadByKeyStoredProcedureAttribute</span> to the result set entity type and using the
 <span class="code">LoadByKey&lt;TEntity&gt;()</span> extension method instead if the corresponding properties are
 marked as the primary key.  Note that the properties don't necessarily have to be an actual key, it just satisfies
-the requirements for the extension method to be used.</p></dd><dt>TODO: This method is used to insert entities...</dt><dd><p>This comment is added to data context stored procedure methods that are used to insert a
+the requirements for the extension method to be used.</dd><dt>TODO: This method is used to insert entities...</dt><dd>This comment is added to data context stored procedure methods that are used to insert a
 table entity.  Such methods can likely be removed in favor of adding an
 <span class="code">InsertEntityStoredProcedureAttribute</span> to the entity type and using the
 <span class="code">InsertEntity&lt;TEntity&gt;()</span> or <span class="code">SubmitChanges&lt;TEntity&gt;()</span>
-extension method instead.</p></dd><dt>TODO: This method is used to update entities...</dt><dd><p>This comment is added to data context stored procedure methods that are used to update a
+extension method instead.</dd><dt>TODO: This method is used to update entities...</dt><dd>This comment is added to data context stored procedure methods that are used to update a
 table entity.  Such methods can likely be removed in favor of adding an
 <span class="code">UpdateEntityStoredProcedureAttribute</span> to the entity type and using the
 <span class="code">UpdateEntity&lt;TEntity&gt;()</span> or <span class="code">SubmitChanges&lt;TEntity&gt;()</span>
-extension method instead.</p></dd><dt>TODO: This method is used to delete entities...</dt><dd><p>This comment is added to data context stored procedure methods that are used to delete a
+extension method instead.</dd><dt>TODO: This method is used to delete entities...</dt><dd>This comment is added to data context stored procedure methods that are used to delete a
 table entity.  Such methods can likely be removed in favor of adding a
 <span class="code">DeleteEntityStoredProcedureAttribute</span> to the entity type and using the
 <span class="code">DeleteEntity&lt;TEntity&gt;()</span> or <span class="code">SubmitChanges&lt;TEntity&gt;()</span>
-extension method instead.</p></dd></dl></div><h2 id="OtherReviewItems" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Other Areas Needing Review</h2><div id="IDDABSection"><p>After conversion, any code that edits data using table entities with change tracking will need to
+extension method instead.</dd></dl></div><h2 id="other-areas-needing-review" class="quickLinkHeader">Other Areas Needing Review</h2><div id="IDDABSection"><p>After conversion, any code that edits data using table entities with change tracking will need to
 be reviewed.  Calls to the old LINQ to SQL <span class="code">SubmitChanges</span> method will need changing to
 the Entity Framework <span class="code">SaveChanges</span> method or the library's <span class="code">SubmitChanges</span>
 method if stored procedures were defined to handle the inserts, updates, and deletes.</p><p>Another potential change that may be needed is when enumerating the results of a stored procedure
 call.  The extension methods return an enumerable list and use a data reader.  As such, if two are enumerated at
 the same time, you will need to use <span class="code">ToList()</span> on the outermost enumerable to prevent any
 subsequent simultaneous enumerations from failing due to multiple open data readers.</p><p>Asynchronous versions of all the data context stored procedure related extension methods are
-available.  As such, you may be able to update your code to take advantage of them if so desired.</p></div><h2 id="Examples" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Example Conversions</h2><div id="IDEABSection"><p>The project website contains an example LINQ to SQL application and equivalent Entity Framework
+available.  As such, you may be able to update your code to take advantage of them if so desired.</p></div><h2 id="example-conversions" class="quickLinkHeader">Example Conversions</h2><div id="IDEABSection"><p>The project website contains an example LINQ to SQL application and equivalent Entity Framework
 examples (.NET 8 and .NET 4.8).  The example applications do not do anything useful.  They just contains some
-common test cases for the conversion.</p><ul><li><p><strong>LINQToSQLTestApp</strong> - This is the LINQ to SQL test application.  The
-<em>.\Database</em> folder contains the DBML file used for the test conversion.</p></li><li><p><strong>EntityFrameworkNet48TestApp</strong> - This is the .NET 4.8 Entity Framework
-test application.  The <em>.\Conversion</em> folder contains the data context and entity class files
-as generated by the conversion tool.  The <em>.\Database</em> folder contains the files after they
-have been reviewed and fixed up.  The forms can be compared to the LINQ to SQL versions to see changes made to
-them.</p></li><li><p><strong>EntityFrameworkNet8TestApp</strong> - This is the .NET 8.0 Entity Framework
-test application.  The <em>.\Conversion</em> folder contains the data context and entity class files
-as generated by the conversion tool.  The <em>.\Database</em> folder contains the files after they
-have been reviewed and fixed up.  The forms can be compared to the LINQ to SQL versions to see changes made to
-them.</p></li><li><p><strong>AvaloniaTestApp</strong> - This is a .NET 8.0 Entity Framework
-test application that uses Avalonia and Community Toolkit MVVM.  The <em>.\Conversion</em> folder
-contains the data context and entity class files as generated by the conversion tool.  The
-<em>.\Database</em> folder contains the files after they have been reviewed and fixed up for use
-with the application.</p></li></ul></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="48c2006f-d738-40a1-a486-d53fbdf7208c.htm">Welcome</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Using the Converter</a></li><li><a class="quickLink">To Do Notes</a></li><li><a class="quickLink">Other Areas Needing Review</a></li><li><a class="quickLink">Example Conversions</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://github.com/EWSoftware/EntityFrameworkUtils" target="_blank" rel="noopener noreferrer">[v2025.11.12.0] Copyright © 2024-2025, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
+common test cases for the conversion.</p><ul><li><strong>LINQToSQLTestApp</strong> - This is the LINQ to SQL test application.  The <em>.\Database</em> folder contains the DBML
+file used for the test conversion.</li><li><strong>EntityFrameworkNet48TestApp</strong> - This is the .NET 4.8 Entity Framework test application.  The <em>.\Conversion</em>
+folder contains the data context and entity class files as generated by the conversion tool.  The <em>.\Database</em>
+folder contains the files after they have been reviewed and fixed up.  The forms can be compared to the LINQ to
+SQL versions to see changes made to them.</li><li><strong>EntityFrameworkNet8TestApp</strong> - This is the .NET 8.0 Entity Framework test application.  The <em>.\Conversion</em>
+folder contains the data context and entity class files as generated by the conversion tool.  The <em>.\Database</em>
+folder contains the files after they have been reviewed and fixed up.  The forms can be compared to the LINQ to
+SQL versions to see changes made to them.</li><li><strong>AvaloniaTestApp</strong> - This is a .NET 8.0 Entity Framework test application that uses Avalonia and Community
+Toolkit MVVM.  The <em>.\Conversion</em> folder contains the data context and entity class files as generated by the
+conversion tool.  The <em>.\Database</em> folder contains the files after they have been reviewed and fixed up for use
+with the application.</li></ul></div><h2 id="see-also" class="quickLinkHeader">See Also</h2><div id="IDFABSection"><p><strong>Other Resources</strong><br /><a href="48c2006f-d738-40a1-a486-d53fbdf7208c.htm">Welcome</a></p></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Using the Converter</a></li><li><a class="quickLink">To Do Notes</a></li><li><a class="quickLink">Other Areas Needing Review</a></li><li><a class="quickLink">Example Conversions</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://github.com/EWSoftware/EntityFrameworkUtils" target="_blank" rel="noopener noreferrer">[v2025.11.12.0] Copyright © 2024-2025, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=EWSofware%20Entity%20Framework%20Utilities%20Library%20Documentation">Eric@EWoodruff.us</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
@@ -99,12 +89,4 @@ with the application.</p></li></ul></div><h2 class="quickLinkHeader"><span class
 SetDefaultLanguage("cs");
 LoadTocFile(null, null);
 InitializeQuickLinks();
-
-$(".toggleSection" ).click(function () {
-    SectionExpandCollapse(this);
-});
-
-$(".toggleSection").keypress(function () {
-    SectionExpandCollapseCheckKey(this, event)
-});
 });</script></body></html>

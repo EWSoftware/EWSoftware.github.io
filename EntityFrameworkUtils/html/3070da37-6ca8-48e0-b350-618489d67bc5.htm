@@ -11,9 +11,9 @@ opened temporarily while performing the action and closed again afterwards.</p><
 <span class="code">ExecuteMethodQuery</span> will be added to the change tracker.  Likewise, changes to the
 entities will be tracked and their state updated accordingly when added, updated, or deleted when submitting
 changes to the data context.  If change tracking is not enabled on the data context or the entity is marked with
-the <span class="code">NeverTrackAttribute</span>, they will not be tracked.</p></div></article><ul class="is-hidden-tablet"><li><a href="#MethodStoredProc">MethodStoredProcedureAttribute</a></li><li><a href="#NonQueryMethods">Non-Query Stored Procedure Methods</a></li><li><a href="#QueryMethods">Query Stored Procedure Methods</a></li><li><a href="#AsyncSupport">Differences for the Asynchronous Extension Methods</a></li></ul></div><h2 id="MethodStoredProc" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>MethodStoredProcedureAttribute</h2><div id="IDCABSection"><p>This optional attribute is used to define the stored procedure name that will be called for the
+the <span class="code">NeverTrackAttribute</span>, they will not be tracked.</p></div></article><ul class="is-hidden-tablet"><li><a href="#methodstoredprocedureattribute">MethodStoredProcedureAttribute</a></li><li><a href="#non-query-stored-procedure-methods">Non-Query Stored Procedure Methods</a></li><li><a href="#query-stored-procedure-methods">Query Stored Procedure Methods</a></li><li><a href="#differences-for-the-asynchronous-extension-methods">Differences for the Asynchronous Extension Methods</a></li></ul></div><h2 id="methodstoredprocedureattribute" class="quickLinkHeader">MethodStoredProcedureAttribute</h2><div id="IDBABSection"><p>This optional attribute is used to define the stored procedure name that will be called for the
 data context method.  If not specified on a data context stored procedure method, the name of the stored
-procedure is assumed to be the same as the data context method's name.  If the method name ends with the value of 
+procedure is assumed to be the same as the data context method's name.  If the method name ends with the value of
 the <a href="a5eeb730-a862-d285-fbb8-599e24e8429e.htm">AsyncMethodSuffix</a>
 property, the suffix will be removed from the method name to obtain the stored procedure name.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-csharp">// For these the stored procedure name is assumed to be the same as the method name    
 public int spStateCodeAddUpdate(string? oldState, string? state, string? stateDesc)
@@ -53,7 +53,7 @@ public IEnumerable&lt;ProductSearchResult&gt; SearchForProducts(string? productN
 {
     return this.ExecuteMethodQuery&lt;ProductSearchResult&gt;(this.GetMethodInfo(), productName,
         categoryName, companyName);
-}</code></pre></div></div></div><h2 id="NonQueryMethods" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Non-Query Stored Procedure Methods</h2><div id="IDDABSection"><p>A non-query stored procedure method is one that does not return a result set.  Instead it returns
+}</code></pre></div></div></div><h2 id="non-query-stored-procedure-methods" class="quickLinkHeader">Non-Query Stored Procedure Methods</h2><div id="IDCABSection"><p>A non-query stored procedure method is one that does not return a result set.  Instead it returns
 the number of rows affected, a return value, and/or output parameter values.  The data context method calls the
 <a href="eb60a5cf-47a9-59ef-7d96-df62c13959cc.htm">ExecuteMethodNonQuery</a>
 extension method.  The first parameter is always a <span class="code">MethodInfo</span> instance representing the
@@ -92,13 +92,12 @@ public int spCheckForEmployeeSchedule(string bidGroup, int entityKey,
     entityScheduled = (bool)result.OutputValues[nameof(entityScheduled);
 
     return result.ReturnValue;
-}</code></pre></div></div></div><h2 id="QueryMethods" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Query Stored Procedure Methods</h2><div id="IDEABSection"><p>A query stored procedure method is similar to the <span class="code">LoadByKey</span> extension
+}</code></pre></div></div></div><h2 id="query-stored-procedure-methods" class="quickLinkHeader">Query Stored Procedure Methods</h2><div id="IDDABSection"><p>A query stored procedure method is similar to the <span class="code">LoadByKey</span> extension
 method except the parameters do not have to match the key properties on the entity such as a search query that
 allows for various criteria parameters.  If no parameters are specified it is equivalent to the
 <span class="code">LoadAll</span> extension method so it is not necessary to create a separate data context method
 for those cases.</p><p>The data context method calls the
-<a href="fc373378-f5bb-bfa9-aa87-9afd2cf48466.htm">ExecuteMethodQuery<span id="LST824C750A_0" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>TEntity<span id="LST824C750A_1" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span></a>				
-extension method. As above, the first parameter is always a <span class="code">MethodInfo</span> instance
+<a href="fc373378-f5bb-bfa9-aa87-9afd2cf48466.htm">ExecuteMethodQuery<span id="LST824C750A_0" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>TEntity<span id="LST824C750A_1" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span></a>	extension method. As above, the first parameter is always a <span class="code">MethodInfo</span> instance
 representing the calling method.  Subsequent parameters, if any, are those passed to the data context method.
 The order of the parameters must match the order for the calling data context method.  All parameters are input
 only.  The return value of the data context method is an enumerable list of the given entity type created from
@@ -112,19 +111,19 @@ public IEnumerable&lt;spTransactionListResult&gt; spTransactionList(int accountK
 {
     return this.ExecuteMethodQuery&lt;spTransactionListResult&gt;(this.GetMethodInfo(),
         accountKey, symbol, fromDate, toDate, txType);
-}</code></pre></div></div></div><h2 id="AsyncSupport" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Differences for the Asynchronous Extension Methods</h2><div id="IDFABSection"><p>The asynchronous versions of the query and non-query extension methods require a few modifications
-in order to use them correctly.</p><ul><li><p>If you follow convention and suffix the method name with "Async", you can still omit the
+}</code></pre></div></div></div><h2 id="differences-for-the-asynchronous-extension-methods" class="quickLinkHeader">Differences for the Asynchronous Extension Methods</h2><div id="IDEABSection"><p>The asynchronous versions of the query and non-query extension methods require a few modifications
+in order to use them correctly.</p><ul><li>If you follow convention and suffix the method name with "Async", you can still omit the
 <span class="code">MethodStoredProcedureAttribute</span> as the suffix will be removed automatically when the method
 name ends with the <a href="a5eeb730-a862-d285-fbb8-599e24e8429e.htm">AsyncMethodSuffix</a>
-property value.  If you use a suffix different from the property value, you will need to specify the attribute.</p></li><li><p>The method information must be obtained using the stack trace to find the actual called method.
+property value.  If you use a suffix different from the property value, you will need to specify the attribute.</li><li>The method information must be obtained using the stack trace to find the actual called method.
 This is required because the code within the stored procedure method is rewritten by the compiler and is
 placed inside a separate compiler generated method.  Always use the <span class="code">GetMethodInfo</span>
-extension method as shown in the examples as it will work whether the method is synchronous or asynchronous.</p></li><li><p>The method parameters must be passed to the extension method as an array.  This is necessary
-as the last parameter for the extension method is the optional cancellation token.</p></li><li><p>A cancellation token cannot be passed explicitly to the stored procedure method as it will be
+extension method as shown in the examples as it will work whether the method is synchronous or asynchronous.</li><li>The method parameters must be passed to the extension method as an array.  This is necessary
+as the last parameter for the extension method is the optional cancellation token.</li><li>A cancellation token cannot be passed explicitly to the stored procedure method as it will be
 considered one of the stored procedure parameters and the method parameter count will not match the number of
 parameters passed to the extension method.  The
 <a href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskasyncenumerableextensions.withcancellation" target="_blank" rel="noopener noreferrer">WithCancellation<span id="LST824C750A_2" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST824C750A_3" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span></a>
-extension method can be used instead to achieve the same result.</p></li></ul><p>Some examples are shown below.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Execute a stored procedure and return its return value.  We could omit the
+extension method can be used instead to achieve the same result.</li></ul><p>Some examples are shown below.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Execute a stored procedure and return its return value.  We could omit the
 // attribute here since the name matches the method name with an "Async" suffix".
 [MethodStoredProcedure("spStockAdd")]
 public async int spStockAddAsync(string symbol, string assetDescription,
@@ -181,7 +180,7 @@ await foreach(var t in dc.spTransactionListAsync(1, "MSFT", fromDate,
     toDate, null).WithCancellation(cts.Token))
 {
     ....
-}</code></pre></div></div></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="48c2006f-d738-40a1-a486-d53fbdf7208c.htm">Welcome</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">MethodStoredProcedureAttribute</a></li><li><a class="quickLink">Non-Query Stored Procedure Methods</a></li><li><a class="quickLink">Query Stored Procedure Methods</a></li><li><a class="quickLink">Differences for the Asynchronous Extension Methods</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://github.com/EWSoftware/EntityFrameworkUtils" target="_blank" rel="noopener noreferrer">[v2025.11.12.0] Copyright © 2024-2025, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
+}</code></pre></div></div></div><h2 id="see-also" class="quickLinkHeader">See Also</h2><div id="IDFABSection"><p><strong>Other Resources</strong><br /><a href="48c2006f-d738-40a1-a486-d53fbdf7208c.htm">Welcome</a></p></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">MethodStoredProcedureAttribute</a></li><li><a class="quickLink">Non-Query Stored Procedure Methods</a></li><li><a class="quickLink">Query Stored Procedure Methods</a></li><li><a class="quickLink">Differences for the Asynchronous Extension Methods</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://github.com/EWSoftware/EntityFrameworkUtils" target="_blank" rel="noopener noreferrer">[v2025.11.12.0] Copyright © 2024-2025, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=EWSofware%20Entity%20Framework%20Utilities%20Library%20Documentation">Eric@EWoodruff.us</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
@@ -193,13 +192,5 @@ await foreach(var t in dc.spTransactionListAsync(1, "MSFT", fromDate,
 SetDefaultLanguage("cs");
 LoadTocFile(null, null);
 InitializeQuickLinks();
-
-$(".toggleSection" ).click(function () {
-    SectionExpandCollapse(this);
-});
-
-$(".toggleSection").keypress(function () {
-    SectionExpandCollapseCheckKey(this, event)
-});
 hljs.highlightAll();
 });</script></body></html>
