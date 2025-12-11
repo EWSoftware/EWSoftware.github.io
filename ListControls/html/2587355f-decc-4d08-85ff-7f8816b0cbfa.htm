@@ -1,31 +1,28 @@
-﻿<!DOCTYPE html ><html lang="en-US"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.css" /><link rel="stylesheet" href="../css/font-awesome.min.css" /><link rel="stylesheet" href="../css/presentationStyle.css" /><link rel="stylesheet" href="../css/vs.min.css" /><script src="../scripts/jquery-3.5.1.min.js"></script><script src="../scripts/clipboard.min.js"></script><script src="../scripts/highlight.min.js"></script><script src="../scripts/presentationStyle.js"></script><title>DataList Control Tutorial</title><meta name="Title" content="DataList Control Tutorial" /><meta name="Help.Id" content="2587355f-decc-4d08-85ff-7f8816b0cbfa" /><meta name="Help.ContentType" content="Concepts" /><meta name="guid" content="2587355f-decc-4d08-85ff-7f8816b0cbfa" /><meta name="Description" content="The DataList control allows you to specify a user control template that is used to display and edit information from a data source similar in nature to the DataList web server control, the subform control or continuous forms detail section in a Microsoft A" /><meta name="tocFile" content="../toc/IDD.xml" /></head><body><div class="fixedLayout"><div id="Header" class="fixedHeader"><div class="pageHeader level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div id="DocumentationTitle" class="level-item">EWSoftware.ListControls Library Documentation</div></div><div id="LangFilterSearchContainer" class="level-right"><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a><a class="dropdown-item languageFilterItem" data-languageId="vb">VB</a><a class="dropdown-item languageFilterItem" data-languageId="cpp">C++</a><a class="dropdown-item languageFilterItem" data-languageId="fs">F#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></div><div class="fixedContent"><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div id="ContentContainer" class="columns pl-5 pr-5 fixedContent"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu" /></nav></div><div id="Resizer" class="is-hidden"></div><div id="TopicContent" class="column content is-7"><h1>DataList Control Tutorial</h1><div><p>This topic describes the Data List control and its features.</p><ul class="is-hidden-tablet"><li><a href="#Info">General Information</a></li><li><a href="#RowTemplate">Creating Header, Footer, and Row Templates</a></li><li><a href="#UseTemplate">Using the Templates</a></li><li><a href="#ChgPolicy">The Data List's Change Policy</a></li><li><a href="#SharedDS">Shared Control Data Sources in Templates</a></li><li><a href="#Totals">Creating Calculated Fields and Footer Totals</a></li><li><a href="#Issues">Known Issues and Their Workarounds</a></li><li><a href="#CommonProblems">Common Problems</a></li></ul></div><h2 id="Info" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>General Information</h2><div id="IDBABSection"><p>The <span class="code">DataList</span> control allows you to specify a user control template that is
-used to display and edit information from a data source similar in nature to the <span class="code">DataList</span>
-web server control, the subform control or continuous forms detail section in a Microsoft Access form, or the
-<span class="code">DataRepeater</span> control from Visual Basic 6.  Figure 1 below identifies the common elements
-of the data list control as seen at runtime.</p><figure class="mediaCenter"><img alt="DataList Elements" src="../media/DataList.jpg" /><figcaption>Figure 1: The DataList Control Elements</figcaption></figure><p>To use the <span class="code">DataList</span> control, simply drag the control from the toolbox,
-drop it on the form, and use the <strong>Properties</strong> window to adjust its settings.</p><p>The properties in the <strong>Appearance</strong> category allow you to hide the row
-headers or adjust their width and color, hide all of the navigation controls or just the Add and Delete buttons,
-hide the separator between rows or adjusted its size and color, etc.</p><p>The properties in the <strong>Behavior</strong> category can be used to specify whether or
-not additions, edits, or deletions are allowed to the data source, the shortcut keys to use for deleting a row,
-moving to the new row, jumping to the row number navigation text box, or switching between sections, and setting
-the repeat speed for the Next and Previous navigation buttons.</p><p>The control supports the same complex data sources that any other standard .NET control can use
-(i.e. data sets, data views, data tables, arrays, etc).  To assign a data source and edit its contents, you must
-set the <span class="code">RowTemplate</span> and the <span class="code">DataSource</span> properties. You may also
-need to set the <span class="code">DataMember</span> property if the source contains multiple items to which the
-data list can bind (i.e. a <span class="code">DataSet</span>).  If you assign these properties in code, always
-assign the <span class="code">DataSource</span> property last to improve performance.  This is true of all .NET
-controls as assigning a new display or value member forces the control to reevaluate its data source. By
-assigning the data source last, it will only have to evaluate the data source once.  The
-<span class="code">RowTemplate</span> property defines the template to use for the rows in the data source.  This
-property cannot be set at design-time and is specified using code instead.  The optional
-<span class="code">HeaderTemplate</span> and <span class="code">FooterTemplate</span> properties used to define
-the header and footer controls are also set using code.</p><p>Each row in the data list will have its own binding context.  As such, it is possible to share a
-data source for combo box controls, etc across all row templates and still allow each row to select unique values
-from it.  The header and footer templates inherit the data list's binding context so that they can stay in synch
-with its data source as you move from row to row.</p><p>Unlike the standard .NET list controls, all of the controls in the
-<span class="code">EWSoftware.ListControls</span> namespace allow you to index their data source to extract
-values.  This allows you to obtain the value of a field in the currently selected row or a field in any row even
-if it is not the selected row and regardless of whether or not the field is displayed in the template.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Get the last name from the current row
+﻿<!DOCTYPE html ><html lang="en-US"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.css" /><link rel="stylesheet" href="../css/font-awesome.min.css" /><link rel="stylesheet" href="../css/presentationStyle.css" /><link rel="stylesheet" href="../css/vs.min.css" /><script src="../scripts/jquery-3.5.1.min.js"></script><script src="../scripts/clipboard.min.js"></script><script src="../scripts/highlight.min.js"></script><script src="../scripts/presentationStyle.js"></script><title>DataList Control Tutorial</title><meta name="Title" content="DataList Control Tutorial" /><meta name="Help.Id" content="2587355f-decc-4d08-85ff-7f8816b0cbfa" /><meta name="Help.ContentType" content="Concepts" /><meta name="guid" content="2587355f-decc-4d08-85ff-7f8816b0cbfa" /><meta name="Description" content="The DataList control allows you to specify a user control template that is used to display and edit information from a data source similar in nature to the DataList web server control, the subform control or continuous forms detail section in a Microsoft A" /><meta name="tocFile" content="../toc/IDD.xml" /></head><body><div class="fixedLayout"><div id="Header" class="fixedHeader"><div class="pageHeader level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div id="DocumentationTitle" class="level-item">EWSoftware.ListControls Library Documentation</div></div><div id="LangFilterSearchContainer" class="level-right"><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a><a class="dropdown-item languageFilterItem" data-languageId="vb">VB</a><a class="dropdown-item languageFilterItem" data-languageId="cpp">C++</a><a class="dropdown-item languageFilterItem" data-languageId="fs">F#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></div><div class="fixedContent"><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div id="ContentContainer" class="columns pl-5 pr-5 fixedContent"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu" /></nav></div><div id="Resizer" class="is-hidden"></div><div id="TopicContent" class="column content is-7"><h1>DataList Control Tutorial</h1><div><p>This topic describes the Data List control and its features.</p><ul class="is-hidden-tablet"><li><a href="#general-information">General Information</a></li><li><a href="#creating-header-footer-and-row-templates">Creating Header, Footer, and Row Templates</a></li><li><a href="#using-the-templates">Using the Templates</a></li><li><a href="#the-data-lists-change-policy">The Data List's Change Policy</a></li><li><a href="#shared-control-data-sources-in-templates">Shared Control Data Sources in Templates</a></li><li><a href="#creating-calculated-fields-and-footer-totals">Creating Calculated Fields and Footer Totals</a></li><li><a href="#known-issues-and-their-workarounds">Known Issues and Their Workarounds</a></li><li><a href="#common-problems">Common Problems</a></li></ul></div><h2 id="general-information" class="quickLinkHeader">General Information</h2><div id="IDBABSection"><p>The <span class="code">DataList</span> control allows you to specify a user control template that is used to display and edit information
+from a data source similar in nature to the <span class="code">DataList</span> web server control, the subform control or continuous
+forms detail section in a Microsoft Access form, or the <span class="code">DataRepeater</span> control from Visual Basic 6.  Figure 1
+below identifies the common elements of the data list control as seen at runtime.</p><figure class="mediaCenter"><img alt="DataList Elements" src="../media/DataList.jpg" /><figcaption>Figure 1: The DataList Control Elements</figcaption></figure><p>To use the <span class="code">DataList</span> control, simply drag the control from the toolbox, drop it on the form, and use the
+<strong>Properties</strong> window to adjust its settings.</p><p>The properties in the <strong>Appearance</strong> category allow you to hide the row headers or adjust their width and color,
+hide all of the navigation controls or just the Add and Delete buttons, hide the separator between rows or
+adjusted its size and color, etc.</p><p>The properties in the <strong>Behavior</strong> category can be used to specify whether or not additions, edits, or deletions
+are allowed to the data source, the shortcut keys to use for deleting a row, moving to the new row, jumping to
+the row number navigation text box, or switching between sections, and setting the repeat speed for the Next and
+Previous navigation buttons.</p><p>The control supports the same complex data sources that any other standard .NET control can use (i.e. data sets,
+data views, data tables, arrays, etc).  To assign a data source and edit its contents, you must set the
+<span class="code">RowTemplate</span> and the <span class="code">DataSource</span> properties. You may also need to set the <span class="code">DataMember</span> property if the source
+contains multiple items to which the data list can bind (i.e. a <span class="code">DataSet</span>).  If you assign these properties in
+code, always assign the <span class="code">DataSource</span> property last to improve performance.  This is true of all .NET controls as
+assigning a new display or value member forces the control to reevaluate its data source. By assigning the data
+source last, it will only have to evaluate the data source once.  The <span class="code">RowTemplate</span> property defines the template
+to use for the rows in the data source.  This property cannot be set at design-time and is specified using code
+instead.  The optional <span class="code">HeaderTemplate</span> and <span class="code">FooterTemplate</span> properties used to define the header and footer
+controls are also set using code.</p><p>Each row in the data list will have its own binding context.  As such, it is possible to share a data source for
+combo box controls, etc across all row templates and still allow each row to select unique values from it.  The
+header and footer templates inherit the data list's binding context so that they can stay in synch with its data
+source as you move from row to row.</p><p>Unlike the standard .NET list controls, all of the controls in the <span class="code">EWSoftware.ListControls</span> namespace allow you
+to index their data source to extract values.  This allows you to obtain the value of a field in the currently
+selected row or a field in any row even if it is not the selected row and regardless of whether or not the field
+is displayed in the template.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Get the last name from the current row
 string lastName = (string)dlPeople["LastName"];
 
 // Get the age from the sixth row
@@ -33,27 +30,27 @@ int age = (int)dlPeople[5, "Age"];</code></pre></div></div><div class="codeSnipp
 Dim lastName As String = CType(dlPeople("LastName"), String)
 
 ' Get the age from the sixth row
-Dim age As Integer = CType(dlPeople(5, "Age"), Integer)</code></pre></div></div></div><h2 id="RowTemplate" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Creating Header, Footer, and Row Templates</h2><div id="IDCABSection"><p>The header, footer, and row template controls used by the <span class="code">DataList</span> are all
-derived from the supplied <span class="code">TemplateControl</span> class.  The process for creating them is
-almost identical for all three types but there are some differences in how they are utilized.  Row templates are
-initialized and bound as they are scrolled into view.  One row template is created for each row in the data
-source.  As such, you are free to have per-row settings and formatting such as color coding the rows or controls
-based on the values in the row etc.  Header and footer templates are created and initialized immediately when a
-data source is specified.  They are also bound to the data source as a whole.  As you move through the data
-source, any bound controls in the header and footer will update to reflect the values in the row selected in the
-details section of the data list.</p><p>There is no way to create and design header, detail, and footer templates together as part of the
-<span class="code">DataList</span> control on a form at design-time.  Instead, each template is created and edited
-as a separate user control within Visual Studio just like any other user control.  The template type is then
-assigned to a property on the data list using code.  To create a new template control, follow these steps:</p><ol><li><p>Right click on the project in the <strong>Solution Explorer</strong>, select
-<strong>Add</strong>, <strong>Add User Control</strong>, enter a name for the new user control,
-and click <strong>Open</strong> to add it to the project.</p></li><li><p>Open the new user control in the designer and view the code for it.</p></li><li><p>Change the base class of the user control to <span class="code">EWSoftware.ListControls.TemplateControl</span>.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">public class AddressRow : EWSoftware.ListControls.TemplateControl</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">VB.NET</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vbnet">Public Class AddressRow
-  Inherits EWSoftware.ListControls.TemplateControl</code></pre></div></div></li><li><p>For a row template, it is strongly suggested that you use the deferred initialization technique
-described next.  Row templates are bound and initialized as they are scrolled into view.  By deferring
-initialization, the data list loads much faster when first displayed and will not consume resources until needed
-when viewing large data sets.  Header and footer templates are always initialized as soon as they are created so
-there is no need to use this technique for them.  The first step in deferring initialization is to modify the
-constructor to suppress the call to the <span class="code">InitializeComponent</span> method unless it is made at
-design-time.  This is done by using an <span class="code">if</span> statement as shown here:</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">public AddressRow()
+Dim age As Integer = CType(dlPeople(5, "Age"), Integer)</code></pre></div></div></div><h2 id="creating-header-footer-and-row-templates" class="quickLinkHeader">Creating Header, Footer, and Row Templates</h2><div id="IDCABSection"><p>The header, footer, and row template controls used by the <span class="code">DataList</span> are all derived from the supplied
+<span class="code">TemplateControl</span> class.  The process for creating them is almost identical for all three types but there are
+some differences in how they are utilized.  Row templates are initialized and bound as they are scrolled into
+view.  One row template is created for each row in the data source.  As such, you are free to have per-row
+settings and formatting such as color coding the rows or controls based on the values in the row etc.  Header and
+footer templates are created and initialized immediately when a data source is specified.  They are also bound to
+the data source as a whole.  As you move through the data source, any bound controls in the header and footer
+will update to reflect the values in the row selected in the details section of the data list.</p><p>There is no way to create and design header, detail, and footer templates together as part of the <span class="code">DataList</span>
+control on a form at design-time.  Instead, each template is created and edited as a separate user control within
+Visual Studio just like any other user control.  The template type is then assigned to a property on the data
+list using code.  To create a new template control, follow these steps:</p><ol><li><p>Right click on the project in the <strong>Solution Explorer</strong>, select <strong>Add</strong>, <strong>Add User Control</strong>, enter a name for
+the new user control, and click <strong>Open</strong> to add it to the project.</p></li><li>
+Open the new user control in the designer and view the code for it.
+</li><li><p>Change the base class of the user control to <span class="code">EWSoftware.ListControls.TemplateControl</span>.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">public class AddressRow : EWSoftware.ListControls.TemplateControl</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">VB.NET</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vbnet">Public Class AddressRow
+  Inherits EWSoftware.ListControls.TemplateControl</code></pre></div></div></li><li><p>For a row template, it is strongly suggested that you use the deferred initialization technique described next.
+Row templates are bound and initialized as they are scrolled into view.  By deferring initialization, the data
+list loads much faster when first displayed and will not consume resources until needed when viewing large data
+sets.  Header and footer templates are always initialized as soon as they are created so there is no need to use
+this technique for them.  The first step in deferring initialization is to modify the constructor to suppress the
+call to the <span class="code">InitializeComponent</span> method unless it is made at design-time.  This is done by using an <span class="code">if</span>
+statement as shown here:</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">public AddressRow()
 {
     // This call is required by the Windows.Forms Form Designer.
     // At runtime, actual initialization is deferred until needed.
@@ -65,11 +62,10 @@ design-time.  This is done by using an <span class="code">if</span> statement as
     If Me.DesignMode = True Then
         InitializeComponent()
     End If
-End Sub</code></pre></div></div><p>The last step is to add an override for the <span class="code">InitializeTemplate</span> method.
-This is when <span class="code">InitializeComponent</span> is called to actually create the controls contained in
-the template.  This override can also be used to set the data sources on combo boxes, list boxes, etc, and to
-check the data list's change policy to see if controls need to be disabled, etc.  The base implementation does
-nothing so there is no need to call it.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Actual initialization is deferred until needed to save
+End Sub</code></pre></div></div><p>The last step is to add an override for the <span class="code">InitializeTemplate</span> method.  This is when <span class="code">InitializeComponent</span> is
+called to actually create the controls contained in the template.  This override can also be used to set the data
+sources on combo boxes, list boxes, etc, and to check the data list's change policy to see if controls need to be
+disabled, etc.  The base implementation does nothing so there is no need to call it.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Actual initialization is deferred until needed to save
 // time and resources.
 public override void InitializeTemplate()
 {
@@ -97,25 +93,23 @@ Public Overrides Sub InitializeTemplate()
     ' Update control states based on the parent's change policy.
     ' This can be omitted if you do not need it.
     Me.ChangePolicyModified()
-End Sub</code></pre></div></div></li><li><p>Add controls to the template and any required event handlers for them as you would for any
-other user control.  You can also define public properties and methods if necessary to let forms containing the
-data list utilizing the template make changes to it, etc.</p><p>Normal <span class="code">Label</span> controls do not respond to mouse clicks.  As such,
-clicking on a label in a row will not give the row the focus.  Clicking on any other control type will give it
-the focus.  If you would like to be able to click on labels to select a row, use the supplied
-<span class="code">ClickableLabel</span> control. It is identical to the standard label control but when clicked
-with the mouse, it will give the focus to the first tab-stop-enabled control following it in the tab order.  If
-the control is disabled or one is not found, it simply gives the parent row template the focus instead.  The
-<span class="code">ClickableLabel</span> can be used on normal forms and user controls as well.</p></li><li><p>View the code for the user control and add an override for the <span class="code">Bind</span>
-method.  This is a required override so you must add it even if you have no bound controls (a header or footer
-might not have any).  In such cases, override it and leave the method body empty.  Do not call the base
-implementation of <span class="code">Bind</span> as it does nothing but throw an exception reminding you to
-override it.</p><p>In the <span class="code">Bind</span> method, you will add code to clear and then create the
-data bindings for controls that you will use to edit information in the template's row source.  Templates may get
-re-bound under may different circumstances.  As such, the <span class="code">DataBindings</span> collection on all
-bound controls must be cleared before you add the new bindings.  If you do not, it will generate a runtime
-exception that complains about duplicate bindings.  To simplify this process, it is suggested that you use the
-template control's overloaded <span class="code">AddBinding</span> method as shown in the example below.  This
-greatly reduces the amount of code you have to write in order to clear and recreate the bindings.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Bind the controls to their data source
+End Sub</code></pre></div></div></li><li><p>Add controls to the template and any required event handlers for them as you would for any other user control.
+You can also define public properties and methods if necessary to let forms containing the data list utilizing
+the template make changes to it, etc.</p><p>Normal <span class="code">Label</span> controls do not respond to mouse clicks.  As such, clicking on a label in a row will not give the
+row the focus.  Clicking on any other control type will give it the focus.  If you would like to be able to click
+on labels to select a row, use the supplied <span class="code">ClickableLabel</span> control. It is identical to the standard label
+control but when clicked with the mouse, it will give the focus to the first tab-stop-enabled control following
+it in the tab order.  If the control is disabled or one is not found, it simply gives the parent row template the
+focus instead.  The <span class="code">ClickableLabel</span> can be used on normal forms and user controls as well.</p></li><li><p>View the code for the user control and add an override for the <span class="code">Bind</span> method.  This is a required override so you
+must add it even if you have no bound controls (a header or footer might not have any).  In such cases, override
+it and leave the method body empty.  Do not call the base implementation of <span class="code">Bind</span> as it does nothing but throw
+an exception reminding you to override it.</p><p>In the <span class="code">Bind</span> method, you will add code to clear and then create the data bindings for controls that you will use
+to edit information in the template's row source.  Templates may get re-bound under may different circumstances.
+As such, the <span class="code">DataBindings</span> collection on all bound controls must be cleared before you add the new bindings.
+If you do not, it will generate a runtime exception that complains about duplicate bindings.  To simplify this
+process, it is suggested that you use the template control's overloaded <span class="code">AddBinding</span> method as shown in the
+example below.  This greatly reduces the amount of code you have to write in order to clear and recreate the
+bindings.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Bind the controls to their data source
 public override void Bind()
 {
     this.AddBinding(txtFName, "Text", "FirstName");
@@ -134,17 +128,15 @@ Public Overrides Sub Bind()
     Me.AddBinding(cboState, "SelectedValue", "State")
     Me.AddBinding(txtZip, "Text", "Zip")
     Me.AddBinding(udcSumValue, "Text", "SumValue")
-End Sub</code></pre></div></div><p>As mentioned, <span class="code">AddBinding</span> is overloaded.  The example above uses the
-version that clears all existing bindings and adds the requested binding. Other versions will let you add
-additional bindings to a control without clearing the current bindings and also specify optional
-<span class="code">Format</span> and <span class="code">Parse</span> event handlers for the bindings.</p></li><li><p>If the template will be used in a data list that can have a variable change policy (i.e. it
-might allow edits or it might not), you may need to override the <span class="code">ChangePolicyModified</span>
-method to update the state of controls in the template based on the new policy.  This method is called by the
-data list on rows that have been initialized and bound whenever its change policy is modified after the data
-source has been specified.  Note that you may also need to call this method from the
-<span class="code">InitializeTemplate</span> method to set the state of controls when a row is initialized after
-being scrolled into view or when the data source changes.  The base implementation does nothing so there is no
-need to call it.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Enable or disable the controls based on the edit policy.
+End Sub</code></pre></div></div><p>As mentioned, <span class="code">AddBinding</span> is overloaded.  The example above uses the version that clears all existing bindings
+and adds the requested binding. Other versions will let you add additional bindings to a control without clearing
+the current bindings and also specify optional <span class="code">Format</span> and <span class="code">Parse</span> event handlers for the bindings.</p></li><li><p>If the template will be used in a data list that can have a variable change policy (i.e. it might allow edits or
+it might not), you may need to override the <span class="code">ChangePolicyModified</span> method to update the state of controls in the
+template based on the new policy.  This method is called by the data list on rows that have been initialized and
+bound whenever its change policy is modified after the data source has been specified.  Note that you may also
+need to call this method from the <span class="code">InitializeTemplate</span> method to set the state of controls when a row is
+initialized after being scrolled into view or when the data source changes.  The base implementation does nothing
+so there is no need to call it.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Enable or disable the controls based on the edit policy.
 public override void ChangePolicyModified()
 {
     if(this.TemplateParent.AllowEdits != txtFName.Enabled &amp;&amp; !this.IsNewRow)
@@ -164,20 +156,19 @@ Public Overrides Sub ChangePolicyModified()
         cboState.Enabled = allowEdits
         txtZip.Enabled = allowEdits
     End If
-End Sub</code></pre></div></div></li><li><p>If rows can be deleted from the data source, you can override the template's
-<span class="code">CanDelete</span> property to allow it to permit or deny the deletion based on conditions that
-you set such as getting a confirmation from the user.  The row being deleted is always given the first chance to
-deny the deletion.  If the row allows it, the data list raises its <span class="code">DeletingRow</span> event to
-let the containing form have a chance to permit or deny the deletion.</p><p>There are advantages to putting delete confirmations within the template.  It has direct access
-to its controls so it is easier to perform any necessary validation prior to allowing the deletion.  If the
-template is used in many forms, it also saves you from having to add an event handler for the data list's
-<span class="code">DeletingRow</span> event in each one.</p></li><li><p>If you need validation in your row template, add an event handler for the template's
-<span class="code">Validating</span> event.  By performing all of your validation in this event, you ensure that
-the row cannot be left if it is in an invalid state. The data list will raise this event on the current row
-template whenever it is needed.  The demo application contains an example.</p></li></ol></div><h2 id="UseTemplate" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Using the Templates</h2><div id="IDDABSection"><p>Once the templates have been created, you can assign their type to the appropriate property on the
-<span class="code">DataList</span> control as shown below.  This is usually done in the form's constructor or when
-the data source is assigned to the data list.  You can assign the templates to the properties individually or in
-conjunction with the data source using the <span class="code">SetDataBinding</span> method.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Set the properties individually
+End Sub</code></pre></div></div></li><li><p>If rows can be deleted from the data source, you can override the template's <span class="code">CanDelete</span> property to allow it to
+permit or deny the deletion based on conditions that you set such as getting a confirmation from the user.  The
+row being deleted is always given the first chance to deny the deletion.  If the row allows it, the data list
+raises its <span class="code">DeletingRow</span> event to let the containing form have a chance to permit or deny the deletion.</p><p>There are advantages to putting delete confirmations within the template.  It has direct access to its controls
+so it is easier to perform any necessary validation prior to allowing the deletion.  If the template is used in
+many forms, it also saves you from having to add an event handler for the data list's <span class="code">DeletingRow</span> event in each
+one.</p></li><li><p>If you need validation in your row template, add an event handler for the template's <span class="code">Validating</span> event.  By
+performing all of your validation in this event, you ensure that the row cannot be left if it is in an invalid
+state. The data list will raise this event on the current row template whenever it is needed.  The demo
+application contains an example.</p></li></ol></div><h2 id="using-the-templates" class="quickLinkHeader">Using the Templates</h2><div id="IDDABSection"><p>Once the templates have been created, you can assign their type to the appropriate property on the <span class="code">DataList</span>
+control as shown below.  This is usually done in the form's constructor or when the data source is assigned to
+the data list.  You can assign the templates to the properties individually or in conjunction with the data
+source using the <span class="code">SetDataBinding</span> method.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Set the properties individually
 dlAddresses.RowTemplate = typeof(AddressRow);
 dlAddresses.HeaderTemplate = typeof(AddressHeader);
 dlAddresses.FooterTemplate = typeof(AddressFooter);
@@ -207,12 +198,11 @@ dlAddresses.SetDataBinding(dsAddresses, "Addresses", GetType(AddressRow),
     GetType(AddressHeader), GetType(AddressFooter))
 
 ' This example specifies the table without going through the data set
-dlAddresses.SetDataBinding(dsAddresses.Tables(0), Nothing, GetType(AddressRow))</code></pre></div></div><p>Once the data source and row template are assigned, you can use the data list to edit information
-in the data source.  Before you save changes to the data source, it is important to call the
-<span class="code">CommitChanges</span> method on the data list control so that it can commit any pending changes
-(i.e. data in the form controls that has not yet been pushed into the data source).  You can also check the
-<span class="code">HasChanges</span> property to see if any changes were made. Using the <span class="code">HasChanges</span>
-property automatically commits any pending changes.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">private void btnSave_Click(object sender, System.EventArgs e)
+dlAddresses.SetDataBinding(dsAddresses.Tables(0), Nothing, GetType(AddressRow))</code></pre></div></div><p>Once the data source and row template are assigned, you can use the data list to edit information in the data
+source.  Before you save changes to the data source, it is important to call the <span class="code">CommitChanges</span> method on the
+data list control so that it can commit any pending changes (i.e. data in the form controls that has not yet been
+pushed into the data source).  You can also check the <span class="code">HasChanges</span> property to see if any changes were made.
+Using the <span class="code">HasChanges</span> property automatically commits any pending changes.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">private void btnSave_Click(object sender, System.EventArgs e)
 {
     // We must commit any pending changes
     dlList.CommitChanges();
@@ -223,29 +213,28 @@ property automatically commits any pending changes.</p><div class="codeSnippet">
     dlList.CommitChanges()
 
     daAddresses.Update(dsAddresses)
-End Sub</code></pre></div></div></div><h2 id="ChgPolicy" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>The Data List's Change Policy</h2><div id="IDEABSection"><p>The <span class="code">DataList</span> control has three properties that allow you to specify
-whether additions, edits, or deletes are allowed to be made to the data source (<span class="code">AllowAdditions</span>,
-<span class="code">AllowEdits</span>, and <span class="code">AllowDeletes</span>).  All three properties default to
-true.  However, when a data source is assigned to the data list, these properties may be updated to reflect the
-change policy of the data source.  For example, if the data source does not allow additions, the
-<span class="code">AllowAdditions</span> property will also be set to false.  Likewise, you can set the properties
-to false to disallow the associated modification even if the underlying data source allows it.</p><p>The data list will automatically adjust its behavior when additions are not allowed by hiding the
-new row placeholder and disabling the Add button in the navigation controls.  When deletions are not allowed, it
-disables the Delete button in the navigation controls.  The shortcut keys for both operations are also ignored
-when their associated behavior is not allowed.  The data list and the template controls cannot handle the
-<span class="code">AllowEdits</span> setting by themselves.  It is up to you to add code to your templates to
-check the change policy as needed and disable the controls if edits are not allowed. The demo application
-contains an example of this.  As shown in the demo, it is possible to disable edits but still allow additions.
-In this situation, new rows can be added and edited but any existing rows are read-only.</p><p>The data list also raises a <span class="code">NoRows</span> event when a data source is assigned
-that contains no rows or when the last row is deleted.  You can use this event to disable edit controls in the
-header and footer until a new row is added and/or display a message asking the user to add a new row.</p></div><h2 id="SharedDS" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Shared Control Data Sources in Templates</h2><div id="IDFABSection"><p>When a template contains other controls with data sources such as combo boxes, list boxes, etc, it
-can be expensive to create and load the data source for each control in every row template.  However, each
-template has its own binding context so it is much more efficient to share a common data source amongst all
-templates for those controls.  Because of its unique binding context, the controls in each row can be set
-independently of each other without any conflicts while sharing a common data source.  To implement a shared data
-source for the controls in a template, follow these steps.</p><ol><li><p>In forms that contain a data list that utilizes the template, create and store the data source
-in the data list's <span class="code">SharedDataSources</span> property.  This is a simple hash table that is used
-to store shared data sources for templates by key name.  For example:</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">public DataListTestForm()
+End Sub</code></pre></div></div></div><h2 id="the-data-lists-change-policy" class="quickLinkHeader">The Data List's Change Policy</h2><div id="IDEABSection"><p>The <span class="code">DataList</span> control has three properties that allow you to specify whether additions, edits, or deletes are
+allowed to be made to the data source (<span class="code">AllowAdditions</span>, <span class="code">AllowEdits</span>, and <span class="code">AllowDeletes</span>).  All three properties
+default to true.  However, when a data source is assigned to the data list, these properties may be updated to
+reflect the change policy of the data source.  For example, if the data source does not allow additions, the
+<span class="code">AllowAdditions</span> property will also be set to false.  Likewise, you can set the properties to false to disallow
+the associated modification even if the underlying data source allows it.</p><p>The data list will automatically adjust its behavior when additions are not allowed by hiding the new row
+placeholder and disabling the Add button in the navigation controls.  When deletions are not allowed, it disables
+the Delete button in the navigation controls.  The shortcut keys for both operations are also ignored when their
+associated behavior is not allowed.  The data list and the template controls cannot handle the <span class="code">AllowEdits</span>
+setting by themselves.  It is up to you to add code to your templates to check the change policy as needed and
+disable the controls if edits are not allowed. The demo application contains an example of this.  As shown in the
+demo, it is possible to disable edits but still allow additions.  In this situation, new rows can be added and
+edited but any existing rows are read-only.</p><p>The data list also raises a <span class="code">NoRows</span> event when a data source is assigned that contains no rows or when the last
+row is deleted.  You can use this event to disable edit controls in the header and footer until a new row is
+added and/or display a message asking the user to add a new row.</p></div><h2 id="shared-control-data-sources-in-templates" class="quickLinkHeader">Shared Control Data Sources in Templates</h2><div id="IDFABSection"><p>When a template contains other controls with data sources such as combo boxes, list boxes, etc, it can be
+expensive to create and load the data source for each control in every row template.  However, each template has
+its own binding context so it is much more efficient to share a common data source amongst all templates for
+those controls.  Because of its unique binding context, the controls in each row can be set independently of each
+other without any conflicts while sharing a common data source.  To implement a shared data source for the
+controls in a template, follow these steps.</p><ol><li><p>In forms that contain a data list that utilizes the template, create and store the data source in the data list's
+<span class="code">SharedDataSources</span> property.  This is a simple hash table that is used to store shared data sources for
+templates by key name.  For example:</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">public DataListTestForm()
 {
     // ... Other constructor code ...
 
@@ -270,12 +259,12 @@ to store shared data sources for templates by key name.  For example:</p><div cl
     dlList.SharedDataSources.Add("States", dtStates.DefaultView)
 
     // ... Other constructor code ...
-End Sub</code></pre></div></div><p>This can be done in the form's constructor or at any point prior to assigning the template to
-the data list control.  Always store the shared data source before assigning the template to the data list.
-This is especially true for header and footer templates as they are created and initialized when assigned and
-will not see the data source if you set it after assigning them to the data list.</p></li><li><p>In the <span class="code">InitializeTemplate</span> override for the template, add code to set
-the data source on the controls that need it by retrieving the data source from the parent data list's
-<span class="code">SharedDataSources</span> property using the appropriate key name. For example:</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">protected override void InitializeTemplate()
+End Sub</code></pre></div></div><p>This can be done in the form's constructor or at any point prior to assigning the template to the data list
+control.  Always store the shared data source before assigning the template to the data list.  This is especially
+true for header and footer templates as they are created and initialized when assigned and will not see the data
+source if you set it after assigning them to the data list.</p></li><li><p>In the <span class="code">InitializeTemplate</span> override for the template, add code to set the data source on the controls that need
+it by retrieving the data source from the parent data list's <span class="code">SharedDataSources</span> property using the appropriate
+key name. For example:</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">protected override void InitializeTemplate()
 {
     // Create the contained controls
     this.InitializeComponent();
@@ -291,21 +280,19 @@ the data source on the controls that need it by retrieving the data source from 
     cboState.DisplayMember = "State"
     cboState.ValueMember = "State"
     cboState.DataSource = CType(Me.TemplateParent.SharedDataSources("States"), DataView)
-End Sub</code></pre></div></div></li></ol></div><h2 id="Totals" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Creating Calculated Fields and Footer Totals</h2><div id="IDGABSection"><p>Due to the way that data binding works in .NET, changes to a row are not committed to the data
-source unless you move off of the row or call the <span class="code">CommitChanges</span> method.  This may have
-an effect on calculated fields in the data source that are displayed in a row template.  For example, if you have
-an item quantity, a cost, and a total value field that is computed from the prior two displayed on the template,
-changes made to the item quantity or cost will not affect the displayed total value until you move off of the
-row.  If you always need to have the most current total displayed, you can add an event handler for the
-<span class="code">Leave</span> event on the item quantity and cost controls and in it call the row template's
-<span class="code">CommitChanges</span> method.  This will cause the changes to get pushed into the data source
-and the total will reflect the new value.  However, this does have the side effect that all other changes to the
-row are saved as well and they cannot be undone by hitting the Escape key.  A more acceptable approach might be
-to not bind the total column and instead compute and display the total manually in the <span class="code">Leave</span>
-event handlers.</p><p>It is also possible to display aggregate values from the data source.  For example, you might want
-to display the sum of all values in a field from the data source in the data list's footer.  For read-only data,
-this can be accomplished by overriding the footer template's <span class="code">Bind</span> method and computing
-the value in it.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Recalculate the footer total when bound
+End Sub</code></pre></div></div></li></ol></div><h2 id="creating-calculated-fields-and-footer-totals" class="quickLinkHeader">Creating Calculated Fields and Footer Totals</h2><div id="IDGABSection"><p>Due to the way that data binding works in .NET, changes to a row are not committed to the data source unless you
+move off of the row or call the <span class="code">CommitChanges</span> method.  This may have an effect on calculated fields in the data
+source that are displayed in a row template.  For example, if you have an item quantity, a cost, and a total
+value field that is computed from the prior two displayed on the template, changes made to the item quantity or
+cost will not affect the displayed total value until you move off of the row.  If you always need to have the
+most current total displayed, you can add an event handler for the <span class="code">Leave</span> event on the item quantity and cost
+controls and in it call the row template's <span class="code">CommitChanges</span> method.  This will cause the changes to get pushed
+into the data source and the total will reflect the new value.  However, this does have the side effect that all
+other changes to the row are saved as well and they cannot be undone by hitting the Escape key.  A more
+acceptable approach might be to not bind the total column and instead compute and display the total manually in
+the <span class="code">Leave</span> event handlers.</p><p>It is also possible to display aggregate values from the data source.  For example, you might want to display the
+sum of all values in a field from the data source in the data list's footer.  For read-only data, this can be
+accomplished by overriding the footer template's <span class="code">Bind</span> method and computing the value in it.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Recalculate the footer total when bound
 protected override void Bind()
 {
     // Get the data source from the parent
@@ -327,15 +314,14 @@ Protected Overrides Sub Bind()
     Else
         lblTotal.Text = Nothing
     End If
-End Sub</code></pre></div></div><p>For a data list that contains editable information, the process requires a few more steps so that
-the total remains accurate as the information changes. The following is taken from the demo application which you
-can use as a working example.  There may be other methods to accomplish this task but this one works quite well.</p><p>Two private member variables are added to the footer template to track the current data source.  In
-the overridden <span class="code">Bind</span> method, when the data source changes, event handlers are connected
-to its <span class="code">ListChanged</span>, <span class="code">RowChanged</span> and <span class="code">RowDeleted</span>
-events.  The event handlers for those three events compute the total when they are called.  The
-<span class="code">ListChanged</span> handler could be used to recompute the total for changes and deletes as well
-but it is called frequently and multiple times even for a single change so the <span class="code">RowChanged</span>
-and <span class="code">RowDeleted</span> events are more efficient in those two cases.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Used to track the current data source for totaling
+End Sub</code></pre></div></div><p>For a data list that contains editable information, the process requires a few more steps so that the total
+remains accurate as the information changes. The following is taken from the demo application which you can use
+as a working example.  There may be other methods to accomplish this task but this one works quite well.</p><p>Two private member variables are added to the footer template to track the current data source.  In the
+overridden <span class="code">Bind</span> method, when the data source changes, event handlers are connected to its <span class="code">ListChanged</span>,
+<span class="code">RowChanged</span> and <span class="code">RowDeleted</span> events.  The event handlers for those three events compute the total when they are
+called.  The <span class="code">ListChanged</span> handler could be used to recompute the total for changes and deletes as well but it is
+called frequently and multiple times even for a single change so the <span class="code">RowChanged</span> and <span class="code">RowDeleted</span> events are
+more efficient in those two cases.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// Used to track the current data source for totaling
 private IBindingList bl;
 private DataTable tblItems;
 
@@ -436,10 +422,10 @@ End Sub
 ' Update the total when a row is changed or deleted
 Private Sub DataSource_RowChgDel(sender As Object, e As DataRowChangeEventArgs)
     lblTotal.Text = tblItems.Compute("Sum(SumValue)", Nothing).ToString()
-End Sub</code></pre></div></div></div><h2 id="Issues" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Known Issues and Their Workarounds</h2><div id="IDHABSection"><p>A couple of issues have been discovered that require workarounds:</p><p>The <span class="code">Click</span> event for buttons in a row template may fire even if validation
-fails in another row or container control keeping the focus in the other row or container control.  This appears
-to be a bug in how the button control raises its click event after validation.  The workaround is to add a check
-to see if the row template contains the focus as the first thing in the button's event handler.  For example:</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">private void btnDelete_Click(object sender, System.EventArgs e)
+End Sub</code></pre></div></div></div><h2 id="known-issues-and-their-workarounds" class="quickLinkHeader">Known Issues and Their Workarounds</h2><div id="IDHABSection"><p>A couple of issues have been discovered that require workarounds:</p><p>The <span class="code">Click</span> event for buttons in a row template may fire even if validation fails in another row or container
+control keeping the focus in the other row or container control.  This appears to be a bug in how the button
+control raises its click event after validation.  The workaround is to add a check to see if the row template
+contains the focus as the first thing in the button's event handler.  For example:</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">private void btnDelete_Click(object sender, System.EventArgs e)
 {
     if(this.ContainsFocus)
         this.DeleteRow();
@@ -447,79 +433,67 @@ to see if the row template contains the focus as the first thing in the button's
     If Me.ContainsFocus Then
         Me.DeleteRow()
     End If
-End SUb</code></pre></div></div><p>When using two or more <span class="code">DataList</span> controls that display related information
-from the same data set (i.e. a master/detail view), you cannot edit the key fields that are used to relate the
-two data sources in the master's data source.  The data binding behavior of .NET is such that when the keys are
-edited, it treats the change as a deletion and an insertion which causes a rebind in the related data list and
-this can result in problems when moving from one data list control to the other.  The workaround is to add a
-temporary auto-increment key to the data sources and use that to relate the data.  Since they are no longer used
-in the relationship, the real key fields can then be edited in the master data source.  If you do not show or do
-not edit the relationship key fields then this is not a problem.  Please request technical support if you require
-a more detailed example of how to accomplish this.</p></div><h2 id="CommonProblems" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Common Problems</h2><div id="IDIABSection"><p>Here are some common problems and their solutions that you may run into when developing template
-controls for the data list.  The .NET Framework tends to hide some exceptions caused by binding errors such that
-they cannot be caught by your application.  In those cases, the <span class="code">DataList</span> will dump
-diagnostic information to the debug output window in Visual Studio when your application is running under the
-control of the debugger.  If you are experiencing behavior as noted below, check there to see if it shows the
-source of the problem.</p><ul><li><p>Forgetting to override the <span class="code">InitializeTemplate</span> method or not calling
-<span class="code">InitializeComponent</span> when using deferred initialization.  If you are using deferred
-initialization, be sure that you override the <span class="code">InitializeTemplate</span> method and call the
-standard <span class="code">InitializeComponent</span> method from it so that all of the controls are created and
-initialized.</p></li><li><p>Calling <span class="code">InitializeComponent</span> from the constructor at runtime and from
-the <span class="code">InitializeTemplate</span> override.  This will create duplicate controls and it will appear
-as if data binding is not working as nothing shows up in the controls.  If using deferred initialization,
-suppress the call to <span class="code">InitializeComponent</span> in the constructor as shown earlier and call it
-from <span class="code">InitializeTemplate</span> instead.  If not using deferred initialization, call it from the
-constructor and make sure it is not being called again in the <span class="code">InitializeTemplate</span>
-override.</p></li><li><p>Forgetting to specify the template type.  If a header or footer does not show up or no rows
-appear, check to be sure that you specified the correct template type and assigned it to the data list's
-<span class="code">RowTemplate</span>, <span class="code">HeaderTemplate</span>, and/or <span class="code">FooterTemplate</span>
-property.</p></li><li><p>Forgetting to override the <span class="code">Bind</span> method.  All template controls must
-override the <span class="code">Bind</span> method even if there are no bound controls (i.e. header and footer
-templates).  If a header or footer does not show up or no rows appear, check the debug output window in the
-debugger for a message similar to this one:</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle"> </span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-plaintext">**** [dlAddresses]: Exception occurred in BindData (1): The TemplateControl.Bind
-method must be overridden in derived type 'AddressRow'</code></pre></div></div><p>The offending control name appears in brackets at the start of the message and the template
-type is given at the end of the message.</p></li><li><p>Forgetting to clear the data bindings.  If you forget to clear the data bindings and a row
-template is re-bound, you will see an exception that states that binding to the given property would create a
-duplicate binding which is not allowed.  Check to be sure that you have cleared the <span class="code">DataBindings</span>
-collection on all controls in the template in the <span class="code">Bind</span> method.  This problem can be
-avoided by using the template control's overloaded <span class="code">AddBinding</span> method.</p></li><li><p>General binding errors.  These types of errors include forgetting to bind a control to a field
-in the row source, misspelling the property name or field name when creating the binding, or perhaps not
-including the field in the row source.  Binding errors may generate an error message in the debug output window
-so always check there if you experience odd behavior but no exception is thrown.  It will look similar to the
-following:</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle"> </span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-plaintext">**** [dlAddresses]: Exception occurred in BindData (1): [exception details]</code></pre></div></div><p>The offending control name appears in brackets at the start of the message and the exception
-details follow at the end of the message.  The details may be generic such as a null reference exception or more
-detailed such as telling you which binding failed.</p><p>When using a <span class="code">DataSet</span> as the data source for the data list control, be
-sure to use fully qualified member names in any bindings in the header and footer controls.  The header and
-footer controls are bound to the data source rather than an individual row and as such need the data member name
-specified in any data bindings.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// The demo uses a data set so we need to use the fully qualified field name for
+End SUb</code></pre></div></div><p>When using two or more <span class="code">DataList</span> controls that display related information from the same data set (i.e. a
+master/detail view), you cannot edit the key fields that are used to relate the two data sources in the master's
+data source.  The data binding behavior of .NET is such that when the keys are edited, it treats the change as a
+deletion and an insertion which causes a rebind in the related data list and this can result in problems when
+moving from one data list control to the other.  The workaround is to add a temporary auto-increment key to the
+data sources and use that to relate the data.  Since they are no longer used in the relationship, the real key
+fields can then be edited in the master data source.  If you do not show or do not edit the relationship key
+fields then this is not a problem.  Please request technical support if you require a more detailed example of
+how to accomplish this.</p></div><h2 id="common-problems" class="quickLinkHeader">Common Problems</h2><div id="IDIABSection"><p>Here are some common problems and their solutions that you may run into when developing template controls for the
+data list.  The .NET Framework tends to hide some exceptions caused by binding errors such that they cannot be
+caught by your application.  In those cases, the <span class="code">DataList</span> will dump diagnostic information to the debug output
+window in Visual Studio when your application is running under the control of the debugger.  If you are
+experiencing behavior as noted below, check there to see if it shows the source of the problem.</p><ul><li><p>Forgetting to override the <span class="code">InitializeTemplate</span> method or not calling <span class="code">InitializeComponent</span> when using deferred
+initialization.  If you are using deferred initialization, be sure that you override the <span class="code">InitializeTemplate</span>
+method and call the standard <span class="code">InitializeComponent</span> method from it so that all of the controls are created and
+initialized.</p></li><li><p>Calling <span class="code">InitializeComponent</span> from the constructor at runtime and from the <span class="code">InitializeTemplate</span> override.  This
+will create duplicate controls and it will appear as if data binding is not working as nothing shows up in the
+controls.  If using deferred initialization, suppress the call to <span class="code">InitializeComponent</span> in the constructor as
+shown earlier and call it from <span class="code">InitializeTemplate</span> instead.  If not using deferred initialization, call it from
+the constructor and make sure it is not being called again in the <span class="code">InitializeTemplate</span> override.</p></li><li><p>Forgetting to specify the template type.  If a header or footer does not show up or no rows appear, check to be
+sure that you specified the correct template type and assigned it to the data list's <span class="code">RowTemplate</span>,
+<span class="code">HeaderTemplate</span>, and/or <span class="code">FooterTemplate</span> property.</p></li><li><p>Forgetting to override the <span class="code">Bind</span> method.  All template controls must override the <span class="code">Bind</span> method even if there
+are no bound controls (i.e. header and footer templates).  If a header or footer does not show up or no rows
+appear, check the debug output window in the debugger for a message similar to this one:</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle"> </span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-plaintext">**** [dlAddresses]: Exception occurred in BindData (1): The TemplateControl.Bind
+method must be overridden in derived type 'AddressRow'</code></pre></div></div><p>The offending control name appears in brackets at the start of the message and the template type is given at the
+end of the message.</p></li><li><p>Forgetting to clear the data bindings.  If you forget to clear the data bindings and a row template is re-bound,
+you will see an exception that states that binding to the given property would create a duplicate binding which
+is not allowed.  Check to be sure that you have cleared the <span class="code">DataBindings</span> collection on all controls in the
+template in the <span class="code">Bind</span> method.  This problem can be avoided by using the template control's overloaded
+<span class="code">AddBinding</span> method.</p></li><li><p>General binding errors.  These types of errors include forgetting to bind a control to a field in the row source,
+misspelling the property name or field name when creating the binding, or perhaps not including the field in the
+row source.  Binding errors may generate an error message in the debug output window so always check there if you
+experience odd behavior but no exception is thrown.  It will look similar to the following:</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle"> </span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-plaintext">**** [dlAddresses]: Exception occurred in BindData (1): [exception details]</code></pre></div></div><p>The offending control name appears in brackets at the start of the message and the exception details follow at
+the end of the message.  The details may be generic such as a null reference exception or more detailed such as
+telling you which binding failed.</p><p>When using a <span class="code">DataSet</span> as the data source for the data list control, be sure to use fully qualified member names
+in any bindings in the header and footer controls.  The header and footer controls are bound to the data source
+rather than an individual row and as such need the data member name specified in any data bindings.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">// The demo uses a data set so we need to use the fully qualified field name for
 // the header control as it is bound to the data source as a whole.
 this.AddBinding(lblKey, "Text", "Addresses.ID");</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">VB.NET</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vbnet">' The demo uses a data set so we need to use the fully qualified field name for
 ' the header control as it is bound to the data source as a whole.
-Me.AddBinding(lblKey, "Text", "Addresses.ID")</code></pre></div></div></li><li><p>Accidentally binding two controls to the same field in the row source.  This problem will not
-usually generate any exceptions but may cause unexpected behavior such as one control assuming the value of
-another control when you make changes in the first control or a control losing its value when it loses the focus.
-Check the data bindings in the <span class="code">Bind</span> method to ensure that they are binding to the
-correct fields and the correct properties in each control.</p></li><li><p>Not setting a unique binding context on controls that share a common data source within the
-same template.  As noted earlier, each row template has its own binding context so controls in each one can share
-a common data source without conflicts (i.e. a combo box in each row can re-use a common data source for its
-items).  However, as with any other form or user control, controls within the same template that share a common
-data source must have their own binding context.  For example, if you have two combo boxes on a template that
-share the same data source for their items, assign a new binding context to the <span class="code">BindingContext</span>
-property in one or both of the combo boxes so that each can be set independently of the other within the same
-row.</p></li><li><p>Setting a shared data source for the template's list controls after the template has been
-assigned to the data list control.  If this occurs, the controls in the template (combo boxes, list boxes, etc),
-may not show any items or will generate a null reference exception.  Be sure to set the shared data sources for
-such controls before assigning the template to the data list control.  Also be sure to use the same key name so
-that the correct data source is retrieved from the data list's <span class="code">SharedDataSources</span>
-property.</p></li><li><p>Forgetting to call <span class="code">CommitChanges</span> before saving the data source.  If
-you save your data source (i.e. call <span class="code">Update</span> on a data adapter) but some changes are
-missing, it could be that the information has not yet made it into the data source.  Be sure to call the
-<span class="code">CommitChanges</span> method on the data list or check the <span class="code">HasChanges</span>
-property to ensure that any pending edits are pushed into the data source.</p></li><li><p>Up/down controls such as <span class="code">NumericUpDown</span> will not save their changes to
-the data source.  There is a bug in the .NET up/down controls that causes them to not commit their changes when
-the <span class="code">Value</span> property is bound to the data source and you use the text box portion of the
-control to edit the value.  The workaround is to bind the up/down control's <span class="code">Text</span>
-property to the data source instead.</p></li></ul></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="ce5cb77a-44a9-4629-aec3-6a8435cd8e53.htm">Control Tutorials</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">General Information</a></li><li><a class="quickLink">Creating Header, Footer, and Row Templates</a></li><li><a class="quickLink">Using the Templates</a></li><li><a class="quickLink">The Data List's Change Policy</a></li><li><a class="quickLink">Shared Control Data Sources in Templates</a></li><li><a class="quickLink">Creating Calculated Fields and Footer Totals</a></li><li><a class="quickLink">Known Issues and Their Workarounds</a></li><li><a class="quickLink">Common Problems</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://github.com/EWSoftware/ListControls" target="_blank" rel="noopener noreferrer">[v2024.12.18.0] Copyright © 2005-2024, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
+Me.AddBinding(lblKey, "Text", "Addresses.ID")</code></pre></div></div></li><li><p>Accidentally binding two controls to the same field in the row source.  This problem will not usually generate
+any exceptions but may cause unexpected behavior such as one control assuming the value of another control when
+you make changes in the first control or a control losing its value when it loses the focus. Check the data
+bindings in the <span class="code">Bind</span> method to ensure that they are binding to the correct fields and the correct properties in
+each control.</p></li><li><p>Not setting a unique binding context on controls that share a common data source within the same template.  As
+noted earlier, each row template has its own binding context so controls in each one can share a common data
+source without conflicts (i.e. a combo box in each row can re-use a common data source for its items).  However,
+as with any other form or user control, controls within the same template that share a common data source must
+have their own binding context.  For example, if you have two combo boxes on a template that share the same data
+source for their items, assign a new binding context to the <span class="code">BindingContext</span> property in one or both of the combo
+boxes so that each can be set independently of the other within the same row.</p></li><li><p>Setting a shared data source for the template's list controls after the template has been assigned to the data
+list control.  If this occurs, the controls in the template (combo boxes, list boxes, etc), may not show any
+items or will generate a null reference exception.  Be sure to set the shared data sources for such controls
+before assigning the template to the data list control.  Also be sure to use the same key name so that the
+correct data source is retrieved from the data list's <span class="code">SharedDataSources</span> property.</p></li><li><p>Forgetting to call <span class="code">CommitChanges</span> before saving the data source.  If you save your data source (i.e. call
+<span class="code">Update</span> on a data adapter) but some changes are missing, it could be that the information has not yet made it
+into the data source.  Be sure to call the <span class="code">CommitChanges</span> method on the data list or check the <span class="code">HasChanges</span>
+property to ensure that any pending edits are pushed into the data source.</p></li><li><p>Up/down controls such as <span class="code">NumericUpDown</span> will not save their changes to the data source.  There is a bug in the
+.NET up/down controls that causes them to not commit their changes when the <span class="code">Value</span> property is bound to the data
+source and you use the text box portion of the control to edit the value.  The workaround is to bind the up/down
+control's <span class="code">Text</span> property to the data source instead.</p></li></ul></div><h2 id="see-also" class="quickLinkHeader">See Also</h2><div id="IDJABSection"><p><strong>Other Resources</strong><br /><a href="ce5cb77a-44a9-4629-aec3-6a8435cd8e53.htm">Control Tutorials</a></p></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">General Information</a></li><li><a class="quickLink">Creating Header, Footer, and Row Templates</a></li><li><a class="quickLink">Using the Templates</a></li><li><a class="quickLink">The Data List's Change Policy</a></li><li><a class="quickLink">Shared Control Data Sources in Templates</a></li><li><a class="quickLink">Creating Calculated Fields and Footer Totals</a></li><li><a class="quickLink">Known Issues and Their Workarounds</a></li><li><a class="quickLink">Common Problems</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://github.com/EWSoftware/ListControls" target="_blank" rel="noopener noreferrer">[v2024.12.18.0] Copyright © 2005-2024, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=EWSoftware.ListControls%20Library%20Documentation">Eric@EWoodruff.us</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
@@ -531,13 +505,5 @@ property to the data source instead.</p></li></ul></div><h2 class="quickLinkHead
 SetDefaultLanguage("cs");
 LoadTocFile(null, null);
 InitializeQuickLinks();
-
-$(".toggleSection" ).click(function () {
-    SectionExpandCollapse(this);
-});
-
-$(".toggleSection").keypress(function () {
-    SectionExpandCollapseCheckKey(this, event)
-});
 hljs.highlightAll();
 });</script></body></html>
