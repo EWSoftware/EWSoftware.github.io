@@ -1,28 +1,28 @@
 ﻿<!DOCTYPE html ><html lang="en-US"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.css" /><link rel="stylesheet" href="../css/font-awesome.min.css" /><link rel="stylesheet" href="../css/presentationStyle.css" /><link rel="stylesheet" href="../css/vs.min.css" /><script src="../scripts/jquery-3.5.1.min.js"></script><script src="../scripts/clipboard.min.js"></script><script src="../scripts/highlight.min.js"></script><script src="../scripts/presentationStyle.js"></script><title>Specifications Compliance</title><meta name="Title" content="Specifications Compliance" /><meta name="Help.Id" content="ada69918-d59a-4340-8c77-28b9726a7205" /><meta name="Help.ContentType" content="Concepts" /><meta name="guid" content="ada69918-d59a-4340-8c77-28b9726a7205" /><meta name="Description" content="To the best of my knowledge, all specifications are fully implemented except for the following noted limitations. The five specifications contain a large amount of information and it is possible that I may have missed something." /><meta name="tocFile" content="../toc/IDC.xml" /></head><body><div class="fixedLayout"><div id="Header" class="fixedHeader"><div class="pageHeader level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div class="level-item"><a target="_blank" rel="noopener noreferrer" href="https://github.com/EWSoftware/PDI"><img alt="EWSoftware.PDI Library" src="../icons/EWSPDI.bmp" /></a></div><div id="DocumentationTitle" class="level-item">EWSoftware.PDI Namespace Documentation</div></div><div id="LangFilterSearchContainer" class="level-right"><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a><a class="dropdown-item languageFilterItem" data-languageId="vb">VB</a><a class="dropdown-item languageFilterItem" data-languageId="cpp">C++</a><a class="dropdown-item languageFilterItem" data-languageId="fs">F#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></div><div class="fixedContent"><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div id="ContentContainer" class="columns pl-5 pr-5 fixedContent"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu" /></nav></div><div id="Resizer" class="is-hidden"></div><div id="TopicContent" class="column content is-7"><h1>Specifications Compliance</h1><div><p>To the best of my knowledge, all specifications are fully implemented except for the following noted
 limitations.  The five specifications contain a large amount of information and it is possible that I may have
 missed something.  If you do find something that is not implemented or is not correct, please let me know and I
-will do my best to correct the problem.</p></div><div id="IDBABSection" class="noTitle"><dl><dt>vCard 2.1 and vCard 3.0</dt><dd><p>vCard object and vCard property group names are parsed and stored and are written back out when
+will do my best to correct the problem.</p><dl><dt>vCard 2.1 and vCard 3.0</dt><dd><p>vCard object and vCard property group names are parsed and stored and are written back out when
 saved.  However, full use of the grouping name as defined in the specifications is not supported.</p><p>Inline binary encoded properties such as <span class="code">PHOTO</span>, <span class="code">LOGO</span>,
 <span class="code">SOUND</span>, and <span class="code">KEY</span> give you access to a byte array that represents
 the inline decoded binary data but it is up to you to convert the byte array into something more useful such as
 an image, sound, digital certificate, file, etc.  The demo applications provide some examples of this.</p></dd><dt>vCard 4.0</dt><dd><p>Support for RFC 6350 is only partially implemented.  The following items are not supported.
-They may be addressed in future releases as the need arises:</p><ul><li><p>The <span class="code">ALTID</span> and <span class="code">LANGUAGE</span> parameters are not
+They may be addressed in future releases as the need arises:</p><ul><li>The <span class="code">ALTID</span> and <span class="code">LANGUAGE</span> parameters are not
 supported.  The introduction of these parameters significantly changes the cardinality of many properties which
 would require reimplementing both the vCard parser and the vCard object itself.  As such, these parameters will
 be ignored and will be added to the custom parameter collection on any property on which they appear.  If
 multiple vCard properties of the same type are encountered due to the use of these parameters, only the value
 from the last property instance seen will be used.  If the vCard is subsequently saved, the other properties
-instances of the same type will be lost.</p></li><li><p>For similar reasons, the <span class="code">PREF</span> and <span class="code">TYPE</span>
+instances of the same type will be lost.</li><li>For similar reasons, the <span class="code">PREF</span> and <span class="code">TYPE</span>
 parameters on the <span class="code">CATEGORIES</span>, <span class="code">FN</span>, <span class="code">GEO</span>,
 <span class="code">KEY</span>, <span class="code">LOGO</span>, <span class="code">NICKNAME</span>,
 <span class="code">ORG</span>, <span class="code">PHOTO</span>, <span class="code">ROLE</span>, <span class="code">SOUND</span>,
 <span class="code">SOURCE</span>, <span class="code">TITLE</span>, <span class="code">TZ</span>, and <span class="code">URL</span>
 properties are not supported either.  As above, these will pass through as custom properties and only the last
-property instance seen will be used.</p></li><li><p>The <span class="code">MEDIATYPE</span> parameter is ignored on properties that support it.
-It will be passed through in the custom parameters.</p></li><li><p>The <span class="code">CALADRURI</span>, <span class="code">CALURI</span>, <span class="code">FBURL</span>,
+property instance seen will be used.</li><li>The <span class="code">MEDIATYPE</span> parameter is ignored on properties that support it.
+It will be passed through in the custom parameters.</li><li>The <span class="code">CALADRURI</span>, <span class="code">CALURI</span>, <span class="code">FBURL</span>,
 <span class="code">IMPP</span>, <span class="code">LANG</span>, and <span class="code">XML</span> properties are not
 handled.  These will be passed through in the custom properties collection.  Support will be added for these
-later if there is a need for them.</p></li></ul><p>The vCard 4.0 specification states that inline vCard values such as on the
+later if there is a need for them.</li></ul><p>The vCard 4.0 specification states that inline vCard values such as on the
 <span class="code">AGENT</span> property are no longer supported and does not include any documentation for the
 property at all.  However, since other non-inline types are valid in the prior specifications and the 4.0
 specification does not address them at all, the	<span class="code">AGENT</span> property will function as it did
@@ -33,13 +33,13 @@ saved but they are not used for anything.  All iCalendar 2.0 recurrence and time
 and utilized though.</p><p>Inline binary encoded properties such as <span class="code">ATTACH</span> give you access to a
 byte array that represents the inline decoded binary data but it is up to you to convert the byte array into
 something more useful such as a file.  The demo applications provide some examples of this.</p><p>All calendar-related objects are compatible with RFC 2446 (iCalendar Transport-Independent
-Interoperability Protocol) and RFC 2447 (iCalendar Message-Based Interoperability Protocol) and implement all 
+Interoperability Protocol) and RFC 2447 (iCalendar Message-Based Interoperability Protocol) and implement all
 the necessary properties.  However, there is currently no support for validating objects against RFC 2446 rules.
 Support for this may be considered at a later date.</p></dd><dt>All specifications</dt><dd><p>Custom properties (anything not recognized as part of one of the specifications) are stored in
 a <span class="code">CustomProperties</span> property on each object. It is up to you to search the collection for
 custom properties that may be of interested to you.</p><p>Custom parameters (anything not recognized as part of one of the specifications) are stored in
 a <span class="code">CustomParameters</span> string property on each property object.  It is up to you to parse
-the string for custom parameters that may be of interest to you.</p></dd></dl><p>For more information and copies of the specifications, please refer to the <a href="http://www.imc.org/pdi/" target="_blank" rel="noopener noreferrer">Internet Mail Consortium</a> web site or the <a href="http://www.ietf.org/" target="_blank" rel="noopener noreferrer">Internet Engineering Task Force</a> web site.</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="695cc5b6-0937-42cd-9e7a-2f8aab4f09b0.htm">Usage Notes</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://github.com/EWSoftware/PDI" target="_blank" rel="noopener noreferrer">[v2025.1.9.0] Copyright © 2003-2025, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
+the string for custom parameters that may be of interest to you.</p></dd></dl><p>For more information and copies of the specifications, please refer to the <a href="http://www.imc.org/pdi/" target="_blank" rel="noopener noreferrer">Internet Mail Consortium</a> web site or the <a href="http://www.ietf.org/" target="_blank" rel="noopener noreferrer">Internet Engineering Task Force</a> web site.</p></div><h2 id="see-also" class="quickLinkHeader">See Also</h2><div id="IDBABSection"><p><strong>Other Resources</strong><br /><a href="695cc5b6-0937-42cd-9e7a-2f8aab4f09b0.htm">Usage Notes</a></p></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://github.com/EWSoftware/PDI" target="_blank" rel="noopener noreferrer">[v2025.1.9.0] Copyright © 2003-2025, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=EWSoftware.PDI%20Namespace%20Documentation">Eric@EWoodruff.us</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
@@ -51,12 +51,4 @@ the string for custom parameters that may be of interest to you.</p></dd></dl><p
 SetDefaultLanguage("cs");
 LoadTocFile(null, null);
 InitializeQuickLinks();
-
-$(".toggleSection" ).click(function () {
-    SectionExpandCollapse(this);
-});
-
-$(".toggleSection").keypress(function () {
-    SectionExpandCollapseCheckKey(this, event)
-});
 });</script></body></html>

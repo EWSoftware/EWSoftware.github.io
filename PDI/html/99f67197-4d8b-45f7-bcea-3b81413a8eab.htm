@@ -1,20 +1,20 @@
 ﻿<!DOCTYPE html ><html lang="en-US"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.css" /><link rel="stylesheet" href="../css/font-awesome.min.css" /><link rel="stylesheet" href="../css/presentationStyle.css" /><link rel="stylesheet" href="../css/vs.min.css" /><script src="../scripts/jquery-3.5.1.min.js"></script><script src="../scripts/clipboard.min.js"></script><script src="../scripts/highlight.min.js"></script><script src="../scripts/presentationStyle.js"></script><title>Working with Date/Time Values</title><meta name="Title" content="Working with Date/Time Values" /><meta name="Help.Id" content="99f67197-4d8b-45f7-bcea-3b81413a8eab" /><meta name="Help.ContentType" content="Concepts" /><meta name="guid" content="99f67197-4d8b-45f7-bcea-3b81413a8eab" /><meta name="Description" content="When working with calendar properties that have a date/time component, the date/time value may be represented in one of four ways:" /><meta name="tocFile" content="../toc/IDC.xml" /></head><body><div class="fixedLayout"><div id="Header" class="fixedHeader"><div class="pageHeader level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div class="level-item"><a target="_blank" rel="noopener noreferrer" href="https://github.com/EWSoftware/PDI"><img alt="EWSoftware.PDI Library" src="../icons/EWSPDI.bmp" /></a></div><div id="DocumentationTitle" class="level-item">EWSoftware.PDI Namespace Documentation</div></div><div id="LangFilterSearchContainer" class="level-right"><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a><a class="dropdown-item languageFilterItem" data-languageId="vb">VB</a><a class="dropdown-item languageFilterItem" data-languageId="cpp">C++</a><a class="dropdown-item languageFilterItem" data-languageId="fs">F#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></div><div class="fixedContent"><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div id="ContentContainer" class="columns pl-5 pr-5 fixedContent"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu" /></nav></div><div id="Resizer" class="is-hidden"></div><div id="TopicContent" class="column content is-7"><h1>Working with Date/Time Values</h1><div><p>When working with calendar properties that have a date/time component, the date/time value may be
-represented in one of four ways:</p></div><div id="IDBABSection" class="noTitle"><ul><li><p><strong>Universal Time</strong>, also referred to as UTC, Zulu time, absolute time, or
+represented in one of four ways:</p><ul><li><strong>Universal Time</strong>, also referred to as UTC, Zulu time, absolute time, or
 Greenwich Mean Time, is the standard time common to every place in the world.  UTC nominally reflects the mean
-solar time along the Earth's prime meridian that runs through Greenwich, England.</p></li><li><p><strong>Time Zone Time</strong> is used to indicate a date/time value that is
+solar time along the Earth's prime meridian that runs through Greenwich, England.</li><li><strong>Time Zone Time</strong> is used to indicate a date/time value that is
 associated with a specific time zone (i.e. Pacific Standard Time, Eastern Daylight Time, etc).  A time zone time
 value is calculated by taking a UTC value and adding a positive or negative offset in hours and minutes.  If
 Daylight Saving Time information is available, the offset can be adjusted accordingly to ensure that the time is
 accurate based on whether or not Daylight Saving Time is in effect.  Negating the offset value and adding it to
-the date/time will convert a time zone time to Universal Time.</p></li><li><p><strong>Local Time</strong> is used to represent date/time values expressed in the time
+the date/time will convert a time zone time to Universal Time.</li><li><strong>Local Time</strong> is used to represent date/time values expressed in the time
 zone of the machine on which the application is currently running. UTC and time zone time values are converted to
 local time by adding a positive or negative offset in hours and minutes to arrive at the local time value.
 Daylight Saving Time information is also factored in if available.  Negating the offset value and adding it to
-the date/time will convert a local time value to the time zone time or Universal Time.</p></li><li><p><strong>Floating Time</strong> is identical to local time and mainly applies to how a
+the date/time will convert a local time value to the time zone time or Universal Time.</li><li><strong>Floating Time</strong> is identical to local time and mainly applies to how a
 date/time value is stored in an iCalendar file.  This term is used to indicate a date/time value stored without a
 UTC indicator or time zone reference.  It is used to represent the same hour, minute, and second value regardless
 of which time zone is currently being observed.  When such values are encountered, they are treated as if they
-are in the machine's current time zone.</p></li></ul><p>It is important to note the differences between these date/time representations.  This is
+are in the machine's current time zone.</li></ul><p>It is important to note the differences between these date/time representations.  This is
 especially true when working with web applications.  In a desktop application running on a user's PC, local time
 and the current user's time zone are one and the same.  However in a web based application, the web server may be
 physically located in a different time zone from the client that is using the web application.  As such, you must
@@ -27,17 +27,17 @@ calculated or expressed in local time.  This always refers to local time on the 
 is running which, as noted above, may not be the same time zone in which the user is located.  Where necessary,
 you may need to convert such values between local time and a specific time zone or UTC.  The
 <a href="5690abeb-6dee-b73f-8dec-43f0db9ba7be.htm">VCalendar</a> object has
-several static methods to help with these conversions:</p><ul><li><p><a href="72d8bcb2-55ec-66ff-a29a-f9501bd7785c.htm">TimeZoneTimeToUtc</a>
-- Convert a date/time value from the specified time zone time to Universal Time (UTC).</p></li><li><p><a href="d202b223-afb4-9c62-be9d-d50b2f69c885.htm">UtcToTimeZoneTime</a>
-- Convert a date/time value from Universal Time (UTC) to the specified time zone time.</p></li><li><p><a href="91bcb78b-c341-7aa1-5f77-d5ed39309a5e.htm">TimeZoneTimeToLocalTime</a>
-- Convert a date/time value from the specified time zone time to local time.</p></li><li><p><a href="28415e60-ce3e-0ce7-3e11-11d7530bc4cb.htm">LocalTimeToTimeZoneTime</a>
-- Convert a date/time value from local time to the specified time zone time.</p></li><li><p><a href="f8f073e9-7f00-703d-dc08-fc4bfc4854f1.htm">TimeZoneToTimeZone</a>
-- Convert a date/time value from one time zone time to the another time zone time.</p></li></ul><p>Date/time properties on calendar objects also have properties to return the value with an
-appropriate conversion applied to it:</p><ul><li><p><a href="ffb592c3-f81f-b165-1e6c-a89c2e9a74a2.htm">TimeZoneDateTime</a>
-- Get or set the value as a date/time value expressed in the currently defined time zone ID.</p></li><li><p><a href="e0bfda9d-8473-2b5e-70a5-67c949802d82.htm">UtcDateTime</a>
-- Get or set the value as a date/time value expressed in Universal Time.</p></li><li><p><a href="b7496658-228e-3b53-a8e7-97d7c19d119d.htm">DateTimeValue</a>
-- Get or set the value as a date/time value expressed in local time.</p></li><li><p><a href="7a45e285-08d7-d680-1e43-a9462ad60be5.htm">IsFloating</a>
-- Get or set whether or not the date/time is a floating value.</p></li></ul></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="695cc5b6-0937-42cd-9e7a-2f8aab4f09b0.htm">Usage Notes</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://github.com/EWSoftware/PDI" target="_blank" rel="noopener noreferrer">[v2025.1.9.0] Copyright © 2003-2025, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
+several static methods to help with these conversions:</p><ul><li><a href="72d8bcb2-55ec-66ff-a29a-f9501bd7785c.htm">TimeZoneTimeToUtc</a> -
+Convert a date/time value from the specified time zone time to Universal Time (UTC).</li><li><a href="d202b223-afb4-9c62-be9d-d50b2f69c885.htm">UtcToTimeZoneTime</a> -
+Convert a date/time value from Universal Time (UTC) to the specified time zone time.</li><li><a href="91bcb78b-c341-7aa1-5f77-d5ed39309a5e.htm">TimeZoneTimeToLocalTime</a> -
+Convert a date/time value from the specified time zone time to local time.</li><li><a href="28415e60-ce3e-0ce7-3e11-11d7530bc4cb.htm">LocalTimeToTimeZoneTime</a> -
+Convert a date/time value from local time to the specified time zone time.</li><li><a href="f8f073e9-7f00-703d-dc08-fc4bfc4854f1.htm">TimeZoneToTimeZone</a> -
+Convert a date/time value from one time zone time to the another time zone time.</li></ul><p>Date/time properties on calendar objects also have properties to return the value with an appropriate conversion
+applied to it:</p><ul><li><a href="ffb592c3-f81f-b165-1e6c-a89c2e9a74a2.htm">TimeZoneDateTime</a> - Get or set the value as a date/time
+value expressed in the currently defined time zone ID.</li><li><a href="e0bfda9d-8473-2b5e-70a5-67c949802d82.htm">UtcDateTime</a> - Get or set the value as a date/time value
+expressed in Universal Time.</li><li><a href="b7496658-228e-3b53-a8e7-97d7c19d119d.htm">DateTimeValue</a> - Get or set the value as a date/time value
+expressed in local time.</li><li><a href="7a45e285-08d7-d680-1e43-a9462ad60be5.htm">IsFloating</a> - Get or set whether or not the date/time is a
+floating value.</li></ul></div><h2 id="see-also" class="quickLinkHeader">See Also</h2><div id="IDBABSection"><p><strong>Other Resources</strong><br /><a href="695cc5b6-0937-42cd-9e7a-2f8aab4f09b0.htm">Usage Notes</a></p></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://github.com/EWSoftware/PDI" target="_blank" rel="noopener noreferrer">[v2025.1.9.0] Copyright © 2003-2025, Eric Woodruff, All Rights Reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=EWSoftware.PDI%20Namespace%20Documentation">Eric@EWoodruff.us</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
@@ -49,12 +49,4 @@ appropriate conversion applied to it:</p><ul><li><p><a href="ffb592c3-f81f-b165-
 SetDefaultLanguage("cs");
 LoadTocFile(null, null);
 InitializeQuickLinks();
-
-$(".toggleSection" ).click(function () {
-    SectionExpandCollapse(this);
-});
-
-$(".toggleSection").keypress(function () {
-    SectionExpandCollapseCheckKey(this, event)
-});
 });</script></body></html>
