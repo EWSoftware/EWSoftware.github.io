@@ -11,7 +11,7 @@ links to API topics in the other help files will work.  For example, consider a 
 the following assemblies.</p><ul><li><p>MyCompany.MyProduct.Base.dll</p></li><li><p>MyCompany.MyProduct.Windows.Forms.dll</p></li><li><p>MyCompany.MyProduct.Web.Controls.dll</p></li></ul><p>The Windows Forms and the Web Controls assemblies both reference types found in the base assembly.  If
 you want to segregate the help for each assembly into its own help file, you can create one help file builder
 project for each assembly. In the projects for the Windows Forms and the Web Controls assemblies, you would add
-this plug-in and reference the project for the base assembly.</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Configuration Options</h2><div id="IDBABSection"><p>The configuration options consist of a list of other projects that will be built and have their
+this plug-in and reference the project for the base assembly.</p></div><h2 class="quickLinkHeader">Configuration Options</h2><div id="IDBABSection"><p>The configuration options consist of a list of other projects that will be built and have their
 reference link information merged with the current project.  Note that these will only produce a partial build,
 enough to generate reflection information.  XML comments files for the documented assemblies are optional.  A
 link type is associated with each project in the configuration (<span class="code">Id</span> to produce Microsoft
@@ -28,7 +28,7 @@ reflection information.  As such, the following project properties are ignored i
 build step.</p></li><li><p><strong>Transform Arguments</strong> category: All properties</p></li></ul><p>XML comments files from the other projects are included in the current project's build so that
 inherited members are still documented correctly.  Where there are XML comments common to multiple projects,
 those from the current project will always take precedence.  As noted above, XML comments files are optional.
-If omitted, no comments will be associated with the given assembly.</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="e031b14e-42f0-47e1-af4c-9fed2b88cbc7.htm">Build Process Plug-Ins</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Configuration Options</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.9.30.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
+If omitted, no comments will be associated with the given assembly.</p></div><h2 class="quickLinkHeader">See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="e031b14e-42f0-47e1-af4c-9fed2b88cbc7.htm">Build Process Plug-Ins</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Configuration Options</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.12.18.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20Help%20File%20Builder%20Documentation">Eric Woodruff</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
@@ -40,12 +40,4 @@ If omitted, no comments will be associated with the given assembly.</p></div><h2
 SetDefaultLanguage("cs");
 LoadTocFile(null, null);
 InitializeQuickLinks();
-
-$(".toggleSection" ).click(function () {
-    SectionExpandCollapse(this);
-});
-
-$(".toggleSection").keypress(function () {
-    SectionExpandCollapseCheckKey(this, event)
-});
 });</script></body></html>

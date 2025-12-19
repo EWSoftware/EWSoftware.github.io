@@ -3,7 +3,7 @@ a target, especially those found in the Global Assembly Cache (GAC).  As such, i
 and load them when needed.  The <strong>References</strong> project node is used to specify a list of dependencies used
 by the <strong>MRefBuilder</strong> tool when it generates reflection information for the documentation
 source assemblies.  Dependency information allows inherited members to be listed for a type but topics will not
-be generated for them and the information will not appear in the table of contents of the help file.</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Adding a Reference</h2><div id="IDCABSection"><p>To add a reference, right click on the <strong>References</strong> project node and select
+be generated for them and the information will not appear in the table of contents of the help file.</p></div><h2 class="quickLinkHeader">Adding a Reference</h2><div id="IDCABSection"><p>To add a reference, right click on the <strong>References</strong> project node and select
 <strong>Add File/Project Reference...</strong> or <strong>Add GAC Reference...</strong>.  These options can also be selected from
 the <strong>File | Project Explorer | References</strong> menu.  Files can also be dragged and dropped on the node from
 Windows Explorer.  The following reference types are supported in the project.</p><ul><li><p><strong>File Reference</strong> - Select an assembly to use as the reference.</p></li><li><p><strong>Project Reference</strong> - Select a Visual Studio project to use as a
@@ -17,15 +17,15 @@ documentation sources, you may find it easier to add them as documentation
 sources instead of the assemblies, comments, and references that they contain.
 When a solution or project is used, these items are imported from them
 automatically at build time.</p></div></article><article class="message is-info"><div class="message-header"><p><span class="icon"><i class="fa fa-info-circle"></i></span>  Tip</p></div><div class="message-body"><p>If you have one or more folders containing reference assemblies that you would like to scan and
-include at build time, you can use the <a href="96557037-c19e-4183-bcf1-f42d7018de9f.htm">Wildcard References Plug-In</a></p></div></article></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Editing a Reference</h2><div id="IDDABSection"><p>When selected, file and project references allow you to edit the <span class="code">HintPath</span>
+include at build time, you can use the <a href="96557037-c19e-4183-bcf1-f42d7018de9f.htm">Wildcard References Plug-In</a></p></div></article></div><h2 class="quickLinkHeader">Editing a Reference</h2><div id="IDDABSection"><p>When selected, file and project references allow you to edit the <span class="code">HintPath</span>
 property to specify the referenced file.  All other references have read-only properties.  To change them, remove
 them and add the desired references in their place.  Project references also contain a
 <span class="code">ReferenceOutputAssembly</span> property.  If set to true (the default), the project's output
 assembly will be used as a reference.  If set to false, the reference will be ignored.  This is useful for
 defining project dependencies that MSBuild can use to determine the build order of projects within a solution
 without including the project's assembly as an actual reference.</p><article class="message is-info"><div class="message-header"><p><span class="icon"><i class="fa fa-info-circle"></i></span>  Note</p></div><div class="message-body"><p>If using environment variables in the hint path, use the MSBuild format rather than percent signs
-so that they are expanded correctly (i.e. <span class="code">$(MyVar)\Reference.dll</span>).</p></div></article></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Removing a Reference</h2><div id="IDEABSection"><p>To remove a reference, right click on it and select the <strong>Remove</strong> option.  This can also be
-selected from the <strong>File | Project Explorer | References</strong> menu.</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="e12c2b9f-18c7-4718-850b-ac3c2e293672.htm">Solution/Project Explorer Window</a></div><div><a href="e32086c6-de17-4e54-a746-1ac80bf0c45a.htm">Project Properties Window</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Adding a Reference</a></li><li><a class="quickLink">Editing a Reference</a></li><li><a class="quickLink">Removing a Reference</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.9.30.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
+so that they are expanded correctly (i.e. <span class="code">$(MyVar)\Reference.dll</span>).</p></div></article></div><h2 class="quickLinkHeader">Removing a Reference</h2><div id="IDEABSection"><p>To remove a reference, right click on it and select the <strong>Remove</strong> option.  This can also be
+selected from the <strong>File | Project Explorer | References</strong> menu.</p></div><h2 class="quickLinkHeader">See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="e12c2b9f-18c7-4718-850b-ac3c2e293672.htm">Solution/Project Explorer Window</a></div><div><a href="e32086c6-de17-4e54-a746-1ac80bf0c45a.htm">Project Properties Window</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Adding a Reference</a></li><li><a class="quickLink">Editing a Reference</a></li><li><a class="quickLink">Removing a Reference</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.12.18.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20Help%20File%20Builder%20Documentation">Eric Woodruff</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
@@ -37,12 +37,4 @@ selected from the <strong>File | Project Explorer | References</strong> menu.</p
 SetDefaultLanguage("cs");
 LoadTocFile(null, null);
 InitializeQuickLinks();
-
-$(".toggleSection" ).click(function () {
-    SectionExpandCollapse(this);
-});
-
-$(".toggleSection").keypress(function () {
-    SectionExpandCollapseCheckKey(this, event)
-});
 });</script></body></html>

@@ -2,14 +2,14 @@
 topic.  In general, this element is only used by custom build components to pass markup through after modifying
 the conceptual topic in some manner (i.e. to colorize code).  Other non-component uses might be to include a
 video or other such items in the topic that is currently not handled by MAML.</p><article class="message is-info"><div class="message-header"><p><span class="icon"><i class="fa fa-info-circle"></i></span>  Note</p></div><div class="message-body"><p>It is recommended that you avoid using this element unless there is no MAML equivalent for what you
-are trying to do.  Usage should be restricted to the output of custom build components when needed.</p></div></article></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Usage</h2><div id="IDBABSection"><p>Enter the element in the topic and specify the format-specific markup as the content.  It can be
+are trying to do.  Usage should be restricted to the output of custom build components when needed.</p></div></article></div><h2 class="quickLinkHeader">Usage</h2><div id="IDBABSection"><p>Enter the element in the topic and specify the format-specific markup as the content.  It can be
 used as a block or an inline element.</p><p>An optional <span class="code">contentType</span> attribute is supported that defines the type of
 content (Html, OpenXml, or Markdown).  This allows only rendering the content based on the content type supported
 by the presentation style.</p><p>When specified, presentation styles that only support Open XML will only render markup element
 content with a content type of "OpenXml".  Presentation styles that only support Markdown will only render markup
 element content with a content type of "Html" or "Markdown".  All others (Help 1, Microsoft Help Viewer, and
 website) will only render the content if the type is "Html".  If the attribute is omitted, the content will be
-rendered regardless of the presentation style's formats whether or not they actually support it.</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Example</h2><div id="IDCABSection"><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle"> </span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-xml">&lt;para&gt;Here are some literal markup examples:
+rendered regardless of the presentation style's formats whether or not they actually support it.</p></div><h2 class="quickLinkHeader">Example</h2><div id="IDCABSection"><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle"> </span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-xml">&lt;para&gt;Here are some literal markup examples:
 &lt;markup&gt;&lt;br /&gt;&lt;br /&gt;
 This content is compatible with the all presentation style formats.
 &lt;br /&gt;&lt;br /&gt;
@@ -22,7 +22,7 @@ custom build components.
 &lt;p&gt;This content is only compatible with &lt;strong&gt;HTML&lt;/strong&gt; and &lt;strong&gt;Markdown&lt;/strong&gt;
 presentation style formats.&lt;/p&gt;
 
-&lt;p&gt;It is &lt;strong&gt;NOT&lt;/strong&gt; recommended that you use the &lt;em&gt;markup&lt;/em&gt; element for
+&lt;p&gt;It is &lt;strong&gt;NOT&lt;/strong&gt; recommended that you use the &lt;span class="code"&gt;markup&lt;/span&gt; element for
 normal conceptual content when an equivalent &lt;u&gt;MAML element&lt;/u&gt; already exists.
 Its use should be restricted to custom build components.&lt;/p&gt;
 &lt;/markup&gt;
@@ -46,7 +46,7 @@ It is &lt;span class="Bold"&gt;NOT&lt;/span&gt; recommended that you use the &lt
 element for normal conceptual content when an equivalent &lt;span class="Underline"&gt;MAML element&lt;/span&gt; already
 exists.  Its use should be restricted to custom build components.
 &lt;/markup&gt;
-&lt;/para&gt;</code></pre></div></div></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Example Output</h2><div id="IDDABSection"><p>Here are some literal markup examples:
+&lt;/para&gt;</code></pre></div></div></div><h2 class="quickLinkHeader">Example Output</h2><div id="IDDABSection"><p>Here are some literal markup examples:
 <br /><br />
 This content is compatible with the all presentation style formats.
 <br /><br />
@@ -54,9 +54,9 @@ It is NOT recommended that you use the markup element for normal conceptual cont
 when an equivalent MAML element already exists.  Its use should be restricted to
 custom build components.
 <br /><br /><p>This content is only compatible with <strong>HTML</strong> and <strong>Markdown</strong>
-presentation style formats.</p><p>It is <strong>NOT</strong> recommended that you use the <codeSnippetGroup><code language="cs" codeLanguage="CSharp" style="cs">markup</code></codeSnippetGroup> element for
+presentation style formats.</p><p>It is <strong>NOT</strong> recommended that you use the <span class="code">markup</span> element for
 normal conceptual content when an equivalent <u>MAML element</u> already exists.
-Its use should be restricted to custom build components.</p></p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="9d0dc122-7829-4b22-af2e-6685867116f8.htm">Miscellaneous Elements</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Usage</a></li><li><a class="quickLink">Example</a></li><li><a class="quickLink">Example Output</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2022.4.16.0] Sandcastle MAML Guide</a></p><div class="feedbackLink">Send comments on this topic to
+Its use should be restricted to custom build components.</p></p></div><h2 class="quickLinkHeader">See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="9d0dc122-7829-4b22-af2e-6685867116f8.htm">Miscellaneous Elements</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Usage</a></li><li><a class="quickLink">Example</a></li><li><a class="quickLink">Example Output</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2022.4.16.0] Sandcastle MAML Guide</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20MAML%20Guide">Eric Woodruff</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
@@ -68,13 +68,5 @@ Its use should be restricted to custom build components.</p></p></div><h2 class=
 SetDefaultLanguage("cs");
 LoadTocFile(null, null);
 InitializeQuickLinks();
-
-$(".toggleSection" ).click(function () {
-    SectionExpandCollapse(this);
-});
-
-$(".toggleSection").keypress(function () {
-    SectionExpandCollapseCheckKey(this, event)
-});
 hljs.highlightAll();
 });</script></body></html>

@@ -4,7 +4,7 @@
 				elements because it still allows you to validate your topic files.
 			</p><article class="message is-info"><div class="message-header"><p><span class="icon"><i class="fa fa-info-circle"></i></span>  Tip</p></div><div class="message-body"><p>
 					The Sandcastle version of the MAML schema files already contain the necessary changes.
-				</p></div></article></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>XML Schema Extensibility</h2><div id="IDBABSection"><p>
+				</p></div></article></div><h2 class="quickLinkHeader">XML Schema Extensibility</h2><div id="IDBABSection"><p>
 					In general, XML schema provides the <span class="code">any</span> element
 					for declaring extensibility points in your schema. The
 					<span class="code">any</span> element has two attributes that control the
@@ -53,7 +53,7 @@
 							authors to provide a schema for validation but does not force them to do so.
 						</p></dd></dl><p>
 					Therefore, our extensibility points will all look like this:
-				</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">XML</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-xml">&lt;any namespace="##other" processContents="lax" /&gt;</code></pre></div></div></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Extending Inline Text</h2><div id="IDCABSection"><p>
+				</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">XML</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-xml">&lt;any namespace="##other" processContents="lax" /&gt;</code></pre></div></div></div><h2 class="quickLinkHeader">Extending Inline Text</h2><div id="IDCABSection"><p>
 					Build components might add elements that you can use inside a <span class="code">para</span>
 					element. Examples for such elements are:
 				</p><dl><dt>Linking</dt><dd><p>
@@ -96,7 +96,7 @@
     &lt;any namespace="##other" processContents="lax" /&gt;
   &lt;/choice&gt;
   &lt;attributeGroup ref="maml:contentIdentificationSharingAndConditionGroup"/&gt;
-&lt;/complexType&gt;</code></pre></div></div></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Extending Related Topics</h2><div id="IDDABSection"><p>
+&lt;/complexType&gt;</code></pre></div></div></div><h2 class="quickLinkHeader">Extending Related Topics</h2><div id="IDDABSection"><p>
 					For build components that provide elements for linking we also want to be able to use them inside the
 					<span class="code">relatedTopics</span> element. To do this, we will extend the type
 					<span class="code">relatedTopicsType</span>.
@@ -110,7 +110,7 @@
     &lt;any namespace="##other" processContents="lax" /&gt;
   &lt;/choice&gt;
   &lt;attributeGroup ref="maml:contentIdentificationSharingAndConditionGroup"/&gt;
-&lt;/complexType&gt;</code></pre></div></div></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Extending Section Structure</h2><div id="IDEABSection"><p>
+&lt;/complexType&gt;</code></pre></div></div></div><h2 class="quickLinkHeader">Extending Section Structure</h2><div id="IDEABSection"><p>
 					Last but not least build components might also provide elements that allow you to build a structure.
 					For this purpose MAML itself already provides the <span class="code">table</span>,
 					<span class="code">code</span>, and <span class="code">para</span> elements.  To allow new structural
@@ -126,7 +126,7 @@
     &lt;any namespace="##other" processContents="lax" /&gt;
   &lt;/choice&gt;
   &lt;attributeGroup ref="maml:contentIdentificationSharingAndConditionGroup"/&gt;
-&lt;/complexType&gt;</code></pre></div></div></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="746fc19e-2670-440b-8277-a1ef7dc074d5.htm">Visual Studio IntelliSense</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">XML Schema Extensibility</a></li><li><a class="quickLink">Extending Inline Text</a></li><li><a class="quickLink">Extending Related Topics</a></li><li><a class="quickLink">Extending Section Structure</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2022.4.16.0] Sandcastle MAML Guide</a></p><div class="feedbackLink">Send comments on this topic to
+&lt;/complexType&gt;</code></pre></div></div></div><h2 class="quickLinkHeader">See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="746fc19e-2670-440b-8277-a1ef7dc074d5.htm">Visual Studio IntelliSense</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">XML Schema Extensibility</a></li><li><a class="quickLink">Extending Inline Text</a></li><li><a class="quickLink">Extending Related Topics</a></li><li><a class="quickLink">Extending Section Structure</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2022.4.16.0] Sandcastle MAML Guide</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20MAML%20Guide">Eric Woodruff</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
@@ -138,13 +138,5 @@
 SetDefaultLanguage("cs");
 LoadTocFile(null, null);
 InitializeQuickLinks();
-
-$(".toggleSection" ).click(function () {
-    SectionExpandCollapse(this);
-});
-
-$(".toggleSection").keypress(function () {
-    SectionExpandCollapseCheckKey(this, event)
-});
 hljs.highlightAll();
 });</script></body></html>

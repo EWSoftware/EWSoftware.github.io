@@ -14,7 +14,7 @@ snippets.  In addition, it supports many other languages and can import code
 from working source code files which allows you to pull in examples from
 working projects that you can maintain and build without having to update a
 separate example snippets file.  As such, you may prefer to use it
-rather than the code snippets file.</p></div></article></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Code Snippets File Format</h2><div id="IDBABSection"><p>Below is an example of a code snippets file.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">Example Code Snippets File</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-xml">&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+rather than the code snippets file.</p></div></article></div><h2 class="quickLinkHeader">Code Snippets File Format</h2><div id="IDBABSection"><p>Below is an example of a code snippets file.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">Example Code Snippets File</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-xml">&lt;?xml version="1.0" encoding="utf-8" ?&gt;
 &lt;!-- This is an example code snippets file --&gt;
 &lt;examples&gt;
   &lt;item id="ClassDefinition#Define"&gt;
@@ -60,7 +60,7 @@ the entire value must be unique.</p></div></article><p>Each item must contain on
 elements with a <span class="code">language</span> attribute identifying the
 language of the sample code.  The valid language IDs are noted above.  The inner
 XML of the <span class="code">sampleCode</span> element is the code
-snippet.</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="86752a38-eba3-4174-bcbf-79ec8428ecf9.htm">Conceptual Content File Types</a></div><div><a href="91a45341-e368-463e-a9ed-9e05286d2c25.htm">codeReference</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Code Snippets File Format</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2022.4.16.0] Sandcastle MAML Guide</a></p><div class="feedbackLink">Send comments on this topic to
+snippet.</p></div><h2 class="quickLinkHeader">See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="86752a38-eba3-4174-bcbf-79ec8428ecf9.htm">Conceptual Content File Types</a></div><div><a href="91a45341-e368-463e-a9ed-9e05286d2c25.htm">codeReference</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Code Snippets File Format</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2022.4.16.0] Sandcastle MAML Guide</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20MAML%20Guide">Eric Woodruff</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
@@ -72,13 +72,5 @@ snippet.</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" t
 SetDefaultLanguage("cs");
 LoadTocFile(null, null);
 InitializeQuickLinks();
-
-$(".toggleSection" ).click(function () {
-    SectionExpandCollapse(this);
-});
-
-$(".toggleSection").keypress(function () {
-    SectionExpandCollapseCheckKey(this, event)
-});
 hljs.highlightAll();
 });</script></body></html>

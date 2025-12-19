@@ -3,7 +3,7 @@ syntax generators built against v2021.4.9.0 and earlier to the latest release th
 deploying the components as NuGet packages.  Presentation styles also underwent a complete rewrite in
 version 2022.8.14.0.  However, you may be able to replace your presentation style with simpler build components
 or plug-ins rather than reimplementing an entire presentation style.  Further changes made after version
-2025.3.22.0 made the <em>EWSoftware.SandcastleBuilder.Utils</em> NuGet package obsolete.</p><ul class="is-hidden-tablet"><li><a href="#Post20250322">Updating Projects For Use With v2025.9.30.0 and Later</a></li><li><a href="#QuickUpdate">Quick Updates for MSBuild Support Only</a></li><li><a href="#RecreateProjects">Support for MSBuild and .NET Core Builds</a></li><li><a href="#BuildComponents">Migrating Build Component Projects</a></li><li><a href="#PlugIns">Migrating Help File Builder Plug-In Projects</a></li><li><a href="#PresentationStyles">Migrating Presentation Style Projects</a></li><li><a href="#SyntaxGenerators">Migrating Syntax Generator Projects</a></li></ul></div><h2 id="Post20250322" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Updating Projects For Use With v2025.9.30.0 and Later</h2><div id="IDCABSection"><p>The <em>EWSoftware.SandcastleBuilder.Utils</em> NuGet package should not be used after
+2025.3.22.0 made the <em>EWSoftware.SandcastleBuilder.Utils</em> NuGet package obsolete.</p><ul class="is-hidden-tablet"><li><a href="#Post20250322">Updating Projects For Use With v2025.9.30.0 and Later</a></li><li><a href="#QuickUpdate">Quick Updates for MSBuild Support Only</a></li><li><a href="#RecreateProjects">Support for MSBuild and .NET Core Builds</a></li><li><a href="#BuildComponents">Migrating Build Component Projects</a></li><li><a href="#PlugIns">Migrating Help File Builder Plug-In Projects</a></li><li><a href="#PresentationStyles">Migrating Presentation Style Projects</a></li><li><a href="#SyntaxGenerators">Migrating Syntax Generator Projects</a></li></ul></div><h2 id="Post20250322" class="quickLinkHeader">Updating Projects For Use With v2025.9.30.0 and Later</h2><div id="IDCABSection"><p>The <em>EWSoftware.SandcastleBuilder.Utils</em> NuGet package should not be used after
 version 2025.3.22.0.  All code in it was moved to the <em>EWSoftware.Sandcastle.Core</em> package and
 other internal assemblies.  To update projects using the obsolete package, simply remove it and update the
 package reference for <em>EWSoftware.Sandcastle.Core</em> to the latest release.</p><p>Once the package references have been updated, you will have to update the imported namespaces in
@@ -15,7 +15,7 @@ references with ones from <span class="code">Sandcastle.Core</span> such as
 and <span class="code">Sandcastle.Core.Project</span>.  You will also need to replace references to types
 such as <span class="code">BuildProcess</span> and <span class="code">SandcastleProject</span> with their
 equivalent interfaces such as <span class="code">IBuildProcess</span> and
-<span class="code">ISandcastleProject</span>.</p></div><h2 id="QuickUpdate" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Quick Updates for MSBuild Support Only</h2><div id="IDDABSection"><p>Some quick updates can be made to get an existing component working with the new release without
+<span class="code">ISandcastleProject</span>.</p></div><h2 id="QuickUpdate" class="quickLinkHeader">Quick Updates for MSBuild Support Only</h2><div id="IDDABSection"><p>Some quick updates can be made to get an existing component working with the new release without
 having to recreate the project with the restriction that they will only work with MSBuild.  For .NET Core builds,
 the projects will need to be recreated as described in the sections below.  Make the following changes as needed
 based on the project type:</p><ul><li><p>Remove any references to <em>Sandcastle.Core</em> and
@@ -78,7 +78,7 @@ public sealed class BuildComponentEditorFactory : IConfigurationEditor
         //}
     }
 }
-#endregion</code></pre></div></div></li></ul></div><h2 id="RecreateProjects" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Support for MSBuild and .NET Core Builds</h2><div id="IDEABSection"><p>Starting with version v2021.11.7.0, all component projects use an SDK format project and contain
+#endregion</code></pre></div></div></li></ul></div><h2 id="RecreateProjects" class="quickLinkHeader">Support for MSBuild and .NET Core Builds</h2><div id="IDEABSection"><p>Starting with version v2021.11.7.0, all component projects use an SDK format project and contain
 the necessary properties to generate a NuGet package when built.  This allows them to be shared publicly on
 NuGet.org or privately with a local repository.  So that they are platform independent and work with both MSBuild
 and the dotnet tool, the projects target .NET Standard 2.0.  Support for configuration has also been separated
@@ -89,14 +89,14 @@ property file are present and ready to update.  The following sections provide m
 changes that need to be made to the various component project types.</p><article class="message is-warning"><div class="message-header"><p><span class="icon"><i class="fa fa-warning"></i></span>  Important</p></div><div class="message-body"><p>If, after creating a project, you rename the assembly created by the project, be sure to rename
 the project's <em>.props</em> file found in the <em>.\build</em> folder to match the new
 assembly name.  This is required so that the build properties can be found when added to a help file builder
-project using NuGet.</p></div></article></div><h2 id="BuildComponents" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Migrating Build Component Projects</h2><div id="IDFABSection"><ul><li><p>Create a new project and edit the properties on the project file's Package properties page that
+project using NuGet.</p></div></article></div><h2 id="BuildComponents" class="quickLinkHeader">Migrating Build Component Projects</h2><div id="IDFABSection"><ul><li><p>Create a new project and edit the properties on the project file's Package properties page that
 are used to generate the NuGet package for the component.</p></li><li><p>Import your component's code into the new project to replace the example component.  Some of
 the attribute values in the <em>AssemblyInfo.cs</em> file can be put in the project's package
 properties instead (title, description, company).</p></li><li><p>In the MEF component factory class, remove the <span class="code">IsConfigurable</span> property
 from the attribute metadata.</p></li><li><p>If the component is configurable, remove the <span class="code">ConfigureComponent</span>
 method.  To support configuration, you will need to create a new project using the <strong>Build Component/Plug-In
 Configuration Editor</strong> template project.  See the <a href="9ec616aa-59df-4c5c-a128-e540e6bb479c.htm">Creating a Configuration UI Project</a>
-topic for more information.</p></li></ul></div><h2 id="PlugIns" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Migrating Help File Builder Plug-In Projects</h2><div id="IDGABSection"><ul><li><p>Create a new project and edit the properties on the project file's Package properties page that
+topic for more information.</p></li></ul></div><h2 id="PlugIns" class="quickLinkHeader">Migrating Help File Builder Plug-In Projects</h2><div id="IDGABSection"><ul><li><p>Create a new project and edit the properties on the project file's Package properties page that
 are used to generate the NuGet package for the plug-in.</p></li><li><p>Import your plug-in's code into the new project to replace the example plug-in.  Some of
 the attribute values in the <em>AssemblyInfo.cs</em> file can be put in the project's package
 properties instead (title, description, company).</p></li><li><p>In the MEF component factory class, remove the <span class="code">IsConfigurable</span> property
@@ -106,7 +106,7 @@ Configuration Editor</strong> template project.  See the <a href="9ec616aa-59df-
 topic for more information.</p></li><li><p>In the plug-in's <span class="code">Initialize</span> method, change the type on the
 <em>configuration</em> parameter from <span class="code">XPathNavigator</span>
 to <span class="code">XElement</span>.  It will be necessary to rework the initialization code to work with the
-new parameter type.</p></li></ul></div><h2 id="PresentationStyles" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Migrating Presentation Style Projects</h2><div id="IDHABSection"><p>Starting with version 2022.8.14.0, presentation styles are implemented using a code-based API rather than
+new parameter type.</p></li></ul></div><h2 id="PresentationStyles" class="quickLinkHeader">Migrating Presentation Style Projects</h2><div id="IDHABSection"><p>Starting with version 2022.8.14.0, presentation styles are implemented using a code-based API rather than
 XSL transformations.  This makes them much easier to extend and modify compared to prior releases.  If you
 created your own presentation style in the past to make adjustments to how the topics were rendered or to add or
 remove handling for certain sections or elements, it is entirely likely that you will not need to create a whole
@@ -114,12 +114,12 @@ new presentation style going forward.  Instead, you should be able to implement 
 modify using standard help file builder plug-ins to adjust how the topics are rendered with selected presentation
 style regardless of which one is selected.  See the <a href="baf1dcbc-e9cf-4d71-a770-621e6eaf10a7.htm">Creating a Presentation Style Component</a>
 for more information.</p><p>A new project template and more information on creating a presentation style using the new API will
-be provided in a future release.</p></div><h2 id="SyntaxGenerators" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Migrating Syntax Generator Projects</h2><div id="IDIABSection"><ul><li><p>Create a new project and edit the properties on the project file's Package properties page that
+be provided in a future release.</p></div><h2 id="SyntaxGenerators" class="quickLinkHeader">Migrating Syntax Generator Projects</h2><div id="IDIABSection"><ul><li><p>Create a new project and edit the properties on the project file's Package properties page that
 are used to generate the NuGet package for the syntax generator.</p></li><li><p>Import your syntax generator's code and other supporting files into the new project to
 replace the example syntax generator.  Some of the attribute values in the <em>AssemblyInfo.cs</em>
 file can be put in the project's package properties instead (title, description, company).</p><p>Note that the syntax generator's <span class="code">IsConfigurable</span> property is still
 supported and should be left alone if set as it is used by the syntax component's configuration dialog rather
-than a configuration form defined within this project.</p></li></ul></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="078cc1c7-7995-431e-bf9c-8813becbe8df.htm">Version History</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Updating Projects For Use With v2025.9.30.0 and Later</a></li><li><a class="quickLink">Quick Updates for MSBuild Support Only</a></li><li><a class="quickLink">Support for MSBuild and .NET Core Builds</a></li><li><a class="quickLink">Migrating Build Component Projects</a></li><li><a class="quickLink">Migrating Help File Builder Plug-In Projects</a></li><li><a class="quickLink">Migrating Presentation Style Projects</a></li><li><a class="quickLink">Migrating Syntax Generator Projects</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.9.30.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
+than a configuration form defined within this project.</p></li></ul></div><h2 class="quickLinkHeader">See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="078cc1c7-7995-431e-bf9c-8813becbe8df.htm">Version History</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Updating Projects For Use With v2025.9.30.0 and Later</a></li><li><a class="quickLink">Quick Updates for MSBuild Support Only</a></li><li><a class="quickLink">Support for MSBuild and .NET Core Builds</a></li><li><a class="quickLink">Migrating Build Component Projects</a></li><li><a class="quickLink">Migrating Help File Builder Plug-In Projects</a></li><li><a class="quickLink">Migrating Presentation Style Projects</a></li><li><a class="quickLink">Migrating Syntax Generator Projects</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.12.18.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20Help%20File%20Builder%20Documentation">Eric Woodruff</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
@@ -131,13 +131,5 @@ than a configuration form defined within this project.</p></li></ul></div><h2 cl
 SetDefaultLanguage("cs");
 LoadTocFile(null, null);
 InitializeQuickLinks();
-
-$(".toggleSection" ).click(function () {
-    SectionExpandCollapse(this);
-});
-
-$(".toggleSection").keypress(function () {
-    SectionExpandCollapseCheckKey(this, event)
-});
 hljs.highlightAll();
 });</script></body></html>

@@ -5,7 +5,7 @@ project's <span class="code">Keep Log File</span> property is set to false and t
 content is in an XML format.  This allows you to run it through an XSL transformation to make it more readable,
 highlight warnings and errors, etc.  A default transformation is supplied and can be found under the main help
 file builder installation folder (<em>.\Templates\TransformBuildLog.xsl</em>).
-</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>The Build Log Viewer Tool Window</h2><div id="IDBABSection"><p>The build log viewer tool window loads the build log file and formats it in a more readable format
+</p></div><h2 class="quickLinkHeader">The Build Log Viewer Tool Window</h2><div id="IDBABSection"><p>The build log viewer tool window loads the build log file and formats it in a more readable format
 with each build step and plug-in section separated with a visible header.  The build step sections are
 collapsible.  A set of radio buttons at the top of the tool window change the build step details as follows:</p><ul><li><p><strong>Plain</strong> - This is the default option and loads the fastest.  It simply
 displays the build step output as plain text.</p></li><li><p><strong>Highlight warnings and errors</strong> - This option will highlight all warning
@@ -15,7 +15,7 @@ plug-in output text so that only warning and error messages are shown.  This gre
 information that you must look through to see the warnings and errors.</p></li></ul><article class="message is-info"><div class="message-header"><p><span class="icon"><i class="fa fa-info-circle"></i></span>  Note</p></div><div class="message-body"><p>The highlight and filter options will load much more slowly than the plain text option as it has
 to examine each line of the build step output looking for warning and error marker text.  It can take about ten
 to twenty seconds per megabyte based on the log file size.</p></div></article><p>The formatted log is in HTML and the viewer uses the web browser control to display it.  As such,
-you can use <strong>Ctrl+F</strong> to search the log and access the context menu to print the log content.</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>The Log File Elements</h2><div id="IDCABSection"><p>The log file content consists of the following XML elements:</p><table class="table is-hoverable"><thead><tr><th><p>Element</p></th><th><p>Description</p></th></tr></thead><tr><td><p><span class="code">shfbBuild</span></p></td><td><p>This is the root element that contains all of the build step output.  It has four attributes:</p><ul><li><p>The <span class="code">product</span> attribute identifies the tool that produced the log (the
+you can use <strong>Ctrl+F</strong> to search the log and access the context menu to print the log content.</p></div><h2 class="quickLinkHeader">The Log File Elements</h2><div id="IDCABSection"><p>The log file content consists of the following XML elements:</p><table class="table is-hoverable"><thead><tr><th><p>Element</p></th><th><p>Description</p></th></tr></thead><tr><td><p><span class="code">shfbBuild</span></p></td><td><p>This is the root element that contains all of the build step output.  It has four attributes:</p><ul><li><p>The <span class="code">product</span> attribute identifies the tool that produced the log (the
 help file builder).</p></li><li><p>The <span class="code">version</span> attribute identifies the build engine version.</p></li><li><p>The <span class="code">projectFile</span> attribute identifies the project file that was built.</p></li><li><p>The <span class="code">started</span> attribute contains the date and time that the build was
 started.</p></li></ul></td></tr><tr><td><p><span class="code">buildStep</span></p></td><td><p>This element contains the output for an individual build step.  The build step is identified in the
 <span class="code">step</span> attribute and corresponds to an enumeration value from
@@ -23,7 +23,7 @@ started.</p></li></ul></td></tr><tr><td><p><span class="code">buildStep</span></
 always be nested within a <span class="code">buildStep</span> element and there may be more than one depending on
 how many plug-ins ran during the given step.  This element has three attributes:</p><ul><li><p>The <span class="code">name</span> attribute identifies the plug-in that ran.</p></li><li><p>The <span class="code">behavior</span> attribute specifies the execution behavior of the
 plug-in.</p></li><li><p>The <span class="code">priority</span> attribute specifies the execution priority of the
-plug-in.</p></li></ul></td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="b772e00e-1705-4062-adb6-774826ce6700.htm">Getting Started</a></div><div><a href="8ffc0d37-0215-4609-b6f8-dba53a6c5063.htm">Building Projects Outside the GUI</a></div><div><a href="ec822059-b179-4add-984d-485580050ffb.htm">Generating Documentation with Team Build</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">The Build Log Viewer Tool Window</a></li><li><a class="quickLink">The Log File Elements</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.9.30.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
+plug-in.</p></li></ul></td></tr></table></div><h2 class="quickLinkHeader">See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="b772e00e-1705-4062-adb6-774826ce6700.htm">Getting Started</a></div><div><a href="8ffc0d37-0215-4609-b6f8-dba53a6c5063.htm">Building Projects Outside the GUI</a></div><div><a href="ec822059-b179-4add-984d-485580050ffb.htm">Generating Documentation with Team Build</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">The Build Log Viewer Tool Window</a></li><li><a class="quickLink">The Log File Elements</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.12.18.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20Help%20File%20Builder%20Documentation">Eric Woodruff</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
@@ -35,12 +35,4 @@ plug-in.</p></li></ul></td></tr></table></div><h2 class="quickLinkHeader"><span 
 SetDefaultLanguage("cs");
 LoadTocFile(null, null);
 InitializeQuickLinks();
-
-$(".toggleSection" ).click(function () {
-    SectionExpandCollapse(this);
-});
-
-$(".toggleSection").keypress(function () {
-    SectionExpandCollapseCheckKey(this, event)
-});
 });</script></body></html>

@@ -4,7 +4,7 @@ information about API members.  By default, notices are added for any type or me
 <span class="code">System.ObsoleteAttribute</span> or
 <span class="code">System.Diagnostics.CodeAnalysis.ExperimentalAttribute</span> attribute.  This plug-in is used
 to add additional notice definitions to the selected presentation style based on your own custom attributes or
-XML comments elements.</p><ul class="is-hidden-tablet"><li>Configuration Options</li><li>Localizing Notice Message and Tag Text</li><li>Overriding the Preliminary, Obsolete, and Experimental Notices</li></ul></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Configuration Options</h2><div id="IDBABSection"><p>The configuration options consist of the following properties:</p><ul><li><p><strong>Attribute Type Name</strong> - If the notice is related to an attribute on a
+XML comments elements.</p><ul class="is-hidden-tablet"><li>Configuration Options</li><li>Localizing Notice Message and Tag Text</li><li>Overriding the Preliminary, Obsolete, and Experimental Notices</li></ul></div><h2 class="quickLinkHeader">Configuration Options</h2><div id="IDBABSection"><p>The configuration options consist of the following properties:</p><ul><li><p><strong>Attribute Type Name</strong> - If the notice is related to an attribute on a
 type or member, specify the fully qualified name here including the "T:" prefix.  Example:
 <span class="code">T:System.ObsoleteAttribute</span>.</p></li><li><p><strong>XML Comments Element Name</strong> - If the notice is related to an XML
 comments element on a type or member, specify the element name here.  Example: <span class="code">preliminary</span>.</p></li><li><p><strong>Use attribute/element value for notice message text</strong> - If this option
@@ -24,7 +24,7 @@ is-medium</span>.  You can use various combinations of styles on the notice mess
 are shown below:</p><p><div class="tags"><span class="tag is-black">tag is-black</span><span class="tag is-dark">tag is-dark</span><span class="tag is-light">tag is-light</span><span class="tag is-white">tag is-white</span></div><div class="tags"><span class="tag is-primary">tag is-primary</span><span class="tag is-link">tag is-link</span><span class="tag is-info">tag is-info</span><span class="tag is-success">tag is-success</span><span class="tag is-warning">tag is-warning</span><span class="tag is-danger">tag is-danger</span></div><div class="tags"><span class="tag is-primary is-light">tag is-primary is-light</span><span class="tag is-link is-light">tag is-link is-light</span><span class="tag is-info is-light">tag is-info is-light</span><span class="tag is-success is-light">tag is-success is-light</span><span class="tag is-warning is-light">tag is-warning is-light</span><span class="tag is-danger is-light">tag is-danger is-light</span></div><div class="tags"><span class="tag is-link is-normal">tag is-link is-normal</span><span class="tag is-primary is-medium">tag is-primary is-medium</span><span class="tag is-info is-large">tag is-info is-large</span><span class="tag is-success is-normal is-rounded">tag is-success is-normal is-rounded</span></div></p></li><li><p><strong>Tag Style Classes</strong> - For HTML presentation styles, this allows you to
 set the CSS classes that will be applied to the tags on member list pages.  If not specified, default styles will
 be applied.  For example, in the Default 2022 presentation style the default styles are <span class="code">tag is-info
-is-rounded</span>.  See above for some example styles.</p></li></ul></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Localizing Notice Message and Tag Text</h2><div id="IDCABSection"><p>As noted above, if the notice message or tag text specify a content item ID prefix with '@', the
+is-rounded</span>.  See above for some example styles.</p></li></ul></div><h2 class="quickLinkHeader">Localizing Notice Message and Tag Text</h2><div id="IDCABSection"><p>As noted above, if the notice message or tag text specify a content item ID prefix with '@', the
 related text for the item in the resource item file will be used.  You can specify localized text for your own
 notice definitions by adding one or more resource items files to the project.  The filenames must have a suffix
 identifying the language of the items they contain prefixed with an underscore and have a <em>.items</em>
@@ -48,11 +48,11 @@ The file's <span class="code">Build Action</span> should be set to <span class="
 &lt;/content&gt;</code></pre></div></div><article class="message is-info"><div class="message-header"><p><span class="icon"><i class="fa fa-info-circle"></i></span>  Note</p></div><div class="message-body"><p>Resource item files have a custom editor and are usually used to override default help file
 builder content items.  To add the initial message items for your notices, open the file with a text editor.
 Once the items have been added, you can open it with the custom editor to make changes to the new items if
-wanted.</p></div></article></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Overriding the Preliminary, Obsolete, and Experimental Notices</h2><div id="IDDABSection"><p>As noted, the <span class="code">preliminary</span> XML comments element and the obsolete and
+wanted.</p></div></article></div><h2 class="quickLinkHeader">Overriding the Preliminary, Obsolete, and Experimental Notices</h2><div id="IDDABSection"><p>As noted, the <span class="code">preliminary</span> XML comments element and the obsolete and
 experimental attributes are added by default.  If you want to override the messages or styles used, you can
 add matching notice entries to the plug-in configuration for the element or attribute name.  If you just want
 to change the notice message or tag text, you can also do so through the resource items file as shown in the
-example above without using the plug-in.</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="e031b14e-42f0-47e1-af4c-9fed2b88cbc7.htm">Build Process Plug-Ins</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Configuration Options</a></li><li><a class="quickLink">Localizing Notice Message and Tag Text</a></li><li><a class="quickLink">Overriding the Preliminary, Obsolete, and Experimental Notices</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.9.30.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
+example above without using the plug-in.</p></div><h2 class="quickLinkHeader">See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="e031b14e-42f0-47e1-af4c-9fed2b88cbc7.htm">Build Process Plug-Ins</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Configuration Options</a></li><li><a class="quickLink">Localizing Notice Message and Tag Text</a></li><li><a class="quickLink">Overriding the Preliminary, Obsolete, and Experimental Notices</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.12.18.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20Help%20File%20Builder%20Documentation">Eric Woodruff</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
@@ -64,13 +64,5 @@ example above without using the plug-in.</p></div><h2 class="quickLinkHeader"><s
 SetDefaultLanguage("cs");
 LoadTocFile(null, null);
 InitializeQuickLinks();
-
-$(".toggleSection" ).click(function () {
-    SectionExpandCollapse(this);
-});
-
-$(".toggleSection").keypress(function () {
-    SectionExpandCollapseCheckKey(this, event)
-});
 hljs.highlightAll();
 });</script></body></html>

@@ -6,7 +6,7 @@ the project properties and, in some cases, a list of files at build time.</p><ar
 <a href="e031b14e-42f0-47e1-af4c-9fed2b88cbc7.htm">plug-ins</a> which provide a much more flexible way of
 altering and extending the build process without the need to modify the supplied templates.  You can use the same
 set of substitution tags in your own scripts, configuration files, and plug-ins and resolve them at build-time as
-well.</p></div></article></div><h2 id="ReplacementTags" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Replacement Tags</h2><div id="IDBABSection"><p>The help file builder template files as well as various files in your own projects such as token files
+well.</p></div></article></div><h2 id="ReplacementTags" class="quickLinkHeader">Replacement Tags</h2><div id="IDBABSection"><p>The help file builder template files as well as various files in your own projects such as token files
 may contain one or more of the following substitution tags.  At build-time, these tags will be replaced with the
 appropriate project value in order to produce the help file.  Some of these tags also appear in the language
 resource files and are used to place items in the page header and footer.  These tags can also be entered into
@@ -80,7 +80,7 @@ tool's <span class="code">TransformComponent</span>.</p></td></tr><tr><td><p>{@W
 Currently, a default set of options is used to display most of the common features such as the basic toolbar
 buttons and the search tab.  If the <span class="code">IncludeFavorites</span> project property is set to true,
 the value includes the option to show the <strong>Favorites</strong> tab too.</p></td></tr><tr><td><p>{@WorkingFolder} and {@HtmlEncWorkingFolder}</p></td><td><p>These tags expand to the full path to the working folder (plain text and HTML encoded) and are used
-in the templates to help the tools locate the files in the temporary working folder.</p></td></tr></table></div><h2 id="TemplateFiles" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Template Files</h2><div id="IDCABSection"><p>The following files are found in the
+in the templates to help the tools locate the files in the temporary working folder.</p></td></tr></table></div><h2 id="TemplateFiles" class="quickLinkHeader">Template Files</h2><div id="IDCABSection"><p>The following files are found in the
 <em>.\Templates</em> folder under the main help file builder
 installation folder.</p><table class="table is-hoverable"><thead><tr><th><p>Template File</p></th><th><p>Description</p></th></tr></thead><tr><td><p>Build1xHelpFile.proj, BuildHelpViewerFile.proj, BuildOpenXmlFile.proj, GenerateMarkdownContent.proj</p></td><td><p>These MSBuild projects are used to build the HTML Help 1, MS Help Viewer, Open XML, and markdown help
 projects respectively and copy the resulting output and supporting files to the project's output folder.  The
@@ -93,7 +93,7 @@ used to install and remove the MS Help Viewer content.</p></td></tr><tr><td><p>M
 that it uses when generating the reflection information file.</p></td></tr><tr><td><p>PlaceHolderNode.aml</p></td><td><p>This is a blank MAML topic used as the target for empty place holder nodes when generating MS Help
 Viewer files.  MS Help Viewer does not support empty place holder nodes so this topic fills them so that the
 build succeeds and generates a valid file.  A unique ID is generated for each placeholder inserted into the file.</p></td></tr><tr><td><p>TransformBuildLog.xsl</p></td><td><p>This XSL transformation file is used to transform the build log into something that is more readable
-by formatting the build steps into collapsible sections and highlight errors and warnings.</p></td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="e2ed6222-c3ee-4c6e-b0f9-fa3c86bc3e2c.htm">Localizing Language Resource Files</a></div><div><a href="c7378077-fc10-45f9-b52a-c57dda96fe8d.htm">Customizing the Header and Footer Text</a></div><div><a href="e031b14e-42f0-47e1-af4c-9fed2b88cbc7.htm">Build Process Plug-Ins</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Replacement Tags</a></li><li><a class="quickLink">Template Files</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.9.30.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
+by formatting the build steps into collapsible sections and highlight errors and warnings.</p></td></tr></table></div><h2 class="quickLinkHeader">See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="e2ed6222-c3ee-4c6e-b0f9-fa3c86bc3e2c.htm">Localizing Language Resource Files</a></div><div><a href="c7378077-fc10-45f9-b52a-c57dda96fe8d.htm">Customizing the Header and Footer Text</a></div><div><a href="e031b14e-42f0-47e1-af4c-9fed2b88cbc7.htm">Build Process Plug-Ins</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Replacement Tags</a></li><li><a class="quickLink">Template Files</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.12.18.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20Help%20File%20Builder%20Documentation">Eric Woodruff</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
@@ -105,12 +105,4 @@ by formatting the build steps into collapsible sections and highlight errors and
 SetDefaultLanguage("cs");
 LoadTocFile(null, null);
 InitializeQuickLinks();
-
-$(".toggleSection" ).click(function () {
-    SectionExpandCollapse(this);
-});
-
-$(".toggleSection").keypress(function () {
-    SectionExpandCollapseCheckKey(this, event)
-});
 });</script></body></html>

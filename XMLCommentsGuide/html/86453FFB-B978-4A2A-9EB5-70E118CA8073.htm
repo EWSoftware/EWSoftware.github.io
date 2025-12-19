@@ -1,47 +1,42 @@
 ﻿<!DOCTYPE html ><html lang="en-US"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.css" /><link rel="stylesheet" href="../css/font-awesome.min.css" /><link rel="stylesheet" href="../css/presentationStyle.css" /><link rel="stylesheet" href="../css/vs.min.css" /><script src="../scripts/jquery-3.5.1.min.js"></script><script src="../scripts/clipboard.min.js"></script><script src="../scripts/highlight.min.js"></script><script src="../scripts/presentationStyle.js"></script><title>inheritdoc</title><meta name="Title" content="inheritdoc" /><meta name="Help.Id" content="86453FFB-B978-4A2A-9EB5-70E118CA8073" /><meta name="Help.ContentType" content="Concepts" /><meta name="guid" content="86453FFB-B978-4A2A-9EB5-70E118CA8073" /><meta name="Description" content="This element can help minimize the effort required to document complex APIs by allowing common documentation to be inherited from base types/members." /><meta name="tocFile" content="../toc/IDJ.xml" /></head><body><div class="fixedLayout"><div id="Header" class="fixedHeader"><div class="pageHeader level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div class="level-item"><a target="_blank" rel="noopener noreferrer" href="https://github.com/EWSoftware/SHFB"><img alt="Sandcastle XML Comments Guide" style="height: 50px;" src="../icons/Sandcastle.jpg" /></a></div><div id="DocumentationTitle" class="level-item">Sandcastle XML Comments Guide</div></div><div id="LangFilterSearchContainer" class="level-right"><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a><a class="dropdown-item languageFilterItem" data-languageId="vb">VB</a><a class="dropdown-item languageFilterItem" data-languageId="cpp">C++</a><a class="dropdown-item languageFilterItem" data-languageId="fs">F#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></div><div class="fixedContent"><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div id="ContentContainer" class="columns pl-5 pr-5 fixedContent"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu" /></nav></div><div id="Resizer" class="is-hidden"></div><div id="TopicContent" class="column content is-7"><h1>inheritdoc</h1><div><p>This element can help minimize the effort required to document complex APIs by allowing common
-documentation to be inherited from base types/members.</p><ul class="is-hidden-tablet"><li><a href="#Syntax">Syntax</a></li><li><a href="#TopLevelRules">Top-Level Inheritance Rules</a></li><li><a href="#InlineRules">Inline Inheritance Rules</a></li><li><a href="#IntelliSense">Additional Comment File Sources and IntelliSense</a></li><li><a href="#Examples">Examples</a></li><li><a href="#seeAlsoSection">See Also</a></li></ul><article class="message is-info"><div class="message-header"><p><span class="icon"><i class="fa fa-info-circle"></i></span>  Note</p></div><div class="message-body"><p>Prior to Visual Studio 2019 version 16.4, this was a custom XML comments element implemented by
-Sandcastle and the Sandcastle Help File Builder.  It does not appear in the list of IntelliSense elements for XML
-comments prior to that release.</p></div></article></div><h2 id="Syntax" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Syntax</h2><div id="IDBABSection"><p>Although typically used as a top-level element, it can be used as an inline element as well.  The
-use of the element by itself on a member is enough to satisfy the compiler so that it will not issue warnings
-about missing comments on public members.  Using it in conjunction with other elements allows you to inherit
-common information such as value and parameter descriptions while overriding the inherited documentation for
-other elements such as <span class="code">summary</span> and <span class="code">remarks</span>.  Documentation can
-be inherited from any member from classes within your own assemblies or from members of other assemblies as well
-as the base .NET Framework class library.  The syntax of the element is as follows:</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle"> </span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-xml">&lt;inheritdoc [cref="member"] [path="xpath-filter-expr"] /&gt;</code></pre></div></div><article class="message is-warning"><div class="message-header"><p><span class="icon"><i class="fa fa-warning"></i></span>  Important</p></div><div class="message-body"><p>As of November 2019, the <span class="code">select</span> attribute has been deprecated.  Use the
-equivalent <span class="code">path</span> attribute instead which is consistent with the XML comments IntelliSense
-usage in Visual Studio 2019 and later.</p></div></article><p>The optional <span class="code">cref</span> attribute overrides the standard search method to allow
-documentation inheritance from an alternate user-specified member indicated by the <em>member</em>
-value.</p><p>The optional <span class="code">path</span> attribute applies the specified XPath filter
-expression to the inherited comments.  This is useful if you want to limit the inherited documentation to a
-specific subset of elements or just select a particular instance or set of comments.  The expression can be any valid
-XPath query that will result in a node set.</p><p>By making use of the <span class="code">cref</span> and <span class="code">path</span> attributes
-either by themselves or together, you can fine tune the inheritance of documentation.  You can also nest the
-element within other elements to further refine the level of inheritance.</p><p>When using the Sandcastle Help File Builder, its <strong>GenerateInheritedDocumentation</strong>
-tool handles the task of generating the inherited documentation.  The following documentation is based on the
-Sandcastle Help File Builder's implementation.</p></div><h2 id="TopLevelRules" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Top-Level Inheritance Rules</h2><div id="IDCABSection"><p>The <span class="code">inheritdoc</span> element is valid at the root level (i.e. the same level
-as <span class="code">summary</span> elements) on types, interfaces, virtual members, interface member
-implementations, and constructors.  Its use on any other member type will result in no comments being inherited
-unless a <span class="code">cref</span> attribute is specified.  Note that the element is also valid in project
-summary and namespace summary comments as long as a <span class="code">cref</span> attribute is specified to
+documentation to be inherited from base types/members.</p><ul class="is-hidden-tablet"><li><a href="#syntax">Syntax</a></li><li><a href="#top-level-inheritance-rules">Top-Level Inheritance Rules</a></li><li><a href="#inline-inheritance-rules">Inline Inheritance Rules</a></li><li><a href="#additional-comment-file-sources-and-intellisense">Additional Comment File Sources and IntelliSense</a></li><li><a href="#examples">Examples</a></li><li><a href="#see-also">See Also</a></li></ul><article class="message is-info"><div class="message-header"><p><span class="icon"><i class="fa fa-info-circle"></i></span>  Note</p></div><div class="message-body"><p>Prior to Visual Studio 2019 version 16.4, this was a custom XML comments element implemented by Sandcastle and
+the Sandcastle Help File Builder.  It does not appear in the list of IntelliSense elements for XML comments
+prior to that release.</p></div></article></div><h2 id="syntax" class="quickLinkHeader">Syntax</h2><div id="IDBABSection"><p>Although typically used as a top-level element, it can be used as an inline element as well.  The use of the
+element by itself on a member is enough to satisfy the compiler so that it will not issue warnings about missing
+comments on public members.  Using it in conjunction with other elements allows you to inherit common information
+such as value and parameter descriptions while overriding the inherited documentation for other elements such as
+<span class="code">summary</span> and <span class="code">remarks</span>.  Documentation can be inherited from any member from classes within your own assemblies
+or from members of other assemblies as well as the base .NET Framework class library.  The syntax of the element
+is as follows:</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle"> </span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-xml">&lt;inheritdoc [cref="member"] [path="xpath-filter-expr"] /&gt;</code></pre></div></div><article class="message is-warning"><div class="message-header"><p><span class="icon"><i class="fa fa-warning"></i></span>  Important</p></div><div class="message-body"><p>As of November 2019, the <span class="code">select</span> attribute has been deprecated.  Use the equivalent <span class="code">path</span> attribute instead
+which is consistent with the XML comments IntelliSense usage in Visual Studio 2019 and later.</p></div></article><p>The optional <span class="code">cref</span> attribute overrides the standard search method to allow documentation inheritance from an
+alternate user-specified member indicated by the <em>member</em> value.</p><p>The optional <span class="code">path</span> attribute applies the specified XPath filter expression to the inherited comments.  This is
+useful if you want to limit the inherited documentation to a specific subset of elements or just select a
+particular instance or set of comments.  The expression can be any valid XPath query that will result in a node
+set.</p><p>By making use of the <span class="code">cref</span> and <span class="code">path</span> attributes either by themselves or together, you can fine tune the
+inheritance of documentation.  You can also nest the element within other elements to further refine the level
+of inheritance.</p><p>When using the Sandcastle Help File Builder, its <strong>GenerateInheritedDocumentation</strong> tool handles the task of
+generating the inherited documentation.  The following documentation is based on the Sandcastle Help File
+Builder's implementation.</p></div><h2 id="top-level-inheritance-rules" class="quickLinkHeader">Top-Level Inheritance Rules</h2><div id="IDCABSection"><p>The <span class="code">inheritdoc</span> element is valid at the root level (i.e. the same level as <span class="code">summary</span> elements) on types,
+interfaces, virtual members, interface member implementations, and constructors.  Its use on any other member
+type will result in no comments being inherited unless a <span class="code">cref</span> attribute is specified.  Note that the element
+is also valid in project summary and namespace summary comments as long as a <span class="code">cref</span> attribute is specified to
 indicate from where to inherit the comments.  When specified at the root level in a set of XML comments, the
-documentation search is performed as follows:</p><ul><li><p>If an explicit <span class="code">cref</span> attribute is specified, the documentation from the
-specified namespace/type/member is inherited.  If a <span class="code">cref</span> attribute is not specified, the
-following rules apply.</p></li><li><p>For types and interfaces:</p><ul><li><p>Inherit documentation from all base classes working backwards up the inheritance chain.</p></li><li><p>Inherit documentation from all interface implementations (if any) working through them in
-the order listed in the reflection information file (usually alphabetically).</p></li></ul></li><li><p>For constructors:</p><ul><li><p>Search backwards up the type inheritance chain for a constructor with a matching signature.</p></li><li><p>If a match is found, its documentation is inherited.</p></li></ul></li><li><p>For virtual members and interface implementations:</p><ul><li><p>If the member is an override, documentation is inherited from the member it overrides.</p></li><li><p>If the member is part of an interface, documentation is inherited from the interface member
-being implemented.</p></li></ul></li><li><p>Explicit interface implementations will automatically inherit documentation from the interface
-member that they implement if no documentation is supplied by the user.  This is done automatically because these
-members are by definition private and the compiler will not issue a warning if the user does not supply
-documentation.  As such, you can omit the <span class="code">inheritdoc</span> element from them unless you
-want to customize the comments.</p></li><li><p>With or without an explicit <span class="code">cref</span> attribute, if the inherited
-documentation itself contains <span class="code">inheritdoc</span> elements, they will be expanded recursively
-working backwards up the inheritance chain.</p></li><li><p>In all cases, if a <span class="code">path</span> attribute is present, it is used to filter
-the inherited comments based on the specified XPath query.</p></li></ul><p>When inheriting documentation at the root level, if the following elements already exist in the
-member's comments, the inherited versions are ignored:</p><ul><li><p><span class="code">example</span></p></li><li><p><span class="code">exclude</span></p></li><li><p><span class="code">filterpriority</span></p></li><li><p><span class="code">preliminary</span></p></li><li><p><span class="code">summary</span></p></li><li><p><span class="code">remarks</span></p></li><li><p><span class="code">returns</span></p></li><li><p><span class="code">threadsafety</span></p></li><li><p><span class="code">value</span></p></li></ul><p>The <span class="code">overloads</span> element will never be inherited.  This prevents the doubling
-of comments on the overloads page.  However, you can inherit the contents of the <span class="code">overloads</span>
-element using a <span class="code">path</span> attribute with a value of "<span class="code">overloads/*</span>".
-See the example below in the Examples section that inherits the elements from an <span class="code">overloads</span>
-element.  If the element only contains text and you want to inherit that text, include an <span class="code">overloads</span>
-element with a nested <span class="code">inheritdoc</span> element.  For example:</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle"> </span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">/// &lt;inheritdoc /&gt; 
+documentation search is performed as follows:</p><ul><li>If an explicit <span class="code">cref</span> attribute is specified, the documentation from the specified namespace/type/member is
+inherited.  If a <span class="code">cref</span> attribute is not specified, the following rules apply.</li><li>For types and interfaces:
+<ul><li>Inherit documentation from all base classes working backwards up the inheritance chain.</li><li>Inherit documentation from all interface implementations (if any) working through them in the order listed
+in the reflection information file (usually alphabetically).</li></ul></li><li>For constructors:
+<ul><li>Search backwards up the type inheritance chain for a constructor with a matching signature.</li><li>If a match is found, its documentation is inherited.</li></ul></li><li>For virtual members and interface implementations:
+<ul><li>If the member is an override, documentation is inherited from the member it overrides.</li><li>If the member is part of an interface, documentation is inherited from the interface member being implemented.</li></ul></li><li>Explicit interface implementations will automatically inherit documentation from the interface member that they
+implement if no documentation is supplied by the user.  This is done automatically because these members are by
+definition private and the compiler will not issue a warning if the user does not supply documentation.  As
+such, you can omit the <span class="code">inheritdoc</span> element from them unless you want to customize the comments.</li><li>With or without an explicit <span class="code">cref</span> attribute, if the inherited documentation itself contains <span class="code">inheritdoc</span>
+elements, they will be expanded recursively working backwards up the inheritance chain.</li><li>In all cases, if a <span class="code">path</span> attribute is present, it is used to filter the inherited comments based on the
+specified XPath query.</li></ul><p>When inheriting documentation at the root level, if the following elements already exist in the member's
+comments, the inherited versions are ignored:</p><ul><li><span class="code">example</span></li><li><span class="code">exclude</span></li><li><span class="code">filterpriority</span></li><li><span class="code">preliminary</span></li><li><span class="code">summary</span></li><li><span class="code">remarks</span></li><li><span class="code">returns</span></li><li><span class="code">threadsafety</span></li><li><span class="code">value</span></li></ul><p>The <span class="code">overloads</span> element will never be inherited.  This prevents the doubling of comments on the overloads page.
+However, you can inherit the contents of the <span class="code">overloads</span> element using a <span class="code">path</span> attribute with a value of
+"<span class="code">overloads/*</span>".  See the example below in the Examples section that inherits the elements from an <span class="code">overloads</span>
+element.  If the element only contains text and you want to inherit that text, include an <span class="code">overloads</span> element
+with a nested <span class="code">inheritdoc</span> element.  For example:</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle"> </span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">/// &lt;inheritdoc /&gt; 
 /// 
 /// &lt;overloads&gt;
 /// The inheritdoc element outside this "overloads" element inherits the standard
@@ -52,32 +47,28 @@ element with a nested <span class="code">inheritdoc</span> element.  For example
 /// 
 /// &lt;inheritdoc /&gt; 
 /// 
-/// &lt;/overloads&gt;</code></pre></div></div><p>All other elements will be inherited unless they match an element by the same name that contains a
-<span class="code">cref</span>, <span class="code">href</span>, <span class="code">name</span>,
-<span class="code">vref</span>, or <span class="code">xref</span> attribute with an identical value in the member's
-comments.  To merge comments in one of the above elements from one or more sources, use one or more nested
-<span class="code">inheritdoc</span> elements within the given element.  See below for examples.</p><p>Be aware that when <span class="code">param</span> elements are inherited, the parameter's name
-in your class's member must match the base member's parameter name.  If they do not match, you will not see any
-inherited documentation for the parameter.  Also, if you supply comments for one parameter but omit comments for
-other parameters in order to inherit their documentation from a base implementation, the compiler will issue a
-warning.  In this case, you can use a <span class="code">#pragma warning</span> directive to disable the warning
-temporarily or add it to the project settings to disable the warning globally.  See below for an example.</p></div><h2 id="InlineRules" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Inline Inheritance Rules</h2><div id="IDDABSection"><p>The <span class="code">inheritdoc</span> element can also be nested within other XML comments
-elements such as <span class="code">summary</span>, <span class="code">remarks</span>, <span class="code">example</span>
-etc. in order to inherit specific parts of the documentation within those elements.  When nested, the same root
-level inheritance rules apply and will be used to locate the first member with comments from which to inherit
-documentation.  In addition, a filter will be automatically included based on the parent element or elements
-within which the <span class="code">inheritdoc</span> element is nested.  The <span class="code">cref</span> and
-<span class="code">path</span> attributes can also be applied to further qualify how the documentation is
-inherited.  If you do not want to have the parent elements automatically included in the filter, you must supply
-a <span class="code">path</span> attribute with a rooted XPath query that specifies from where to obtain the
-comments (i.e. <span class="code">path="/summary/node()"</span>).</p></div><h2 id="IntelliSense" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Additional Comment File Sources and IntelliSense</h2><div id="IDEABSection"><p>In the Sandcastle Help File Builder, additional sources of inherited documentation (i.e. comments
-from third party class libraries) can be added to the <strong>Documentation Sources</strong> project node.  This allows
-you to inherit documentation from base class libraries without having to add them as documented assemblies in
-your project.</p><p>Since the XML comments produced by the compiler are incomplete when using <span class="code">inheritdoc</span>,
-it is highly recommended that you make use of the <strong>IntelliSense Build Component</strong> to
-produce an IntelliSense XML comments file.  It will include the fully expanded set of inherited documentation so
-that Visual Studio can provide useful and accurate API help in the code editor and object browser.</p></div><h2 id="Examples" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Examples</h2><div id="IDFABSection"><p>The following show various examples of using the <span class="code">inheritdoc</span> element.  See
-the comments within each for details about what the examples are showing.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">Constructor Documentation Inheritance</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">/// &lt;summary&gt;
+/// &lt;/overloads&gt;</code></pre></div></div><p>All other elements will be inherited unless they match an element by the same name that contains a <span class="code">cref</span>,
+<span class="code">href</span>, <span class="code">name</span>, <span class="code">vref</span>, or <span class="code">xref</span> attribute with an identical value in the member's comments.  To merge comments
+in one of the above elements from one or more sources, use one or more nested <span class="code">inheritdoc</span> elements within the
+given element.  See below for examples.</p><p>Be aware that when <span class="code">param</span> elements are inherited, the parameter's name in your class's member must match the
+base member's parameter name.  If they do not match, you will not see any inherited documentation for the
+parameter.  Also, if you supply comments for one parameter but omit comments for other parameters in order to
+inherit their documentation from a base implementation, the compiler will issue a warning.  In this case, you can
+use a <span class="code">#pragma warning</span> directive to disable the warning temporarily or add it to the project settings to disable
+the warning globally.  See below for an example.</p></div><h2 id="inline-inheritance-rules" class="quickLinkHeader">Inline Inheritance Rules</h2><div id="IDDABSection"><p>The <span class="code">inheritdoc</span> element can also be nested within other XML comments elements such as <span class="code">summary</span>, <span class="code">remarks</span>,
+<span class="code">example</span> etc. in order to inherit specific parts of the documentation within those elements.  When nested, the
+same root level inheritance rules apply and will be used to locate the first member with comments from which to
+inherit documentation.  In addition, a filter will be automatically included based on the parent element or
+elements within which the <span class="code">inheritdoc</span> element is nested.  The <span class="code">cref</span> and <span class="code">path</span> attributes can also be applied
+to further qualify how the documentation is inherited.  If you do not want to have the parent elements
+automatically included in the filter, you must supply a <span class="code">path</span> attribute with a rooted XPath query that specifies
+from where to obtain the comments (i.e. <span class="code">path="/summary/node()"</span>).</p></div><h2 id="additional-comment-file-sources-and-intellisense" class="quickLinkHeader">Additional Comment File Sources and IntelliSense</h2><div id="IDEABSection"><p>In the Sandcastle Help File Builder, additional sources of inherited documentation (i.e. comments from third
+party class libraries) can be added to the <strong>Documentation Sources</strong> project node.  This allows you to inherit
+documentation from base class libraries without having to add them as documented assemblies in your project.</p><p>Since the XML comments produced by the compiler are incomplete when using <span class="code">inheritdoc</span>, it is highly recommended
+that you make use of the <strong>IntelliSense Build Component</strong> to produce an IntelliSense XML comments file.  It will
+include the fully expanded set of inherited documentation so that Visual Studio can provide useful and accurate
+API help in the code editor and object browser.</p></div><h2 id="examples" class="quickLinkHeader">Examples</h2><div id="IDFABSection"><p>The following show various examples of using the <span class="code">inheritdoc</span> element.  See the comments within each for details
+about what the examples are showing.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">Constructor Documentation Inheritance</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">/// &lt;summary&gt;
 /// This exception class is thrown by the application if it encounters an
 /// unrecoverable error.
 /// &lt;/summary&gt;
@@ -392,7 +383,7 @@ public class DerivedClassWithInheritedDocs : BaseInheritDoc
         // a specific example from a member to which it has no relation.
     }
 }
-#endregion</code></pre></div></div></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4 class="quickLinkHeader">Reference</h4><div><a href="00fabdf6-a487-7d2a-02bf-43d70679fe70.htm">BaseInheritDoc</a></div><div><a href="152686c0-fa17-60a3-7ee4-6aab5ee53fcf.htm">CustomException</a></div><div><a href="57dd2fc3-63a7-35d9-fae9-1a2be46ee064.htm">DerivedClassWithInheritedDocs</a></div><div><a href="0e43b39e-89ee-9bbe-137b-6463720584bc.htm">ExplicitImplementation</a></div><div><a href="49e90f9d-a7b0-be7d-d4a5-f16724f15a14.htm">SetDocumentation</a></div><h4 class="quickLinkHeader">Other Resources</h4><div><a href="9341fdc8-1571-405c-8e61-6a6b9b601b46.htm">Miscellaneous Elements</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Syntax</a></li><li><a class="quickLink">Top-Level Inheritance Rules</a></li><li><a class="quickLink">Inline Inheritance Rules</a></li><li><a class="quickLink">Additional Comment File Sources and IntelliSense</a></li><li><a class="quickLink">Examples</a></li><li><a class="quickLink">See Also</a><ul class="menu"><li><a class="quickLink">Reference</a></li><li><a class="quickLink">Other Resources</a></li></ul></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.4.26.0] Sandcastle XML Comments Guide</a></p><div class="feedbackLink">Send comments on this topic to
+#endregion</code></pre></div></div></div><h2 id="see-also" class="quickLinkHeader">See Also</h2><div id="IDGABSection"><p><strong>Reference</strong><br /><a href="00fabdf6-a487-7d2a-02bf-43d70679fe70.htm">BaseInheritDoc</a><br /><a href="152686c0-fa17-60a3-7ee4-6aab5ee53fcf.htm">CustomException</a><br /><a href="57dd2fc3-63a7-35d9-fae9-1a2be46ee064.htm">DerivedClassWithInheritedDocs</a><br /><a href="0e43b39e-89ee-9bbe-137b-6463720584bc.htm">ExplicitImplementation</a><br /><a href="49e90f9d-a7b0-be7d-d4a5-f16724f15a14.htm">SetDocumentation</a></p><p><strong>Other Resources</strong><br /><a href="9341fdc8-1571-405c-8e61-6a6b9b601b46.htm">Miscellaneous Elements</a></p></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Syntax</a></li><li><a class="quickLink">Top-Level Inheritance Rules</a></li><li><a class="quickLink">Inline Inheritance Rules</a></li><li><a class="quickLink">Additional Comment File Sources and IntelliSense</a></li><li><a class="quickLink">Examples</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.4.26.0] Sandcastle XML Comments Guide</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20XML%20Comments%20Guide">Eric@EWoodruff.us</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
@@ -403,13 +394,5 @@ public class DerivedClassWithInheritedDocs : BaseInheritDoc
 SetDefaultLanguage("cs");
 LoadTocFile(null, null);
 InitializeQuickLinks();
-
-$(".toggleSection" ).click(function () {
-    SectionExpandCollapse(this);
-});
-
-$(".toggleSection").keypress(function () {
-    SectionExpandCollapseCheckKey(this, event)
-});
 hljs.highlightAll();
 });</script></body></html>

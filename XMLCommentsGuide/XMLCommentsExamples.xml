@@ -381,8 +381,8 @@
     </member>
     <member name="M:XMLCommentsExamples.SampleClass.TokenExample">
       <summary>
-            The help file was built on October 1, 2025 using Sandcastle
-            v2025.9.30.0.
+            The help file was built on December 18, 2025 using Sandcastle
+            v2025.12.18.0.
             </summary>
       <remarks>For tokens to be resolved, the <b>API Token Resolution</b> build component
             must be added to the SHFB project.</remarks>

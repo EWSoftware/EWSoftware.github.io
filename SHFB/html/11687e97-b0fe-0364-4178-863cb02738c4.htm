@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html ><html lang="en-US"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.css" /><link rel="stylesheet" href="../css/font-awesome.min.css" /><link rel="stylesheet" href="../css/presentationStyle.css" /><link rel="stylesheet" href="../css/vs.min.css" /><script src="../scripts/jquery-3.5.1.min.js"></script><script src="../scripts/clipboard.min.js"></script><script src="../scripts/highlight.min.js"></script><script src="../scripts/presentationStyle.js"></script><title>MarkdownConversionTransformation Class</title><meta name="Title" content="MarkdownConversionTransformation" /><meta name="Help.Id" content="T:Sandcastle.Core.PresentationStyle.Conversion.MarkdownConversionTransformation" /><meta name="Help.ContentType" content="Reference" /><meta name="container" content="Sandcastle.Core.PresentationStyle.Conversion" /><meta name="guid" content="11687e97-b0fe-0364-4178-863cb02738c4" /><meta name="Description" content="This class is used to generate a Markdown topic from a MAML topic for the Markdown conversion presentation style by utilizing the existing parsing and rendering features of the presentation style transformation." /><meta name="tocFile" content="../toc/IDP4.xml" /></head><body><div class="fixedLayout"><div id="Header" class="fixedHeader"><div class="pageHeader level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div class="level-item"><a target="_blank" rel="noopener noreferrer" href="https://github.com/EWSoftware/SHFB"><img alt="Sandcastle Help File Builder" style="height: 69px;" src="../icons/Sandcastle.jpg" /></a></div><div id="DocumentationTitle" class="level-item">Sandcastle Help File Builder Documentation</div></div><div id="LangFilterSearchContainer" class="level-right"><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a><a class="dropdown-item languageFilterItem" data-languageId="vb">VB</a><a class="dropdown-item languageFilterItem" data-languageId="cpp">C++</a><a class="dropdown-item languageFilterItem" data-languageId="fs">F#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></div><div class="fixedContent"><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div id="ContentContainer" class="columns pl-5 pr-5 fixedContent"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu" /></nav></div><div id="Resizer" class="is-hidden"></div><div id="TopicContent" class="column content is-7"><h1>Markdown<wbr />Conversion<wbr />Transformation Class</h1><div class="summary">
+            This class is used to generate a Markdown topic from a MAML topic for the Markdown conversion presentation
+            style by utilizing the existing parsing and rendering features of the presentation style transformation.
+            </div><h2 class="quickLinkHeader">Definition</h2><div id="IDBSection"><strong>Namespace:</strong> <a href="d6343e1f-fca6-fcba-c638-e977524884b8.htm">Sandcastle.Core.PresentationStyle.Conversion</a><br /><strong>Assembly:</strong> Sandcastle.Core (in Sandcastle.Core.dll) Version: 2025.12.18.0<div class="codeSnippet" data-codeSnippetLanguage="cs"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button><a href="https://github.com/EWSoftware/SHFB/blob/master/SHFB/Source/SandcastleCore/PresentationStyle/Conversion/MarkdownConversionTransformation.cs" target="_blank" rel="noopener noreferrer" class="button is-small is-light" title="View the source code"><span class="icon is-small"><i class="fa fa-file-code"></i></span><span>View Source</span></a><a href="https://github.com/EWSoftware/SHFB/issues/new" target="_blank" rel="noopener noreferrer" class="button is-small is-light requestExampleLink" title="Request an example for this topic"><span class="icon is-small"><i class="fa fa-comment-dots"></i></span><span>Request Example</span></a></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">MarkdownConversionTransformation</span> : <span class="identifier">TopicTransformationCore</span></code></pre></div></div><div class="codeSnippet is-hidden" data-codeSnippetLanguage="vb"><div class="codeHeader"><span class="codeHeaderTitle">VB</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button><a href="https://github.com/EWSoftware/SHFB/blob/master/SHFB/Source/SandcastleCore/PresentationStyle/Conversion/MarkdownConversionTransformation.cs" target="_blank" rel="noopener noreferrer" class="button is-small is-light" title="View the source code"><span class="icon is-small"><i class="fa fa-file-code"></i></span><span>View Source</span></a><a href="https://github.com/EWSoftware/SHFB/issues/new" target="_blank" rel="noopener noreferrer" class="button is-small is-light requestExampleLink" title="Request an example for this topic"><span class="icon is-small"><i class="fa fa-comment-dots"></i></span><span>Request Example</span></a></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vb"><span class="keyword">Public</span> <span class="keyword">Class</span> <span class="identifier">MarkdownConversionTransformation</span>
+	<span class="keyword">Inherits</span> <span class="identifier">TopicTransformationCore</span></code></pre></div></div><div class="codeSnippet is-hidden" data-codeSnippetLanguage="cpp"><div class="codeHeader"><span class="codeHeaderTitle">C++</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button><a href="https://github.com/EWSoftware/SHFB/blob/master/SHFB/Source/SandcastleCore/PresentationStyle/Conversion/MarkdownConversionTransformation.cs" target="_blank" rel="noopener noreferrer" class="button is-small is-light" title="View the source code"><span class="icon is-small"><i class="fa fa-file-code"></i></span><span>View Source</span></a><a href="https://github.com/EWSoftware/SHFB/issues/new" target="_blank" rel="noopener noreferrer" class="button is-small is-light requestExampleLink" title="Request an example for this topic"><span class="icon is-small"><i class="fa fa-comment-dots"></i></span><span>Request Example</span></a></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cpp"><span class="keyword">public</span> <span class="keyword">ref class</span> <span class="identifier">MarkdownConversionTransformation</span> : <span class="keyword">public</span> <span class="identifier">TopicTransformationCore</span></code></pre></div></div><div class="codeSnippet is-hidden" data-codeSnippetLanguage="fs"><div class="codeHeader"><span class="codeHeaderTitle">F#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button><a href="https://github.com/EWSoftware/SHFB/blob/master/SHFB/Source/SandcastleCore/PresentationStyle/Conversion/MarkdownConversionTransformation.cs" target="_blank" rel="noopener noreferrer" class="button is-small is-light" title="View the source code"><span class="icon is-small"><i class="fa fa-file-code"></i></span><span>View Source</span></a><a href="https://github.com/EWSoftware/SHFB/issues/new" target="_blank" rel="noopener noreferrer" class="button is-small is-light requestExampleLink" title="Request an example for this topic"><span class="icon is-small"><i class="fa fa-comment-dots"></i></span><span>Request Example</span></a></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-fs"><span class="keyword">type</span> <span class="identifier">MarkdownConversionTransformation</span> = 
+    <span class="keyword">class</span>
+        <span class="keyword">inherit</span> <span class="identifier">TopicTransformationCore</span>
+    <span class="keyword">end</span></code></pre></div></div><dl class="inheritanceHierarchy"><dt>Inheritance</dt><dd><a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <span class="selflink">MarkdownConversionTransformation</span></dd></dl></div><h2 class="quickLinkHeader">Constructors</h2><div id="IDEFASection"><table id="ConstructorList" class="table is-hoverable"><tr><td><a href="6371eecc-7b29-735c-ff71-d3cdae13e9b5.htm">MarkdownConversionTransformation</a></td><td>
+            Constructor
+            </td></tr></table></div><h2 class="quickLinkHeader">Properties</h2><div id="ID05B0FASection"><table id="PropertyList" class="table is-hoverable"><tr><td><a href="aad3e01b-0cc6-c9ff-71f6-b7f4b24830cc.htm">ApiMember</a></td><td>
+            This read-only property returns common API member information for the API topic being rendered.  This
+            is not used for MAML topics.
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="fb2b3e7f-b877-1dec-5cff-3f1a49fc476d.htm">ApiTopicSections</a></td><td>
+            This read-only property returns an enumerable list of the API section handlers in the order that they
+            will be rendered
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="05314536-ee28-37eb-c2e8-9a6931cbbb2f.htm">BibliographyData</a></td><td>
+            This read-only property returns the content of the bibliography data file if a
+            <a href="bb882c5d-87d8-28e6-a582-1f7643d2b0e9.htm">BibliographyDataFile</a> has been specified.
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="bb882c5d-87d8-28e6-a582-1f7643d2b0e9.htm">BibliographyDataFile</a></td><td>
+            This is used to get or set the path to the bibliography data file for the <span class="code">bibliography</span>
+            and <span class="code">cite</span> elements.
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="71f5ab7d-85b9-e674-4c6e-2e5958b371dc.htm">CodeSnippetLanguageConversion</a></td><td>
+            This read-only property returns a dictionary containing code snippet language ID conversions
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="24d23b41-19bc-4583-5a33-828592006bd6.htm">CommentsNode</a></td><td>
+            This read-only property returns the <span class="code">comments</span> node for the API topic being rendered.  This is
+            not used for MAML topics.
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="91b42ce6-f35b-5ae2-ac76-11e518995768.htm">CurrentElement</a></td><td>
+            This is used to get or set the current element to which rendered content is being added
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="c51dc4cc-68e2-97b1-e0db-42308f6a756d.htm">DocumentNode</a></td><td>
+            This read-only property returns the root <span class="code">document</span> node for the topic being rendered
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="aa76a911-4814-706e-dff0-40d2400f57a8.htm">HasFooterContent</a></td><td>
+            This property is used to get or set whether or not all pages should be have the footer content item
+            inserted into them.
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="3dd12469-08dc-38e6-8114-98f4f2cedc56.htm">HasHeaderText</a></td><td>
+            This property is used to get or set whether or not all pages should be have the header text item
+            inserted into them.
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="1b15872b-f6e6-4e13-2810-e8cb3cf931cb.htm">HasWebsiteAdContent</a></td><td>
+            This property is used to get or set whether or not all pages should be have the website ad content
+            item inserted into them.
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="2efecea9-8f44-0d8e-82bf-87d9c26a6283.htm">HtmlBlockAndDoNotParseTags</a></td><td>
+            This read-only property is used to obtain an enumerable list of HTML block tags and those that should
+            not be parsed.
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="05bf73d2-655d-2c06-166e-13546b82a6f1.htm">IconPath</a></td><td>
+            This is used to get or set the path used for icons and other images in the presentation style
+            <br />(Overrides <a href="f1ac1249-7af0-5d98-9358-0cbe800f285c.htm">TopicTransformationCore<span id="LST5F2407CE_0" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>IconPath</a>)</td></tr><tr><td><a href="c650fe1f-062f-26b9-9786-954de6323dd0.htm">IsMamlTopic</a></td><td>
+            This read-only property returns true if a MAML topic is being generated, false if an API topic is
+            being generated
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="b5967e53-196f-b882-b4b3-820a72d8a042.htm">IsPreliminaryDocumentation</a></td><td>
+            This property is used to get or set whether or not all pages should be marked with a "preliminary
+            documentation" warning in the page header.
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="d9cfecb2-f655-b378-988f-142dc00161d9.htm">Key</a></td><td>
+            This read-only property returns the topic key
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="d73177bf-de99-738d-23d2-8048a58c5e99.htm">LanguageFilter</a></td><td>
+            This read-only property returns the language filter items for presentation styles that contain one
+            in their topics.
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="a37c301b-2e07-3dae-7377-041120d0d475.htm">Locale</a></td><td>
+            This is used to get or set the locale
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="37d0f511-5f3e-fc49-40a0-913582e2a65f.htm">MetadataNode</a></td><td>
+            This read-only property returns the <span class="code">metadata</span> node for the topic being rendered
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="0d332c64-67fd-f1e5-9e2c-95d98256a3f1.htm">NoticeDefinitions</a></td><td>
+            This read-only property returns an enumerable list of the notice definitions
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="a69f942b-80c9-475b-6bd5-a477bdbcdbb1.htm">ReferenceNode</a></td><td>
+            This read-only property returns the <span class="code">reference</span> node for the API topic being rendered.  This is
+            not used for MAML topics.
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="c2711251-9ab2-6621-20e6-5978489828d9.htm">ResolvePath</a></td><td>
+            This read-only property is used to get the function use to resolve a path to a presentation style
+            content file of some sort.
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="0b5e4dee-a453-4425-db9b-e7ce91ead7a9.htm">ScriptPath</a></td><td>
+            This is used to get or set the path used for scripts in the presentation style
+            <br />(Overrides <a href="697ea057-fc7a-f7fc-a786-4eed43fd666a.htm">TopicTransformationCore<span id="LST5F2407CE_1" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ScriptPath</a>)</td></tr><tr><td><a href="2b2c14d6-a419-2f0c-25f7-e9dc9673fbb8.htm">StartupScriptBlockItemIds</a></td><td>
+            This read-only property returns an enumerable list of the startup script block item IDs that have
+            been registered.
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="e7aeb3f0-1023-ea87-b70a-b7541589c0da.htm">StartupScriptBlocks</a></td><td>
+            This read-only property returns an enumerable list of the startup script blocks that have been
+            registered.
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="7af21ea4-bcb5-10ab-ec4c-2d4946c1d57e.htm">StyleSheetPath</a></td><td>
+            This is used to get or set the path used for style sheets in the presentation style
+            <br />(Overrides <a href="681cd592-e315-c297-9b2a-241454d2ea42.htm">TopicTransformationCore<span id="LST5F2407CE_2" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>StyleSheetPath</a>)</td></tr><tr><td><a href="67461951-3280-3f7c-92d6-709a20670002.htm">SupportedFormats</a></td><td>
+            This read-only property returns the help file formats supported by the presentation style
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="ceb7f73c-117d-fa8c-5055-b0dc639d339a.htm">SyntaxNode</a></td><td>
+            This read-only property returns the <span class="code">syntax</span> node for the API topic being rendered.  This is
+            not used for MAML topics.
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="29be3950-cfc8-cd76-d1ef-0529f315d3be.htm">TopicNode</a></td><td>
+            This read-only property returns the <span class="code">topic</span> node for the MAML topic being rendered.  This is
+            not used for API topics.
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="0bc14790-e540-0e9a-5c80-6735f4bee83a.htm">TopicTemplatePath</a></td><td>
+            This is used to get or set the topic template path if the presentation style makes use of one
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="feb4c078-23dd-3b9e-b3cb-99acdf998c00.htm">TransformationArguments</a></td><td>
+            This read-only property returns a dictionary used to contain transformation arguments used by the
+            presentation style
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="567c0922-293f-4a75-7661-58002d3b348f.htm">UsesLegacyCodeColorizer</a></td><td>
+            This property is used to get or set whether or not the presentation style transformation uses
+            the legacy code colorizer.
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr></table></div><h2 class="quickLinkHeader">Methods</h2><div id="IDFFASection"><table id="MethodList" class="table is-hoverable"><tr><td><a href="68ccb02f-6e0d-23d2-fda8-e76b12b5157f.htm">AddApiTopicSectionHandler</a></td><td>
+            Add a new API topic section handler
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="8feb3ca9-f790-4f85-c1c7-5be1e01ac1da.htm">AddApiTopicSectionHandlerRange</a></td><td>
+            Add a range of new API topic section handlers
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="b897cc10-4298-084e-4556-3a3ba38214b4.htm">AddElement</a></td><td>
+            Add an element that will be transformed when the topic is rendered
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="f38f2a3f-57f6-68f8-5106-5fa72966ce1d.htm">AddElements</a></td><td>
+            Add a range of elements that will be transformed when the topic is rendered
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="6c85ccde-efb1-7c20-8841-9b504c8bf0af.htm">AddLanguageFilterItems</a></td><td>
+            This is used to add the language filter item information for presentation styles that contain a
+            language filter in the topics.
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="4f3d644a-8d00-5efe-a557-9c609ed0226f.htm">AddLanguageSpecificText</a></td><td>
+            Add a language specific text entry
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="dbc161c4-aa74-607d-d714-95758d836ca4.htm">AddLanguageSpecificTextRange</a></td><td>
+            Add a range of language specific text entries
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="d5e2c2bc-340e-daca-0222-c2d6b8a1c6aa.htm">AddNoticeDefinition</a></td><td>
+            Add a notice definitions
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="ec77bf6b-44c8-abd8-173f-0515b3df89e9.htm">AddNoticeDefinitions</a></td><td>
+            Add one or more notice definitions
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="3818d12e-34a5-a8b0-741c-2aa92bb1f1b3.htm">AddTransformationArgument</a></td><td>
+            Add a new transformation argument
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="78f3c289-73aa-d642-4b13-79b4e1df0be4.htm">AddTransformationArgumentRange</a></td><td>
+            Add a range of new transformation arguments
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="31f2c181-f6e1-5638-772d-d7a83c399e09.htm">ApiTopicOperatorTypes</a></td><td>
+            Get parameter and return types for an operator API member topic (e.g. <span class="code">Int32</span> to <span class="code">Decimal</span>)
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="6d94d3f3-3b78-f6fc-ea84-680e1a431c3f.htm">ApiTopicParameterTypes</a></td><td>
+            Get parameter types for an API member topic in plain text format
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="96ec6d09-37bf-b74d-08aa-15d92e79b86f.htm">ApiTopicSectionHandlerFor</a></td><td>
+            This is used to retrieve the current API topic section handler for the given section
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="4d3dc23f-6627-ed24-df0f-136e2d2c00ae.htm">ApiTopicShortNameDecorated</a></td><td>
+            Get the short type/member name for an API topic decorated with language-specific text.  This is used
+            for page title.
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="1d352b53-c47e-fd40-c0e6-2d33fb94ab62.htm">ApiTopicShortNamePlainText</a></td><td>
+            Get the short type/member name for an API topic in plain text.  This is used for metadata values and
+            the table of contents title.
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="8212cc00-9651-9dc5-f2b1-a6e4ac7407c9.htm">ApiTopicTitle</a></td><td>
+            Get the title for an API topic
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="74b61f38-2c8c-aa55-576b-170177210836.htm">ApiTopicTocTitleSimple</a></td><td>
+            Get the simple table of contents title for an API topic
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="ae3dc602-1add-878e-4b9d-628413b1b7f6.htm">ApiTypeNameDecorated</a></td><td>
+            This is used to get a type name in decorated with language-specific text elements based on the given
+            type information.
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="c557a7fc-838f-e2f7-6ea5-59982a0ea548.htm">ApiTypeNamePlainText</a></td><td>
+            This is used to get a type name in plain text based on the given type information
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="ca98cb60-6ae1-b158-dd04-eb0424374f5a.htm">CreateApiTopicSectionHandlers</a></td><td>
+            This is called to create the API topic section handlers that will be used by the transformation
+            <br />(Overrides <a href="42c0f55e-9634-011e-61cd-b7ad5b07ac25.htm">TopicTransformationCore<span id="LST5F2407CE_3" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>CreateApiTopicSectionHandlers<span id="LST5F2407CE_4" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>)</td></tr><tr><td><a href="7c8c939e-de02-d886-a777-d6cde9265a21.htm">CreateElementHandlers</a></td><td>
+            This is called to create the element handlers that will be used by the transformation
+            <br />(Overrides <a href="345cbef7-0142-da00-4596-92db289bccc8.htm">TopicTransformationCore<span id="LST5F2407CE_5" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>CreateElementHandlers<span id="LST5F2407CE_6" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>)</td></tr><tr><td><a href="4d1b5e10-d767-af88-bd8b-e318cad01d57.htm">CreateLanguageSpecificText</a></td><td>
+            This is called to create the language specific text elements that will be used by the transformation
+            <br />(Overrides <a href="5fb224bd-f122-473f-6cb0-568ffefed82b.htm">TopicTransformationCore<span id="LST5F2407CE_7" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>CreateLanguageSpecificText<span id="LST5F2407CE_8" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>)</td></tr><tr><td><a href="3b8a2924-c9e9-3776-297f-6444f4f25c18.htm">CreateNoticeDefinitions</a></td><td>
+            This is called to create the API topic notice definitions that will be used by the transformation
+            <br />(Overrides <a href="f430278c-77ea-734c-51f1-5c7dce47481b.htm">TopicTransformationCore<span id="LST5F2407CE_9" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>CreateNoticeDefinitions<span id="LST5F2407CE_10" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>)</td></tr><tr><td><a href="bb913a38-7216-99c4-1ce2-b7ba90f36188.htm">CreateSection</a></td><td>
+            Create a topic section with a title
+            <br />(Overrides <a href="65066523-cdeb-02a2-7228-218fcaf01c61.htm">TopicTransformationCore<span id="LST5F2407CE_11" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>CreateSection(String, Boolean, String, String, Int32)</a>)</td></tr><tr><td><a href="c66cb2fe-49d2-c938-49f0-a866667a041e.htm">CreateSubsection</a></td><td>
+            Create a topic subsection with a title
+            <br />(Overrides <a href="f0eb665e-f7b2-a4a0-eff9-330157eea1e2.htm">TopicTransformationCore<span id="LST5F2407CE_12" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>CreateSubsection(Boolean, String)</a>)</td></tr><tr><td><a href="845114c7-1b7e-8d45-a131-fe864c8ad484.htm">CreateTransformationArguments</a></td><td>
+            This is called to create the transformation arguments that will be used by the transformation
+            <br />(Overrides <a href="a4aec7e3-db4a-69e6-286a-3b2a8e2f3c3e.htm">TopicTransformationCore<span id="LST5F2407CE_13" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>CreateTransformationArguments<span id="LST5F2407CE_14" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>)</td></tr><tr><td><a href="94d1abed-bdff-9955-f906-4dcc678a8805.htm">ElementHandlerFor</a></td><td>
+            This is used to retrieve the current handler for the given element name
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)" target="_blank" rel="noopener noreferrer">Equals</a></td><td>Determines whether the specified object is equal to the current object.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.finalize" target="_blank" rel="noopener noreferrer">Finalize</a></td><td>Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode" target="_blank" rel="noopener noreferrer">GetHashCode</a></td><td>Serves as the default hash function.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.gettype" target="_blank" rel="noopener noreferrer">GetType</a></td><td>Gets the <a href="https://learn.microsoft.com/dotnet/api/system.type" target="_blank" rel="noopener noreferrer">Type</a> of the current instance.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="767317ab-3450-7651-e91e-a19a7cd77ded.htm">InsertApiTopicSectionHandlerAfter</a></td><td>
+            Insert an API topic section handler after the given section handler
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="c15b115d-6707-aa5f-1f30-21c408820f4b.htm">InsertApiTopicSectionHandlerBefore</a></td><td>
+            Insert an API topic section handler before the given section handler
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="af2bf91a-6d77-9f8d-cb63-3a8313246f67.htm">LanguageSpecificApiNames</a></td><td>
+            This returns an enumerable list of plain text API member names with language-specific text for use
+            in help index entries.
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="3ff1cbf3-5068-c9f7-4425-df710ea5cf7b.htm">LanguageSpecificTextFor</a></td><td>
+            This is used to retrieve the language specific text for a given keyword
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="c5016fad-d670-4014-a4d7-a93786b82942.htm">MamlTopicTitle</a></td><td>
+            Get the title for a MAML topic
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone" target="_blank" rel="noopener noreferrer">MemberwiseClone</a></td><td>Creates a shallow copy of the current <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="d1d59886-287e-bd27-5987-021b28c10d84.htm">OnRenderCompleted</a></td><td>
+            This is used to raise the <a href="8f81a7cb-a6aa-42e4-aa71-5c5f373eb559.htm">RenderCompleted</a> event
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="f1397ccb-5a11-5e49-5511-bfdb9da755ec.htm">OnRenderStarting</a></td><td>
+            This is used to raise the <a href="29957f79-269a-2883-82a7-9cbaec6524b6.htm">RenderStarting</a> event
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="5f007533-c9a3-57ac-9f52-e24c4f2fb172.htm">OnSectionRendered</a></td><td>
+            This is used to raise the <a href="202c4b1b-6450-0f06-6a27-3d3a3313d755.htm">SectionRendered</a> event
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="84981044-f311-a553-9b59-610f4470d3b1.htm">OnUnhandledElement</a></td><td>
+            This is used to raise the <a href="59e68318-efe7-4e1e-9dc4-d949770c1a9e.htm">UnhandledElement</a> event
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="b036a6bc-361a-02d5-d921-c57115f79fc7.htm">RegisterStartupScript</a></td><td>
+            This is used to register a block of script to execute in the <span class="code">$(document).ready()</span> function by
+            presentation styles that support script.
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="6c963f10-d97c-813b-d69b-93ab5db046c5.htm">RegisterStartupScriptItem</a></td><td>
+            This is used to register a shared content item ID that contains a block of script with localized
+            text.  These will be added to a <span class="code">script</span> element at the end of the document body by presentation
+            styles that support script.
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="874c7b7e-3765-3c7f-faa6-29db075851eb.htm">RemoveApiTopicSectionHandler</a></td><td>
+            Remove an API topic section handler
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="60d4556f-1937-5aa3-b8c6-64084abc1acc.htm">Render</a></td><td>
+            This is used to parse the topic data and render the topic output for the presentation style
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="364b7356-42c6-776d-1e7c-374382579e7b.htm">RenderChildElements</a></td><td>
+            This makes the given parent element the current element, renders the list of children to it and then
+            resets the current element to the prior current element.
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="051cfa21-6303-2bd8-32ca-245c563bc6ed.htm">RenderNode</a></td><td>
+            Render the given XML node based on its node type
+            <br />(Overrides <a href="19e18600-9e8b-830e-1812-108f7f0034f0.htm">TopicTransformationCore<span id="LST5F2407CE_15" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>RenderNode(XNode)</a>)</td></tr><tr><td><a href="e26e1237-cfa0-4859-65d9-25859afe0150.htm">RenderTextNode</a></td><td>
+            This is used to provide additional whitespace handling and normalization for markdown elements
+            <br />(Overrides <a href="42f33cf6-89b3-9e16-a611-e37b0284937e.htm">TopicTransformationCore<span id="LST5F2407CE_16" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>RenderTextNode(XElement, XText)</a>)</td></tr><tr><td><a href="339633e5-6068-9dde-0552-71ae5cbb1205.htm">RenderTopic</a></td><td>
+            Render the topic content based on the topic type
+            <br />(Overrides <a href="7e96143c-8e79-88c4-d8ca-3446798e7ce1.htm">TopicTransformationCore<span id="LST5F2407CE_17" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>RenderTopic<span id="LST5F2407CE_18" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>)</td></tr><tr><td><a href="3e308493-4cb3-33c3-51fc-7aa810f6906c.htm">RenderTypeReferenceLink</a></td><td>
+            This is used to render a reference link based on the given type information
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="52550191-dd95-ee3e-f247-b8eb1bac3bb6.htm">ReplaceApiTopicSectionHandler</a></td><td>
+            Replace an API topic section handler with a new one
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="67a4b6e5-83b0-2986-8865-84095c955fae.htm">ReplaceElement</a></td><td>
+            Replace an element handler
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="8e8323ee-ece9-bfb8-5f39-c027b3a29994.htm">ReplaceElements</a></td><td>
+            Replace a range of elements
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="b540933c-47f1-d3dd-fd4b-9e6a29f07b15.htm">ReplaceLanguageSpecificText</a></td><td>
+            Replace a language specific text entry
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="0298eae0-1450-bb3c-4311-0e61cb9fecd4.htm">ReplaceLanguageSpecificTextRange</a></td><td>
+            Replace a range of language specific text entries
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.tostring" target="_blank" rel="noopener noreferrer">ToString</a></td><td>Returns a string that represents the current object.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr></table></div><h2 class="quickLinkHeader">Events</h2><div id="IDAFASection"><table id="EventList" class="table is-hoverable"><tr><td><a href="8f81a7cb-a6aa-42e4-aa71-5c5f373eb559.htm">RenderCompleted</a></td><td>
+            This event is raised to notify the user that the topic has been completely rendered
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="29957f79-269a-2883-82a7-9cbaec6524b6.htm">RenderStarting</a></td><td>
+            This event is raised to notify the user that the topic is about to be rendered
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="202c4b1b-6450-0f06-6a27-3d3a3313d755.htm">SectionRendered</a></td><td>
+            This event is raised to notify the user of section having been rendered
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr><tr><td><a href="59e68318-efe7-4e1e-9dc4-d949770c1a9e.htm">UnhandledElement</a></td><td>
+            This event is raised to notify the user of an unhandled element
+            <br />(Inherited from <a href="47365348-3f88-772f-a649-973105afedae.htm">TopicTransformationCore</a>)</td></tr></table></div><h2 class="quickLinkHeader">See Also</h2><div id="seeAlsoSection"><h4>Reference</h4><div><a href="d6343e1f-fca6-fcba-c638-e977524884b8.htm">Sandcastle.Core.PresentationStyle.Conversion Namespace</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Definition</a></li><li><a class="quickLink">Constructors</a></li><li><a class="quickLink">Properties</a></li><li><a class="quickLink">Methods</a></li><li><a class="quickLink">Events</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.12.18.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20Help%20File%20Builder%20Documentation">Eric Woodruff</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div><div id="AdContent" class="column"><iframe src="https://github.com/sponsors/EWSoftware/button" title="Sponsor EWSoftware" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
+ 
+				</div></div></footer></div><script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+hljs.highlightAll();
+});</script><script>
+		$(".requestExampleLink").each(function ()
+		{
+			if(this.href.substring(0, 4).toLowerCase() === "http")
+				this.href += "?title=";
+			else
+				this.href += "?subject=Sandcastle%20Help%20File%20Builder%20Documentation: ";
+
+			this.href += "Add an Example for " + encodeURIComponent(document.title) + "&amp;body=" +
+				encodeURIComponent("Please add an example for " + document.title + ".%0D%0DTODO (optional): Describe a specific " +
+				"scenario you would like to see addressed.%0D%0DHelp Topic: " + window.location.href).replace(/%250D/g, "%0D");
+		});
+	</script></body></html>

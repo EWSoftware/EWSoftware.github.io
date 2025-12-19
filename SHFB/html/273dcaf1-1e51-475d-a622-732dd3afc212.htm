@@ -3,7 +3,7 @@ components, plug-ins, presentation styles, and syntax generators for use by the 
 project will be built on a build server, you can also add the tools and reflection data NuGet packages here so
 that the help file builder does not need to be installed on the build server.  Unlike package references in a
 solution or project documentation source, these only contribute components used during the build and do not add
-any supplemental API information to the resulting help file for the documentation sources.</p><p class="is-hidden-tablet">This topic contains the following sections:</p><ul class="is-hidden-tablet"><li><a href="#KnownIssues">Known Issues</a></li><li><a href="#Management">Managing Component Packages</a></li><li><a href="#PackageSources">Package Sources</a></li></ul></div><h2 id="KnownIssues" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Known Issues</h2><div id="IDBABSection"><p>Due to a lack of support in Visual Studio for adding package references in third-party project
+any supplemental API information to the resulting help file for the documentation sources.</p><p class="is-hidden-tablet">This topic contains the following sections:</p><ul class="is-hidden-tablet"><li><a href="#KnownIssues">Known Issues</a></li><li><a href="#Management">Managing Component Packages</a></li><li><a href="#PackageSources">Package Sources</a></li></ul></div><h2 id="KnownIssues" class="quickLinkHeader">Known Issues</h2><div id="IDBABSection"><p>Due to a lack of support in Visual Studio for adding package references in third-party project
 systems, the help file builder project system must handle all aspects of adding and removing them.  As such,
 there are some issues that will occur.  The standalone GUI also has similar issues.</p><ul><li><p>If prompted to reload the project because external changes were detected, do so in
 order to see those changes.</p></li><li><p>You may need to close and reopen the Project Properties tool window to see changes
@@ -13,7 +13,7 @@ Ignore the warning and close Visual Studio anyway.</p></li></ul><p>These issues 
 added and recognized by the project system, they will function without issue.</p><article class="message is-warning"><div class="message-header"><p><span class="icon"><i class="fa fa-warning"></i></span>  Important</p></div><div class="message-body"><p>Only component packages created for help file builder version 2021.9.9.0 or later are supported.
 You may find packages for earlier versions in the NuGet.org package source.  If installed in the project, these
 will not appear in the project property pages or may cause the build to fail.  Check the package's NuGet.org page
-to see when it was published to see if it may be compatible with the latest version of the help file builder.</p></div></article></div><h2 id="Management" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Managing Component Packages</h2><div id="IDCABSection"><p>To add, remove, or update component packages in a help file builder project, right click on
+to see when it was published to see if it may be compatible with the latest version of the help file builder.</p></div></article></div><h2 id="Management" class="quickLinkHeader">Managing Component Packages</h2><div id="IDCABSection"><p>To add, remove, or update component packages in a help file builder project, right click on
 the <strong>Component Packages</strong> project node and select the <strong>Manage NuGet Packages</strong> option.</p><figure class="mediaCenter"><img alt="Manage NuGet Packages" src="../media/NuGetManager.png" /></figure><p>Search options can be changed at the top of the dialog to select the package source, specify
 keywords used to search for component packages, and whether or not pre-release versions are included in the
 results.  The radio button option can be changed to search package sources or just display packages currently
@@ -29,13 +29,13 @@ appear to the right of the package entry.  Clicking the up arrow or the <strong>
 selected updated version of the package in the project.</p></li></ul><p>By default, the latest version of the package is always selected.  You can change the version
 installed using the combo box in the package details area.  When a package is installed or removed, the project
 is updated and a restore operation is performed to apply the changes to the project.  The results of the restore
-operation are shown in the textbox below the package list and details.</p></div><h2 id="PackageSources" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Package Sources</h2><div id="IDDABSection"><p>The package sources used by the dialog box are the ones defined in the global NuGet.org
+operation are shown in the textbox below the package list and details.</p></div><h2 id="PackageSources" class="quickLinkHeader">Package Sources</h2><div id="IDDABSection"><p>The package sources used by the dialog box are the ones defined in the global NuGet.org
 configuration file.  These can be managed from within Visual Studio by selecting <strong>Tools</strong>, <strong>Options</strong>,
 expanding the <strong>NuGet Package Manager</strong> category, and selecting the <strong>Package Sources</strong> subcategory.
 If you have component packages of your own that you do not want published to NuGet.org, you can use this option
 to define a local package source on your hard drive or a network share.  Your component packages can be copied to
 this folder for use by your projects alone.  This is also useful for testing packages that you have created
-before publishing them to NuGet.org.</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="e12c2b9f-18c7-4718-850b-ac3c2e293672.htm">Solution/Project Explorer Window</a></div><div><a href="e32086c6-de17-4e54-a746-1ac80bf0c45a.htm">Project Properties Window</a></div><div><a href="50ad2c8c-5004-4b4c-a77f-97b8c403c9f2.htm">XCOPY/NuGet Build Server Deployment</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Known Issues</a></li><li><a class="quickLink">Managing Component Packages</a></li><li><a class="quickLink">Package Sources</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.9.30.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
+before publishing them to NuGet.org.</p></div><h2 class="quickLinkHeader">See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="e12c2b9f-18c7-4718-850b-ac3c2e293672.htm">Solution/Project Explorer Window</a></div><div><a href="e32086c6-de17-4e54-a746-1ac80bf0c45a.htm">Project Properties Window</a></div><div><a href="50ad2c8c-5004-4b4c-a77f-97b8c403c9f2.htm">XCOPY/NuGet Build Server Deployment</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Known Issues</a></li><li><a class="quickLink">Managing Component Packages</a></li><li><a class="quickLink">Package Sources</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.12.18.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20Help%20File%20Builder%20Documentation">Eric Woodruff</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
@@ -47,12 +47,4 @@ before publishing them to NuGet.org.</p></div><h2 class="quickLinkHeader"><span 
 SetDefaultLanguage("cs");
 LoadTocFile(null, null);
 InitializeQuickLinks();
-
-$(".toggleSection" ).click(function () {
-    SectionExpandCollapse(this);
-});
-
-$(".toggleSection").keypress(function () {
-    SectionExpandCollapseCheckKey(this, event)
-});
 });</script></body></html>

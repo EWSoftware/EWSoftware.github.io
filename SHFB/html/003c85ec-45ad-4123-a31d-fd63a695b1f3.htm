@@ -5,7 +5,7 @@ v2021.4.9.0 and earlier must be updated for use with the latest release.  Unlike
 more rework than usual.  However, the benefits are components that will work with both build types and simpler
 deployment of the components as NuGet packages.  See the <a href="bc933f8f-e792-45bf-afec-62aa2c46aa3b.htm">Component Migration Support</a>
 topic for more information.</p><p>See the <a href="21c2a363-6c94-440b-8985-6b224d275463.htm">Known Issues and Limitations</a> topic for known issues with
-.NET Core builds.</p></div></article><p>This release is a minor update to version 2021.10.23.0 which originally contained these changes.</p><ul class="is-hidden-tablet"><li><a href="#BreakingChanges">Breaking Changes</a></li><li><a href="#Tools">Build Components and Tools</a></li><li><a href="#PresentationStyles">Presentation Styles</a></li><li><a href="#SHFB">Sandcastle Help File Builder</a></li></ul></div><h2 id="BreakingChanges" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Breaking Changes</h2><div id="IDBABSection"><ul><li><p>Updated all build engine components to target .NET 4.7.2 and .NETCoreApp 3.1.  The latter
+.NET Core builds.</p></div></article><p>This release is a minor update to version 2021.10.23.0 which originally contained these changes.</p><ul class="is-hidden-tablet"><li><a href="#BreakingChanges">Breaking Changes</a></li><li><a href="#Tools">Build Components and Tools</a></li><li><a href="#PresentationStyles">Presentation Styles</a></li><li><a href="#SHFB">Sandcastle Help File Builder</a></li></ul></div><h2 id="BreakingChanges" class="quickLinkHeader">Breaking Changes</h2><div id="IDBABSection"><ul><li><p>Updated all build engine components to target .NET 4.7.2 and .NETCoreApp 3.1.  The latter
 allows for builds using the <em>dotnet.exe</em> tool.  The core libraries, build components,
 plug-ins, and presentation styles target .NET Standard 2.0 so that they are universal.</p></li><li><p>Restructured the <span class="code">SHFBROOT</span> folders to allow for the
 tool version and platform-specific code to be cleanly separated.  See the
@@ -44,15 +44,15 @@ build property items.  The component path project property, common application d
 folder locations are still supported but are not necessary when components are added as NuGet packages.</p></li><li><p>Due to changes in the folder structure of the tools, some component and plug-in configurations
 may need updating.  In most cases, simply opening the configuration form and saving the configuration should
 correct these issues.  If there are still problems after doing that, it may be necessary to remove the component
-from the project, add it back, and set the configuration options again.</p></li></ul></div><h2 id="Tools" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Build Components and Tools</h2><div id="IDCABSection"><ul><li><p>Fixed the Show Missing Component so that it handles parameter names containing single quotes
+from the project, add it back, and set the configuration options again.</p></li></ul></div><h2 id="Tools" class="quickLinkHeader">Build Components and Tools</h2><div id="IDCABSection"><ul><li><p>Fixed the Show Missing Component so that it handles parameter names containing single quotes
 which can occur in F# code.</p></li><li><p>Added the <span class="code">InternalAndPrivateIfExternal</span> visibility setting to control
 whether or not internal members from other assemblies and private members of base type are included.  It is set
 to false by default to exclude them.</p></li><li><p>All build component and plug-in configuration forms were updated to use WPF for better high DPI
 scaling support on 4K displays.  The standalone GUI hosts all of the WPF controls and UI forms but is a Windows
 Forms application at its core.  That probably will not change anytime soon.</p></li><li><p>All reflection data NuGet packages were republished with updated build properties so that they
 support the new <span class="code">SHFBComponentPath</span> item used to locate components in NuGet packages.</p></li><li><p>The AjaxDoc plug-in has been deprecated.  AjaxDoc itself has been deprecated in favor of JSDoc.
-The plug-in is also dependent on Windows platform-specific features and cannot be used with .NET Core builds.</p></li></ul></div><h2 id="PresentationStyles" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Presentation Styles</h2><div id="IDDABSection"><ul><li><p>Added a new <span class="code">logoUrl</span> transform argument property to the VS2010 and
-VS2013 presentation styles.  This allows you to specify a URL to navigate to when the logo is clicked.</p></li></ul></div><h2 id="SHFB" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Sandcastle Help File Builder</h2><div id="IDEABSection"><ul><li><p>Fixed the API content placement option so that it works again in site map files.</p></li><li><p>Updated the standalone GUI and Visual Studio package to support adding package references to
+The plug-in is also dependent on Windows platform-specific features and cannot be used with .NET Core builds.</p></li></ul></div><h2 id="PresentationStyles" class="quickLinkHeader">Presentation Styles</h2><div id="IDDABSection"><ul><li><p>Added a new <span class="code">logoUrl</span> transform argument property to the VS2010 and
+VS2013 presentation styles.  This allows you to specify a URL to navigate to when the logo is clicked.</p></li></ul></div><h2 id="SHFB" class="quickLinkHeader">Sandcastle Help File Builder</h2><div id="IDEABSection"><ul><li><p>Fixed the API content placement option so that it works again in site map files.</p></li><li><p>Updated the standalone GUI and Visual Studio package to support adding package references to
 help file builder projects for build components, plug-ins, presentation styles, and syntax generators
 interactively with a search dialog box.  The component packages are shown in a separate node in the
 project/solution explorer tool window.  This option can also be used to add the tools package and reflection data
@@ -60,7 +60,7 @@ packages to the project for build server support.</p></li><li><p>Updated the Vis
 separately through the guided installer.  This prevents them from being lost when Visual Studio is updated.</p></li><li><p>Added support for Visual Studio 2022.  Because Visual Studio 2022 is a 64-bit application the
 help file builder package for it is installed separately from the Visual Studio 2017/2019 version.  Although
 tested as much as possible, due to the large number of features in the project system, there may be issues.  If
-any are found, please open an issue on the project site so that they can be investigated.</p></li></ul></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="078cc1c7-7995-431e-bf9c-8813becbe8df.htm">Version History</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Breaking Changes</a></li><li><a class="quickLink">Build Components and Tools</a></li><li><a class="quickLink">Presentation Styles</a></li><li><a class="quickLink">Sandcastle Help File Builder</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.9.30.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
+any are found, please open an issue on the project site so that they can be investigated.</p></li></ul></div><h2 class="quickLinkHeader">See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="078cc1c7-7995-431e-bf9c-8813becbe8df.htm">Version History</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Breaking Changes</a></li><li><a class="quickLink">Build Components and Tools</a></li><li><a class="quickLink">Presentation Styles</a></li><li><a class="quickLink">Sandcastle Help File Builder</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.12.18.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20Help%20File%20Builder%20Documentation">Eric Woodruff</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
@@ -72,12 +72,4 @@ any are found, please open an issue on the project site so that they can be inve
 SetDefaultLanguage("cs");
 LoadTocFile(null, null);
 InitializeQuickLinks();
-
-$(".toggleSection" ).click(function () {
-    SectionExpandCollapse(this);
-});
-
-$(".toggleSection").keypress(function () {
-    SectionExpandCollapseCheckKey(this, event)
-});
 });</script></body></html>
