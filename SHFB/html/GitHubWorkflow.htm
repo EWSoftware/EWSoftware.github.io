@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html ><html lang="en-US" data-theme="light"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.min.css" /><link rel="stylesheet" href="../css/fontawesome.min.css" /><link rel="stylesheet" href="../css/solid.min.css" /><link rel="stylesheet" href="../css/regular.min.css" /><link rel="stylesheet" href="../css/brands.min.css" /><link rel="stylesheet" href="../css/presentationStyle.css" /><script src="../scripts/jquery-3.5.1.min.js"></script><script src="../scripts/clipboard.min.js"></script><script src="../scripts/highlight.min.js"></script><script src="../scripts/themeSwitcher.js"></script><script src="../scripts/presentationStyle.js"></script><title>Building with a GitHub Workflow</title><meta name="Title" content="Building with a GitHub Workflow" /><meta name="Help.Id" content="GitHubWorkflow" /><meta name="Help.ContentType" content="Concepts" /><meta name="guid" content="GitHubWorkflow" /><meta name="Description" content="This topic provides information on building a help website and deploying it to GitHub Pages using a workflow. Thanks to Stephen Hidem for making the changes and doing the testing necessary to get this working." /><meta name="tocFile" content="../toc/IDE.xml" /></head><body><div><div id="Header"><div class="pageHeader level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div class="level-item"><img alt="Sandcastle Help File Builder" style="height: 69px;" src="../icons/Sandcastle.jpg" /></div><div id="DocumentationTitle" class="level-item">Sandcastle Help File Builder Documentation</div></div><div id="LangFilterSearchContainer" class="level-right"><div id="ProjectLink" class="level-item" title="Project website" aria-label="Project website"><a href="https://github.com/EWSoftware/SHFB" rel="noopener noreferrer" target="_blank"><span class="icon"><i class="fa-brands fa-github"></i></span></a></div><div id="ThemeSwitcher" class="level-item" title="Toggle theme" aria-label="Toggle theme"><span class="icon"><i class="fa fa-regular fa-moon theme-icon-dark"></i><i class="fa fa-sun theme-icon-light"></i></span></div><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a><a class="dropdown-item languageFilterItem" data-languageId="vb">VB</a><a class="dropdown-item languageFilterItem" data-languageId="cpp">C++</a><a class="dropdown-item languageFilterItem" data-languageId="fs">F#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></div><div><div id="HeaderPrelimContainer" class="level my-1 px-2"><div id="HeaderTextContainer" class="level-left"><div class="level-item"><span class="has-text-grey-light"><span class="tags"><span class="tag is-info">Themed 2026 Presentation Style Preview</span></span></span></div></div></div><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div id="ContentContainer" class="columns pl-5 pr-5"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu" /></nav></div><div id="Resizer" class="is-hidden"></div><div id="TopicContent" class="column content is-7"><h1>Building with a GitHub Workflow</h1><div><p>This topic provides information on building a help website and deploying it to GitHub Pages using a workflow.
+Thanks to Stephen Hidem for making the changes and doing the testing necessary to get this working.</p></div><h2 id="the-nuget-packages" class="quickLinkHeader">The NuGet Packages</h2><div id="IDBABSection"><p>You need to add the tools package and a reflection data set package to your Sandcastle project.  The packages are
+located at <strong>NuGet.org</strong>.  <em>EWSoftware.SHFB</em>, version 2025.12.18 or later, is the Sandcastle tools package.</p><p>You must also install one or more of the reflection data set packages based on which platform types you need.
+The reflection data set package names start with <strong>EWSoftware.SHFB</strong> and end with a framework suffix: .NET,
+.NETFramework, .NETMicroFramework, .NETCore, .NETPortable, .Silverlight, .WindowsPhone, and .WindowsPhoneApp.  If
+multiple versions are available for any given reflection data set package, install the latest version as it will
+cover all prior versions as well.  For example, the latest <strong>EWSoftware.SHFB.NETFramework</strong> package covers all
+.NET Framework versions from 1.0 to 4.8.  Use the <strong>EWSoftware.SHFB.NET</strong> package for .NET Core, .NET Standard,
+and .NET 5.0 and later.</p><p>You can add the NuGet packages to your Sandcastle project by right clicking on the <strong>Component Packages</strong> node
+and selecting <strong>Manage NuGet Packages</strong>.  Alternatively, it is a simple matter to directly edit the <em>.shfbproj</em>
+file and add the package references.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle"> </span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-xml">&lt;ItemGroup&gt;
+  &lt;!-- Add the tools package --&gt;
+  &lt;PackageReference Include="EWSoftware.SHFB"&gt;
+    &lt;Version&gt;2025.12.18&lt;/Version&gt;
+  &lt;/PackageReference&gt;
+  &lt;!-- Add a reflection data set package based on your documentation source --&gt;
+  &lt;PackageReference Include="EWSoftware.SHFB.NET"&gt;
+    &lt;Version&gt;10.0.0&lt;/Version&gt;
+  &lt;/PackageReference&gt;
+&lt;/ItemGroup&gt;</code></pre></div></div></div><h2 id="example-github-workflow" class="quickLinkHeader">Example GitHub Workflow</h2><div id="IDCABSection"><p>Here is an example workflow used to build, test, and deploy NuGet packages and a help website built with
+Sandcastle.</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle"> </span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-yml"># This workflow will build a .NET project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+
+name: Deploy Release to NuGet and Website
+
+on:
+  release:
+    types:
+      - published
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: read
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 10.0.x
+
+    # Restore Dependencies
+    - name: Restore Dependencies
+      run: |
+        dotnet restore AntPlus
+        dotnet restore AntRadioInterface
+        dotnet restore AntPlus.Extensions.Hosting
+        dotnet restore AntPlus.UnitTests
+        dotnet restore Examples/AntUsbStick
+        dotnet restore Extensions/Hosting/Hosting.UnitTests
+        dotnet restore Documentation/Documentation.shfbproj
+
+    # Build GitHub Solution Configuration
+    - name: Build NuGet Packages
+      run: dotnet build --no-restore --configuration GitHub
+
+    # Run Unit Tests
+    - name: Run Unit Tests
+      run: dotnet test --no-build --verbosity minimal --configuration GitHub
+
+    # Publish NuGet Packages
+    - name: Publish NuGet Packages
+      run: dotnet nuget push **/*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }} --skip-duplicate
+
+    # Build Documentation and Upload Artifacts
+    - name: Build Documentation
+      run: dotnet build Documentation/Documentation.shfbproj --no-restore --configuration Release
+    - name: Setup Pages
+      uses: actions/configure-pages@v5
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: './Documentation/Help'
+
+  deploy:
+    needs: build
+
+    # Grant permissions to deploy to GitHub Pages
+    permissions:
+      pages: write
+      id-token: write
+
+    # Deploy to GitHub Pages environment
+    environment:
+        name: github-pages
+        url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
+    # Deploy Documentation to GitHub Pages
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4</code></pre></div></div><p>Some things to keep in mind:</p><ul><li>The example above uses the GitHub hosted runner <strong>ubuntu-latest</strong>.  You could use the <strong>windows-latest</strong>
+runner, but you pay a 2x multiplier on the time used.</li><li>You should restore the dependencies and then build the projects you are documenting with the
+<strong>--no-restore</strong> option.</li><li>You can retrieve the <em>LastBuild.log</em> file by downloading the artifacts file generated and extracting the
+compressed files.</li></ul><p>All of the potential scenarios have not been tested but the example above should be feature complete.  If you
+encounter any issue, please open a work item at the <a href="https://github.com/EWSoftware/SHFB/issues" target="_blank" rel="noopener noreferrer">project website</a>
+and provide the necessary details and examples needed to diagnose the issue.</p></div><h2 id="see-also" class="quickLinkHeader">See Also</h2><div id="IDDABSection"><p><strong>Other Resources</strong><br /><a href="b772e00e-1705-4062-adb6-774826ce6700.htm">Getting Started</a><br /><a href="50ad2c8c-5004-4b4c-a77f-97b8c403c9f2.htm">XCOPY/NuGet Build Server Deployment</a><br /><a href="8ffc0d37-0215-4609-b6f8-dba53a6c5063.htm">Building Projects Outside the GUI</a><br /><a href="ec822059-b179-4add-984d-485580050ffb.htm">Generating Documentation with Team Build</a></p></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">The NuGet Packages</a></li><li><a class="quickLink">Example GitHub Workflow</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3"><div class="columns"><div id="FooterContent" class="column"><p><a href="https://GitHub.com/EWSoftware/SHFB" target="_blank" rel="noopener noreferrer">[v2025.12.18.0] Copyright © 2006-2025, Eric Woodruff, All rights reserved</a></p><div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle%20Help%20File%20Builder%20Documentation">Eric Woodruff</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div><div id="AdContent" class="column"><iframe src="https://github.com/sponsors/EWSoftware/button" title="Sponsor EWSoftware" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
+ 
+				</div></div></footer></div><script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+hljs.highlightAll();
+});</script></body></html>
