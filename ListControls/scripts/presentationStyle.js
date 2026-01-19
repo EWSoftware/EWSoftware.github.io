@@ -2,12 +2,12 @@
 // System  : Sandcastle Help File Builder
 // File    : presentationStyle.js
 // Author  : Eric Woodruff  (Eric@EWoodruff.us)
-// Updated : 08/02/2024
-// Note    : Copyright 2014-2024, Eric Woodruff, All rights reserved
-//           Portions Copyright 2010-2024 Microsoft, All rights reserved
+// Updated : 01/18/2026
+// Note    : Copyright 2014-2026, Eric Woodruff, All rights reserved
+//           Portions Copyright 2010-2026 Microsoft, All rights reserved
 //
-// This file contains the methods necessary to implement the language filtering, collapsible section, and
-// copy to clipboard options.
+// This file contains the methods necessary to implement the language filtering, copy to clipboard, searching, and
+// table of contents options.
 //
 // This code is published under the Microsoft Public License (Ms-PL).  A copy of the license should be
 // distributed with the code and can be found at the project website: https://GitHub.com/EWSoftware/SHFB.  This
@@ -19,7 +19,7 @@
 // 05/04/2014  EFW  Created the code based on the MS Help Viewer script
 //===============================================================================================================
 
-// Ignore Spelling: fti json Resizer mousedown mouseup mousemove
+// Ignore Spelling: fti json Resizer mousedown mouseup mousemove Ritchie divs
 
 //===============================================================================================================
 // This section contains the methods used to implement the language filter
@@ -32,7 +32,7 @@
 // for all languages to which it does not apply.
 var allLSTSetIds = new Object();
 
-var clipboardHandler = null;
+var clipboardHandler = null, searchIndex = null, fileIndex = null, toc = null;
 
 // Set the default language
 function SetDefaultLanguage(defaultLanguage)
@@ -227,7 +227,22 @@ function InitializeQuickLinks()
                 for(i = 0; i < quickLinks.length; i++)
                 {
                     if(quickLinks[i] === this)
-                        headerElements[i].scrollIntoView();
+                    {
+                        // Adjust for sticky header height
+                        const header = document.querySelector('body > header');
+
+                        if (header)
+                        {
+                            const headerHeight = header.offsetHeight;
+                            const elementPosition = headerElements[i].getBoundingClientRect().top;
+                            const offsetPosition = window.scrollY + elementPosition - headerHeight - 10;
+                            
+                            window.scrollTo({
+                                top: offsetPosition,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
 
                     quickLinks[i].classList.remove("is-active-quickLink");
                 }
@@ -271,90 +286,95 @@ function QuickLinkScrollHandler()
 }
 
 //===============================================================================================================
-// Collapsible section methods
-
-// Expand or collapse a topic section
-function SectionExpandCollapse(item)
-{
-    var section = item.parentElement.nextElementSibling;
-
-    if(section !== null)
-    {
-        $(item).toggleClass("toggleCollapsed");
-
-        if(section.style.display === "")
-            section.style.display = "none";
-        else
-            section.style.display = "";
-    }
-}
-
-// Expand or collapse a topic section when it has the focus and Enter is hit
-function SectionExpandCollapseCheckKey(item, togglePrefix, eventArgs)
-{
-    if(eventArgs.keyCode === 13)
-        SectionExpandCollapse(item);
-}
-
-//===============================================================================================================
 // This section contains the methods necessary to implement the TOC and search functionality.
 
-// Toggle a TOC entry between its collapsed and expanded state loading the child elements if necessary
-function ToggleExpandCollapse(item)
+// Load the TOC information
+function LoadToc()
 {
-    $(item).toggleClass("toggleExpanded");
+    $("#ShowHideTOC").click(function () {
+        $("#TOCColumn").toggleClass("is-hidden-mobile");
+    });
 
-    if($(item).parent().next().children().length === 0)
-    {
-        LoadTocFile($(item).attr("data-tocFile"), $(item).parent().next());
-    }
-
-    $(item).parent().next().toggleClass("is-hidden");
-}
-
-// Load a TOC fragment file and add it to the page's TOC
-function LoadTocFile(tocFile, parentElement)
-{
-    var selectedTopicId = null;
-
-    if(tocFile === null)
-    {
-        $("#ShowHideTOC").click(function () {
-            $("#TOCColumn").toggleClass("is-hidden-mobile");
-        });
-
-        tocFile = $("meta[name='tocFile']").attr("content");
-        selectedTopicId = $("meta[name='guid']").attr("content");
-    }
+    const tocParentId = $("meta[name='tocParentId']").attr("content");
+    const selectedTopicId = $("meta[name='guid']").attr("content");
 
     $.ajax({
-        url: tocFile,
-        cache: false,
-        async: true,
-        dataType: "xml",
+        url: "../toc.json?v=58D94341",
+        dataType: "json",
         success: function (data)
         {
-            ParentTocElement(parentElement, selectedTopicId, data);
+            tocInfo = data;
+            ParentTocElements(null, selectedTopicId, tocParentId);
         }
-    });
+    }).fail(function (jqXHR, textStatus, errorThrown) {
+        $("#TopicBreadcrumbs").append("<strong>Unable to load TOC information: " + errorThrown + "</strong>");
+        $("#TableOfContents").empty();
+        $("#TableOfContents").append("This will not work if loaded from the file system directly.  Use the " +
+            "View Help option to view it using a local web server instance.");
+    });;
 }
 
 // Parent the TOC elements to the given element.  If null, the elements represent the root TOC for the page and
 // it will also set the breadcrumb trail.
-function ParentTocElement(parentElement, selectedTopicId, tocElements)
+function ParentTocElements(parentElement, selectedTopicId, tocParentId)
 {
-    var toc = $(tocElements).find("tocItems").html();
+    const toc = tocInfo.fragments[tocParentId];
+    var root, rootTopic;
 
-    if(parentElement === null)
-    {
+    if (parentElement === null) {
+        // Add the breadcrumb links.  The first is always a root link to the first topic.
+        root = tocInfo.topics[0];
+
+        for (var i = 0; i < tocInfo.topics.length; i++) {
+            if (tocInfo.topics[i].f) {
+                rootTopic = tocInfo.topics[i];
+                break;
+            }
+        }
+
+        $("#TopicBreadcrumbs").append($("<li><a href=\"" + rootTopic.f + ".htm\">" +
+            insertWordBreakOpportunities(tocInfo.titles[root.t]) + "</a></li>"));
+
+        toc.b.forEach((i) => {
+            var t = tocInfo.topics[i];
+
+            if (t.f) {
+                $("#TopicBreadcrumbs").append($("<li><a href=\"" + t.f + ".htm\">" +
+                    insertWordBreakOpportunities(tocInfo.titles[t.t]) + "</a></li>"));
+            }
+            else {
+                $("#TopicBreadcrumbs").append($("<li><p>" + insertWordBreakOpportunities(tocInfo.titles[t.t]) +
+                    "</a></li>"));
+            }
+        });
+
         var topicTitle = $("meta[name='Title']").attr("content");
 
-        $("#TopicBreadcrumbs").append($(tocElements).find("breadcrumbs").html());
         $("#TopicBreadcrumbs").append($("<li><p>" + topicTitle + "</p></li>"));
-        $("#TableOfContents").append(toc);
+
+        root = $("#TableOfContents");
+        root.empty();
     }
     else
-        parentElement.append(toc);
+        root = parentElement;
+
+    // Add the TOC child elements
+    toc.t.forEach((i) => {
+        var t = tocInfo.topics[i];
+
+        if (t.c) {
+            // This is a parent node with children.  They will be loaded on demand.
+            root.append($("<li><a id=\"" + t.f + "\" class=\"has-submenu\" href=\"" + t.f + ".htm\">" +
+                "<span data-tocParentId=\"" + t.c + "\" class=\"icon toggle\" " +
+                "onclick=\"ToggleExpandCollapse(this); return false;\"><i class=\"fa fa-angle-right\"> </i></span>" +
+                insertWordBreakOpportunities(tocInfo.titles[t.t]) + "</a><ul class=\"toc-menu is-hidden\"></ul></li>"));
+        }
+        else {
+            // Just a topic, no children.
+            root.append($("<li><a id=\"" + t.f + "\" href=\"" + t.f + ".htm\">" +
+                insertWordBreakOpportunities(tocInfo.titles[t.t]) + "</a></li>"));
+        }
+    });
 
     if(selectedTopicId !== null)
     {
@@ -370,8 +390,50 @@ function ParentTocElement(parentElement, selectedTopicId, tocElements)
     }
 }
 
-// Search method (0 = To be determined, 1 = ASPX, 2 = PHP, anything else = client-side script
-var searchMethod = 0;
+// Toggle a TOC entry between its collapsed and expanded state loading the child elements if necessary
+function ToggleExpandCollapse(item) {
+    $(item).toggleClass("toggleExpanded");
+
+    if ($(item).parent().next().children().length === 0) {
+        ParentTocElements($(item).parent().next(), null, $(item).attr("data-tocParentId"))
+    }
+
+    $(item).parent().next().toggleClass("is-hidden");
+}
+
+// Insert word break opportunities into long strings to allow better wrapping in the TOC pane
+function insertWordBreakOpportunities(text) {
+    if (!text || text.trim() === '') {
+        return text || '';
+    }
+
+    let result = '';
+    let start = 0;
+    let end = 0;
+
+    while (end < text.length) {
+        if (end !== 0 && end < text.length - 1) {
+            const curr = text[end], next = text[end + 1], prev = text[end - 1];
+
+            // Split between camel case words, digits, and punctuation with no intervening whitespace
+            if ((/[a-z]/.test(curr) && /[A-Z]/.test(next)) ||
+                (/[a-zA-Z]/.test(curr) && /\d/.test(next)) ||
+                (!/[a-zA-Z0-9]/.test(curr) && !/\s/.test(prev) && /[a-zA-Z0-9]/.test(next))) {
+
+                result += text.substring(start, end + 1) + '<wbr>';
+                start = end + 1;
+            }
+        }
+
+        // Skip over non-word/non-punctuation characters
+        do {
+            end++;
+        } while (end < text.length && !/[a-zA-Z0-9]/.test(text[end]) && !/[^\w\s]/.test(text[end]));
+    }
+
+    result += text.substring(start);
+    return result;
+}
 
 // Transfer to the search page from a topic
 function TransferToSearchPage()
@@ -403,12 +465,25 @@ function OnSearchPageLoad()
     }
 }
 
-// Perform a search using the best available method
+// Show or hide the search help
+function ShowHideHelp()
+{
+    var helpInfo = document.getElementById("HelpInfo");
+
+    if(helpInfo !== null)
+    {
+        if(helpInfo.classList.contains("is-hidden"))
+            helpInfo.classList.remove("is-hidden");
+        else
+            helpInfo.classList.add("is-hidden");
+    }
+}
+
+// Perform a search
 function PerformSearch()
 {
-    var searchText = document.getElementById("txtSearchText").value;
-    var sortByTitle = document.getElementById("chkSortByTitle").checked;
-    var searchResults = document.getElementById("searchResults");
+    let searchText = document.getElementById("txtSearchText").value;
+    let searchResults = document.getElementById("searchResults");
 
     if(searchText.length === 0)
     {
@@ -416,268 +491,75 @@ function PerformSearch()
         return;
     }
 
+    // Get the search and file index data if not already loaded
+    if(!searchIndex)
+    {
+        searchResults.innerHTML = "Loading index...";
+
+        $.ajax({
+            url: "searchIndex.json?v=58D94341",
+            dataType: "json",
+            success: function (data)
+            {
+                
+                searchIndex = lunr.Index.load(data)
+                PerformSearch();
+            }
+        }).fail(function(jqXHR, textStatus, errorThrown) {
+            searchResults.innerHTML = "<strong>Unable to load index information: " + errorThrown +"</strong>";
+        });
+
+        return;
+    }
+
+    if(!fileIndex)
+    {
+        $.ajax({
+            url: "fileIndex.json?v=58D94341",
+            dataType: "json",
+            success: function (data)
+            {
+                fileIndex = data;
+                PerformSearch();
+            }
+        }).fail(function(jqXHR, textStatus, errorThrown) {
+            searchResults.innerHTML = "<strong>Unable to load index information: " + errorThrown +"</strong>";
+        });
+
+        return;
+    }
+
     searchResults.innerHTML = "Searching...";
-
-    // Determine the search method if not done already.  The ASPX and PHP searches are more efficient as they
-    // run asynchronously server-side.  If they can't be used, it defaults to the client-side script below which
-    // will work but has to download the index files.  For large help sites, this can be inefficient.
-    if(searchMethod === 0)
-        searchMethod = DetermineSearchMethod();
-
-    if(searchMethod === 1)
-    {
-        $.ajax({
-            type: "GET",
-            url: encodeURI("SearchHelp.aspx?Keywords=" + searchText + "&SortByTitle=" + sortByTitle),
-            cache: false,
-            success: function (html)
-            {
-                searchResults.innerHTML = html;
-            }
-        });
-
-        return;
-    }
-
-    if(searchMethod === 2)
-    {
-        $.ajax({
-            type: "GET",
-            url: encodeURI("SearchHelp.php?Keywords=" + searchText + "&SortByTitle=" + sortByTitle),
-            cache: false,
-            success: function (html)
-            {
-                searchResults.innerHTML = html;
-            }
-        });
-
-        return;
-    }
-
-    // Parse the keywords
-    var keywords = ParseKeywords(searchText);
-
-    // Get the list of files.  We'll be getting multiple files so we need to do this synchronously.
-    var fileList = [];
-
-    $.ajax({
-        type: "GET",
-        url: "fti/FTI_Files.json",
-        cache: false,
-        dataType: "json",
-        async: false,
-        success: function (data)
-        {
-            $.each(data, function (key, val)
-            {
-                fileList[key] = val;
-            });
-        }
-    });
-
-    var letters = [];
-    var wordDictionary = {};
-    var wordNotFound = false;
-
-    // Load the keyword files for each keyword starting letter
-    for(var idx = 0; idx < keywords.length && !wordNotFound; idx++)
-    {
-        var letter = keywords[idx].substring(0, 1);
-
-        if($.inArray(letter, letters) === -1)
-        {
-            letters.push(letter);
-
-            $.ajax({
-                type: "GET",
-                url: "fti/FTI_" + letter.charCodeAt(0) + ".json",
-                cache: false,
-                dataType: "json",
-                async: false,
-                success: function (data)
-                {
-                    var wordCount = 0;
-
-                    $.each(data, function (key, val)
-                    {
-                        wordDictionary[key] = val;
-                        wordCount++;
-                    });
-
-                    if(wordCount === 0)
-                        wordNotFound = true;
-                }
-            });
-        }
-    }
-
-    if(wordNotFound)
-        searchResults.innerHTML = "<strong>Nothing found</strong>";
-    else
-        searchResults.innerHTML = SearchForKeywords(keywords, fileList, wordDictionary, sortByTitle);
-}
-
-// Determine the search method by seeing if the ASPX or PHP search pages are present and working
-function DetermineSearchMethod()
-{
-    var method = 3;
 
     try
     {
-        $.ajax({
-            type: "GET",
-            url: "SearchHelp.aspx",
-            cache: false,
-            async: false,
-            success: function (html)
-            {
-                if(html.substring(0, 8) === "<strong>")
-                    method = 1;
-            }
-        });
+        let results = searchIndex.search(searchText);
 
-        if(method === 3)
-            $.ajax({
-                type: "GET",
-                url: "SearchHelp.php",
-                cache: false,
-                async: false,
-                success: function (html)
-                {
-                    if(html.substring(0, 8) === "<strong>")
-                        method = 2;
-                }
-            });
-    }
-    catch(e)
-    {
-        // Ignore exceptions
-    }
+        // Format and show the results
+        let content = "<div class=\"tags\"><span class=\"tag is-info\">" + results.length + " results for \"" +
+            searchText + "\"";
 
-    return method;
-}
+        if(results.length > 50)
+            content += " (only showing first 50 matches)";
 
-// Split the search text up into keywords
-function ParseKeywords(keywords)
-{
-    var keywordList = [];
-    var checkWord;
-    var words = keywords.split(/[\s!@#$%^&*()\-=+[\]{}\\|<>;:'",.<>/?`~]+/);
+        content += "</span></div><dl>";
 
-    for(var idx = 0; idx < words.length; idx++)
-    {
-        checkWord = words[idx].toLowerCase();
-
-        if(checkWord.length >= 2 && $.inArray(checkWord, keywordList) === -1)
-            keywordList.push(checkWord);
-    }
-
-    return keywordList;
-}
-
-// Search for keywords and generate a block of HTML containing the results
-function SearchForKeywords(keywords, fileInfo, wordDictionary, sortByTitle)
-{
-    var matches = [], matchingFileIndices = [], rankings = [];
-    var isFirst = true;
-    var idx;
-
-    for(idx = 0; idx < keywords.length; idx++)
-    {
-        var word = keywords[idx];
-        var occurrences = wordDictionary[word];
-
-        // All keywords must be found
-        if(occurrences === null)
-            return "<strong>Nothing found</strong>";
-
-        matches[word] = occurrences;
-        var occurrenceIndices = [];
-
-        // Get a list of the file indices for this match.  These are 64-bit numbers but JavaScript only does
-        // bit shifts on 32-bit values so we divide by 2^16 to get the same effect as ">> 16" and use floor()
-        // to truncate the result.
-        for(var ind in occurrences)
-            occurrenceIndices.push(Math.floor(occurrences[ind] / Math.pow(2, 16)));
-
-        if(isFirst)
+        for(let i = 0; i < 50 && i < results.length; i++)
         {
-            isFirst = false;
-
-            for(var matchInd in occurrenceIndices)
-                matchingFileIndices.push(occurrenceIndices[matchInd]);
-        }
-        else
-        {
-            // After the first match, remove files that do not appear for all found keywords
-            for(var checkIdx = 0; checkIdx < matchingFileIndices.length; checkIdx++)
-            {
-                if($.inArray(matchingFileIndices[checkIdx], occurrenceIndices) === -1)
-                {
-                    matchingFileIndices.splice(checkIdx, 1);
-                    checkIdx--;
-                }
-            }
-        }
-    }
-
-    if(matchingFileIndices.length === 0)
-        return "<strong>Nothing found</strong>";
-
-    // Rank the files based on the number of times the words occurs
-    for(var fileIdx = 0; fileIdx < matchingFileIndices.length; fileIdx++)
-    {
-        // Split out the title, filename, and word count
-        var matchingIdx = matchingFileIndices[fileIdx];
-        var fileIndex = fileInfo[matchingIdx].split(/\0/);
-
-        var title = fileIndex[0];
-        var filename = fileIndex[1];
-        var wordCount = parseInt(fileIndex[2]);
-        var matchCount = 0;
-
-        for(idx = 0; idx < keywords.length; idx++)
-        {
-            occurrences = matches[keywords[idx]];
-
-            for(var ind2 in occurrences)
-            {
-                var entry = occurrences[ind2];
-
-                // These are 64-bit numbers but JavaScript only does bit shifts on 32-bit values so we divide
-                // by 2^16 to get the same effect as ">> 16" and use floor() to truncate the result.
-                if(Math.floor(entry / Math.pow(2, 16)) === matchingIdx)
-                    matchCount += (entry & 0xFFFF);
-            }
+            let rIdx = parseInt(results[i].ref);
+            content += "<dt><a href=\"html/" + fileIndex[rIdx].f + ".htm\" target=\"_blank\">" + fileIndex[rIdx].t +
+                "</a></dt><dd>" + fileIndex[rIdx].c + "...</dd>";
         }
 
-        rankings.push({ Filename: filename, PageTitle: title, Rank: matchCount * 1000 / wordCount });
+        content += "</dl>";
 
-        if(rankings.length > 99)
-            break;
+        searchResults.innerHTML = content;
     }
-
-    rankings.sort(function (x, y)
+    catch(ex)
     {
-        if(!sortByTitle)
-            return y.Rank - x.Rank;
-
-        return x.PageTitle.localeCompare(y.PageTitle);
-    });
-
-    // Format and return the results
-    var content = "<ol>";
-
-    for(var r in rankings)
-        content += "<li><a href=\"" + rankings[r].Filename + "\" target=\"_blank\">" +
-            rankings[r].PageTitle + "</a></li>";
-
-    content += "</ol>";
-
-    if(rankings.length < matchingFileIndices.length)
-        content += "<p>Omitted " + (matchingFileIndices.length - rankings.length) + " more results</p>";
-
-    return content;
+        searchResults.innerHTML = "Query error: " + ex.message;
+        return;
+    }
 }
 
 //===============================================================================================================
@@ -688,15 +570,25 @@ var resizer, tocDiv;
 
 window.onload = function ()
 {
+    // Adjust the header height so that the In This Article section doesn't go under it
+    const header = document.querySelector('body > header');
+
+    if (header) {
+        const headerHeight = header.offsetHeight;
+        document.body.style.setProperty('--header-height', `${headerHeight}px`);
+    }
+
     resizer = document.getElementById("Resizer");
     tocDiv = document.getElementById("TOCColumn");
 
-    resizer.addEventListener("mousedown", function (e)
-    {
-        e.preventDefault();
-        document.addEventListener("mousemove", ResizerMouseMove);
-        document.addEventListener("mouseup", ResizerMouseUp);
-    });
+    if(resizer) {
+        resizer.addEventListener("mousedown", function (e)
+        {
+            e.preventDefault();
+            document.addEventListener("mousemove", ResizerMouseMove);
+            document.addEventListener("mouseup", ResizerMouseUp);
+        });
+    }
 }
 
 function ResizerMouseMove(e)
